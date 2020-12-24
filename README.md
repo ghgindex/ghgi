@@ -1,7 +1,7 @@
 # Greenhouse Gas Index Database
 [![](https://img.shields.io/badge/license-CC--BY--SA%204.0-blue)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-The Greenhouse Gas Index database consists of reference datasets and [Python APIs](#python-apis) for accessing them. The data is also made available in JSON format for use in languages other than Python.
+The Greenhouse Gas Index database is a database of basic food products and their GHG impacts, and [Python APIs](#python-apis) for accessing that data. The data is also made available in JSON format for use in languages other than Python.
 
 The database is built and maintained by [The Greenhouse Gas Index Organization (GHGI)](https://ghgi.org), a not-for-profit organization whose mission is to reduce GHG emissions by driving individual behaviour change through increased awareness of the climate impact of our everyday choices. Derived from the most current peer-reviewed science, GHGI makes it simple for consumers to understand the climate impact of what they eat.
 
