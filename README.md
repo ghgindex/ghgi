@@ -12,7 +12,7 @@ Documentation to follow.
 The database is also freely accessible via a [web API](https://api.ghgi.org) along with [documentation](https://ghgi.org/api/docs).
 
 ## Datasets
-The database contains three primary datasets: [Products](#products) (including product [indexes](#product-indexes)), [Origins](#origins), and [References](#references). Products includes food products and their associated names, nutritional values, and physical data. Origins provides per-product, per-geography climate data as available from references. Currently, for most products, we use the global origin as it has the most data available. While not yet implemented, Origins has been designed to allow for individual producers and regions as origins. References includes the data sources cited by Origins.
+The database contains three primary datasets: [Products](#products) (including product [indexes](#product-indexes)), [Origins](#origins), and [References](#references). Products includes food products and their associated names, nutritional values, and physical data. Origins provides per-product, per-geography climate impact data as available from credible references. Currently, for most products, we use the global origin as it has the most data available. While not yet implemented, Origins has been designed to allow for individual producers and regions as origins. References includes the data sources cited by Origins.
 
 All units in the datasets are metric.
 
