@@ -26,6 +26,6 @@ _Detailed instructions about contributing content or localizations to the datase
 Please note that additions or changes to the reference datasets require reference citations for any materially new information. Citations must reference recent, top-tier, peer-and/or-government-reviewed scientific publications.
 
 ## Attribution
-This codebase is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). If you make use of the database, please make sure to appropriately credit GHGI as the source of your data. We also strongly encourage contributing incremental data directly to this repository, as opposed to forking, so that we can continue to grow this as a central resource for everyone to use.
+This codebase is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). If you make use of the database, please make sure to appropriately credit GHGI as the source of your data. We also strongly encourage contributing incremental data directly to this repository, as opposed to forking, so that we can continue to grow this as a standardized, central, canoncial resource for use by all.
 
 Additionally, if you are using the GHGI DB in a public product, please let us know so we can feature you here.
