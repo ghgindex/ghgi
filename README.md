@@ -1,7 +1,7 @@
 # Greenhouse Gas Index
 [![](https://img.shields.io/badge/license-CC--BY--SA%204.0-blue)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-The Greenhouse Gas Index database is a database of primary food products and their GHG impacts, and [Python APIs](#python-apis) for accessing that data. The data is also made available in JSON format for use in languages other than Python.
+The Greenhouse Gas Index is a database of primary food products and their GHG impacts, and [Python APIs](#python-apis) for accessing that data. The data is also made available in JSON format for use in languages other than Python.
 
 The database is built and maintained by [The Greenhouse Gas Index Organization (GHGI)](https://ghgi.org), a not-for-profit organization whose mission is to reduce GHG emissions by driving individual behaviour change through increased awareness of the climate impact of our everyday choices. Derived from the most current peer-reviewed science, GHGI makes it simple for consumers to understand the climate impact of what they eat.
 
@@ -158,4 +158,4 @@ Please note that additions or changes to the reference datasets require referenc
 ## Attribution
 This codebase is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). If you make use of the database, please make sure to appropriately credit GHGI as the source of your data. To help build a standard, open, central, canonical resource for GHG food data, we also strongly encourage contributing incremental data directly to this repository (as opposed to forking).
 
-Additionally, if you are using the GHGI DB in a public product, please let us know so we can feature you here.
+Additionally, if you are using GHGI in a public product, please let us know so we can feature you here.
