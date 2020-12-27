@@ -1,4 +1,4 @@
-# Greenhouse Gas Index Database
+# Greenhouse Gas Index
 [![](https://img.shields.io/badge/license-CC--BY--SA%204.0-blue)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 The Greenhouse Gas Index database is a database of primary food products and their GHG impacts, and [Python APIs](#python-apis) for accessing that data. The data is also made available in JSON format for use in languages other than Python.
