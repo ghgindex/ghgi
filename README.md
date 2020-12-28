@@ -44,15 +44,15 @@ The data values themselves JSON collections structured as:
     "super_1": float # % loss of super_1
   },
   "names": { # collection to generate aliases from
-    "modifiers": { # modifiers that *must* be accompanied by the name
-      "name_n": [
+    "name_1": { 
+      "dependent": [ # modifiers that *must* be accompanied by the name
         "mod_1"
         "mod_2",
         ...
       ], ...
     },
-    "standalone": { # modifiers that *may* be accompanied by the name
-      "name_n": [
+    "name_2": {
+      "independent": [ # modifiers that *may* be accompanied by the name
         "standalone_variant_1"
         "standalone_variant_1",
         ...

@@ -5,7 +5,6 @@
         "super": {},
         "sg": 1.01
     },
-    "_comment": "par(ents) are dict of {parent_id: share}; g is average unit (each) mass; sg is bulk specific gravity ref H20; ed is kJoules/kg",
     "almond milk": {
         "aka": [
             "almondmilk"
