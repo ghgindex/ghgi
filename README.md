@@ -35,13 +35,13 @@ The data values themselves JSON collections structured as:
   "sg": float, # specific gravity in grams/ml
   "pd": float, # (optional) protein density in ?/?
   "ed": float, # (optional) energy density in kJ/kg
-  "parents": { # (optional) constituent ingredients
-    "parent_1": float, # % (ratio?) of product that is parent_1
-    "parent_2": float,
+  "super": { # (optional) constituent ingredients
+    "super_1": float, # % (ratio?) of product that is super_1
+    "super_2": float,
     ...
   },
   "loss": { # (optional) % of parents lost in processing
-    "parent_1": float # % loss of parent_1
+    "super_1": float # % loss of super_1
   },
   "names": { # collection to generate aliases from
     "modifiers": { # modifiers that *must* be accompanied by the name

@@ -1,0 +1,28 @@
+{
+    "1": {
+        "authors": "J. Poore and T. Nemecek",
+        "date": "2018-06-01",
+        "publication": "Science",
+        "publication_info": "Vol. 360, Issue 6392, pp. 987-992",
+        "title": "Reducing food\u2019s environmental impacts through producers and consumers",
+        "url": "https://science.sciencemag.org/content/360/6392/987/"
+    },
+    "2": {
+        "authors": "Nassos Stylianou, Clara Guibourg and Helen Briggs",
+        "date": "2019-08-19",
+        "notes": "This references Poore and Nemecek, but has values for foods P&M don't. Using it temporarily until we can verify.",
+        "publication": "BBC.com",
+        "publication_info": "",
+        "title": "Climate change food calculator: What's your diet's carbon footprint?",
+        "url": "https://www.bbc.com/news/science-environment-46459714"
+    },
+    "3": {
+        "authors": "Robert W. R. Parker, Julia L. Blanchard, Caleb Gardner, Bridget S. Green, Klaas Hartmann, Peter H. Tyedmers and Reg A. Watson",
+        "date": "2018-04-01",
+        "notes": "See https://docs.google.com/spreadsheets/d/1FidkI2eNctNuvQpwy9IG5WtyKSpWPRA09srNpO-GHXo/edit#gid=1789044031 for recalculation",
+        "publication": "Nature Climate Change",
+        "publication_info": "Vol 8, April 2018, pp. 333-337",
+        "title": "Fuel use and greenhouse gas emissions of world fisheries",
+        "url": "https://www.nature.com/articles/s41558-018-0117-x"
+    }
+}
