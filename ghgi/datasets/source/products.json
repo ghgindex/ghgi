@@ -470,7 +470,7 @@
                     "swiss",
                     "taleggio"
                 ]
-            },
+            }
         }
     },
     "chicken broth": {
@@ -2082,7 +2082,7 @@
             "pelagic fish <30 cm": 100
         },
         "names": {
-            "wild tilapia": {},
+            "wild tilapia": {}
         }
     },
     "tofu": {
