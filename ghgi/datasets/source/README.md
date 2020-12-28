@@ -1,4 +1,4 @@
-## Product source dataset
+# Product source dataset
 
 Products is the master database of product metadata. Each entry is keyed under its canonical name, typically driven by the source data it is pulled from. Each entry's dictionary includes its metadata:
  * `g` (float) standard weight in grams
@@ -43,4 +43,4 @@ This would result in the following list of aliases for "apple":
  * mcintosh apple
  * mcintosh
 
-Having said that, it should be noted that as far as I'm aware the "apple of the Ozarks" is not a thing.
+It should be noted that as far as I'm aware the "apple of the Ozarks" is not a thing.
