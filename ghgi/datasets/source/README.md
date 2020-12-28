@@ -17,7 +17,7 @@ Products is the master database of product metadata. Each entry is keyed under i
 ### [Name Variations](#name-variations)
 Most products are known by multiple names, whether because an identical product goes by multiple names, or has multiple variants, or because a group of products are functionally equivalent. To help with this, we employ a `names` structure in the products source file that enables us to consistently generate variant combinations. Each key in the `names` dictionary is another name the master product is known by; each will be included as a name for the master product.
 
-Each entry in the `names` dictionary may also optionally include two different types of modifiers: `dependent` and `independent`. Dependent modifiers are found *only in combination with* the parent name, whereas independent modifiers can appear with or without it. In the context of "apple", "green" is a dependent modifier, but Granny Smith is independent. By default the variant **precedes** the main name; for trailing modifiers, prefix the name with an underscore.
+Each entry in the `names` dictionary may also optionally include two different types of modifiers: `dependent` and `independent`. Dependent modifiers are found *only in combination with* the parent name, whereas independent modifiers can appear with or without it. In the context of "apple", "green" is a dependent modifier, but Granny Smith is independent. By default the variant **precedes** the main name; for trailing modifiers, prefix the name with an underscore. To remove the space, preface the variant with a `.`, which can be combined with `_` to add a trailing space-less modifier.
 
 For a `names` entry with no further variants, simply set its value to an empty dictionary `{}`.
 

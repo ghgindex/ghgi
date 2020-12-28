@@ -1,15 +1,15 @@
-### Origins
+# Origins
 
 Origins are, unsurpisingly, the places where products originate from. These are typically geographies, but can also be individual producers.
 
 Each origin's data is a dictionary whose keys are products' canonical names, and whose values are tuples of:
- * reference_id
- * [ghg_10, ghgmean, ghgmedian, ghg90]
+ * `reference_id`
+ * [`ghg10`, `ghgmean`, `ghgmedian`, `ghg90`]
  * optional note
 
-The reference_id is our local id for the primary reference source for the data.
+The `reference_id` is our local id for the primary reference source for the data.
 
-The ghg values are mass ratios of output_C02e:input. For instance, apples produce median GHG emissions of 0.42kg CO2e per kg of apples, so their ghgmedian value is 0.42.
+The `ghg` values are mass ratios of output_C02e:input. For instance, apples produce median GHG emissions of 0.42kg CO2e per kg of apples, so their `ghgmedian` value is 0.42.
 
 The highest-level origin is the **global** origin, which is also the most commonly cited. Sub-origins (any origin other than Global) must cite a single `super` property, which is their parent origin. The parent origin is used as a fallback for data missing from a given non-global region.
 
