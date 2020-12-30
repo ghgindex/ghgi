@@ -80,6 +80,6 @@ def build_indexes(product_file):
     # make trigram index json-compatible
     trigram_product_index = dict(trigram_product_index)
     for k in trigram_product_index:
-        trigram_product_index[k] = list(trigram_product_index[k])
+        trigram_product_index[k] = sorted(list(trigram_product_index[k]))
 
     return aka_index, trigram_product_index
