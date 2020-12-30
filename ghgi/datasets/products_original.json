@@ -1,0 +1,2469 @@
+{
+    "_beef (dairy herd)": {
+        "ed": 10484,
+        "g": 100,
+        "par": {},
+        "sg": 1.01
+    },
+    "_comment": "par(ents) are dict of {parent_id: share}; g is average unit (each) mass; sg is bulk specific gravity ref H20; ed is kJoules/kg",
+    "almond milk": {
+        "aka": [
+            "almondmilk"
+        ],
+        "g": 100,
+        "m": 1.0,
+        "par": {},
+        "sg": 1.02
+    },
+    "anchovy": {
+        "aka": [
+            "anchovies",
+            "anchovy paste"
+        ],
+        "par": {
+            "pelagic fish <30 cm": 100
+        }
+    },
+    "apple juice": {
+        "aka": [
+            "apple cider",
+            "apple cider vinegar",
+            "cider",
+            "cider vinegar"
+        ],
+        "g": 250,
+        "loss": {
+            "apples": 0.5
+        },
+        "par": {
+            "apples": 200
+        },
+        "sg": 1.0
+    },
+    "apples": {
+        "aka": [
+            "apple",
+            "apple sauce",
+            "applesauce",
+            "fuji apple",
+            "gala apple",
+            "golden delicious",
+            "golden delicious apple",
+            "granny smith",
+            "granny smith apple",
+            "mcintosh",
+            "mcintosh apple",
+            "red delicious",
+            "red delicious apple",
+            "tart apple"
+        ],
+        "fv": 1.0,
+        "g": 160,
+        "par": {},
+        "sg": 0.85,
+        "vars": {
+            "paired": {
+                "apple": [
+                    "fuji",
+                    "gala",
+                    "tart"
+                ]
+            },
+            "standalone": {
+                "apple": [
+                    "golden delicious",
+                    "granny smith",
+                    "mcintosh",
+                    "red delicious"
+                ]
+            }
+        }
+    },
+    "asparagus": {
+        "g": 100,
+        "par": {
+            "other vegetables": 100
+        }
+    },
+    "asteraceae": {
+        "aka": [
+            "bibb lettuce",
+            "boston lettuce",
+            "iceberg",
+            "iceberg lettuce",
+            "lettuce",
+            "lettuce leaf",
+            "romaine",
+            "romaine lettuce",
+            "tarragon",
+            "tarragon leaf"
+        ],
+        "g": 5,
+        "par": {
+            "other vegetables": 100
+        },
+        "vars": {
+            "paired": {
+                "lettuce": [
+                    "bibb",
+                    "boston"
+                ]
+            },
+            "standalone": {
+                "leaf": [
+                    "lettuce",
+                    "tarragon"
+                ],
+                "lettuce": [
+                    "iceberg",
+                    "romaine"
+                ]
+            }
+        }
+    },
+    "baking powder": {
+        "g": 5.0,
+        "par": {
+            "salt": 100.0
+        },
+        "sg": 1.0
+    },
+    "baking soda": {
+        "g": 2.5,
+        "par": {
+            "salt": 100.0
+        },
+        "sg": 1.0
+    },
+    "bananas": {
+        "aka": [
+            "banana"
+        ],
+        "fv": 1.0,
+        "g": 180,
+        "par": {},
+        "sg": 0.9
+    },
+    "barley (beer)": {
+        "aka": [
+            "barley"
+        ],
+        "ed": 14810,
+        "g": 0.065,
+        "par": {},
+        "sg": 0.62
+    },
+    "barramundi": {
+        "aka": [
+            "barramundi (farmed)",
+            "farmed barramundi"
+        ],
+        "par": {
+            "fish (farmed)": 100
+        }
+    },
+    "bay leaf": {
+        "g": 0.5,
+        "par": {
+            "other vegetables": 100.0
+        },
+        "sg": 0.5
+    },
+    "beef (beef herd)": {
+        "aka": [
+            "beef",
+            "beef brisket",
+            "beef chuck",
+            "beef shank",
+            "brisket",
+            "brisket beef",
+            "chuck",
+            "chuck beef",
+            "chuck steak",
+            "flank steak",
+            "flatiron steak",
+            "hamburger",
+            "hanger steak",
+            "ribeye",
+            "ribeye steak",
+            "sirloin",
+            "sirloin steak",
+            "steak",
+            "veal"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.2,
+        "sg": 1.01,
+        "vars": {
+            "paired": {
+                "steak": [
+                    "flank",
+                    "flatiron",
+                    "hanger"
+                ]
+            },
+            "standalone": {
+                "beef": [
+                    "brisket",
+                    "chuck"
+                ],
+                "steak": [
+                    "chuck",
+                    "ribeye",
+                    "sirloin"
+                ]
+            }
+        }
+    },
+    "beef broth": {
+        "aka": [
+            "veal broth"
+        ],
+        "g": 250,
+        "par": {
+            "beef stock": 20,
+            "water": 80
+        },
+        "sg": 1.0
+    },
+    "beef stock": {
+        "aka": [
+            "veal stock"
+        ],
+        "g": 250,
+        "par": {
+            "beef (beef herd)": 50,
+            "other vegetables": 0,
+            "water": 50
+        },
+        "sg": 1.0
+    },
+    "beet sugar": {
+        "g": 4,
+        "par": {},
+        "s": 1.0,
+        "sg": 1.15
+    },
+    "berries & grapes": {
+        "aka": [
+            "berry",
+            "blackberry",
+            "blueberry",
+            "cranberry",
+            "grape",
+            "raspberry",
+            "strawberry"
+        ],
+        "fv": 1.0,
+        "g": 5,
+        "par": {},
+        "sg": 1.01
+    },
+    "bivalves (farmed)": {
+        "aka": [
+            "bay scallop",
+            "bivalves",
+            "clam",
+            "farmed bivalves",
+            "farmed mollusks",
+            "farmed scallop",
+            "littleneck",
+            "littleneck clam",
+            "mollusks (farmed)",
+            "oyster",
+            "razor clam",
+            "scallop (farmed)"
+        ],
+        "g": 6,
+        "par": {},
+        "pd": 0.2,
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "clam": [
+                    "razor"
+                ]
+            },
+            "standalone": {
+                "clam": [
+                    "littleneck"
+                ]
+            }
+        }
+    },
+    "bonito": {
+        "par": {
+            "pelagic fish >30 cm": 100
+        }
+    },
+    "brassicas": {
+        "aka": [
+            "arugula",
+            "bok choy",
+            "broccoli",
+            "broccoli floret",
+            "broccoli rabe",
+            "broccolini",
+            "brussels sprout",
+            "cabbage",
+            "cauliflower",
+            "chinese cabbage",
+            "collard green",
+            "dry mustard",
+            "gai lan",
+            "kale",
+            "kohlrabi",
+            "mustard seed",
+            "napa cabbage",
+            "pak choi",
+            "pok choi",
+            "red cabbage",
+            "savoy",
+            "savoy cabbage",
+            "watercress"
+        ],
+        "fv": 1.0,
+        "g": 100,
+        "name": "brassicas",
+        "par": {},
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "cabbage": [
+                    "napa",
+                    "savoy"
+                ]
+            }
+        }
+    },
+    "bread": {
+        "aka": [
+            "artisanal bread",
+            "baguette",
+            "baguette bread",
+            "bread crumb",
+            "bread loaf",
+            "bread loaves",
+            "breadcrumb",
+            "country bread",
+            "crouton",
+            "crouton bread",
+            "crusty bread",
+            "focaccia",
+            "focaccia bread",
+            "foccacia",
+            "hamburger bun",
+            "loaf bread",
+            "loaves bread",
+            "sourdough",
+            "sourdough bread",
+            "white bread",
+            "whole wheat bread"
+        ],
+        "g": 100.0,
+        "par": {
+            "wheat & rye (bread)": 100.0
+        },
+        "sg": 0.7,
+        "vars": {
+            "paired": {
+                "bread": [
+                    "artisanal",
+                    "country",
+                    "crusty",
+                    "loaf",
+                    "loaves",
+                    "white",
+                    "whole wheat"
+                ]
+            },
+            "standalone": {
+                "bread": [
+                    "baguette",
+                    "crouton",
+                    "focaccia",
+                    "sourdough"
+                ]
+            }
+        }
+    },
+    "butter": {
+        "aka": [
+            "salted butter",
+            "sweet butter",
+            "unsalted butter"
+        ],
+        "g": 10,
+        "of": 1.0,
+        "par": {
+            "milk": 2100.0
+        },
+        "sg": 0.95,
+        "vars": {
+            "paired": {
+                "butter": [
+                    "salted",
+                    "sweet",
+                    "unsalted"
+                ]
+            }
+        }
+    },
+    "cane sugar": {
+        "aka": [
+            "brown sugar",
+            "confectioners sugar",
+            "dark brown sugar",
+            "demerara sugar",
+            "golden brown sugar",
+            "granulated sugar",
+            "icing sugar",
+            "light brown sugar",
+            "powdered sugar",
+            "sugar",
+            "superfine sugar",
+            "white sugar"
+        ],
+        "g": 4,
+        "name": "cane sugar",
+        "par": {},
+        "s": 1.0,
+        "sg": 1.15,
+        "vars": {
+            "paired": {
+                "sugar": [
+                    "brown",
+                    "confectioners",
+                    "dark brown",
+                    "demerara",
+                    "golden brown",
+                    "granulated",
+                    "icing",
+                    "light brown",
+                    "powdered",
+                    "superfine",
+                    "white"
+                ]
+            }
+        }
+    },
+    "capelin": {
+        "par": {
+            "pelagic fish <30 cm": 100
+        }
+    },
+    "carp": {
+        "aka": [
+            "carp (farmed)",
+            "farmed carp"
+        ],
+        "par": {
+            "fish (farmed)": 100
+        }
+    },
+    "cassava": {
+        "aka": [
+            "manioc",
+            "yuca"
+        ],
+        "ed": 6666,
+        "g": 100,
+        "par": {},
+        "sg": 0.8
+    },
+    "catfish": {
+        "aka": [
+            "catfish (farmed)",
+            "farmed catfish"
+        ],
+        "par": {
+            "fish (farmed)": 100
+        }
+    },
+    "cephalopods": {
+        "g": 150,
+        "par": {},
+        "pd": 0.23,
+        "sg": 1.0
+    },
+    "cheese": {
+        "aka": [
+            "american cheese",
+            "blue cheese",
+            "camembert",
+            "camembert cheese",
+            "cheddar",
+            "cheddar cheese",
+            "cheez whiz",
+            "feta",
+            "feta cheese",
+            "fontina",
+            "fontina cheese",
+            "goat cheese",
+            "gorgonzola",
+            "gorgonzola cheese",
+            "gruyere",
+            "gruyere cheese",
+            "gruy\u00e8re",
+            "gruy\u00e8re cheese",
+            "mascarpone",
+            "mascarpone cheese",
+            "monterey jack",
+            "monterey jack cheese",
+            "mozzarella",
+            "mozzarella cheese",
+            "muenster",
+            "muenster cheese",
+            "parmesan",
+            "parmesan cheese",
+            "parmigiano-reggiano",
+            "parmigiano-reggiano cheese",
+            "pecorino",
+            "pecorino cheese",
+            "pecorino romano",
+            "pecorino romano cheese",
+            "romano",
+            "romano cheese",
+            "roquefort",
+            "roquefort cheese",
+            "stilton",
+            "stilton cheese",
+            "swiss",
+            "swiss cheese",
+            "taleggio",
+            "taleggio cheese"
+        ],
+        "g": 25,
+        "name": "cheese",
+        "par": {},
+        "pd": 0.225,
+        "sg": 0.95,
+        "vars": {
+            "paired": {
+                "cheese": [
+                    "american",
+                    "blue",
+                    "goat"
+                ]
+            },
+            "standalone": {
+                "cheese": [
+                    "camembert",
+                    "cheddar",
+                    "feta",
+                    "fontina",
+                    "gorgonzola",
+                    "gruyere",
+                    "gruy\u00e8re",
+                    "mascarpone",
+                    "monterey jack",
+                    "mozzarella",
+                    "muenster",
+                    "parmesan",
+                    "parmigiano-reggiano",
+                    "pecorino",
+                    "pecorino romano",
+                    "romano",
+                    "roquefort",
+                    "stilton",
+                    "swiss",
+                    "taleggio"
+                ]
+            }
+        }
+    },
+    "chicken broth": {
+        "aka": [
+            "broth"
+        ],
+        "g": 250,
+        "par": {
+            "chicken stock": 20,
+            "water": 80
+        },
+        "sg": 1.0
+    },
+    "chicken stock": {
+        "aka": [
+            "stock"
+        ],
+        "g": 250,
+        "par": {
+            "chicken": 50,
+            "other vegetables": 50,
+            "water": 50
+        },
+        "sg": 1.0
+    },
+    "cinnamon": {
+        "ed": 0,
+        "g": 2.5,
+        "par": {},
+        "sg": 0.5
+    },
+    "citrus fruit": {
+        "aka": [
+            "citrus",
+            "citrus peel",
+            "citrus rind",
+            "citrus wedge",
+            "citrus zest",
+            "grapefruit",
+            "grapefruit peel",
+            "grapefruit rind",
+            "grapefruit wedge",
+            "grapefruit zest",
+            "lemon",
+            "lemon peel",
+            "lemon rind",
+            "lemon wedge",
+            "lemon zest",
+            "lime",
+            "lime peel",
+            "lime rind",
+            "lime wedge",
+            "lime zest"
+        ],
+        "fv": 1.0,
+        "g": 100,
+        "name": "citrus fruit",
+        "par": {},
+        "sg": 1.0,
+        "vars": {
+            "standalone": {
+                "peel": [
+                    "citrus",
+                    "grapefruit",
+                    "lemon",
+                    "lime"
+                ],
+                "rind": [
+                    "citrus",
+                    "grapefruit",
+                    "lemon",
+                    "lime"
+                ],
+                "wedge": [
+                    "citrus",
+                    "grapefruit",
+                    "lemon",
+                    "lime"
+                ],
+                "zest": [
+                    "citrus",
+                    "grapefruit",
+                    "lemon",
+                    "lime"
+                ]
+            }
+        }
+    },
+    "cloves": {
+        "fv": 1.0,
+        "g": 1.0,
+        "par": {},
+        "sg": 0.5
+    },
+    "cocoa powder": {
+        "g": 10,
+        "par": {
+            "dark chocolate": 100
+        },
+        "sg": 1.0
+    },
+    "cod": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "coffee": {
+        "aka": [
+            "brewed coffee",
+            "iced coffee"
+        ],
+        "g": 227,
+        "par": {
+            "coffee beans": 7.0,
+            "water": 220
+        },
+        "sg": 1.0
+    },
+    "coffee beans": {
+        "caf": 16.5,
+        "g": 7.0,
+        "par": {},
+        "sg": 0.35
+    },
+    "crab": {
+        "aka": [
+            "crab (wild)",
+            "wild crab"
+        ],
+        "par": {
+            "crustaceans (wild)": 100
+        }
+    },
+    "cream": {
+        "aka": [
+            "heavy cream",
+            "whipped cream",
+            "whipping cream"
+        ],
+        "g": 100,
+        "par": {
+            "milk": 500
+        },
+        "sg": 0.95
+    },
+    "cream cheese": {
+        "aka": [
+            "philadelpha cream cheese",
+            "philly cream cheese"
+        ],
+        "g": 50,
+        "par": {
+            "lemon juice": 20,
+            "milk": 400
+        },
+        "pd": 0.2,
+        "sg": 1.0
+    },
+    "crustacean broth": {
+        "g": 250,
+        "par": {
+            "crustacean stock": 20,
+            "water": 80
+        },
+        "sg": 1.0
+    },
+    "crustacean stock": {
+        "g": 250,
+        "par": {
+            "crustaceans (farmed)": 50,
+            "other vegetables": 50,
+            "water": 50
+        },
+        "sg": 1.0
+    },
+    "crustaceans (farmed)": {
+        "aka": [
+            "crab (farmed)",
+            "farmed crab",
+            "prawn",
+            "shrimp"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.15,
+        "sg": 1.0
+    },
+    "crustaceans (wild)": {
+        "g": 100,
+        "par": {},
+        "pd": 0.15,
+        "sg": 1.0
+    },
+    "dark chocolate": {
+        "aka": [
+            "bittersweet chocolate",
+            "chocolate",
+            "chocolate chip",
+            "dark chocolate",
+            "milk chocolate",
+            "semi sweet chocolate",
+            "semisweet chocolate"
+        ],
+        "coc": 1.0,
+        "g": 25,
+        "par": {},
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "chocolate": [
+                    "bittersweet",
+                    "dark",
+                    "milk",
+                    "semi sweet",
+                    "semisweet"
+                ]
+            }
+        }
+    },
+    "demersal fish": {
+        "g": 150,
+        "par": {},
+        "pd": 0.23,
+        "sg": 1.0
+    },
+    "demersal mollusks": {
+        "par": {}
+    },
+    "eggplant": {
+        "g": 100,
+        "par": {
+            "tomatoes": 100
+        }
+    },
+    "eggs": {
+        "aka": [
+            "egg",
+            "egg white",
+            "egg yolk"
+        ],
+        "g": 55,
+        "par": {},
+        "pd": 0.11,
+        "sg": 1.03
+    },
+    "espresso": {
+        "g": 30,
+        "par": {
+            "coffee beans": 7.0,
+            "water": 23.0
+        },
+        "sg": 1.0
+    },
+    "fish (farmed)": {
+        "aka": [
+            "fish",
+            "steelhead"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.23,
+        "sg": 1.0
+    },
+    "fish broth": {
+        "g": 250,
+        "par": {
+            "fish stock": 20,
+            "water": 80
+        },
+        "sg": 1.0
+    },
+    "fish stock": {
+        "g": 250,
+        "par": {
+            "fish (farmed)": 50,
+            "other vegetables": 50,
+            "water": 50
+        },
+        "sg": 1.0
+    },
+    "flounder": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "flour": {
+        "aka": [
+            "all purpose flour",
+            "bread flour",
+            "cake flour",
+            "pastry flour",
+            "rye flour",
+            "unbleached all purpose flour",
+            "wheat flour",
+            "white flour",
+            "whole wheat flour",
+            "whole wheat pastry flour"
+        ],
+        "g": 100,
+        "par": {
+            "wheat & rye (bread)": 100
+        },
+        "sg": 0.5,
+        "vars": {
+            "paired": {
+                "flour": [
+                    "all purpose",
+                    "bread",
+                    "cake",
+                    "pastry",
+                    "rye",
+                    "unbleached all purpose",
+                    "wheat",
+                    "white",
+                    "whole wheat",
+                    "whole wheat pastry"
+                ]
+            }
+        }
+    },
+    "garlic": {
+        "aka": [
+            "clove garlic",
+            "garlic clove",
+            "garlic powder"
+        ],
+        "g": 7,
+        "par": {
+            "onions & leeks (alliums)": 100
+        }
+    },
+    "ginger": {
+        "aka": [
+            "candied ginger",
+            "ginger root"
+        ],
+        "g": 15,
+        "par": {
+            "root vegetables": 100
+        }
+    },
+    "grain alcohol": {
+        "aka": [
+            "alcohol"
+        ],
+        "g": 100,
+        "par": {
+            "wheat & rye (bread)": 200
+        },
+        "sg": 1.0
+    },
+    "grouper": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "haddock": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "hake": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "halibut": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "herbs": {
+        "g": 3.8,
+        "par": {
+            "lamiaceae": 50,
+            "umbellifers": 50
+        }
+    },
+    "herring": {
+        "par": {
+            "pelagic fish <30 cm": 100
+        }
+    },
+    "honey": {
+        "g": 15.0,
+        "par": {},
+        "s": 0.7,
+        "sg": 1.0
+    },
+    "ketchup": {
+        "aka": [
+            "barbeque sauce",
+            "bbq sauce",
+            "catsup"
+        ],
+        "g": 10,
+        "par": {
+            "cane sugar": 30,
+            "tomatoes": 200,
+            "vinegar": 50
+        },
+        "sg": 1.0
+    },
+    "lamb & mutton": {
+        "aka": [
+            "lamb",
+            "lamb chop",
+            "lamb shank",
+            "lamb shoulder",
+            "leg lamb",
+            "rack lamb"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.2,
+        "sg": 1.05
+    },
+    "lamiaceae": {
+        "aka": [
+            "basil",
+            "basil leaf",
+            "lavender",
+            "marjoram",
+            "marjoram leaf",
+            "mint",
+            "mint leaf",
+            "oregano",
+            "rosemary",
+            "rosemary leaf",
+            "sage",
+            "sage leaf",
+            "savory",
+            "thyme",
+            "thyme leaf"
+        ],
+        "g": 15,
+        "par": {
+            "other vegetables": 100
+        },
+        "vars": {
+            "paired": {},
+            "standalone": {
+                "leaf": [
+                    "basil",
+                    "marjoram",
+                    "mint",
+                    "rosemary",
+                    "sage",
+                    "thyme"
+                ]
+            }
+        }
+    },
+    "lemon juice": {
+        "aka": [
+            "lime juice",
+            "orange juice"
+        ],
+        "g": 15,
+        "loss": {
+            "citrus fruit": 0.5
+        },
+        "par": {
+            "citrus fruit": 200
+        },
+        "sg": 1.0
+    },
+    "light cream": {
+        "aka": [
+            "coffee cream",
+            "half half"
+        ],
+        "g": 30,
+        "par": {
+            "cream": 50,
+            "milk": 50
+        }
+    },
+    "lobster": {
+        "par": {
+            "crustaceans (wild)": 100
+        }
+    },
+    "mackerel": {
+        "par": {
+            "pelagic fish >30 cm": 100
+        }
+    },
+    "mahi mahi": {
+        "par": {
+            "pelagic fish >30 cm": 100
+        }
+    },
+    "maize (meal)": {
+        "aka": [
+            "corn",
+            "corn kernel",
+            "cornmeal",
+            "polenta",
+            "sweet corn"
+        ],
+        "ed": 15150,
+        "g": 100,
+        "par": {},
+        "sg": 0.54
+    },
+    "mayonnaise": {
+        "aka": [
+            "mayo"
+        ],
+        "g": 10,
+        "par": {
+            "eggs": 18,
+            "mustard": 8,
+            "rapeseed oil": 66,
+            "salt": 2,
+            "vinegar": 8
+        }
+    },
+    "milk": {
+        "aka": [
+            "2 percent milk",
+            "2% milk",
+            "buttermilk",
+            "full fat milk",
+            "low fat milk",
+            "skim milk",
+            "whole milk"
+        ],
+        "g": 100,
+        "m": 1.0,
+        "par": {},
+        "sg": 0.99,
+        "vars": {
+            "paired": {
+                "milk": [
+                    "2 percent",
+                    "2%",
+                    "full fat",
+                    "low fat",
+                    "skim",
+                    "whole"
+                ]
+            }
+        }
+    },
+    "molasses": {
+        "aka": [
+            "blackstrap molasses",
+            "dark molasses",
+            "light molasses"
+        ],
+        "g": 10,
+        "par": {
+            "cane sugar": 100
+        }
+    },
+    "monkfish": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "mushroom": {
+        "aka": [
+            "brown mushroom",
+            "button mushroom",
+            "chanterelle",
+            "chanterelle mushroom",
+            "cremini",
+            "cremini mushroom",
+            "crimini",
+            "crimini mushroom",
+            "enoki",
+            "enoki mushroom",
+            "morel",
+            "morel mushroom",
+            "oyster mushroom",
+            "porcini",
+            "porcini mushroom",
+            "portobello",
+            "portobello mushroom",
+            "shiitake",
+            "shiitake mushroom",
+            "white mushroom",
+            "wild mushroom"
+        ],
+        "fv": 1.0,
+        "g": 150,
+        "par": {},
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "mushroom": [
+                    "brown",
+                    "button",
+                    "oyster",
+                    "white",
+                    "wild"
+                ]
+            },
+            "standalone": {
+                "mushroom": [
+                    "chanterelle",
+                    "cremini",
+                    "crimini",
+                    "enoki",
+                    "morel",
+                    "porcini",
+                    "portobello",
+                    "shiitake"
+                ]
+            }
+        }
+    },
+    "mussels": {
+        "aka": [
+            "mussel"
+        ],
+        "g": 200,
+        "par": {
+            "mollusks": 100
+        },
+        "sg": 1.0
+    },
+    "mustard": {
+        "aka": [
+            "dijon mustard",
+            "dijon style mustard",
+            "prepared mustard",
+            "yellow mustard"
+        ],
+        "g": 5.0,
+        "par": {
+            "brassicas": 40.0,
+            "vinegar": 10.0,
+            "water": 50.0
+        },
+        "sg": 1.0
+    },
+    "nutmeg": {
+        "g": 1.0,
+        "par": {
+            "nuts": 100.0
+        },
+        "sg": 0.5
+    },
+    "nuts": {
+        "aka": [
+            "almond",
+            "brazil nut",
+            "chestnut",
+            "hazelnut",
+            "pecan",
+            "pine nut",
+            "pistachio",
+            "pistachio nut",
+            "walnut",
+            "water chestnut"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.16,
+        "sg": 1.05
+    },
+    "oat milk": {
+        "aka": [
+            "oatmilk"
+        ],
+        "g": 100,
+        "m": 1.0,
+        "par": {},
+        "sg": 1.02
+    },
+    "oatmeal": {
+        "ed": 15857,
+        "g": 100,
+        "par": {},
+        "sg": 0.38
+    },
+    "ocoptus": {
+        "par": {
+            "cephalopods": 100
+        }
+    },
+    "octopus": {
+        "par": {
+            "cephalopods": 100
+        },
+        "pd": 0.3
+    },
+    "olive oil": {
+        "aka": [
+            "evoo",
+            "extra virgin olive oil",
+            "virgin olive oil"
+        ],
+        "g": 25,
+        "of": 1.0,
+        "par": {},
+        "sg": 0.91
+    },
+    "onions & leeks (alliums)": {
+        "aka": [
+            "chive",
+            "green onion",
+            "leek",
+            "onion",
+            "pearl onion",
+            "red onion",
+            "scallion",
+            "shallot",
+            "spanish onion",
+            "spring onion",
+            "sweet onion",
+            "white onion",
+            "yellow onion"
+        ],
+        "g": 100,
+        "par": {},
+        "r": 1.0,
+        "sg": 0.98,
+        "vars": {
+            "paired": {
+                "onion": [
+                    "green",
+                    "pearl",
+                    "red",
+                    "spanish",
+                    "spring",
+                    "sweet",
+                    "white",
+                    "yellow"
+                ]
+            }
+        }
+    },
+    "orange": {
+        "aka": [
+            "navel orange",
+            "orange",
+            "orange peel",
+            "orange rind",
+            "orange wedge",
+            "orange zest"
+        ],
+        "par": {
+            "citrus fruit": 100
+        },
+        "vars": {
+            "paired": {
+                "orange": [
+                    "navel"
+                ]
+            },
+            "standalone": {
+                "peel": [
+                    "orange"
+                ],
+                "rind": [
+                    "orange"
+                ],
+                "wedge": [
+                    "orange"
+                ],
+                "zest": [
+                    "orange"
+                ]
+            }
+        }
+    },
+    "orange roughy": {
+        "aka": [
+            "roughy"
+        ],
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "other fruit": {
+        "aka": [
+            "apricot",
+            "avocado",
+            "black olive",
+            "bosc",
+            "bosc pear",
+            "calamata olive",
+            "cantaloupe",
+            "cherry",
+            "date",
+            "fig",
+            "green olive",
+            "mango",
+            "nectarine",
+            "olive",
+            "papaya",
+            "peach",
+            "pear",
+            "pineapple",
+            "plum",
+            "prune",
+            "sour cherry",
+            "stuffed olive"
+        ],
+        "fv": 1.0,
+        "g": 100,
+        "par": {},
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "olive": [
+                    "black",
+                    "calamata",
+                    "green",
+                    "stuffed"
+                ]
+            },
+            "standalone": {
+                "pear": [
+                    "bosc"
+                ]
+            }
+        }
+    },
+    "other vegetables": {
+        "aka": [
+            "acorn squash",
+            "bell pepper",
+            "bitter melon",
+            "butternut squash",
+            "calabash",
+            "celery",
+            "celery leaf",
+            "celery rib",
+            "celery root",
+            "chard",
+            "chili pepper",
+            "cucumber",
+            "fresh bean",
+            "gourd",
+            "green bean",
+            "green bell pepper",
+            "green chile",
+            "green chili",
+            "green pepper",
+            "greens",
+            "habanero pepper",
+            "jalapeno",
+            "jalapeno chile",
+            "jalapeno chili",
+            "jalapeno pepper",
+            "jalape\u00f1o",
+            "jalape\u00f1o chile",
+            "jalape\u00f1o chili",
+            "jalape\u00f1o pepper",
+            "kirby cucumber",
+            "melon",
+            "okra",
+            "orange bell pepper",
+            "orange pepper",
+            "piquillo pepper",
+            "poblano",
+            "poblano pepper",
+            "pumpkin",
+            "radicchio",
+            "red bell pepper",
+            "red chile",
+            "red chili",
+            "red pepper",
+            "rhubarb",
+            "salad greens",
+            "serrano",
+            "serrano chile",
+            "serrano chili",
+            "serrano pepper",
+            "shishito",
+            "shishito pepper",
+            "spaghetti squash",
+            "spinach",
+            "spinach leaf",
+            "squash",
+            "string bean",
+            "summer squash",
+            "sweet red pepper",
+            "swiss chard",
+            "watermelon",
+            "winter squash",
+            "yellow bell pepper",
+            "yellow pepper",
+            "yellow squash",
+            "zucchini"
+        ],
+        "fv": 1.0,
+        "g": 100,
+        "par": {},
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "bell pepper": [
+                    "green",
+                    "orange",
+                    "red",
+                    "yellow"
+                ],
+                "chile": [
+                    "green",
+                    "jalapeno",
+                    "jalape\u00f1o",
+                    "red",
+                    "serrano"
+                ],
+                "chili": [
+                    "green",
+                    "jalapeno",
+                    "jalape\u00f1o",
+                    "red",
+                    "serrano"
+                ],
+                "cucumber": [
+                    "kirby"
+                ],
+                "pepper": [
+                    "chili",
+                    "green",
+                    "orange",
+                    "piquillo",
+                    "red",
+                    "sweet red",
+                    "yellow"
+                ],
+                "squash": [
+                    "acorn",
+                    "butternut",
+                    "spaghetti",
+                    "summer",
+                    "winter",
+                    "yellow"
+                ]
+            },
+            "standalone": {
+                "leaf": [
+                    "celery",
+                    "spinach"
+                ],
+                "pepper": [
+                    "jalapeno",
+                    "jalape\u00f1o",
+                    "poblano",
+                    "serrano",
+                    "shishito"
+                ]
+            }
+        }
+    },
+    "palm oil": {
+        "g": 25,
+        "of": 1.0,
+        "par": {},
+        "sg": 0.9
+    },
+    "paprika": {
+        "aka": [
+            "smoked paprika",
+            "sweet paprika"
+        ],
+        "g": 7,
+        "par": {
+            "other vegetables": 400
+        },
+        "sg": 0.5
+    },
+    "parsley": {
+        "aka": [
+            "flat leaf parsley",
+            "flat leaf parsley leaf",
+            "flat-leaf parsley",
+            "fresh parsley",
+            "italian parsley",
+            "parsley",
+            "parsley leaf"
+        ],
+        "g": 3.8,
+        "name": "parsley",
+        "par": {
+            "other vegetables": 100
+        },
+        "sg": 0.5
+    },
+    "pasta": {
+        "aka": [
+            "farfalle",
+            "fettucine",
+            "lasagna",
+            "lasagne",
+            "linguine",
+            "macaroni",
+            "noodle",
+            "orecchiette",
+            "orzo",
+            "penne",
+            "spaghetti",
+            "tagliatelle"
+        ],
+        "g": 0,
+        "par": {
+            "wheat & rye (bread)": 100
+        },
+        "sg": 0.5
+    },
+    "patagonian toothfish": {
+        "aka": [
+            "chilean sea bass"
+        ],
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "peanuts": {
+        "aka": [
+            "peanut",
+            "peanut butter"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.26,
+        "sg": 1.05
+    },
+    "peas": {
+        "aka": [
+            "green pea",
+            "pea",
+            "snow pea",
+            "yellow pea"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.215,
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "pea": [
+                    "green",
+                    "snow",
+                    "yellow"
+                ]
+            }
+        }
+    },
+    "pelagic fish <30 cm": {
+        "g": 150,
+        "par": {},
+        "pd": 0.23,
+        "sg": 1.0
+    },
+    "pelagic fish >30 cm": {
+        "g": 150,
+        "par": {},
+        "pd": 0.23,
+        "sg": 1.0
+    },
+    "pepper": {
+        "aka": [
+            "aleppo pepper",
+            "black pepper",
+            "black peppercorn",
+            "freshly black pepper",
+            "peppercorn",
+            "pink peppercorn",
+            "sichuan peppercorn",
+            "white pepper"
+        ],
+        "fv": 1,
+        "g": 2.33,
+        "par": {},
+        "sg": 0.5
+    },
+    "pork": {
+        "aka": [
+            "back bacon",
+            "bacon",
+            "canadian bacon",
+            "chorizo",
+            "chorizo sausage",
+            "ham",
+            "pancetta",
+            "pepperoni",
+            "pepperoni sausage",
+            "pork belly",
+            "pork butt",
+            "pork chop",
+            "pork loin",
+            "pork sausage",
+            "pork shoulder",
+            "prosciutto",
+            "salami",
+            "salami sausage",
+            "salt pork",
+            "sausage",
+            "slab bacon"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.16,
+        "sg": 1.02,
+        "vars": {
+            "standalone": {
+                "sausage": [
+                    "chorizo",
+                    "pepperoni",
+                    "salami"
+                ]
+            }
+        }
+    },
+    "potatoes": {
+        "aka": [
+            "baking potato",
+            "fingerling potato",
+            "idaho potato",
+            "potato",
+            "red potato",
+            "russet",
+            "russet potato",
+            "scalloped potato",
+            "sweet potato",
+            "white potato",
+            "yam",
+            "yukon gold",
+            "yukon gold potato"
+        ],
+        "ed": 3220,
+        "g": 100,
+        "par": {},
+        "sg": 1.01,
+        "vars": {
+            "paired": {
+                "potato": [
+                    "baking",
+                    "fingerling",
+                    "idaho",
+                    "red",
+                    "white"
+                ]
+            },
+            "standalone": {
+                "potato": [
+                    "russet",
+                    "yukon gold"
+                ]
+            }
+        }
+    },
+    "poultry": {
+        "aka": [
+            "chicken",
+            "chicken breast",
+            "chicken giblet",
+            "chicken leg",
+            "chicken liver",
+            "chicken thigh",
+            "chicken wing",
+            "cornish game hen",
+            "cornish game hen breast",
+            "cornish game hen giblet",
+            "cornish game hen leg",
+            "cornish game hen liver",
+            "cornish game hen thigh",
+            "cornish game hen wing",
+            "cornish hen",
+            "cornish hen breast",
+            "cornish hen giblet",
+            "cornish hen leg",
+            "cornish hen liver",
+            "cornish hen thigh",
+            "cornish hen wing",
+            "duck",
+            "duck breast",
+            "duck giblet",
+            "duck leg",
+            "duck liver",
+            "duck thigh",
+            "duck wing",
+            "game hen",
+            "game hen breast",
+            "game hen giblet",
+            "game hen leg",
+            "game hen liver",
+            "game hen thigh",
+            "game hen wing",
+            "goose",
+            "goose breast",
+            "goose giblet",
+            "goose leg",
+            "goose liver",
+            "goose thigh",
+            "goose wing",
+            "grouse",
+            "grouse breast",
+            "grouse giblet",
+            "grouse leg",
+            "grouse liver",
+            "grouse thigh",
+            "grouse wing",
+            "pheasant",
+            "pheasant breast",
+            "pheasant giblet",
+            "pheasant leg",
+            "pheasant liver",
+            "pheasant thigh",
+            "pheasant wing",
+            "quail",
+            "quail breast",
+            "quail giblet",
+            "quail leg",
+            "quail liver",
+            "quail thigh",
+            "quail wing",
+            "turkey",
+            "turkey breast",
+            "turkey giblet",
+            "turkey leg",
+            "turkey liver",
+            "turkey thigh",
+            "turkey wing"
+        ],
+        "g": 125,
+        "par": {},
+        "pd": 0.17,
+        "sg": 0.97,
+        "vars": {
+            "standalone": {
+                "breast": [
+                    "chicken",
+                    "cornish game hen",
+                    "cornish hen",
+                    "duck",
+                    "game hen",
+                    "goose",
+                    "grouse",
+                    "pheasant",
+                    "quail",
+                    "turkey"
+                ],
+                "giblet": [
+                    "chicken",
+                    "cornish game hen",
+                    "cornish hen",
+                    "duck",
+                    "game hen",
+                    "goose",
+                    "grouse",
+                    "pheasant",
+                    "quail",
+                    "turkey"
+                ],
+                "leg": [
+                    "chicken",
+                    "cornish game hen",
+                    "cornish hen",
+                    "duck",
+                    "game hen",
+                    "goose",
+                    "grouse",
+                    "pheasant",
+                    "quail",
+                    "turkey"
+                ],
+                "liver": [
+                    "chicken",
+                    "cornish game hen",
+                    "cornish hen",
+                    "duck",
+                    "game hen",
+                    "goose",
+                    "grouse",
+                    "pheasant",
+                    "quail",
+                    "turkey"
+                ],
+                "thigh": [
+                    "chicken",
+                    "cornish game hen",
+                    "cornish hen",
+                    "duck",
+                    "game hen",
+                    "goose",
+                    "grouse",
+                    "pheasant",
+                    "quail",
+                    "turkey"
+                ],
+                "wing": [
+                    "chicken",
+                    "cornish game hen",
+                    "cornish hen",
+                    "duck",
+                    "game hen",
+                    "goose",
+                    "grouse",
+                    "pheasant",
+                    "quail",
+                    "turkey"
+                ]
+            }
+        }
+    },
+    "pulses": {
+        "aka": [
+            "bean",
+            "black bean",
+            "black eyed pea",
+            "cannellini",
+            "cannellini bean",
+            "chickpea",
+            "dried bean",
+            "dried peas",
+            "great northern bean",
+            "green lentil",
+            "kidney bean",
+            "lentil",
+            "lima bean",
+            "navy bean",
+            "pinto bean",
+            "red lentil",
+            "split peas",
+            "white bean",
+            "yellow lentil"
+        ],
+        "g": 100,
+        "par": {},
+        "pd": 0.22,
+        "sg": 0.85,
+        "vars": {
+            "paired": {
+                "bean": [
+                    "black",
+                    "dried",
+                    "great northern",
+                    "kidney",
+                    "lima",
+                    "navy",
+                    "pinto",
+                    "white"
+                ],
+                "lentil": [
+                    "green",
+                    "red",
+                    "yellow"
+                ]
+            },
+            "standalone": {
+                "bean": [
+                    "cannellini"
+                ]
+            }
+        }
+    },
+    "raisin": {
+        "aka": [
+            "golden raisin",
+            "red raisin",
+            "yellow raisin"
+        ],
+        "g": 50,
+        "par": {
+            "berries & grapes": 200
+        },
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "raisin": [
+                    "golden",
+                    "red",
+                    "yellow"
+                ]
+            }
+        }
+    },
+    "rapeseed oil": {
+        "aka": [
+            "canola oil",
+            "cooking oil",
+            "neutral oil",
+            "oil",
+            "vegetable oil"
+        ],
+        "g": 25,
+        "of": 1.0,
+        "par": {},
+        "sg": 0.9
+    },
+    "rice": {
+        "aka": [
+            "arborio rice",
+            "basmati rice",
+            "brown rice",
+            "carnaroli rice",
+            "jasmine rice",
+            "white rice",
+            "wild rice"
+        ],
+        "ed": 15060,
+        "g": 90,
+        "par": {},
+        "sg": 0.85,
+        "vars": {
+            "paired": {
+                "rice": [
+                    "arborio",
+                    "basmati",
+                    "brown",
+                    "carnaroli",
+                    "jasmine",
+                    "white",
+                    "wild"
+                ]
+            }
+        }
+    },
+    "rice milk": {
+        "aka": [
+            "ricemilk"
+        ],
+        "g": 100,
+        "m": 1.0,
+        "par": {},
+        "sg": 1.02
+    },
+    "ricotta": {
+        "aka": [
+            "ricotta cheese"
+        ],
+        "g": 50,
+        "par": {
+            "light cream": 400,
+            "vinegar": 12
+        },
+        "sg": 1.0
+    },
+    "root vegetables": {
+        "aka": [
+            "beet",
+            "carrot",
+            "daikon",
+            "daikon radish",
+            "horseradish",
+            "parsnip",
+            "radish",
+            "turnip"
+        ],
+        "g": 100,
+        "par": {},
+        "r": 1.0,
+        "sg": 1.0
+    },
+    "salmon": {
+        "aka": [
+            "farmed salmon",
+            "salmon (farmed)"
+        ],
+        "par": {
+            "fish (farmed)": 100
+        }
+    },
+    "salmon (wild)": {
+        "aka": [
+            "wild salmon"
+        ],
+        "par": {
+            "pelagic fish >30 cm": 100
+        }
+    },
+    "salt": {
+        "aka": [
+            "fleur de sel",
+            "kosher salt",
+            "sea salt",
+            "table salt"
+        ],
+        "g": 6,
+        "par": {},
+        "sg": 2.17
+    },
+    "salt pepper": {
+        "aka": [
+            "black pepper salt",
+            "pepper salt",
+            "salt black pepper"
+        ],
+        "g": 5.0,
+        "par": {
+            "pepper": 50.0,
+            "salt": 50.0
+        },
+        "sg": 1.0
+    },
+    "sardines": {
+        "par": {
+            "pelagic fish <30 cm": 100
+        }
+    },
+    "scallop": {
+        "aka": [
+            "scallop (wild)",
+            "wild scallop"
+        ],
+        "par": {
+            "demersal mollusks": 100
+        }
+    },
+    "shad": {
+        "par": {
+            "pelagic fish >30 cm": 100
+        }
+    },
+    "shrimp (wild)": {
+        "aka": [
+            "prawns (wild)",
+            "wild prawns",
+            "wild shrimp"
+        ],
+        "par": {
+            "crustaceans (wild)": 100
+        }
+    },
+    "simple syrup": {
+        "aka": [
+            "sugar syrup"
+        ],
+        "g": 20,
+        "par": {
+            "cane sugar": 50,
+            "water": 50
+        },
+        "sg": 1.1
+    },
+    "snapper": {
+        "aka": [
+            "red snapper"
+        ],
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "sole": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "sour cream": {
+        "aka": [
+            "creme fraiche",
+            "cr\u00e8me fra\u00eeche"
+        ],
+        "g": 50,
+        "par": {
+            "cream": 100
+        }
+    },
+    "soy sauce": {
+        "g": 15,
+        "par": {
+            "pulses": 20,
+            "water": 80
+        },
+        "sg": 1.0
+    },
+    "soybean oil": {
+        "g": 25,
+        "of": 1.0,
+        "par": {},
+        "sg": 0.9
+    },
+    "soymilk": {
+        "aka": [
+            "soy milk"
+        ],
+        "g": 100,
+        "m": 1.0,
+        "par": {},
+        "sg": 1.02
+    },
+    "squid": {
+        "aka": [
+            "calamari"
+        ],
+        "par": {
+            "cephalopods": 100
+        },
+        "pd": 0.18
+    },
+    "striped bass": {
+        "aka": [
+            "bass",
+            "bass (farmed)",
+            "farmed bass",
+            "farmed striped bass",
+            "striped bass (farmed)"
+        ],
+        "par": {
+            "fish (farmed)": 100
+        }
+    },
+    "sunflower oil": {
+        "g": 25,
+        "of": 1.0,
+        "par": {},
+        "sg": 0.9
+    },
+    "swordfish": {
+        "par": {
+            "pelagic fish >30 cm": 100
+        }
+    },
+    "tea": {
+        "aka": [
+            "brewed tea",
+            "iced tea"
+        ],
+        "g": 227,
+        "par": {
+            "tea leaves": 3.0,
+            "water": 224
+        },
+        "sg": 1.0
+    },
+    "tea leaves": {
+        "caf": 16.5,
+        "g": 3.0,
+        "par": {},
+        "sg": 0.35
+    },
+    "tilapia": {
+        "aka": [
+            "farmed tilapia",
+            "tilapia (farmed)"
+        ],
+        "par": {
+            "fish (farmed)": 100
+        }
+    },
+    "tilapia (wild)": {
+        "aka": [
+            "wild tilapia"
+        ],
+        "par": {
+            "pelagic fish <30 cm": 100
+        }
+    },
+    "tofu": {
+        "g": 100,
+        "par": {},
+        "pd": 0.16,
+        "sg": 1.05
+    },
+    "tomato paste": {
+        "g": 15,
+        "par": {
+            "tomatoes": 666
+        },
+        "sg": 1.13
+    },
+    "tomatoes": {
+        "aka": [
+            "beefsteak tomato",
+            "cherry tomato",
+            "grape tomato",
+            "heirloom tomato",
+            "plum tomato",
+            "roma tomato",
+            "san marzano tomato",
+            "tomatillo",
+            "tomato"
+        ],
+        "fv": 1.0,
+        "g": 100,
+        "par": {},
+        "sg": 1.01,
+        "vars": {
+            "paired": {
+                "tomato": [
+                    "beefsteak",
+                    "cherry",
+                    "grape",
+                    "heirloom",
+                    "plum",
+                    "roma",
+                    "san marzano"
+                ]
+            }
+        }
+    },
+    "trout": {
+        "aka": [
+            "farmed trout",
+            "trout (farmed)"
+        ],
+        "par": {
+            "fish (farmed)": 100
+        }
+    },
+    "tuna": {
+        "aka": [
+            "ahi",
+            "ahi tuna",
+            "bluefin tuna",
+            "skipjack tuna",
+            "tunafish"
+        ],
+        "par": {
+            "pelagic fish >30 cm": 100
+        }
+    },
+    "turbot": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "umbellifers": {
+        "aka": [
+            "chervil",
+            "chervil leaf",
+            "cilantro",
+            "cilantro leaf",
+            "coriander",
+            "coriander leaf",
+            "coriander seed",
+            "cumin",
+            "cumin seed",
+            "dill",
+            "fennel",
+            "fennel bulb",
+            "fennel seed",
+            "lovage"
+        ],
+        "g": 3.8,
+        "par": {
+            "other vegetables": 100
+        },
+        "sg": 0.5
+    },
+    "vanilla": {
+        "aka": [
+            "vanilla bean",
+            "vanilla extract"
+        ],
+        "fv": 1.0,
+        "g": 5.0,
+        "par": {},
+        "sg": 1.0
+    },
+    "vegetable broth": {
+        "g": 250,
+        "par": {
+            "vegetable stock": 20,
+            "water": 80
+        },
+        "sg": 1.0
+    },
+    "vegetable stock": {
+        "g": 250,
+        "par": {
+            "other vegetables": 50,
+            "water": 50
+        },
+        "sg": 1.0
+    },
+    "vinegar": {
+        "aka": [
+            "rice vinegar",
+            "white vinegar"
+        ],
+        "g": 50,
+        "par": {
+            "grain alcohol": 6,
+            "water": 94
+        }
+    },
+    "water": {
+        "aka": [
+            "boiling water",
+            "club soda",
+            "cold water",
+            "hot water",
+            "ice",
+            "ice cube",
+            "ice water",
+            "lukewarm water",
+            "seltzer",
+            "seltzer water",
+            "soda water",
+            "sparkling water",
+            "tap water",
+            "tepid water",
+            "tonic",
+            "tonic water",
+            "warm water"
+        ],
+        "g": 250,
+        "par": {},
+        "sg": 1.0,
+        "vars": {
+            "paired": {
+                "water": [
+                    "boiling",
+                    "cold",
+                    "hot",
+                    "ice",
+                    "lukewarm",
+                    "soda",
+                    "sparkling",
+                    "tap",
+                    "tepid",
+                    "warm"
+                ]
+            },
+            "standalone": {
+                "water": [
+                    "seltzer",
+                    "tonic"
+                ]
+            }
+        }
+    },
+    "wheat & rye (bread)": {
+        "aka": [
+            "grain",
+            "rye",
+            "wheat"
+        ],
+        "ed": 14140,
+        "g": 100,
+        "name": "wheat & rye (bread)",
+        "par": {},
+        "sg": 0.5
+    },
+    "whitefish": {
+        "par": {
+            "demersal fish": 100
+        }
+    },
+    "whiting": {
+        "par": {
+            "pelagic fish <30 cm": 100
+        }
+    },
+    "wine": {
+        "aka": [
+            "dry red wine",
+            "dry white wine",
+            "red wine",
+            "white wine"
+        ],
+        "ed": 3556,
+        "g": 100,
+        "par": {},
+        "sg": 1.01
+    },
+    "wine vinegar": {
+        "aka": [
+            "balsamic",
+            "balsamic vinegar",
+            "red wine vinegar",
+            "sherry vinegar",
+            "white wine vinegar"
+        ],
+        "g": 50,
+        "par": {
+            "wine": 100
+        },
+        "vars": {
+            "paired": {
+                "vinegar": [
+                    "red wine",
+                    "sherry",
+                    "white wine"
+                ]
+            },
+            "standalone": {
+                "vinegar": [
+                    "balsamic"
+                ]
+            }
+        }
+    },
+    "yogurt": {
+        "aka": [
+            "greek yoghurt",
+            "greek yogurt",
+            "yoghurt"
+        ],
+        "g": 100,
+        "par": {
+            "milk": 100
+        }
+    }
+}

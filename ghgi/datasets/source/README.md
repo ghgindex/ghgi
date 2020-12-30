@@ -19,6 +19,8 @@ Most products are known by multiple names, whether because an identical product 
 
 Each entry in the `names` dictionary may also optionally include two different types of modifiers: `dependent` and `independent`. Dependent modifiers are found *only in combination with* the parent name, whereas independent modifiers can appear with or without it. In the context of "apple", "green" is a dependent modifier, but Granny Smith is independent. By default the variant **precedes** the main name; for trailing modifiers, prefix the name with an underscore. To remove the space, preface the variant with a `.`, which can be combined with `_` to add a trailing space-less modifier.
 
+In some cases, names are duplicated: most notably in the case of wild vs farmed seafood. In this case the predominant form of the product will take its generic name, e.g. "trout", and the less common form will only be identified explicitly, e.g "wild trout". To facilitate this, base names may be prefaced with `~` to indicate that they are **not** standalone.
+
 For a `names` entry with no further variants, simply set its value to an empty dictionary `{}`.
 
 Finally, do not worry about possible duplication; the script that generates the master database from the source file ensures that all names are uniqued within a product, and that the resulting names are unique across all products.

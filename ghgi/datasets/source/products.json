@@ -35,12 +35,12 @@
         "names": {
             "apple cider": {
                 "dependent": [
-                    "vinegar"
+                    "_vinegar"
                 ]
             },
             "cider": {
                 "dependent": [
-                    "vinegar"
+                    "_vinegar"
                 ]
             }
         }
@@ -49,7 +49,7 @@
         "names": {
             "apple": {
                 "dependent": [
-                    "sauce",
+                    "_sauce",
                     "fuji",
                     "gala",
                     "tart",
@@ -172,7 +172,7 @@
             },
             "beef": {
                 "dependent": [
-                    "shank",
+                    "_shank",
                     "_brisket",
                     "_chuck"
                 ],
@@ -259,9 +259,8 @@
                     "_(farmed)"
                 ]
             },
-            "scallop": {
+            "~scallop": {
                 "dependent": [
-                    "bay",
                     "farmed",
                     "_(farmed)"
                 ]
@@ -291,7 +290,7 @@
             "broccolini": {},
             "brussels": {
                 "dependent": [
-                    "sprout"
+                    "_sprout"
                 ]
             },
             "cabbage": {
@@ -333,7 +332,9 @@
                     "country",
                     "crusty",
                     "loaf",
+                    "_loaf",
                     "loaves",
+                    "_loaves",
                     "white",
                     "whole wheat"
                 ],
@@ -668,7 +669,7 @@
                     "_(farmed)"
                 ]
             },
-            "crab": {
+            "~crab": {
                 "dependent": [
                     "farmed",
                     "_(farmed)"
@@ -748,12 +749,7 @@
                     "farmed"
                 ]
             },
-            "steelhead": {},
-            "trout": {
-                "dependent": [
-                    "farmed"
-                ]
-            }
+            "steelhead": {}
         }
     },
     "fish broth": {
@@ -825,7 +821,7 @@
             "ginger": {
                 "dependent": [
                     "candied",
-                    "root"
+                    "_root"
                 ]
             }
         }
@@ -1284,7 +1280,7 @@
         "super": {},
         "sg": 1.0,
         "names": {
-            "bean": {
+            "~bean": {
                 "dependent": [
                     "fresh",
                     "green",
@@ -1348,7 +1344,7 @@
                 ]
             },
             "okra": {},
-            "pepper": {
+            "~pepper": {
                 "dependent": [
                     "chili",
                     "green",
@@ -1427,7 +1423,7 @@
             },
             "flat leaf parsley": {
                 "dependent": [
-                    "leaf"
+                    "_leaf"
                 ]
             }
         },
@@ -1460,16 +1456,11 @@
                     "tagliatelle"
                 ]
             },
-            "lasagne": {
-                "independent": [
-                    "noodle",
-                    "pasta"
-                ]
-            },
-            "lasagna": {
-                "independent": [
-                    "noodle",
-                    "pasta"
+            "noodle": {
+                "dependent": [
+                    "pasta",
+                    "lasagna",
+                    "lasagne"
                 ]
             }
         }
@@ -1501,8 +1492,9 @@
         "pd": 0.215,
         "sg": 1.0,
         "names": {
-            "pea": {
+            "~pea": {
                 "dependent": [
+                    "frozen",
                     "green",
                     "snow",
                     "snap",
@@ -1624,7 +1616,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "cornish game hen": {
@@ -1634,7 +1632,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "cornish hen": {
@@ -1644,7 +1648,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "duck": {
@@ -1654,7 +1664,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "game hen": {
@@ -1664,7 +1680,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "goose": {
@@ -1674,7 +1696,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "grouse": {
@@ -1684,7 +1712,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "pheasant": {
@@ -1694,7 +1728,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "quail": {
@@ -1704,7 +1744,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             },
             "turkey": {
@@ -1714,7 +1760,13 @@
                     "leg",
                     "liver",
                     "thigh",
-                    "wing"
+                    "wing",
+                    "_breast",
+                    "_giblet",
+                    "_leg",
+                    "_liver",
+                    "_thigh",
+                    "_wing"
                 ]
             }
         }
@@ -1832,7 +1884,7 @@
         "names": {
             "ricotta": {
                 "dependent": [
-                    "cheese"
+                    "_cheese"
                 ]
             }
         }
@@ -1920,6 +1972,7 @@
         "names": {
             "scallop": {
                 "dependent": [
+                    "bay",
                     "wild",
                     "_(wild)"
                 ]
@@ -2199,8 +2252,8 @@
         "names": {
             "vanilla": {
                 "dependent": [
-                    "bean",
-                    "extract"
+                    "_bean",
+                    "_extract"
                 ]
             }
         }
@@ -2327,9 +2380,7 @@
                     "white"
                 ]
             },
-            "sherry": {
-                "_vinegar": {}
-            }
+            "sherry vinegar": {}
         }
     },
     "yogurt": {
