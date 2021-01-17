@@ -1,7 +1,7 @@
 # Greenhouse Gas Index
 [![](https://img.shields.io/badge/license-CC--BY--SA%204.0-blue)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-The Greenhouse Gas Index is a database of primary food products and their GHG impacts, and [Python APIs](#python-apis) for accessing that data. The data is also made available in JSON format for use in languages other than Python.
+The Greenhouse Gas Index is a database of primary food products and their GHG impacts, and [Python APIs](#python-apis) for accessing that data. The raw data is also available in JSON format for use in languages other than Python.
 
 The database is built and maintained by [The Greenhouse Gas Index Organization (GHGI)](https://ghgi.org), a not-for-profit organization whose mission is to reduce GHG emissions by driving individual behaviour change through increased awareness of the climate impact of our everyday choices. Derived from the most current peer-reviewed science, GHGI makes it simple for consumers to understand the climate impact of what they eat.
 
@@ -18,6 +18,9 @@ The database contains three primary datasets:
 * [References](#references) includes the data sources cited by Origins
 
 All units in the datasets are metric.
+
+### In-memory Database
+Because the dataset is quite small, and almost entirely read-only, it is packaged inline with the code base and meant to be served from memory, resulting in a highly performant service. There may come a point where the dataset becomes sufficiently large that populating a standalone database will be preferable, or at least desirable in some cases; we'll cross that bridge when we get to it.
 
 ### [Products](#products)
 Products is a JSON collection of product names and data values as follows:
@@ -62,13 +65,13 @@ The data values themselves JSON collections structured as:
   "aliases": [str, str, ...], # other names for the product (generated from the `names` struct)
 
   # Food composition values
-  "of": float, # (optional) % of product that is an oil fat
-  "m": float, # (optional) % of product that is a milk
-  "r": float, # (optional) % of product that is a root vegetable
-  "fv": float, # (optional) % of product that is a fruit or vegetable
-  "s": float, # (optional) % of product that is a sugar
   "caf" float, # (optional) % of product that is a caffeine
   "coc" float, # (optional) % of product that is a cocoa
+  "fv": float, # (optional) % of product that is a fruit or vegetable
+  "of": float, # (optional) % of product that is an oil fat
+  "m": float, # (optional) % of product that is a milk or milk substitute
+  "r": float, # (optional) % of product that is a root vegetable
+  "s": float, # (optional) % of product that is a sugar
 }
 ```
 
@@ -127,6 +130,8 @@ Each origin's information is a JSON collection of products available from that o
 ```
 
 Currently, for most products, we use the global origin as it has the most data available. While not yet implemented, Origins has been designed to allow for individual producers and regions as origins.
+
+Further information about Origins is available [here](ghgi/datasets/master/origins)
 
 ### [References](#references)
 References are a JSON collection whose keys are reference IDs whose values include pertinent metadata for that reference:
