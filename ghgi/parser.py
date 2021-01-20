@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-from datetime import datetime
 import json
 import re
-import threading
-import socket
 import logging
 import inflect
 p = inflect.engine()

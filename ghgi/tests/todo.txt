@@ -1,0 +1,30 @@
+Testing TODOs
+
+    Products
+        Data validation:
+            √ every entry either has a super or at least one valid Category value
+            √ every root (i.e. super-less) entry has values for g, sg
+        Functions:
+            √ .g function
+            √ .sg function
+            √ lookup function
+            √ mass function
+            √ food_values function
+
+            The loss and aggregation functions work
+
+    Origins
+        √ every origin entry is keyed to a canonical global name, links to a valid source id, and has a list of 4 data values
+        √ the super for every origin exists
+
+    Trigram:
+        Functions:
+            √ trigrams()
+            √ build_indexes()
+            √ match()
+            √ product_index(), aka_index() load w/o error
+
+    Parser:
+        Functions:
+            √ amounts() -> various ingredient inputs/output tuples return correctly
+    

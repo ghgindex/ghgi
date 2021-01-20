@@ -131,7 +131,7 @@ Each origin's information is a JSON collection of products available from that o
 
 Currently, for most products, we use the global origin as it has the most data available. While not yet implemented, Origins has been designed to allow for individual producers and regions as origins.
 
-Further information about Origins is available [here](ghgi/datasets/master/origins)
+Further information about Origins is available [here](ghgi/datasets/master/origins).
 
 ### [References](#references)
 References are a JSON collection whose keys are reference IDs whose values include pertinent metadata for that reference:

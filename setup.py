@@ -8,4 +8,6 @@ setup(name='ghgi',
       author_email='geoff@ghgi.org',
       license='CCv4-BY-SA',
       packages=['ghgi'],
+      test_suite='nose.collector',
+      tests_require=['nose', 'inflect'],
       zip_safe=False)

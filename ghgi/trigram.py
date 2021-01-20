@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import json
 import collections
-from datasets import MASTER_TRIGRAM_INDEX, MASTER_AKA_INDEX
+from .datasets import MASTER_TRIGRAM_INDEX, MASTER_AKA_INDEX
 
 class Trigram:
     # TODO: make these dicts of lazily loaded sub-indexes keyed by locales
@@ -66,7 +66,7 @@ def build_indexes(product_file):
     aka_index = {}
     products = json.load(product_file)
     for name in products:
-        if name.startswith('_comment'):
+        if name.startswith('_'):
             continue
         name_trigrams = Trigram.trigrams(name)
         aka_index[name] = (name, len(name_trigrams))
