@@ -1,0 +1,44 @@
+ghgindex/ghgi
+
+/dataset (generated vs raw data)
+    /localizations
+        /en-us
+            tokens.json
+            trigrams.json (generated)
+            aliases.json (generated)
+            
+    /master
+        products.json
+        sources.json -> references.json
+        origins.json
+
+    /source
+        -> raw json data from which json products file is compiled
+        products.json
+        sources.json -> references.json
+        origins.json
+
+/scripts
+    generate.py
+        references and origins are not localized
+        takes the source products.json, builds it out, sorts, checks for uniqueness
+        puts a `tokens` file into localizations, which is the list of expanded names to translate
+        goes through the folders in localizations and generates indexes for them
+            local_trigram -> aliases -> master_parent
+    clean.py
+    convert.py
+    index.py
+
+/nyt-data
+    √ done
+
+trigram.py
+product.py
+explorer.py
+README.md
+LICENSE.md
+
+Raw data: products, origings, references
+    -> compiled into full .json files
+    clean.py
+    index.py -> generate trigram index for aliases, aka indexes for aliases

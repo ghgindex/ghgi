@@ -1,0 +1,11 @@
+Tests
+Organize docs
+
+
+Then, figure out index generation w/r/t localization
+
+be more consistent about singularizing terms
+
+√ generate the full products.json file from the new product master and compare to the old one
+remove sanity and products_original once happy
+is this done? ^
