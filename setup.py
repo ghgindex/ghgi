@@ -10,4 +10,5 @@ setup(name='ghgi',
       packages=['ghgi'],
       test_suite='nose.collector',
       tests_require=['nose', 'inflect'],
+      install_requires=['inflect'],
       zip_safe=False)
