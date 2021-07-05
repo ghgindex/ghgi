@@ -169,8 +169,8 @@ class Product:
         """
         qtys = ingredient[Ingredient.QTYS][0]
         product = ingredient[Ingredient.PRODUCT]
-        qty = qtys[Ingredient.QTY]
-        unit = qtys[Ingredient.UNIT]
+        qty = qtys[Ingredient.QTY][0]
+        unit = qtys[Ingredient.UNIT][0]
         sg = Product.sg(product)
         if unit == Ingredient.EA:
             qty *= Product.g(product)
@@ -252,7 +252,7 @@ class Product:
     @staticmethod
     def ghg_efficiencies(product, origin):
         """ return ghg_mean emission per Category """
-        ghg_mass_mean = Product.ghg_value(Origin.GHG_MEAN, product, origin)
+        ghg_mass_mean = Product.ghg_value(product, origin, GHGFlavor.MEAN)
         if not ghg_mass_mean:
             return {}
         return {cat: (value[0]/ghg_mass_mean, value[1]) for cat, value in Product.food_values(product).items()}
@@ -261,10 +261,16 @@ class Product:
     def impact(ingredient, origin=Origin.DEFAULT):
         if ingredient.get('error') or (ingredient.get(Ingredient.PRODUCT) is None):
             return 0.0
+        print('getting mass for {}'.format(ingredient))
         mass = Product.mass(ingredient)
         ingredient[Product.MASS] = mass
+        print('have mass ({}) getting ghg_mean'.format(mass))
         ghg_mean = Product.ghg_value(
-            Origin.GHG_MEAN, ingredient[Ingredient.PRODUCT], origin)
+            ingredient[Ingredient.PRODUCT],
+            origin, GHGFlavor.MEAN
+        )
+        print('have ghg_mean: {}'.format(ghg_mean))
         result = round(ghg_mean * mass, 2) if ghg_mean else None
         ingredient['impact'] = result
+        print('returning result: {}'.format(result))
         return result

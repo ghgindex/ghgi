@@ -2,9 +2,9 @@
 import json
 
 
-from trigram import build_indexes
-from datasets import SOURCE_PRODUCTS
-from datasets import MASTER_PRODUCTS, MASTER_AKA_INDEX, MASTER_TRIGRAM_INDEX
+from .trigram import build_indexes
+from .datasets import SOURCE_PRODUCTS
+from .datasets import MASTER_PRODUCTS, MASTER_AKA_INDEX, MASTER_TRIGRAM_INDEX
 
 def extend_products(infile, outfile):
     products = json.load(infile)

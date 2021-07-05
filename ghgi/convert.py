@@ -32,6 +32,7 @@ class Convert:
     
     @classmethod
     def to_metric(cls, quantity, unit, specific_gravity):
+        print('Convert.to_metric: {} , {}, {}'.format(quantity, unit, specific_gravity))
         if unit in cls.VOLUME:
             quantity *= cls.VOLUME[unit]
             if specific_gravity:
@@ -40,4 +41,5 @@ class Convert:
             quantity *= cls.MASS[unit]
         elif unit in cls.ENERGY:
             quantity *= cls.ENERGY[unit]
+        print('Convert.to_metric: {} , {}, {}'.format(quantity, unit, specific_gravity))
         return quantity
