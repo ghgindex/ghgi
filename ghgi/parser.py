@@ -181,8 +181,6 @@ def quantify(match):
                 except ValueError:
                     continue
     result['qty'] = total if quantified else 1
-    result['unit'] = (result['unit'], 1.0)
-    result['qty'] = (result['qty'], 1.0)
     return result
 
 
@@ -212,12 +210,11 @@ def names_mods(text):
 def amounts(text_entry):
     """Given a text entry, return a dictionary of form
     {
-        'qtys': [{'qty':(float, float), 'unit':(str, float)},...],
+        'qtys': [{'qty':float, 'unit':str},...],
         'names': [str],
         'mods': [str],
     }
     This uses a set of regexes to extract amount features from the text.
-    The dictionary values are tuples of (value, confidence).
     If no `text_entry` is provided, return {'error': True}
     """
     if not text_entry:
@@ -247,7 +244,7 @@ def amounts(text_entry):
         else:
             remainder, mods = names_mods(singularized_entry)
             return {
-                'qtys': [{'qty': (1, 1.0), 'unit': ('ea', 1.0)}],
+                'qtys': [{'qty': 1, 'unit': 'ea'}],
                 'names': remainder,
                 'mods': mods
             }

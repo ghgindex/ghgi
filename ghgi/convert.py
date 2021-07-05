@@ -5,14 +5,14 @@ class Convert:
         'joule': 1.0,
     }
 
-    MASS = {
+    MASS = { # to grams
         'kg': 1000.0,
         'pound': 453.592,
         'ounce': 28.3495,
         'g': 1.0,
     }
 
-    VOLUME = {
+    VOLUME = { # to milliliters
         'gallon': 3785.41,
         'l': 1000.0,
         'quart': 946.353,
@@ -32,7 +32,6 @@ class Convert:
     
     @classmethod
     def to_metric(cls, quantity, unit, specific_gravity):
-        print('Convert.to_metric: {} , {}, {}'.format(quantity, unit, specific_gravity))
         if unit in cls.VOLUME:
             quantity *= cls.VOLUME[unit]
             if specific_gravity:
@@ -41,5 +40,4 @@ class Convert:
             quantity *= cls.MASS[unit]
         elif unit in cls.ENERGY:
             quantity *= cls.ENERGY[unit]
-        print('Convert.to_metric: {} , {}, {}'.format(quantity, unit, specific_gravity))
         return quantity
