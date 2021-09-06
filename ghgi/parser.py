@@ -49,7 +49,7 @@ UNITS = {
 STOPWORDS = {'had', 'few', 'under', 'on', 'an', 'its', 'why', 'were', 'all', 'doing', 'while', 'how', 'don', 'same', 'is', 'because', 'him', 'ourselves', 'off', 'herself', 'has', 'into', 'd', 'out', 'he', 'against', 'themselves', 'wouldn', 'theirs', 'be', 'above', 'each', 'up', 'own', 'are', 'when', 'through', 'will', 'by', 'our', 'who', 'between', 'so', 'ain', 'this', 'than', 'aren', 'them', 'not', 'wasn', 'your', 'these', 'himself', 'of', 'down', 'won', 'for', 'only', 'as', 'myself', 'both', 'yours', 'during', 'you', 'too', 'where', 's', 'hadn', 'about', 'and', 'been', 'very', 'do', 'in', 'at',
              'over', 'most', 'o', 'that', 'was', 'again', 'further', 'couldn', 'having', 'hasn', 'mightn', 'me', 'to', 'no', 'her', 'hers', 'ours', 'haven', 'my', 'it', 'nor', 'those', 'she', 'what', 'a', 're', 'but', 'just', 'once', 'whom', 'from', 'am', 'below', 'mustn', 'ma', 've', 'or', 'the', 'more', 'll', 'didn', 'needn', 'then', 'isn', 'should', 'his', 'before', 'doesn', 'm', 'did', 'yourself', 'other', 'yourselves', 'can', 'itself', 'any', 'being', 'i', 'here', 'some', 'which', 'we', 'such', 'there', 'weren', 'if', 'now', 'shan', 'after', 'they', 'shouldn', 'have', 'their', 'y', 'does', 'until'}
 STOPWORDS |= {
-    '',
+    '', # why is this here?
     'amount',
     'baby',
     'coarse',
@@ -215,8 +215,10 @@ def amounts(text_entry):
         'mods': [str],
     }
     This uses a set of regexes to extract amount features from the text.
+
     If no `text_entry` is provided, return {'error': True}
     """
+
     if not text_entry:
         return {'error': True}
     cleaned_text = []
