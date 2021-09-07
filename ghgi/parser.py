@@ -7,6 +7,11 @@ p = inflect.engine()
 
 logging.basicConfig(level=logging.INFO)
 
+MODS = 'mods'
+QTYS = 'qtys'
+NAMES = 'names'
+STRIPPED_WORDS = 'stripped_words'
+
 UNITS = {
     'ml': 'ml',
     'milliliter': 'ml',
@@ -40,6 +45,7 @@ UNITS = {
     'pinch': 'pinch',
     'handful': 'handful',
     'fistful': 'fistful',
+    'slice': 'ea',
     'smidgen': 'smidgen',
     'stalk': 'ea',
     'sprig': 'ea',
@@ -49,7 +55,7 @@ UNITS = {
 STOPWORDS = {'had', 'few', 'under', 'on', 'an', 'its', 'why', 'were', 'all', 'doing', 'while', 'how', 'don', 'same', 'is', 'because', 'him', 'ourselves', 'off', 'herself', 'has', 'into', 'd', 'out', 'he', 'against', 'themselves', 'wouldn', 'theirs', 'be', 'above', 'each', 'up', 'own', 'are', 'when', 'through', 'will', 'by', 'our', 'who', 'between', 'so', 'ain', 'this', 'than', 'aren', 'them', 'not', 'wasn', 'your', 'these', 'himself', 'of', 'down', 'won', 'for', 'only', 'as', 'myself', 'both', 'yours', 'during', 'you', 'too', 'where', 's', 'hadn', 'about', 'and', 'been', 'very', 'do', 'in', 'at',
              'over', 'most', 'o', 'that', 'was', 'again', 'further', 'couldn', 'having', 'hasn', 'mightn', 'me', 'to', 'no', 'her', 'hers', 'ours', 'haven', 'my', 'it', 'nor', 'those', 'she', 'what', 'a', 're', 'but', 'just', 'once', 'whom', 'from', 'am', 'below', 'mustn', 'ma', 've', 'or', 'the', 'more', 'll', 'didn', 'needn', 'then', 'isn', 'should', 'his', 'before', 'doesn', 'm', 'did', 'yourself', 'other', 'yourselves', 'can', 'itself', 'any', 'being', 'i', 'here', 'some', 'which', 'we', 'such', 'there', 'weren', 'if', 'now', 'shan', 'after', 'they', 'shouldn', 'have', 'their', 'y', 'does', 'until'}
 STOPWORDS |= {
-    '', # why is this here?
+    '',  # why is this here?
     'amount',
     'baby',
     'coarse',
@@ -67,6 +73,7 @@ STOPWORDS |= {
     'fresh',
     'freshly',
     'frozen',
+    'garnish',
     'halved',
     'halves',
     'hulled',
@@ -76,6 +83,7 @@ STOPWORDS |= {
     'large',
     'least',
     'medium',
+    'mild',
     'optional',
     'peeled',
     'picked',
@@ -84,10 +92,11 @@ STOPWORDS |= {
     'quartered',
     'ripe',
     'room',
-    'temperature',
+    'serving',
     'small',
     'stemmed',
     'taste',
+    'temperature',
     'thinly',
     'trimmed',
     'unsalted',
@@ -109,6 +118,7 @@ NO_SINGULAR = {
 }
 
 PREP_MODS = {  # try to suss out preps that (might) affect density
+    'boneless',
     'chopped',
     'crushed',
     'dice',
@@ -120,11 +130,38 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'puree',
     'pureed',
     'sifted',
+    'skin-on',
+    'skinless',
+    'skinned',
     'sliced',
     'smoked',
     'squeezed',
     'whisked',
 }
+
+VULGAR_FRACTIONS = {
+    u'\u00bc': '1/4',  # ¼
+    u'\u00bd': '1/2',  # ½
+    u'\u00be': '3/4',  # ¾
+    u'\u2150': '1/7',  # ⅐
+    u'\u2151': '1/9',  # ...
+    u'\u2152': '1/10',
+    u'\u2153': '1/3',
+    u'\u2154': '2/3',
+    u'\u2155': '1/5',
+    u'\u2156': '2/5',
+    u'\u2157': '3/5',
+    u'\u2158': '4/5',
+    u'\u2159': '1/6',
+    u'\u215a': '5/6',
+    u'\u215b': '1/8',
+    u'\u215c': '3/8',
+    u'\u215d': '5/8',
+    u'\u215e': '7/8',
+    u'\u215f': '',
+    u'\u2189': '',
+}
+
 unit_labels = []
 for i, unit in enumerate(UNITS):
     caps = ''
@@ -148,6 +185,7 @@ right_parenthesis = re.compile(r'\)')
 
 
 def no_singular(word):
+    """ Identify words that should not be singularized even though they end in `s` """
     return (
         word.endswith('ss') or
         word in NO_SINGULAR or
@@ -222,19 +260,46 @@ def amounts(text_entry):
     if not text_entry:
         return {'error': True}
     cleaned_text = []
+    stripped_words = []
+
+    # add leading/trailing spaces to parentheticals
     text_entry = re.sub(left_parenthesis, '( ', text_entry)
     text_entry = re.sub(right_parenthesis, ' )', text_entry)
+
+    # expand unicode vulgar fractions, prepending a space
+    for k, v in VULGAR_FRACTIONS.items():
+        text_entry.replace(k, ' ' + v)
+
+    """ 
+    Add space on either side of non-fraction slashes, e.g.
+        this/that -> this / that
+        this/4 -> this / 4
+        4/this -> 4 / this
+        1/4 -> 1/4
+    """
+    # text_entry = re.sub(r'(\D)/(\w)', '\g<1> / \g<2>', text_entry)
+    # text_entry = re.sub(r'(\w)/(\D)', '\g<1> / \g<2>', text_entry)
+    text_entry = re.sub(r'(\D)/(\w)', '\g<1> \g<2>', text_entry)
+    text_entry = re.sub(r'(\w)/(\D)', '\g<1> \g<2>', text_entry)
+
     # singularize all nouns; preserve casing for units parsing
+    print(text_entry.split(' '))
+
     for word in text_entry.split(' '):
         if not word:
             continue  # multiple space
         if word.lower().strip(',') in STOPWORDS:
+            stripped_words += [word.lower()]
             continue
         if no_singular(word.lower()):
-            singular = word
+            cleaned_text += [word]
+        elif not p.singular_noun(word):
+            cleaned_text += [word]
         else:
-            singular = p.singular_noun(word)
-        cleaned_text += [singular] if singular else [word]
+            cleaned_text += [p.singular_noun(word)]
+
+    print('cleaned_text', cleaned_text)
+
     singularized_entry = ' '.join(cleaned_text)
     matches = re.findall(units_regex_2, singularized_entry)
     start_unit = False
@@ -246,9 +311,10 @@ def amounts(text_entry):
         else:
             remainder, mods = names_mods(singularized_entry)
             return {
-                'qtys': [{'qty': 1, 'unit': 'ea'}],
-                'names': remainder,
-                'mods': mods
+                QTYS: [{'qty': 1, 'unit': 'ea'}],
+                NAMES: remainder,
+                MODS: mods,
+                STRIPPED_WORDS: stripped_words,
             }
 
     qtys = [quantify(m) for m in matches]
@@ -260,7 +326,8 @@ def amounts(text_entry):
 
     remainder, mods = names_mods(remainder)
     return {
-        'qtys': qtys,
-        'names': remainder,
-        'mods': mods,
+        QTYS: qtys,
+        NAMES: remainder,
+        MODS: mods,
+        STRIPPED_WORDS: stripped_words,
     }
