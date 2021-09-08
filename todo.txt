@@ -1,3 +1,6 @@
+`to` and `or` might need some consideration, as they get used a lot in ways that might be helpful
+e.g. Number to Number means a range, and we should pick that up and use the midpoint
+
 Tests
 Organize docs
 

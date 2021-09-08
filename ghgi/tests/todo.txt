@@ -27,4 +27,14 @@ Testing TODOs
     Parser:
         Functions:
             √ amounts() -> various ingredient inputs/output tuples return correctly
+            commas, what do we do?
+                post-space commas except if numbers on both sides: any text like
+                    'x,w' -> 'x, w'
+                    '1,w' -> '1, w'
+                    'w,1' -> 'w, 1'
+                    '1,2' -> '1,2'
+            test the quantifier!
+
+            What about names that include stopwords? e.g. "After Eights" or something like that?
+                Leave this alone for now, but we might want to flag these to exclude from stopword removal
     

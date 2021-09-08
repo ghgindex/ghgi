@@ -1,3 +1,5 @@
+.eggs
+.DS_Store
 ghgi.egg-info/
 env/
 __pycache__

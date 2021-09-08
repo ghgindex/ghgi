@@ -222,7 +222,7 @@ class Product:
         return values
 
     @staticmethod
-    def ghg_efficiency_ratio(product, origin):
+    def ghg_efficiency_ratio(product, origin=Origin.DEFAULT):
         # For a single-category item, return the ratio between this one's
         # efficiency in that category and the baseline.
         if product is None:
