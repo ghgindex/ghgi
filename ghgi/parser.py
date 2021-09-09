@@ -334,15 +334,13 @@ def clean(text):
     cleaned_words = []
 
     for word in text.split(' '):
-        if not word:
-            continue  # multiple space
+        if (not word) or word.isspace():
+            continue  # multiple space or whitespace
         try:
             p.singular_noun(word)
         except Exception as err:
             logging.error(
                 'Unable to singular_noun with word {}'.format(word))
-            for ch in word:
-                logging.error('char: {}'.format(chr(ch)))
             raise err
         if word.lower().strip(',') in STOPWORDS:
             stripped_words += [word.lower()]
