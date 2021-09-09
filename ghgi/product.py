@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from collections import defaultdict
 from enum import Enum
+from ghgi.parser import pad_punctuation
 import json
 import copy
 from .datasets import MASTER_PRODUCTS
@@ -149,7 +150,12 @@ class Product:
         # their parents' `sg` and `g` values to inherit only their ghg values.
         sg = product.get(Product.SG)
         if (not sg) and product.get(Product.PARENTS):
-            return sum([Product.sg(Product.get(parent)) * percentage/100.0 for parent, percentage in product[Product.PARENTS].items()])
+            sg = 0
+            for parent, percentage in product[Product.PARENTS].items():
+                par_sg = Product.sg(Product.get(parent))
+                if par_sg:
+                    sg += par_sg * percentage/100.0
+
         return sg
 
     @staticmethod
