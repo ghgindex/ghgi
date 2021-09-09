@@ -137,6 +137,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'chopped',
     'creamed',
     'crosswise',
+    'crumbled',
     'crushed',
     'dice',
     'diced',
@@ -335,6 +336,12 @@ def clean(text):
     for word in text.split(' '):
         if not word:
             continue  # multiple space
+        try:
+            p.singular_noun(word)
+        except Exception as err:
+            logging.error(
+                'Unable to singular_noun with word `{}`'.format(word))
+            raise err
         if word.lower().strip(',') in STOPWORDS:
             stripped_words += [word.lower()]
             continue
