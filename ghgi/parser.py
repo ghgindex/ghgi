@@ -341,6 +341,8 @@ def clean(text):
         except Exception as err:
             logging.error(
                 'Unable to singular_noun with word {}'.format(word))
+            for ch in word:
+                print('unicode is {}'.format(ord(ch)))
             raise err
         if word.lower().strip(',') in STOPWORDS:
             stripped_words += [word.lower()]
