@@ -340,7 +340,9 @@ def clean(text):
             p.singular_noun(word)
         except Exception as err:
             logging.error(
-                'Unable to singular_noun with word `{}`'.format(word))
+                'Unable to singular_noun with word {}'.format(word))
+            for ch in word:
+                logging.error('char: {}'.format(chr(ch)))
             raise err
         if word.lower().strip(',') in STOPWORDS:
             stripped_words += [word.lower()]
