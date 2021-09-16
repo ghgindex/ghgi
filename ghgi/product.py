@@ -25,6 +25,7 @@ class Category(Enum):
 class Ingredient:
     QTYS = 'qtys'
     QTY = 'qty'
+    QUALIFIERS = 'qualifiers'
     UNIT = 'unit'
     PRODUCT = 'product'
     EA = 'ea'
@@ -172,14 +173,50 @@ class Product:
         """Return the mass in grams of the ingredient product.
         The ingredient should include a value under 'product' which is its
         looked-up product entry.
+
+        TODO: This gets a bit tricky for things like cans, bunches, and sprigs, which
+        are essentially different sizes of `ea`. In addition to the default 
+        "g" value, I think we need to add something optional like `single_g`,
+        `agg_g` and introduce new units `single`, `agg` which would be used
+        to mask thinks like `sprig`, `bunch`, and so forth.
+
+        Ingredients can have multiple quantity values. `ea` values are notably
+        tricky. If we get one, we first check if there is a non-ea unit
+        qualifier, in which case we can multiply its value by the `ea` count
+        and generate a combined value in the qualifier's units. For instance,
+        if we have 2 `ea` of something qualified as 3 `pounds`, the `qty` becomes
+        2*3 = 6, and the unit goes from `ea` to `pounds`.
+
+        TODO: we assume that qualifiers are per each, NOT total, and we 
+        likewise assume that subsequent quantities per each. The parser should
+        flag this explicitly.
         """
-        qtys = ingredient[Ingredient.QTYS][0]
         product = ingredient[Ingredient.PRODUCT]
+        sg = Product.sg(product)
+        qtys = ingredient[Ingredient.QTYS][0]
         qty = qtys[Ingredient.QTY]
         unit = qtys[Ingredient.UNIT]
-        sg = Product.sg(product)
+        if unit != Ingredient.EA:
+            return Convert.to_metric(qty, unit, sg)
+
+        # see if there is clarification available for the `ea` value
+        for qual in qtys.get(Ingredient.QUALIFIERS, []):
+            if qual[Ingredient.UNIT] != Ingredient.EA:
+                unit = qual[Ingredient.UNIT]
+                qty = qty * qual[Ingredient.QTY]
+                return Convert.to_metric(qty, unit, sg)
+
+        # if there was no clarification in the qualifiers, see if a
+        # subsequent quantity offers any help
+        for sub in ingredient[Ingredient.QTYS][1:]:
+            if sub[Ingredient.UNIT] != Ingredient.EA:
+                unit = sub[Ingredient.UNIT]
+                qty = qty * sub[Ingredient.QTY]
+                return Convert.to_metric(qty, unit, sg)
+
         if unit == Ingredient.EA:
             qty *= Product.g(product)
+
         return Convert.to_metric(qty, unit, sg)
 
     @staticmethod

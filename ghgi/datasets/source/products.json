@@ -357,7 +357,6 @@
         "names": {
             "butter": {
                 "dependent": [
-                    "salted",
                     "sweet",
                     "unsalted"
                 ]
@@ -1525,7 +1524,6 @@
                 "dependent": [
                     "aleppo",
                     "black",
-                    "freshly black",
                     "white"
                 ]
             },
@@ -1939,7 +1937,6 @@
             "fleur de sel": {},
             "salt": {
                 "dependent": [
-                    "coarse",
                     "kosher",
                     "sea",
                     "table"
@@ -2308,7 +2305,6 @@
             "water": {
                 "dependent": [
                     "boiling",
-                    "cold",
                     "hot",
                     "ice",
                     "lukewarm",

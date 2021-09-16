@@ -45,7 +45,8 @@ class TestProduct(TestCase):
         ingredient = {
             Ingredient.QTYS: [{
                 Ingredient.QTY: 2,
-                Ingredient.UNIT: 'ea'
+                Ingredient.UNIT: 'ea',
+                Ingredient.QUALIFIERS: [],
             }],
             Ingredient.PRODUCT: product
         }
@@ -56,6 +57,59 @@ class TestProduct(TestCase):
         ingredient[Ingredient.QTYS][0] = {
             Ingredient.QTY: 110, Ingredient.UNIT: 'g'}
         self.assertEqual(Product.mass(ingredient), 110)
+
+    def test_qualifiers(self):
+        product = {
+            'ed': 1000,
+            'g': 100,
+            'sg': 2.0,
+            'name': 'test'
+        }
+        ingredient = {
+            Ingredient.QTYS: [{
+                Ingredient.QTY: 2,
+                Ingredient.UNIT: 'ea',
+                Ingredient.QUALIFIERS: [{
+                    Ingredient.QTY: 512,
+                    Ingredient.UNIT: 'g'
+                }],
+            }],
+            Ingredient.PRODUCT: product
+        }
+        self.assertEqual(Product.mass(ingredient), 1024)
+
+        ingredient = {
+            Ingredient.QTYS: [{
+                Ingredient.QTY: 2,
+                Ingredient.UNIT: 'ea',
+                Ingredient.QUALIFIERS: [{
+                    Ingredient.QTY: 4,
+                    Ingredient.UNIT: 'ea'
+                }],
+            }],
+            Ingredient.PRODUCT: product
+        }
+        self.assertEqual(Product.mass(ingredient), 200)
+
+        ingredient = {
+            Ingredient.QTYS: [{
+                Ingredient.QTY: 2,
+                Ingredient.UNIT: 'ea',
+                Ingredient.QUALIFIERS: [{
+                    Ingredient.QTY: 4,
+                    Ingredient.UNIT: 'ea'
+                }],
+            }, {
+                Ingredient.QTY: 232,
+                Ingredient.UNIT: 'g',
+                Ingredient.QUALIFIERS: [{
+                    Ingredient.QTY: 4,
+                    Ingredient.UNIT: 'ea'
+                }],
+            }],
+            Ingredient.PRODUCT: product
+        }
+        self.assertEqual(Product.mass(ingredient), 464)
 
     def test_food_value(self):
         product = {'ed': 1000}

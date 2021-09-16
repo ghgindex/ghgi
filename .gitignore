@@ -1,3 +1,4 @@
+.tox/
 .eggs
 .DS_Store
 ghgi.egg-info/

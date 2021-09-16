@@ -49,11 +49,32 @@ UNITS = {
     'smidgen': 'smidgen',
     'stalk': 'ea',
     'sprig': 'ea',
+    'can': 'ea',
+    'tin': 'ea',
+    'jar': 'ea',
 }
 
-# nltk base set (english) with 't', 'with' removed
-STOPWORDS = {'had', 'few', 'under', 'on', 'an', 'its', 'why', 'were', 'all', 'doing', 'while', 'how', 'don', 'same', 'is', 'because', 'him', 'ourselves', 'off', 'herself', 'has', 'into', 'd', 'out', 'he', 'against', 'themselves', 'wouldn', 'theirs', 'be', 'above', 'each', 'up', 'own', 'are', 'when', 'through', 'will', 'by', 'our', 'who', 'between', 'so', 'ain', 'this', 'than', 'aren', 'them', 'not', 'wasn', 'your', 'these', 'himself', 'of', 'down', 'won', 'for', 'only', 'as', 'myself', 'both', 'yours', 'during', 'you', 'too', 'where', 's', 'hadn', 'about', 'and', 'been', 'very', 'do', 'in', 'at',
-             'over', 'most', 'o', 'that', 'was', 'again', 'further', 'couldn', 'having', 'hasn', 'mightn', 'me', 'to', 'no', 'her', 'hers', 'ours', 'haven', 'my', 'it', 'nor', 'those', 'she', 'what', 'a', 're', 'but', 'just', 'once', 'whom', 'from', 'am', 'below', 'mustn', 'ma', 've', 'or', 'the', 'more', 'll', 'didn', 'needn', 'then', 'isn', 'should', 'his', 'before', 'doesn', 'm', 'did', 'yourself', 'other', 'yourselves', 'can', 'itself', 'any', 'being', 'i', 'here', 'some', 'which', 'we', 'such', 'there', 'weren', 'if', 'now', 'shan', 'after', 'they', 'shouldn', 'have', 'their', 'y', 'does', 'until'}
+# nltk base set (english) with 't', 'with', 'or', 'to' removed
+STOPWORDS = {
+    'had', 'few', 'under', 'on', 'an', 'its', 'why', 'were', 'all', 'doing',
+    'while', 'how', 'don', 'same', 'is', 'because', 'him', 'ourselves', 'off',
+    'herself', 'has', 'into', 'd', 'out', 'he', 'against', 'themselves',
+    'wouldn', 'theirs', 'be', 'above', 'each', 'up', 'own', 'are', 'when',
+    'through', 'will', 'by', 'our', 'who', 'between', 'so', 'ain', 'this',
+    'than', 'aren', 'them', 'not', 'wasn', 'your', 'these', 'himself', 'of',
+    'down', 'won', 'for', 'only', 'as', 'myself', 'both', 'yours', 'during',
+    'you', 'too', 'where', 's', 'hadn', 'about', 'and', 'been', 'very', 'do',
+    'in', 'at', 'over', 'most', 'o', 'that', 'was', 'again', 'further',
+    'couldn', 'having', 'hasn', 'mightn', 'me', 'no', 'her', 'hers', 'ours',
+    'haven', 'my', 'it', 'nor', 'those', 'she', 'what', 'a', 're',
+    'but', 'just', 'once', 'whom', 'from', 'am', 'below', 'mustn', 'ma', 've',
+    'the', 'more', 'll', 'didn', 'needn', 'then', 'isn', 'should', 'his',
+    'before', 'doesn', 'm', 'did', 'yourself', 'other', 'yourselves', 'can',
+    'itself', 'any', 'being', 'i', 'here', 'some', 'which', 'we', 'such',
+    'there', 'weren', 'if', 'now', 'shan', 'after', 'they', 'shouldn', 'have',
+    'their', 'y', 'does', 'until'
+}
+
 STOPWORDS |= {
     '',  # strip empty words (e.g. punctuation replacements)
     '~',
@@ -61,6 +82,8 @@ STOPWORDS |= {
     'approx',
     'approximately',
     'approx.',
+    'appr.',
+    'assorted',
     'baby',
     'coarse',
     'coarsely',
@@ -76,9 +99,9 @@ STOPWORDS |= {
     'firm',
     'finely',
     'flaky',
-    'fresh',
+    'fresh',  # leave this in for "fresh bean"?
     'freshly',
-    'frozen',
+    'frozen',  # leave this in for "frozen pea"?
     'garnish',
     'gently',
     'halved',
@@ -86,9 +109,11 @@ STOPWORDS |= {
     'hulled',
     'interval',
     'kitchen',
+    'like',
     'twine',
     'large',
     'least',
+    'leftover',
     'low-sodium',
     'medium',
     'mild',
@@ -103,6 +128,7 @@ STOPWORDS |= {
     'ripe',
     'room',
     'salted',
+    'scrubbed',
     'seeded',
     'serving',
     'small',
@@ -117,6 +143,7 @@ STOPWORDS |= {
     'unsweetened',
     'washed',
 }
+
 NO_SINGULAR = {
     'across',
     'asparagus',
@@ -133,8 +160,11 @@ NO_SINGULAR = {
 
 PREP_MODS = {  # try to suss out preps that (might) affect density
     'beaten',
+    'boned',
     'boneless',
+    'canned',
     'chopped',
+    'cleaned',
     'creamed',
     'crosswise',
     'crumbled',
@@ -145,7 +175,9 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'freeze-dried',
     'grated',
     'ground',
+    'gutted',
     'heaping',
+    'jarred',
     'lengthwise',
     'melted',
     'minced',
@@ -155,6 +187,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'pureed',
     'roasted',
     'sauteed',
+    'scaled',
     'shelled',
     'sifted',
     'skin-on',
@@ -165,9 +198,13 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'smoked',
     'squeezed',
     'steamed',
+    'torn',
+    'well',
     'whipped',
     'whisked',
+    'zested',
 }
+
 
 VULGAR_FRACTIONS = {
     u'\u00bc': '1/4',  # ¼
@@ -192,30 +229,71 @@ VULGAR_FRACTIONS = {
     u'\u2189': '',
 }
 
-unit_labels = []
-for i, unit in enumerate(UNITS):
-    caps = ''
-    for char in unit:
-        caps += '[{}{}]'.format(char, char.upper())
-    unit_labels += [caps]
-units_regex = re.compile(
-    r'([\d\.\/\s]+)({})?s?\s+(.*)'.format('|'.join(unit_labels)))
 
+TEXT_NUMBERS = {
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9,
+    'ten': 10,
+    'dozen': 12,
+    'half-dozen': 6,
+    'half dozen': 6,
+    'half a dozen': 6
+}
+
+
+def case_insensitize(text):
+    """
+    return a regex that matches the input text regardless of casing
+    """
+    out = ''
+    for char in text.lower():
+        out += '[{}{}]'.format(char, char.upper())
+    return out
+
+
+text_numbers = {r'(^|\W){}($|\W)'.format(case_insensitize(
+    unit)): r'\g<1>{}\g<2>'.format(val) for unit, val in TEXT_NUMBERS.items()}
+
+unit_labels = [case_insensitize(unit) for unit in UNITS]
 units_group = r'|'.join(unit_labels)
-units_group += r'|[T]|[t]'
-start_unit_regex = re.compile(r'^({})\s+'.format(units_group))
+
+# start unit regex looks for quantity-less units at the start of a string, e.g. "handful of basil"
+start_unit_regex = re.compile(r'^(?P<unit>{})\s+'.format(units_group))
+
+# "with" clauses are always unhelpful. We think.
 with_clause = re.compile(r'[Ww]ith.*?[,\n\)]')
 # separate this out bc it doesn't seem to work when we include $ in the terminating bit
 with_term = re.compile(r'[Ww]ith.*')
-units_regex_2 = re.compile(
-    r'([\(\d\.]+[-\.\/\s]*[tor]*\d*[\.\/\s]*?\d*\s*)({})?[\s\)]+'.format(units_group))
+
+# These look for numbers/fractions optionally separated by a space,
+# e.g. "2.0", "1 1/2". The only requirement is the initial number (or decimal
+# point)
+qty_regex_1 = r'[\d\.]+[-\.\/\s]?\d*[\.\/\s]?\d*\s?'
+# qty_regex_2 is identical except it's entirely optional
+qty_regex_2 = r'[\d\.]*[-\.\/\s]?\d*[\.\/\s]?\d*\s?'
+
+# multi_qty_regex looks for pairs of quantities separated by "to" or "or"
+# So far, this separator works ok but it could be made more robust to caps, dashes, etc
+multi_qty_regex = r'(?P<qty>{}(([Tt][Oo]|[Oo][Rr])\s)*{})'.format(
+    qty_regex_1, qty_regex_2)
+units_regex = re.compile(
+    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?:\s|,|$)'.format(units_group))
+
+# hrefs
 # TODO: improve this, e.g. there could be a > in the href
 href_start = r'<a[^>]*>'
 href_end = '</a>'
 
 
 def no_singular(word):
-    """ Identify words that should not be singularized even though they end in `s` """
+    """ Words that should not be singularized even though they end in `s` """
     return (
         word.endswith('ss') or
         word in NO_SINGULAR or
@@ -224,31 +302,40 @@ def no_singular(word):
 
 
 def quantify(match):
-    # given a units match tuple, return a dict of {'qty':float, 'unit':str}
-    result = {'unit': 'ea'}
-    total = 0.0
-    quantified = False  # only use the total if it was meaningful
-    for entry in match:
-        if entry is None:
-            continue
-        entry = entry.strip()
-        if entry in UNITS:
-            result['unit'] = UNITS[entry]
-        elif entry.lower() in UNITS:
-            result['unit'] = UNITS[entry.lower()]
-        else:
-            qtys = entry.split()
-            for qty in qtys:
-                fracs = qty.split('/')
-                try:
-                    if len(fracs) > 1:
-                        total += float(fracs[0])/float(fracs[1])
-                    else:
-                        total += float(fracs[0])
-                    quantified = True
-                except ValueError:
-                    continue
-    result['qty'] = total if quantified else 1
+    # given a units match dict, return a dict of {'qty':float, 'unit':str, 'qualifiers': list}
+    result = {'unit': 'ea', 'qty': 1, 'qualifiers': []}  # default
+    qty = match.get('qty')
+    unit = match.get('unit')
+    qualifier = match.get('qual')
+    if unit:
+        # try case sensitive first due to Teaspoon/tablespoon
+        result['unit'] = UNITS.get(unit, UNITS.get(unit.lower()))
+
+    if qty:
+        qtys = re.split(r'[-\s]', qty)
+        entry_count = 1  # accounting for 'or', 'to' ranges
+        total = 0.0
+        quantified = False
+        for q in qtys:
+            if q.lower().strip() in ['or', 'to']:
+                entry_count += 1
+                continue
+            try:
+                quantified = True
+                if ('/') in q:
+                    # convert fraction
+                    frac = q.split('/')
+                    total += float(frac[0]) / float(frac[1])
+                else:
+                    total += float(q)
+            except ValueError:
+                continue
+        if quantified:
+            result['qty'] = total / entry_count
+
+    if qualifier:
+        parsed_qual = match_units(qualifier)
+        result['qualifiers'] = [quantify(q[2]) for q in parsed_qual]
     return result
 
 
@@ -261,6 +348,7 @@ def names_mods(text):
     text = re.sub(with_term, '', text)
     cleaned_text = []
     mods = []
+    # TODO: should we strip out non-empty parentheticals?
     text = re.sub(empty_parentheses, '', text)
 
     for mismatch in [('(', ')'), (')', '(')]:
@@ -276,13 +364,23 @@ def names_mods(text):
         elif word:
             cleaned_text += [word]
     text = ' '.join(cleaned_text)
-    text = text.split(',')
+    # split on comma, or, and
+    text = re.split(r',$|,\s|\sor\s|\sor$|\sand\s|\sand$', text)
     return [r.strip() for r in text if r], mods
 
 
 def pad_parentheses(text):
     """ Pad parentheses with spaces """
     return text.replace('(', '( ').replace(')', ' )')
+
+
+qualifiers = r'(?=\w*[-])([\w-]+)'
+
+
+def parenthesize_qualifiers(text):
+    # parenthesize things like 4-pound or five-to-size-pounds so they get
+    # treated as qualifiers
+    return re.sub(qualifiers, '(\g<1>)', text)
 
 
 def devulgarize(text):
@@ -298,6 +396,8 @@ slashed_text_sub = '\g<1> / \g<2>'
 comma_text_left = re.compile(r'(\D),(\w)')
 comma_text_right = re.compile(r'(\w),(\D)')
 comma_text_sub = '\g<1>, \g<2>'
+hyphen_text_right = re.compile(r'(\d)-(\w)')
+hyphen_text_sub = '\g<1> \g<2>'
 
 
 def pad_punctuation(text):
@@ -311,17 +411,37 @@ def pad_punctuation(text):
         4,this -> 4, this
         1/4 -> 1/4
         1,4 -> 1,4
+
+    Remove hyphens between numbers and words
     """
     for slash in [slashed_text_left, slashed_text_right]:
         text = re.sub(slash, slashed_text_sub, text)
     for comma in [comma_text_left, comma_text_right]:
         text = re.sub(comma, comma_text_sub, text)
+    text = re.sub(hyphen_text_right, hyphen_text_sub, text)
     return text
+
+
+def pad_ranges(text):
+    """
+    Replace `-` with ` ` when it's sandwiching `to`, as in
+    `six-to-eight` -> `six to eight`
+    """
+    return re.sub(r'-[Tt][Oo]-', ' to ', text)
 
 
 def strip_hrefs(text):
     text = re.sub(href_start, '', text)
     text = text.replace(href_end, '')
+    return text
+
+
+def numerify(text):
+    """
+    Repace text numbers with numbers
+    """
+    for match, repl in text_numbers.items():
+        text = re.sub(match, repl, text)
     return text
 
 
@@ -333,9 +453,13 @@ def clean(text):
     stripped_words = []
     cleaned_words = []
 
-    for word in text.split(' '):
+    for word in re.split(r'\s', text):
         if (not word) or word.isspace():
             continue  # multiple space or whitespace
+
+        has_comma = word.endswith(',')
+        if has_comma:
+            word = word[:-1]
         try:
             p.singular_noun(word)
         except Exception as err:
@@ -344,16 +468,33 @@ def clean(text):
             for ch in word:
                 print('unicode is {}'.format(ord(ch)))
             raise err
+
         if word.lower().strip(',') in STOPWORDS:
             stripped_words += [word.lower()]
             continue
         if no_singular(word.lower()):
-            cleaned_words += [word]
+            cleaned_words += [word + ',' if has_comma else word]
         elif not p.singular_noun(word):
-            cleaned_words += [word]
+            cleaned_words += [word + ',' if has_comma else word]
         else:
-            cleaned_words += [p.singular_noun(word)]
+            cleaned_words += [p.singular_noun(word) +
+                              ',' if has_comma else p.singular_noun(word)]
+
     return ' '.join(cleaned_words), stripped_words
+
+
+def match_units(text):
+    def strip(groupdict):
+        # remove any leading/trailing spaces (regex artifacts)
+        for k, v in groupdict.items():
+            groupdict[k] = v.strip() if v else v
+        return groupdict
+    start_match = re.match(start_unit_regex, text)
+    matches = [(start_match.start(), start_match.end(), strip(
+        start_match.groupdict()))] if start_match else []
+    matches += [(el.start(), el.end(), strip(el.groupdict()))
+                for el in re.finditer(units_regex, text)]
+    return matches
 
 
 def amounts(text_entry):
@@ -379,35 +520,41 @@ def amounts(text_entry):
     # remove hrefs
     text_entry = strip_hrefs(text_entry)
 
+    # put qualifier structures in parentheses
+    text_entry = parenthesize_qualifiers(text_entry)
+
     # add leading/trailing spaces to parentheticals
     text_entry = pad_parentheses(text_entry)
+
+    # replace numbers-as-words with digits
+    text_entry = numerify(text_entry)
 
     # expand unicode vulgar fractions, prepending a space
     text_entry = devulgarize(text_entry)
 
+    text_entry = pad_ranges(text_entry)
     # pad non-fraction slashes & commas with spaces
     text_entry = pad_punctuation(text_entry)
 
     # singularize nouns; remove stopwords; preserve casing for units parsing
     cleaned_text, stripped_words = clean(text_entry)
 
-    start_match = re.match(start_unit_regex, cleaned_text)
-    matches = [(start_match.group(), None)] if start_match else []
-    matches += re.findall(units_regex_2, cleaned_text)
+    matches = match_units(cleaned_text)
     if len(matches) == 0:
         # infer a single `ea` unit
         remainder, mods = names_mods(cleaned_text)
         return {
-            QTYS: [{'qty': 1, 'unit': 'ea'}],
+            QTYS: [{'qty': 1, 'unit': 'ea', 'qualifiers': []}],
             NAMES: remainder,
             MODS: mods,
             STRIPPED_WORDS: stripped_words,
         }
 
-    qtys = [quantify(m) for m in matches]
+    qtys = [quantify(m[2]) for m in matches]
 
     remainder = re.sub(start_unit_regex, '', cleaned_text)
-    remainder = re.sub(units_regex_2, '', remainder)
+    remainder = re.sub(units_regex, '', remainder)
+    remainder = re.sub(r'\([^\)]*\)', '', remainder)
 
     remainder, mods = names_mods(remainder)
     return {
