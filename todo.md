@@ -54,6 +54,8 @@ e.g. Number to Number means a range, and we should pick that up and use the midp
 
 Some mods are problematic, e.g. fresh, when they conflict with key ways to separate out similar ingredients. For instance, 1 cup beans is quite different from 1 cup of fresh beans. We need to figure out a way to handle this, for both Mods and Stopwords. If you run test_stopword_safety and test_mod_safety if will squawk the offenders.
 
+Also, we are stripping out `can` as a stopword, when it's also a unit. We need a test that makes sure there's no overlap between stopwords/prep mods and units!!
+
 ## Stopwords
 
 ## Missing things

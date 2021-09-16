@@ -111,6 +111,19 @@ class TestProduct(TestCase):
         }
         self.assertEqual(Product.mass(ingredient), 464)
 
+        ingredient = {
+            Ingredient.PRODUCT: product,
+            'qtys': [
+                {'unit': 'ea', 'qty': 1.0, 'qualifiers': [
+                    {'unit': 'ounce', 'qty': 4.0, 'qualifiers': []}
+                ]}
+            ],
+            'names': ['mussel'],
+            'mods': ['smoked'],
+            'stripped_words': ['can']
+        }
+        self.assertEqual(Product.mass(ingredient), 113.398)
+
     def test_food_value(self):
         product = {'ed': 1000}
         self.assertEqual(Product.food_values(product), {'ed': (1000, True)})

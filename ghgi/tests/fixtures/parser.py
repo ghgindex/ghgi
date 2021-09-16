@@ -76,6 +76,80 @@ REGEX_UNITS_DATA = [
 ]
 
 AMOUNTS_DATA = [
+    ('1 six-to-eight-pound, cleaned, whole salmon, preferably with head left on (see note)', {
+        "qtys": [
+            {
+                "unit": "ea",
+                "qty": 1.0,
+                "qualifiers": [
+                    {
+                        "unit": "pound",
+                        "qty": 7.0,
+                        "qualifiers": []
+                    }
+                ]
+            }
+        ],
+        "names": [
+            "whole salmon"
+        ],
+        "mods": [
+            "cleaned"
+        ],
+        "stripped_words": [
+            "preferably",
+            "on"
+        ]
+    }),
+    ('1 (1 1/2-pound) salmon fillet, skin-on or skinless', {
+        'qtys': [
+            {
+                'unit': 'ea',
+                'qty': 1.0,
+                'qualifiers': [
+                    {
+                        'unit': 'pound',
+                        'qty': 1.5,
+                        'qualifiers': []
+                    }
+                ]
+            }
+        ],
+        'names': [
+            'salmon'
+        ],
+        'mods': [
+            'skin-on',
+            'skinless'
+        ],
+        'stripped_words': [
+            'fillet'
+        ]
+    }),
+    ('1 (4-ounce) can smoked mussels', {
+        'qtys': [
+            {
+                'unit': 'ea',
+                'qty': 1.0,
+                'qualifiers': [
+                    {
+                        'unit': 'ounce',
+                        'qty': 4.0,
+                        'qualifiers': []
+                    }
+                ]
+            }
+        ],
+        'names': [
+            'mussel'
+        ],
+        'mods': [
+            'smoked'
+        ],
+        'stripped_words': [
+            'can'
+        ]
+    }),
     ('1 salmon about 4 1/2 pounds, boned with head and tail left on', {
         "qtys": [
             {
@@ -215,31 +289,6 @@ AMOUNTS_DATA = [
             "and",
             "on",
             "washed"
-        ]
-    }),
-    ('1 six-to-eight-pound, cleaned, whole salmon, preferably with head left on (see note)', {
-        "qtys": [
-            {
-                "unit": "ea",
-                "qty": 1.0,
-                "qualifiers": [
-                    {
-                        "unit": "pound",
-                        "qty": 7.0,
-                        "qualifiers": []
-                    }
-                ]
-            }
-        ],
-        "names": [
-            "whole salmon"
-        ],
-        "mods": [
-            "cleaned"
-        ],
-        "stripped_words": [
-            "preferably",
-            "on"
         ]
     }),
     ('1 scallion, chopped, for serving', {

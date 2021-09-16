@@ -374,13 +374,13 @@ def pad_parentheses(text):
     return text.replace('(', '( ').replace(')', ' )')
 
 
-qualifiers = r'(?=\w*[-])([\w-]+)'
+qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+[-\w]+)'
 
 
 def parenthesize_qualifiers(text):
     # parenthesize things like 4-pound or five-to-size-pounds so they get
     # treated as qualifiers
-    return re.sub(qualifiers, '(\g<1>)', text)
+    return re.sub(qualifiers, '(\g<1>\g<2>)', text)
 
 
 def devulgarize(text):
@@ -520,14 +520,14 @@ def amounts(text_entry):
     # remove hrefs
     text_entry = strip_hrefs(text_entry)
 
+    # replace numbers-as-words with digits
+    text_entry = numerify(text_entry)
+
     # put qualifier structures in parentheses
     text_entry = parenthesize_qualifiers(text_entry)
 
     # add leading/trailing spaces to parentheticals
     text_entry = pad_parentheses(text_entry)
-
-    # replace numbers-as-words with digits
-    text_entry = numerify(text_entry)
 
     # expand unicode vulgar fractions, prepending a space
     text_entry = devulgarize(text_entry)
