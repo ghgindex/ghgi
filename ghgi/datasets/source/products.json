@@ -1330,6 +1330,7 @@
             },
             "chile": {
                 "dependent": [
+                    "_flake",
                     "green",
                     "habanero",
                     "jalapeno",
@@ -1340,6 +1341,7 @@
             },
             "chili": {
                 "dependent": [
+                    "_flake",
                     "green",
                     "habanero",
                     "jalapeno",
