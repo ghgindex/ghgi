@@ -59,7 +59,7 @@ STOPWORDS = {
     'had', 'few', 'under', 'on', 'an', 'its', 'why', 'were', 'all', 'doing',
     'while', 'how', 'don', 'same', 'is', 'because', 'him', 'ourselves', 'off',
     'herself', 'has', 'into', 'd', 'out', 'he', 'against', 'themselves',
-    'wouldn', 'theirs', 'be', 'above', 'each', 'up', 'own', 'are', 'when',
+    'wouldn', 'theirs', 'be', 'above', 'up', 'own', 'are', 'when',
     'through', 'will', 'by', 'our', 'who', 'between', 'so', 'ain', 'this',
     'than', 'aren', 'them', 'not', 'wasn', 'your', 'these', 'himself', 'of',
     'down', 'won', 'for', 'only', 'as', 'myself', 'both', 'yours', 'during',
@@ -283,8 +283,14 @@ qty_regex_2 = r'[\d\.]*[-\.\/\s]?\d*[\.\/\s]?\d*\s?'
 # So far, this separator works ok but it could be made more robust to caps, dashes, etc
 multi_qty_regex = r'(?P<qty>{}(([Tt][Oo]|[Oo][Rr])\s)*{})'.format(
     qty_regex_1, qty_regex_2)
+
+# OG: works pretty good
 units_regex = re.compile(
     multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?:\s|,|$)'.format(units_group))
+
+units_regex = re.compile(
+    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|$)'.format(units_group))
+
 
 # hrefs
 # TODO: improve this, e.g. there could be a > in the href
@@ -303,13 +309,17 @@ def no_singular(word):
 
 def quantify(match):
     # given a units match dict, return a dict of {'qty':float, 'unit':str, 'qualifiers': list}
-    result = {'unit': 'ea', 'qty': 1, 'qualifiers': []}  # default
+    result = {'unit': 'ea', 'qty': 1, 'qualifiers': [], 'per': None}  # default
     qty = match.get('qty')
     unit = match.get('unit')
     qualifier = match.get('qual')
+    per = match.get('per')
     if unit:
         # try case sensitive first due to Teaspoon/tablespoon
         result['unit'] = UNITS.get(unit, UNITS.get(unit.lower()))
+
+    if per:
+        result['per'] = match.get('per')
 
     if qty:
         qtys = re.split(r'[-\s]', qty)
@@ -544,7 +554,7 @@ def amounts(text_entry):
         # infer a single `ea` unit
         remainder, mods = names_mods(cleaned_text)
         return {
-            QTYS: [{'qty': 1, 'unit': 'ea', 'qualifiers': []}],
+            QTYS: [{'qty': 1, 'unit': 'ea', 'qualifiers': [], 'per': None}],
             NAMES: remainder,
             MODS: mods,
             STRIPPED_WORDS: stripped_words,

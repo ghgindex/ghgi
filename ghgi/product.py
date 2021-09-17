@@ -29,6 +29,7 @@ class Ingredient:
     UNIT = 'unit'
     PRODUCT = 'product'
     EA = 'ea'
+    PER = 'per'
 
 
 class Product:
@@ -186,11 +187,8 @@ class Product:
         and generate a combined value in the qualifier's units. For instance,
         if we have 2 `ea` of something qualified as 3 `pounds`, the `qty` becomes
         2*3 = 6, and the unit goes from `ea` to `pounds`.
-
-        TODO: we assume that qualifiers are per each, NOT total, and we 
-        likewise assume that subsequent quantities per each. The parser should
-        flag this explicitly.
         """
+
         product = ingredient[Ingredient.PRODUCT]
         sg = Product.sg(product)
         qtys = ingredient[Ingredient.QTYS][0]
@@ -203,7 +201,10 @@ class Product:
         for qual in qtys.get(Ingredient.QUALIFIERS, []):
             if qual[Ingredient.UNIT] != Ingredient.EA:
                 unit = qual[Ingredient.UNIT]
-                qty = qty * qual[Ingredient.QTY]
+                if qual.get(Ingredient.PER) == 'each':
+                    qty = qty * qual[Ingredient.QTY]
+                else:
+                    qty = qual[Ingredient.QTY]
                 return Convert.to_metric(qty, unit, sg)
 
         # if there was no clarification in the qualifiers, see if a
@@ -211,7 +212,10 @@ class Product:
         for sub in ingredient[Ingredient.QTYS][1:]:
             if sub[Ingredient.UNIT] != Ingredient.EA:
                 unit = sub[Ingredient.UNIT]
-                qty = qty * sub[Ingredient.QTY]
+                if sub.get(Ingredient.PER) == 'each':
+                    qty = qty * sub[Ingredient.QTY]
+                else:
+                    qty = sub[Ingredient.QTY]
                 return Convert.to_metric(qty, unit, sg)
 
         if unit == Ingredient.EA:

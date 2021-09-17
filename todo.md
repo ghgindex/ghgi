@@ -21,6 +21,8 @@ I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and r
 
 ### Each types
 
+I think there is a different between no `ea` quantity being provided, in which case you'd use a bulk estimate (e.g. "sardines"), vs a quantity ("12 sardines") in which case you're using a different baseline, i.e. a single item multiplied by the `ea` count.
+
 - stick(s)
 - rib(s)
 - bunch
