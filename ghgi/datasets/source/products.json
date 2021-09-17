@@ -208,6 +208,12 @@
             "veal stock": {}
         }
     },
+    "beet": {
+        "bunch": 4,
+        "super": {
+            "root vegetables": 100
+        }
+    },
     "beet sugar": {
         "g": 4,
         "super": {},
@@ -403,6 +409,13 @@
                     "_(farmed)"
                 ]
             }
+        }
+    },
+    "carrot": {
+        "g": 60,
+        "bunch": 6,
+        "super": {
+            "root vegetables": 100
         }
     },
     "cassava": {
@@ -1204,9 +1217,7 @@
                 ]
             },
             "chive": {},
-            "leek": {},
-            "scallion": {},
-            "shallot": {}
+            "leek": {}
         }
     },
     "orange": {
@@ -1809,6 +1820,13 @@
             }
         }
     },
+    "radish": {
+        "g": 12,
+        "bunch": 12,
+        "super": {
+            "root vegetables": 100
+        }
+    },
     "raisin": {
         "g": 50,
         "super": {
@@ -1893,17 +1911,10 @@
         "r": 1.0,
         "sg": 1.0,
         "names": {
-            "beet": {},
-            "carrot": {},
+            "daikon": {},
+            "daikon radish": {},
+            "horseradish": {},
             "parsnip": {},
-            "radish": {
-                "dependent": [
-                    ".horse"
-                ],
-                "independent": [
-                    "daikon"
-                ]
-            },
             "rutabaga": {},
             "turnip": {}
         }
@@ -1957,9 +1968,18 @@
             "salt black pepper": {}
         }
     },
-    "sardines": {
+    "sardine": {
+        "pkg": 100,
+        "g": 10.0,
         "super": {
             "pelagic fish <30 cm": 100
+        }
+    },
+    "scallion": {
+        "bunch": 7,
+        "g": 15.0,
+        "super": {
+            "onions & leeks (alliums)": 100
         }
     },
     "scallop": {
@@ -1979,6 +1999,12 @@
     "shad": {
         "super": {
             "pelagic fish >30 cm": 100
+        }
+    },
+    "shallot": {
+        "g": 30.0,
+        "super": {
+            "onions & leeks (alliums)": 100
         }
     },
     "shrimp (wild)": {

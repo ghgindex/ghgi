@@ -40,7 +40,8 @@ class TestProduct(TestCase):
             'ed': 1000,
             'g': 100,
             'sg': 2.0,
-            'name': 'test'
+            'name': 'test',
+            'super': {},
         }
         ingredient = {
             Ingredient.QTYS: [{
@@ -52,12 +53,40 @@ class TestProduct(TestCase):
             Ingredient.PRODUCT: product
         }
         self.assertEqual(Product.mass(ingredient), 200)
+
         ingredient[Ingredient.QTYS][0] = {
             Ingredient.QTY: 200, Ingredient.UNIT: 'ml', Ingredient.PER: None}
         self.assertEqual(Product.mass(ingredient), 400)
+
         ingredient[Ingredient.QTYS][0] = {
             Ingredient.QTY: 110, Ingredient.UNIT: 'g', Ingredient.PER: None}
         self.assertEqual(Product.mass(ingredient), 110)
+
+        ingredient[Ingredient.QTYS][0] = {
+            Ingredient.QTY: 2, Ingredient.UNIT: 'pkg', Ingredient.PER: None}
+        self.assertEqual(Product.mass(ingredient), 2160)
+
+        product['pkg'] = 125
+        self.assertEqual(Product.mass(ingredient), 500)
+
+        ingredient[Ingredient.QTYS][0] = {
+            Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None}
+        self.assertEqual(Product.mass(ingredient), 1600)
+
+        product['bunch'] = 10
+        self.assertEqual(Product.mass(ingredient), 2000)
+
+        del product['pkg']
+        del product['bunch']
+        product[Product.PARENTS] = {'parent': 100}
+        with patch.object(Product, '_db', {'parent': {'pkg': 800, 'bunch': 6}, }):
+            ingredient[Ingredient.QTYS][0] = {
+                Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None}
+            self.assertEqual(Product.mass(ingredient), 1200)
+
+            ingredient[Ingredient.QTYS][0] = {
+                Ingredient.QTY: 2, Ingredient.UNIT: 'pkg', Ingredient.PER: None}
+            self.assertEqual(Product.mass(ingredient), 3200)
 
     def test_qualifiers(self):
         product = {

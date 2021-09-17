@@ -23,6 +23,13 @@ I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and r
 
 I think there is a different between no `ea` quantity being provided, in which case you'd use a bulk estimate (e.g. "sardines"), vs a quantity ("12 sardines") in which case you're using a different baseline, i.e. a single item multiplied by the `ea` count.
 
+I think that's bullcrap. If your recipe provides no unit, we will default to our serving size, which will typically be a single average sized item. As such, we do need to break some things out from their parents to get better default values.
+
+What if:
+
+- Product.g remains a "serving/single" size default, which is the amount to use when we don't have a unit at all
+- create units for 'bunch', and 'pkg' ('can', 'jar', 'tin') and related things, which have a default value that can be set in the database
+
 - stick(s)
 - rib(s)
 - bunch

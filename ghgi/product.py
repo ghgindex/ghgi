@@ -30,6 +30,8 @@ class Ingredient:
     PRODUCT = 'product'
     EA = 'ea'
     PER = 'per'
+    BUNCH = 'bunch'
+    PKG = 'pkg'
 
 
 class Product:
@@ -42,6 +44,8 @@ class Product:
     MASS = 'g'
     SG = 'sg'
     LOSS = 'loss'  # loss in creation, e.g. whole fruit -> juice
+    BUNCH = 'bunch'
+    PKG = 'pkg'
 
     @classmethod
     def db(cls):
@@ -170,6 +174,31 @@ class Product:
         return sum([Product.g(Product.get(parent)) * percentage/100.0 for parent, percentage in parents.items()])
 
     @staticmethod
+    def unbundle(product, qty, unit):
+        """ Convert pkg and bunch units to qty, other_unit """
+        if unit == Ingredient.BUNCH:
+            if product.get(Product.BUNCH):
+                return qty * product.get(Product.BUNCH), Ingredient.EA
+            parents = product.get(Product.PARENTS)
+            if len(parents) == 1:
+                parent = Product.get(list(parents.keys())[0])
+                return Product.unbundle(parent, qty, unit)
+            else:  # default
+                return qty * 6, Ingredient.EA
+
+        elif unit == Ingredient.PKG:
+            if product.get(Product.PKG):
+                return qty * product.get(Product.PKG), 'ml'
+            parents = product.get(Product.PARENTS)
+            if len(parents) == 1:
+                parent = Product.get(list(parents.keys())[0])
+                return Product.unbundle(parent, qty, unit)
+            else:  # default
+                return qty * 540, 'ml'
+
+        return qty, unit
+
+    @staticmethod
     def mass(ingredient):
         """Return the mass in grams of the ingredient product.
         The ingredient should include a value under 'product' which is its
@@ -194,6 +223,7 @@ class Product:
         qtys = ingredient[Ingredient.QTYS][0]
         qty = qtys[Ingredient.QTY]
         unit = qtys[Ingredient.UNIT]
+        qty, unit = Product.unbundle(product, qty, unit)
         if unit != Ingredient.EA:
             return Convert.to_metric(qty, unit, sg)
 
