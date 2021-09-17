@@ -103,6 +103,31 @@ AMOUNTS_DATA = [
             "on"
         ]
     }),
+    ('1 (4-ounce) can smoked mussels', {
+        'qtys': [
+            {
+                'unit': 'pkg',
+                'qty': 1.0,
+                "per": None,
+                'qualifiers': [
+                    {
+                        'unit': 'ounce',
+                        'qty': 4.0,
+                        "per": None,
+                        'qualifiers': []
+                    }
+                ]
+            }
+        ],
+        'names': [
+            'mussel'
+        ],
+        'mods': [
+            'smoked'
+        ],
+        'stripped_words': [
+        ]
+    }),
     ('1 (1 1/2-pound) salmon fillet, skin-on or skinless', {
         'qtys': [
             {
@@ -128,32 +153,6 @@ AMOUNTS_DATA = [
         ],
         'stripped_words': [
             'fillet'
-        ]
-    }),
-    ('1 (4-ounce) can smoked mussels', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 1.0,
-                "per": None,
-                'qualifiers': [
-                    {
-                        'unit': 'ounce',
-                        'qty': 4.0,
-                        "per": None,
-                        'qualifiers': []
-                    }
-                ]
-            }
-        ],
-        'names': [
-            'mussel'
-        ],
-        'mods': [
-            'smoked'
-        ],
-        'stripped_words': [
-            'can'
         ]
     }),
     ('1 salmon about 4 1/2 pounds, boned with head and tail left on', {

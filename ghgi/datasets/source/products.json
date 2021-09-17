@@ -337,6 +337,7 @@
                     "artisanal",
                     "country",
                     "crusty",
+                    "french",
                     "loaf",
                     "_loaf",
                     "loaves",
@@ -717,7 +718,11 @@
         "g": 150,
         "super": {},
         "pd": 0.23,
-        "sg": 1.0
+        "sg": 1.0,
+        "names": {
+            "porgy": {},
+            "bream": {}
+        }
     },
     "demersal mollusks": {
         "super": {}
@@ -1419,28 +1424,6 @@
                 ]
             }
         }
-    },
-    "parsley": {
-        "g": 3.8,
-        "names": {
-            "parsley": {
-                "dependent": [
-                    "flat-leaf",
-                    "fresh",
-                    "italian",
-                    "_leaf"
-                ]
-            },
-            "flat leaf parsley": {
-                "dependent": [
-                    "_leaf"
-                ]
-            }
-        },
-        "super": {
-            "other vegetables": 100
-        },
-        "sg": 0.5
     },
     "pasta": {
         "g": 0,
@@ -2264,7 +2247,20 @@
                     "_seed"
                 ]
             },
-            "lovage": {}
+            "flat leaf parsley": {
+                "dependent": [
+                    "_leaf"
+                ]
+            },
+            "lovage": {},
+            "parsley": {
+                "dependent": [
+                    "flat-leaf",
+                    "fresh",
+                    "italian",
+                    "_leaf"
+                ]
+            }
         }
     },
     "vanilla": {

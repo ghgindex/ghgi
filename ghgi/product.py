@@ -223,11 +223,11 @@ class Product:
         qtys = ingredient[Ingredient.QTYS][0]
         qty = qtys[Ingredient.QTY]
         unit = qtys[Ingredient.UNIT]
-        qty, unit = Product.unbundle(product, qty, unit)
-        if unit != Ingredient.EA:
+
+        if unit not in [Ingredient.EA, Ingredient.PKG, Ingredient.BUNCH]:
             return Convert.to_metric(qty, unit, sg)
 
-        # see if there is clarification available for the `ea` value
+        # see if there is clarification available for the value
         for qual in qtys.get(Ingredient.QUALIFIERS, []):
             if qual[Ingredient.UNIT] != Ingredient.EA:
                 unit = qual[Ingredient.UNIT]
@@ -247,6 +247,9 @@ class Product:
                 else:
                     qty = sub[Ingredient.QTY]
                 return Convert.to_metric(qty, unit, sg)
+
+        # if there were no clarifications, unbundle
+        qty, unit = Product.unbundle(product, qty, unit)
 
         if unit == Ingredient.EA:
             qty *= Product.g(product)

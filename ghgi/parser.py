@@ -45,13 +45,14 @@ UNITS = {
     'pinch': 'pinch',
     'handful': 'handful',
     'fistful': 'fistful',
-    'slice': 'ea',
     'smidgen': 'smidgen',
+    'bunch': 'bunch',
+    'slice': 'ea',
     'stalk': 'ea',
     'sprig': 'ea',
-    'can': 'ea',
-    'tin': 'ea',
-    'jar': 'ea',
+    'can': 'pkg',
+    'tin': 'pkg',
+    'jar': 'pkg',
 }
 
 # nltk base set (english) with 't', 'with', 'or', 'to' removed
@@ -69,7 +70,7 @@ STOPWORDS = {
     'haven', 'my', 'it', 'nor', 'those', 'she', 'what', 'a', 're',
     'but', 'just', 'once', 'whom', 'from', 'am', 'below', 'mustn', 'ma', 've',
     'the', 'more', 'll', 'didn', 'needn', 'then', 'isn', 'should', 'his',
-    'before', 'doesn', 'm', 'did', 'yourself', 'other', 'yourselves', 'can',
+    'before', 'doesn', 'm', 'did', 'yourself', 'other', 'yourselves',
     'itself', 'any', 'being', 'i', 'here', 'some', 'which', 'we', 'such',
     'there', 'weren', 'if', 'now', 'shan', 'after', 'they', 'shouldn', 'have',
     'their', 'y', 'does', 'until'
@@ -384,13 +385,16 @@ def pad_parentheses(text):
     return text.replace('(', '( ').replace(')', ' )')
 
 
-qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+[-\w]+)'
+qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+[-\w]+)'  # OG
 
 
 def parenthesize_qualifiers(text):
     # parenthesize things like 4-pound or five-to-size-pounds so they get
-    # treated as qualifiers
-    return re.sub(qualifiers, '(\g<1>\g<2>)', text)
+    # treated as qualifiers unless they're already parenthesized!
+    text = re.sub(qualifiers, '(\g<1>\g<2>)', text)
+    text = re.sub(r'\(\(', '(', text)
+    text = re.sub(r'\)\)', ')', text)
+    return text
 
 
 def devulgarize(text):

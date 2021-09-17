@@ -71,7 +71,7 @@ class TestProduct(TestCase):
 
         ingredient[Ingredient.QTYS][0] = {
             Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None}
-        self.assertEqual(Product.mass(ingredient), 1600)
+        self.assertEqual(Product.mass(ingredient), 1200)
 
         product['bunch'] = 10
         self.assertEqual(Product.mass(ingredient), 2000)
@@ -79,10 +79,10 @@ class TestProduct(TestCase):
         del product['pkg']
         del product['bunch']
         product[Product.PARENTS] = {'parent': 100}
-        with patch.object(Product, '_db', {'parent': {'pkg': 800, 'bunch': 6}, }):
+        with patch.object(Product, '_db', {'parent': {'pkg': 800, 'bunch': 8}, }):
             ingredient[Ingredient.QTYS][0] = {
                 Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None}
-            self.assertEqual(Product.mass(ingredient), 1200)
+            self.assertEqual(Product.mass(ingredient), 1600)
 
             ingredient[Ingredient.QTYS][0] = {
                 Ingredient.QTY: 2, Ingredient.UNIT: 'pkg', Ingredient.PER: None}
