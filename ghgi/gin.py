@@ -9,6 +9,20 @@ NO_STEM = {
     'whiting'
 }
 
+# words that cannot be matched on their own
+NO_SOLO = {
+    'black',
+    'blue',
+    'grey',
+    'gray',
+    'green',
+    'orange',
+    'purple'
+    'red',
+    'white',
+    'yellow',
+}
+
 
 class GIN:
     """ A GIN index optimized for matching ingredient entries.
@@ -90,8 +104,13 @@ class GIN:
     @classmethod
     def query(cls, term: str, use_keyword=True):
         tokens = cls.tokenize(term)
+
+        # don't match on uninformative singletons
+        if len(tokens) == 1 and cls.lower(tokens)[0] in NO_SOLO:
+            return None, None, 0.0
+
         pos_tags = cls.pos_tag(tokens)
-        # figure out the last noun: must match!
+        # the keyword is the last noun: must match if use_keyword is set
         key_word_index = None
         if use_keyword:
             for i, el in enumerate(reversed(pos_tags)):

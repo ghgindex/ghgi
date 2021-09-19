@@ -578,6 +578,19 @@
         },
         "sg": 1.0
     },
+    "coconut": {
+        "g": 50,
+        "sg": 1.0,
+        "super": {},
+        "names": {
+            "coconut": {
+                "dependent": [
+                    "_oil",
+                    "_milk"
+                ]
+            }
+        }
+    },
     "cod": {
         "super": {
             "demersal fish": 100

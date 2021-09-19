@@ -131,15 +131,13 @@ class Product:
             return (None, None)
         results = []
         for name in ingredient[Product.NAMES]:
-            # [(parent id, aka, confidence),...]
             name = name.replace('-', ' ')
-            # matches = Trigram.match(name)
             match = GIN.query(name)
             if match[0] is not None:
                 product = Product.get(match[1][0], match[0])
                 confidence = match[2]
                 results += [(product, confidence)]
-        # results.sort(key=lambda k: k[1], reverse=True)
+        results.sort(key=lambda k: k[1], reverse=True)
         return results[0] if results else (None, None)
 
     @staticmethod

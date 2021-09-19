@@ -40,23 +40,24 @@ I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and r
 
 The trigram index doesn't make sense. While it's likely better at dealing with misspellings, it's way too loose in its matches. I think we want to require full matches across stemmed tokens. Essentially, this is going to be a GIN index. When we get a query, we stem and tokenize it, and then query the GIN index with the tokens. "Matchiness" is derived by looking at how many of the tokens each candidate entry matches. We will also identify which token is the last noun, and *require* that to match.
 
-We should add in to the GIN index query a set of single-token query stopwords. For instance, if we get a single word query that just says "black", don't try to match it. It's not *always* a stopword, but it sure is if it's just on its own.
-
 We also might want to strip out adverbs!
-
-Finally, I'd like a NULL source/product, which is something we can use for things that we know we don't have so they don't errantly match other things. Finally, lol, as if.
 
 ## Mods
 
 Some mods are problematic, e.g. fresh, when they conflict with key ways to separate out similar ingredients. For instance, 1 cup beans is quite different from 1 cup of fresh beans. We need to figure out a way to handle this, for both Mods and Stopwords. If you run test_stopword_safety and test_mod_safety if will squawk the offenders.
 
-Also, we are stripping out `can` as a stopword, as it's also a unit. We need a test that makes sure there's no overlap between stopwords/prep mods and units!!
+Also, we are removing `can` from stopwords, as it's also a unit. We need a test that makes sure there's no overlap between stopwords/prep mods and units!!
 
 ## Stopwords
 
 ## Missing things
 
 Coconut, coconut milk, coconut oil
+  Feraldi et al. (2012). Life Cycle Assessment of Coconut Milk and Two Non-Dairy Milk Beverage Alternatives. Franklin Associate
+  Audsley et al. 2009
+  Egads there is almost no research on this. We could use an estimate, but that's pretty gross.
+  No sir; we'll just use a non-sourced entry! Which then spits out a null impact, which the site flags!
+
 grapeseed oil
 sesame seeds, sesame oil
 allspice
@@ -73,6 +74,7 @@ cornstarch
 lye water
 garam masala
 turmeric
+pastry dough
 
 ## Testing
 
