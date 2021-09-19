@@ -1132,7 +1132,7 @@
     "mussels": {
         "g": 200,
         "super": {
-            "mollusks": 100
+            "demersal mollusks": 100
         },
         "sg": 1.0,
         "names": {
