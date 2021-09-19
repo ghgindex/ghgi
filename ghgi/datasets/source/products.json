@@ -2260,7 +2260,8 @@
                 "independent": [
                     "ahi",
                     "bluefin",
-                    "skipjack"
+                    "skipjack",
+                    "yellowfin"
                 ]
             }
         }

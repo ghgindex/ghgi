@@ -3,7 +3,7 @@ import json
 
 
 from .trigram import build_indexes
-from .gin import Gin
+from .gin import GIN
 from .datasets import SOURCE_PRODUCTS
 from .datasets import MASTER_GIN_INDEX
 from .datasets import MASTER_PRODUCTS, MASTER_AKA_INDEX, MASTER_TRIGRAM_INDEX
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         with open(MASTER_TRIGRAM_INDEX, 'w') as tri_file:
             json.dump(trigram_index, tri_file)
 
-    gin_index = Gin.generate()
+    gin_index = GIN.generate()
     print('writing gin_index to {}'.format(MASTER_GIN_INDEX))
     with open(MASTER_GIN_INDEX, 'w') as gin_file:
         json.dump(gin_index, gin_file)

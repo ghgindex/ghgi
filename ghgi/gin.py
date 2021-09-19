@@ -4,9 +4,14 @@ import nltk
 
 from .datasets import MASTER_PRODUCTS, MASTER_GIN_INDEX, MASTER_AKA_INDEX
 
+# words to exclude from stemming
+NO_STEM = {
+    'whiting'
+}
 
-class Gin:
-    """ A Gin index optimized for matching ingredient entries.
+
+class GIN:
+    """ A GIN index optimized for matching ingredient entries.
     """
 
     _stemmer = None
@@ -39,7 +44,7 @@ class Gin:
 
     @classmethod
     def stem(cls, tokens: list) -> list:
-        return [cls.stemmer().stem(t) for t in tokens]
+        return [cls.stemmer().stem(t) if t not in NO_STEM else t for t in tokens]
 
     @classmethod
     def pos_tag(cls, tokens: list) -> list:
@@ -51,9 +56,9 @@ class Gin:
 
     @classmethod
     def generate(cls):
-        """ Generate and return the Gin index.
+        """ Generate and return the GIN index.
 
-        The Gin index is a dictionary with stemmed tokens as keys and the
+        The GIN index is a dictionary with stemmed tokens as keys and the
         list of product aliases they match as values.
         """
         with open(MASTER_PRODUCTS, 'r') as product_file:
@@ -63,14 +68,14 @@ class Gin:
                 if name.startswith('_'):
                     continue
 
-                name_tokens = cls.tokenize(name)
-                stemmed_tokens = cls.lower(cls.stem(name_tokens))
+                name_tokens = cls.lower(cls.tokenize(name))
+                stemmed_tokens = cls.stem(name_tokens)
                 for token in stemmed_tokens:
                     gin_index[token].add(name)
 
                 for aka in products[name].get('names', []):
-                    aka_tokens = cls.tokenize(aka)
-                    stemmed_aka_tokens = cls.lower(cls.stem(aka_tokens))
+                    aka_tokens = cls.lower(cls.tokenize(aka))
+                    stemmed_aka_tokens = cls.stem(aka_tokens)
                     for token in stemmed_aka_tokens:
                         gin_index[token].add(aka)
 
@@ -93,7 +98,7 @@ class Gin:
                 if el[1].startswith('NN'):
                     key_word_index = len(pos_tags)-(i+1)
                     break
-        stemmed_tokens = cls.lower(cls.stem(tokens))
+        stemmed_tokens = cls.stem(cls.lower(tokens))
 
         if key_word_index is not None:
             matches = cls.index().get(stemmed_tokens[key_word_index], [])
