@@ -54,29 +54,18 @@ Coconut, coconut milk, coconut oil
 grapeseed oil
 allspice
 Add a general "seasoning" match which aliases to salt and pepper
-Stuffing (use this as an alias for bread)
 Cranberry sauce
-Kosher Salt
 Diamond Crystal
 Pepitas (pumpkin seeds)
-Tortilla
-Plantains
-Scotch bonnet pepper
 makrut lime wtf is that?
-sun-dried tomato
 vanilla ice cream
 sweet freestone peach
-Turbinado sugar
 maple syrup
 dried za’atar
-golden syrup
 cornstarch
 lye water
 garam masala
 turmeric
-cayenne
-cotija
-onion powder
 
 ## Testing
 

@@ -576,6 +576,9 @@ def amounts(text_entry):
     remainder = re.sub(start_unit_regex, '', cleaned_text)
     remainder = re.sub(units_regex, '', remainder)
     remainder = re.sub(r'\([^\)]*\)', '', remainder)
+    remainder = re.sub(r'\sor\s', ', ', remainder)
+    remainder = re.sub(r'\sto\s', ' ', remainder)
+    remainder = re.sub(r'\splus\s', ', ', remainder)
 
     remainder, mods = names_mods(remainder)
     return {

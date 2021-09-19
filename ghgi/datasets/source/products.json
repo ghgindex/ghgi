@@ -120,7 +120,8 @@
         "super": {},
         "sg": 0.9,
         "names": {
-            "banana": {}
+            "banana": {},
+            "plantain": {}
         }
     },
     "barley (beer)": {
@@ -349,7 +350,8 @@
                     "baguette",
                     "crouton",
                     "focaccia",
-                    "sourdough"
+                    "sourdough",
+                    "stuffing"
                 ]
             }
         }
@@ -389,6 +391,7 @@
                     "light brown",
                     "powdered",
                     "superfine",
+                    "turbinado",
                     "white"
                 ]
             }
@@ -465,6 +468,7 @@
                 "independent": [
                     "camembert",
                     "cheddar",
+                    "cotija",
                     "feta",
                     "fontina",
                     "gorgonzola",
@@ -600,6 +604,19 @@
         "g": 7.0,
         "super": {},
         "sg": 0.35
+    },
+    "corn tortilla": {
+        "g": 45,
+        "super": {
+            "maize (meal)": 100
+        },
+        "names": {
+            "~tortilla": {
+                "dependent": [
+                    "_chip"
+                ]
+            }
+        }
     },
     "crab": {
         "super": {
@@ -1226,6 +1243,15 @@
             "leek": {}
         }
     },
+    "onion powder": {
+        "g": 3.0,
+        "super": {
+            "onions & leeks (alliums)": 200
+        },
+        "loss": {
+            "onions & leeks (alliums)": 0.5
+        }
+    },
     "orange": {
         "super": {
             "citrus fruit": 100
@@ -1373,11 +1399,13 @@
                     "yellow"
                 ],
                 "independent": [
+                    "cayenne",
                     "ghost",
                     "habanero",
                     "jalapeno",
                     "jalape\u00f1o",
                     "poblano",
+                    "scotch bonnet",
                     "serrano",
                     "shishito"
                 ]
@@ -1951,7 +1979,10 @@
         "names": {
             "black pepper salt": {},
             "pepper salt": {},
-            "salt black pepper": {}
+            "salt black pepper": {},
+            "black pepper kosher salt": {},
+            "pepper kosher salt": {},
+            "kosher salt black pepper": {}
         }
     },
     "sardine": {
@@ -2014,7 +2045,8 @@
             "syrup": {
                 "dependent": [
                     "simple",
-                    "sugar"
+                    "sugar",
+                    "golden"
                 ]
             }
         }
@@ -2093,6 +2125,17 @@
             "striped bass (farmed)": {}
         }
     },
+    "sun-dried tomato": {
+        "super": {
+            "tomatoes": 100
+        },
+        "loss": {
+            "tomatoes": 0.4
+        },
+        "names": {
+            "sun dried tomato": {}
+        }
+    },
     "sunflower oil": {
         "g": 25,
         "of": 1.0,
@@ -2156,7 +2199,10 @@
     "tomato paste": {
         "g": 15,
         "super": {
-            "tomatoes": 666
+            "tomatoes": 100
+        },
+        "loss": {
+            "tomatoes": 0.2
         },
         "sg": 1.13
     },
@@ -2178,6 +2224,15 @@
                 ]
             },
             "tomatillo": {}
+        }
+    },
+    "tortilla": {
+        "g": 45,
+        "super": {
+            "flour": 100
+        },
+        "names": {
+            "tortilla": {}
         }
     },
     "trout": {
