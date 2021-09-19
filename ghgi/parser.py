@@ -56,7 +56,7 @@ UNITS = {
     'can': 'pkg',
     'tin': 'pkg',
     'jar': 'pkg',
-    'fillet': 'ea',
+    'fillet': 'ea',  # currently being stripped because it doesn't appear in the right position to be capture as a quantity
 }
 
 # nltk base set (english) with 't', 'with', 'or', 'to' removed
@@ -108,6 +108,7 @@ STOPWORDS |= {
     'freshly',
     'frozen',  # leave this in for "frozen pea"?
     'garnish',
+    'garnishes',
     'gently',
     'halved',
     'halves',
@@ -144,6 +145,7 @@ STOPWORDS |= {
     'temperature',
     'thawed',
     'thinly',
+    'toasted',
     'trimmed',
     'unsalted',
     'unsweetened',
@@ -187,6 +189,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'heaping',
     'jarred',
     'lengthwise',
+    'lightly',
     'melted',
     'minced',
     'packed',
@@ -382,8 +385,8 @@ def names_mods(text):
         elif word:
             cleaned_text += [word]
     text = ' '.join(cleaned_text)
-    # split on comma, or, and
-    text = re.split(r',$|,\s|\sor\s|\sor$|\sand\s|\sand$', text)
+    # split on comma, or, and, semicolon
+    text = re.split(r',$|,\s|;$|;\s|\sor\s|\sor$|\sand\s|\sand$', text)
     return [r.strip() for r in text if r], mods
 
 
