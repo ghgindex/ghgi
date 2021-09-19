@@ -6,6 +6,7 @@ import json
 import copy
 from .datasets import MASTER_PRODUCTS
 from .trigram import Trigram
+from .gin import Gin
 from .convert import Convert
 from .origin import Origin, GHGFlavor
 
@@ -132,12 +133,13 @@ class Product:
         for name in ingredient[Product.NAMES]:
             # [(parent id, aka, confidence),...]
             name = name.replace('-', ' ')
-            matches = Trigram.match(name)
-            if matches:
-                product = Product.get(matches[0][0], matches[0][1])
-                confidence = matches[0][2]
+            # matches = Trigram.match(name)
+            match = Gin.query(name)
+            if match[0] is not None:
+                product = Product.get(match[1][0], match[0])
+                confidence = match[2]
                 results += [(product, confidence)]
-        results.sort(key=lambda k: k[1], reverse=True)
+        # results.sort(key=lambda k: k[1], reverse=True)
         return results[0] if results else (None, None)
 
     @staticmethod

@@ -3,8 +3,11 @@ import json
 
 
 from .trigram import build_indexes
+from .gin import Gin
 from .datasets import SOURCE_PRODUCTS
+from .datasets import MASTER_GIN_INDEX
 from .datasets import MASTER_PRODUCTS, MASTER_AKA_INDEX, MASTER_TRIGRAM_INDEX
+
 
 def extend_products(infile, outfile):
     products = json.load(infile)
@@ -20,7 +23,7 @@ def extend_products(infile, outfile):
                 extended_names += [name]
             for k, extension_names in extensions.items():
                 for extension in extension_names:
-                    trailing =  '_' in extension[:2]
+                    trailing = '_' in extension[:2]
                     no_space = '.' in extension[:2]
                     if trailing:
                         extension = extension[1:]
@@ -57,5 +60,10 @@ if __name__ == "__main__":
             json.dump(aka_index,  aka_file)
         with open(MASTER_TRIGRAM_INDEX, 'w') as tri_file:
             json.dump(trigram_index, tri_file)
-    
+
+    gin_index = Gin.generate()
+    print('writing gin_index to {}'.format(MASTER_GIN_INDEX))
+    with open(MASTER_GIN_INDEX, 'w') as gin_file:
+        json.dump(gin_index, gin_file)
+
     # TODO: there should be some sort of check on the origins. Maybe via test?

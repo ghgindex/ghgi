@@ -5,19 +5,20 @@ class Convert:
         'joule': 1.0,
     }
 
-    MASS = { # to grams
+    MASS = {  # to grams
         'kg': 1000.0,
         'pound': 453.592,
         'ounce': 28.3495,
         'g': 1.0,
     }
 
-    VOLUME = { # to milliliters
+    VOLUME = {  # to milliliters
         'gallon': 3785.41,
         'l': 1000.0,
         'quart': 946.353,
         'pint': 473.176,
         'cup': 236.588,
+        'drop': 0.05,
         'handful': 118.0,
         'fistful': 59.0,
         'fluid_oz': 29.5735,
@@ -29,7 +30,6 @@ class Convert:
         'smidgen': 0.154,
     }
 
-    
     @classmethod
     def to_metric(cls, quantity, unit, specific_gravity):
         if unit in cls.VOLUME:

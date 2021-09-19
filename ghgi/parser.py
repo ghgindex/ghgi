@@ -47,13 +47,16 @@ UNITS = {
     'fistful': 'fistful',
     'smidgen': 'smidgen',
     'bunch': 'bunch',
+    'drop': 'drop',
     'ear': 'ea',
     'slice': 'ea',
     'stalk': 'ea',
+    'stick': 'ea',
     'sprig': 'ea',
     'can': 'pkg',
     'tin': 'pkg',
     'jar': 'pkg',
+    'fillet': 'ea',
 }
 
 # nltk base set (english) with 't', 'with', 'or', 'to' removed
@@ -129,6 +132,7 @@ STOPWORDS |= {
     'quartered',
     'ripe',
     'room',
+    'roughly',
     'salted',
     'scrubbed',
     'seeded',
@@ -174,7 +178,9 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'dice',
     'diced',
     'dissolved',
+    'drained',
     'freeze-dried',
+    'generous',
     'grated',
     'ground',
     'gutted',
@@ -291,7 +297,7 @@ units_regex = re.compile(
     multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?:\s|,|$)'.format(units_group))
 
 units_regex = re.compile(
-    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|$)'.format(units_group))
+    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(units_group))
 
 
 # hrefs

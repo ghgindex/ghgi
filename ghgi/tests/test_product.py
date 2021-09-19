@@ -176,7 +176,7 @@ class TestProduct(TestCase):
         self.assertEqual(Product.lookup({'names': ['potato']})[
                          0]['name'], 'potatoes')
         self.assertEqual(Product.lookup({'names': ['potats']})[
-                         0]['name'], 'potatoes')
+                         0], None)
         self.assertEqual(Product.lookup({'names': ['sweet potato']})[
                          0]['name'], 'potatoes')
         self.assertEqual(Product.lookup({'names': ['sweet potato']})[
