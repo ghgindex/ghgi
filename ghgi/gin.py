@@ -101,7 +101,7 @@ class Gin:
             for i, t in enumerate(stemmed_tokens):
                 if i == key_word_index:
                     continue
-                matches = cls.index().get(t)
+                matches = cls.index().get(t, [])
                 for m in matches:
                     if m in results:
                         results[m] += 1
