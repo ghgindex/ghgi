@@ -71,13 +71,13 @@ class Product:
                 for origin in Origin.ORIGINS:
                     ghg_values = Product.ghg_efficiencies(
                         cls.db()[product], origin)
-                    for cat, values in ghg_values.items():
-                        if not values[1]:
+                    for cat, value in ghg_values.items():
+                        if not value:
                             continue
                         if cat in baselines[origin]:
-                            baselines[origin][cat] += [values[0]]
+                            baselines[origin][cat] += [value]
                         else:
-                            baselines[origin][cat] = [values[0]]
+                            baselines[origin][cat] = [value]
 
             for origin in baselines:
                 for k in baselines[origin]:
@@ -99,13 +99,13 @@ class Product:
             for origin in Origin.ORIGINS:
                 ghg_values = Product.ghg_efficiencies(
                     cls.db()[product], origin)
-                for cat, values in ghg_values.items():
-                    if not values[1]:
+                for cat, value in ghg_values.items():
+                    if not value:
                         continue
                     if cat in baselines[origin]:
-                        baselines[origin][cat] += [values[0]]
+                        baselines[origin][cat] += [value]
                     else:
-                        baselines[origin][cat] = [values[0]]
+                        baselines[origin][cat] = [value]
                 for k in baselines[origin]:
                     baselines[origin][k].sort(reverse=True)
         return baselines
