@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import logging
 from collections import defaultdict
 from enum import Enum
 from ghgi.parser import pad_punctuation
@@ -300,7 +299,6 @@ class Product:
         for cat, eff in prod_efficiencies.items():
             baseline = Product.efficiency_baseline(origin)[cat]
             if baseline is None:
-                logging.warn('no baseline found for category {}'.format(cat))
                 return
             return eff / baseline
 
@@ -311,8 +309,6 @@ class Product:
             parent_eff_ratio = Product.ghg_efficiency_ratio(
                 Product.get(parent), origin)
             if parent_eff_ratio is None:
-                logging.warn(
-                    '{} has no efficiency ratio; ignoring'.format(parent))
                 continue
             shares += share
             share_weighted_efficiency_ratios += parent_eff_ratio * share
