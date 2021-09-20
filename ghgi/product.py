@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import logging
 from collections import defaultdict
 from enum import Enum
 from ghgi.parser import pad_punctuation
@@ -306,6 +307,10 @@ class Product:
         for parent, share in product.get(Product.PARENTS, {}).items():
             parent_eff_ratio = Product.ghg_efficiency_ratio(
                 Product.get(parent), origin)
+            if parent_eff_ratio is None:
+                logging.warn(
+                    '{} has no efficiency ratio; ignoring'.format(parent))
+                continue
             shares += share
             share_weighted_efficiency_ratios += parent_eff_ratio * share
 
