@@ -299,6 +299,9 @@ class Product:
         # if prod_efficiencies isn't empty, it can only have one entry; return it
         for cat, eff in prod_efficiencies.items():
             baseline = Product.efficiency_baseline(origin)[cat]
+            if baseline is None:
+                logging.warn('no baseline found for category {}'.format(cat))
+                return
             return eff / baseline
 
         # otherwise, use its parents
