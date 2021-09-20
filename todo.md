@@ -42,12 +42,15 @@ The trigram index doesn't make sense. While it's likely better at dealing with m
 
 We also might want to strip out adverbs!
 
-
 ### Efficiency ratios
 
-We need to make sure that these are being calculated correctly given parent items.
+We need to make sure that these are being calculated correctly given parent items. This should work the same way as it does for recipes: calculate the efficient value for each constituent, and divide the total impact of the ingredient by the sum of that.
 
 Verify that the chicken (and other) stock super percents are right
+
+**Add a test to ensure that no products have more than one food category set!!**
+
+Decide what to do with `LOSS`
 
 ## Mods
 
@@ -58,6 +61,8 @@ Also, we are removing `can` from stopwords, as it's also a unit. We need a test 
 ## Stopwords
 
 ## Missing things
+
+Condensed milk
 
 Coconut, coconut milk, coconut oil
   Feraldi et al. (2012). Life Cycle Assessment of Coconut Milk and Two Non-Dairy Milk Beverage Alternatives. Franklin Associate

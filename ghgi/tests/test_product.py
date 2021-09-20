@@ -167,10 +167,10 @@ class TestProduct(TestCase):
 
     def test_food_value(self):
         product = {'ed': 1000}
-        self.assertEqual(Product.food_values(product), {'ed': (1000, 100)})
+        self.assertEqual(Product.food_values(product), {'ed': 1000})
         product = {'ed': 1000, 'of': 500}
         self.assertEqual(Product.food_values(product), {
-                         'ed': (1000, 100), 'of': (500, 100)})
+                         'ed': 1000, 'of': 500})
 
         with patch.object(
                 Product, '_db',
@@ -179,17 +179,12 @@ class TestProduct(TestCase):
                     'test_thing_2': {'of': 0.5, 'fv': 0.4}
                 }):
             product = {'super': {'test_thing': 100}}
-            self.assertEqual(Product.food_values(product), {
-                'of': (1.0, 1.0)})
+            self.assertEqual(Product.food_values(product), {})
             product = {'super': {'test_thing': 50}}
-            self.assertEqual(Product.food_values(product), {
-                'of': (0.5, 0.5)})
+            self.assertEqual(Product.food_values(product), {})
 
             product = {'super': {'test_thing': 50, 'test_thing_2': 50}}
-            self.assertEqual(Product.food_values(product), {
-                'of': (0.75, 1.0),
-                'fv': (0.2, 0.5)
-            })
+            self.assertEqual(Product.food_values(product), {})
 
     def test_lookup(self):
         self.assertEqual(Product.lookup({'names': ['potato']})[
@@ -206,7 +201,7 @@ class TestProduct(TestCase):
             with patch.object(Product, 'ghg_value', return_value=7.5):
                 product = {'of': 1.0}
                 self.assertEqual(Product.ghg_efficiencies(product, None), {
-                    'of': (1.0/7.5, 100)})
+                    'of': 1.0/7.5})
 
                 self.assertEqual(
                     Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
@@ -215,26 +210,21 @@ class TestProduct(TestCase):
                         Product, '_db',
                         {
                             'test_thing': {'of': 1.0},
-                            'test_thing_2': {'of': 0.5, 'fv': 0.4}
+                            'test_thing_2': {'fv': 0.3}
                         }):
                     product = {'super': {'test_thing': 50}}
-                    self.assertEqual(Product.ghg_efficiencies(product, None), {
-                        'of': (0.5/7.5, 0.5)})
+                    self.assertEqual(
+                        Product.ghg_efficiencies(product, None), {})
 
                     self.assertEqual(
-                        Product.ghg_efficiency_ratio(product), 0.5/7.5/2.0)
+                        Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
+                    product = {'super': {'test_thing': 100}}
+                    self.assertEqual(
+                        Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
 
                     product = {'super': {'test_thing': 50, 'test_thing_2': 50}}
-                    self.assertEqual(Product.ghg_efficiencies(product, None),
-                                     {
-                        'of': (0.75/7.5, 1.0),
-                        'fv': (0.2/7.5, 0.5)
-                    })
-
                     self.assertEqual(
-                        Product.ghg_efficiency_ratio(product),
-                        ((0.75/7.5*1.0/2.0) + (0.2/7.5*0.5/3.0)) / 1.5
-                    )
+                        Product.ghg_efficiency_ratio(product), 0.3/7.5)
 
                     product = {'of': 1.0, 'super': {
                         'test_thing': 50, 'test_thing_2': 50}}
@@ -243,13 +233,3 @@ class TestProduct(TestCase):
 
     def test_labels(self):
         pass
-        # print('sg', Product.sg(Product.get('butter')))
-        # print('g', Product.g(Product.get('butter')))
-        # print('mass', Product.mass({'qty': (1, 1.0), 'unit': (
-        #     'ea', 1.0), 'product': Product.get('butter')}))
-
-        # print('ghg_mean', Product.ghg_value(Origin.GHG_MEAN,
-        #                                     Product.get('butter'), 'global'))
-
-        # print('impact', Product.impact({'qty': (1, 1.0), 'unit': (
-        #     'ea', 1.0), 'product': Product.get('butter')}))

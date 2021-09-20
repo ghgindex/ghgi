@@ -62,7 +62,7 @@ class Product:
 
     @classmethod
     def efficiency_baselines(cls):
-        """ Return a dictionary of the baseline ghg_enery_efficiency for each
+        """ Return a dictionary of the baseline ghg_energy_efficiency for each
         food category
         """
         if not cls._baselines:
@@ -272,82 +272,55 @@ class Product:
 
     @staticmethod
     def food_values(product):
-        """ return a dict of {category: (value, share)} where category is the
-        product category, value is the food value of this product for that
-        type, and share is what percent of its composition is allocated to
-        this category (for composite foods only).
+        """ return a dict of {category: value} where category is the
+        product category, and value is the food value of this product for that
+        type.
         """
         if not product:  # empty or None
             return {}
-        values = defaultdict(lambda: (0.0, 0))
+        values = defaultdict(lambda: 0.0)
         for cat in Category:
             value = product.get(cat.value, None)
             if value:
-                values[cat.value] = (value, 100)
-        if values:
-            return values
-
-        # derive values from parents if not available directly
-        for parent, pct in product.get(Product.PARENTS, {}).items():
-            # This assumes that the net food values do not change, so 100g of
-            # juice has the same food value as 100g of whole fruit. Clearly,
-            # this isn't accurate in all (or even most) cases, and as such
-            # food values should be overwritten where known.
-            par_values = Product.food_values(Product.get(parent))
-            for cat in par_values:
-                value = values[cat][0] + (par_values[cat][0] * pct/100.0)
-                share = values[cat][1] + pct / 100.0
-                values[cat] = value, share
+                values[cat.value] = value
         return values
 
     @staticmethod
     def ghg_efficiency_ratio(product, origin=Origin.DEFAULT):
-        # For a single-category item, return the ratio between this one's
-        # efficiency in that category and the baseline.
+        # return the ratio between this product's efficiency and its
+        # baseline(s). If it has no food values, aggregate its parents'
+        # ghg_efficiency_ratios
         if product is None:
             return None
+
         prod_efficiencies = Product.ghg_efficiencies(product, origin)
-        weighted_efficiency_sums = 0.0
-        weighted_efficiency_shares = 0.0
-        for cat in Category:
-            if not prod_efficiencies.get(cat.value):
-                continue
-            efficiency, share = prod_efficiencies[cat.value]
 
-            baseline = Product.efficiency_baseline(origin)[cat.value]
-            cat_efficiency = efficiency/baseline
+        # if prod_efficiencies isn't empty, it can only have one entry; return it
+        for cat, eff in prod_efficiencies.items():
+            baseline = Product.efficiency_baseline(origin)[cat]
+            return eff / baseline
 
-            weighted_efficiency_sums += cat_efficiency * share
-            weighted_efficiency_shares += share
+        # otherwise, use its parents
+        share_weighted_efficiency_ratios = 0.0
+        shares = 0.0
+        for parent, share in product.get(Product.PARENTS, {}).items():
+            parent_eff_ratio = Product.ghg_efficiency_ratio(
+                Product.get(parent), origin)
+            shares += share
+            share_weighted_efficiency_ratios += parent_eff_ratio * share
 
-        if weighted_efficiency_shares > 0:
-            return weighted_efficiency_sums/weighted_efficiency_shares
+        if shares > 0:
+            return share_weighted_efficiency_ratios / shares
 
         return None
 
-        # This never gets called, because we get parent info via ghg_efficiencies
-        # If it has parents, return the weighted average of their efficiency ratios.
-        value = None
-        total_pct = 0
-        for parent, pct in product.get(Product.PARENTS, {}).items():
-            ghg_eff = Product.ghg_efficiency_ratio(
-                Product.get(parent), origin)
-            if ghg_eff:
-                value = value if value else 0.0  # convert from None if needed
-                loss = product.get(Product.LOSS, {}).get(parent, 0.0)
-                value += ghg_eff * (1.0-loss) * pct
-                total_pct += pct
-        if value and (total_pct > 0):
-            value /= total_pct
-        return value
-
     @staticmethod
     def ghg_efficiencies(product, origin):
-        """ return ghg_mean emission per Category """
+        """ return product's ghg_mean emission per food Category """
         ghg_mass_mean = Product.ghg_value(product, origin, GHGFlavor.MEAN)
         if not ghg_mass_mean:
             return {}
-        return {cat: (value[0]/ghg_mass_mean, value[1]) for cat, value in Product.food_values(product).items()}
+        return {cat: value/ghg_mass_mean for cat, value in Product.food_values(product).items()}
 
     @staticmethod
     def impact(ingredient, origin=Origin.DEFAULT):
