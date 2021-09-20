@@ -358,9 +358,9 @@
     },
     "butter": {
         "g": 10,
-        "of": 1.0,
+        "of": 0.8,
         "super": {
-            "milk": 2100.0
+            "milk": 657.0
         },
         "sg": 0.95,
         "names": {
@@ -371,6 +371,14 @@
                 ]
             }
         }
+    },
+    "buttermilk": {
+        "g": 100,
+        "m": 1.0,
+        "super": {
+            "milk": 62.0
+        },
+        "sg": 1.0
     },
     "cane sugar": {
         "g": 4,
@@ -599,8 +607,8 @@
     "coffee": {
         "g": 227,
         "super": {
-            "coffee beans": 7.0,
-            "water": 220
+            "coffee beans": 3.0,
+            "water": 97
         },
         "sg": 1.0,
         "names": {
@@ -646,14 +654,14 @@
     },
     "cream": {
         "g": 100,
+        "m": 1.0,
         "super": {
-            "milk": 500
+            "milk": 312
         },
         "sg": 0.95,
         "names": {
             "cream": {
                 "dependent": [
-                    "heavy",
                     "whipped",
                     "whipping"
                 ]
@@ -780,8 +788,8 @@
     "espresso": {
         "g": 30,
         "super": {
-            "coffee beans": 7.0,
-            "water": 23.0
+            "coffee beans": 23,
+            "water": 77
         },
         "sg": 1.0
     },
@@ -898,9 +906,34 @@
             "demersal fish": 100
         }
     },
+    "half and half": {
+        "g": 100,
+        "m": 1.0,
+        "super": {
+            "milk": 164
+        },
+        "sg": 0.95
+    },
     "halibut": {
         "super": {
             "demersal fish": 100
+        }
+    },
+    "heavy cream": {
+        "g": 100,
+        "m": 1.0,
+        "super": {
+            "milk": 358
+        },
+        "sg": 0.95,
+        "names": {
+            "~cream": {
+                "dependent": [
+                    "heavy",
+                    "heavy whipping",
+                    "heavy whipped"
+                ]
+            }
         }
     },
     "herbs": {
@@ -1071,13 +1104,8 @@
         "names": {
             "milk": {
                 "dependent": [
-                    "2 percent",
-                    "2%",
                     "full fat",
-                    "low fat",
-                    "skim",
-                    "whole",
-                    ".butter"
+                    "whole"
                 ]
             }
         }
@@ -1230,6 +1258,22 @@
                 "dependent": [
                     "extra virgin",
                     "virgin"
+                ]
+            }
+        }
+    },
+    "one percent milk": {
+        "g": 100,
+        "m": 1.0,
+        "super": {
+            "milk": 79.0
+        },
+        "sg": 1.0,
+        "names": {
+            "~milk": {
+                "dependent": [
+                    "1%",
+                    "1 percent"
                 ]
             }
         }
@@ -2064,6 +2108,22 @@
             }
         }
     },
+    "skim milk": {
+        "g": 100,
+        "m": 1.0,
+        "super": {
+            "milk": 71.0
+        },
+        "sg": 1.0,
+        "names": {
+            "~milk": {
+                "dependent": [
+                    "nonfat",
+                    "non-fat"
+                ]
+            }
+        }
+    },
     "snapper": {
         "super": {
             "demersal fish": 100
@@ -2140,10 +2200,7 @@
     },
     "sun-dried tomato": {
         "super": {
-            "tomatoes": 100
-        },
-        "loss": {
-            "tomatoes": 0.4
+            "tomatoes": 200
         },
         "names": {
             "sun dried tomato": {}
@@ -2163,8 +2220,8 @@
     "tea": {
         "g": 227,
         "super": {
-            "tea leaves": 3.0,
-            "water": 224
+            "tea leaves": 1.33,
+            "water": 98.67
         },
         "sg": 1.0,
         "names": {
@@ -2282,6 +2339,22 @@
     "turbot": {
         "super": {
             "demersal fish": 100
+        }
+    },
+    "two percent milk": {
+        "g": 100,
+        "m": 1.0,
+        "super": {
+            "milk": 86.0
+        },
+        "sg": 1.0,
+        "names": {
+            "~milk": {
+                "dependent": [
+                    "2%",
+                    "2 percent"
+                ]
+            }
         }
     },
     "umbellifers": {

@@ -6,7 +6,7 @@ Products is the master database of product metadata. Each entry is keyed under i
  * `pd` (float) (optional) protein density in ?/?
  * `ed` (float) (optional) energy density in kJ/kg
  * `super` (dict) (optional) constituent ingredients
-    * `super_1` (float) % (ratio?) of product that is super_1
+    * `super_1` (float) % of product that is super_1
     * `super_2` (float)
     * ...
  * `loss` (dict) (optional) % of supers lost in processing

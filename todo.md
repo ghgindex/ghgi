@@ -42,6 +42,13 @@ The trigram index doesn't make sense. While it's likely better at dealing with m
 
 We also might want to strip out adverbs!
 
+
+### Efficiency ratios
+
+We need to make sure that these are being calculated correctly given parent items.
+
+Verify that the chicken (and other) stock super percents are right
+
 ## Mods
 
 Some mods are problematic, e.g. fresh, when they conflict with key ways to separate out similar ingredients. For instance, 1 cup beans is quite different from 1 cup of fresh beans. We need to figure out a way to handle this, for both Mods and Stopwords. If you run test_stopword_safety and test_mod_safety if will squawk the offenders.

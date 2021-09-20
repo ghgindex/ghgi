@@ -272,33 +272,32 @@ class Product:
 
     @staticmethod
     def food_values(product):
-        """ return a dict of {category: (value, direct)} where category is the
+        """ return a dict of {category: (value, share)} where category is the
         product category, value is the food value of this product for that
-        type, and direct is whether that value was generated directly or as a
-        composite of parents.
+        type, and share is what percent of its composition is allocated to
+        this category (for composite foods only).
         """
         if not product:  # empty or None
             return {}
-        values = defaultdict(lambda: (0.0, False))
+        values = defaultdict(lambda: (0.0, 0))
         for cat in Category:
             value = product.get(cat.value, None)
             if value:
-                values[cat.value] = (value, True)
+                values[cat.value] = (value, 100)
         if values:
             return values
 
         # derive values from parents if not available directly
         for parent, pct in product.get(Product.PARENTS, {}).items():
-            # This assumes that the net food values do not change. So 100g of juice
-            # has the same food value as 100g of whole fruit, but its CO2 impact is
-            # a multiple based on the LOSS value. Clearly, this isn't true in all
-            # or even most cases, and as such food values should be overwritten
-            # where known.
+            # This assumes that the net food values do not change, so 100g of
+            # juice has the same food value as 100g of whole fruit. Clearly,
+            # this isn't accurate in all (or even most) cases, and as such
+            # food values should be overwritten where known.
             par_values = Product.food_values(Product.get(parent))
             for cat in par_values:
-                value = values[cat][0] + \
-                    (par_values[cat][0] * pct/100.0)
-                values[cat] = value,  False  # indirect
+                value = values[cat][0] + (par_values[cat][0] * pct/100.0)
+                share = values[cat][1] + pct / 100.0
+                values[cat] = value, share
         return values
 
     @staticmethod
@@ -308,12 +307,25 @@ class Product:
         if product is None:
             return None
         prod_efficiencies = Product.ghg_efficiencies(product, origin)
+        weighted_efficiency_sums = 0.0
+        weighted_efficiency_shares = 0.0
         for cat in Category:
-            if not prod_efficiencies.get(cat.value, [None, False])[1]:
+            if not prod_efficiencies.get(cat.value):
                 continue
+            efficiency, share = prod_efficiencies[cat.value]
+
             baseline = Product.efficiency_baseline(origin)[cat.value]
-            if baseline:
-                return prod_efficiencies[cat.value][0]/baseline
+            cat_efficiency = efficiency/baseline
+
+            weighted_efficiency_sums += cat_efficiency * share
+            weighted_efficiency_shares += share
+
+        if weighted_efficiency_shares > 0:
+            return weighted_efficiency_sums/weighted_efficiency_shares
+
+        return None
+
+        # This never gets called, because we get parent info via ghg_efficiencies
         # If it has parents, return the weighted average of their efficiency ratios.
         value = None
         total_pct = 0
