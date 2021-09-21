@@ -405,6 +405,11 @@
             }
         }
     },
+    "caper": {
+        "g": 15,
+        "sg": 1.05,
+        "super": {}
+    },
     "capelin": {
         "super": {
             "pelagic fish <30 cm": 100
@@ -594,7 +599,8 @@
             "coconut": {
                 "dependent": [
                     "_oil",
-                    "_milk"
+                    "_milk",
+                    "_water"
                 ]
             }
         }
@@ -684,6 +690,11 @@
                 ]
             }
         }
+    },
+    "cream tartar": {
+        "g": 3.5,
+        "super": {},
+        "sg": 0.95
     },
     "crustacean broth": {
         "g": 250,
@@ -812,6 +823,15 @@
         "super": {
             "fish stock": 20,
             "water": 80
+        },
+        "sg": 1.0
+    },
+    "fish sauce": {
+        "g": 15,
+        "super": {
+            "pelagic fish <30 cm": 20.5,
+            "salt": 7.5,
+            "water": 72
         },
         "sg": 1.0
     },
@@ -1082,6 +1102,11 @@
             },
             "polenta": {}
         }
+    },
+    "maple syrup": {
+        "g": 15,
+        "sg": 1.0,
+        "super": {}
     },
     "mayonnaise": {
         "g": 10,
@@ -1465,6 +1490,11 @@
                     "scotch bonnet",
                     "serrano",
                     "shishito"
+                ]
+            },
+            "pumpkin": {
+                "independent": [
+                    "_pepitas"
                 ]
             },
             "radicchio": {},
@@ -2054,6 +2084,14 @@
         "g": 15.0,
         "super": {
             "onions & leeks (alliums)": 100
+        },
+        "names": {
+            "scallion": {
+                "dependent": [
+                    "_green",
+                    "_white"
+                ]
+            }
         }
     },
     "scallop": {
@@ -2068,6 +2106,23 @@
                     "_(wild)"
                 ]
             }
+        }
+    },
+    "sesame": {
+        "super": {},
+        "names": {
+            "sesame seed": {
+                "dependent": [
+                    "white",
+                    "black"
+                ]
+            }
+        }
+    },
+    "sesame oil": {
+        "g": 15,
+        "super": {
+            "sesame": 200
         }
     },
     "shad": {
