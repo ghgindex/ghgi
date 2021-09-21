@@ -15,8 +15,8 @@ NO_SOLO = {
     'blue',
     'grey',
     'gray',
-    'green',
-    'orange',
+    'green',  # greens?
+    # 'orange', # oranges!
     'purple'
     'red',
     'white',

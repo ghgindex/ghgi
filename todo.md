@@ -52,6 +52,8 @@ Verify that the chicken (and other) stock super percents are right
 
 Decide what to do with `LOSS`
 
+something's up with dark chocolate -> it keeps getting an efficiency rating when it shouldn't
+
 ## Mods
 
 Some mods are problematic, e.g. fresh, when they conflict with key ways to separate out similar ingredients. For instance, 1 cup beans is quite different from 1 cup of fresh beans. We need to figure out a way to handle this, for both Mods and Stopwords. If you run test_stopword_safety and test_mod_safety if will squawk the offenders.
@@ -63,6 +65,8 @@ Also, we are removing `can` from stopwords, as it's also a unit. We need a test 
 ## Missing things
 
 Condensed milk
+cream cheese
+mushrooms
 
 Coconut, coconut milk, coconut oil
   Feraldi et al. (2012). Life Cycle Assessment of Coconut Milk and Two Non-Dairy Milk Beverage Alternatives. Franklin Associate
