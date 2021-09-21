@@ -155,11 +155,15 @@ class GIN:
 
         # select from multiple candidate matches
         best_score = 0.0
+        selected = None
         for match in max_matches:
             match_size = len(cls.tokenize(match))
             match_pct = max_match_count*2 / (match_size + term_size)
             if match_pct > best_score:
                 # find the one that matched most closely as a share of its size
+                best_score = match_pct
+                selected = match
+            elif match_pct == best_score and len(match) > len(selected):
                 best_score = match_pct
                 selected = match
 
