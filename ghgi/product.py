@@ -140,7 +140,7 @@ class Product:
                 results += [(product, confidence, size)]
         results.sort(key=lambda k: k[2], reverse=True)  # prefer longer matches
         results.sort(key=lambda k: k[1], reverse=True)
-        return results[0] if results else (None, None)
+        return results[0][:2] if results else (None, None)
 
     @staticmethod
     def itemize(ingredients):
