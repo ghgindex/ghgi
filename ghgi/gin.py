@@ -163,8 +163,5 @@ class GIN:
                 # find the one that matched most closely as a share of its size
                 best_score = match_pct
                 selected = match
-            elif match_pct == best_score and len(match) > len(selected):
-                best_score = match_pct
-                selected = match
 
         return selected, cls.aka_index()[selected], best_score

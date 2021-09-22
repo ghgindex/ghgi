@@ -195,6 +195,8 @@ class TestProduct(TestCase):
                          0]['name'], 'potatoes')
         self.assertEqual(Product.lookup({'names': ['sweet potato']})[
                          0]['alias'], 'sweet potato')
+        self.assertEqual(Product.lookup({'names': ['grape', 'cherry tomato']})[
+                         0]['alias'], 'cherry tomato')
 
     def test_ghg_efficiency_ratio(self):
         with patch.object(Product, 'efficiency_baseline', return_value={'of': 2.0, 'fv': 3.0}):

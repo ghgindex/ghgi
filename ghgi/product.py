@@ -132,11 +132,13 @@ class Product:
         results = []
         for name in ingredient[Product.NAMES]:
             name = name.replace('-', ' ')
+            size = len(name)
             match = GIN.query(name)
             if match[0] is not None:
                 product = Product.get(match[1][0], match[0])
                 confidence = match[2]
-                results += [(product, confidence)]
+                results += [(product, confidence, size)]
+        results.sort(key=lambda k: k[2], reverse=True)  # prefer longer matches
         results.sort(key=lambda k: k[1], reverse=True)
         return results[0] if results else (None, None)
 
