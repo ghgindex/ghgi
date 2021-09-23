@@ -33,6 +33,8 @@ class Ingredient:
     PER = 'per'
     BUNCH = 'bunch'
     PKG = 'pkg'
+    PLUS = 'plus'
+    MODS = 'mods'
 
 
 class Product:
@@ -59,6 +61,32 @@ class Product:
             for k in cls._db:
                 cls._db[k][Product.NAME] = k
         return cls._db
+
+    @classmethod
+    def validate_db(cls):
+        """ Validate that all products in database have, directly or via their
+        `super`, the keys [Product.NAME, Product.MASS, and Product.SG] and a value
+        for at least one Category.
+        """
+        valid = True
+        for name, product in cls.db().items():
+            if not name:
+                valid = False
+                print('product name must not be blank')
+            elif name.startswith('_'):
+                # ignore these
+                continue
+
+            if Product.sg(product) is None:
+                valid = False
+                print('no sg value found for {}'.format(name))
+
+            if Product.g(product) in [None, 0.0]:
+                valid = False
+                print('no g (mass) value found for {}'.format(name))
+
+        if not valid:
+            raise Exception('Product database failed to validate')
 
     @classmethod
     def efficiency_baselines(cls):
@@ -201,16 +229,17 @@ class Product:
         return qty, unit
 
     @staticmethod
-    def mass(ingredient):
-        """Return the mass in grams of the ingredient product.
-        The ingredient should include a value under 'product' which is its
-        looked-up product entry.
+    def mass_for_entry(sg, entry):
+        """
+        Return the inferred mass, the quantity type, and whether it's a plus.
 
         TODO: This gets a bit tricky for things like cans, bunches, and sprigs, which
         are essentially different sizes of `ea`. In addition to the default 
         "g" value, I think we need to add something optional like `single_g`,
         `agg_g` and introduce new units `single`, `agg` which would be used
         to mask thinks like `sprig`, `bunch`, and so forth.
+
+        We prefer mass units to volumes or `ea`ches.
 
         Ingredients can have multiple quantity values. `ea` values are notably
         tricky. If we get one, we first check if there is a non-ea unit
@@ -219,44 +248,95 @@ class Product:
         if we have 2 `ea` of something qualified as 3 `pounds`, the `qty` becomes
         2*3 = 6, and the unit goes from `ea` to `pounds`.
         """
+        flavor = None
 
-        product = ingredient[Ingredient.PRODUCT]
-        sg = Product.sg(product)
-        qtys = ingredient[Ingredient.QTYS][0]
-        qty = qtys[Ingredient.QTY]
-        unit = qtys[Ingredient.UNIT]
+        qty = entry[Ingredient.QTY]
+        plus = entry[Ingredient.PLUS]
+        unit = entry[Ingredient.UNIT]
+        per = entry[Ingredient.PER]
+
+        if unit in Convert.VOLUME:
+            flavor = Convert.VOLUME
+        elif unit in Convert.MASS:
+            flavor = Convert.MASS
 
         if unit not in [Ingredient.EA, Ingredient.PKG, Ingredient.BUNCH]:
-            return Convert.to_metric(qty, unit, sg)
+            return Convert.to_metric(qty, unit, sg), flavor, plus, per
 
         # see if there is clarification available for the value
-        for qual in qtys.get(Ingredient.QUALIFIERS, []):
+        for qual in entry.get(Ingredient.QUALIFIERS, []):
             if qual[Ingredient.UNIT] != Ingredient.EA:
                 unit = qual[Ingredient.UNIT]
+                if unit in Convert.VOLUME:
+                    flavor = Convert.VOLUME
+                elif unit in Convert.MASS:
+                    flavor = Convert.MASS
                 if qual.get(Ingredient.PER) == 'each':
                     qty = qty * qual[Ingredient.QTY]
                 else:
                     qty = qual[Ingredient.QTY]
-                return Convert.to_metric(qty, unit, sg)
+                return Convert.to_metric(qty, unit, sg), flavor, plus, per
 
-        # if there was no clarification in the qualifiers, see if a
-        # subsequent quantity offers any help
-        for sub in ingredient[Ingredient.QTYS][1:]:
-            if sub[Ingredient.UNIT] != Ingredient.EA:
-                unit = sub[Ingredient.UNIT]
-                if sub.get(Ingredient.PER) == 'each':
-                    qty = qty * sub[Ingredient.QTY]
-                else:
-                    qty = sub[Ingredient.QTY]
-                return Convert.to_metric(qty, unit, sg)
+        return qty, unit, plus, per
 
-        # if there were no clarifications, unbundle
-        qty, unit = Product.unbundle(product, qty, unit)
+    @staticmethod
+    def mass(ingredient):
+        """Return the mass in grams of the ingredient product.
+        The ingredient should include a value under 'product' which is its
+        looked-up product entry.
 
-        if unit == Ingredient.EA:
-            qty *= Product.g(product)
+        This function assesses all of the available quantity information and
+        tries to synthesize it in the most accurate way possible.
+        """
 
-        return Convert.to_metric(qty, unit, sg)
+        product = ingredient[Ingredient.PRODUCT]
+        sg = Product.sg(product)
+        mods = ingredient.get(Ingredient.MODS)
+        grated = mods and 'grated' in mods
+
+        converted_qtys = [
+            Product.mass_for_entry(sg, q) for q in ingredient[Ingredient.QTYS]
+        ]
+
+        if converted_qtys[0][1] in [Ingredient.EA, Ingredient.PKG, Ingredient.BUNCH]:
+            # see if we can find a clarification
+            qty = converted_qtys[0][0]
+            unit = converted_qtys[0][1]
+            for sub in converted_qtys[1:]:
+                if sub[1] != Ingredient.EA:
+                    unit = sub[1]
+                    if sub[3] == 'each':
+                        qty = qty * sub[0]
+                    else:
+                        qty = sub[0]
+                    return qty
+
+            # if nothing was found, multiple the EA value by Product.g
+            qty, unit = Product.unbundle(product, qty, unit)
+            if unit == Ingredient.EA:
+                qty *= Product.g(product)
+            return Convert.to_metric(qty, unit, sg)
+
+        # otherwise, we aggregate mass and volume entries
+        mass_qty = 0
+        vol_qty = 0
+        plus = False
+        for converted_qty in converted_qtys:
+            plus |= converted_qty[2]
+            if converted_qty[1] == Convert.MASS:
+                if plus or (mass_qty == 0):
+                    mass_qty += converted_qty[0]
+            elif converted_qty[1] == Convert.VOLUME:
+                if plus or (vol_qty == 0):
+                    vol_qty += converted_qty[0]
+
+        if vol_qty and grated:
+            # UGLY: accounting for cheeses
+            vol_qty /= 6
+
+        if not mass_qty:
+            return vol_qty
+        return mass_qty
 
     @staticmethod
     def ghg_value(product, origin, flavor: GHGFlavor):

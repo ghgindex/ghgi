@@ -1,5 +1,10 @@
 # Ye Olde TODO list
 
+## Catalog
+
+Dairy explanation
+Mushrooms
+
 ## Note to self
 
 The parser now successfully looks for interstitial parentheticals between the qty and the units! These are then parsed, and `quantify` infers all kinds of nice things if it receives an interstitial parenthetical.
@@ -8,7 +13,7 @@ Preserve commas when we remove stopwords! Otherwise you can end up with nonsense
 
 Strip out `to`s at the end
 replace `or`s with commas at the end
-replace `plus` with comma
+replace `plus` with comma (or a `+`?) Actually I think we should make `plus` a `quantify` value and add `plus` at the front of the units regex
 
 Why isn't the parenthetical getting stripped out of this? `Kosher salt (Diamond Crystal) and black pepper`
 `1 packed cup cilantro, coarsely chopped`
@@ -22,9 +27,9 @@ if the first qty entry is a `ea` or something similar, we multiply its quantity 
 
 I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and related things that aren't inherently quantified.
 
-## Parse errors
+## Parser
 
-`python3 setup.py test -s ghgi.tests.test_origin.TestOrigin.test_origin_entries`
+We need to rework how we parse volumes vs weights (prefer the latter where we can), and also densities for grated things, especially cheeses.
 
 ### Each types
 

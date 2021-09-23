@@ -190,6 +190,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'jarred',
     'lengthwise',
     'lightly',
+    'loosely',
     'melted',
     'minced',
     'packed',
@@ -209,6 +210,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'smoked',
     'squeezed',
     'steamed',
+    'tightly,'
     'torn',
     'well',
     'whipped',
@@ -292,7 +294,7 @@ qty_regex_2 = r'[\d\.]*[-\.\/\s]?\d*[\.\/\s]?\d*\s?'
 
 # multi_qty_regex looks for pairs of quantities separated by "to" or "or"
 # So far, this separator works ok but it could be made more robust to caps, dashes, etc
-multi_qty_regex = r'(?P<qty>{}(([Tt][Oo]|[Oo][Rr])\s)*{})'.format(
+multi_qty_regex = r'(?P<plus>[pP][lL][uU][sS]\s+)?(?P<qty>{}(([Tt][Oo]|[Oo][Rr])\s)*{})'.format(
     qty_regex_1, qty_regex_2)
 
 # OG: works pretty good
@@ -320,17 +322,22 @@ def no_singular(word):
 
 def quantify(match):
     # given a units match dict, return a dict of {'qty':float, 'unit':str, 'qualifiers': list}
-    result = {'unit': 'ea', 'qty': 1, 'qualifiers': [], 'per': None}  # default
+    result = {'unit': 'ea', 'qty': 1, 'qualifiers': [],
+              'per': None, 'plus': False}  # default
     qty = match.get('qty')
     unit = match.get('unit')
     qualifier = match.get('qual')
     per = match.get('per')
+    plus = match.get('plus')
     if unit:
         # try case sensitive first due to Teaspoon/tablespoon
         result['unit'] = UNITS.get(unit, UNITS.get(unit.lower()))
 
     if per:
         result['per'] = match.get('per')
+
+    if plus:
+        result['plus'] = True
 
     if qty:
         qtys = re.split(r'[-\s]', qty)
@@ -568,7 +575,7 @@ def amounts(text_entry):
         # infer a single `ea` unit
         remainder, mods = names_mods(cleaned_text)
         return {
-            QTYS: [{'qty': 1, 'unit': 'ea', 'qualifiers': [], 'per': None}],
+            QTYS: [{'qty': 1, 'unit': 'ea', 'qualifiers': [], 'per': None, 'plus': False}],
             NAMES: remainder,
             MODS: mods,
             STRIPPED_WORDS: stripped_words,

@@ -49,28 +49,29 @@ class TestProduct(TestCase):
                 Ingredient.UNIT: 'ea',
                 Ingredient.PER: None,
                 Ingredient.QUALIFIERS: [],
+                Ingredient.PLUS: False
             }],
             Ingredient.PRODUCT: product
         }
         self.assertEqual(Product.mass(ingredient), 200)
 
-        ingredient[Ingredient.QTYS][0] = {
-            Ingredient.QTY: 200, Ingredient.UNIT: 'ml', Ingredient.PER: None}
+        ingredient[Ingredient.QTYS] = [{
+            Ingredient.QTY: 200, Ingredient.UNIT: 'ml', Ingredient.PER: None, Ingredient.PLUS: False}]
         self.assertEqual(Product.mass(ingredient), 400)
 
-        ingredient[Ingredient.QTYS][0] = {
-            Ingredient.QTY: 110, Ingredient.UNIT: 'g', Ingredient.PER: None}
+        ingredient[Ingredient.QTYS] = [{
+            Ingredient.QTY: 110, Ingredient.UNIT: 'g', Ingredient.PER: None, Ingredient.PLUS: False}]
         self.assertEqual(Product.mass(ingredient), 110)
 
-        ingredient[Ingredient.QTYS][0] = {
-            Ingredient.QTY: 2, Ingredient.UNIT: 'pkg', Ingredient.PER: None}
+        ingredient[Ingredient.QTYS] = [{
+            Ingredient.QTY: 2, Ingredient.UNIT: 'pkg', Ingredient.PER: None, Ingredient.PLUS: False}]
         self.assertEqual(Product.mass(ingredient), 2160)
 
         product['pkg'] = 125
         self.assertEqual(Product.mass(ingredient), 500)
 
-        ingredient[Ingredient.QTYS][0] = {
-            Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None}
+        ingredient[Ingredient.QTYS] = [{
+            Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None, Ingredient.PLUS: False}]
         self.assertEqual(Product.mass(ingredient), 1200)
 
         product['bunch'] = 10
@@ -80,13 +81,25 @@ class TestProduct(TestCase):
         del product['bunch']
         product[Product.PARENTS] = {'parent': 100}
         with patch.object(Product, '_db', {'parent': {'pkg': 800, 'bunch': 8}, }):
-            ingredient[Ingredient.QTYS][0] = {
-                Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None}
+            ingredient[Ingredient.QTYS] = [{
+                Ingredient.QTY: 2, Ingredient.UNIT: 'bunch', Ingredient.PER: None, Ingredient.PLUS: False}]
             self.assertEqual(Product.mass(ingredient), 1600)
 
-            ingredient[Ingredient.QTYS][0] = {
-                Ingredient.QTY: 2, Ingredient.UNIT: 'pkg', Ingredient.PER: None}
+            ingredient[Ingredient.QTYS] = [{
+                Ingredient.QTY: 2, Ingredient.UNIT: 'pkg', Ingredient.PER: None, Ingredient.PLUS: False}]
             self.assertEqual(Product.mass(ingredient), 3200)
+
+        ingredient[Ingredient.QTYS] = [
+            {
+                Ingredient.QTY: 20, Ingredient.UNIT: 'ml',
+                Ingredient.PER: None, Ingredient.PLUS: False
+            },
+            {
+                Ingredient.QTY: 1500, Ingredient.UNIT: 'g',
+                Ingredient.PER: None, Ingredient.PLUS: False
+            },
+        ]
+        self.assertEqual(Product.mass(ingredient), 1500)
 
     def test_qualifiers(self):
         product = {
@@ -100,10 +113,12 @@ class TestProduct(TestCase):
                 Ingredient.QTY: 2,
                 Ingredient.UNIT: 'ea',
                 Ingredient.PER: None,
+                Ingredient.PLUS: False,
                 Ingredient.QUALIFIERS: [{
                     Ingredient.QTY: 512,
                     Ingredient.UNIT: 'g',
                     Ingredient.PER: 'each',
+                    Ingredient.PLUS: False,
                 }],
             }],
             Ingredient.PRODUCT: product
@@ -115,10 +130,12 @@ class TestProduct(TestCase):
                 Ingredient.QTY: 2,
                 Ingredient.UNIT: 'ea',
                 Ingredient.PER: None,
+                Ingredient.PLUS: False,
                 Ingredient.QUALIFIERS: [{
                     Ingredient.QTY: 4,
                     Ingredient.UNIT: 'ea',
                     Ingredient.PER: None,
+                    Ingredient.PLUS: False,
                 }],
             }],
             Ingredient.PRODUCT: product
@@ -130,19 +147,23 @@ class TestProduct(TestCase):
                 Ingredient.QTY: 2,
                 Ingredient.UNIT: 'ea',
                 Ingredient.PER: None,
+                Ingredient.PLUS: False,
                 Ingredient.QUALIFIERS: [{
                     Ingredient.QTY: 4,
                     Ingredient.UNIT: 'ea',
                     Ingredient.PER: None,
+                    Ingredient.PLUS: False,
 
                 }],
             }, {
                 Ingredient.QTY: 232,
                 Ingredient.UNIT: 'g',
                 Ingredient.PER: None,
+                Ingredient.PLUS: False,
                 Ingredient.QUALIFIERS: [{
                     Ingredient.QTY: 4,
                     Ingredient.UNIT: 'ea',
+                    Ingredient.PLUS: False,
                     Ingredient.PER: None,
                 }],
             }],
@@ -155,8 +176,9 @@ class TestProduct(TestCase):
         ingredient = {
             Ingredient.PRODUCT: product,
             'qtys': [
-                {'unit': 'ea', 'qty': 1.0, 'per': None, 'qualifiers': [
-                    {'unit': 'ounce', 'qty': 4.0, 'per': None, 'qualifiers': []}
+                {'unit': 'ea', 'qty': 1.0, 'per': None, 'plus': False, 'qualifiers': [
+                    {'unit': 'ounce', 'qty': 4.0, 'per': None,
+                        'plus': False, 'qualifiers': []}
                 ]}
             ],
             'names': ['mussel'],
