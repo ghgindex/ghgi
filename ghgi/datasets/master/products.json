@@ -1,1 +1,2476 @@
-{"almond milk": {"g": 200, "m": 1.0, "names": ["almond milk", "almondmilk"], "sg": 1.02, "super": {}}, "anchovy": {"g": 5.0, "names": ["anchovies", "anchovy", "anchovy paste"], "super": {"pelagic fish <30 cm": 100}}, "apple juice": {"g": 250, "loss": {"apples": 0.5}, "names": ["apple cider", "apple cider vinegar", "apple juice", "cider", "cider vinegar"], "sg": 1.0, "super": {"apples": 200}}, "apples": {"fv": 1.0, "g": 160, "names": ["apple", "apple sauce", "apples", "applesauce", "fuji apple", "gala apple", "golden delicious", "golden delicious apple", "granny smith", "granny smith apple", "green apple", "mcintosh", "mcintosh apple", "red apple", "red delicious", "red delicious apple", "tart apple"], "sg": 0.85, "super": {}}, "asparagus": {"g": 100, "super": {"other vegetables": 100}, "names": ["asparagus"]}, "asteraceae": {"g": 5, "names": ["asteraceae", "bibb lettuce", "boston lettuce", "iceberg", "iceberg lettuce", "lettuce", "lettuce leaf", "romaine", "romaine lettuce", "tarragon", "tarragon leaf"], "super": {"other vegetables": 100}}, "baking powder": {"g": 5.0, "sg": 1.0, "super": {"salt": 100.0}, "names": ["baking powder"]}, "baking soda": {"g": 2.5, "sg": 1.0, "super": {"salt": 100.0}, "names": ["baking soda"]}, "bananas": {"fv": 1.0, "g": 180, "names": ["banana", "bananas", "plantain"], "sg": 0.9, "super": {}}, "barley (beer)": {"ed": 14810, "g": 0.065, "names": ["barley", "barley (beer)"], "sg": 0.62, "super": {}}, "barramundi": {"names": ["barramundi", "barramundi (farmed)", "farmed barramundi"], "super": {"fish (farmed)": 100}}, "bay leaf": {"g": 0.5, "sg": 0.5, "super": {"other vegetables": 100.0}, "names": ["bay leaf"]}, "beef (beef herd)": {"g": 150, "names": ["beef", "beef (beef herd)", "beef brisket", "beef chuck", "beef shank", "brisket", "brisket beef", "chuck", "chuck beef", "chuck steak", "flank steak", "flatiron steak", "hamburger", "hanger steak", "ribeye", "ribeye steak", "sirloin", "sirloin steak", "steak", "veal"], "pd": 0.2, "sg": 1.01, "super": {}}, "beef broth": {"g": 250, "names": ["beef broth", "veal broth"], "sg": 1.0, "super": {"beef stock": 20, "water": 80}}, "beef stock": {"g": 250, "names": ["beef stock", "veal stock"], "sg": 1.0, "super": {"beef (beef herd)": 50, "other vegetables": 0, "water": 50}}, "beet": {"bunch": 4, "super": {"root vegetables": 100}, "names": ["beet"]}, "beet sugar": {"g": 4, "s": 1.0, "sg": 1.15, "super": {}, "names": ["beet sugar"]}, "berries & grapes": {"fv": 1.0, "g": 5, "names": ["berries & grapes", "berry", "blackberry", "blueberry", "cranberry", "grape", "raspberry", "strawberry"], "sg": 1.01, "super": {}}, "bivalves (farmed)": {"g": 10, "names": ["bivalves", "bivalves (farmed)", "farmed bivalves", "farmed mollusks", "mollusks", "mollusks (farmed)"], "pd": 0.2, "sg": 1.04, "super": {}}, "brassicas": {"fv": 1.0, "g": 100, "name": "brassicas", "names": ["arugula", "bok choy", "brassicas", "broccoli", "broccoli floret", "broccoli rabe", "broccolini", "brussels", "brussels sprout", "cabbage", "cauliflower", "chinese cabbage", "collard green", "dry mustard", "gai lan", "kale", "kohlrabi", "mustard seed", "napa cabbage", "pak choi", "pok choi", "red cabbage", "savoy cabbage", "watercress"], "sg": 1.0, "super": {}}, "bread": {"g": 100.0, "names": ["artisanal bread", "baguette", "baguette bread", "bread", "bread loaf", "bread loaves", "breadcrumb", "bun", "country bread", "crouton", "crouton bread", "crusty bread", "focaccia", "focaccia bread", "french bread", "hamburger bun", "loaf bread", "loaves bread", "sourdough", "sourdough bread", "stuffing", "stuffing bread", "white bread", "whole wheat bread"], "sg": 0.7, "super": {"wheat & rye (bread)": 100.0}}, "butter": {"g": 10, "names": ["butter", "sweet butter", "unsalted butter"], "of": 0.8, "sg": 0.95, "super": {"milk": 644.3}}, "buttermilk": {"g": 100, "m": 1.0, "sg": 1.0, "super": {"milk": 61.1}, "names": ["buttermilk"]}, "cane sugar": {"g": 4, "names": ["brown sugar", "cane sugar", "confectioners sugar", "dark brown sugar", "demerara sugar", "golden brown sugar", "granulated sugar", "icing sugar", "light brown sugar", "powdered sugar", "sugar", "superfine sugar", "turbinado sugar", "white sugar"], "s": 1.0, "sg": 1.15, "super": {}}, "caper": {"g": 15, "sg": 1.05, "super": {}, "names": ["caper"]}, "carp": {"names": ["carp", "carp (farmed)", "farmed carp"], "super": {"fish (farmed)": 100}}, "carrot": {"bunch": 6, "g": 60, "super": {"root vegetables": 100}, "names": ["carrot"]}, "cassava": {"ed": 6666, "g": 100, "names": ["cassava", "manioc", "yuca"], "sg": 0.8, "super": {}}, "catfish": {"names": ["catfish", "catfish (farmed)", "farmed catfish"], "super": {"fish (farmed)": 100}}, "cephalopods": {"g": 150, "pd": 0.23, "sg": 1.04, "super": {}, "names": ["cephalopods"]}, "cheese": {"g": 25, "name": "cheese", "names": ["american cheese", "blue cheese", "camembert", "camembert cheese", "cheddar", "cheddar cheese", "cheese", "cheez whiz", "cotija", "cotija cheese", "feta", "feta cheese", "fontina", "fontina cheese", "goat cheese", "gorgonzola", "gorgonzola cheese", "gruyere", "gruyere cheese", "gruy\u00e8re", "gruy\u00e8re cheese", "halloumi", "halloumi cheese", "mascarpone", "mascarpone cheese", "monterey jack", "monterey jack cheese", "mozzarella", "mozzarella cheese", "muenster", "muenster cheese", "parmesan", "parmesan cheese", "parmigiano-reggiano", "parmigiano-reggiano cheese", "pecorino", "pecorino cheese", "pecorino romano", "pecorino romano cheese", "romano", "romano cheese", "roquefort", "roquefort cheese", "stilton", "stilton cheese", "swiss", "swiss cheese", "taleggio", "taleggio cheese"], "pd": 0.225, "sg": 0.95, "super": {}}, "chicken broth": {"g": 250, "names": ["broth", "chicken broth"], "sg": 1.0, "super": {"chicken stock": 20, "water": 80}}, "chicken stock": {"g": 250, "names": ["chicken stock", "stock"], "sg": 1.0, "super": {"chicken": 50, "other vegetables": 50, "water": 50}}, "chive": {"g": 15, "sg": 0.15, "super": {"onions & leeks (alliums)": 100}, "names": ["chive"]}, "cinnamon": {"ed": 0, "g": 2.5, "sg": 0.5, "super": {}, "names": ["cinnamon"]}, "citrus fruit": {"fv": 1.0, "g": 100, "name": "citrus fruit", "names": ["citrus", "citrus fruit", "citrus peel", "citrus rind", "citrus slice", "citrus wedge", "citrus zest", "grapefruit", "grapefruit peel", "grapefruit rind", "grapefruit slice", "grapefruit wedge", "grapefruit zest", "lemon", "lemon peel", "lemon rind", "lemon slice", "lemon wedge", "lemon zest", "lime", "lime peel", "lime rind", "lime slice", "lime wedge", "lime zest"], "sg": 1.0, "super": {}}, "clam": {"names": ["clam", "littleneck", "littleneck clam", "razor clam"], "super": {"bivalves (farmed)": 100}}, "cocoa powder": {"g": 10, "sg": 1.0, "super": {"dark chocolate": 100}, "names": ["cocoa powder"]}, "coconut": {"g": 50, "names": ["coconut", "coconut milk", "coconut oil", "coconut water", "full fat coconut milk", "full-fat coconut milk", "low fat coconut milk", "low-fat coconut milk"], "sg": 1.0, "super": {}}, "coffee": {"g": 227, "names": ["brewed coffee", "coffee", "iced coffee"], "sg": 1.0, "super": {"coffee beans": 3.0, "water": 97}}, "coffee beans": {"caf": 16.5, "g": 7.0, "sg": 0.35, "super": {}, "names": ["coffee beans"]}, "corn tortilla": {"g": 45, "names": ["corn tortilla", "tortilla chip"], "super": {"maize (meal)": 100}}, "cottage cheese": {"g": 50, "sg": 1.0, "super": {"milk": 155.8}, "names": ["cottage cheese"]}, "crab": {"names": ["crab", "crab (wild)", "wild crab"], "super": {"crustaceans (wild)": 100}}, "cream": {"g": 100, "m": 1.0, "names": ["cream", "whipped cream", "whipping cream"], "sg": 0.95, "super": {"milk": 305.3}}, "cream cheese": {"g": 50, "names": ["cream cheese", "philadelphia cream cheese", "philly cream cheese"], "pd": 0.2, "sg": 1.0, "super": {"milk": 343.5}}, "cream tartar": {"g": 3.5, "sg": 0.95, "super": {}, "names": ["cream tartar"]}, "creme fraiche": {"g": 50, "names": ["creme fraiche", "cr\u00e8me fra\u00eeche"], "super": {"milk": 343.5}}, "crustacean broth": {"g": 250, "sg": 1.0, "super": {"crustacean stock": 20, "water": 80}, "names": ["crustacean broth"]}, "crustacean stock": {"g": 250, "sg": 1.0, "super": {"crustaceans (farmed)": 50, "other vegetables": 50, "water": 50}, "names": ["crustacean stock"]}, "crustaceans (farmed)": {"g": 150, "names": ["crab (farmed)", "crustaceans (farmed)", "farmed crab", "farmed prawn", "farmed shrimp", "prawn", "prawn (farmed)", "shrimp", "shrimp (farmed)"], "pd": 0.15, "sg": 1.0, "super": {}}, "crustaceans (wild)": {"g": 150, "pd": 0.15, "sg": 1.04, "super": {}, "names": ["crustaceans (wild)"]}, "dark chocolate": {"coc": 1.0, "g": 25, "names": ["bittersweet chocolate", "chocolate", "chocolate chip", "dark chocolate", "milk chocolate", "semi sweet chocolate", "semisweet chocolate"], "sg": 1.0, "super": {}}, "dashi": {"g": 5, "names": ["dashi", "dashi powder"], "sg": 1.0, "super": {"pelagic fish >30 cm": 50, "salt": 50}}, "demersal fish": {"g": 150, "names": ["bream", "chilean sea bass", "cod", "demersal fish", "flounder", "grouper", "haddock", "hake", "halibut", "monkfish", "orange roughy", "patagonian toothfish", "plaice", "porgy", "red snapper", "roughy", "snapper", "sole", "turbot", "whitefish"], "pd": 0.23, "sg": 1.04, "super": {}}, "demersal mollusks": {"g": 15, "sg": 1.04, "super": {}, "names": ["demersal mollusks"]}, "dough": {"g": 100, "names": ["bread dough", "dough", "pizza dough"], "sg": 1.0, "super": {"flour": 62.5, "water": 37.5}}, "eggplant": {"g": 100, "super": {"tomatoes": 100}, "names": ["eggplant"]}, "eggs": {"g": 55, "names": ["egg", "egg white", "egg yolk", "eggs"], "pd": 0.11, "sg": 1.03, "super": {}}, "espresso": {"g": 30, "sg": 1.0, "super": {"coffee beans": 23, "water": 77}, "names": ["espresso"]}, "fish (farmed)": {"g": 150, "names": ["farmed fish", "fish", "fish (farmed)", "steelhead"], "pd": 0.23, "sg": 1.0, "super": {}}, "fish broth": {"g": 250, "sg": 1.0, "super": {"fish stock": 20, "water": 80}, "names": ["fish broth"]}, "fish sauce": {"g": 15, "sg": 1.0, "super": {"pelagic fish <30 cm": 20.5, "salt": 7.5, "water": 72}, "names": ["fish sauce"]}, "fish stock": {"g": 250, "sg": 1.0, "super": {"fish (farmed)": 50, "other vegetables": 50, "water": 50}, "names": ["fish stock"]}, "flour": {"g": 100, "names": ["all purpose flour", "bread flour", "cake flour", "flour", "pastry flour", "rye flour", "unbleached all purpose flour", "wheat flour", "white flour", "whole wheat flour", "whole wheat pastry flour"], "sg": 0.5, "super": {"wheat & rye (bread)": 100}}, "garlic": {"g": 7, "names": ["clove garlic", "garlic", "garlic clove", "garlic powder"], "sg": 0.4, "super": {"onions & leeks (alliums)": 100}}, "ginger": {"g": 15, "names": ["candied ginger", "ginger", "ginger root"], "sg": 0.4, "super": {"root vegetables": 100}}, "grain alcohol": {"g": 100, "names": ["alcohol", "grain alcohol"], "sg": 1.0, "super": {"wheat & rye (bread)": 200}}, "half and half": {"g": 100, "m": 1.0, "sg": 0.95, "super": {"milk": 160.4}, "names": ["half and half"]}, "heavy cream": {"g": 100, "m": 1.0, "names": ["heavy cream", "heavy whipped cream", "heavy whipping cream"], "sg": 0.95, "super": {"milk": 351.1}}, "herbs": {"g": 3.8, "super": {"lamiaceae": 50, "umbellifers": 50}, "names": ["herbs"]}, "honey": {"g": 15.0, "s": 0.7, "sg": 1.0, "super": {}, "names": ["honey"]}, "ketchup": {"g": 10, "names": ["barbeque sauce", "bbq sauce", "catsup", "ketchup"], "sg": 1.0, "super": {"cane sugar": 30, "tomatoes": 200, "vinegar": 50}}, "lamb & mutton": {"g": 150, "names": ["lamb", "lamb & mutton", "lamb chop", "lamb shank", "lamb shoulder", "leg lamb", "rack lamb"], "pd": 0.2, "sg": 1.05, "super": {}}, "lamiaceae": {"g": 15, "names": ["basil", "basil leaf", "lamiaceae", "lavender", "marjoram", "marjoram leaf", "mint", "mint leaf", "oregano", "rosemary", "rosemary leaf", "sage", "sage leaf", "savory", "thyme", "thyme leaf"], "sg": 0.15, "super": {"other vegetables": 100}}, "leek": {"g": 250, "super": {"onions & leeks (alliums)": 100}, "names": ["leek"]}, "lemon juice": {"g": 15, "loss": {"citrus fruit": 0.5}, "names": ["grapfruit juice", "lemon juice", "lime juice", "orange juice"], "sg": 1.0, "super": {"citrus fruit": 200}}, "light cream": {"g": 30, "names": ["coffee cream", "half half", "light cream"], "super": {"cream": 50, "milk": 50}}, "lobster": {"super": {"crustaceans (wild)": 100}, "names": ["lobster"]}, "maize (meal)": {"ed": 15150, "g": 100, "names": ["corn", "corn kernel", "cornmeal", "maize (meal)", "polenta", "sweet corn"], "sg": 0.54, "super": {}}, "maple syrup": {"g": 15, "sg": 1.0, "super": {}, "names": ["maple syrup"]}, "mayonnaise": {"g": 10, "names": ["mayo", "mayonnaise"], "super": {"eggs": 18, "mustard": 8, "rapeseed oil": 66, "salt": 2, "vinegar": 8}}, "milk": {"g": 225, "m": 1.0, "names": ["full fat milk", "milk", "whole milk"], "note": "dairy.md", "sg": 0.99, "super": {}}, "molasses": {"g": 10, "names": ["blackstrap molasses", "dark molasses", "light molasses", "molasses"], "super": {"cane sugar": 100}}, "mushroom": {"fv": 1.0, "g": 20, "names": ["brown mushroom", "button mushroom", "chanterelle", "chanterelle mushroom", "cremini", "cremini mushroom", "crimini", "crimini mushroom", "enoki", "enoki mushroom", "morel", "morel mushroom", "mushroom", "oyster mushroom", "porcini", "porcini mushroom", "portobello", "portobello mushroom", "shiitake", "shiitake mushroom", "white mushroom", "wild mushroom"], "sg": 0.5, "super": {}}, "mussel": {"super": {"bivalves (farmed)": 100}, "names": ["mussel"]}, "mustard": {"g": 5.0, "names": ["dijon", "dijon mustard", "dijon style mustard", "grainy mustard", "hot mustard", "mustard", "prepared mustard", "yellow mustard"], "sg": 1.0, "super": {"brassicas": 40.0, "vinegar": 10.0, "water": 50.0}}, "nutmeg": {"fv": 1.0, "g": 1.0, "sg": 0.5, "super": {"nuts": 100.0}, "names": ["nutmeg"]}, "nuts": {"g": 100, "names": ["almond", "brazil nut", "cashew", "chestnut", "hazelnut", "nut", "nuts", "pecan", "pine nut", "pistachio", "pistachio nut", "walnut", "water chestnut"], "pd": 0.16, "sg": 1.05, "super": {}}, "oat milk": {"g": 225, "m": 1.0, "names": ["oat milk", "oatmilk"], "sg": 1.02, "super": {}}, "oatmeal": {"ed": 15857, "g": 100, "names": ["oat", "oatmeal", "rolled oat"], "sg": 0.38, "super": {}}, "ocoptus": {"super": {"cephalopods": 100}, "names": ["ocoptus"]}, "olive oil": {"g": 25, "names": ["evoo", "extra virgin olive oil", "olive oil", "virgin olive oil"], "of": 1.0, "sg": 0.91, "super": {}}, "one percent milk": {"m": 1.0, "names": ["1 percent milk", "1% milk", "one percent milk"], "sg": 1.0, "super": {"milk": 77.2}}, "onion powder": {"g": 3.0, "loss": {"onions & leeks (alliums)": 0.5}, "super": {"onions & leeks (alliums)": 200}, "names": ["onion powder"]}, "onions & leeks (alliums)": {"g": 150, "names": ["green onion", "onion", "onions & leeks (alliums)", "pearl onion", "red onion", "spanish onion", "spring onion", "sweet onion", "white onion", "yellow onion"], "r": 1.0, "sg": 0.98, "super": {}}, "orange": {"names": ["navel orange", "orange", "orange peel", "orange rind", "orange slice", "orange wedge", "orange zest"], "super": {"citrus fruit": 100}}, "other fruit": {"fv": 1.0, "g": 150, "names": ["apricot", "avocado", "bing cherry", "black olive", "bosc", "bosc pear", "calamata olive", "cantaloupe", "cherry", "date", "fig", "green olive", "mango", "nectarine", "olive", "other fruit", "papaya", "peach", "pear", "pineapple", "plum", "prune", "sour cherry", "stuffed olive"], "sg": 1.0, "super": {}}, "other vegetables": {"fv": 1.0, "g": 100, "names": ["acorn squash", "bell pepper", "bitter melon", "butternut squash", "calabash", "cayenne", "cayenne pepper", "celery", "celery leaf", "celery rib", "celery root", "chard", "chile", "chile de arbol", "chile de \u00e1rbol", "chile flake", "chili", "chili flake", "chili pepper", "cucumber", "fresh bean", "ghost", "ghost pepper", "gourd", "green bean", "green bell pepper", "green chile", "green chili", "green pepper", "greens", "guajillo chile", "habanero", "habanero chile", "habanero chili", "habanero pepper", "jalapeno", "jalapeno chile", "jalapeno chili", "jalapeno pepper", "jalape\u00f1o", "jalape\u00f1o chile", "jalape\u00f1o chili", "jalape\u00f1o pepper", "kirby cucumber", "melon", "okra", "orange bell pepper", "orange pepper", "other vegetables", "pepitas", "piquillo pepper", "poblano", "poblano chile", "poblano pepper", "pumpkin", "pumpkin pepitas", "pumpkin squash", "radicchio", "red bell pepper", "red chile", "red chili", "red pepper", "rhubarb", "salad greens", "scotch bonnet", "scotch bonnet pepper", "serrano", "serrano chile", "serrano chili", "serrano pepper", "shishito", "shishito pepper", "spaghetti squash", "spinach", "spinach leaf", "squash", "squash gourd", "string bean", "summer squash", "sweet red pepper", "swiss chard", "watermelon", "winter squash", "yellow bell pepper", "yellow pepper", "yellow squash", "zucchini"], "sg": 1.0, "super": {}}, "oyster": {"super": {"bivalves (farmed)": 100}, "names": ["oyster"]}, "palm oil": {"g": 25, "of": 1.0, "sg": 0.9, "super": {}, "names": ["palm oil"]}, "paprika": {"g": 7, "names": ["paprika", "smoked paprika", "sweet paprika"], "sg": 0.5, "super": {"other vegetables": 400}}, "pasta": {"g": 0, "names": ["farfalle", "farfalle pasta", "fettucine", "fettucine pasta", "lasagna", "lasagna noodle", "lasagna pasta", "lasagne", "lasagne noodle", "lasagne pasta", "linguine", "linguine pasta", "macaroni", "macaroni pasta", "noodle", "noodle pasta", "orecchiette", "orecchiette pasta", "orzo", "orzo pasta", "pasta", "pasta noodle", "penne", "penne pasta", "ravioli", "ravioli pasta", "spaghetti", "spaghetti pasta", "tagliatelle", "tagliatelle pasta"], "sg": 0.5, "super": {"wheat & rye (bread)": 100}}, "peanuts": {"g": 100, "names": ["peanut", "peanut butter", "peanuts"], "pd": 0.26, "sg": 1.05, "super": {}}, "peas": {"g": 100, "names": ["frozen pea", "green pea", "peas", "snap pea", "snow pea", "yellow pea"], "pd": 0.215, "sg": 1.0, "super": {}}, "pelagic fish <30 cm": {"g": 150, "names": ["capelin", "herring", "pelagic fish <30 cm", "tilapia (wild)", "whiting", "wild tilapia"], "pd": 0.21, "sg": 1.04, "super": {}}, "pelagic fish >30 cm": {"g": 150, "names": ["ahi", "ahi tuna", "bluefin", "bluefin tuna", "bonito", "mackerel", "mahi mahi", "pelagic fish >30 cm", "salmon (wild)", "shad", "skipjack", "skipjack tuna", "swordfish", "tuna", "tunafish", "wild salmon", "yellowfin", "yellowfin tuna"], "pd": 0.21, "sg": 1.04, "super": {}}, "pepper": {"fv": 1, "g": 2.33, "names": ["aleppo pepper", "black pepper", "black peppercorn", "pepper", "peppercorn", "pink peppercorn", "sichuan peppercorn", "white pepper"], "sg": 0.5, "super": {}}, "pierogi": {"g": 20, "names": ["pierogi", "pierogies", "pierogy"], "sg": 1.0, "super": {"cheese": 17, "dough": 50, "potatoes": 33}}, "pork": {"g": 150, "names": ["back bacon", "bacon", "canadian bacon", "chorizo", "chorizo sausage", "ham", "italian sausage", "mortadella", "mortadella sausage", "pancetta", "pepperoni", "pepperoni sausage", "pork", "pork belly", "pork butt", "pork chop", "pork loin", "pork sausage", "pork shoulder", "prosciutto", "salami", "salami sausage", "salt pork", "sausage", "slab bacon"], "pd": 0.16, "sg": 1.02, "super": {}}, "potatoes": {"ed": 3220, "g": 100, "names": ["baking potato", "fingerling potato", "idaho potato", "new potato", "potato", "potatoes", "red potato", "russet", "russet potato", "scalloped potato", "sweet potato", "white potato", "yam", "yukon gold", "yukon gold potato"], "sg": 1.01, "super": {}}, "poultry": {"g": 125, "names": ["breast chicken", "breast cornish game hen", "breast cornish hen", "breast duck", "breast game hen", "breast goose", "breast grouse", "breast pheasant", "breast quail", "breast turkey", "chicken", "chicken breast", "chicken giblet", "chicken leg", "chicken liver", "chicken thigh", "chicken wing", "cornish game hen", "cornish game hen breast", "cornish game hen giblet", "cornish game hen leg", "cornish game hen liver", "cornish game hen thigh", "cornish game hen wing", "cornish hen", "cornish hen breast", "cornish hen giblet", "cornish hen leg", "cornish hen liver", "cornish hen thigh", "cornish hen wing", "duck", "duck breast", "duck giblet", "duck leg", "duck liver", "duck thigh", "duck wing", "game hen", "game hen breast", "game hen giblet", "game hen leg", "game hen liver", "game hen thigh", "game hen wing", "giblet chicken", "giblet cornish game hen", "giblet cornish hen", "giblet duck", "giblet game hen", "giblet goose", "giblet grouse", "giblet pheasant", "giblet quail", "giblet turkey", "goose", "goose breast", "goose giblet", "goose leg", "goose liver", "goose thigh", "goose wing", "grouse", "grouse breast", "grouse giblet", "grouse leg", "grouse liver", "grouse thigh", "grouse wing", "leg chicken", "leg cornish game hen", "leg cornish hen", "leg duck", "leg game hen", "leg goose", "leg grouse", "leg pheasant", "leg quail", "leg turkey", "liver chicken", "liver cornish game hen", "liver cornish hen", "liver duck", "liver game hen", "liver goose", "liver grouse", "liver pheasant", "liver quail", "liver turkey", "pheasant", "pheasant breast", "pheasant giblet", "pheasant leg", "pheasant liver", "pheasant thigh", "pheasant wing", "poultry", "quail", "quail breast", "quail giblet", "quail leg", "quail liver", "quail thigh", "quail wing", "thigh chicken", "thigh cornish game hen", "thigh cornish hen", "thigh duck", "thigh game hen", "thigh goose", "thigh grouse", "thigh pheasant", "thigh quail", "thigh turkey", "turkey", "turkey breast", "turkey giblet", "turkey leg", "turkey liver", "turkey thigh", "turkey wing", "wing chicken", "wing cornish game hen", "wing cornish hen", "wing duck", "wing game hen", "wing goose", "wing grouse", "wing pheasant", "wing quail", "wing turkey"], "pd": 0.17, "sg": 0.97, "super": {}}, "pulses": {"g": 100, "names": ["bean", "black bean", "black eyed pea", "cannellini", "cannellini bean", "chickpea", "dried bean", "dried pea", "french lentil", "great northern bean", "green lentil", "kidney bean", "lentil", "lima bean", "navy bean", "pea", "pinto bean", "pulses", "puy lentil", "red lentil", "split pea", "white bean", "yellow lentil"], "pd": 0.22, "sg": 0.85, "super": {}}, "radish": {"bunch": 12, "g": 12, "super": {"root vegetables": 100}, "names": ["radish"]}, "raisin": {"g": 50, "names": ["golden raisin", "raisin", "red raisin", "yellow raisin"], "sg": 1.0, "super": {"berries & grapes": 200}}, "rapeseed oil": {"g": 25, "names": ["canola oil", "cooking oil", "neutral oil", "oil", "rapeseed oil", "vegetable oil"], "of": 1.0, "sg": 0.9, "super": {}}, "rice": {"ed": 15060, "g": 90, "names": ["arborio", "arborio rice", "basmati", "basmati rice", "brown rice", "carnaroli", "carnaroli rice", "jasmine rice", "rice", "sushi rice", "white rice", "wild rice"], "sg": 0.85, "super": {}}, "rice milk": {"g": 225, "m": 1.0, "names": ["rice milk", "ricemilk"], "sg": 1.02, "super": {}}, "ricotta": {"g": 50, "names": ["ricotta", "ricotta cheese"], "sg": 1.0, "super": {"milk": 229.0, "vinegar": 12}}, "root vegetables": {"g": 100, "names": ["daikon", "daikon radish", "horseradish", "parsnip", "root vegetables", "rutabaga", "turnip"], "r": 1.0, "sg": 1.0, "super": {}}, "salmon": {"names": ["farmed salmon", "salmon", "salmon (farmed)"], "super": {"fish (farmed)": 100}}, "salt": {"g": 6, "names": ["fleur de sel", "kosher salt", "salt", "sea salt", "table salt"], "sg": 2.17, "super": {}}, "salt pepper": {"g": 5.0, "names": ["black pepper kosher salt", "black pepper salt", "kosher salt black pepper", "pepper kosher salt", "pepper salt", "salt black pepper", "salt pepper", "seasoning", "seasoning salt"], "sg": 1.0, "super": {"pepper": 50.0, "salt": 50.0}}, "sardine": {"g": 10.0, "pkg": 100, "super": {"pelagic fish <30 cm": 100}, "names": ["sardine"]}, "scallion": {"bunch": 7, "g": 15.0, "names": ["scallion", "scallion green", "scallion white"], "sg": 0.4, "super": {"onions & leeks (alliums)": 100}}, "scallop": {"names": ["farmed scallop", "scallop", "scallop (farmed)"], "super": {"bivalves (farmed)": 100}}, "scallop (wild)": {"g": 15.0, "names": ["bay scallop", "scallop (wild)", "sea scallop", "wild scallop"], "super": {"demersal mollusks": 100}}, "sea bass": {"g": 150.0, "pd": 0.18, "sg": 1.04, "super": {}, "names": ["sea bass"]}, "sesame": {"g": 5, "names": ["black sesame seed", "sesame", "sesame seed", "white sesame seed"], "sg": 0.6, "super": {}}, "sesame oil": {"g": 15, "super": {"sesame": 200}, "names": ["sesame oil"]}, "shallot": {"g": 30.0, "super": {"onions & leeks (alliums)": 100}, "names": ["shallot"]}, "shrimp (wild)": {"names": ["prawns (wild) (wild)", "shrimp (wild)", "wild prawns (wild)", "wild shrimp"], "super": {"crustaceans (wild)": 100}}, "simple syrup": {"g": 20, "names": ["golden syrup", "simple syrup", "sugar syrup", "syrup"], "sg": 1.1, "super": {"cane sugar": 50, "water": 50}}, "skim milk": {"m": 1.0, "names": ["non-fat milk", "nonfat milk", "skim milk"], "sg": 1.0, "super": {"milk": 69.5}}, "sour cream": {"g": 50, "super": {"milk": 221.4}, "names": ["sour cream"]}, "soy sauce": {"g": 15, "sg": 1.0, "super": {"pulses": 20, "water": 80}, "names": ["soy sauce"]}, "soybean oil": {"g": 25, "of": 1.0, "sg": 0.9, "super": {}, "names": ["soybean oil"]}, "soymilk": {"g": 150, "m": 1.0, "names": ["soy milk", "soymilk"], "sg": 1.02, "super": {}}, "spice": {"fv": 1.0, "g": 5, "names": ["allspice", "clove", "garam masala", "spice", "spice blend", "turmeric"], "sg": 0.5, "super": {}}, "squid": {"names": ["calamari", "squid"], "super": {"cephalopods": 100}}, "starch": {"g": 5, "names": ["corn starch", "cornstarch", "potato starch", "starch", "tapioca starch"], "sg": 1.0, "super": {}}, "striped bass": {"names": ["bass", "bass (farmed)", "farmed bass", "farmed striped bass", "striped bass", "striped bass (farmed)"], "super": {"fish (farmed)": 100}}, "sun-dried tomato": {"names": ["sun dried tomato", "sun-dried tomato"], "super": {"tomatoes": 200}}, "sunflower oil": {"g": 25, "of": 1.0, "sg": 0.9, "super": {}, "names": ["sunflower oil"]}, "tea": {"g": 227, "names": ["brewed tea", "iced tea", "tea"], "sg": 1.0, "super": {"tea leaves": 1.33, "water": 98.67}}, "tea leaves": {"caf": 16.5, "g": 3.0, "sg": 0.35, "super": {}, "names": ["tea leaves"]}, "tilapia": {"names": ["farmed tilapia", "tilapia", "tilapia (farmed)"], "super": {"fish (farmed)": 100}}, "tofu": {"g": 150, "names": ["inari-no-moto", "tofu"], "pd": 0.16, "sg": 1.05, "super": {}}, "tomato paste": {"g": 15, "loss": {"tomatoes": 0.2}, "sg": 1.13, "super": {"tomatoes": 100}, "names": ["tomato paste"]}, "tomatoes": {"fv": 1.0, "g": 100, "names": ["beefsteak tomato", "cherry tomato", "grape tomato", "heirloom tomato", "plum tomato", "roma tomato", "san marzano tomato", "tomatillo", "tomato", "tomatoes"], "sg": 1.01, "super": {}}, "tortilla": {"g": 45, "names": ["tortilla"], "super": {"flour": 100}}, "trout": {"names": ["farmed trout", "trout", "trout (farmed)"], "super": {"fish (farmed)": 100}}, "two percent milk": {"m": 1.0, "names": ["2 percent milk", "2% milk", "two percent milk"], "sg": 1.0, "super": {"milk": 84.8}}, "umbellifers": {"g": 3.8, "names": ["chervil", "chervil leaf", "cilantro", "cilantro leaf", "coriander", "coriander leaf", "coriander seed", "cumin", "cumin seed", "dill", "fennel", "fennel bulb", "fennel seed", "flat leaf parsley", "flat leaf parsley leaf", "flat-leaf parsley", "fresh parsley", "italian parsley", "lovage", "parsley", "parsley leaf", "umbellifers"], "sg": 0.15, "super": {"other vegetables": 100}}, "vanilla": {"fv": 1.0, "g": 5.0, "names": ["vanilla", "vanilla bean", "vanilla extract"], "sg": 1.0, "super": {}}, "vegetable broth": {"g": 250, "sg": 1.0, "super": {"vegetable stock": 20, "water": 80}, "names": ["vegetable broth"]}, "vegetable stock": {"g": 250, "sg": 1.0, "super": {"other vegetables": 50, "water": 50}, "names": ["vegetable stock"]}, "vinegar": {"g": 50, "names": ["rice vinegar", "vinegar", "white vinegar"], "super": {"grain alcohol": 6, "water": 94}}, "water": {"g": 250, "names": ["boiling water", "club soda", "hot water", "ice", "ice cube", "ice water", "lukewarm water", "seltzer", "seltzer water", "soda", "soda water", "sparkling water", "tap water", "tepid water", "tonic", "tonic water", "warm water", "water"], "sg": 1.0, "super": {}}, "wheat & rye (bread)": {"ed": 14140, "g": 100, "name": "wheat & rye (bread)", "names": ["grain", "rye", "wheat", "wheat & rye (bread)"], "sg": 0.5, "super": {}}, "wine": {"ed": 3556, "g": 225, "names": ["dry red wine", "dry white wine", "red wine", "rose wine", "white wine", "wine"], "sg": 1.01, "super": {}}, "wine vinegar": {"g": 50, "names": ["balsamic", "balsamic vinegar", "red wine vinegar", "sherry vinegar", "white wine vinegar", "wine vinegar"], "super": {"wine": 100}}, "yogurt": {"g": 100, "names": ["greek yoghurt", "greek yogurt", "yoghurt", "yogurt"], "super": {"milk": 100}}}
+{
+    "almond milk": {
+        "g": 200,
+        "m": 1.0,
+        "names": [
+            "almond milk",
+            "almondmilk"
+        ],
+        "sg": 1.02,
+        "super": {}
+    },
+    "anchovy": {
+        "g": 5.0,
+        "names": [
+            "anchovies",
+            "anchovy",
+            "anchovy paste"
+        ],
+        "super": {
+            "pelagic fish <30 cm": 100
+        }
+    },
+    "apple juice": {
+        "g": 250,
+        "loss": {
+            "apples": 0.5
+        },
+        "names": [
+            "apple cider",
+            "apple cider vinegar",
+            "apple juice",
+            "cider",
+            "cider vinegar"
+        ],
+        "sg": 1.0,
+        "super": {
+            "apples": 200
+        }
+    },
+    "apples": {
+        "fv": 1.0,
+        "g": 160,
+        "names": [
+            "apple",
+            "apple sauce",
+            "apples",
+            "applesauce",
+            "fuji apple",
+            "gala apple",
+            "golden delicious",
+            "golden delicious apple",
+            "granny smith",
+            "granny smith apple",
+            "green apple",
+            "mcintosh",
+            "mcintosh apple",
+            "red apple",
+            "red delicious",
+            "red delicious apple",
+            "tart apple"
+        ],
+        "sg": 0.85,
+        "super": {}
+    },
+    "asparagus": {
+        "g": 100,
+        "super": {
+            "other vegetables": 100
+        },
+        "names": [
+            "asparagus"
+        ]
+    },
+    "asteraceae": {
+        "g": 5,
+        "names": [
+            "asteraceae",
+            "bibb lettuce",
+            "boston lettuce",
+            "iceberg",
+            "iceberg lettuce",
+            "lettuce",
+            "lettuce leaf",
+            "romaine",
+            "romaine lettuce",
+            "tarragon",
+            "tarragon leaf"
+        ],
+        "super": {
+            "other vegetables": 100
+        }
+    },
+    "baking powder": {
+        "g": 5.0,
+        "sg": 1.0,
+        "super": {
+            "salt": 100.0
+        },
+        "names": [
+            "baking powder"
+        ]
+    },
+    "baking soda": {
+        "g": 2.5,
+        "sg": 1.0,
+        "super": {
+            "salt": 100.0
+        },
+        "names": [
+            "baking soda"
+        ]
+    },
+    "bananas": {
+        "fv": 1.0,
+        "g": 180,
+        "names": [
+            "banana",
+            "bananas",
+            "plantain"
+        ],
+        "sg": 0.9,
+        "super": {}
+    },
+    "barley (beer)": {
+        "ed": 14810,
+        "g": 0.065,
+        "names": [
+            "barley",
+            "barley (beer)"
+        ],
+        "sg": 0.62,
+        "super": {}
+    },
+    "barramundi": {
+        "names": [
+            "barramundi",
+            "barramundi (farmed)",
+            "farmed barramundi"
+        ],
+        "super": {
+            "fish (farmed)": 100
+        }
+    },
+    "bay leaf": {
+        "g": 0.5,
+        "sg": 0.5,
+        "super": {
+            "other vegetables": 100.0
+        },
+        "names": [
+            "bay leaf"
+        ]
+    },
+    "beef (beef herd)": {
+        "g": 150,
+        "names": [
+            "beef",
+            "beef (beef herd)",
+            "beef brisket",
+            "beef chuck",
+            "beef shank",
+            "brisket",
+            "brisket beef",
+            "chuck",
+            "chuck beef",
+            "chuck steak",
+            "flank steak",
+            "flatiron steak",
+            "hamburger",
+            "hanger steak",
+            "ribeye",
+            "ribeye steak",
+            "sirloin",
+            "sirloin steak",
+            "steak",
+            "veal"
+        ],
+        "pd": 0.2,
+        "sg": 1.01,
+        "super": {}
+    },
+    "beef broth": {
+        "g": 250,
+        "names": [
+            "beef broth",
+            "veal broth"
+        ],
+        "sg": 1.0,
+        "super": {
+            "beef stock": 20,
+            "water": 80
+        }
+    },
+    "beef stock": {
+        "g": 250,
+        "names": [
+            "beef stock",
+            "veal stock"
+        ],
+        "sg": 1.0,
+        "super": {
+            "beef (beef herd)": 50,
+            "other vegetables": 0,
+            "water": 50
+        }
+    },
+    "beet": {
+        "bunch": 4,
+        "super": {
+            "root vegetables": 100
+        },
+        "names": [
+            "beet"
+        ]
+    },
+    "beet sugar": {
+        "g": 4,
+        "s": 1.0,
+        "sg": 1.15,
+        "super": {},
+        "names": [
+            "beet sugar"
+        ]
+    },
+    "berries & grapes": {
+        "fv": 1.0,
+        "g": 5,
+        "names": [
+            "berries & grapes",
+            "berry",
+            "blackberry",
+            "blueberry",
+            "cranberry",
+            "grape",
+            "raspberry",
+            "strawberry"
+        ],
+        "sg": 1.01,
+        "super": {}
+    },
+    "bivalves (farmed)": {
+        "g": 10,
+        "names": [
+            "bivalves",
+            "bivalves (farmed)",
+            "farmed bivalves",
+            "farmed mollusks",
+            "mollusks",
+            "mollusks (farmed)"
+        ],
+        "pd": 0.2,
+        "sg": 1.04,
+        "super": {}
+    },
+    "brassicas": {
+        "fv": 1.0,
+        "g": 100,
+        "name": "brassicas",
+        "names": [
+            "arugula",
+            "bok choy",
+            "brassicas",
+            "broccoli",
+            "broccoli floret",
+            "broccoli rabe",
+            "broccolini",
+            "brussels",
+            "brussels sprout",
+            "cabbage",
+            "cauliflower",
+            "chinese cabbage",
+            "collard green",
+            "dry mustard",
+            "gai lan",
+            "kale",
+            "kohlrabi",
+            "mustard seed",
+            "napa cabbage",
+            "pak choi",
+            "pok choi",
+            "red cabbage",
+            "savoy cabbage",
+            "watercress"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "bread": {
+        "g": 100.0,
+        "names": [
+            "artisanal bread",
+            "baguette",
+            "baguette bread",
+            "bread",
+            "bread loaf",
+            "bread loaves",
+            "breadcrumb",
+            "bun",
+            "country bread",
+            "crouton",
+            "crouton bread",
+            "crusty bread",
+            "focaccia",
+            "focaccia bread",
+            "french bread",
+            "hamburger bun",
+            "loaf bread",
+            "loaves bread",
+            "sourdough",
+            "sourdough bread",
+            "stuffing",
+            "stuffing bread",
+            "white bread",
+            "whole wheat bread"
+        ],
+        "sg": 0.7,
+        "super": {
+            "wheat & rye (bread)": 100.0
+        }
+    },
+    "butter": {
+        "g": 10,
+        "names": [
+            "butter",
+            "sweet butter",
+            "unsalted butter"
+        ],
+        "of": 0.8,
+        "sg": 0.95,
+        "super": {
+            "milk": 644.3
+        }
+    },
+    "buttermilk": {
+        "g": 100,
+        "m": 1.0,
+        "sg": 1.0,
+        "super": {
+            "milk": 61.1
+        },
+        "names": [
+            "buttermilk"
+        ]
+    },
+    "cane sugar": {
+        "g": 4,
+        "names": [
+            "brown sugar",
+            "cane sugar",
+            "confectioners sugar",
+            "dark brown sugar",
+            "demerara sugar",
+            "golden brown sugar",
+            "granulated sugar",
+            "icing sugar",
+            "light brown sugar",
+            "powdered sugar",
+            "sugar",
+            "superfine sugar",
+            "turbinado sugar",
+            "white sugar"
+        ],
+        "s": 1.0,
+        "sg": 1.15,
+        "super": {}
+    },
+    "caper": {
+        "g": 15,
+        "sg": 1.05,
+        "super": {},
+        "names": [
+            "caper"
+        ]
+    },
+    "carp": {
+        "names": [
+            "carp",
+            "carp (farmed)",
+            "farmed carp"
+        ],
+        "super": {
+            "fish (farmed)": 100
+        }
+    },
+    "carrot": {
+        "bunch": 6,
+        "g": 60,
+        "super": {
+            "root vegetables": 100
+        },
+        "names": [
+            "carrot"
+        ]
+    },
+    "cassava": {
+        "ed": 6666,
+        "g": 100,
+        "names": [
+            "cassava",
+            "manioc",
+            "yuca"
+        ],
+        "sg": 0.8,
+        "super": {}
+    },
+    "catfish": {
+        "names": [
+            "catfish",
+            "catfish (farmed)",
+            "farmed catfish"
+        ],
+        "super": {
+            "fish (farmed)": 100
+        }
+    },
+    "cephalopods": {
+        "g": 150,
+        "pd": 0.23,
+        "sg": 1.04,
+        "super": {},
+        "names": [
+            "cephalopods"
+        ]
+    },
+    "cheese": {
+        "g": 25,
+        "name": "cheese",
+        "names": [
+            "american cheese",
+            "blue cheese",
+            "camembert",
+            "camembert cheese",
+            "cheddar",
+            "cheddar cheese",
+            "cheese",
+            "cheez whiz",
+            "cotija",
+            "cotija cheese",
+            "feta",
+            "feta cheese",
+            "fontina",
+            "fontina cheese",
+            "goat cheese",
+            "gorgonzola",
+            "gorgonzola cheese",
+            "gruyere",
+            "gruyere cheese",
+            "gruy\u00e8re",
+            "gruy\u00e8re cheese",
+            "halloumi",
+            "halloumi cheese",
+            "mascarpone",
+            "mascarpone cheese",
+            "monterey jack",
+            "monterey jack cheese",
+            "mozzarella",
+            "mozzarella cheese",
+            "muenster",
+            "muenster cheese",
+            "parmesan",
+            "parmesan cheese",
+            "parmigiano-reggiano",
+            "parmigiano-reggiano cheese",
+            "pecorino",
+            "pecorino cheese",
+            "pecorino romano",
+            "pecorino romano cheese",
+            "romano",
+            "romano cheese",
+            "roquefort",
+            "roquefort cheese",
+            "stilton",
+            "stilton cheese",
+            "swiss",
+            "swiss cheese",
+            "taleggio",
+            "taleggio cheese"
+        ],
+        "pd": 0.225,
+        "sg": 0.95,
+        "super": {}
+    },
+    "chicken broth": {
+        "g": 250,
+        "names": [
+            "broth",
+            "chicken broth"
+        ],
+        "sg": 1.0,
+        "super": {
+            "chicken stock": 20,
+            "water": 80
+        }
+    },
+    "chicken stock": {
+        "g": 250,
+        "names": [
+            "chicken stock",
+            "stock"
+        ],
+        "sg": 1.0,
+        "super": {
+            "chicken": 50,
+            "other vegetables": 50,
+            "water": 50
+        }
+    },
+    "chive": {
+        "g": 15,
+        "sg": 0.15,
+        "super": {
+            "onions & leeks (alliums)": 100
+        },
+        "names": [
+            "chive"
+        ]
+    },
+    "cinnamon": {
+        "ed": 0,
+        "g": 2.5,
+        "sg": 0.5,
+        "super": {},
+        "names": [
+            "cinnamon"
+        ]
+    },
+    "citrus fruit": {
+        "fv": 1.0,
+        "g": 100,
+        "name": "citrus fruit",
+        "names": [
+            "citrus",
+            "citrus fruit",
+            "citrus peel",
+            "citrus rind",
+            "citrus slice",
+            "citrus wedge",
+            "citrus zest",
+            "grapefruit",
+            "grapefruit peel",
+            "grapefruit rind",
+            "grapefruit slice",
+            "grapefruit wedge",
+            "grapefruit zest",
+            "lemon",
+            "lemon peel",
+            "lemon rind",
+            "lemon slice",
+            "lemon wedge",
+            "lemon zest",
+            "lime",
+            "lime peel",
+            "lime rind",
+            "lime slice",
+            "lime wedge",
+            "lime zest"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "clam": {
+        "names": [
+            "clam",
+            "littleneck",
+            "littleneck clam",
+            "razor clam"
+        ],
+        "super": {
+            "bivalves (farmed)": 100
+        }
+    },
+    "cocoa powder": {
+        "g": 10,
+        "sg": 1.0,
+        "super": {
+            "dark chocolate": 100
+        },
+        "names": [
+            "cocoa powder"
+        ]
+    },
+    "coconut": {
+        "g": 50,
+        "names": [
+            "coconut",
+            "coconut milk",
+            "coconut oil",
+            "coconut water",
+            "full fat coconut milk",
+            "full-fat coconut milk",
+            "low fat coconut milk",
+            "low-fat coconut milk"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "coffee": {
+        "g": 227,
+        "names": [
+            "brewed coffee",
+            "coffee",
+            "iced coffee"
+        ],
+        "sg": 1.0,
+        "super": {
+            "coffee beans": 3.0,
+            "water": 97
+        }
+    },
+    "coffee beans": {
+        "caf": 16.5,
+        "g": 7.0,
+        "sg": 0.35,
+        "super": {},
+        "names": [
+            "coffee beans"
+        ]
+    },
+    "corn tortilla": {
+        "g": 45,
+        "names": [
+            "corn tortilla",
+            "tortilla chip"
+        ],
+        "super": {
+            "maize (meal)": 100
+        }
+    },
+    "cottage cheese": {
+        "g": 50,
+        "sg": 1.0,
+        "super": {
+            "milk": 155.8
+        },
+        "names": [
+            "cottage cheese"
+        ]
+    },
+    "crab": {
+        "names": [
+            "crab",
+            "crab (wild)",
+            "wild crab"
+        ],
+        "super": {
+            "crustaceans (wild)": 100
+        }
+    },
+    "cream": {
+        "g": 100,
+        "m": 1.0,
+        "names": [
+            "cream",
+            "whipped cream",
+            "whipping cream"
+        ],
+        "sg": 0.95,
+        "super": {
+            "milk": 305.3
+        }
+    },
+    "cream cheese": {
+        "g": 50,
+        "names": [
+            "cream cheese",
+            "philadelphia cream cheese",
+            "philly cream cheese"
+        ],
+        "pd": 0.2,
+        "sg": 1.0,
+        "super": {
+            "milk": 343.5
+        }
+    },
+    "cream tartar": {
+        "g": 3.5,
+        "sg": 0.95,
+        "super": {},
+        "names": [
+            "cream tartar"
+        ]
+    },
+    "creme fraiche": {
+        "g": 50,
+        "names": [
+            "creme fraiche",
+            "cr\u00e8me fra\u00eeche"
+        ],
+        "super": {
+            "milk": 343.5
+        }
+    },
+    "crustacean broth": {
+        "g": 250,
+        "sg": 1.0,
+        "super": {
+            "crustacean stock": 20,
+            "water": 80
+        },
+        "names": [
+            "crustacean broth"
+        ]
+    },
+    "crustacean stock": {
+        "g": 250,
+        "sg": 1.0,
+        "super": {
+            "crustaceans (farmed)": 50,
+            "other vegetables": 50,
+            "water": 50
+        },
+        "names": [
+            "crustacean stock"
+        ]
+    },
+    "crustaceans (farmed)": {
+        "g": 150,
+        "names": [
+            "crab (farmed)",
+            "crustaceans (farmed)",
+            "farmed crab",
+            "farmed prawn",
+            "farmed shrimp",
+            "prawn",
+            "prawn (farmed)",
+            "shrimp",
+            "shrimp (farmed)"
+        ],
+        "pd": 0.15,
+        "sg": 1.0,
+        "super": {}
+    },
+    "crustaceans (wild)": {
+        "g": 150,
+        "pd": 0.15,
+        "sg": 1.04,
+        "super": {},
+        "names": [
+            "crustaceans (wild)"
+        ]
+    },
+    "dark chocolate": {
+        "coc": 1.0,
+        "g": 25,
+        "names": [
+            "bittersweet chocolate",
+            "chocolate",
+            "chocolate chip",
+            "dark chocolate",
+            "milk chocolate",
+            "semi sweet chocolate",
+            "semisweet chocolate"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "dashi": {
+        "g": 5,
+        "names": [
+            "dashi",
+            "dashi powder"
+        ],
+        "sg": 1.0,
+        "super": {
+            "pelagic fish >30 cm": 50,
+            "salt": 50
+        }
+    },
+    "demersal fish": {
+        "g": 150,
+        "names": [
+            "bream",
+            "chilean sea bass",
+            "cod",
+            "demersal fish",
+            "flounder",
+            "grouper",
+            "haddock",
+            "hake",
+            "halibut",
+            "monkfish",
+            "orange roughy",
+            "patagonian toothfish",
+            "plaice",
+            "porgy",
+            "red snapper",
+            "roughy",
+            "snapper",
+            "sole",
+            "turbot",
+            "whitefish"
+        ],
+        "pd": 0.23,
+        "sg": 1.04,
+        "super": {}
+    },
+    "demersal mollusks": {
+        "g": 15,
+        "sg": 1.04,
+        "super": {},
+        "names": [
+            "demersal mollusks"
+        ]
+    },
+    "dough": {
+        "g": 100,
+        "names": [
+            "bread dough",
+            "dough",
+            "pizza dough"
+        ],
+        "sg": 1.0,
+        "super": {
+            "flour": 62.5,
+            "water": 37.5
+        }
+    },
+    "eggplant": {
+        "g": 100,
+        "super": {
+            "tomatoes": 100
+        },
+        "names": [
+            "eggplant"
+        ]
+    },
+    "eggs": {
+        "g": 55,
+        "names": [
+            "egg",
+            "egg white",
+            "egg yolk",
+            "eggs"
+        ],
+        "pd": 0.11,
+        "sg": 1.03,
+        "super": {}
+    },
+    "espresso": {
+        "g": 30,
+        "sg": 1.0,
+        "super": {
+            "coffee beans": 23,
+            "water": 77
+        },
+        "names": [
+            "espresso"
+        ]
+    },
+    "fish (farmed)": {
+        "g": 150,
+        "names": [
+            "farmed fish",
+            "fish",
+            "fish (farmed)",
+            "steelhead"
+        ],
+        "pd": 0.23,
+        "sg": 1.0,
+        "super": {}
+    },
+    "fish broth": {
+        "g": 250,
+        "sg": 1.0,
+        "super": {
+            "fish stock": 20,
+            "water": 80
+        },
+        "names": [
+            "fish broth"
+        ]
+    },
+    "fish sauce": {
+        "g": 15,
+        "sg": 1.0,
+        "super": {
+            "pelagic fish <30 cm": 20.5,
+            "salt": 7.5,
+            "water": 72
+        },
+        "names": [
+            "fish sauce"
+        ]
+    },
+    "fish stock": {
+        "g": 250,
+        "sg": 1.0,
+        "super": {
+            "fish (farmed)": 50,
+            "other vegetables": 50,
+            "water": 50
+        },
+        "names": [
+            "fish stock"
+        ]
+    },
+    "flour": {
+        "g": 100,
+        "names": [
+            "all purpose flour",
+            "bread flour",
+            "cake flour",
+            "flour",
+            "pastry flour",
+            "rye flour",
+            "unbleached all purpose flour",
+            "wheat flour",
+            "white flour",
+            "whole wheat flour",
+            "whole wheat pastry flour"
+        ],
+        "sg": 0.5,
+        "super": {
+            "wheat & rye (bread)": 100
+        }
+    },
+    "garlic": {
+        "g": 7,
+        "names": [
+            "clove garlic",
+            "garlic",
+            "garlic clove",
+            "garlic powder"
+        ],
+        "sg": 0.4,
+        "super": {
+            "onions & leeks (alliums)": 100
+        }
+    },
+    "ginger": {
+        "g": 15,
+        "names": [
+            "candied ginger",
+            "ginger",
+            "ginger root"
+        ],
+        "sg": 0.4,
+        "super": {
+            "root vegetables": 100
+        }
+    },
+    "grain alcohol": {
+        "g": 100,
+        "names": [
+            "alcohol",
+            "grain alcohol"
+        ],
+        "sg": 1.0,
+        "super": {
+            "wheat & rye (bread)": 200
+        }
+    },
+    "half and half": {
+        "g": 100,
+        "m": 1.0,
+        "sg": 0.95,
+        "super": {
+            "milk": 160.4
+        },
+        "names": [
+            "half and half"
+        ]
+    },
+    "heavy cream": {
+        "g": 100,
+        "m": 1.0,
+        "names": [
+            "heavy cream",
+            "heavy whipped cream",
+            "heavy whipping cream"
+        ],
+        "sg": 0.95,
+        "super": {
+            "milk": 351.1
+        }
+    },
+    "herbs": {
+        "g": 3.8,
+        "super": {
+            "lamiaceae": 50,
+            "umbellifers": 50
+        },
+        "names": [
+            "herbs"
+        ]
+    },
+    "honey": {
+        "g": 15.0,
+        "s": 0.7,
+        "sg": 1.0,
+        "super": {},
+        "names": [
+            "honey"
+        ]
+    },
+    "ketchup": {
+        "g": 10,
+        "names": [
+            "barbeque sauce",
+            "bbq sauce",
+            "catsup",
+            "ketchup"
+        ],
+        "sg": 1.0,
+        "super": {
+            "cane sugar": 30,
+            "tomatoes": 200,
+            "vinegar": 50
+        }
+    },
+    "lamb & mutton": {
+        "g": 150,
+        "names": [
+            "lamb",
+            "lamb & mutton",
+            "lamb chop",
+            "lamb shank",
+            "lamb shoulder",
+            "leg lamb",
+            "rack lamb"
+        ],
+        "pd": 0.2,
+        "sg": 1.05,
+        "super": {}
+    },
+    "lamiaceae": {
+        "g": 15,
+        "names": [
+            "basil",
+            "basil leaf",
+            "lamiaceae",
+            "lavender",
+            "marjoram",
+            "marjoram leaf",
+            "mint",
+            "mint leaf",
+            "oregano",
+            "rosemary",
+            "rosemary leaf",
+            "sage",
+            "sage leaf",
+            "savory",
+            "thyme",
+            "thyme leaf"
+        ],
+        "sg": 0.15,
+        "super": {
+            "other vegetables": 100
+        }
+    },
+    "leek": {
+        "g": 250,
+        "super": {
+            "onions & leeks (alliums)": 100
+        },
+        "names": [
+            "leek"
+        ]
+    },
+    "lemon juice": {
+        "g": 15,
+        "loss": {
+            "citrus fruit": 0.5
+        },
+        "names": [
+            "grapfruit juice",
+            "lemon juice",
+            "lime juice",
+            "orange juice"
+        ],
+        "sg": 1.0,
+        "super": {
+            "citrus fruit": 200
+        }
+    },
+    "light cream": {
+        "g": 30,
+        "names": [
+            "coffee cream",
+            "half half",
+            "light cream"
+        ],
+        "super": {
+            "cream": 50,
+            "milk": 50
+        }
+    },
+    "lobster": {
+        "super": {
+            "crustaceans (wild)": 100
+        },
+        "names": [
+            "lobster"
+        ]
+    },
+    "maize (meal)": {
+        "ed": 15150,
+        "g": 100,
+        "names": [
+            "corn",
+            "corn kernel",
+            "cornmeal",
+            "maize (meal)",
+            "polenta",
+            "sweet corn"
+        ],
+        "sg": 0.54,
+        "super": {}
+    },
+    "maple syrup": {
+        "g": 15,
+        "sg": 1.0,
+        "super": {},
+        "names": [
+            "maple syrup"
+        ]
+    },
+    "mayonnaise": {
+        "g": 10,
+        "names": [
+            "mayo",
+            "mayonnaise"
+        ],
+        "super": {
+            "eggs": 18,
+            "mustard": 8,
+            "rapeseed oil": 66,
+            "salt": 2,
+            "vinegar": 8
+        }
+    },
+    "milk": {
+        "g": 225,
+        "m": 1.0,
+        "names": [
+            "full fat milk",
+            "milk",
+            "whole milk"
+        ],
+        "note": "dairy.md",
+        "sg": 0.99,
+        "super": {}
+    },
+    "molasses": {
+        "g": 10,
+        "names": [
+            "blackstrap molasses",
+            "dark molasses",
+            "light molasses",
+            "molasses"
+        ],
+        "super": {
+            "cane sugar": 100
+        }
+    },
+    "mushroom": {
+        "fv": 1.0,
+        "g": 20,
+        "names": [
+            "brown mushroom",
+            "button mushroom",
+            "chanterelle",
+            "chanterelle mushroom",
+            "cremini",
+            "cremini mushroom",
+            "crimini",
+            "crimini mushroom",
+            "enoki",
+            "enoki mushroom",
+            "morel",
+            "morel mushroom",
+            "mushroom",
+            "oyster mushroom",
+            "porcini",
+            "porcini mushroom",
+            "portobello",
+            "portobello mushroom",
+            "shiitake",
+            "shiitake mushroom",
+            "white mushroom",
+            "wild mushroom"
+        ],
+        "sg": 0.5,
+        "super": {}
+    },
+    "mussel": {
+        "super": {
+            "bivalves (farmed)": 100
+        },
+        "names": [
+            "mussel"
+        ]
+    },
+    "mustard": {
+        "g": 5.0,
+        "names": [
+            "dijon",
+            "dijon mustard",
+            "dijon style mustard",
+            "grainy mustard",
+            "hot mustard",
+            "mustard",
+            "prepared mustard",
+            "yellow mustard"
+        ],
+        "sg": 1.0,
+        "super": {
+            "brassicas": 40.0,
+            "vinegar": 10.0,
+            "water": 50.0
+        }
+    },
+    "nutmeg": {
+        "fv": 1.0,
+        "g": 1.0,
+        "sg": 0.5,
+        "super": {
+            "nuts": 100.0
+        },
+        "names": [
+            "nutmeg"
+        ]
+    },
+    "nuts": {
+        "g": 100,
+        "names": [
+            "almond",
+            "brazil nut",
+            "cashew",
+            "chestnut",
+            "hazelnut",
+            "nut",
+            "nuts",
+            "pecan",
+            "pine nut",
+            "pistachio",
+            "pistachio nut",
+            "walnut",
+            "water chestnut"
+        ],
+        "pd": 0.16,
+        "sg": 1.05,
+        "super": {}
+    },
+    "oat milk": {
+        "g": 225,
+        "m": 1.0,
+        "names": [
+            "oat milk",
+            "oatmilk"
+        ],
+        "sg": 1.02,
+        "super": {}
+    },
+    "oatmeal": {
+        "ed": 15857,
+        "g": 100,
+        "names": [
+            "oat",
+            "oatmeal",
+            "rolled oat"
+        ],
+        "sg": 0.38,
+        "super": {}
+    },
+    "ocoptus": {
+        "super": {
+            "cephalopods": 100
+        },
+        "names": [
+            "ocoptus"
+        ]
+    },
+    "olive oil": {
+        "g": 25,
+        "names": [
+            "evoo",
+            "extra virgin olive oil",
+            "olive oil",
+            "virgin olive oil"
+        ],
+        "of": 1.0,
+        "sg": 0.91,
+        "super": {}
+    },
+    "one percent milk": {
+        "m": 1.0,
+        "names": [
+            "1 percent milk",
+            "1% milk",
+            "one percent milk"
+        ],
+        "sg": 1.0,
+        "super": {
+            "milk": 77.2
+        }
+    },
+    "onion powder": {
+        "g": 3.0,
+        "loss": {
+            "onions & leeks (alliums)": 0.5
+        },
+        "super": {
+            "onions & leeks (alliums)": 200
+        },
+        "names": [
+            "onion powder"
+        ]
+    },
+    "onions & leeks (alliums)": {
+        "g": 150,
+        "names": [
+            "green onion",
+            "onion",
+            "onions & leeks (alliums)",
+            "pearl onion",
+            "red onion",
+            "spanish onion",
+            "spring onion",
+            "sweet onion",
+            "white onion",
+            "yellow onion"
+        ],
+        "r": 1.0,
+        "sg": 0.98,
+        "super": {}
+    },
+    "orange": {
+        "names": [
+            "navel orange",
+            "orange",
+            "orange peel",
+            "orange rind",
+            "orange slice",
+            "orange wedge",
+            "orange zest"
+        ],
+        "super": {
+            "citrus fruit": 100
+        }
+    },
+    "other fruit": {
+        "fv": 1.0,
+        "g": 150,
+        "names": [
+            "apricot",
+            "avocado",
+            "bing cherry",
+            "black olive",
+            "bosc",
+            "bosc pear",
+            "calamata olive",
+            "cantaloupe",
+            "cherry",
+            "date",
+            "fig",
+            "green olive",
+            "mango",
+            "nectarine",
+            "olive",
+            "other fruit",
+            "papaya",
+            "peach",
+            "pear",
+            "pineapple",
+            "plum",
+            "prune",
+            "sour cherry",
+            "stuffed olive"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "other vegetables": {
+        "fv": 1.0,
+        "g": 100,
+        "names": [
+            "acorn squash",
+            "bell pepper",
+            "bitter melon",
+            "butternut squash",
+            "calabash",
+            "cayenne",
+            "cayenne pepper",
+            "celery",
+            "celery leaf",
+            "celery rib",
+            "celery root",
+            "chard",
+            "chile",
+            "chile de arbol",
+            "chile de \u00e1rbol",
+            "chile flake",
+            "chili",
+            "chili flake",
+            "chili pepper",
+            "cucumber",
+            "fresh bean",
+            "ghost",
+            "ghost pepper",
+            "gourd",
+            "green bean",
+            "green bell pepper",
+            "green chile",
+            "green chili",
+            "green pepper",
+            "greens",
+            "guajillo chile",
+            "habanero",
+            "habanero chile",
+            "habanero chili",
+            "habanero pepper",
+            "jalapeno",
+            "jalapeno chile",
+            "jalapeno chili",
+            "jalapeno pepper",
+            "jalape\u00f1o",
+            "jalape\u00f1o chile",
+            "jalape\u00f1o chili",
+            "jalape\u00f1o pepper",
+            "kirby cucumber",
+            "melon",
+            "okra",
+            "orange bell pepper",
+            "orange pepper",
+            "other vegetables",
+            "pepitas",
+            "piquillo pepper",
+            "poblano",
+            "poblano chile",
+            "poblano pepper",
+            "pumpkin",
+            "pumpkin pepitas",
+            "pumpkin squash",
+            "radicchio",
+            "red bell pepper",
+            "red chile",
+            "red chili",
+            "red pepper",
+            "rhubarb",
+            "salad greens",
+            "scotch bonnet",
+            "scotch bonnet pepper",
+            "serrano",
+            "serrano chile",
+            "serrano chili",
+            "serrano pepper",
+            "shishito",
+            "shishito pepper",
+            "spaghetti squash",
+            "spinach",
+            "spinach leaf",
+            "squash",
+            "squash gourd",
+            "string bean",
+            "summer squash",
+            "sweet red pepper",
+            "swiss chard",
+            "watermelon",
+            "winter squash",
+            "yellow bell pepper",
+            "yellow pepper",
+            "yellow squash",
+            "zucchini"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "oyster": {
+        "super": {
+            "bivalves (farmed)": 100
+        },
+        "names": [
+            "oyster"
+        ]
+    },
+    "palm oil": {
+        "g": 25,
+        "of": 1.0,
+        "sg": 0.9,
+        "super": {},
+        "names": [
+            "palm oil"
+        ]
+    },
+    "paprika": {
+        "g": 7,
+        "names": [
+            "paprika",
+            "smoked paprika",
+            "sweet paprika"
+        ],
+        "sg": 0.5,
+        "super": {
+            "other vegetables": 400
+        }
+    },
+    "pasta": {
+        "g": 0,
+        "names": [
+            "farfalle",
+            "farfalle pasta",
+            "fettucine",
+            "fettucine pasta",
+            "lasagna",
+            "lasagna noodle",
+            "lasagna pasta",
+            "lasagne",
+            "lasagne noodle",
+            "lasagne pasta",
+            "linguine",
+            "linguine pasta",
+            "macaroni",
+            "macaroni pasta",
+            "noodle",
+            "noodle pasta",
+            "orecchiette",
+            "orecchiette pasta",
+            "orzo",
+            "orzo pasta",
+            "pasta",
+            "pasta noodle",
+            "penne",
+            "penne pasta",
+            "ravioli",
+            "ravioli pasta",
+            "spaghetti",
+            "spaghetti pasta",
+            "tagliatelle",
+            "tagliatelle pasta"
+        ],
+        "sg": 0.5,
+        "super": {
+            "wheat & rye (bread)": 100
+        }
+    },
+    "peanuts": {
+        "g": 100,
+        "names": [
+            "peanut",
+            "peanut butter",
+            "peanuts"
+        ],
+        "pd": 0.26,
+        "sg": 1.05,
+        "super": {}
+    },
+    "peas": {
+        "g": 100,
+        "names": [
+            "frozen pea",
+            "green pea",
+            "peas",
+            "snap pea",
+            "snow pea",
+            "yellow pea"
+        ],
+        "pd": 0.215,
+        "sg": 1.0,
+        "super": {}
+    },
+    "pelagic fish <30 cm": {
+        "g": 150,
+        "names": [
+            "capelin",
+            "herring",
+            "pelagic fish <30 cm",
+            "tilapia (wild)",
+            "whiting",
+            "wild tilapia"
+        ],
+        "pd": 0.21,
+        "sg": 1.04,
+        "super": {}
+    },
+    "pelagic fish >30 cm": {
+        "g": 150,
+        "names": [
+            "ahi",
+            "ahi tuna",
+            "bluefin",
+            "bluefin tuna",
+            "bonito",
+            "mackerel",
+            "mahi mahi",
+            "pelagic fish >30 cm",
+            "salmon (wild)",
+            "shad",
+            "skipjack",
+            "skipjack tuna",
+            "swordfish",
+            "tuna",
+            "tunafish",
+            "wild salmon",
+            "yellowfin",
+            "yellowfin tuna"
+        ],
+        "pd": 0.21,
+        "sg": 1.04,
+        "super": {}
+    },
+    "pepper": {
+        "fv": 1,
+        "g": 2.33,
+        "names": [
+            "aleppo pepper",
+            "black pepper",
+            "black peppercorn",
+            "pepper",
+            "peppercorn",
+            "pink peppercorn",
+            "sichuan peppercorn",
+            "white pepper"
+        ],
+        "sg": 0.5,
+        "super": {}
+    },
+    "pierogi": {
+        "g": 20,
+        "names": [
+            "pierogi",
+            "pierogies",
+            "pierogy"
+        ],
+        "sg": 1.0,
+        "super": {
+            "cheese": 17,
+            "dough": 50,
+            "potatoes": 33
+        }
+    },
+    "pork": {
+        "g": 150,
+        "names": [
+            "back bacon",
+            "bacon",
+            "canadian bacon",
+            "chorizo",
+            "chorizo sausage",
+            "ham",
+            "italian sausage",
+            "mortadella",
+            "mortadella sausage",
+            "pancetta",
+            "pepperoni",
+            "pepperoni sausage",
+            "pork",
+            "pork belly",
+            "pork butt",
+            "pork chop",
+            "pork loin",
+            "pork sausage",
+            "pork shoulder",
+            "prosciutto",
+            "salami",
+            "salami sausage",
+            "salt pork",
+            "sausage",
+            "slab bacon"
+        ],
+        "pd": 0.16,
+        "sg": 1.02,
+        "super": {}
+    },
+    "potatoes": {
+        "ed": 3220,
+        "g": 100,
+        "names": [
+            "baking potato",
+            "fingerling potato",
+            "idaho potato",
+            "new potato",
+            "potato",
+            "potatoes",
+            "red potato",
+            "russet",
+            "russet potato",
+            "scalloped potato",
+            "sweet potato",
+            "white potato",
+            "yam",
+            "yukon gold",
+            "yukon gold potato"
+        ],
+        "sg": 1.01,
+        "super": {}
+    },
+    "poultry": {
+        "g": 125,
+        "names": [
+            "breast chicken",
+            "breast cornish game hen",
+            "breast cornish hen",
+            "breast duck",
+            "breast game hen",
+            "breast goose",
+            "breast grouse",
+            "breast pheasant",
+            "breast quail",
+            "breast turkey",
+            "chicken",
+            "chicken breast",
+            "chicken giblet",
+            "chicken leg",
+            "chicken liver",
+            "chicken thigh",
+            "chicken wing",
+            "cornish game hen",
+            "cornish game hen breast",
+            "cornish game hen giblet",
+            "cornish game hen leg",
+            "cornish game hen liver",
+            "cornish game hen thigh",
+            "cornish game hen wing",
+            "cornish hen",
+            "cornish hen breast",
+            "cornish hen giblet",
+            "cornish hen leg",
+            "cornish hen liver",
+            "cornish hen thigh",
+            "cornish hen wing",
+            "duck",
+            "duck breast",
+            "duck giblet",
+            "duck leg",
+            "duck liver",
+            "duck thigh",
+            "duck wing",
+            "game hen",
+            "game hen breast",
+            "game hen giblet",
+            "game hen leg",
+            "game hen liver",
+            "game hen thigh",
+            "game hen wing",
+            "giblet chicken",
+            "giblet cornish game hen",
+            "giblet cornish hen",
+            "giblet duck",
+            "giblet game hen",
+            "giblet goose",
+            "giblet grouse",
+            "giblet pheasant",
+            "giblet quail",
+            "giblet turkey",
+            "goose",
+            "goose breast",
+            "goose giblet",
+            "goose leg",
+            "goose liver",
+            "goose thigh",
+            "goose wing",
+            "grouse",
+            "grouse breast",
+            "grouse giblet",
+            "grouse leg",
+            "grouse liver",
+            "grouse thigh",
+            "grouse wing",
+            "leg chicken",
+            "leg cornish game hen",
+            "leg cornish hen",
+            "leg duck",
+            "leg game hen",
+            "leg goose",
+            "leg grouse",
+            "leg pheasant",
+            "leg quail",
+            "leg turkey",
+            "liver chicken",
+            "liver cornish game hen",
+            "liver cornish hen",
+            "liver duck",
+            "liver game hen",
+            "liver goose",
+            "liver grouse",
+            "liver pheasant",
+            "liver quail",
+            "liver turkey",
+            "pheasant",
+            "pheasant breast",
+            "pheasant giblet",
+            "pheasant leg",
+            "pheasant liver",
+            "pheasant thigh",
+            "pheasant wing",
+            "poultry",
+            "quail",
+            "quail breast",
+            "quail giblet",
+            "quail leg",
+            "quail liver",
+            "quail thigh",
+            "quail wing",
+            "thigh chicken",
+            "thigh cornish game hen",
+            "thigh cornish hen",
+            "thigh duck",
+            "thigh game hen",
+            "thigh goose",
+            "thigh grouse",
+            "thigh pheasant",
+            "thigh quail",
+            "thigh turkey",
+            "turkey",
+            "turkey breast",
+            "turkey giblet",
+            "turkey leg",
+            "turkey liver",
+            "turkey thigh",
+            "turkey wing",
+            "wing chicken",
+            "wing cornish game hen",
+            "wing cornish hen",
+            "wing duck",
+            "wing game hen",
+            "wing goose",
+            "wing grouse",
+            "wing pheasant",
+            "wing quail",
+            "wing turkey"
+        ],
+        "pd": 0.17,
+        "sg": 0.97,
+        "super": {}
+    },
+    "pulses": {
+        "g": 100,
+        "names": [
+            "bean",
+            "black bean",
+            "black eyed pea",
+            "cannellini",
+            "cannellini bean",
+            "chickpea",
+            "dried bean",
+            "dried pea",
+            "french lentil",
+            "great northern bean",
+            "green lentil",
+            "kidney bean",
+            "lentil",
+            "lima bean",
+            "navy bean",
+            "pea",
+            "pinto bean",
+            "pulses",
+            "puy lentil",
+            "red lentil",
+            "split pea",
+            "white bean",
+            "yellow lentil"
+        ],
+        "pd": 0.22,
+        "sg": 0.85,
+        "super": {}
+    },
+    "radish": {
+        "bunch": 12,
+        "g": 12,
+        "super": {
+            "root vegetables": 100
+        },
+        "names": [
+            "radish"
+        ]
+    },
+    "raisin": {
+        "g": 50,
+        "names": [
+            "golden raisin",
+            "raisin",
+            "red raisin",
+            "yellow raisin"
+        ],
+        "sg": 1.0,
+        "super": {
+            "berries & grapes": 200
+        }
+    },
+    "rapeseed oil": {
+        "g": 25,
+        "names": [
+            "canola oil",
+            "cooking oil",
+            "neutral oil",
+            "oil",
+            "rapeseed oil",
+            "vegetable oil"
+        ],
+        "of": 1.0,
+        "sg": 0.9,
+        "super": {}
+    },
+    "rice": {
+        "ed": 15060,
+        "g": 90,
+        "names": [
+            "arborio",
+            "arborio rice",
+            "basmati",
+            "basmati rice",
+            "brown rice",
+            "carnaroli",
+            "carnaroli rice",
+            "jasmine rice",
+            "rice",
+            "sushi rice",
+            "white rice",
+            "wild rice"
+        ],
+        "sg": 0.85,
+        "super": {}
+    },
+    "rice milk": {
+        "g": 225,
+        "m": 1.0,
+        "names": [
+            "rice milk",
+            "ricemilk"
+        ],
+        "sg": 1.02,
+        "super": {}
+    },
+    "ricotta": {
+        "g": 50,
+        "names": [
+            "ricotta",
+            "ricotta cheese"
+        ],
+        "sg": 1.0,
+        "super": {
+            "milk": 229.0,
+            "vinegar": 12
+        }
+    },
+    "root vegetables": {
+        "g": 100,
+        "names": [
+            "daikon",
+            "daikon radish",
+            "horseradish",
+            "parsnip",
+            "root vegetables",
+            "rutabaga",
+            "turnip"
+        ],
+        "r": 1.0,
+        "sg": 1.0,
+        "super": {}
+    },
+    "salmon": {
+        "names": [
+            "farmed salmon",
+            "salmon",
+            "salmon (farmed)"
+        ],
+        "super": {
+            "fish (farmed)": 100
+        }
+    },
+    "salt": {
+        "g": 6,
+        "names": [
+            "fleur de sel",
+            "kosher salt",
+            "salt",
+            "sea salt",
+            "table salt"
+        ],
+        "sg": 2.17,
+        "super": {}
+    },
+    "salt pepper": {
+        "g": 5.0,
+        "names": [
+            "black pepper kosher salt",
+            "black pepper salt",
+            "kosher salt black pepper",
+            "pepper kosher salt",
+            "pepper salt",
+            "salt black pepper",
+            "salt pepper",
+            "seasoning",
+            "seasoning salt"
+        ],
+        "sg": 1.0,
+        "super": {
+            "pepper": 50.0,
+            "salt": 50.0
+        }
+    },
+    "sardine": {
+        "g": 10.0,
+        "pkg": 100,
+        "super": {
+            "pelagic fish <30 cm": 100
+        },
+        "names": [
+            "sardine"
+        ]
+    },
+    "scallion": {
+        "bunch": 7,
+        "g": 15.0,
+        "names": [
+            "scallion",
+            "scallion green",
+            "scallion white"
+        ],
+        "sg": 0.4,
+        "super": {
+            "onions & leeks (alliums)": 100
+        }
+    },
+    "scallop": {
+        "names": [
+            "farmed scallop",
+            "scallop",
+            "scallop (farmed)"
+        ],
+        "super": {
+            "bivalves (farmed)": 100
+        }
+    },
+    "scallop (wild)": {
+        "g": 15.0,
+        "names": [
+            "bay scallop",
+            "scallop (wild)",
+            "sea scallop",
+            "wild scallop"
+        ],
+        "super": {
+            "demersal mollusks": 100
+        }
+    },
+    "sea bass": {
+        "g": 150.0,
+        "pd": 0.18,
+        "sg": 1.04,
+        "super": {},
+        "names": [
+            "sea bass"
+        ]
+    },
+    "sesame": {
+        "g": 5,
+        "names": [
+            "black sesame seed",
+            "sesame",
+            "sesame seed",
+            "white sesame seed"
+        ],
+        "sg": 0.6,
+        "super": {}
+    },
+    "sesame oil": {
+        "g": 15,
+        "super": {
+            "sesame": 200
+        },
+        "names": [
+            "sesame oil"
+        ]
+    },
+    "shallot": {
+        "g": 30.0,
+        "super": {
+            "onions & leeks (alliums)": 100
+        },
+        "names": [
+            "shallot"
+        ]
+    },
+    "shrimp (wild)": {
+        "names": [
+            "prawns (wild) (wild)",
+            "shrimp (wild)",
+            "wild prawns (wild)",
+            "wild shrimp"
+        ],
+        "super": {
+            "crustaceans (wild)": 100
+        }
+    },
+    "simple syrup": {
+        "g": 20,
+        "names": [
+            "golden syrup",
+            "simple syrup",
+            "sugar syrup",
+            "syrup"
+        ],
+        "sg": 1.1,
+        "super": {
+            "cane sugar": 50,
+            "water": 50
+        }
+    },
+    "skim milk": {
+        "m": 1.0,
+        "names": [
+            "non-fat milk",
+            "nonfat milk",
+            "skim milk"
+        ],
+        "sg": 1.0,
+        "super": {
+            "milk": 69.5
+        }
+    },
+    "sour cream": {
+        "g": 50,
+        "super": {
+            "milk": 221.4
+        },
+        "names": [
+            "sour cream"
+        ]
+    },
+    "soy sauce": {
+        "g": 15,
+        "sg": 1.0,
+        "super": {
+            "pulses": 20,
+            "water": 80
+        },
+        "names": [
+            "soy sauce"
+        ]
+    },
+    "soybean oil": {
+        "g": 25,
+        "of": 1.0,
+        "sg": 0.9,
+        "super": {},
+        "names": [
+            "soybean oil"
+        ]
+    },
+    "soymilk": {
+        "g": 150,
+        "m": 1.0,
+        "names": [
+            "soy milk",
+            "soymilk"
+        ],
+        "sg": 1.02,
+        "super": {}
+    },
+    "spice": {
+        "fv": 1.0,
+        "g": 5,
+        "names": [
+            "allspice",
+            "clove",
+            "garam masala",
+            "spice",
+            "spice blend",
+            "turmeric"
+        ],
+        "sg": 0.5,
+        "super": {}
+    },
+    "squid": {
+        "names": [
+            "calamari",
+            "squid"
+        ],
+        "super": {
+            "cephalopods": 100
+        }
+    },
+    "starch": {
+        "g": 5,
+        "names": [
+            "corn starch",
+            "cornstarch",
+            "potato starch",
+            "starch",
+            "tapioca starch"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "striped bass": {
+        "names": [
+            "bass",
+            "bass (farmed)",
+            "farmed bass",
+            "farmed striped bass",
+            "striped bass",
+            "striped bass (farmed)"
+        ],
+        "super": {
+            "fish (farmed)": 100
+        }
+    },
+    "sun-dried tomato": {
+        "names": [
+            "sun dried tomato",
+            "sun-dried tomato"
+        ],
+        "super": {
+            "tomatoes": 200
+        }
+    },
+    "sunflower oil": {
+        "g": 25,
+        "of": 1.0,
+        "sg": 0.9,
+        "super": {},
+        "names": [
+            "sunflower oil"
+        ]
+    },
+    "tea": {
+        "g": 227,
+        "names": [
+            "brewed tea",
+            "iced tea",
+            "tea"
+        ],
+        "sg": 1.0,
+        "super": {
+            "tea leaves": 1.33,
+            "water": 98.67
+        }
+    },
+    "tea leaves": {
+        "caf": 16.5,
+        "g": 3.0,
+        "sg": 0.35,
+        "super": {},
+        "names": [
+            "tea leaves"
+        ]
+    },
+    "tilapia": {
+        "names": [
+            "farmed tilapia",
+            "tilapia",
+            "tilapia (farmed)"
+        ],
+        "super": {
+            "fish (farmed)": 100
+        }
+    },
+    "tofu": {
+        "g": 150,
+        "names": [
+            "inari-no-moto",
+            "tofu"
+        ],
+        "pd": 0.16,
+        "sg": 1.05,
+        "super": {}
+    },
+    "tomato paste": {
+        "g": 15,
+        "loss": {
+            "tomatoes": 0.2
+        },
+        "sg": 1.13,
+        "super": {
+            "tomatoes": 100
+        },
+        "names": [
+            "tomato paste"
+        ]
+    },
+    "tomatoes": {
+        "fv": 1.0,
+        "g": 100,
+        "names": [
+            "beefsteak tomato",
+            "cherry tomato",
+            "grape tomato",
+            "heirloom tomato",
+            "plum tomato",
+            "roma tomato",
+            "san marzano tomato",
+            "tomatillo",
+            "tomato",
+            "tomatoes"
+        ],
+        "sg": 1.01,
+        "super": {}
+    },
+    "tortilla": {
+        "g": 45,
+        "names": [
+            "tortilla"
+        ],
+        "super": {
+            "flour": 100
+        }
+    },
+    "trout": {
+        "names": [
+            "farmed trout",
+            "trout",
+            "trout (farmed)"
+        ],
+        "super": {
+            "fish (farmed)": 100
+        }
+    },
+    "two percent milk": {
+        "m": 1.0,
+        "names": [
+            "2 percent milk",
+            "2% milk",
+            "two percent milk"
+        ],
+        "sg": 1.0,
+        "super": {
+            "milk": 84.8
+        }
+    },
+    "umbellifers": {
+        "g": 3.8,
+        "names": [
+            "chervil",
+            "chervil leaf",
+            "cilantro",
+            "cilantro leaf",
+            "coriander",
+            "coriander leaf",
+            "coriander seed",
+            "cumin",
+            "cumin seed",
+            "dill",
+            "fennel",
+            "fennel bulb",
+            "fennel seed",
+            "flat leaf parsley",
+            "flat leaf parsley leaf",
+            "flat-leaf parsley",
+            "fresh parsley",
+            "italian parsley",
+            "lovage",
+            "parsley",
+            "parsley leaf",
+            "umbellifers"
+        ],
+        "sg": 0.15,
+        "super": {
+            "other vegetables": 100
+        }
+    },
+    "vanilla": {
+        "fv": 1.0,
+        "g": 5.0,
+        "names": [
+            "vanilla",
+            "vanilla bean",
+            "vanilla extract"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "vegetable broth": {
+        "g": 250,
+        "sg": 1.0,
+        "super": {
+            "vegetable stock": 20,
+            "water": 80
+        },
+        "names": [
+            "vegetable broth"
+        ]
+    },
+    "vegetable stock": {
+        "g": 250,
+        "sg": 1.0,
+        "super": {
+            "other vegetables": 50,
+            "water": 50
+        },
+        "names": [
+            "vegetable stock"
+        ]
+    },
+    "vinegar": {
+        "g": 50,
+        "names": [
+            "rice vinegar",
+            "vinegar",
+            "white vinegar"
+        ],
+        "super": {
+            "grain alcohol": 6,
+            "water": 94
+        }
+    },
+    "water": {
+        "g": 250,
+        "names": [
+            "boiling water",
+            "club soda",
+            "hot water",
+            "ice",
+            "ice cube",
+            "ice water",
+            "lukewarm water",
+            "seltzer",
+            "seltzer water",
+            "soda",
+            "soda water",
+            "sparkling water",
+            "tap water",
+            "tepid water",
+            "tonic",
+            "tonic water",
+            "warm water",
+            "water"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
+    "wheat & rye (bread)": {
+        "ed": 14140,
+        "g": 100,
+        "name": "wheat & rye (bread)",
+        "names": [
+            "grain",
+            "rye",
+            "wheat",
+            "wheat & rye (bread)"
+        ],
+        "sg": 0.5,
+        "super": {}
+    },
+    "wine": {
+        "ed": 3556,
+        "g": 225,
+        "names": [
+            "dry red wine",
+            "dry white wine",
+            "red wine",
+            "rose wine",
+            "white wine",
+            "wine"
+        ],
+        "sg": 1.01,
+        "super": {}
+    },
+    "wine vinegar": {
+        "g": 50,
+        "names": [
+            "balsamic",
+            "balsamic vinegar",
+            "red wine vinegar",
+            "sherry vinegar",
+            "white wine vinegar",
+            "wine vinegar"
+        ],
+        "super": {
+            "wine": 100
+        }
+    },
+    "yogurt": {
+        "g": 100,
+        "names": [
+            "greek yoghurt",
+            "greek yogurt",
+            "yoghurt",
+            "yogurt"
+        ],
+        "super": {
+            "milk": 100
+        }
+    }
+}

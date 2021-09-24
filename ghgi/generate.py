@@ -91,7 +91,7 @@ def extend_products(infile, outfile):
             if name in master_names:
                 raise Exception('{} already used!'.format(name))
         master_names |= set(product['names'])
-    json.dump(extended_products, outfile)
+    json.dump(extended_products, outfile, indent=4)
     return extended_products
 
 
@@ -111,12 +111,12 @@ if __name__ == "__main__":
     with open(MASTER_PRODUCTS, 'r') as products:
         aka_index, trigram_index = build_indexes(products)
         with open(MASTER_AKA_INDEX, 'w') as aka_file:
-            json.dump(aka_index,  aka_file)
+            json.dump(aka_index,  aka_file, indent=4)
         with open(MASTER_TRIGRAM_INDEX, 'w') as tri_file:
-            json.dump(trigram_index, tri_file)
+            json.dump(trigram_index, tri_file, indent=4)
 
     gin_index = GIN.generate()
     with open(MASTER_GIN_INDEX, 'w') as gin_file:
-        json.dump(gin_index, gin_file)
+        json.dump(gin_index, gin_file, indent=4)
 
     # TODO: there should be some sort of check on the origins. Maybe via test?
