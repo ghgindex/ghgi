@@ -2,13 +2,13 @@
 
 [Robinson et al][1] found that mushrooms have a GWG20 impact of **2.95 kg CO2e/kg** from "cradle-to-facility gate".
 
-To that estimate, we have appended the subsequent processsing, transport, packaging, retail, and loss impacts estimated from [Poore et al][2] as a reasonable (albeit imperfect) proxy; its value is **0.29221 kg CO2e/kg**.
+To that estimate, we have appended the subsequent processsing, transport, packaging, retail, and loss impacts estimated from [Poore & Nemecek][2] as a reasonable (albeit imperfect) proxy; its value is **0.29221 kg CO2e/kg**.
 
 The resultant value for the GHG impact of mushrooms is **3.2422 kg CO2e/kg**, which is reflected in our database.
 
 ## Processing, packaging, and retail
 
-Using the following inputs (per [Poore et al][2]) for CO2e/kg of fresh fruits and vegetables:
+Using the following inputs (per [Poore & Nemecek][2]) for CO2e/kg of fresh fruits and vegetables:
 
 | Stage      | GHG Emissions (kg CO2e/kg) |
 | ---------- | -------------------------: |
@@ -19,7 +19,7 @@ Using the following inputs (per [Poore et al][2]) for CO2e/kg of fresh fruits an
 
 ## Transport
 
-Using the following inputs (per [Poore et al][2]) for refrigerated transportation per 1000km:
+Using the following inputs (per [Poore & Nemecek][2]) for refrigerated transportation per 1000km:
 
 | Mode      | GHG Emissions (per tonne km) | Average Distance traveled (fruits and vegetables) (tonne km) | kg CO2e/kg |
 | --------- | ---------------------------: | -----------------------------------------------------------: | ---------: |

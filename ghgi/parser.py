@@ -135,6 +135,7 @@ STOPWORDS |= {
     'medium',
     'mild',
     'optional',
+    'organic',
     'peeled',
     'picked',
     'pitted',

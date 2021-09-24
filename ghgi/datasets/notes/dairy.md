@@ -1,6 +1,6 @@
 # Dairy
 
-Poore et al calculated the emissions impact of milk, which they standardized to [4% fat and 3.3% protein][1]. They did not provide values for other dairy products except cheese.
+[Poore & Nemecek][1] calculated the emissions impact of milk, which they standardized to [4% fat and 3.3% protein][1]. They did not provide values for other dairy products except cheese.
 
 This data is extended to derivative dairy products using a co-products allocation based on dry matter as follows:
 

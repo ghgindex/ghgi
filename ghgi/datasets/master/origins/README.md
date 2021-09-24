@@ -10,9 +10,9 @@ Each origin's data is a dictionary whose keys are products' canonical names, and
 
 ## GHG Values
 
-The `ghg` values are mass ratios of output_C02e:input. For instance, apples produce median GHG emissions of 0.42kg CO2e per kg of apples, so their `ghgmedian` value is 0.42. The largest single source of this data is Poore, Nemecek, et al; these ghg values are found in this [supplemental](https://www.science.org/doi/suppl/10.1126/science.aaq0216/suppl_file/aaq0216-poore-sm-revision1.pdf) material.
+The `ghg` values are mass ratios of output_C02e:input. For instance, apples produce median GHG emissions of 0.42kg CO2e per kg of apples, so their `ghgmedian` value is 0.42. The largest single source of this data is Poore & Nemecek; these ghg values are found in this [supplemental](https://www.science.org/doi/suppl/10.1126/science.aaq0216/suppl_file/aaq0216-poore-sm-revision1.pdf) material.
 
-For certain foods not covered by Poore et al, we have sourced this information elsewhere. The references are documented via `reference_id`s, and the optional note may include a link to a spreadsheet detailing how any necessary calculations were done. Many of the products calculated this way have the same value for each of the ghg entries because the source only provides a single value.
+For certain foods not covered by Poore & Nemecek, we have sourced this information elsewhere. The references are documented via `reference_id`s, and the optional note may include a link to a spreadsheet detailing how any necessary calculations were done. Many of the products calculated this way have the same value for each of the ghg entries because the source only provides a single value.
 
 ## Reference Ids
 
