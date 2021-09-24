@@ -2,9 +2,6 @@
 
 ## Catalog
 
-Dairy explanation
-Mushrooms
-
 ## Note to self
 
 The parser now successfully looks for interstitial parentheticals between the qty and the units! These are then parsed, and `quantify` infers all kinds of nice things if it receives an interstitial parenthetical.
@@ -13,7 +10,6 @@ Preserve commas when we remove stopwords! Otherwise you can end up with nonsense
 
 Strip out `to`s at the end
 replace `or`s with commas at the end
-replace `plus` with comma (or a `+`?) Actually I think we should make `plus` a `quantify` value and add `plus` at the front of the units regex
 
 Why isn't the parenthetical getting stripped out of this? `Kosher salt (Diamond Crystal) and black pepper`
 `1 packed cup cilantro, coarsely chopped`
@@ -29,6 +25,7 @@ I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and r
 
 ## Parser
 
+Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving -> `torn` isn't getting removed
 
 ### Each types
 
@@ -37,8 +34,6 @@ I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and r
 ### Sneaky words
 
 #### Additions
-
-- 2 cups **plus** 1 tablespoon
 
 ## Match errors
 

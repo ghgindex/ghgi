@@ -7,90 +7,139 @@ Fixtures are lists of tuples of (in, out) for different tests
 REGEX_UNITS_DATA = [
 
     ('1 tablespoon plus 2 teaspoon kosher salt', [
-        {'qty': '1', 'qual': None, 'unit': 'tablespoon', 'per': None, 'plus': None},
-        {'qty': '2', 'qual': None, 'unit': 'teaspoon', 'per': None, 'plus': 'plus'}
+        {'qty': '1', 'qual': None, 'unit': 'tablespoon',
+            'per': None, 'plus': None, 'plural': None},
+        {'qty': '2', 'qual': None, 'unit': 'teaspoon',
+            'per': None, 'plus': 'plus', 'plural': None}
     ]),
     ('1 ( 8-ounce / 230g ) can ( about 230g )', [
         {'qty': '1', 'qual': '( 8-ounce / 230g )',
-         'unit': 'can', 'per': None, 'plus': None},
-        {'qty': '230', 'qual': None, 'unit': 'g', 'per': None, 'plus': None},
+         'unit': 'can', 'per': None, 'plus': None, 'plural': None},
+        {'qty': '230', 'qual': None, 'unit': 'g',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('handful ( 1 cup ) stuff', [
         {'unit': 'handful'},
-        {'qty': '1', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None}
+        {'qty': '1', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None}
     ]),
     ('1 ( 8-ounce ) stalk ( about 230g )', [
         {'qty': '1', 'qual': '( 8-ounce )', 'unit': 'stalk',
-         'per': None, 'plus': None},
-        {'qty': '230', 'qual': None, 'unit': 'g', 'per': None, 'plus': None}
+         'per': None, 'plus': None, 'plural': None},
+        {'qty': '230', 'qual': None, 'unit': 'g',
+            'per': None, 'plus': None, 'plural': None}
+    ]),
+    ('1 ( 8-ounce ) stalk ( about 230g )', [
+        {'qty': '1', 'qual': '( 8-ounce )', 'unit': 'stalk',
+         'per': None, 'plus': None, 'plural': None},
+        {'qty': '230', 'qual': None, 'unit': 'g',
+            'per': None, 'plus': None, 'plural': None}
     ]),
     ('1 ( 8-ounce ) stalk ( about 230g ) or 1 handful', [
         {'qty': '1', 'qual': '( 8-ounce )', 'unit': 'stalk',
-         'per': None, 'plus': None},
-        {'qty': '230', 'qual': None, 'unit': 'g', 'per': None, 'plus': None},
-        {'qty': '1', 'qual': None, 'unit': 'handful', 'per': None, 'plus': None}
+         'per': None, 'plus': None, 'plural': None},
+        {'qty': '230', 'qual': None, 'unit': 'g',
+            'per': None, 'plus': None, 'plural': None},
+        {'qty': '1', 'qual': None, 'unit': 'handful',
+            'per': None, 'plus': None, 'plural': None}
     ]),
     ('1 tablespoon dark cocoa powder / 8 gram', [
-        {'qty': '1', 'qual': None, 'unit': 'tablespoon', 'per': None, 'plus': None},
-        {'qty': '8', 'qual': None, 'unit': 'gram', 'per': None, 'plus': None},
+        {'qty': '1', 'qual': None, 'unit': 'tablespoon',
+            'per': None, 'plus': None, 'plural': None},
+        {'qty': '8', 'qual': None, 'unit': 'gram',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('185 gram all-purpose flour ( 1 1/2 cup )', [
-        {'qty': '185', 'qual': None, 'unit': 'gram', 'per': None, 'plus': None},
-        {'qty': '1 1/2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '185', 'qual': None, 'unit': 'gram',
+            'per': None, 'plus': None, 'plural': None},
+        {'qty': '1 1/2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1 or 2 cup', [
-        {'qty': '1 or 2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '1 or 2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1 to 2 cup', [
-        {'qty': '1 to 2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '1 to 2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('8-ounce', [
-        {'qty': '8-', 'qual': None, 'unit': 'ounce', 'per': None, 'plus': None},
+        {'qty': '8-', 'qual': None, 'unit': 'ounce',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('8-ounce ', [
-        {'qty': '8-', 'qual': None, 'unit': 'ounce', 'per': None, 'plus': None},
+        {'qty': '8-', 'qual': None, 'unit': 'ounce',
+            'per': None, 'plus': None, 'plural': None},
+    ]),
+    ('8-ounces', [
+        {'qty': '8-', 'qual': None, 'unit': 'ounce',
+            'per': None, 'plus': None, 'plural': 's'},
     ]),
     ('1 cup flour', [
-        {'qty': '1', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '1', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1 cupperino flour', [
-        {'qty': '1', 'qual': None, 'unit': None, 'per': None, 'plus': None},
+        {'qty': '1', 'qual': None, 'unit': None,
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1/2 cup flour', [
-        {'qty': '1/2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '1/2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('0.5c flour', [
-        {'qty': '0.5', 'qual': None, 'unit': 'c', 'per': None, 'plus': None},
+        {'qty': '0.5', 'qual': None, 'unit': 'c',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('.5c flour', [
-        {'qty': '.5', 'qual': None, 'unit': 'c', 'per': None, 'plus': None},
+        {'qty': '.5', 'qual': None, 'unit': 'c',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1-1/2 cup flour', [
-        {'qty': '1-1/2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '1-1/2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1 cup flour 2 cup flour', [
-        {'qty': '1', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
-        {'qty': '2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '1', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
+        {'qty': '2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1 1/2 cup ( 2 kg ) flour', [
-        {'qty': '1 1/2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
-        {'qty': '2', 'qual': None, 'unit': 'kg', 'per': None, 'plus': None},
+        {'qty': '1 1/2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
+        {'qty': '2', 'qual': None, 'unit': 'kg',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('1 cup flour 1 1/2 cup flour', [
-        {'qty': '1', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
-        {'qty': '1 1/2', 'qual': None, 'unit': 'cup', 'per': None, 'plus': None},
+        {'qty': '1', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
+        {'qty': '1 1/2', 'qual': None, 'unit': 'cup',
+            'per': None, 'plus': None, 'plural': None},
     ]),
     ('( 8-ounce )', [
-        {'qty': '8-', 'qual': None, 'unit': 'ounce', 'per': None, 'plus': None},
+        {'qty': '8-', 'qual': None, 'unit': 'ounce',
+            'per': None, 'plus': None, 'plural': None},
     ]),
 ]
 
 AMOUNTS_DATA = [
+    ('4 (6-ounce) mild white fish fillets (for example, cod, hake or blackfish)', {
+        'qtys': [
+            {'unit': 'ea', 'qty': 4.0, 'per': None, 'plus': False, 'qualifiers': [
+                {'unit': 'ounce', 'qty': 6.0, 'per': 'each',
+                    'qualifiers': [], 'plus': False}
+            ]}
+        ],
+        'names': ['white fish fillets'],
+        'mods': [],
+        'stripped_words':['mild', 'for']
+    }),
     ('1 (10- to 14-pound) turkey', {
         'qtys': [
             {'unit': 'ea', 'qty': 1.0, 'per': None,
              'plus': False, 'qualifiers': [
-                     {'unit': 'pound', 'qty': 12, 'per': None,
+                     {'unit': 'pound', 'qty': 12, 'per': 'each',
                          'qualifiers': [], 'plus': False}
              ]}
         ],
@@ -102,7 +151,7 @@ AMOUNTS_DATA = [
         'qtys': [
             {'unit': 'ea', 'qty': 1.0, 'per': None,
              'plus': False, 'qualifiers': [
-                     {'unit': 'pound', 'qty': 12, 'per': None,
+                     {'unit': 'pound', 'qty': 12, 'per': 'each',
                          'qualifiers': [], 'plus': False}
              ]}
         ],
@@ -136,7 +185,7 @@ AMOUNTS_DATA = [
                     {
                         'unit': 'pound',
                         'qty': 7.0,
-                        'per': None,
+                        'per': 'each',
                         'qualifiers': [],
                         'plus': False,
                     }
@@ -165,7 +214,7 @@ AMOUNTS_DATA = [
                     {
                         'unit': 'ounce',
                         'qty': 4.0,
-                        'per': None,
+                        'per': 'each',
                         'plus': False,
                         'qualifiers': []
                     }
@@ -192,7 +241,7 @@ AMOUNTS_DATA = [
                     {
                         'unit': 'pound',
                         'qty': 1.5,
-                        'per': None,
+                        'per': 'each',
                         'plus': False,
                         'qualifiers': []
                     }
@@ -328,18 +377,18 @@ AMOUNTS_DATA = [
             'on'
         ]
     }),
-    ('1 4-pound Atlantic salmon (2 1/4 inches at thickest point), scaled and cleaned, gills removed, head and tail on, interior cavity well washed', {
+    ('2 4-pound Atlantic salmon (2 1/4 inches at thickest point), scaled and cleaned, gills removed, head and tail on, interior cavity well washed', {
         'qtys': [
             {
                 'unit': 'ea',
-                'qty': 1.0,
+                'qty': 2.0,
                 'per': None,
                 'plus': False,
                 'qualifiers': [
                     {
                         'unit': 'pound',
                         'qty': 4.0,
-                        'per': None,
+                        'per': 'each',
                         'plus': False,
                         'qualifiers': []
                     }

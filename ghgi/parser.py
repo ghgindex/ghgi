@@ -59,6 +59,17 @@ UNITS = {
     'fillet': 'ea',  # currently being stripped because it doesn't appear in the right position to be capture as a quantity
 }
 
+PLURAL_UNITS = []
+for unit in UNITS:
+    if len(unit) < 2:
+        continue
+    elif unit.endswith('h'):
+        PLURAL_UNITS += [unit + 'es']
+    elif unit.endswith('y'):
+        PLURAL_UNITS += [unit + 'ies']
+    else:
+        PLURAL_UNITS += [unit + 's']
+
 # nltk base set (english) with 't', 'with', 'or', 'to' removed
 STOPWORDS = {
     'had', 'few', 'under', 'on', 'an', 'its', 'why', 'were', 'all', 'doing',
@@ -302,7 +313,7 @@ units_regex = re.compile(
     multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?:\s|,|$)'.format(units_group))
 
 units_regex = re.compile(
-    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(units_group))
+    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?P<plural>[sei]+)?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(units_group))
 
 
 # hrefs
@@ -316,6 +327,7 @@ def no_singular(word):
     return (
         word.endswith('ss') or
         word in NO_SINGULAR or
+        word in PLURAL_UNITS or
         word.endswith('\'s')
     )
 
@@ -363,7 +375,15 @@ def quantify(match):
 
     if qualifier:
         parsed_qual = match_units(qualifier)
-        result['qualifiers'] = [quantify(q[2]) for q in parsed_qual]
+
+        qualifiers = []
+        for q in parsed_qual:
+            qual = quantify(q[2])
+            if not qual['per']:
+                if not q[2]['plural']:
+                    qual['per'] = 'each'
+            qualifiers += [qual]
+        result['qualifiers'] = qualifiers
     return result
 
 
@@ -480,6 +500,9 @@ def clean(text):
     """
     Singularize nouns and remove stopwords, returning a cleaned string
     and a list of removed stopwords.
+
+    Do not singularize units at this point. Singular units in qualifiers
+    indicate that the amount is `ea`, whereas plural units indicate a total.
     """
     stripped_words = []
     cleaned_words = []

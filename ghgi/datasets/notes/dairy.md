@@ -6,16 +6,18 @@ This data is extended to derivative dairy products using a co-products allocatio
 
 | Product              | Dry Matter % | Allocation (as a % of whole milk) |
 | -------------------- | -----------: | --------------------------------: |
-| Butter               |        84.4% |                            644.8% |
-| Heavy cream          |        46.0% |                            351.4% |
-| Cream cheese         |        45.0% |                            350.5% |
-| Light whipping cream |        40.0% |                            305.6% |
-| Ricotta cheese       |        30.0% |                            233.6% |
-| Half and half        |        21.0% |                            160.4% |
-| Cottage cheese       |        20.0% |                            155.8% |
+| Butter               |        84.4% |                            644.3% |
+| Heavy cream          |        46.0% |                            351.1% |
+| Cream cheese         |        45.0% |                            343.5% |
+| Crème Fraîche        |        45.0% |                            343.5% |
+| Light whipping cream |        40.0% |                            305.3% |
+| Ricotta cheese       |        30.0% |                            229.0% |
+| Sour Cream           |        29.0% |                            221.4% |
+| Half and half        |        21.0% |                            160.3% |
+| Cottage cheese       |        20.0% |                            152.7% |
 | Whole milk           |        13.1% |                            100.0% |
-| 2% milk              |        11.1% |                             84.8% |
-| 1% milk              |        10.1% |                             77.2% |
+| 2% milk              |        11.1% |                             84.7% |
+| 1% milk              |        10.1% |                             77.1% |
 | Skim milk            |         9.1% |                             69.5% |
 | Buttermilk           |         8.0% |                             61.1% |
 

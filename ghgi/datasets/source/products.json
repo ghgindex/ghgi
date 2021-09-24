@@ -350,7 +350,7 @@
         "of": 0.8,
         "sg": 0.95,
         "super": {
-            "milk": 644.8
+            "milk": 644.3
         }
     },
     "buttermilk": {
@@ -459,6 +459,7 @@
                     "gorgonzola",
                     "gruyere",
                     "gruy\u00e8re",
+                    "halloumi",
                     "mascarpone",
                     "monterey jack",
                     "mozzarella",
@@ -501,6 +502,13 @@
             "chicken": 50,
             "other vegetables": 50,
             "water": 50
+        }
+    },
+    "chive": {
+        "g": 15,
+        "sg": 0.15,
+        "super": {
+            "onions & leeks (alliums)": 100
         }
     },
     "cinnamon": {
@@ -569,12 +577,6 @@
             "bivalves (farmed)": 100
         }
     },
-    "cloves": {
-        "fv": 1.0,
-        "g": 1.0,
-        "sg": 0.5,
-        "super": {}
-    },
     "cocoa powder": {
         "g": 10,
         "sg": 1.0,
@@ -587,9 +589,16 @@
         "names": {
             "coconut": {
                 "dependent": [
-                    "_milk",
                     "_oil",
                     "_water"
+                ]
+            },
+            "coconut milk": {
+                "dependent": [
+                    "full fat",
+                    "full-fat",
+                    "low fat",
+                    "low-fat"
                 ]
             }
         },
@@ -664,7 +673,7 @@
         },
         "sg": 0.95,
         "super": {
-            "milk": 305.6
+            "milk": 305.3
         }
     },
     "cream cheese": {
@@ -680,13 +689,22 @@
         "pd": 0.2,
         "sg": 1.0,
         "super": {
-            "milk": 350
+            "milk": 343.5
         }
     },
     "cream tartar": {
         "g": 3.5,
         "sg": 0.95,
         "super": {}
+    },
+    "creme fraiche": {
+        "g": 50,
+        "names": {
+            "cr\u00e8me fra\u00eeche": {}
+        },
+        "super": {
+            "milk": 343.5
+        }
     },
     "crustacean broth": {
         "g": 250,
@@ -755,6 +773,17 @@
         "sg": 1.0,
         "super": {}
     },
+    "dashi": {
+        "g": 5,
+        "names": {
+            "dashi powder": {}
+        },
+        "sg": 1.0,
+        "super": {
+            "pelagic fish >30 cm": 50,
+            "salt": 50
+        }
+    },
     "demersal fish": {
         "g": 150,
         "names": {
@@ -792,6 +821,22 @@
         "g": 15,
         "sg": 1.04,
         "super": {}
+    },
+    "dough": {
+        "g": 100,
+        "names": {
+            "dough": {
+                "dependent": [
+                    "bread",
+                    "pizza"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {
+            "flour": 62.5,
+            "water": 37.5
+        }
     },
     "eggplant": {
         "g": 100,
@@ -895,6 +940,7 @@
                 ]
             }
         },
+        "sg": 0.4,
         "super": {
             "onions & leeks (alliums)": 100
         }
@@ -909,6 +955,7 @@
                 ]
             }
         },
+        "sg": 0.4,
         "super": {
             "root vegetables": 100
         }
@@ -945,7 +992,7 @@
         },
         "sg": 0.95,
         "super": {
-            "milk": 351.4
+            "milk": 351.1
         }
     },
     "herbs": {
@@ -1032,6 +1079,12 @@
         "sg": 0.15,
         "super": {
             "other vegetables": 100
+        }
+    },
+    "leek": {
+        "g": 250,
+        "super": {
+            "onions & leeks (alliums)": 100
         }
     },
     "lemon juice": {
@@ -1185,6 +1238,7 @@
         }
     },
     "nutmeg": {
+        "fv": 1.0,
         "g": 1.0,
         "sg": 0.5,
         "super": {
@@ -1227,6 +1281,13 @@
     "oatmeal": {
         "ed": 15857,
         "g": 100,
+        "names": {
+            "oat": {
+                "dependent": [
+                    "rolled"
+                ]
+            }
+        },
         "sg": 0.38,
         "super": {}
     },
@@ -1275,10 +1336,8 @@
         }
     },
     "onions & leeks (alliums)": {
-        "g": 100,
+        "g": 150,
         "names": {
-            "chive": {},
-            "leek": {},
             "onion": {
                 "dependent": [
                     "green",
@@ -1315,7 +1374,7 @@
     },
     "other fruit": {
         "fv": 1.0,
-        "g": 100,
+        "g": 150,
         "names": {
             "apricot": {},
             "avocado": {},
@@ -1379,11 +1438,15 @@
             },
             "chile": {
                 "dependent": [
+                    "_de arbol",
+                    "_de \u00e1rbol",
                     "_flake",
                     "green",
+                    "guajillo",
                     "habanero",
                     "jalapeno",
                     "jalape\u00f1o",
+                    "poblano",
                     "red",
                     "serrano"
                 ]
@@ -1633,6 +1696,19 @@
         },
         "sg": 0.5,
         "super": {}
+    },
+    "pierogi": {
+        "g": 20,
+        "names": {
+            "pierogies": {},
+            "pierogy": {}
+        },
+        "sg": 1.0,
+        "super": {
+            "cheese": 17,
+            "dough": 50,
+            "potatoes": 33
+        }
     },
     "pork": {
         "g": 150,
@@ -1988,7 +2064,7 @@
         },
         "sg": 1.0,
         "super": {
-            "milk": 233.6,
+            "milk": 229.0,
             "vinegar": 12
         }
     },
@@ -2042,7 +2118,9 @@
             "kosher salt black pepper": {},
             "pepper kosher salt": {},
             "pepper salt": {},
-            "salt black pepper": {}
+            "salt black pepper": {},
+            "seasoning": {},
+            "seasoning salt": {}
         },
         "sg": 1.0,
         "super": {
@@ -2068,6 +2146,7 @@
                 ]
             }
         },
+        "sg": 0.4,
         "super": {
             "onions & leeks (alliums)": 100
         }
@@ -2183,12 +2262,8 @@
     },
     "sour cream": {
         "g": 50,
-        "names": {
-            "creme fraiche": {},
-            "cr\u00e8me fra\u00eeche": {}
-        },
         "super": {
-            "cream": 100
+            "milk": 221.4
         }
     },
     "soy sauce": {
@@ -2214,6 +2289,19 @@
         "sg": 1.02,
         "super": {}
     },
+    "spice": {
+        "fv": 1.0,
+        "g": 5,
+        "names": {
+            "allspice": {},
+            "clove": {},
+            "garam masala": {},
+            "spice blend": {},
+            "turmeric": {}
+        },
+        "sg": 0.5,
+        "super": {}
+    },
     "squid": {
         "names": {
             "calamari": {}
@@ -2221,6 +2309,17 @@
         "super": {
             "cephalopods": 100
         }
+    },
+    "starch": {
+        "g": 5,
+        "names": {
+            "corn starch": {},
+            "cornstarch": {},
+            "potato starch": {},
+            "tapioca starch": {}
+        },
+        "sg": 1.0,
+        "super": {}
     },
     "striped bass": {
         "names": {
@@ -2288,6 +2387,9 @@
     },
     "tofu": {
         "g": 150,
+        "names": {
+            "inari-no-moto": {}
+        },
         "pd": 0.16,
         "sg": 1.05,
         "super": {}
