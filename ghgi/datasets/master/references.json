@@ -24,5 +24,14 @@
         "publication_info": "Vol 8, April 2018, pp. 333-337",
         "title": "Fuel use and greenhouse gas emissions of world fisheries",
         "url": "https://www.nature.com/articles/s41558-018-0117-x"
+    },
+    "4": {
+        "authors": "Robinson, B., Winans, K., Kendall, A. et al.",
+        "date": "2018-03-01",
+        "notes": "fungi.md",
+        "publication": "The International Journal of Life Cycle Assessment",
+        "title": "A life cycle assessment of Agaricus bisporus mushroom production in the USA",
+        "publication_info": "Int J Life Cycle Assess 24, 456–467 (2019)",
+        "url": "https://doi.org/10.1007/s11367-018-1456-6"
     }
 }

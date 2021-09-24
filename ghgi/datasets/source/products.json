@@ -350,7 +350,7 @@
         "of": 0.8,
         "sg": 0.95,
         "super": {
-            "milk": 657.0
+            "milk": 644.8
         }
     },
     "buttermilk": {
@@ -358,7 +358,7 @@
         "m": 1.0,
         "sg": 1.0,
         "super": {
-            "milk": 62.0
+            "milk": 61.1
         }
     },
     "cane sugar": {
@@ -631,6 +631,13 @@
             "maize (meal)": 100
         }
     },
+    "cottage cheese": {
+        "g": 50,
+        "sg": 1.0,
+        "super": {
+            "milk": 155.8
+        }
+    },
     "crab": {
         "names": {
             "crab": {
@@ -657,7 +664,7 @@
         },
         "sg": 0.95,
         "super": {
-            "milk": 312
+            "milk": 305.6
         }
     },
     "cream cheese": {
@@ -673,8 +680,7 @@
         "pd": 0.2,
         "sg": 1.0,
         "super": {
-            "lemon juice": 20,
-            "milk": 400
+            "milk": 350
         }
     },
     "cream tartar": {
@@ -922,7 +928,7 @@
         "m": 1.0,
         "sg": 0.95,
         "super": {
-            "milk": 164
+            "milk": 160.4
         }
     },
     "heavy cream": {
@@ -939,7 +945,7 @@
         },
         "sg": 0.95,
         "super": {
-            "milk": 358
+            "milk": 351.4
         }
     },
     "herbs": {
@@ -988,7 +994,6 @@
     },
     "lamiaceae": {
         "g": 15,
-        "sg": 0.15,
         "names": {
             "basil": {
                 "dependent": [
@@ -1024,6 +1029,7 @@
                 ]
             }
         },
+        "sg": 0.15,
         "super": {
             "other vegetables": 100
         }
@@ -1104,6 +1110,7 @@
                 ]
             }
         },
+        "note": "dairy.md",
         "sg": 0.99,
         "super": {}
     },
@@ -1255,7 +1262,7 @@
         },
         "sg": 1.0,
         "super": {
-            "milk": 79.0
+            "milk": 77.2
         }
     },
     "onion powder": {
@@ -1981,7 +1988,7 @@
         },
         "sg": 1.0,
         "super": {
-            "light cream": 400,
+            "milk": 233.6,
             "vinegar": 12
         }
     },
@@ -2171,7 +2178,7 @@
         },
         "sg": 1.0,
         "super": {
-            "milk": 71.0
+            "milk": 69.5
         }
     },
     "sour cream": {
@@ -2349,7 +2356,7 @@
         },
         "sg": 1.0,
         "super": {
-            "milk": 86.0
+            "milk": 84.8
         }
     },
     "umbellifers": {
