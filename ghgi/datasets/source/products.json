@@ -988,6 +988,7 @@
     },
     "lamiaceae": {
         "g": 15,
+        "sg": 0.15,
         "names": {
             "basil": {
                 "dependent": [
@@ -2397,7 +2398,7 @@
                 ]
             }
         },
-        "sg": 0.5,
+        "sg": 0.15,
         "super": {
             "other vegetables": 100
         }

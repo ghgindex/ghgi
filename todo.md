@@ -29,7 +29,6 @@ I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and r
 
 ## Parser
 
-We need to rework how we parse volumes vs weights (prefer the latter where we can), and also densities for grated things, especially cheeses.
 
 ### Each types
 

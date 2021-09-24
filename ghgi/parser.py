@@ -402,13 +402,13 @@ def pad_parentheses(text):
     return text.replace('(', '( ').replace(')', ' )')
 
 
-qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+[-\w]+)'  # OG
+qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+(\s*([tor]*)\s*)[\d\.-]*\s*[-\w]+)'
 
 
 def parenthesize_qualifiers(text):
-    # parenthesize things like 4-pound or five-to-size-pounds so they get
-    # treated as qualifiers unless they're already parenthesized!
-    text = re.sub(qualifiers, '(\g<1>\g<2>)', text)
+    # parenthesize things like 4-pound, five-to-size-pounds, 10- to 12- pounds,
+    # etc so they get treated as qualifiers unless they're already parenthesized!
+    text = re.sub(qualifiers, r'(\g<1>\g<2>)', text)
     text = re.sub(r'\(\(', '(', text)
     text = re.sub(r'\)\)', ')', text)
     return text
@@ -423,12 +423,12 @@ def devulgarize(text):
 
 slashed_text_left = re.compile(r'(\D)/(\w)')
 slashed_text_right = re.compile(r'(\w)/(\D)')
-slashed_text_sub = '\g<1> / \g<2>'
+slashed_text_sub = r'\g<1> / \g<2>'
 comma_text_left = re.compile(r'(\D),(\w)')
 comma_text_right = re.compile(r'(\w),(\D)')
-comma_text_sub = '\g<1>, \g<2>'
+comma_text_sub = r'\g<1>, \g<2>'
 hyphen_text_right = re.compile(r'(\d)-(\w)')
-hyphen_text_sub = '\g<1> \g<2>'
+hyphen_text_sub = r'\g<1> \g<2>'
 
 
 def pad_punctuation(text):

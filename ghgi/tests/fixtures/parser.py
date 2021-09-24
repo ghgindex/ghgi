@@ -86,6 +86,30 @@ REGEX_UNITS_DATA = [
 ]
 
 AMOUNTS_DATA = [
+    ('1 (10- to 14-pound) turkey', {
+        'qtys': [
+            {'unit': 'ea', 'qty': 1.0, 'per': None,
+             'plus': False, 'qualifiers': [
+                     {'unit': 'pound', 'qty': 12, 'per': None,
+                         'qualifiers': [], 'plus': False}
+             ]}
+        ],
+        'names': ['turkey'],
+        'mods': [],
+        'stripped_words': [],
+    }),
+    ('1 (10- to 14- pound) turkey', {
+        'qtys': [
+            {'unit': 'ea', 'qty': 1.0, 'per': None,
+             'plus': False, 'qualifiers': [
+                     {'unit': 'pound', 'qty': 12, 'per': None,
+                         'qualifiers': [], 'plus': False}
+             ]}
+        ],
+        'names': ['turkey'],
+        'mods': [],
+        'stripped_words': [],
+    }),
     ('1¼ cup/80 grams plus 2 teaspoons/5 grams mild honey', {
         'qtys': [
             {'unit': 'cup', 'qty': 1.25, 'per': None,
