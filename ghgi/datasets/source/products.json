@@ -1131,7 +1131,7 @@
     },
     "mushroom": {
         "fv": 1.0,
-        "g": 150,
+        "g": 20,
         "names": {
             "mushroom": {
                 "dependent": [
@@ -1153,7 +1153,7 @@
                 ]
             }
         },
-        "sg": 1.0,
+        "sg": 0.5,
         "super": {}
     },
     "mussel": {
