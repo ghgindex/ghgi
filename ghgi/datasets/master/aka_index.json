@@ -1431,6 +1431,14 @@
         "grain alcohol",
         5
     ],
+    "greens": [
+        "greens",
+        4
+    ],
+    "salad greens": [
+        "greens",
+        10
+    ],
     "half and half": [
         "half and half",
         11
@@ -2183,10 +2191,6 @@
         "other vegetables",
         10
     ],
-    "greens": [
-        "other vegetables",
-        4
-    ],
     "guajillo chile": [
         "other vegetables",
         12
@@ -2314,10 +2318,6 @@
     "rhubarb": [
         "other vegetables",
         5
-    ],
-    "salad greens": [
-        "other vegetables",
-        10
     ],
     "scotch bonnet": [
         "other vegetables",

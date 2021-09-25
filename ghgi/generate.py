@@ -110,6 +110,7 @@ if __name__ == "__main__":
 
     with open(MASTER_PRODUCTS, 'r') as products:
         aka_index, trigram_index = build_indexes(products)
+        print('There are {} aliases in the database.'.format(len(aka_index)))
         with open(MASTER_AKA_INDEX, 'w') as aka_file:
             json.dump(aka_index,  aka_file, indent=4)
         with open(MASTER_TRIGRAM_INDEX, 'w') as tri_file:

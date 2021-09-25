@@ -970,6 +970,20 @@
             "wheat & rye (bread)": 200
         }
     },
+    "greens": {
+        "g": 100,
+        "names": {
+            "greens": {
+                "dependent": [
+                    "salad"
+                ]
+            }
+        },
+        "sg": 0.3,
+        "super": {
+            "other vegetables": 100
+        }
+    },
     "half and half": {
         "g": 100,
         "m": 1.0,
@@ -1040,7 +1054,7 @@
         "super": {}
     },
     "lamiaceae": {
-        "g": 15,
+        "g": 7,
         "names": {
             "basil": {
                 "dependent": [
@@ -1465,11 +1479,6 @@
             "cucumber": {
                 "dependent": [
                     "kirby"
-                ]
-            },
-            "greens": {
-                "dependent": [
-                    "salad"
                 ]
             },
             "melon": {

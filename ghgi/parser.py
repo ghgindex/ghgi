@@ -153,6 +153,7 @@ STOPWORDS |= {
     'small',
     'softened',
     'stemmed',
+    'store-bought',
     'taste',
     'temperature',
     'thawed',

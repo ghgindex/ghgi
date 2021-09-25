@@ -1,6 +1,14 @@
-# Ye Olde TODO list
+# Ye Olde ToDo list
+
+Update the repo readme
+Create package documentation
+Make sure pydoc runs adequately
+verify densities w/r/t FAO/INFOODS
 
 ## Catalog
+
+ice cream
+bread "loaf" vs "slice"?
 
 ## Note to self
 
@@ -37,8 +45,6 @@ Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving -> `torn`
 
 ## Match errors
 
-The trigram index doesn't make sense. While it's likely better at dealing with misspellings, it's way too loose in its matches. I think we want to require full matches across stemmed tokens. Essentially, this is going to be a GIN index. When we get a query, we stem and tokenize it, and then query the GIN index with the tokens. "Matchiness" is derived by looking at how many of the tokens each candidate entry matches. We will also identify which token is the last noun, and *require* that to match.
-
 We also might want to strip out adverbs!
 
 ### Efficiency ratios
@@ -64,8 +70,6 @@ Also, we are removing `can` from stopwords, as it's also a unit. We need a test 
 ## Missing things
 
 Condensed milk
-cream cheese
-mushrooms
 
 Coconut, coconut milk, coconut oil
   Feraldi et al. (2012). Life Cycle Assessment of Coconut Milk and Two Non-Dairy Milk Beverage Alternatives. Franklin Associate

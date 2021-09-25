@@ -1458,6 +1458,9 @@
         "alcohol",
         "grain alcohol"
     ],
+    "salad": [
+        "salad greens"
+    ],
     "half": [
         "half and half",
         "half half"
@@ -2098,9 +2101,6 @@
     ],
     "rhubarb": [
         "rhubarb"
-    ],
-    "salad": [
-        "salad greens"
     ],
     "scotch": [
         "scotch bonnet",

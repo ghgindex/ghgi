@@ -1,4 +1,5 @@
 .tox/
+*.pyc
 .eggs
 .DS_Store
 ghgi.egg-info/

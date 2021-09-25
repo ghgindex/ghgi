@@ -4,7 +4,7 @@
 
 The Greenhouse Gas Index is a database of primary food products and their GHG impacts, and [Python APIs](#python-apis) for accessing that data. The raw data is also available in JSON format for use in languages other than Python.
 
-The database is built and maintained by [The Greenhouse Gas Index Organization (GHGI)](https://ghgi.org), a not-for-profit organization whose mission is to reduce GHG emissions by driving individual behaviour change through increased awareness of the climate impact of our everyday choices. Derived from the most current peer-reviewed science, GHGI makes it simple for consumers to understand the climate impact of what they eat.
+The database is built and maintained by [The Greenhouse Gas Index Organization (GHGI)](https://ghgi.org), a not-for-profit endeavour whose mission is to reduce GHG emissions by driving individual behaviour change through increased awareness of the climate impact of our everyday choices. Derived from the most current peer-reviewed science, GHGI makes it simple for consumers to understand the climate impact of what they eat.
 
 ## [Python APIs](#python-apis)
 
@@ -12,7 +12,7 @@ Documentation to follow.
 
 ## Web API
 
-The database is also freely accessible via a [web API](https://api.ghgi.org) along with [documentation](https://ghgi.org/api/docs).
+The database is also freely accessible via a [web API](https://api.ghgi.org) along with (limited) [documentation](https://ghgi.org/api/docs).
 
 ## Datasets
 
@@ -32,7 +32,7 @@ Because the dataset is quite small, and almost entirely read-only, it is package
 
 Products is a JSON collection of product names and data values as follows:
 
-```json
+```python
   {
     "carrot": {data},
     ...
@@ -41,7 +41,7 @@ Products is a JSON collection of product names and data values as follows:
 
 The data values themselves JSON collections structured as:
 
-```json
+```python
 {
   "g": float, # standard weight in grams
   "sg": float, # specific gravity in grams/ml
@@ -86,11 +86,11 @@ The data values themselves JSON collections structured as:
 
 ### [Product Indexes](#product-indexes)
 
-Products are indexed in two ways: aliases (name variants) are indexed to their canonical product identifier, and a trigram index is generated across all name variants. The trigram index is crucial to parsing free-form ingredient lists, which frequently exhibit oddities even after pre-processing. Both of these indexes are JSON collections.
+Products are indexed in three ways: aliases (name variants) are indexed to their canonical product identifier, a GIN index is generated across all name variants, and a largely disused Trigram index is also generated. The GIN index is crucial to parsing free-form ingredient lists, which frequently exhibit oddities even after pre-processing. All of these indexes are JSON collections.
 
 Alias index format:
 
-```json
+```python
   {
     "alias": [
       "canonical product name", 
@@ -99,9 +99,21 @@ Alias index format:
   }
 ```
 
+GIN index format:
+
+```python
+  {
+    "stemmed_token": [
+      "alias_1",
+      "alias_2",
+      ...
+    ], ...
+  }
+```
+
 Trigram index format:
 
-```json
+```python
   {
     "tri": [
       "alias_1",
@@ -111,13 +123,13 @@ Trigram index format:
   }
 ```
 
-Combined, these two indexes make it very simple to match a text entry to the correct product regardless of how it is referenced.
+Combined, these indexes make it relatively simple to match a text entry to the correct product regardless of how it is referenced.
 
 ### [Origins](#origins)
 
 Origins is a JSON collection of origin information as follows:
 
-```json
+```python
   {
     "canada": {origin_info},
     ...
@@ -126,7 +138,7 @@ Origins is a JSON collection of origin information as follows:
 
 Each origin's information is a JSON collection of products available from that origin, their GHG impact, and the primary reference source for the impact data:
 
-```json
+```python
   {
     "canonical_product_name": [
       int, # reference id
@@ -152,7 +164,7 @@ Further information about Origins is available [here](ghgi/datasets/master/origi
 
 References are a JSON collection whose keys are reference IDs whose values include pertinent metadata for that reference:
 
-```json
+```python
   {
     "1": {
       "authors": str, # list of authors
@@ -168,7 +180,7 @@ References are a JSON collection whose keys are reference IDs whose values inclu
 
 ## Tests
 
-Tests can be run by invoking `python3 setup.py test`. Any contributions that modify code should include test coverage.
+Tests can be run by invoking `tox -epy38`, and specific tests via `tox -epy38 -- -k [test_func or TestClass]`. Any contributions that modify code should include test coverage. We do not provide coverage on Python 2.x.
 
 ## Contributing
 
