@@ -84,6 +84,8 @@ The data values themselves JSON collections structured as:
 }
 ```
 
+Further information about Products is available [here](ghgi/datasets/source/).
+
 ### [Product Indexes](#product-indexes)
 
 Products are indexed in three ways: aliases (name variants) are indexed to their canonical product identifier, a GIN index is generated across all name variants, and a largely disused Trigram index is also generated. The GIN index is crucial to parsing free-form ingredient lists, which frequently exhibit oddities even after pre-processing. All of these indexes are JSON collections.
