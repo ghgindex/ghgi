@@ -2,7 +2,9 @@
 
 Update the repo readme
 Create package documentation
-Make sure pydoc runs adequately
+
+- Make sure pydoc runs adequately
+
 verify densities w/r/t FAO/INFOODS
 
 ## Catalog
@@ -11,8 +13,6 @@ ice cream
 bread "loaf" vs "slice"?
 
 ## Note to self
-
-The parser now successfully looks for interstitial parentheticals between the qty and the units! These are then parsed, and `quantify` infers all kinds of nice things if it receives an interstitial parenthetical.
 
 Preserve commas when we remove stopwords! Otherwise you can end up with nonsense phrases.
 

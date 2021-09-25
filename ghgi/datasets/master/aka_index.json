@@ -2719,6 +2719,14 @@
         "pierogi",
         5
     ],
+    "cheese pierogy": [
+        "pierogi",
+        12
+    ],
+    "cheese potato pierogy": [
+        "pierogi",
+        19
+    ],
     "pierogies": [
         "pierogi",
         7
@@ -2726,6 +2734,14 @@
     "pierogy": [
         "pierogi",
         5
+    ],
+    "potato cheese pierogy": [
+        "pierogi",
+        19
+    ],
+    "potato pierogy": [
+        "pierogi",
+        12
     ],
     "pork": [
         "pork",

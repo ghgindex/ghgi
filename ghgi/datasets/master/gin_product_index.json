@@ -802,6 +802,8 @@
         "camembert cheese",
         "cheddar cheese",
         "cheese",
+        "cheese pierogy",
+        "cheese potato pierogy",
         "cotija cheese",
         "cottage cheese",
         "cream cheese",
@@ -822,6 +824,7 @@
         "pecorino romano cheese",
         "philadelphia cream cheese",
         "philly cream cheese",
+        "potato cheese pierogy",
         "ricotta cheese",
         "romano cheese",
         "roquefort cheese",
@@ -2349,9 +2352,31 @@
         "sichuan peppercorn"
     ],
     "pierogi": [
+        "cheese pierogy",
+        "cheese potato pierogy",
         "pierogi",
         "pierogies",
-        "pierogy"
+        "pierogy",
+        "potato cheese pierogy",
+        "potato pierogy"
+    ],
+    "potato": [
+        "baking potato",
+        "cheese potato pierogy",
+        "fingerling potato",
+        "idaho potato",
+        "new potato",
+        "potato",
+        "potato cheese pierogy",
+        "potato pierogy",
+        "potato starch",
+        "potatoes",
+        "red potato",
+        "russet potato",
+        "scalloped potato",
+        "sweet potato",
+        "white potato",
+        "yukon gold potato"
     ],
     "pork": [
         "pork",
@@ -2439,21 +2464,6 @@
     ],
     "slab": [
         "slab bacon"
-    ],
-    "potato": [
-        "baking potato",
-        "fingerling potato",
-        "idaho potato",
-        "new potato",
-        "potato",
-        "potato starch",
-        "potatoes",
-        "red potato",
-        "russet potato",
-        "scalloped potato",
-        "sweet potato",
-        "white potato",
-        "yukon gold potato"
     ],
     "fingerl": [
         "fingerling potato"

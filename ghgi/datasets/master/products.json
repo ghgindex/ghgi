@@ -1627,9 +1627,13 @@
     "pierogi": {
         "g": 20,
         "names": [
+            "cheese pierogy",
+            "cheese potato pierogy",
             "pierogi",
             "pierogies",
-            "pierogy"
+            "pierogy",
+            "potato cheese pierogy",
+            "potato pierogy"
         ],
         "sg": 1.0,
         "super": {

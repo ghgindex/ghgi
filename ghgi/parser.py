@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from os import PRIO_PGRP
 import re
 import logging
 import inflect
@@ -128,7 +129,6 @@ STOPWORDS |= {
     'kitchen',
     'like',
     'twine',
-    'large',
     'least',
     'leftover',
     'low-sodium',
@@ -150,7 +150,6 @@ STOPWORDS |= {
     'scrubbed',
     'seeded',
     'serving',
-    'small',
     'softened',
     'stemmed',
     'store-bought',
@@ -201,6 +200,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'gutted',
     'heaping',
     'jarred',
+    'large',  # can be used to modify a quantity, e.g "large handful"
     'lengthwise',
     'lightly',
     'loosely',
@@ -219,6 +219,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'skinless',
     'skinned',
     'sliced',
+    'small',  # can be used to modify a quantity, e.g "small handful"
     'smashed',
     'smoked',
     'squeezed',
@@ -290,8 +291,12 @@ text_numbers = {r'(^|\W){}($|\W)'.format(case_insensitize(
 unit_labels = [case_insensitize(unit) for unit in UNITS]
 units_group = r'|'.join(unit_labels)
 
+mods = [case_insensitize(mod) for mod in PREP_MODS]
+mods_group = r'|'.join(mods)
+
 # start unit regex looks for quantity-less units at the start of a string, e.g. "handful of basil"
-start_unit_regex = re.compile(r'^(?P<unit>{})\s+'.format(units_group))
+start_unit_regex = re.compile(
+    r'^(?P<mods>({})\s)?(?P<unit>{})\s+'.format(mods_group, units_group))
 
 # "with" clauses are always unhelpful. We think.
 with_clause = re.compile(r'[Ww]ith.*?[,\n\)]')
@@ -315,7 +320,7 @@ units_regex = re.compile(
     multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?:\s|,|$)'.format(units_group))
 
 units_regex = re.compile(
-    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?P<plural>[sei]+)?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(units_group))
+    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<mods>({})\s)?(?P<unit>{})?(?P<plural>[sei]+)?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(mods_group, units_group))
 
 
 # hrefs

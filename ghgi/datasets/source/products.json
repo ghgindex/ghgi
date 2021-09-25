@@ -1710,7 +1710,14 @@
         "g": 20,
         "names": {
             "pierogies": {},
-            "pierogy": {}
+            "pierogy": {
+                "dependent": [
+                    "cheese",
+                    "cheese potato",
+                    "potato",
+                    "potato cheese"
+                ]
+            }
         },
         "sg": 1.0,
         "super": {
