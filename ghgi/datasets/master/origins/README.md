@@ -4,9 +4,9 @@ Origins are, unsurpisingly, the places where products originate from. These are 
 
 Each origin's data is a dictionary whose keys are products' canonical names, and whose values are tuples of:
 
-* [`ghg10`, `ghgmean`, `ghgmedian`, `ghg90`]
-* [`reference_id`, ...]
-* optional note
+- [`reference_id`, ...]
+- [`ghg10`, `ghgmean`, `ghgmedian`, `ghg90`]
+- optional note
 
 ## GHG Values
 

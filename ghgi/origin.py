@@ -2,6 +2,7 @@ import os
 import json
 from enum import Enum
 from .datasets import ORIGINS
+from .reference import Reference
 
 
 class UnknownOriginException(Exception):
@@ -42,6 +43,25 @@ class Origin:
             ORIGIN_PATHS[name[:-5]] = os.path.join(root, name)
 
     ORIGINS = list(ORIGIN_PATHS.keys())
+
+    @classmethod
+    def valid(cls, origin):
+        # ensure all entries have at least one valid source, and four values
+        cls.load(origin)
+        for k, entry in cls._db[origin].items():
+            if k == Origin.SUPER or k.startswith('_'):
+                continue
+            if not all([str(e) in Reference.db() for e in entry[0]]):
+                return False
+            if not len(entry[1]) == 4:
+                return False
+        return True
+
+    @classmethod
+    def validate(cls):
+        for origin in cls.ORIGINS:
+            if not cls.valid(origin):
+                raise Exception('origin {} has invalid data'.format(origin))
 
     @classmethod
     def load(cls, origin):

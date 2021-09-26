@@ -5,6 +5,13 @@ from ghgi.reference import Reference
 
 
 class TestOrigin(TestCase):
+
+    def test_origins_valid(self):
+        try:
+            Origin.validate()
+        except:
+            self.fail('Origins failed to validate')
+
     def test_origins_meta(self):
         # make sure all origins are present
         self.assertEqual(len(Origin.ORIGINS), 4)
@@ -35,5 +42,6 @@ class TestOrigin(TestCase):
                     continue
                 values = Origin.values(origin, product)
                 self.assertNotEqual(values, None)
-                self.assertTrue(str(values[0]) in Reference.db())
+                self.assertTrue(all([str(v) in Reference.db()
+                                for v in values[0]]))
                 self.assertEqual(len(values[1]), 4)
