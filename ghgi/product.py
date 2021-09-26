@@ -21,6 +21,7 @@ class Category(Enum):
     SUGAR = 's'
     CAFFEINE = 'caf'
     COCOA = 'coc'
+    NA = 'uncategorized'
 
 
 class Ingredient:
@@ -49,6 +50,7 @@ class Product:
     LOSS = 'loss'  # loss in creation, e.g. whole fruit -> juice
     BUNCH = 'bunch'
     PKG = 'pkg'
+    CATS = 'categories'
 
     @classmethod
     def db(cls):
@@ -59,8 +61,48 @@ class Product:
             for k in hidden:
                 del cls._db[k]
             for k in cls._db:
-                cls._db[k][Product.NAME] = k
+                cls._db[k][cls.NAME] = k
         return cls._db
+
+    @classmethod
+    def valid(cls, product, name, flavor=None):
+        if flavor is None:
+            return all([cls.valid(product, name, f) for f in [cls.MASS, cls.SG, cls.CATS]])
+
+        if not name:
+            return False
+        elif name.startswith('_'):
+            # ignore these
+            return True
+        # validate mass/sg
+        elif flavor in [cls.SG, cls.MASS]:
+            if not flavor in product:
+                if not product.get(cls.PARENTS):
+                    print('Product {} invalid: no `{}` data'.format(
+                        name, flavor))
+                    return False
+                elif not all([cls.valid(cls.get(par_name), par_name, flavor) for par_name in product[cls.PARENTS]]):
+                    return False
+            return True
+
+        # validate food category
+        elif flavor == cls.CATS:
+            if not any([cat.value in product for cat in Category]):
+                if not product.get(cls.PARENTS):
+                    print('Product {} invalid: no `{}` data'.format(
+                        name, flavor))
+                    return False
+                elif not all([cls.valid(cls.get(par_name), par_name, flavor) for par_name in product[cls.PARENTS]]):
+                    print('cats SHIT!')
+                    return False
+            elif sum([cat.value in product for cat in Category]) > 1:
+                cat_count = sum([cat.value in product for cat in Category])
+                print(
+                    'Product {} invalid: {} direct categories assigned'.format(name, cat_count))
+                return False
+            return True
+
+        return False
 
     @classmethod
     def validate_db(cls):
@@ -68,25 +110,11 @@ class Product:
         `super`, the keys [Product.NAME, Product.MASS, and Product.SG] and a value
         for at least one Category.
         """
-        valid = True
         for name, product in cls.db().items():
-            if not name:
-                valid = False
-                print('product name must not be blank')
-            elif name.startswith('_'):
-                # ignore these
-                continue
+            if not cls.valid(product, name):
+                raise Exception('Product database failed to validate')
 
-            if Product.sg(product) is None:
-                valid = False
-                print('no sg value found for {}'.format(name))
-
-            if Product.g(product) in [None, 0.0]:
-                valid = False
-                print('no g (mass) value found for {}'.format(name))
-
-        if not valid:
-            raise Exception('Product database failed to validate')
+        # if not all([cls.valid(product, name) for name, product in cls.db().items()]):
 
     @classmethod
     def efficiency_baselines(cls):
@@ -362,6 +390,8 @@ class Product:
             return {}
         values = defaultdict(lambda: 0.0)
         for cat in Category:
+            if cat == Category.NA:
+                continue
             value = product.get(cat.value, None)
             if value:
                 values[cat.value] = value

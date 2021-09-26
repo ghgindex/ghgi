@@ -1,3 +1,4 @@
+from os import PRIO_PGRP
 from unittest import TestCase
 from unittest.mock import patch
 
@@ -8,12 +9,9 @@ class TestProduct(TestCase):
     def test_products_valid(self):
         # validate that all products have requisite minimal data:
         # mass, specific gravity, and category OR a super.
-        for product in Product.db().values():
-            if not Product.PARENTS in product:
-                self.assertTrue(
-                    any([cat.value in product for cat in Category]))
-                self.assertTrue(Product.MASS in product)
-                self.assertTrue(Product.SG in product)
+        for name, product in Product.db().items():
+            if not Product.valid(product, name):
+                self.fail('Product {} has invalid data.'.format(name))
 
     def test_sg(self):
         # logic test -> patch test in case db values change

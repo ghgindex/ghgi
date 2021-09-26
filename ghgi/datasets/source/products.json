@@ -387,6 +387,7 @@
         "super": {}
     },
     "caper": {
+        "fv": 1.0,
         "g": 15,
         "sg": 1.05,
         "super": {}
@@ -499,8 +500,8 @@
         },
         "sg": 1.0,
         "super": {
-            "chicken": 50,
             "other vegetables": 50,
+            "poultry": 50,
             "water": 50
         }
     },
@@ -603,7 +604,8 @@
             }
         },
         "sg": 1.0,
-        "super": {}
+        "super": {},
+        "uncategorized": true
     },
     "coffee": {
         "g": 227,
@@ -695,7 +697,8 @@
     "cream tartar": {
         "g": 3.5,
         "sg": 0.95,
-        "super": {}
+        "super": {},
+        "uncategorized": true
     },
     "creme fraiche": {
         "g": 50,
@@ -1151,6 +1154,7 @@
     },
     "maple syrup": {
         "g": 15,
+        "s": 0.68,
         "sg": 1.0,
         "super": {}
     },
@@ -2125,7 +2129,8 @@
             }
         },
         "sg": 2.17,
-        "super": {}
+        "super": {},
+        "uncategorized": true
     },
     "salt pepper": {
         "g": 5.0,
@@ -2212,6 +2217,7 @@
                 ]
             }
         },
+        "pd": 0.18,
         "sg": 0.6,
         "super": {}
     },
@@ -2328,6 +2334,7 @@
         }
     },
     "starch": {
+        "ed": 1.0,
         "g": 5,
         "names": {
             "corn starch": {},
@@ -2606,7 +2613,8 @@
             }
         },
         "sg": 1.0,
-        "super": {}
+        "super": {},
+        "uncategorized": true
     },
     "wheat & rye (bread)": {
         "ed": 14140,
