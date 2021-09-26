@@ -4,7 +4,7 @@ Products is the master database of product metadata. Each entry is keyed under i
 
 * `g` (float) standard weight in grams
 * `sg` (float) specific gravity in grams/ml ref H2O
-* `pd` (float) (optional) protein density in ?/?
+* `pd` (float) (optional) protein density in grams/gram
 * `ed` (float) (optional) energy density in kJ/kg
 * `super` (dict) (optional) constituent ingredients
   * `super_1` (float) % of product that is super_1

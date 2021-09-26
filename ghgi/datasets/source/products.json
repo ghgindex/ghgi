@@ -819,6 +819,7 @@
     },
     "demersal mollusks": {
         "g": 15,
+        "pd": 0.2,
         "sg": 1.04,
         "super": {}
     },

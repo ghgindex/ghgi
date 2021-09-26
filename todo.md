@@ -19,8 +19,9 @@ Preserve commas when we remove stopwords! Otherwise you can end up with nonsense
 Strip out `to`s at the end
 replace `or`s with commas at the end
 
+- certain uses of `or` are problematic when replaced by commas, e.g. `grape or cherry tomatoes` -> `['grape', 'cherry tomatoes']` or `cheese or potato pierogies` -> `['cheese', 'potato pierogies']`. Basically if you have a noun that's a food being used as a modifier, it can end up getting matched once the `or` is replaced. In an ideal world, these would get resolved as [`grape tomatoes`, `cherry tomatoes`] and [`cheese pierogies`, `potato pierogies`]; in a less-ideal-but-still-better world, we'd just get the raw strings back, or strings with the `or` stripped but not replaced with a comma.
+
 Why isn't the parenthetical getting stripped out of this? `Kosher salt (Diamond Crystal) and black pepper`
-`1 packed cup cilantro, coarsely chopped`
 
 ## How to quantify with the new styles
 
