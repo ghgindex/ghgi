@@ -9,9 +9,10 @@ class TestProduct(TestCase):
     def test_products_valid(self):
         # validate that all products have requisite minimal data:
         # mass, specific gravity, and category OR a super.
-        for name, product in Product.db().items():
-            if not Product.valid(product, name):
-                self.fail('Product {} has invalid data.'.format(name))
+        for product in Product.db().values():
+            if not Product.valid(product):
+                self.fail('Product {} has invalid data.'.format(
+                    product[Product.NAME]))
 
     def test_sg(self):
         # logic test -> patch test in case db values change
@@ -186,25 +187,35 @@ class TestProduct(TestCase):
         self.assertEqual(Product.mass(ingredient), 113.398)
 
     def test_food_value(self):
-        product = {'ed': 1000}
-        self.assertEqual(Product.food_values(product), {'ed': 1000})
-        product = {'ed': 1000, 'of': 500}
-        self.assertEqual(Product.food_values(product), {
-                         'ed': 1000, 'of': 500})
+        # TODO: fix these tests; they're kind of crap
+        with patch.object(Product, 'fv_db', return_value={
+            'test_product': {'ed': 1000},
+            'test_product_2': {'ed': 1000, 'of': 500},
+            'test_super_1': {'of': 1.0},
+            'test_super_2': {'of': 0.5, 'fv': 0.4}
+        }):
+            product = {'name': 'test_product'}
+            self.assertEqual(Product.food_values(product), {'ed': 1000})
+            product = {'ed': 1000, 'of': 500}
+            product = {'name': 'test_product_2'}
+            self.assertEqual(Product.food_values(product), {
+                'ed': 1000, 'of': 500})
 
-        with patch.object(
-                Product, '_db',
-                {
-                    'test_thing': {'of': 1.0},
-                    'test_thing_2': {'of': 0.5, 'fv': 0.4}
-                }):
-            product = {'super': {'test_thing': 100}}
-            self.assertEqual(Product.food_values(product), {})
-            product = {'super': {'test_thing': 50}}
-            self.assertEqual(Product.food_values(product), {})
+            with patch.object(
+                    Product, '_db', {
+                        'test_super_1': {'name': 'test_super_1'},
+                        'test_super_2': {'name': 'test_super_2'},
+                    }):
+                product = {'name': 'test_product_3',
+                           'super': {'test_super_1': 100}}
+                self.assertEqual(Product.food_values(product), {})
+                product = {'name': 'test_product_3',
+                           'super': {'test_super_1': 50}}
+                self.assertEqual(Product.food_values(product), {})
 
-            product = {'super': {'test_thing': 50, 'test_thing_2': 50}}
-            self.assertEqual(Product.food_values(product), {})
+                product = {'name': 'test_product_3', 'super': {
+                    'test_super_1': 50, 'test_super_2': 50}}
+                self.assertEqual(Product.food_values(product), {})
 
     def test_lookup(self):
         self.assertEqual(Product.lookup({'names': ['potato']})[
@@ -220,38 +231,51 @@ class TestProduct(TestCase):
 
     def test_ghg_efficiency_ratio(self):
         with patch.object(Product, 'efficiency_baseline', return_value={'of': 2.0, 'fv': 3.0}):
-            with patch.object(Product, 'ghg_value', return_value=7.5):
-                product = {'of': 1.0}
-                self.assertEqual(Product.ghg_efficiencies(product, None), {
-                    'of': 1.0/7.5})
-
-                self.assertEqual(
-                    Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
-
-                with patch.object(
-                        Product, '_db',
-                        {
-                            'test_thing': {'of': 1.0},
-                            'test_thing_2': {'fv': 0.3}
-                        }):
-                    product = {'super': {'test_thing': 50}}
-                    self.assertEqual(
-                        Product.ghg_efficiencies(product, None), {})
+            with patch.object(Product, 'fv_db', return_value={
+                'test_product': {'of': 1.0},
+                'test_super': {'of': 1.0},
+                'test_super_2': {'fv': 0.3}
+            }):
+                with patch.object(Product, 'ghg_value', return_value=7.5):
+                    product = {'name': 'test_product'}
+                    self.assertEqual(Product.ghg_efficiencies(product, None), {
+                        'of': 1.0/7.5})
 
                     self.assertEqual(
                         Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
-                    product = {'super': {'test_thing': 100}}
-                    self.assertEqual(
-                        Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
 
-                    product = {'super': {'test_thing': 50, 'test_thing_2': 50}}
-                    self.assertEqual(
-                        Product.ghg_efficiency_ratio(product), 0.3/7.5)
+                    with patch.object(
+                            Product, '_db',
+                            {
+                                'test_super': {'name': 'test_super'},
+                                'test_super_2': {'name': 'test_super_2'}
+                            }):
+                        product = {'name': 'test_product_2',
+                                   'super': {'test_super': 50}}
+                        self.assertEqual(
+                            Product.ghg_efficiencies(product, None), {})
 
-                    product = {'of': 1.0, 'super': {
-                        'test_thing': 50, 'test_thing_2': 50}}
-                    self.assertEqual(
-                        Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
+                        self.assertEqual(
+                            Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
+                        product = {'name': 'test_product_2',
+                                   'super': {'test_super': 100}}
+                        self.assertEqual(
+                            Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
+
+                        product = {'name': 'test_product_2', 'super': {
+                            'test_super': 50,
+                            'test_super_2': 50
+                        }}
+
+                        self.assertEqual(
+                            Product.ghg_efficiency_ratio(product), 0.3/7.5)
+
+                        product = {'name': 'test_product', 'super': {
+                            'test_super': 50,
+                            'test_super_2': 50
+                        }}
+                        self.assertEqual(
+                            Product.ghg_efficiency_ratio(product), 1.0/7.5/2.0)
 
     def test_labels(self):
         pass

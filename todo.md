@@ -11,6 +11,7 @@ verify densities w/r/t FAO/INFOODS
 
 ice cream
 bread "loaf" vs "slice"?
+difference between wheat/rye and bread in P&N?
 
 ## Note to self
 
@@ -23,26 +24,16 @@ replace `or`s with commas at the end
 
 Why isn't the parenthetical getting stripped out of this? `Kosher salt (Diamond Crystal) and black pepper`
 
-## How to quantify with the new styles
-
-We now can receive a qualifier for a quantity, which means there was a parenthetical or its equivalent near the entry. We can also receive multiple qty entries, which in some cases can be used to infer things. Finally, we are (or should be) getting correctly parsed data throughout the whole ingredient line.
-
-With that info:
-if the first qty entry is a `ea` or something similar, we multiply its quantity by either a) its qualifier's value IF the qualifier is a non-`ea` value, or b) subsequent qtys' value IF it's a non-`ea` value. If those fail, we default to the Product.mass value we have.
-
-I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and related things that aren't inherently quantified.
-
 ## Parser
 
 Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving -> `torn` isn't getting removed
+I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and related things that aren't inherently quantified.
 
 ### Each types
 
 - rib(s) - this is a hard one as it conflicts with animal ribs
 
 ### Sneaky words
-
-#### Additions
 
 ## Match errors
 
@@ -54,11 +45,7 @@ We need to make sure that these are being calculated correctly given parent item
 
 Verify that the chicken (and other) stock super percents are right
 
-**Add a test to ensure that no products have more than one food category set!!**
-
 Decide what to do with `LOSS`
-
-something's up with dark chocolate -> it keeps getting an efficiency rating when it shouldn't
 
 ## Mods
 
@@ -81,7 +68,7 @@ Coconut, coconut milk, coconut oil
 grapeseed oil
 sesame seeds, sesame oil
 allspice
-Add a general "seasoning" match which aliases to salt and pepper
+co-products analysis of sugar types, if available
 Cranberry sauce
 Diamond Crystal
 Pepitas (pumpkin seeds)
@@ -102,7 +89,3 @@ Tests
 Organize docs
 
 be more consistent about singularizing terms
-
-√ generate the full products.json file from the new product master and compare to the old one
-remove sanity and products_original once happy
-is this done? ^

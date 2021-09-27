@@ -4,7 +4,7 @@ from enum import Enum
 from ghgi.parser import pad_punctuation
 import json
 import copy
-from .datasets import MASTER_PRODUCTS
+from .datasets import MASTER_PRODUCTS, SOURCE_FOOD_VALUES
 from .trigram import Trigram
 from .gin import GIN
 from .convert import Convert
@@ -24,6 +24,9 @@ class Category(Enum):
     NA = 'uncategorized'
 
 
+CATEGORY_VALUES = {cat.value for cat in Category}
+
+
 class Ingredient:
     QTYS = 'qtys'
     QTY = 'qty'
@@ -40,6 +43,7 @@ class Ingredient:
 
 class Product:
     _db = {}
+    _fvdb = {}
     _baselines = {}
     NAME = 'name'
     NAMES = 'names'
@@ -65,13 +69,21 @@ class Product:
         return cls._db
 
     @classmethod
-    def valid(cls, product, name, flavor=None):
-        if flavor is None:
-            return all([cls.valid(product, name, f) for f in [cls.MASS, cls.SG, cls.CATS]])
+    def fv_db(cls):
+        # food values database
+        if not cls._fvdb:
+            with open(SOURCE_FOOD_VALUES) as fv:
+                cls._fvdb = json.load(fv)
+        return cls._fvdb
 
-        if not name:
+    @classmethod
+    def valid(cls, product, flavor=None):
+        if flavor is None:
+            return all([cls.valid(product, f) for f in [cls.MASS, cls.SG, cls.CATS]])
+
+        if not product:
             return False
-        elif name.startswith('_'):
+        elif product[cls.NAME].startswith('_'):
             # ignore these
             return True
         # validate mass/sg
@@ -79,26 +91,24 @@ class Product:
             if not flavor in product:
                 if not product.get(cls.PARENTS):
                     print('Product {} invalid: no `{}` data'.format(
-                        name, flavor))
+                        product[cls.NAME], flavor))
                     return False
-                elif not all([cls.valid(cls.get(par_name), par_name, flavor) for par_name in product[cls.PARENTS]]):
+                elif not all([cls.valid(cls.get(par_name), flavor) for par_name in product[cls.PARENTS]]):
                     return False
             return True
 
         # validate food category
+        # TODO: update for food_values db
         elif flavor == cls.CATS:
-            if not any([cat.value in product for cat in Category]):
+            if not cls.food_values(product):
                 if not product.get(cls.PARENTS):
-                    print('Product {} invalid: no `{}` data'.format(
-                        name, flavor))
                     return False
-                elif not all([cls.valid(cls.get(par_name), par_name, flavor) for par_name in product[cls.PARENTS]]):
-                    print('cats SHIT!')
+                elif not all([cls.valid(cls.get(par_name), flavor) for par_name in product[cls.PARENTS]]):
                     return False
-            elif sum([cat.value in product for cat in Category]) > 1:
-                cat_count = sum([cat.value in product for cat in Category])
+            elif len(cls.food_values(product)) > 1:
+                cat_count = len(cls.food_values(product))
                 print(
-                    'Product {} invalid: {} direct categories assigned'.format(name, cat_count))
+                    'Product {} invalid: {} direct categories assigned'.format(product[cls.NAME], cat_count))
                 return False
             return True
 
@@ -110,8 +120,8 @@ class Product:
         `super`, the keys [Product.NAME, Product.MASS, and Product.SG] and a value
         for at least one Category.
         """
-        for name, product in cls.db().items():
-            if not cls.valid(product, name):
+        for product in cls.db().values():
+            if not cls.valid(product):
                 raise Exception('Product database failed to validate')
 
         # if not all([cls.valid(product, name) for name, product in cls.db().items()]):
@@ -388,14 +398,8 @@ class Product:
         """
         if not product:  # empty or None
             return {}
-        values = defaultdict(lambda: 0.0)
-        for cat in Category:
-            if cat == Category.NA:
-                continue
-            value = product.get(cat.value, None)
-            if value:
-                values[cat.value] = value
-        return values
+        values = Product.fv_db().get(product[Product.NAME], {})
+        return {k: v for k, v in values.items() if k in CATEGORY_VALUES}
 
     @staticmethod
     def ghg_efficiency_ratio(product, origin=Origin.DEFAULT):

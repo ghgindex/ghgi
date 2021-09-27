@@ -1,0 +1,390 @@
+{
+    "_beef (dairy herd)": {
+        "pd": 0.2,
+        "src": 1
+    },
+    "almond milk": {
+        "m": 1.0
+    },
+    "apples": {
+        "fv": 1.0
+    },
+    "bananas": {
+        "fv": 1.0
+    },
+    "barley (beer)": {
+        "ed": 14810,
+        "src": 1
+    },
+    "beef (beef herd)": {
+        "pd": 0.2,
+        "src": 1
+    },
+    "beet sugar": {
+        "s": 1.0
+    },
+    "berries & grapes": {
+        "fv": 1.0
+    },
+    "bivalves (farmed)": {
+        "pd": 0.12,
+        "src": 5,
+        "ref": [
+            "average of clams (0.147), mussels (0.119), pacific oysters (0.0945)"
+        ]
+    },
+    "brassicas": {
+        "fv": 1.0
+    },
+    "butter": {
+        "of": 0.822,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/790508/nutrients",
+            "dairy.md"
+        ]
+    },
+    "buttermilk": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "cane sugar": {
+        "s": 1.0
+    },
+    "cassava": {
+        "ed": 6666,
+        "src": 1
+    },
+    "cephalopods": {
+        "pd": 0.153,
+        "src": 5,
+        "ref": [
+            "average of squid (0.156) and octopus (0.149)",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174218/nutrients",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174223/nutrients"
+        ]
+    },
+    "cheese": {
+        "pd": 0.225,
+        "src": 1
+    },
+    "cinnamon": {
+        "uncategorized": true
+    },
+    "citrus fruit": {
+        "fv": 1.0
+    },
+    "coconut": {
+        "uncategorized": true
+    },
+    "coffee beans": {
+        "caf": 1.4,
+        "src": [
+            "estimate; definitive source needed"
+        ]
+    },
+    "cottage cheese": {
+        "pd": 11.1,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172179/nutrients",
+            "dairy.md"
+        ]
+    },
+    "cream": {
+        "m": 1.0
+    },
+    "cream cheese": {
+        "pd": 0.0615,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173418/nutrients",
+            "dairy.md"
+        ]
+    },
+    "cream tartar": {
+        "uncategorized": true
+    },
+    "creme fraiche": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "crustaceans (farmed)": {
+        "pd": 0.15,
+        "src": 1
+    },
+    "crustaceans (wild)": {
+        "pd": 0.15,
+        "src": 1
+    },
+    "dark chocolate": {
+        "coc": 1.0,
+        "src": 1
+    },
+    "demersal fish": {
+        "pd": 0.23,
+        "src": 1
+    },
+    "demersal mollusks": {
+        "pd": 0.12,
+        "src": 5,
+        "ref": [
+            "average of clams (0.147), mussels (0.119), pacific oysters (0.0945)",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174214/nutrients",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174216/nutrients",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174219/nutrients"
+        ]
+    },
+    "eggs": {
+        "pd": 0.11,
+        "src": 1
+    },
+    "fish (farmed)": {
+        "pd": 0.23,
+        "src": 1
+    },
+    "half and half": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "heavy cream": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "honey": {
+        "s": 0.82,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169640/nutrients"
+        ]
+    },
+    "lamb & mutton": {
+        "pd": 0.2,
+        "src": 1
+    },
+    "light cream": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "maize (meal)": {
+        "ed": 17426,
+        "src": 1
+    },
+    "maple syrup": {
+        "s": 0.605,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169661/nutrients"
+        ]
+    },
+    "milk": {
+        "m": 1.0,
+        "src": 1,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "mushroom": {
+        "fv": 1.0
+    },
+    "nutmeg": {
+        "fv": 1.0
+    },
+    "nuts": {
+        "pd": 0.16,
+        "src": 1
+    },
+    "oat milk": {
+        "m": 1.0
+    },
+    "oatmeal": {
+        "ed": 10899,
+        "src": 1
+    },
+    "olive oil": {
+        "of": 1.0
+    },
+    "one percent milk": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "onions & leeks (alliums)": {
+        "r": 1.0
+    },
+    "other fruit": {
+        "fv": 1.0
+    },
+    "other vegetables": {
+        "fv": 1.0
+    },
+    "palm oil": {
+        "of": 1.0
+    },
+    "peanuts": {
+        "pd": 0.26,
+        "src": 1
+    },
+    "peas": {
+        "pd": 0.215,
+        "src": 1
+    },
+    "pelagic fish <30 cm": {
+        "pd": 0.23,
+        "src": 1,
+        "ref": [
+            "value for fish protein"
+        ]
+    },
+    "pelagic fish >30 cm": {
+        "pd": 0.23,
+        "src": 1,
+        "ref": [
+            "value for fish protein"
+        ]
+    },
+    "pepper": {
+        "fv": 1
+    },
+    "pork": {
+        "pd": 0.16,
+        "src": 1
+    },
+    "potatoes": {
+        "ed": 3054,
+        "src": 1
+    },
+    "poultry": {
+        "pd": 0.175,
+        "src": 1
+    },
+    "pulses": {
+        "pd": 0.22,
+        "src": 1
+    },
+    "rapeseed oil": {
+        "of": 1.0
+    },
+    "rice": {
+        "ed": 15418,
+        "src": 1
+    },
+    "rice milk": {
+        "m": 1.0
+    },
+    "ricotta": {
+        "pd": 0.075,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170851/nutrients",
+            "dairy.md"
+        ]
+    },
+    "root vegetables": {
+        "r": 1.0
+    },
+    "salt": {
+        "uncategorized": true
+    },
+    "sea bass": {
+        "pd": 0.184,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175142/nutrients"
+        ]
+    },
+    "sesame": {
+        "pd": 0.177,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170150/nutrients"
+        ]
+    },
+    "sesame oil": {
+        "of": 1.0
+    },
+    "skim milk": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "sour cream": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "soybean oil": {
+        "of": 1.0
+    },
+    "soymilk": {
+        "m": 1.0
+    },
+    "spice": {
+        "fv": 1.0
+    },
+    "starch": {
+        "ed": 15280,
+        "src": 5,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169698/nutrients",
+            "4 kcal/g carbohydrate"
+        ]
+    },
+    "sunflower oil": {
+        "of": 1.0
+    },
+    "tea leaves": {
+        "caf": 16.5,
+        "ref": [
+            "estimate; definitive source needed"
+        ]
+    },
+    "tofu": {
+        "pd": 0.16,
+        "src": 1
+    },
+    "tomatoes": {
+        "fv": 1.0
+    },
+    "two percent milk": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    },
+    "vanilla": {
+        "fv": 1.0
+    },
+    "water": {
+        "uncategorized": true
+    },
+    "wheat & rye (bread)": {
+        "ed": 11276,
+        "src": 1,
+        "ref": [
+            "need to make sure this is correct for whole grain vs bread"
+        ]
+    },
+    "wine": {
+        "uncategorized": true
+    },
+    "yogurt": {
+        "m": 1.0,
+        "ref": [
+            "dairy.md"
+        ]
+    }
+}

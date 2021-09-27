@@ -33,5 +33,14 @@
         "title": "A life cycle assessment of Agaricus bisporus mushroom production in the USA",
         "publication_info": "Int J Life Cycle Assess 24, 456–467 (2019)",
         "url": "https://doi.org/10.1007/s11367-018-1456-6"
+    },
+    "5": {
+        "publication": "USDA FoodData Central",
+        "url": "https://fdc.nal.usda.gov/index.html"
+    },
+    "6": {
+        "authors": "FAO of the United Nations",
+        "publication": "Yield and nutritional value of the commercially more important fish species",
+        "url": "http://www.fao.org/3/T0219E/T0219E00.htm"
     }
 }

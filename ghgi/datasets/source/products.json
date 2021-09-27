@@ -1,13 +1,11 @@
 {
     "_beef (dairy herd)": {
-        "ed": 10484,
         "g": 150,
         "sg": 1.01,
         "super": {}
     },
     "almond milk": {
         "g": 200,
-        "m": 1.0,
         "names": {
             "almondmilk": {}
         },
@@ -47,7 +45,6 @@
         }
     },
     "apples": {
-        "fv": 1.0,
         "g": 160,
         "names": {
             "apple": {
@@ -116,7 +113,6 @@
         }
     },
     "bananas": {
-        "fv": 1.0,
         "g": 180,
         "names": {
             "banana": {},
@@ -126,7 +122,6 @@
         "super": {}
     },
     "barley (beer)": {
-        "ed": 14810,
         "g": 0.065,
         "names": {
             "barley": {}
@@ -183,7 +178,6 @@
             },
             "veal": {}
         },
-        "pd": 0.2,
         "sg": 1.01,
         "super": {}
     },
@@ -218,12 +212,10 @@
     },
     "beet sugar": {
         "g": 4,
-        "s": 1.0,
         "sg": 1.15,
         "super": {}
     },
     "berries & grapes": {
-        "fv": 1.0,
         "g": 5,
         "names": {
             "berry": {
@@ -256,12 +248,10 @@
                 ]
             }
         },
-        "pd": 0.2,
         "sg": 1.04,
         "super": {}
     },
     "brassicas": {
-        "fv": 1.0,
         "g": 100,
         "name": "brassicas",
         "names": {
@@ -347,7 +337,6 @@
                 ]
             }
         },
-        "of": 0.8,
         "sg": 0.95,
         "super": {
             "milk": 644.3
@@ -355,7 +344,6 @@
     },
     "buttermilk": {
         "g": 100,
-        "m": 1.0,
         "sg": 1.0,
         "super": {
             "milk": 61.1
@@ -382,15 +370,15 @@
                 ]
             }
         },
-        "s": 1.0,
         "sg": 1.15,
         "super": {}
     },
     "caper": {
-        "fv": 1.0,
         "g": 15,
         "sg": 1.05,
-        "super": {}
+        "super": {
+            "other vegetables": 100
+        }
     },
     "carp": {
         "names": {
@@ -413,7 +401,6 @@
         }
     },
     "cassava": {
-        "ed": 6666,
         "g": 100,
         "names": {
             "manioc": {},
@@ -437,7 +424,6 @@
     },
     "cephalopods": {
         "g": 150,
-        "pd": 0.23,
         "sg": 1.04,
         "super": {}
     },
@@ -478,7 +464,6 @@
             },
             "cheez whiz": {}
         },
-        "pd": 0.225,
         "sg": 0.95,
         "super": {}
     },
@@ -513,13 +498,11 @@
         }
     },
     "cinnamon": {
-        "ed": 0,
         "g": 2.5,
         "sg": 0.5,
         "super": {}
     },
     "citrus fruit": {
-        "fv": 1.0,
         "g": 100,
         "name": "citrus fruit",
         "names": {
@@ -604,8 +587,7 @@
             }
         },
         "sg": 1.0,
-        "super": {},
-        "uncategorized": true
+        "super": {}
     },
     "coffee": {
         "g": 227,
@@ -624,7 +606,6 @@
         }
     },
     "coffee beans": {
-        "caf": 16.5,
         "g": 7.0,
         "sg": 0.35,
         "super": {}
@@ -664,7 +645,6 @@
     },
     "cream": {
         "g": 100,
-        "m": 1.0,
         "names": {
             "cream": {
                 "dependent": [
@@ -688,7 +668,6 @@
                 ]
             }
         },
-        "pd": 0.2,
         "sg": 1.0,
         "super": {
             "milk": 343.5
@@ -697,8 +676,7 @@
     "cream tartar": {
         "g": 3.5,
         "sg": 0.95,
-        "super": {},
-        "uncategorized": true
+        "super": {}
     },
     "creme fraiche": {
         "g": 50,
@@ -748,18 +726,15 @@
                 ]
             }
         },
-        "pd": 0.15,
         "sg": 1.0,
         "super": {}
     },
     "crustaceans (wild)": {
         "g": 150,
-        "pd": 0.15,
         "sg": 1.04,
         "super": {}
     },
     "dark chocolate": {
-        "coc": 1.0,
         "g": 25,
         "names": {
             "chocolate": {
@@ -816,13 +791,11 @@
             "turbot": {},
             "whitefish": {}
         },
-        "pd": 0.23,
         "sg": 1.04,
         "super": {}
     },
     "demersal mollusks": {
         "g": 15,
-        "pd": 0.2,
         "sg": 1.04,
         "super": {}
     },
@@ -858,7 +831,6 @@
                 ]
             }
         },
-        "pd": 0.11,
         "sg": 1.03,
         "super": {}
     },
@@ -880,7 +852,6 @@
             },
             "steelhead": {}
         },
-        "pd": 0.23,
         "sg": 1.0,
         "super": {}
     },
@@ -990,7 +961,6 @@
     },
     "half and half": {
         "g": 100,
-        "m": 1.0,
         "sg": 0.95,
         "super": {
             "milk": 160.4
@@ -998,7 +968,6 @@
     },
     "heavy cream": {
         "g": 100,
-        "m": 1.0,
         "names": {
             "~cream": {
                 "dependent": [
@@ -1022,7 +991,6 @@
     },
     "honey": {
         "g": 15.0,
-        "s": 0.7,
         "sg": 1.0,
         "super": {}
     },
@@ -1053,7 +1021,6 @@
                 ]
             }
         },
-        "pd": 0.2,
         "sg": 1.05,
         "super": {}
     },
@@ -1137,7 +1104,6 @@
         }
     },
     "maize (meal)": {
-        "ed": 15150,
         "g": 100,
         "names": {
             "corn": {
@@ -1154,7 +1120,6 @@
     },
     "maple syrup": {
         "g": 15,
-        "s": 0.68,
         "sg": 1.0,
         "super": {}
     },
@@ -1173,7 +1138,6 @@
     },
     "milk": {
         "g": 225,
-        "m": 1.0,
         "names": {
             "milk": {
                 "dependent": [
@@ -1202,7 +1166,6 @@
         }
     },
     "mushroom": {
-        "fv": 1.0,
         "g": 20,
         "names": {
             "mushroom": {
@@ -1257,7 +1220,6 @@
         }
     },
     "nutmeg": {
-        "fv": 1.0,
         "g": 1.0,
         "sg": 0.5,
         "super": {
@@ -1284,13 +1246,11 @@
             },
             "pecan": {}
         },
-        "pd": 0.16,
         "sg": 1.05,
         "super": {}
     },
     "oat milk": {
         "g": 225,
-        "m": 1.0,
         "names": {
             "oatmilk": {}
         },
@@ -1298,7 +1258,6 @@
         "super": {}
     },
     "oatmeal": {
-        "ed": 15857,
         "g": 100,
         "names": {
             "oat": {
@@ -1326,12 +1285,10 @@
                 ]
             }
         },
-        "of": 1.0,
         "sg": 0.91,
         "super": {}
     },
     "one percent milk": {
-        "m": 1.0,
         "names": {
             "~milk": {
                 "dependent": [
@@ -1370,7 +1327,6 @@
                 ]
             }
         },
-        "r": 1.0,
         "sg": 0.98,
         "super": {}
     },
@@ -1392,7 +1348,6 @@
         }
     },
     "other fruit": {
-        "fv": 1.0,
         "g": 150,
         "names": {
             "apricot": {},
@@ -1431,7 +1386,6 @@
         "super": {}
     },
     "other vegetables": {
-        "fv": 1.0,
         "g": 100,
         "names": {
             "bell pepper": {
@@ -1560,7 +1514,6 @@
     },
     "palm oil": {
         "g": 25,
-        "of": 1.0,
         "sg": 0.9,
         "super": {}
     },
@@ -1621,7 +1574,6 @@
                 ]
             }
         },
-        "pd": 0.26,
         "sg": 1.05,
         "super": {}
     },
@@ -1638,7 +1590,6 @@
                 ]
             }
         },
-        "pd": 0.215,
         "sg": 1.0,
         "super": {}
     },
@@ -1655,7 +1606,6 @@
                 ]
             }
         },
-        "pd": 0.21,
         "sg": 1.04,
         "super": {}
     },
@@ -1685,12 +1635,10 @@
                 ]
             }
         },
-        "pd": 0.21,
         "sg": 1.04,
         "super": {}
     },
     "pepper": {
-        "fv": 1,
         "g": 2.33,
         "names": {
             "pepper": {
@@ -1767,12 +1715,10 @@
                 ]
             }
         },
-        "pd": 0.16,
         "sg": 1.02,
         "super": {}
     },
     "potatoes": {
-        "ed": 3220,
         "g": 100,
         "names": {
             "potato": {
@@ -1960,7 +1906,6 @@
                 ]
             }
         },
-        "pd": 0.17,
         "sg": 0.97,
         "super": {}
     },
@@ -2000,7 +1945,6 @@
                 ]
             }
         },
-        "pd": 0.22,
         "sg": 0.85,
         "super": {}
     },
@@ -2039,12 +1983,10 @@
                 ]
             }
         },
-        "of": 1.0,
         "sg": 0.9,
         "super": {}
     },
     "rice": {
-        "ed": 15060,
         "g": 90,
         "names": {
             "rice": {
@@ -2067,7 +2009,6 @@
     },
     "rice milk": {
         "g": 225,
-        "m": 1.0,
         "names": {
             "ricemilk": {}
         },
@@ -2099,7 +2040,6 @@
             "rutabaga": {},
             "turnip": {}
         },
-        "r": 1.0,
         "sg": 1.0,
         "super": {}
     },
@@ -2129,8 +2069,7 @@
             }
         },
         "sg": 2.17,
-        "super": {},
-        "uncategorized": true
+        "super": {}
     },
     "salt pepper": {
         "g": 5.0,
@@ -2203,7 +2142,6 @@
     },
     "sea bass": {
         "g": 150.0,
-        "pd": 0.18,
         "sg": 1.04,
         "super": {}
     },
@@ -2217,7 +2155,6 @@
                 ]
             }
         },
-        "pd": 0.18,
         "sg": 0.6,
         "super": {}
     },
@@ -2269,7 +2206,6 @@
         }
     },
     "skim milk": {
-        "m": 1.0,
         "names": {
             "~milk": {
                 "dependent": [
@@ -2299,13 +2235,11 @@
     },
     "soybean oil": {
         "g": 25,
-        "of": 1.0,
         "sg": 0.9,
         "super": {}
     },
     "soymilk": {
         "g": 150,
-        "m": 1.0,
         "names": {
             "soy milk": {}
         },
@@ -2313,7 +2247,6 @@
         "super": {}
     },
     "spice": {
-        "fv": 1.0,
         "g": 5,
         "names": {
             "allspice": {},
@@ -2334,7 +2267,6 @@
         }
     },
     "starch": {
-        "ed": 1.0,
         "g": 5,
         "names": {
             "corn starch": {},
@@ -2370,7 +2302,6 @@
     },
     "sunflower oil": {
         "g": 25,
-        "of": 1.0,
         "sg": 0.9,
         "super": {}
     },
@@ -2391,7 +2322,6 @@
         }
     },
     "tea leaves": {
-        "caf": 16.5,
         "g": 3.0,
         "sg": 0.35,
         "super": {}
@@ -2414,7 +2344,6 @@
         "names": {
             "inari-no-moto": {}
         },
-        "pd": 0.16,
         "sg": 1.05,
         "super": {}
     },
@@ -2429,7 +2358,6 @@
         }
     },
     "tomatoes": {
-        "fv": 1.0,
         "g": 100,
         "names": {
             "tomatillo": {},
@@ -2471,7 +2399,6 @@
         }
     },
     "two percent milk": {
-        "m": 1.0,
         "names": {
             "~milk": {
                 "dependent": [
@@ -2537,7 +2464,6 @@
         }
     },
     "vanilla": {
-        "fv": 1.0,
         "g": 5.0,
         "names": {
             "vanilla": {
@@ -2613,11 +2539,9 @@
             }
         },
         "sg": 1.0,
-        "super": {},
-        "uncategorized": true
+        "super": {}
     },
     "wheat & rye (bread)": {
-        "ed": 14140,
         "g": 100,
         "name": "wheat & rye (bread)",
         "names": {
@@ -2629,7 +2553,6 @@
         "super": {}
     },
     "wine": {
-        "ed": 3556,
         "g": 225,
         "names": {
             "wine": {
