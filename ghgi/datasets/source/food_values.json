@@ -28,21 +28,21 @@
     },
     "bivalves (farmed)": {
         "pd": 0.12,
-        "src": 5,
         "ref": [
             "average of clams (0.147), mussels (0.119), pacific oysters (0.0945)"
-        ]
+        ],
+        "src": 5
     },
     "brassicas": {
         "fv": 1.0
     },
     "butter": {
         "of": 0.822,
-        "src": 5,
         "ref": [
-            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/790508/nutrients",
-            "dairy.md"
-        ]
+            "dairy.md",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/790508/nutrients"
+        ],
+        "src": 5
     },
     "buttermilk": {
         "m": 1.0,
@@ -59,12 +59,12 @@
     },
     "cephalopods": {
         "pd": 0.153,
-        "src": 5,
         "ref": [
             "average of squid (0.156) and octopus (0.149)",
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174218/nutrients",
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174223/nutrients"
-        ]
+        ],
+        "src": 5
     },
     "cheese": {
         "pd": 0.225,
@@ -87,22 +87,22 @@
     },
     "cottage cheese": {
         "pd": 11.1,
-        "src": 5,
         "ref": [
-            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172179/nutrients",
-            "dairy.md"
-        ]
+            "dairy.md",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172179/nutrients"
+        ],
+        "src": 5
     },
     "cream": {
         "m": 1.0
     },
     "cream cheese": {
         "pd": 0.0615,
-        "src": 5,
         "ref": [
-            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173418/nutrients",
-            "dairy.md"
-        ]
+            "dairy.md",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173418/nutrients"
+        ],
+        "src": 5
     },
     "cream tartar": {
         "uncategorized": true
@@ -131,13 +131,13 @@
     },
     "demersal mollusks": {
         "pd": 0.12,
-        "src": 5,
         "ref": [
             "average of clams (0.147), mussels (0.119), pacific oysters (0.0945)",
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174214/nutrients",
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174216/nutrients",
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/174219/nutrients"
-        ]
+        ],
+        "src": 5
     },
     "eggs": {
         "pd": 0.11,
@@ -160,11 +160,11 @@
         ]
     },
     "honey": {
-        "s": 0.82,
-        "src": 5,
         "ref": [
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169640/nutrients"
-        ]
+        ],
+        "s": 0.82,
+        "src": 5
     },
     "lamb & mutton": {
         "pd": 0.2,
@@ -181,18 +181,18 @@
         "src": 1
     },
     "maple syrup": {
-        "s": 0.605,
-        "src": 5,
         "ref": [
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169661/nutrients"
-        ]
+        ],
+        "s": 0.605,
+        "src": 5
     },
     "milk": {
         "m": 1.0,
-        "src": 1,
         "ref": [
             "dairy.md"
-        ]
+        ],
+        "src": 1
     },
     "mushroom": {
         "fv": 1.0
@@ -242,17 +242,17 @@
     },
     "pelagic fish <30 cm": {
         "pd": 0.23,
-        "src": 1,
         "ref": [
             "value for fish protein"
-        ]
+        ],
+        "src": 1
     },
     "pelagic fish >30 cm": {
         "pd": 0.23,
-        "src": 1,
         "ref": [
             "value for fish protein"
-        ]
+        ],
+        "src": 1
     },
     "pepper": {
         "fv": 1
@@ -285,11 +285,11 @@
     },
     "ricotta": {
         "pd": 0.075,
-        "src": 5,
         "ref": [
-            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170851/nutrients",
-            "dairy.md"
-        ]
+            "dairy.md",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170851/nutrients"
+        ],
+        "src": 5
     },
     "root vegetables": {
         "r": 1.0
@@ -299,17 +299,17 @@
     },
     "sea bass": {
         "pd": 0.184,
-        "src": 5,
         "ref": [
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175142/nutrients"
-        ]
+        ],
+        "src": 5
     },
     "sesame": {
         "pd": 0.177,
-        "src": 5,
         "ref": [
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170150/nutrients"
-        ]
+        ],
+        "src": 5
     },
     "sesame oil": {
         "of": 1.0
@@ -337,11 +337,11 @@
     },
     "starch": {
         "ed": 15280,
-        "src": 5,
         "ref": [
-            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169698/nutrients",
-            "4 kcal/g carbohydrate"
-        ]
+            "4 kcal/g carbohydrate",
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169698/nutrients"
+        ],
+        "src": 5
     },
     "sunflower oil": {
         "of": 1.0
@@ -373,10 +373,10 @@
     },
     "wheat & rye (bread)": {
         "ed": 11276,
-        "src": 1,
         "ref": [
             "need to make sure this is correct for whole grain vs bread"
-        ]
+        ],
+        "src": 1
     },
     "wine": {
         "uncategorized": true

@@ -5,7 +5,7 @@ import json
 
 from .trigram import build_indexes
 from .gin import GIN
-from .datasets import SOURCE_PRODUCTS
+from .datasets import SOURCE_PRODUCTS, SOURCE_FOOD_VALUES
 from .datasets import MASTER_GIN_INDEX
 from .origin import Origin
 from .datasets import MASTER_PRODUCTS, MASTER_AKA_INDEX, MASTER_TRIGRAM_INDEX
@@ -97,6 +97,7 @@ def extend_products(infile, outfile):
 
 if __name__ == "__main__":
     sort_products(SOURCE_PRODUCTS)
+    sort_products(SOURCE_FOOD_VALUES)
     for origin in Origin.ORIGIN_PATHS.values():
         sort_origin(origin)
 
