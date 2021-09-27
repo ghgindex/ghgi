@@ -33,6 +33,18 @@
             1.18
         ]
     ],
+    "barley": [
+        [
+            1
+        ],
+        [
+            1.83,
+            1.83,
+            1.83,
+            1.83
+        ],
+        "https://docs.google.com/spreadsheets/d/1WbEggoMNGPeHYPwaYOm2ab4fMzmBgaaPNmvOx9x0bdc/edit?usp=sharing"
+    ],
     "barley (beer)": [
         [
             1
@@ -177,6 +189,18 @@
             8.15,
             84.85
         ]
+    ],
+    "corn": [
+        [
+            1
+        ],
+        [
+            0.85,
+            0.85,
+            0.85,
+            0.85
+        ],
+        "https://docs.google.com/spreadsheets/d/1WbEggoMNGPeHYPwaYOm2ab4fMzmBgaaPNmvOx9x0bdc/edit?usp=sharing"
     ],
     "crustaceans": [
         [
@@ -612,6 +636,18 @@
             1.27,
             2.31
         ]
+    ],
+    "wheat & rye (flour)": [
+        [
+            1
+        ],
+        [
+            1.71,
+            1.71,
+            1.71,
+            1.71
+        ],
+        "https://docs.google.com/spreadsheets/d/1WbEggoMNGPeHYPwaYOm2ab4fMzmBgaaPNmvOx9x0bdc/edit?usp=sharing"
     ],
     "wine": [
         [

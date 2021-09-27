@@ -175,13 +175,25 @@
         "bananas",
         6
     ],
+    "barley": [
+        "barley",
+        4
+    ],
+    "barley groat": [
+        "barley",
+        10
+    ],
+    "pearl barley": [
+        "barley",
+        10
+    ],
     "barley (beer)": [
         "barley (beer)",
         11
     ],
-    "barley": [
+    "beer": [
         "barley (beer)",
-        4
+        2
     ],
     "barramundi": [
         "barramundi",
@@ -1059,6 +1071,34 @@
         "coffee beans",
         10
     ],
+    "corn": [
+        "corn",
+        2
+    ],
+    "cob corn": [
+        "corn",
+        6
+    ],
+    "corn cob": [
+        "corn",
+        6
+    ],
+    "corn ear": [
+        "corn",
+        6
+    ],
+    "corn kernel": [
+        "corn",
+        9
+    ],
+    "ear corn": [
+        "corn",
+        6
+    ],
+    "sweet corn": [
+        "corn",
+        8
+    ],
     "corn tortilla": [
         "corn tortilla",
         11
@@ -1611,13 +1651,9 @@
         "maize (meal)",
         10
     ],
-    "corn": [
+    "corn meal": [
         "maize (meal)",
-        2
-    ],
-    "corn kernel": [
-        "maize (meal)",
-        9
+        7
     ],
     "cornmeal": [
         "maize (meal)",
@@ -1626,10 +1662,6 @@
     "polenta": [
         "maize (meal)",
         5
-    ],
-    "sweet corn": [
-        "maize (meal)",
-        8
     ],
     "maple syrup": [
         "maple syrup",
@@ -4251,16 +4283,20 @@
         "wheat & rye (bread)",
         17
     ],
+    "wheat & rye (flour)": [
+        "wheat & rye (flour)",
+        17
+    ],
     "grain": [
-        "wheat & rye (bread)",
+        "wheat & rye (flour)",
         3
     ],
     "rye": [
-        "wheat & rye (bread)",
+        "wheat & rye (flour)",
         1
     ],
     "wheat": [
-        "wheat & rye (bread)",
+        "wheat & rye (flour)",
         3
     ],
     "wine": [

@@ -1,6 +1,6 @@
 # Mushrooms
 
-[Robinson et al][1] found that mushrooms have a GWG20 impact of **2.95 kg CO2e/kg** from "cradle-to-facility gate".
+[Robinson et al][1] found that US mushrooms have a GWG20 impact of **2.95 kg CO2e/kg** from "cradle-to-facility gate".
 
 To that estimate, we have appended the subsequent processsing, transport, packaging, retail, and loss impacts estimated from [Poore & Nemecek][2] as a reasonable (albeit imperfect) proxy; its value is **0.29221 kg CO2e/kg**.
 

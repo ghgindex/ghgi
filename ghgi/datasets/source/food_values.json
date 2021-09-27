@@ -12,9 +12,15 @@
     "bananas": {
         "fv": 1.0
     },
+    "barley": {
+        "ed": 14800,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170283/nutrients"
+        ],
+        "src": 5
+    },
     "barley (beer)": {
-        "ed": 14810,
-        "src": 1
+        "uncategorized": true
     },
     "beef (beef herd)": {
         "pd": 0.2,
@@ -84,6 +90,13 @@
         "src": [
             "estimate; definitive source needed"
         ]
+    },
+    "corn": {
+        "ed": 3600,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169998/nutrients"
+        ],
+        "src": 5
     },
     "cottage cheese": {
         "pd": 11.1,
@@ -377,6 +390,13 @@
             "need to make sure this is correct for whole grain vs bread"
         ],
         "src": 1
+    },
+    "wheat & rye (flour)": {
+        "ed": 15200,
+        "ref": [
+            "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168936/nutrients"
+        ],
+        "src": 5
     },
     "wine": {
         "uncategorized": true

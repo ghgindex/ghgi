@@ -239,7 +239,16 @@
     ],
     "barley": [
         "barley",
-        "barley (beer)"
+        "barley (beer)",
+        "barley groat",
+        "pearl barley"
+    ],
+    "groat": [
+        "barley groat"
+    ],
+    "pearl": [
+        "pearl barley",
+        "pearl onion"
     ],
     "(": [
         "barley (beer)",
@@ -270,10 +279,12 @@
         "tilapia (wild)",
         "trout (farmed)",
         "wheat & rye (bread)",
+        "wheat & rye (flour)",
         "wild prawns (wild)"
     ],
     "beer": [
-        "barley (beer)"
+        "barley (beer)",
+        "beer"
     ],
     ")": [
         "barley (beer)",
@@ -304,6 +315,7 @@
         "tilapia (wild)",
         "trout (farmed)",
         "wheat & rye (bread)",
+        "wheat & rye (flour)",
         "wild prawns (wild)"
     ],
     "barramundi": [
@@ -460,7 +472,8 @@
         "berries & grapes",
         "lamb & mutton",
         "onions & leeks (alliums)",
-        "wheat & rye (bread)"
+        "wheat & rye (bread)",
+        "wheat & rye (flour)"
     ],
     "grape": [
         "berries & grapes",
@@ -698,6 +711,7 @@
     "wheat": [
         "wheat",
         "wheat & rye (bread)",
+        "wheat & rye (flour)",
         "wheat flour",
         "whole wheat bread",
         "whole wheat flour",
@@ -1141,11 +1155,27 @@
         "white bean"
     ],
     "corn": [
+        "cob corn",
         "corn",
+        "corn cob",
+        "corn ear",
         "corn kernel",
+        "corn meal",
         "corn starch",
         "corn tortilla",
+        "ear corn",
         "sweet corn"
+    ],
+    "cob": [
+        "cob corn",
+        "corn cob"
+    ],
+    "ear": [
+        "corn ear",
+        "ear corn"
+    ],
+    "kernel": [
+        "corn kernel"
     ],
     "tortilla": [
         "corn tortilla",
@@ -1401,6 +1431,7 @@
         "pastry flour",
         "rye flour",
         "unbleached all purpose flour",
+        "wheat & rye (flour)",
         "wheat flour",
         "white flour",
         "whole wheat flour",
@@ -1424,7 +1455,8 @@
     "rye": [
         "rye",
         "rye flour",
-        "wheat & rye (bread)"
+        "wheat & rye (bread)",
+        "wheat & rye (flour)"
     ],
     "unbleach": [
         "unbleached all purpose flour"
@@ -1590,10 +1622,8 @@
         "maize (meal)"
     ],
     "meal": [
+        "corn meal",
         "maize (meal)"
-    ],
-    "kernel": [
-        "corn kernel"
     ],
     "cornmeal": [
         "cornmeal"
@@ -1817,9 +1847,6 @@
     ],
     "allium": [
         "onions & leeks (alliums)"
-    ],
-    "pearl": [
-        "pearl onion"
     ],
     "spanish": [
         "spanish onion"

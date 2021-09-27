@@ -118,13 +118,23 @@
         "sg": 0.9,
         "super": {}
     },
-    "barley (beer)": {
+    "barley": {
         "g": 0.065,
         "names": [
             "barley",
-            "barley (beer)"
+            "barley groat",
+            "pearl barley"
         ],
         "sg": 0.62,
+        "super": {}
+    },
+    "barley (beer)": {
+        "g": 355,
+        "names": [
+            "barley (beer)",
+            "beer"
+        ],
+        "sg": 1.0,
         "super": {}
     },
     "barramundi": {
@@ -246,7 +256,6 @@
     },
     "brassicas": {
         "g": 100,
-        "name": "brassicas",
         "names": [
             "arugula",
             "bok choy",
@@ -412,7 +421,6 @@
     },
     "cheese": {
         "g": 25,
-        "name": "cheese",
         "names": [
             "american cheese",
             "blue cheese",
@@ -512,7 +520,6 @@
     },
     "citrus fruit": {
         "g": 100,
-        "name": "citrus fruit",
         "names": [
             "citrus",
             "citrus fruit",
@@ -599,6 +606,20 @@
         "names": [
             "coffee beans"
         ]
+    },
+    "corn": {
+        "g": 100,
+        "names": [
+            "cob corn",
+            "corn",
+            "corn cob",
+            "corn ear",
+            "corn kernel",
+            "ear corn",
+            "sweet corn"
+        ],
+        "sg": 1.0,
+        "super": {}
     },
     "corn tortilla": {
         "g": 45,
@@ -885,9 +906,8 @@
             "whole wheat flour",
             "whole wheat pastry flour"
         ],
-        "sg": 0.5,
         "super": {
-            "wheat & rye (bread)": 100
+            "wheat & rye (flour)": 100
         }
     },
     "garlic": {
@@ -1079,12 +1099,10 @@
     "maize (meal)": {
         "g": 100,
         "names": [
-            "corn",
-            "corn kernel",
+            "corn meal",
             "cornmeal",
             "maize (meal)",
-            "polenta",
-            "sweet corn"
+            "polenta"
         ],
         "sg": 0.54,
         "super": {}
@@ -1499,7 +1517,7 @@
         ],
         "sg": 0.5,
         "super": {
-            "wheat & rye (bread)": 100
+            "wheat & rye (flour)": 100
         }
     },
     "peanuts": {
@@ -2370,14 +2388,21 @@
     },
     "wheat & rye (bread)": {
         "g": 100,
-        "name": "wheat & rye (bread)",
+        "sg": 0.5,
+        "super": {},
+        "names": [
+            "wheat & rye (bread)"
+        ]
+    },
+    "wheat & rye (flour)": {
+        "g": 100,
         "names": [
             "grain",
             "rye",
             "wheat",
-            "wheat & rye (bread)"
+            "wheat & rye (flour)"
         ],
-        "sg": 0.5,
+        "sg": 0.8,
         "super": {}
     },
     "wine": {
