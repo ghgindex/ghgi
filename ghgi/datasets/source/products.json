@@ -462,6 +462,7 @@
                     "monterey jack",
                     "mozzarella",
                     "muenster",
+                    "paneer",
                     "parmesan",
                     "parmigiano-reggiano",
                     "pecorino",
@@ -594,7 +595,8 @@
                     "low fat",
                     "low-fat"
                 ]
-            }
+            },
+            "heart palm": {}
         },
         "sg": 1.0,
         "super": {}

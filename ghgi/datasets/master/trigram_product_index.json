@@ -4,6 +4,7 @@
         "almond milk",
         "almondmilk",
         "farmed salmon",
+        "heart palm",
         "palm oil",
         "salmon",
         "salmon (farmed)",
@@ -212,6 +213,7 @@
         "flat leaf parsley leaf",
         "flat-leaf parsley",
         "fresh parsley",
+        "heart palm",
         "italian parsley",
         "lasagna pasta",
         "lasagne pasta",
@@ -532,6 +534,7 @@
         "other fruit",
         "other vegetables",
         "oyster mushroom",
+        "paneer cheese",
         "pepper kosher salt",
         "pepper salt",
         "seltzer water",
@@ -1317,10 +1320,12 @@
     "art": [
         "artisanal bread",
         "cream tartar",
+        "heart palm",
         "tart apple"
     ],
     "rt ": [
         "camembert cheese",
+        "heart palm",
         "roquefort cheese",
         "tart apple"
     ],
@@ -2172,6 +2177,7 @@
         "bosc pear",
         "corn ear",
         "ear corn",
+        "heart palm",
         "pear",
         "pearl barley",
         "pearl onion"
@@ -2230,7 +2236,9 @@
     ],
     "eer": [
         "barley (beer)",
-        "beer"
+        "beer",
+        "paneer",
+        "paneer cheese"
     ],
     "er)": [
         "barley (beer)"
@@ -2703,6 +2711,7 @@
         "mozzarella cheese",
         "muenster cheese",
         "pak choi",
+        "paneer cheese",
         "parmesan cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -4136,6 +4145,7 @@
         "monterey jack cheese",
         "mozzarella cheese",
         "muenster cheese",
+        "paneer cheese",
         "parmesan cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -5246,6 +5256,7 @@
     "hea": [
         "breast pheasant",
         "giblet pheasant",
+        "heart palm",
         "heavy cream",
         "heavy whipped cream",
         "heavy whipping cream",
@@ -5425,7 +5436,9 @@
         "habanero",
         "habanero chile",
         "habanero chili",
-        "habanero pepper"
+        "habanero pepper",
+        "paneer",
+        "paneer cheese"
     ],
     "row": [
         "brown mushroom",
@@ -6007,6 +6020,7 @@
         "monterey jack cheese",
         "mozzarella cheese",
         "muenster cheese",
+        "paneer cheese",
         "parmesan cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -6047,6 +6061,7 @@
         "monterey jack cheese",
         "mozzarella cheese",
         "muenster cheese",
+        "paneer cheese",
         "parmesan cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -6083,6 +6098,7 @@
         "monterey jack cheese",
         "mozzarella cheese",
         "muenster cheese",
+        "paneer cheese",
         "parmesan cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -6250,6 +6266,7 @@
         "liver cornish game hen",
         "liver cornish hen",
         "muenster cheese",
+        "paneer cheese",
         "razor clam",
         "sour cherry",
         "sour cream",
@@ -6647,6 +6664,16 @@
         "cornstarch",
         "muenster",
         "muenster cheese"
+    ],
+    "pan": [
+        "pancetta",
+        "paneer",
+        "paneer cheese",
+        "spanish onion"
+    ],
+    "nee": [
+        "paneer",
+        "paneer cheese"
     ],
     "mes": [
         "parmesan",
@@ -7396,6 +7423,7 @@
         "ghost pepper",
         "giblet pheasant",
         "grapefruit peel",
+        "heart palm",
         "russet potato",
         "salt pepper",
         "salt pork",
@@ -7865,6 +7893,10 @@
         "full-fat coconut milk",
         "low-fat coconut milk",
         "non-fat milk"
+    ],
+    "pal": [
+        "heart palm",
+        "palm oil"
     ],
     "ow ": [
         "low fat coconut milk",
@@ -10310,10 +10342,6 @@
         "neutral oil",
         "pearl onion"
     ],
-    "pan": [
-        "pancetta",
-        "spanish onion"
-    ],
     "nis": [
         "breast cornish game hen",
         "breast cornish hen",
@@ -11285,9 +11313,6 @@
     ],
     "ucc": [
         "zucchini"
-    ],
-    "pal": [
-        "palm oil"
     ],
     "lm ": [
         "palm oil"

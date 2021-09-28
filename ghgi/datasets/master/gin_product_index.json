@@ -832,6 +832,7 @@
         "monterey jack cheese",
         "mozzarella cheese",
         "muenster cheese",
+        "paneer cheese",
         "parmesan cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -916,6 +917,10 @@
     "muenster": [
         "muenster",
         "muenster cheese"
+    ],
+    "paneer": [
+        "paneer",
+        "paneer cheese"
     ],
     "parmesan": [
         "parmesan",
@@ -1119,6 +1124,13 @@
     ],
     "full-fat": [
         "full-fat coconut milk"
+    ],
+    "heart": [
+        "heart palm"
+    ],
+    "palm": [
+        "heart palm",
+        "palm oil"
     ],
     "low": [
         "low fat coconut milk"
@@ -2173,9 +2185,6 @@
     ],
     "zucchini": [
         "zucchini"
-    ],
-    "palm": [
-        "palm oil"
     ],
     "paprika": [
         "paprika",

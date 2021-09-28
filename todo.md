@@ -11,7 +11,6 @@ verify densities w/r/t FAO/INFOODS
 
 ice cream
 bread "loaf" vs "slice"?
-difference between wheat/rye and bread in P&N?
 
 ## Note to self
 
