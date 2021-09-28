@@ -323,10 +323,10 @@ units_regex = re.compile(
     multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<mods>({})\s)?(?P<unit>{})?(?P<plural>[sei]+)?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(mods_group, units_group))
 
 
-# hrefs
+# html tags
 # TODO: improve this, e.g. there could be a > in the href
-href_start = r'<a[^>]*>'
-href_end = '</a>'
+tag_start = r'<(a)|(strong)|(span).*?>'
+tag_end = r'</(a)|(strong)|(span)>'
 
 
 def no_singular(word):
@@ -488,9 +488,9 @@ def pad_ranges(text):
     return re.sub(r'-[Tt][Oo]-', ' to ', text)
 
 
-def strip_hrefs(text):
-    text = re.sub(href_start, '', text)
-    text = text.replace(href_end, '')
+def strip_html_tags(text):
+    text = re.sub(tag_start, '', text)
+    text = text.replace(tag_end, '')
     return text
 
 
@@ -578,8 +578,8 @@ def amounts(text_entry):
     if not text_entry:
         return {'error': True}
 
-    # remove hrefs
-    text_entry = strip_hrefs(text_entry)
+    # remove html tags
+    text_entry = strip_html_tags(text_entry)
 
     # replace numbers-as-words with digits
     text_entry = numerify(text_entry)
