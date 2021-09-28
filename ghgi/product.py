@@ -11,6 +11,9 @@ from .convert import Convert
 from .origin import Origin, GHGFlavor
 
 
+DEFAULT_FLAVOR = GHGFlavor.MEDIAN
+
+
 class Category(Enum):
     ENERGY_DENSITY = 'ed'
     PROTEIN_DENSITY = 'pd'
@@ -437,10 +440,10 @@ class Product:
     @staticmethod
     def ghg_efficiencies(product, origin):
         """ return product's ghg_mean emission per food Category """
-        ghg_mass_mean = Product.ghg_value(product, origin, GHGFlavor.MEAN)
-        if not ghg_mass_mean:
+        ghg_impact = Product.ghg_value(product, origin, DEFAULT_FLAVOR)
+        if not ghg_impact:
             return {}
-        return {cat: value/ghg_mass_mean for cat, value in Product.food_values(product).items()}
+        return {cat: value/ghg_impact for cat, value in Product.food_values(product).items()}
 
     @staticmethod
     def impact(ingredient, origin=Origin.DEFAULT):
@@ -448,10 +451,10 @@ class Product:
             return 0.0
         mass = Product.mass(ingredient)
         ingredient[Product.MASS] = mass
-        ghg_mean = Product.ghg_value(
+        ghg_impact = Product.ghg_value(
             ingredient[Ingredient.PRODUCT],
-            origin, GHGFlavor.MEAN
+            origin, DEFAULT_FLAVOR
         )
-        result = round(ghg_mean * mass, 2) if ghg_mean else None
+        result = round(ghg_impact * mass, 2) if ghg_impact else None
         ingredient['impact'] = result
         return result
