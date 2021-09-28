@@ -103,6 +103,8 @@ class GIN:
 
     @classmethod
     def query(cls, term: str, use_keyword=True):
+        # To match, a term must include *all* the tokens of a database item.
+        # It can have extraneous tokens, but must not be missing any
         tokens = cls.tokenize(term)
 
         # don't match on uninformative singletons
@@ -117,6 +119,7 @@ class GIN:
                 if el[1].startswith('NN'):
                     key_word_index = len(pos_tags)-(i+1)
                     break
+
         stemmed_tokens = cls.stem(cls.lower(tokens))
 
         if key_word_index is not None:
@@ -127,7 +130,7 @@ class GIN:
                     continue
                 matches = cls.index().get(t, [])
                 for m in matches:
-                    if m in results:
+                    if m in results:  # limit to keyword matches
                         results[m] += 1
 
         else:
@@ -136,6 +139,15 @@ class GIN:
                 matches = cls.index().get(t, [])
                 for m in matches:
                     results[m] += 1
+
+        # filter for candidate matches that have *all* of their terms in the query
+        full_matches = {}
+        for r in results:
+            stemmed_result_tokens = cls.stem(cls.tokenize(r))
+            if all([srt in stemmed_tokens for srt in stemmed_result_tokens]):
+                full_matches[r] = results[r]
+
+        results = full_matches
 
         if len(results) == 0:
             if use_keyword:

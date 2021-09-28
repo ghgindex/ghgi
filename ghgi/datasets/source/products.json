@@ -309,6 +309,7 @@
             "bread": {
                 "dependent": [
                     "_.crumb",
+                    "_.stick",
                     "_loaf",
                     "_loaves",
                     "artisanal",
@@ -454,6 +455,7 @@
                     "cotija",
                     "feta",
                     "fontina",
+                    "toscano",
                     "gorgonzola",
                     "gruyere",
                     "gruy\u00e8re",
