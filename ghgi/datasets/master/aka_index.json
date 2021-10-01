@@ -275,6 +275,10 @@
         "beef (beef herd)",
         10
     ],
+    "shoulder beef": [
+        "beef (beef herd)",
+        11
+    ],
     "sirloin": [
         "beef (beef herd)",
         5
@@ -286,6 +290,14 @@
     "steak": [
         "beef (beef herd)",
         3
+    ],
+    "tenderloin": [
+        "beef (beef herd)",
+        8
+    ],
+    "tenderloin beef": [
+        "beef (beef herd)",
+        13
     ],
     "veal": [
         "beef (beef herd)",
@@ -495,6 +507,10 @@
         "bread",
         8
     ],
+    "breadstick": [
+        "bread",
+        8
+    ],
     "bun": [
         "bread",
         1
@@ -502,6 +518,10 @@
     "country bread": [
         "bread",
         11
+    ],
+    "cracker": [
+        "bread",
+        5
     ],
     "crouton": [
         "bread",
@@ -527,9 +547,17 @@
         "bread",
         10
     ],
+    "graham cracker": [
+        "bread",
+        12
+    ],
     "hamburger bun": [
         "bread",
         11
+    ],
+    "lavash": [
+        "bread",
+        4
     ],
     "loaf bread": [
         "bread",
@@ -538,6 +566,14 @@
     "loaves bread": [
         "bread",
         10
+    ],
+    "pita": [
+        "bread",
+        2
+    ],
+    "pita bread": [
+        "bread",
+        8
     ],
     "sourdough": [
         "bread",
@@ -887,6 +923,14 @@
         "cheese",
         13
     ],
+    "toscano": [
+        "cheese",
+        5
+    ],
+    "toscano cheese": [
+        "cheese",
+        12
+    ],
     "chicken broth": [
         "chicken broth",
         11
@@ -902,6 +946,26 @@
     "stock": [
         "chicken stock",
         3
+    ],
+    "chile flake": [
+        "chile flake",
+        9
+    ],
+    "chili flake": [
+        "chile flake",
+        9
+    ],
+    "hot pepper flake": [
+        "chile flake",
+        14
+    ],
+    "pepper flake": [
+        "chile flake",
+        10
+    ],
+    "red pepper flake": [
+        "chile flake",
+        14
     ],
     "chive": [
         "chive",
@@ -2127,6 +2191,10 @@
         "other vegetables",
         9
     ],
+    "bird's-eye chile": [
+        "other vegetables",
+        14
+    ],
     "bitter melon": [
         "other vegetables",
         10
@@ -2179,17 +2247,9 @@
         "other vegetables",
         12
     ],
-    "chile flake": [
-        "other vegetables",
-        9
-    ],
     "chili": [
         "other vegetables",
         3
-    ],
-    "chili flake": [
-        "other vegetables",
-        9
     ],
     "chili pepper": [
         "other vegetables",
@@ -2236,6 +2296,10 @@
         10
     ],
     "guajillo chile": [
+        "other vegetables",
+        12
+    ],
+    "guajillo chili": [
         "other vegetables",
         12
     ],
@@ -2320,6 +2384,10 @@
         5
     ],
     "poblano chile": [
+        "other vegetables",
+        11
+    ],
+    "poblano chili": [
         "other vegetables",
         11
     ],
@@ -2818,6 +2886,14 @@
     "italian sausage": [
         "pork",
         13
+    ],
+    "kielbasa": [
+        "pork",
+        6
+    ],
+    "kielbasa sausage": [
+        "pork",
+        14
     ],
     "mortadella": [
         "pork",
@@ -3826,6 +3902,10 @@
     "sesame seed": [
         "sesame",
         9
+    ],
+    "tahini": [
+        "sesame",
+        4
     ],
     "white sesame seed": [
         "sesame",

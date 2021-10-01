@@ -169,11 +169,13 @@
                 "dependent": [
                     "_brisket",
                     "_chuck",
-                    "_shank"
+                    "_shank",
+                    "shoulder"
                 ],
                 "independent": [
                     "brisket",
-                    "chuck"
+                    "chuck",
+                    "tenderloin"
                 ]
             },
             "hamburger": {},
@@ -325,6 +327,7 @@
                     "baguette",
                     "crouton",
                     "focaccia",
+                    "pita",
                     "sourdough",
                     "stuffing"
                 ]
@@ -333,7 +336,13 @@
                 "dependent": [
                     "hamburger"
                 ]
-            }
+            },
+            "cracker": {
+                "dependent": [
+                    "graham"
+                ]
+            },
+            "lavash": {}
         },
         "sg": 0.7,
         "super": {
@@ -455,7 +464,6 @@
                     "cotija",
                     "feta",
                     "fontina",
-                    "toscano",
                     "gorgonzola",
                     "gruyere",
                     "gruy\u00e8re",
@@ -473,7 +481,8 @@
                     "roquefort",
                     "stilton",
                     "swiss",
-                    "taleggio"
+                    "taleggio",
+                    "toscano"
                 ]
             },
             "cheez whiz": {}
@@ -502,6 +511,24 @@
             "other vegetables": 50,
             "poultry": 50,
             "water": 50
+        }
+    },
+    "chile flake": {
+        "g": 3,
+        "names": {
+            "~flake": {
+                "dependent": [
+                    "chile",
+                    "chili",
+                    "hot pepper",
+                    "pepper",
+                    "red pepper"
+                ]
+            }
+        },
+        "sg": 0.25,
+        "super": {
+            "other vegetables": 100
         }
     },
     "chive": {
@@ -1442,7 +1469,7 @@
                 "dependent": [
                     "_de arbol",
                     "_de \u00e1rbol",
-                    "_flake",
+                    "bird's-eye",
                     "green",
                     "guajillo",
                     "habanero",
@@ -1455,11 +1482,12 @@
             },
             "chili": {
                 "dependent": [
-                    "_flake",
                     "green",
+                    "guajillo",
                     "habanero",
                     "jalapeno",
                     "jalape\u00f1o",
+                    "poblano",
                     "red",
                     "serrano"
                 ]
@@ -1738,6 +1766,7 @@
                 ],
                 "independent": [
                     "chorizo",
+                    "kielbasa",
                     "mortadella",
                     "pepperoni",
                     "salami"
@@ -2182,7 +2211,8 @@
                     "black",
                     "white"
                 ]
-            }
+            },
+            "tahini": {}
         },
         "sg": 0.6,
         "super": {}

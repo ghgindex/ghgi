@@ -176,9 +176,12 @@
             "hanger steak",
             "ribeye",
             "ribeye steak",
+            "shoulder beef",
             "sirloin",
             "sirloin steak",
             "steak",
+            "tenderloin",
+            "tenderloin beef",
             "veal"
         ],
         "sg": 1.01,
@@ -295,17 +298,23 @@
             "bread loaf",
             "bread loaves",
             "breadcrumb",
+            "breadstick",
             "bun",
             "country bread",
+            "cracker",
             "crouton",
             "crouton bread",
             "crusty bread",
             "focaccia",
             "focaccia bread",
             "french bread",
+            "graham cracker",
             "hamburger bun",
+            "lavash",
             "loaf bread",
             "loaves bread",
+            "pita",
+            "pita bread",
             "sourdough",
             "sourdough bread",
             "stuffing",
@@ -472,7 +481,9 @@
             "swiss",
             "swiss cheese",
             "taleggio",
-            "taleggio cheese"
+            "taleggio cheese",
+            "toscano",
+            "toscano cheese"
         ],
         "sg": 0.95,
         "super": {}
@@ -500,6 +511,20 @@
             "other vegetables": 50,
             "poultry": 50,
             "water": 50
+        }
+    },
+    "chile flake": {
+        "g": 3,
+        "names": [
+            "chile flake",
+            "chili flake",
+            "hot pepper flake",
+            "pepper flake",
+            "red pepper flake"
+        ],
+        "sg": 0.25,
+        "super": {
+            "other vegetables": 100
         }
     },
     "chive": {
@@ -1369,6 +1394,7 @@
         "names": [
             "acorn squash",
             "bell pepper",
+            "bird's-eye chile",
             "bitter melon",
             "butternut squash",
             "calabash",
@@ -1382,9 +1408,7 @@
             "chile",
             "chile de arbol",
             "chile de \u00e1rbol",
-            "chile flake",
             "chili",
-            "chili flake",
             "chili pepper",
             "cucumber",
             "fresh bean",
@@ -1397,6 +1421,7 @@
             "green chili",
             "green pepper",
             "guajillo chile",
+            "guajillo chili",
             "habanero",
             "habanero chile",
             "habanero chili",
@@ -1419,6 +1444,7 @@
             "piquillo pepper",
             "poblano",
             "poblano chile",
+            "poblano chili",
             "poblano pepper",
             "pumpkin",
             "pumpkin pepitas",
@@ -1627,6 +1653,8 @@
             "chorizo sausage",
             "ham",
             "italian sausage",
+            "kielbasa",
+            "kielbasa sausage",
             "mortadella",
             "mortadella sausage",
             "pancetta",
@@ -2029,6 +2057,7 @@
             "black sesame seed",
             "sesame",
             "sesame seed",
+            "tahini",
             "white sesame seed"
         ],
         "sg": 0.6,

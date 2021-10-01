@@ -5,12 +5,11 @@ Create package documentation
 
 - Make sure pydoc runs adequately
 
-verify densities w/r/t FAO/INFOODS
-
 ## Catalog
 
 ice cream
 bread "loaf" vs "slice"?
+diff between crackers and bread? (sugar, shortening, ?)
 
 ## Note to self
 

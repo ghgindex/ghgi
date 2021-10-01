@@ -324,9 +324,8 @@ units_regex = re.compile(
 
 
 # html tags
-# TODO: improve this, e.g. there could be a > in the href
-tag_start = r'<(a)|(strong)|(span).*?>'
-tag_end = r'</(a)|(strong)|(span)>'
+tag_start = r'<((a)|(strong)|(span)).*?>'
+tag_end = r'</((a)|(strong)|(span))>'
 
 
 def no_singular(word):
@@ -490,7 +489,7 @@ def pad_ranges(text):
 
 def strip_html_tags(text):
     text = re.sub(tag_start, '', text)
-    text = text.replace(tag_end, '')
+    text = re.sub(tag_end, '', text)
     return text
 
 

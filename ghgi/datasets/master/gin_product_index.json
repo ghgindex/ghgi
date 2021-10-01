@@ -150,6 +150,7 @@
         "red lentil",
         "red onion",
         "red pepper",
+        "red pepper flake",
         "red potato",
         "red raisin",
         "red snapper",
@@ -369,7 +370,9 @@
         "beef shank",
         "beef stock",
         "brisket beef",
-        "chuck beef"
+        "chuck beef",
+        "shoulder beef",
+        "tenderloin beef"
     ],
     "herd": [
         "beef (beef herd)"
@@ -415,9 +418,18 @@
         "ribeye",
         "ribeye steak"
     ],
+    "shoulder": [
+        "lamb shoulder",
+        "pork shoulder",
+        "shoulder beef"
+    ],
     "sirloin": [
         "sirloin",
         "sirloin steak"
+    ],
+    "tenderloin": [
+        "tenderloin",
+        "tenderloin beef"
     ],
     "veal": [
         "veal",
@@ -629,6 +641,7 @@
         "french bread",
         "loaf bread",
         "loaves bread",
+        "pita bread",
         "sourdough bread",
         "stuffing bread",
         "wheat & rye (bread)",
@@ -653,12 +666,19 @@
     "breadcrumb": [
         "breadcrumb"
     ],
+    "breadstick": [
+        "breadstick"
+    ],
     "bun": [
         "bun",
         "hamburger bun"
     ],
     "countri": [
         "country bread"
+    ],
+    "cracker": [
+        "cracker",
+        "graham cracker"
     ],
     "crouton": [
         "crouton",
@@ -674,6 +694,16 @@
     "french": [
         "french bread",
         "french lentil"
+    ],
+    "graham": [
+        "graham cracker"
+    ],
+    "lavash": [
+        "lavash"
+    ],
+    "pita": [
+        "pita",
+        "pita bread"
     ],
     "sourdough": [
         "sourdough",
@@ -845,7 +875,8 @@
         "roquefort cheese",
         "stilton cheese",
         "swiss cheese",
-        "taleggio cheese"
+        "taleggio cheese",
+        "toscano cheese"
     ],
     "american": [
         "american cheese"
@@ -959,6 +990,10 @@
         "taleggio",
         "taleggio cheese"
     ],
+    "toscano": [
+        "toscano",
+        "toscano cheese"
+    ],
     "chicken": [
         "breast chicken",
         "chicken",
@@ -975,6 +1010,83 @@
         "liver chicken",
         "thigh chicken",
         "wing chicken"
+    ],
+    "chile": [
+        "bird's-eye chile",
+        "chile",
+        "chile de arbol",
+        "chile de \u00e1rbol",
+        "chile flake",
+        "green chile",
+        "guajillo chile",
+        "habanero chile",
+        "jalapeno chile",
+        "jalape\u00f1o chile",
+        "poblano chile",
+        "red chile",
+        "serrano chile"
+    ],
+    "flake": [
+        "chile flake",
+        "chili flake",
+        "hot pepper flake",
+        "pepper flake",
+        "red pepper flake"
+    ],
+    "chili": [
+        "chili",
+        "chili flake",
+        "chili pepper",
+        "green chili",
+        "guajillo chili",
+        "habanero chili",
+        "jalapeno chili",
+        "jalape\u00f1o chili",
+        "poblano chili",
+        "red chili",
+        "serrano chili"
+    ],
+    "hot": [
+        "hot mustard",
+        "hot pepper flake",
+        "hot water"
+    ],
+    "pepper": [
+        "aleppo pepper",
+        "bell pepper",
+        "black pepper",
+        "black pepper kosher salt",
+        "black pepper salt",
+        "cayenne pepper",
+        "chili pepper",
+        "ghost pepper",
+        "green bell pepper",
+        "green pepper",
+        "habanero pepper",
+        "hot pepper flake",
+        "jalapeno pepper",
+        "jalape\u00f1o pepper",
+        "kosher salt black pepper",
+        "orange bell pepper",
+        "orange pepper",
+        "pepper",
+        "pepper flake",
+        "pepper kosher salt",
+        "pepper salt",
+        "piquillo pepper",
+        "poblano pepper",
+        "red bell pepper",
+        "red pepper",
+        "red pepper flake",
+        "salt black pepper",
+        "salt pepper",
+        "scotch bonnet pepper",
+        "serrano pepper",
+        "shishito pepper",
+        "sweet red pepper",
+        "white pepper",
+        "yellow bell pepper",
+        "yellow pepper"
     ],
     "chive": [
         "chive"
@@ -1554,10 +1666,6 @@
         "lamb chop",
         "pork chop"
     ],
-    "shoulder": [
-        "lamb shoulder",
-        "pork shoulder"
-    ],
     "leg": [
         "chicken leg",
         "cornish game hen leg",
@@ -1736,10 +1844,6 @@
     ],
     "graini": [
         "grainy mustard"
-    ],
-    "hot": [
-        "hot mustard",
-        "hot water"
     ],
     "prepar": [
         "prepared mustard"
@@ -1974,39 +2078,8 @@
         "red bell pepper",
         "yellow bell pepper"
     ],
-    "pepper": [
-        "aleppo pepper",
-        "bell pepper",
-        "black pepper",
-        "black pepper kosher salt",
-        "black pepper salt",
-        "cayenne pepper",
-        "chili pepper",
-        "ghost pepper",
-        "green bell pepper",
-        "green pepper",
-        "habanero pepper",
-        "jalapeno pepper",
-        "jalape\u00f1o pepper",
-        "kosher salt black pepper",
-        "orange bell pepper",
-        "orange pepper",
-        "pepper",
-        "pepper kosher salt",
-        "pepper salt",
-        "piquillo pepper",
-        "poblano pepper",
-        "red bell pepper",
-        "red pepper",
-        "salt black pepper",
-        "salt pepper",
-        "scotch bonnet pepper",
-        "serrano pepper",
-        "shishito pepper",
-        "sweet red pepper",
-        "white pepper",
-        "yellow bell pepper",
-        "yellow pepper"
+    "bird's-ey": [
+        "bird's-eye chile"
     ],
     "bitter": [
         "bitter melon"
@@ -2038,20 +2111,6 @@
         "chard",
         "swiss chard"
     ],
-    "chile": [
-        "chile",
-        "chile de arbol",
-        "chile de \u00e1rbol",
-        "chile flake",
-        "green chile",
-        "guajillo chile",
-        "habanero chile",
-        "jalapeno chile",
-        "jalape\u00f1o chile",
-        "poblano chile",
-        "red chile",
-        "serrano chile"
-    ],
     "de": [
         "chile de arbol",
         "chile de \u00e1rbol",
@@ -2062,21 +2121,6 @@
     ],
     "\u00e1rbol": [
         "chile de \u00e1rbol"
-    ],
-    "flake": [
-        "chile flake",
-        "chili flake"
-    ],
-    "chili": [
-        "chili",
-        "chili flake",
-        "chili pepper",
-        "green chili",
-        "habanero chili",
-        "jalapeno chili",
-        "jalape\u00f1o chili",
-        "red chili",
-        "serrano chili"
     ],
     "cucumb": [
         "cucumber",
@@ -2095,7 +2139,8 @@
         "squash gourd"
     ],
     "guajillo": [
-        "guajillo chile"
+        "guajillo chile",
+        "guajillo chili"
     ],
     "habanero": [
         "habanero",
@@ -2131,6 +2176,7 @@
     "poblano": [
         "poblano",
         "poblano chile",
+        "poblano chili",
         "poblano pepper"
     ],
     "pumpkin": [
@@ -2443,6 +2489,7 @@
     "sausag": [
         "chorizo sausage",
         "italian sausage",
+        "kielbasa sausage",
         "mortadella sausage",
         "pepperoni sausage",
         "pork sausage",
@@ -2455,6 +2502,10 @@
     "italian": [
         "italian parsley",
         "italian sausage"
+    ],
+    "kielbasa": [
+        "kielbasa",
+        "kielbasa sausage"
     ],
     "mortadella": [
         "mortadella",
@@ -2989,6 +3040,9 @@
         "sesame oil",
         "sesame seed",
         "white sesame seed"
+    ],
+    "tahini": [
+        "tahini"
     ],
     "shallot": [
         "shallot"
