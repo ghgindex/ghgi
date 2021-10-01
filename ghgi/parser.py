@@ -421,9 +421,9 @@ def names_mods(text):
         elif word:
             cleaned_text += [word]
     text = ' '.join(cleaned_text)
-    # split on comma, or, and, semicolon
+    # split on comma, or, and, semicolon; don't return empty strings
     text = re.split(r',$|,\s|;$|;\s|\sor\s|\sor$|\sand\s|\sand$', text)
-    return [r.strip() for r in text if r], mods
+    return [r.strip() for r in text if r and r.strip()], mods
 
 
 def pad_parentheses(text):
@@ -626,7 +626,7 @@ def amounts(text_entry):
     qtys = [quantify(m[2]) for m in matches]
 
     remainder = re.sub(start_unit_regex, '', cleaned_text)
-    remainder = re.sub(units_regex, '', remainder)
+    remainder = re.sub(units_regex, ', ', remainder)
     remainder = re.sub(r'\([^\)]*\)', '', remainder)
     remainder = re.sub(r'\sor\s', ', ', remainder)
     remainder = re.sub(r'\sto\s', ' ', remainder)
