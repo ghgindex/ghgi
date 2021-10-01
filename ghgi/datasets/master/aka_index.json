@@ -155,6 +155,22 @@
         "asteraceae",
         11
     ],
+    "bacon": [
+        "bacon",
+        3
+    ],
+    "back bacon": [
+        "bacon",
+        8
+    ],
+    "canadian bacon": [
+        "bacon",
+        12
+    ],
+    "slab bacon": [
+        "bacon",
+        8
+    ],
     "baking powder": [
         "baking powder",
         11
@@ -231,6 +247,10 @@
         "beef (beef herd)",
         8
     ],
+    "beef tenderloin": [
+        "beef (beef herd)",
+        13
+    ],
     "brisket": [
         "beef (beef herd)",
         5
@@ -267,6 +287,10 @@
         "beef (beef herd)",
         10
     ],
+    "rib beef": [
+        "beef (beef herd)",
+        6
+    ],
     "ribeye": [
         "beef (beef herd)",
         4
@@ -274,6 +298,10 @@
     "ribeye steak": [
         "beef (beef herd)",
         10
+    ],
+    "short rib": [
+        "beef (beef herd)",
+        7
     ],
     "shoulder beef": [
         "beef (beef herd)",
@@ -294,10 +322,6 @@
     "tenderloin": [
         "beef (beef herd)",
         8
-    ],
-    "tenderloin beef": [
-        "beef (beef herd)",
-        13
     ],
     "veal": [
         "beef (beef herd)",
@@ -599,6 +623,26 @@
         "bread",
         15
     ],
+    "brine": [
+        "brine",
+        3
+    ],
+    "pickle juice": [
+        "brine",
+        10
+    ],
+    "pickle liquid": [
+        "brine",
+        11
+    ],
+    "pickling juice": [
+        "brine",
+        12
+    ],
+    "pickling liquid": [
+        "brine",
+        13
+    ],
     "butter": [
         "butter",
         4
@@ -714,6 +758,22 @@
     "farmed catfish": [
         "catfish",
         12
+    ],
+    "celery": [
+        "celery",
+        4
+    ],
+    "celery leaf": [
+        "celery",
+        9
+    ],
+    "celery rib": [
+        "celery",
+        8
+    ],
+    "celery root": [
+        "celery",
+        9
     ],
     "cephalopods": [
         "cephalopods",
@@ -2215,22 +2275,6 @@
         "other vegetables",
         12
     ],
-    "celery": [
-        "other vegetables",
-        4
-    ],
-    "celery leaf": [
-        "other vegetables",
-        9
-    ],
-    "celery rib": [
-        "other vegetables",
-        8
-    ],
-    "celery root": [
-        "other vegetables",
-        9
-    ],
     "chard": [
         "other vegetables",
         3
@@ -2526,6 +2570,10 @@
     "oyster": [
         "oyster",
         4
+    ],
+    "oyster sauce": [
+        "oyster sauce",
+        10
     ],
     "palm oil": [
         "palm oil",
@@ -2859,17 +2907,13 @@
         "pork",
         2
     ],
-    "back bacon": [
+    "andouille": [
         "pork",
-        8
+        7
     ],
-    "bacon": [
+    "andouille sausage": [
         "pork",
-        3
-    ],
-    "canadian bacon": [
-        "pork",
-        12
+        15
     ],
     "chorizo": [
         "pork",
@@ -2958,10 +3002,6 @@
     "sausage": [
         "pork",
         5
-    ],
-    "slab bacon": [
-        "pork",
-        8
     ],
     "potatoes": [
         "potatoes",

@@ -10,6 +10,8 @@ Create package documentation
 ice cream
 bread "loaf" vs "slice"?
 diff between crackers and bread? (sugar, shortening, ?)
+chile sauce/hot sauce, chili paste
+oyster sauce
 
 ## Note to self
 

@@ -23,6 +23,11 @@ NO_SOLO = {
     'yellow',
 }
 
+# words that must match
+MUST_MATCH = {
+    'leaf'
+}
+
 
 class GIN:
     """ A GIN index optimized for matching ingredient entries.
@@ -145,6 +150,10 @@ class GIN:
         for r in results:
             stemmed_result_tokens = cls.stem(cls.tokenize(r))
             if all([srt in stemmed_tokens for srt in stemmed_result_tokens]):
+                musts = [m for m in MUST_MATCH if m in stemmed_tokens]
+                if musts:
+                    if not all([m in stemmed_result_tokens for m in musts]):
+                        continue
                 full_matches[r] = results[r]
 
         results = full_matches

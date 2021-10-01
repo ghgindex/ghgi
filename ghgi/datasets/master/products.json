@@ -88,6 +88,18 @@
             "other vegetables": 100
         }
     },
+    "bacon": {
+        "g": 15,
+        "names": [
+            "back bacon",
+            "bacon",
+            "canadian bacon",
+            "slab bacon"
+        ],
+        "super": {
+            "pork": 100
+        }
+    },
     "baking powder": {
         "g": 5.0,
         "sg": 1.0,
@@ -165,6 +177,7 @@
             "beef brisket",
             "beef chuck",
             "beef shank",
+            "beef tenderloin",
             "brisket",
             "brisket beef",
             "chuck",
@@ -174,14 +187,15 @@
             "flatiron steak",
             "hamburger",
             "hanger steak",
+            "rib beef",
             "ribeye",
             "ribeye steak",
+            "short rib",
             "shoulder beef",
             "sirloin",
             "sirloin steak",
             "steak",
             "tenderloin",
-            "tenderloin beef",
             "veal"
         ],
         "sg": 1.01,
@@ -327,6 +341,23 @@
             "wheat & rye (bread)": 100.0
         }
     },
+    "brine": {
+        "g": 15.0,
+        "names": [
+            "brine",
+            "pickle juice",
+            "pickle liquid",
+            "pickling juice",
+            "pickling liquid"
+        ],
+        "sg": 1.0,
+        "super": {
+            "cane sugar": 5,
+            "salt": 5,
+            "vinegar": 50,
+            "water": 50
+        }
+    },
     "butter": {
         "g": 10,
         "names": [
@@ -418,6 +449,18 @@
         ],
         "super": {
             "fish (farmed)": 100
+        }
+    },
+    "celery": {
+        "g": 50,
+        "names": [
+            "celery",
+            "celery leaf",
+            "celery rib",
+            "celery root"
+        ],
+        "super": {
+            "other vegetables": 100
         }
     },
     "cephalopods": {
@@ -1400,10 +1443,6 @@
             "calabash",
             "cayenne",
             "cayenne pepper",
-            "celery",
-            "celery leaf",
-            "celery rib",
-            "celery root",
             "chard",
             "chile",
             "chile de arbol",
@@ -1488,6 +1527,18 @@
         },
         "names": [
             "oyster"
+        ]
+    },
+    "oyster sauce": {
+        "g": 15,
+        "sg": 1.0,
+        "super": {
+            "oyster": 80,
+            "salt": 7.5,
+            "water": 12.5
+        },
+        "names": [
+            "oyster sauce"
         ]
     },
     "palm oil": {
@@ -1646,9 +1697,8 @@
     "pork": {
         "g": 150,
         "names": [
-            "back bacon",
-            "bacon",
-            "canadian bacon",
+            "andouille",
+            "andouille sausage",
             "chorizo",
             "chorizo sausage",
             "ham",
@@ -1671,8 +1721,7 @@
             "salami",
             "salami sausage",
             "salt pork",
-            "sausage",
-            "slab bacon"
+            "sausage"
         ],
         "sg": 1.02,
         "super": {}

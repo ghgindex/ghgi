@@ -123,6 +123,7 @@ STOPWORDS |= {
     'gently',
     'halved',
     'halves',
+    'high-quality',
     'hulled',
     'interval',
     'kitchen',
@@ -149,6 +150,7 @@ STOPWORDS |= {
     'scrubbed',
     'seeded',
     'serving',
+    'similar',
     'softened',
     'stemmed',
     'store-bought',
@@ -393,6 +395,7 @@ def quantify(match):
 
 
 empty_parentheses = re.compile(r'\(\s*\)')
+naked_to = re.compile(r'\sto\s')
 
 
 def names_mods(text):
@@ -403,6 +406,7 @@ def names_mods(text):
     mods = []
     # TODO: should we strip out non-empty parentheticals?
     text = re.sub(empty_parentheses, '', text)
+    text = re.sub(naked_to, '', text)
 
     for mismatch in [('(', ')'), (')', '(')]:
         if mismatch[0] in text and not mismatch[1] in text:

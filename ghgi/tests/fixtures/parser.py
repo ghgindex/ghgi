@@ -133,6 +133,9 @@ REGEX_UNITS_DATA = [
 
 AMOUNTS_DATA = [
     # 8 ounces to 1 pound smoked kielbasa, diagonally sliced 1/4-inch-thick -> we don't handle the units change
+    # Oil (olive, coconut or grapeseed)
+    # 2 to 3 pounds root or dense vegetable, peeled if you like and cut into 1-inch chunks or wedges (carrots, beets, potatoes, sweet potatoes, turnips, radishes, rutabaga, winter squashes)
+    # Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving
     ('For the filling:', {
         'qtys': [{'per': None, 'qty': 1.0, 'qualifiers': [], 'plus': False, 'unit': 'ea'}],
         'names':[],

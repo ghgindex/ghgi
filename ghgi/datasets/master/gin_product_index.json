@@ -61,7 +61,9 @@
         "grapfruit juice",
         "lemon juice",
         "lime juice",
-        "orange juice"
+        "orange juice",
+        "pickle juice",
+        "pickling juice"
     ],
     "cider": [
         "apple cider",
@@ -86,6 +88,7 @@
         "barbeque sauce",
         "bbq sauce",
         "fish sauce",
+        "oyster sauce",
         "soy sauce"
     ],
     "applesauc": [
@@ -211,6 +214,21 @@
     "tarragon": [
         "tarragon",
         "tarragon leaf"
+    ],
+    "bacon": [
+        "back bacon",
+        "bacon",
+        "canadian bacon",
+        "slab bacon"
+    ],
+    "back": [
+        "back bacon"
+    ],
+    "canadian": [
+        "canadian bacon"
+    ],
+    "slab": [
+        "slab bacon"
     ],
     "bake": [
         "baking potato",
@@ -369,10 +387,11 @@
         "beef chuck",
         "beef shank",
         "beef stock",
+        "beef tenderloin",
         "brisket beef",
         "chuck beef",
-        "shoulder beef",
-        "tenderloin beef"
+        "rib beef",
+        "shoulder beef"
     ],
     "herd": [
         "beef (beef herd)"
@@ -391,6 +410,10 @@
     "shank": [
         "beef shank",
         "lamb shank"
+    ],
+    "tenderloin": [
+        "beef tenderloin",
+        "tenderloin"
     ],
     "steak": [
         "chuck steak",
@@ -414,9 +437,17 @@
     "hanger": [
         "hanger steak"
     ],
+    "rib": [
+        "celery rib",
+        "rib beef",
+        "short rib"
+    ],
     "ribey": [
         "ribeye",
         "ribeye steak"
+    ],
+    "short": [
+        "short rib"
     ],
     "shoulder": [
         "lamb shoulder",
@@ -426,10 +457,6 @@
     "sirloin": [
         "sirloin",
         "sirloin steak"
-    ],
-    "tenderloin": [
-        "tenderloin",
-        "tenderloin beef"
     ],
     "veal": [
         "veal",
@@ -747,6 +774,19 @@
         "whole wheat flour",
         "whole wheat pastry flour"
     ],
+    "brine": [
+        "brine"
+    ],
+    "pickl": [
+        "pickle juice",
+        "pickle liquid",
+        "pickling juice",
+        "pickling liquid"
+    ],
+    "liquid": [
+        "pickle liquid",
+        "pickling liquid"
+    ],
     "butter": [
         "butter",
         "peanut butter",
@@ -836,6 +876,17 @@
         "catfish",
         "catfish (farmed)",
         "farmed catfish"
+    ],
+    "celeri": [
+        "celery",
+        "celery leaf",
+        "celery rib",
+        "celery root"
+    ],
+    "root": [
+        "celery root",
+        "ginger root",
+        "root vegetables"
     ],
     "cephalopod": [
         "cephalopods"
@@ -1604,11 +1655,6 @@
     "candi": [
         "candied ginger"
     ],
-    "root": [
-        "celery root",
-        "ginger root",
-        "root vegetables"
-    ],
     "grain": [
         "grain",
         "grain alcohol"
@@ -1817,7 +1863,8 @@
     ],
     "oyster": [
         "oyster",
-        "oyster mushroom"
+        "oyster mushroom",
+        "oyster sauce"
     ],
     "porcini": [
         "porcini",
@@ -2097,15 +2144,6 @@
     "cayenn": [
         "cayenne",
         "cayenne pepper"
-    ],
-    "celeri": [
-        "celery",
-        "celery leaf",
-        "celery rib",
-        "celery root"
-    ],
-    "rib": [
-        "celery rib"
     ],
     "chard": [
         "chard",
@@ -2470,23 +2508,12 @@
         "pork shoulder",
         "salt pork"
     ],
-    "back": [
-        "back bacon"
-    ],
-    "bacon": [
-        "back bacon",
-        "bacon",
-        "canadian bacon",
-        "slab bacon"
-    ],
-    "canadian": [
-        "canadian bacon"
-    ],
-    "chorizo": [
-        "chorizo",
-        "chorizo sausage"
+    "andouill": [
+        "andouille",
+        "andouille sausage"
     ],
     "sausag": [
+        "andouille sausage",
         "chorizo sausage",
         "italian sausage",
         "kielbasa sausage",
@@ -2495,6 +2522,10 @@
         "pork sausage",
         "salami sausage",
         "sausage"
+    ],
+    "chorizo": [
+        "chorizo",
+        "chorizo sausage"
     ],
     "ham": [
         "ham"
@@ -2548,9 +2579,6 @@
         "sea salt",
         "seasoning salt",
         "table salt"
-    ],
-    "slab": [
-        "slab bacon"
     ],
     "fingerl": [
         "fingerling potato"

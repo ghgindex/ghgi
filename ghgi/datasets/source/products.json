@@ -98,6 +98,21 @@
             "other vegetables": 100
         }
     },
+    "bacon": {
+        "g": 15,
+        "names": {
+            "bacon": {
+                "dependent": [
+                    "back",
+                    "canadian",
+                    "slab"
+                ]
+            }
+        },
+        "super": {
+            "pork": 100
+        }
+    },
     "baking powder": {
         "g": 5.0,
         "sg": 1.0,
@@ -170,15 +185,17 @@
                     "_brisket",
                     "_chuck",
                     "_shank",
+                    "rib",
                     "shoulder"
                 ],
                 "independent": [
+                    "_tenderloin",
                     "brisket",
-                    "chuck",
-                    "tenderloin"
+                    "chuck"
                 ]
             },
             "hamburger": {},
+            "short rib": {},
             "steak": {
                 "dependent": [
                     "flank",
@@ -349,6 +366,30 @@
             "wheat & rye (bread)": 100.0
         }
     },
+    "brine": {
+        "g": 15.0,
+        "names": {
+            "~pickle": {
+                "dependent": [
+                    "_juice",
+                    "_liquid"
+                ]
+            },
+            "~pickling": {
+                "dependent": [
+                    "_juice",
+                    "_liquid"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {
+            "cane sugar": 5,
+            "salt": 5,
+            "vinegar": 50,
+            "water": 50
+        }
+    },
     "butter": {
         "g": 10,
         "names": {
@@ -442,6 +483,21 @@
         },
         "super": {
             "fish (farmed)": 100
+        }
+    },
+    "celery": {
+        "g": 50,
+        "names": {
+            "celery": {
+                "dependent": [
+                    "_leaf",
+                    "_rib",
+                    "_root"
+                ]
+            }
+        },
+        "super": {
+            "other vegetables": 100
         }
     },
     "cephalopods": {
@@ -1453,13 +1509,6 @@
                 ]
             },
             "calabash": {},
-            "celery": {
-                "dependent": [
-                    "_leaf",
-                    "_rib",
-                    "_root"
-                ]
-            },
             "chard": {
                 "dependent": [
                     "swiss"
@@ -1567,6 +1616,15 @@
     "oyster": {
         "super": {
             "bivalves (farmed)": 100
+        }
+    },
+    "oyster sauce": {
+        "g": 15,
+        "sg": 1.0,
+        "super": {
+            "oyster": 80,
+            "salt": 7.5,
+            "water": 12.5
         }
     },
     "palm oil": {
@@ -1739,13 +1797,6 @@
     "pork": {
         "g": 150,
         "names": {
-            "bacon": {
-                "dependent": [
-                    "back",
-                    "canadian",
-                    "slab"
-                ]
-            },
             "ham": {},
             "pancetta": {},
             "pork": {
@@ -1765,6 +1816,7 @@
                     "italian"
                 ],
                 "independent": [
+                    "andouille",
                     "chorizo",
                     "kielbasa",
                     "mortadella",
