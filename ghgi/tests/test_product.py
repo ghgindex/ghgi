@@ -1,4 +1,3 @@
-from os import PRIO_PGRP
 from unittest import TestCase
 from unittest.mock import patch
 

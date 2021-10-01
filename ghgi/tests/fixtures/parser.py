@@ -133,6 +133,12 @@ REGEX_UNITS_DATA = [
 
 AMOUNTS_DATA = [
     # 8 ounces to 1 pound smoked kielbasa, diagonally sliced 1/4-inch-thick -> we don't handle the units change
+    ('For the filling:', {
+        'qtys': [{'per': None, 'qty': 1.0, 'qualifiers': [], 'plus': False, 'unit': 'ea'}],
+        'names':[],
+        'mods':[],
+        'stripped_words': [],
+    }),
     ('6 cups <a href="https://cooking.nytimes.com/recipes/1021916-vegan-bolognese">vegan Bolognese</a>', {
         'qtys': [{'unit': 'cup', 'qty': 6.0, 'per': None, 'plus': False, 'qualifiers': []}],
         'names':['vegan bolognese'],

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from os import PRIO_PGRP
 import re
 import logging
 import inflect
@@ -487,6 +486,13 @@ def pad_ranges(text):
     return re.sub(r'-[Tt][Oo]-', ' to ', text)
 
 
+directive = re.compile(r'^[Ff][Oo][Rr]\s[Tt][Hh][Ee].*:')
+
+
+def no_directives(text):
+    return re.sub(directive, '', text)
+
+
 def strip_html_tags(text):
     text = re.sub(tag_start, '', text)
     text = re.sub(tag_end, '', text)
@@ -576,6 +582,9 @@ def amounts(text_entry):
 
     if not text_entry:
         return {'error': True}
+
+    # ignore directives
+    text_entry = no_directives(text_entry)
 
     # remove html tags
     text_entry = strip_html_tags(text_entry)
