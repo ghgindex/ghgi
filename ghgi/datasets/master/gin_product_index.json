@@ -37,6 +37,8 @@
     ],
     "past": [
         "anchovy paste",
+        "chile paste",
+        "chili paste",
         "tomato paste"
     ],
     "appl": [
@@ -88,9 +90,13 @@
         "barbecue sauce",
         "barbeque sauce",
         "bbq sauce",
+        "chile sauce",
+        "chili sauce",
         "fish sauce",
+        "hot sauce",
         "oyster sauce",
-        "soy sauce"
+        "soy sauce",
+        "tabasco sauce"
     ],
     "applesauc": [
         "applesauce"
@@ -531,7 +537,8 @@
         "raspberry"
     ],
     "strawberri": [
-        "strawberry"
+        "strawberry",
+        "strawberry ice cream"
     ],
     "bivalv": [
         "bivalves",
@@ -839,12 +846,16 @@
         "granulated sugar"
     ],
     "ice": [
+        "chocolate ice cream",
         "ice",
+        "ice cream",
         "ice cube",
         "ice water",
         "iced coffee",
         "iced tea",
-        "icing sugar"
+        "icing sugar",
+        "strawberry ice cream",
+        "vanilla ice cream"
     ],
     "light": [
         "light brown sugar",
@@ -1073,6 +1084,8 @@
         "chile de arbol",
         "chile de \u00e1rbol",
         "chile flake",
+        "chile paste",
+        "chile sauce",
         "green chile",
         "guajillo chile",
         "habanero chile",
@@ -1092,7 +1105,9 @@
     "chili": [
         "chili",
         "chili flake",
+        "chili paste",
         "chili pepper",
+        "chili sauce",
         "green chili",
         "guajillo chili",
         "habanero chili",
@@ -1105,6 +1120,7 @@
     "hot": [
         "hot mustard",
         "hot pepper flake",
+        "hot sauce",
         "hot water"
     ],
     "pepper": [
@@ -1143,6 +1159,9 @@
         "white pepper",
         "yellow bell pepper",
         "yellow pepper"
+    ],
+    "sambal": [
+        "sambal"
     ],
     "chive": [
         "chive"
@@ -1393,6 +1412,7 @@
         "wild tilapia"
     ],
     "cream": [
+        "chocolate ice cream",
         "coffee cream",
         "cream",
         "cream cheese",
@@ -1400,10 +1420,13 @@
         "heavy cream",
         "heavy whipped cream",
         "heavy whipping cream",
+        "ice cream",
         "light cream",
         "philadelphia cream cheese",
         "philly cream cheese",
         "sour cream",
+        "strawberry ice cream",
+        "vanilla ice cream",
         "whipped cream",
         "whipping cream"
     ],
@@ -1458,6 +1481,7 @@
         "bittersweet chocolate",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "dark chocolate",
         "milk chocolate",
         "semi sweet chocolate",
@@ -1702,6 +1726,22 @@
     ],
     "honey": [
         "honey"
+    ],
+    "tabasco": [
+        "tabasco",
+        "tabasco sauce"
+    ],
+    "gelato": [
+        "gelato"
+    ],
+    "icecream": [
+        "icecream"
+    ],
+    "vanilla": [
+        "vanilla",
+        "vanilla bean",
+        "vanilla extract",
+        "vanilla ice cream"
     ],
     "ketchup": [
         "ketchup"
@@ -3092,6 +3132,12 @@
     "shallot": [
         "shallot"
     ],
+    "sherbet": [
+        "sherbet"
+    ],
+    "sherbert": [
+        "sherbert"
+    ],
     "simpl": [
         "simple syrup"
     ],
@@ -3103,6 +3149,9 @@
     ],
     "nonfat": [
         "nonfat milk"
+    ],
+    "sorbet": [
+        "sorbet"
     ],
     "soy": [
         "soy milk",
@@ -3273,11 +3322,6 @@
     ],
     "lovag": [
         "lovage"
-    ],
-    "vanilla": [
-        "vanilla",
-        "vanilla bean",
-        "vanilla extract"
     ],
     "extract": [
         "vanilla extract"

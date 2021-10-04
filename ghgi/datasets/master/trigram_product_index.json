@@ -164,6 +164,7 @@
         "bok choy",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "chorizo",
         "chorizo sausage",
         "dark chocolate",
@@ -207,6 +208,8 @@
     ],
     " pa": [
         "anchovy paste",
+        "chile paste",
+        "chili paste",
         "farfalle pasta",
         "fettucine pasta",
         "flat leaf parsley",
@@ -233,6 +236,8 @@
     ],
     "pas": [
         "anchovy paste",
+        "chile paste",
+        "chili paste",
         "farfalle pasta",
         "fettucine pasta",
         "lasagna pasta",
@@ -266,6 +271,8 @@
         "breast quail",
         "breast turkey",
         "chicken breast",
+        "chile paste",
+        "chili paste",
         "cornish game hen breast",
         "cornish hen breast",
         "duck breast",
@@ -298,6 +305,8 @@
         "anchovy paste",
         "asteraceae",
         "beefsteak tomato",
+        "chile paste",
+        "chili paste",
         "chuck steak",
         "flank steak",
         "flatiron steak",
@@ -385,6 +394,8 @@
         "chile de arbol",
         "chile de \u00e1rbol",
         "chile flake",
+        "chile paste",
+        "chile sauce",
         "dijon style mustard",
         "farfalle pasta",
         "maple syrup",
@@ -442,14 +453,17 @@
         "basmati rice",
         "brown rice",
         "carnaroli rice",
+        "chocolate ice cream",
         "citrus slice",
         "grapefruit slice",
         "grapfruit juice",
         "ice",
+        "ice cream",
         "ice cube",
         "ice water",
         "iceberg",
         "iceberg lettuce",
+        "icecream",
         "iced coffee",
         "iced tea",
         "jasmine rice",
@@ -468,7 +482,9 @@
         "ricemilk",
         "spice",
         "spice blend",
+        "strawberry ice cream",
         "sushi rice",
+        "vanilla ice cream",
         "white rice",
         "wild rice"
     ],
@@ -479,12 +495,16 @@
         "blue cheese",
         "chinese cabbage",
         "chocolate chip",
+        "chocolate ice cream",
         "coffee cream",
         "cottage cheese",
         "gruyere cheese",
         "gruy\u00e8re cheese",
+        "ice cream",
         "ice cube",
-        "mascarpone cheese"
+        "mascarpone cheese",
+        "strawberry ice cream",
+        "vanilla ice cream"
     ],
     " ci": [
         "apple cider",
@@ -698,6 +718,7 @@
         "barbeque sauce",
         "black sesame seed",
         "cane sugar",
+        "chile sauce",
         "fleur de sel",
         "lime slice",
         "maple syrup",
@@ -719,9 +740,12 @@
         "bbq sauce",
         "black pepper kosher salt",
         "black pepper salt",
+        "chile sauce",
+        "chili sauce",
         "chorizo sausage",
         "farmed salmon",
         "fish sauce",
+        "hot sauce",
         "italian sausage",
         "kielbasa sausage",
         "kosher salt",
@@ -736,6 +760,7 @@
         "sea salt",
         "seasoning salt",
         "soy sauce",
+        "tabasco sauce",
         "table salt",
         "wild salmon"
     ],
@@ -746,8 +771,11 @@
         "barbecue sauce",
         "barbeque sauce",
         "bbq sauce",
+        "chile sauce",
+        "chili sauce",
         "chorizo sausage",
         "fish sauce",
+        "hot sauce",
         "italian sausage",
         "kielbasa sausage",
         "mortadella sausage",
@@ -756,7 +784,8 @@
         "pork sausage",
         "salami sausage",
         "sausage",
-        "soy sauce"
+        "soy sauce",
+        "tabasco sauce"
     ],
     "auc": [
         "apple sauce",
@@ -764,9 +793,13 @@
         "barbecue sauce",
         "barbeque sauce",
         "bbq sauce",
+        "chile sauce",
+        "chili sauce",
         "fish sauce",
+        "hot sauce",
         "oyster sauce",
-        "soy sauce"
+        "soy sauce",
+        "tabasco sauce"
     ],
     "uce": [
         "apple sauce",
@@ -776,13 +809,17 @@
         "bbq sauce",
         "bibb lettuce",
         "boston lettuce",
+        "chile sauce",
+        "chili sauce",
         "fish sauce",
+        "hot sauce",
         "iceberg lettuce",
         "lettuce",
         "lettuce leaf",
         "oyster sauce",
         "romaine lettuce",
-        "soy sauce"
+        "soy sauce",
+        "tabasco sauce"
     ],
     "esa": [
         "applesauce",
@@ -846,7 +883,8 @@
         "mozzarella cheese",
         "tortilla chip",
         "vanilla bean",
-        "vanilla extract"
+        "vanilla extract",
+        "vanilla ice cream"
     ],
     "a a": [
         "gala apple"
@@ -1703,7 +1741,9 @@
         "iceberg lettuce",
         "kirby cucumber",
         "raspberry",
-        "strawberry"
+        "sherbert",
+        "strawberry",
+        "strawberry ice cream"
     ],
     "erg": [
         "iceberg",
@@ -1718,12 +1758,16 @@
         "pickling liquid"
     ],
     "ce ": [
+        "chocolate ice cream",
+        "ice cream",
         "ice cube",
         "ice water",
         "lettuce leaf",
         "rice milk",
         "rice vinegar",
-        "spice blend"
+        "spice blend",
+        "strawberry ice cream",
+        "vanilla ice cream"
     ],
     "e l": [
         "goose leg",
@@ -2824,6 +2868,8 @@
         "other fruit",
         "other vegetables",
         "pepper kosher salt",
+        "sherbert",
+        "sherbet",
         "sherry vinegar",
         "sour cherry"
     ],
@@ -3226,11 +3272,13 @@
         "bittersweet chocolate",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "dark chocolate",
         "flat leaf parsley",
         "flat leaf parsley leaf",
         "flat-leaf parsley",
         "flatiron steak",
+        "gelato",
         "granulated sugar",
         "milk chocolate",
         "semi sweet chocolate",
@@ -3289,7 +3337,8 @@
         "lamb shank",
         "lamb shoulder",
         "leg lamb",
-        "rack lamb"
+        "rack lamb",
+        "sambal"
     ],
     "mbu": [
         "hamburger",
@@ -3583,7 +3632,8 @@
     "t s": [
         "beet sugar",
         "butternut squash",
-        "grapefruit slice"
+        "grapefruit slice",
+        "hot sauce"
     ],
     " su": [
         "beet sugar",
@@ -3654,7 +3704,8 @@
         "serrano pepper",
         "sherry vinegar",
         "sour cherry",
-        "strawberry"
+        "strawberry",
+        "strawberry ice cream"
     ],
     "rri": [
         "berries & grapes",
@@ -3738,7 +3789,8 @@
         "raspberry",
         "sherry vinegar",
         "sour cherry",
-        "strawberry"
+        "strawberry",
+        "strawberry ice cream"
     ],
     "bla": [
         "black bean",
@@ -3824,6 +3876,7 @@
         "farmed striped bass",
         "pastry flour",
         "strawberry",
+        "strawberry ice cream",
         "string bean",
         "striped bass",
         "striped bass (farmed)",
@@ -3834,6 +3887,7 @@
         "extra virgin olive oil",
         "neutral oil",
         "strawberry",
+        "strawberry ice cream",
         "vanilla extract"
     ],
     "raw": [
@@ -3842,13 +3896,16 @@
         "prawn (farmed)",
         "prawns (wild) (wild)",
         "strawberry",
+        "strawberry ice cream",
         "wild prawns (wild)"
     ],
     "awb": [
-        "strawberry"
+        "strawberry",
+        "strawberry ice cream"
     ],
     "wbe": [
-        "strawberry"
+        "strawberry",
+        "strawberry ice cream"
     ],
     "biv": [
         "bivalves",
@@ -4137,6 +4194,7 @@
         "broccolini",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "collard green",
         "dark chocolate",
         "milk chocolate",
@@ -4168,7 +4226,9 @@
         "broccoli rabe",
         "carnaroli rice",
         "chili flake",
+        "chili paste",
         "chili pepper",
+        "chili sauce",
         "ravioli pasta"
     ],
     "i f": [
@@ -4493,10 +4553,14 @@
         "chile de arbol",
         "chile de \u00e1rbol",
         "chile flake",
+        "chile paste",
+        "chile sauce",
         "chilean sea bass",
         "chili",
         "chili flake",
+        "chili paste",
         "chili pepper",
+        "chili sauce",
         "chinese cabbage",
         "chive",
         "chocolate chip",
@@ -4617,7 +4681,8 @@
         "tortilla chip",
         "vanilla",
         "vanilla bean",
-        "vanilla extract"
+        "vanilla extract",
+        "vanilla ice cream"
     ],
     "lar": [
         "collard green"
@@ -4663,6 +4728,7 @@
         "pastry flour",
         "rosemary leaf",
         "sherry vinegar",
+        "strawberry ice cream",
         "whole wheat pastry flour"
     ],
     "y m": [
@@ -4952,6 +5018,7 @@
         "boiling water",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "coconut water",
         "dark chocolate",
         "date",
@@ -4991,6 +5058,7 @@
         "watercress"
     ],
     "cre": [
+        "chocolate ice cream",
         "coffee cream",
         "cream",
         "cream cheese",
@@ -5001,10 +5069,14 @@
         "heavy cream",
         "heavy whipped cream",
         "heavy whipping cream",
+        "ice cream",
+        "icecream",
         "light cream",
         "philadelphia cream cheese",
         "philly cream cheese",
         "sour cream",
+        "strawberry ice cream",
+        "vanilla ice cream",
         "watercress",
         "whipped cream",
         "whipping cream"
@@ -5088,6 +5160,7 @@
         "breast quail",
         "breast turkey",
         "chicken breast",
+        "chocolate ice cream",
         "coffee cream",
         "cornish game hen breast",
         "cornish hen breast",
@@ -5107,6 +5180,8 @@
         "heavy cream",
         "heavy whipped cream",
         "heavy whipping cream",
+        "ice cream",
+        "icecream",
         "light cream",
         "loaf bread",
         "loaves bread",
@@ -5117,8 +5192,10 @@
         "quail breast",
         "sour cream",
         "sourdough bread",
+        "strawberry ice cream",
         "stuffing bread",
         "turkey breast",
+        "vanilla ice cream",
         "wheat & rye (bread)",
         "whipped cream",
         "whipping cream",
@@ -5205,6 +5282,7 @@
     "te ": [
         "baguette bread",
         "chocolate chip",
+        "chocolate ice cream",
         "dry white wine",
         "orecchiette pasta",
         "white bean",
@@ -5495,16 +5573,20 @@
         "philly cream cheese"
     ],
     " cr": [
+        "chocolate ice cream",
         "coffee cream",
         "farmed crab",
         "graham cracker",
         "heavy cream",
         "heavy whipped cream",
         "heavy whipping cream",
+        "ice cream",
         "light cream",
         "philadelphia cream cheese",
         "philly cream cheese",
         "sour cream",
+        "strawberry ice cream",
+        "vanilla ice cream",
         "whipped cream",
         "whipping cream",
         "wild crab"
@@ -6381,6 +6463,7 @@
     "o s": [
         "chorizo sausage",
         "potato starch",
+        "tabasco sauce",
         "turbinado sugar"
     ],
     "cap": [
@@ -6435,7 +6518,8 @@
         "spanish onion",
         "vanilla",
         "vanilla bean",
-        "vanilla extract"
+        "vanilla extract",
+        "vanilla ice cream"
     ],
     "nio": [
         "green onion",
@@ -6875,7 +6959,8 @@
     ],
     "ert": [
         "camembert",
-        "camembert cheese"
+        "camembert cheese",
+        "sherbert"
     ],
     "t c": [
         "bittersweet chocolate",
@@ -7045,6 +7130,7 @@
         "canola oil",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "dark chocolate",
         "dark molasses",
         "gorgonzola",
@@ -7186,7 +7272,9 @@
     ],
     "asc": [
         "mascarpone",
-        "mascarpone cheese"
+        "mascarpone cheese",
+        "tabasco",
+        "tabasco sauce"
     ],
     "sca": [
         "bay scallop",
@@ -7693,10 +7781,14 @@
         "chile de arbol",
         "chile de \u00e1rbol",
         "chile flake",
+        "chile paste",
+        "chile sauce",
         "chilean sea bass",
         "chili",
         "chili flake",
+        "chili paste",
         "chili pepper",
+        "chili sauce",
         "green chile",
         "green chili",
         "guajillo chile",
@@ -7722,6 +7814,8 @@
         "chile de arbol",
         "chile de \u00e1rbol",
         "chile flake",
+        "chile paste",
+        "chile sauce",
         "chilean sea bass",
         "green chile",
         "guajillo chile",
@@ -7764,7 +7858,9 @@
         "boiling water",
         "chili",
         "chili flake",
+        "chili paste",
         "chili pepper",
+        "chili sauce",
         "green chili",
         "guajillo chili",
         "habanero chili",
@@ -7777,11 +7873,13 @@
     "hot": [
         "hot mustard",
         "hot pepper flake",
+        "hot sauce",
         "hot water"
     ],
     "ot ": [
         "hot mustard",
         "hot pepper flake",
+        "hot sauce",
         "hot water",
         "root vegetables"
     ],
@@ -8009,6 +8107,61 @@
         "sweet red pepper",
         "wild prawns (wild)",
         "yukon gold potato"
+    ],
+    "i s": [
+        "chili sauce",
+        "pepperoni sausage",
+        "salami sausage",
+        "semi sweet chocolate",
+        "spaghetti squash"
+    ],
+    "e p": [
+        "cayenne pepper",
+        "cheese pierogy",
+        "cheese potato pierogy",
+        "chile paste",
+        "farfalle pasta",
+        "fettucine pasta",
+        "herbes de provence",
+        "lasagne pasta",
+        "lime peel",
+        "linguine pasta",
+        "noodle pasta",
+        "one percent milk",
+        "orange peel",
+        "orange pepper",
+        "orecchiette pasta",
+        "penne pasta",
+        "potato cheese pierogy",
+        "tagliatelle pasta",
+        "white pepper",
+        "white potato"
+    ],
+    "i p": [
+        "chili paste",
+        "chili pepper",
+        "dashi powder",
+        "macaroni pasta",
+        "ravioli pasta",
+        "spaghetti pasta"
+    ],
+    "sam": [
+        "balsamic",
+        "balsamic vinegar",
+        "black sesame seed",
+        "sambal",
+        "sesame",
+        "sesame oil",
+        "sesame seed",
+        "white sesame seed"
+    ],
+    "mba": [
+        "sambal"
+    ],
+    "bal": [
+        "balsamic",
+        "balsamic vinegar",
+        "sambal"
     ],
     "hiv": [
         "chive"
@@ -8368,27 +8521,6 @@
         "wing cornish game hen",
         "wing game hen"
     ],
-    "e p": [
-        "cayenne pepper",
-        "cheese pierogy",
-        "cheese potato pierogy",
-        "farfalle pasta",
-        "fettucine pasta",
-        "herbes de provence",
-        "lasagne pasta",
-        "lime peel",
-        "linguine pasta",
-        "noodle pasta",
-        "one percent milk",
-        "orange peel",
-        "orange pepper",
-        "orecchiette pasta",
-        "penne pasta",
-        "potato cheese pierogy",
-        "tagliatelle pasta",
-        "white pepper",
-        "white potato"
-    ],
     "e r": [
         "jasmine rice",
         "lime rind",
@@ -8499,6 +8631,7 @@
         "bittersweet chocolate",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "cocoa powder",
         "coconut",
         "coconut milk",
@@ -8967,7 +9100,8 @@
         "tortilla chip",
         "vanilla",
         "vanilla bean",
-        "vanilla extract"
+        "vanilla extract",
+        "vanilla ice cream"
     ],
     "hip": [
         "chocolate chip",
@@ -9083,6 +9217,7 @@
     ],
     "eam": [
         "bream",
+        "chocolate ice cream",
         "coffee cream",
         "cream",
         "cream cheese",
@@ -9090,10 +9225,14 @@
         "heavy cream",
         "heavy whipped cream",
         "heavy whipping cream",
+        "ice cream",
+        "icecream",
         "light cream",
         "philadelphia cream cheese",
         "philly cream cheese",
         "sour cream",
+        "strawberry ice cream",
+        "vanilla ice cream",
         "whipped cream",
         "whipping cream"
     ],
@@ -9324,6 +9463,7 @@
         "bittersweet chocolate",
         "chocolate",
         "chocolate chip",
+        "chocolate ice cream",
         "dark chocolate",
         "milk chocolate",
         "semi sweet chocolate",
@@ -9354,12 +9494,6 @@
         "semi sweet chocolate",
         "semisweet chocolate"
     ],
-    "i s": [
-        "pepperoni sausage",
-        "salami sausage",
-        "semi sweet chocolate",
-        "spaghetti squash"
-    ],
     " sw": [
         "semi sweet chocolate"
     ],
@@ -9387,13 +9521,6 @@
         "dashi powder",
         "mahi mahi",
         "sushi rice"
-    ],
-    "i p": [
-        "chili pepper",
-        "dashi powder",
-        "macaroni pasta",
-        "ravioli pasta",
-        "spaghetti pasta"
     ],
     "rsa": [
         "demersal fish",
@@ -9435,7 +9562,9 @@
         "kielbasa sausage",
         "sea bass",
         "striped bass",
-        "striped bass (farmed)"
+        "striped bass (farmed)",
+        "tabasco",
+        "tabasco sauce"
     ],
     "cod": [
         "cod"
@@ -9940,7 +10069,9 @@
     ],
     "erb": [
         "herbes de provence",
-        "herbs"
+        "herbs",
+        "sherbert",
+        "sherbet"
     ],
     "rbs": [
         "herbs"
@@ -9948,7 +10079,10 @@
     "rbe": [
         "barbecue sauce",
         "barbeque sauce",
-        "herbes de provence"
+        "herbes de provence",
+        "sherbert",
+        "sherbet",
+        "sorbet"
     ],
     "bes": [
         "herbes de provence"
@@ -9979,6 +10113,107 @@
     "ney": [
         "honey",
         "kidney bean"
+    ],
+    "tab": [
+        "other vegetables",
+        "root vegetables",
+        "rutabaga",
+        "tabasco",
+        "tabasco sauce",
+        "table salt",
+        "vegetable broth",
+        "vegetable oil",
+        "vegetable stock"
+    ],
+    "aba": [
+        "calabash",
+        "habanero",
+        "habanero chile",
+        "habanero chili",
+        "habanero pepper",
+        "rutabaga",
+        "tabasco",
+        "tabasco sauce"
+    ],
+    "sco": [
+        "scotch bonnet",
+        "scotch bonnet pepper",
+        "tabasco",
+        "tabasco sauce"
+    ],
+    "co ": [
+        "tabasco sauce"
+    ],
+    "e i": [
+        "chocolate ice cream"
+    ],
+    " ic": [
+        "chocolate ice cream",
+        "strawberry ice cream",
+        "vanilla ice cream"
+    ],
+    "gel": [
+        "gelato"
+    ],
+    "ela": [
+        "gelato",
+        "pelagic fish <30 cm",
+        "pelagic fish >30 cm"
+    ],
+    "ato": [
+        "baking potato",
+        "beefsteak tomato",
+        "cheese potato pierogy",
+        "cherry tomato",
+        "fingerling potato",
+        "gelato",
+        "grape tomato",
+        "heirloom tomato",
+        "idaho potato",
+        "new potato",
+        "plum tomato",
+        "potato",
+        "potato cheese pierogy",
+        "potato pierogy",
+        "potato starch",
+        "potatoes",
+        "red potato",
+        "roma tomato",
+        "russet potato",
+        "san marzano tomato",
+        "scalloped potato",
+        "sun dried tomato",
+        "sun-dried tomato",
+        "sweet potato",
+        "tomato",
+        "tomato paste",
+        "tomatoes",
+        "white potato",
+        "yukon gold potato"
+    ],
+    "cec": [
+        "icecream"
+    ],
+    "ecr": [
+        "icecream"
+    ],
+    "y i": [
+        "strawberry ice cream"
+    ],
+    "van": [
+        "vanilla",
+        "vanilla bean",
+        "vanilla extract",
+        "vanilla ice cream"
+    ],
+    "nil": [
+        "vanilla",
+        "vanilla bean",
+        "vanilla extract",
+        "vanilla ice cream"
+    ],
+    "a i": [
+        "vanilla ice cream"
     ],
     "etc": [
         "ketchup"
@@ -10694,6 +10929,8 @@
         "kosher salt",
         "kosher salt black pepper",
         "pepper kosher salt",
+        "sherbert",
+        "sherbet",
         "sherry vinegar"
     ],
     "hew": [
@@ -11158,15 +11395,6 @@
         "vegetable oil",
         "vegetable stock"
     ],
-    "tab": [
-        "other vegetables",
-        "root vegetables",
-        "rutabaga",
-        "table salt",
-        "vegetable broth",
-        "vegetable oil",
-        "vegetable stock"
-    ],
     "abl": [
         "other vegetables",
         "root vegetables",
@@ -11269,14 +11497,6 @@
     ],
     "rnu": [
         "butternut squash"
-    ],
-    "aba": [
-        "calabash",
-        "habanero",
-        "habanero chile",
-        "habanero chili",
-        "habanero pepper",
-        "rutabaga"
     ],
     "cay": [
         "cayenne",
@@ -11588,10 +11808,6 @@
     ],
     "uba": [
         "rhubarb"
-    ],
-    "sco": [
-        "scotch bonnet",
-        "scotch bonnet pepper"
     ],
     "otc": [
         "scotch bonnet",
@@ -12058,10 +12274,6 @@
         "pelagic fish <30 cm",
         "pelagic fish >30 cm"
     ],
-    "ela": [
-        "pelagic fish <30 cm",
-        "pelagic fish >30 cm"
-    ],
     "lag": [
         "pelagic fish <30 cm",
         "pelagic fish >30 cm"
@@ -12370,36 +12582,6 @@
         "russet potato",
         "scalloped potato",
         "sweet potato",
-        "white potato",
-        "yukon gold potato"
-    ],
-    "ato": [
-        "baking potato",
-        "beefsteak tomato",
-        "cheese potato pierogy",
-        "cherry tomato",
-        "fingerling potato",
-        "grape tomato",
-        "heirloom tomato",
-        "idaho potato",
-        "new potato",
-        "plum tomato",
-        "potato",
-        "potato cheese pierogy",
-        "potato pierogy",
-        "potato starch",
-        "potatoes",
-        "red potato",
-        "roma tomato",
-        "russet potato",
-        "san marzano tomato",
-        "scalloped potato",
-        "sun dried tomato",
-        "sun-dried tomato",
-        "sweet potato",
-        "tomato",
-        "tomato paste",
-        "tomatoes",
         "white potato",
         "yukon gold potato"
     ],
@@ -13356,20 +13538,15 @@
         "scallop (farmed)",
         "scallop (wild)"
     ],
-    "sam": [
-        "balsamic",
-        "balsamic vinegar",
-        "black sesame seed",
-        "sesame",
-        "sesame oil",
-        "sesame seed",
-        "white sesame seed"
-    ],
     "tah": [
         "tahini"
     ],
     "lot": [
         "shallot"
+    ],
+    "bet": [
+        "sherbet",
+        "sorbet"
     ],
     "wns": [
         "prawns (wild) (wild)",
@@ -13409,6 +13586,12 @@
     ],
     "nfa": [
         "nonfat milk"
+    ],
+    "sor": [
+        "sorbet"
+    ],
+    "orb": [
+        "sorbet"
     ],
     "soy": [
         "soy milk",
@@ -13697,16 +13880,6 @@
     "vag": [
         "lovage"
     ],
-    "van": [
-        "vanilla",
-        "vanilla bean",
-        "vanilla extract"
-    ],
-    "nil": [
-        "vanilla",
-        "vanilla bean",
-        "vanilla extract"
-    ],
     "a e": [
         "vanilla extract"
     ],
@@ -13841,10 +14014,6 @@
     ],
     "ur)": [
         "wheat & rye (flour)"
-    ],
-    "bal": [
-        "balsamic",
-        "balsamic vinegar"
     ],
     "als": [
         "balsamic",

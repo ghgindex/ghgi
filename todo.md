@@ -8,11 +8,9 @@ Flag products with no origin or food value information in validate
 
 ## Catalog
 
-ice cream
 bread "loaf" vs "slice"?
 diff between crackers and bread? (sugar, shortening, ?)
 chile sauce/hot sauce, chili paste
-oyster sauce
 
 ## Note to self
 

@@ -1031,6 +1031,26 @@
         "chile flake",
         14
     ],
+    "chili sauce": [
+        "chili sauce",
+        9
+    ],
+    "chile paste": [
+        "chili sauce",
+        9
+    ],
+    "chile sauce": [
+        "chili sauce",
+        9
+    ],
+    "chili paste": [
+        "chili sauce",
+        9
+    ],
+    "sambal": [
+        "chili sauce",
+        4
+    ],
     "chive": [
         "chive",
         3
@@ -1654,6 +1674,42 @@
     "honey": [
         "honey",
         3
+    ],
+    "hot sauce": [
+        "hot sauce",
+        7
+    ],
+    "tabasco": [
+        "hot sauce",
+        5
+    ],
+    "tabasco sauce": [
+        "hot sauce",
+        11
+    ],
+    "ice cream": [
+        "ice cream",
+        7
+    ],
+    "chocolate ice cream": [
+        "ice cream",
+        17
+    ],
+    "gelato": [
+        "ice cream",
+        4
+    ],
+    "icecream": [
+        "ice cream",
+        6
+    ],
+    "strawberry ice cream": [
+        "ice cream",
+        18
+    ],
+    "vanilla ice cream": [
+        "ice cream",
+        15
     ],
     "ketchup": [
         "ketchup",
@@ -3979,6 +4035,14 @@
         "shallot",
         5
     ],
+    "sherbet": [
+        "sherbet",
+        5
+    ],
+    "sherbert": [
+        "sherbet",
+        6
+    ],
     "shrimp (wild)": [
         "shrimp (wild)",
         11
@@ -4022,6 +4086,10 @@
     "nonfat milk": [
         "skim milk",
         9
+    ],
+    "sorbet": [
+        "sorbet",
+        4
     ],
     "sour cream": [
         "sour cream",

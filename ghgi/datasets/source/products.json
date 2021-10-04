@@ -593,6 +593,29 @@
             "other vegetables": 100
         }
     },
+    "chili sauce": {
+        "g": 10,
+        "names": {
+            "sambal": {},
+            "~paste": {
+                "dependent": [
+                    "chile",
+                    "chili"
+                ]
+            },
+            "~sauce": {
+                "dependent": [
+                    "chile",
+                    "chili"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {
+            "ketchup": 80,
+            "other vegetables": 20
+        }
+    },
     "chive": {
         "g": 15,
         "sg": 0.15,
@@ -1118,6 +1141,43 @@
         "g": 15.0,
         "sg": 1.0,
         "super": {}
+    },
+    "hot sauce": {
+        "g": 5,
+        "names": {
+            "~sauce": {
+                "independent": [
+                    "tabasco"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {
+            "other vegetables": 33,
+            "salt": 1,
+            "vinegar": 6,
+            "water": 60
+        }
+    },
+    "ice cream": {
+        "g": 100,
+        "names": {
+            "gelato": {},
+            "ice cream": {
+                "dependent": [
+                    "chocolate",
+                    "strawberry",
+                    "vanilla"
+                ]
+            },
+            "icecream": {}
+        },
+        "super": {
+            "cane sugar": 12,
+            "cream": 40,
+            "eggs": 8,
+            "milk": 40
+        }
     },
     "ketchup": {
         "g": 10,
@@ -2296,6 +2356,17 @@
             "onions & leeks (alliums)": 100
         }
     },
+    "sherbet": {
+        "g": 100,
+        "names": {
+            "sherbert": {}
+        },
+        "super": {
+            "cream": 16,
+            "milk": 16,
+            "sorbet": 68
+        }
+    },
     "shrimp (wild)": {
         "names": {
             "~prawns (wild)": {
@@ -2343,6 +2414,13 @@
         "sg": 1.0,
         "super": {
             "milk": 69.5
+        }
+    },
+    "sorbet": {
+        "g": 100,
+        "super": {
+            "cane sugar": 16,
+            "citrus fruit": 84
         }
     },
     "sour cream": {

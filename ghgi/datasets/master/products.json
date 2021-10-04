@@ -579,6 +579,21 @@
             "other vegetables": 100
         }
     },
+    "chili sauce": {
+        "g": 10,
+        "names": [
+            "chile paste",
+            "chile sauce",
+            "chili paste",
+            "chili sauce",
+            "sambal"
+        ],
+        "sg": 1.0,
+        "super": {
+            "ketchup": 80,
+            "other vegetables": 20
+        }
+    },
     "chive": {
         "g": 15,
         "sg": 0.15,
@@ -1079,6 +1094,38 @@
         "names": [
             "honey"
         ]
+    },
+    "hot sauce": {
+        "g": 5,
+        "names": [
+            "hot sauce",
+            "tabasco",
+            "tabasco sauce"
+        ],
+        "sg": 1.0,
+        "super": {
+            "other vegetables": 33,
+            "salt": 1,
+            "vinegar": 6,
+            "water": 60
+        }
+    },
+    "ice cream": {
+        "g": 100,
+        "names": [
+            "chocolate ice cream",
+            "gelato",
+            "ice cream",
+            "icecream",
+            "strawberry ice cream",
+            "vanilla ice cream"
+        ],
+        "super": {
+            "cane sugar": 12,
+            "cream": 40,
+            "eggs": 8,
+            "milk": 40
+        }
     },
     "ketchup": {
         "g": 10,
@@ -2145,6 +2192,18 @@
             "shallot"
         ]
     },
+    "sherbet": {
+        "g": 100,
+        "names": [
+            "sherbert",
+            "sherbet"
+        ],
+        "super": {
+            "cream": 16,
+            "milk": 16,
+            "sorbet": 68
+        }
+    },
     "shrimp (wild)": {
         "names": [
             "prawns (wild) (wild)",
@@ -2180,6 +2239,16 @@
         "super": {
             "milk": 69.5
         }
+    },
+    "sorbet": {
+        "g": 100,
+        "super": {
+            "cane sugar": 16,
+            "citrus fruit": 84
+        },
+        "names": [
+            "sorbet"
+        ]
     },
     "sour cream": {
         "g": 50,
