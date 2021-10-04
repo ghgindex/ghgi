@@ -1122,6 +1122,7 @@
     "ketchup": {
         "g": 10,
         "names": {
+            "barbecue sauce": {},
             "barbeque sauce": {},
             "bbq sauce": {},
             "catsup": {}
@@ -2265,7 +2266,9 @@
     "sea bass": {
         "g": 150.0,
         "sg": 1.04,
-        "super": {}
+        "super": {
+            "demersal fish": 100
+        }
     },
     "sesame": {
         "g": 5,

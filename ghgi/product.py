@@ -9,7 +9,7 @@ from .trigram import Trigram
 from .gin import GIN
 from .convert import Convert
 from .origin import Origin, GHGFlavor
-
+from .formatter import bold
 
 DEFAULT_FLAVOR = GHGFlavor.MEDIAN
 
@@ -58,6 +58,7 @@ class Product:
     BUNCH = 'bunch'
     PKG = 'pkg'
     CATS = 'categories'
+    IMPACT = 'impact'
 
     @classmethod
     def db(cls):
@@ -94,14 +95,13 @@ class Product:
             if not flavor in product:
                 if not product.get(cls.PARENTS):
                     print('Product {} invalid: no `{}` data'.format(
-                        product[cls.NAME], flavor))
+                        bold(product[cls.NAME]), flavor))
                     return False
                 elif not all([cls.valid(cls.get(par_name), flavor) for par_name in product[cls.PARENTS]]):
                     return False
             return True
 
         # validate food category
-        # TODO: update for food_values db
         elif flavor == cls.CATS:
             if not cls.food_values(product):
                 if not product.get(cls.PARENTS):
@@ -111,7 +111,7 @@ class Product:
             elif len(cls.food_values(product)) > 1:
                 cat_count = len(cls.food_values(product))
                 print(
-                    'Product {} invalid: {} direct categories assigned'.format(product[cls.NAME], cat_count))
+                    'Product {} invalid: {} direct categories assigned'.format(bold(product[cls.NAME]), cat_count))
                 return False
             return True
 
@@ -127,8 +127,11 @@ class Product:
             if not cls.valid(product):
                 raise Exception(
                     'Product database failed to validate on {}'.format(product))
-
-        # if not all([cls.valid(product, name) for name, product in cls.db().items()]):
+            if not cls.ghg_value(product, Origin.DEFAULT, DEFAULT_FLAVOR):
+                print('{} has ghg_value {}'.format(
+                    bold(product[cls.NAME]),
+                    cls.ghg_value(product, Origin.DEFAULT, DEFAULT_FLAVOR)
+                ))
 
     @classmethod
     def efficiency_baselines(cls):
@@ -383,14 +386,15 @@ class Product:
     @staticmethod
     def ghg_value(product, origin, flavor: GHGFlavor):
         if product is None:
-            return 0.0
+            return None
         value = Origin.ghg_value(product[Product.NAME], origin, flavor)
         if (value is None) and product[Product.PARENTS]:
-            value = 0.0
             for parent, pct in product[Product.PARENTS].items():
                 par_value = Product.ghg_value(Product.get(parent),
                                               origin, flavor)
                 if par_value is not None:
+                    if value is None:
+                        value = 0.0
                     value += par_value * pct/100.0
         return value
 

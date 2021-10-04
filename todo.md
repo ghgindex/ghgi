@@ -2,6 +2,7 @@
 
 Update the repo readme
 Create package documentation
+Flag products with no origin or food value information in validate
 
 - Make sure pydoc runs adequately
 
