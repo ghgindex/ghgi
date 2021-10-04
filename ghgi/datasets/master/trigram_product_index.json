@@ -5886,6 +5886,7 @@
         "wheat & rye (bread)",
         "wheat & rye (flour)",
         "wheat flour",
+        "wheat noodle",
         "whole wheat bread",
         "whole wheat flour",
         "whole wheat pastry flour"
@@ -5912,6 +5913,7 @@
         "wheat & rye (bread)",
         "wheat & rye (flour)",
         "wheat flour",
+        "wheat noodle",
         "whole wheat bread",
         "whole wheat flour",
         "whole wheat pastry flour",
@@ -5923,6 +5925,7 @@
         "wheat & rye (bread)",
         "wheat & rye (flour)",
         "wheat flour",
+        "wheat noodle",
         "whole wheat bread",
         "whole wheat flour",
         "whole wheat pastry flour"
@@ -5943,6 +5946,7 @@
         "wheat & rye (bread)",
         "wheat & rye (flour)",
         "wheat flour",
+        "wheat noodle",
         "whole wheat bread",
         "whole wheat flour",
         "whole wheat pastry flour"
@@ -12084,35 +12088,40 @@
         "great northern bean",
         "lasagna noodle",
         "lasagne noodle",
-        "pasta noodle"
+        "pasta noodle",
+        "wheat noodle"
     ],
     "noo": [
         "lasagna noodle",
         "lasagne noodle",
         "noodle",
         "noodle pasta",
-        "pasta noodle"
+        "pasta noodle",
+        "wheat noodle"
     ],
     "ood": [
         "lasagna noodle",
         "lasagne noodle",
         "noodle",
         "noodle pasta",
-        "pasta noodle"
+        "pasta noodle",
+        "wheat noodle"
     ],
     "odl": [
         "lasagna noodle",
         "lasagne noodle",
         "noodle",
         "noodle pasta",
-        "pasta noodle"
+        "pasta noodle",
+        "wheat noodle"
     ],
     "dle": [
         "lasagna noodle",
         "lasagne noodle",
         "noodle",
         "noodle pasta",
-        "pasta noodle"
+        "pasta noodle",
+        "wheat noodle"
     ],
     "gne": [
         "lasagne",
@@ -12211,6 +12220,10 @@
     "tel": [
         "tagliatelle",
         "tagliatelle pasta"
+    ],
+    "t n": [
+        "great northern bean",
+        "wheat noodle"
     ],
     "eas": [
         "breast chicken",
@@ -13297,9 +13310,6 @@
         "dried pea",
         "sun dried tomato",
         "sun-dried tomato"
-    ],
-    "t n": [
-        "great northern bean"
     ],
     "nor": [
         "great northern bean"

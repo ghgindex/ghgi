@@ -117,6 +117,7 @@ class GIN:
             return None, None, 0.0
 
         pos_tags = cls.pos_tag(tokens)
+
         # the keyword is the last noun: must match if use_keyword is set
         key_word_index = None
         if use_keyword:

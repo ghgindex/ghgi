@@ -1727,7 +1727,8 @@
                 "dependent": [
                     "lasagna",
                     "lasagne",
-                    "pasta"
+                    "pasta",
+                    "wheat"
                 ]
             },
             "pasta": {

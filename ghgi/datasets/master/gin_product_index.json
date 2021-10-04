@@ -782,6 +782,7 @@
         "wheat & rye (bread)",
         "wheat & rye (flour)",
         "wheat flour",
+        "wheat noodle",
         "whole wheat bread",
         "whole wheat flour",
         "whole wheat pastry flour"
@@ -2370,7 +2371,8 @@
         "lasagne noodle",
         "noodle",
         "noodle pasta",
-        "pasta noodle"
+        "pasta noodle",
+        "wheat noodle"
     ],
     "lasagn": [
         "lasagne",
