@@ -1307,6 +1307,10 @@
         "crustacean stock",
         14
     ],
+    "crustaceans": [
+        "crustaceans",
+        9
+    ],
     "crustaceans (farmed)": [
         "crustaceans (farmed)",
         18
@@ -1342,10 +1346,6 @@
     "shrimp (farmed)": [
         "crustaceans (farmed)",
         13
-    ],
-    "crustaceans (wild)": [
-        "crustaceans (wild)",
-        16
     ],
     "dark chocolate": [
         "dark chocolate",

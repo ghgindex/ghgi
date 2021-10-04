@@ -125,7 +125,8 @@ class Product:
         """
         for product in cls.db().values():
             if not cls.valid(product):
-                raise Exception('Product database failed to validate')
+                raise Exception(
+                    'Product database failed to validate on {}'.format(product))
 
         # if not all([cls.valid(product, name) for name, product in cls.db().items()]):
 

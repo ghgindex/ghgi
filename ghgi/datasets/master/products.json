@@ -728,7 +728,7 @@
             "wild crab"
         ],
         "super": {
-            "crustaceans (wild)": 100
+            "crustaceans": 100
         }
     },
     "cream": {
@@ -796,6 +796,14 @@
             "crustacean stock"
         ]
     },
+    "crustaceans": {
+        "g": 150,
+        "sg": 1.04,
+        "super": {},
+        "names": [
+            "crustaceans"
+        ]
+    },
     "crustaceans (farmed)": {
         "g": 150,
         "names": [
@@ -811,14 +819,6 @@
         ],
         "sg": 1.0,
         "super": {}
-    },
-    "crustaceans (wild)": {
-        "g": 150,
-        "sg": 1.04,
-        "super": {},
-        "names": [
-            "crustaceans (wild)"
-        ]
     },
     "dark chocolate": {
         "g": 25,
@@ -1173,7 +1173,7 @@
     },
     "lobster": {
         "super": {
-            "crustaceans (wild)": 100
+            "crustaceans": 100
         },
         "names": [
             "lobster"
@@ -2150,7 +2150,7 @@
             "wild shrimp"
         ],
         "super": {
-            "crustaceans (wild)": 100
+            "crustaceans": 100
         }
     },
     "simple syrup": {

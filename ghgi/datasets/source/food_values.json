@@ -126,11 +126,11 @@
             "dairy.md"
         ]
     },
-    "crustaceans (farmed)": {
+    "crustaceans": {
         "pd": 0.15,
         "src": 1
     },
-    "crustaceans (wild)": {
+    "crustaceans (farmed)": {
         "pd": 0.15,
         "src": 1
     },

@@ -280,7 +280,6 @@
         "crab (farmed)",
         "crab (wild)",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "fish (farmed)",
         "maize (meal)",
         "mollusks (farmed)",
@@ -316,7 +315,6 @@
         "crab (farmed)",
         "crab (wild)",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "fish (farmed)",
         "maize (meal)",
         "mollusks (farmed)",
@@ -1379,7 +1377,6 @@
     ],
     "wild": [
         "crab (wild)",
-        "crustaceans (wild)",
         "prawns (wild) (wild)",
         "salmon (wild)",
         "scallop (wild)",
@@ -1439,8 +1436,8 @@
     "crustacean": [
         "crustacean broth",
         "crustacean stock",
-        "crustaceans (farmed)",
-        "crustaceans (wild)"
+        "crustaceans",
+        "crustaceans (farmed)"
     ],
     "prawn": [
         "farmed prawn",

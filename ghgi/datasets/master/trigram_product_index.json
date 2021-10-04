@@ -1474,16 +1474,16 @@
         "asteraceae",
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "lamiaceae"
     ],
     "cea": [
         "asteraceae",
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "lamiaceae"
     ],
     "eae": [
@@ -3881,7 +3881,6 @@
         "bass (farmed)",
         "bivalves (farmed)",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "mollusks (farmed)",
         "onions & leeks (alliums)",
         "prawns (wild) (wild)",
@@ -4291,8 +4290,8 @@
         "citrus zest",
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "crusty bread",
         "russet",
         "russet potato"
@@ -4717,8 +4716,8 @@
     "ust": [
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "crusty bread",
         "dijon mustard",
         "dijon style mustard",
@@ -4735,8 +4734,8 @@
         "cornstarch",
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "dijon mustard",
         "dijon style mustard",
         "dry mustard",
@@ -5275,8 +5274,8 @@
         "breadcrumb",
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "crusty bread"
     ],
     "rum": [
@@ -8802,8 +8801,8 @@
         "coffee beans",
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "dried bean",
         "fresh bean",
         "great northern bean",
@@ -8822,8 +8821,8 @@
     ],
     "ans": [
         "coffee beans",
-        "crustaceans (farmed)",
-        "crustaceans (wild)"
+        "crustaceans",
+        "crustaceans (farmed)"
     ],
     "orn": [
         "acorn squash",
@@ -9007,7 +9006,6 @@
     ],
     " (w": [
         "crab (wild)",
-        "crustaceans (wild)",
         "prawns (wild) (wild)",
         "salmon (wild)",
         "scallop (wild)",
@@ -9017,7 +9015,6 @@
     ],
     "(wi": [
         "crab (wild)",
-        "crustaceans (wild)",
         "prawns (wild) (wild)",
         "salmon (wild)",
         "scallop (wild)",
@@ -9027,7 +9024,6 @@
     ],
     "wil": [
         "crab (wild)",
-        "crustaceans (wild)",
         "prawns (wild) (wild)",
         "salmon (wild)",
         "scallop (wild)",
@@ -9044,7 +9040,6 @@
     ],
     "ild": [
         "crab (wild)",
-        "crustaceans (wild)",
         "prawns (wild) (wild)",
         "salmon (wild)",
         "scallop (wild)",
@@ -9061,7 +9056,6 @@
     ],
     "ld)": [
         "crab (wild)",
-        "crustaceans (wild)",
         "prawns (wild) (wild)",
         "salmon (wild)",
         "scallop (wild)",
@@ -9235,14 +9229,13 @@
     "tac": [
         "crustacean broth",
         "crustacean stock",
+        "crustaceans",
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "pistachio",
         "pistachio nut"
     ],
     "ns ": [
         "crustaceans (farmed)",
-        "crustaceans (wild)",
         "onions & leeks (alliums)",
         "prawns (wild) (wild)",
         "wild prawns (wild)"

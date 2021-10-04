@@ -760,7 +760,7 @@
             }
         },
         "super": {
-            "crustaceans (wild)": 100
+            "crustaceans": 100
         }
     },
     "cream": {
@@ -824,6 +824,11 @@
             "water": 50
         }
     },
+    "crustaceans": {
+        "g": 150,
+        "sg": 1.04,
+        "super": {}
+    },
     "crustaceans (farmed)": {
         "g": 150,
         "names": {
@@ -847,11 +852,6 @@
             }
         },
         "sg": 1.0,
-        "super": {}
-    },
-    "crustaceans (wild)": {
-        "g": 150,
-        "sg": 1.04,
         "super": {}
     },
     "dark chocolate": {
@@ -1225,7 +1225,7 @@
     },
     "lobster": {
         "super": {
-            "crustaceans (wild)": 100
+            "crustaceans": 100
         }
     },
     "maize (meal)": {
@@ -2308,7 +2308,7 @@
             }
         },
         "super": {
-            "crustaceans (wild)": 100
+            "crustaceans": 100
         }
     },
     "simple syrup": {
