@@ -283,6 +283,12 @@
         "sg": 1.04,
         "super": {}
     },
+    "bouquet garni": {
+        "g": 30,
+        "super": {
+            "herbs": 100
+        }
+    },
     "brassicas": {
         "g": 100,
         "names": {
@@ -1100,6 +1106,9 @@
     },
     "herbs": {
         "g": 3.8,
+        "names": {
+            "herbes de provence": {}
+        },
         "super": {
             "lamiaceae": 50,
             "umbellifers": 50

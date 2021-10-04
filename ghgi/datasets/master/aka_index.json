@@ -407,6 +407,10 @@
         "bivalves (farmed)",
         15
     ],
+    "bouquet garni": [
+        "bouquet garni",
+        11
+    ],
     "brassicas": [
         "brassicas",
         7
@@ -1642,6 +1646,10 @@
     "herbs": [
         "herbs",
         3
+    ],
+    "herbes de provence": [
+        "herbs",
+        16
     ],
     "honey": [
         "honey",

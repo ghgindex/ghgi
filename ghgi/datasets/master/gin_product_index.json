@@ -545,6 +545,12 @@
         "mollusks",
         "mollusks (farmed)"
     ],
+    "bouquet": [
+        "bouquet garni"
+    ],
+    "garni": [
+        "bouquet garni"
+    ],
     "brassica": [
         "brassicas"
     ],
@@ -1684,7 +1690,17 @@
         "heavy whipping cream"
     ],
     "herb": [
+        "herbes de provence",
         "herbs"
+    ],
+    "de": [
+        "chile de arbol",
+        "chile de \u00e1rbol",
+        "fleur de sel",
+        "herbes de provence"
+    ],
+    "provenc": [
+        "herbes de provence"
     ],
     "honey": [
         "honey"
@@ -2153,11 +2169,6 @@
     "chard": [
         "chard",
         "swiss chard"
-    ],
-    "de": [
-        "chile de arbol",
-        "chile de \u00e1rbol",
-        "fleur de sel"
     ],
     "arbol": [
         "chile de arbol"
