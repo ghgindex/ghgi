@@ -76,6 +76,7 @@
     },
     "asteraceae": {
         "g": 5,
+        "sg": 0.25,
         "names": {
             "lettuce": {
                 "dependent": [
