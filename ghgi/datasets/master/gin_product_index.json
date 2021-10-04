@@ -1605,6 +1605,7 @@
         "flour",
         "pastry flour",
         "rye flour",
+        "semolina flour",
         "unbleached all purpose flour",
         "wheat & rye (flour)",
         "wheat flour",
@@ -1632,6 +1633,10 @@
         "rye flour",
         "wheat & rye (bread)",
         "wheat & rye (flour)"
+    ],
+    "semolina": [
+        "semolina",
+        "semolina flour"
     ],
     "unbleach": [
         "unbleached all purpose flour"

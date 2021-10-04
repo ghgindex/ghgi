@@ -1551,6 +1551,14 @@
         "flour",
         7
     ],
+    "semolina": [
+        "flour",
+        6
+    ],
+    "semolina flour": [
+        "flour",
+        12
+    ],
     "unbleached all purpose flour": [
         "flour",
         26

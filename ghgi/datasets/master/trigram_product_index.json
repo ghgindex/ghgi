@@ -3901,7 +3901,9 @@
         "light molasses",
         "molasses",
         "mollusks",
-        "mollusks (farmed)"
+        "mollusks (farmed)",
+        "semolina",
+        "semolina flour"
     ],
     "oll": [
         "collard green",
@@ -4058,6 +4060,8 @@
         "olive oil",
         "ravioli",
         "ravioli pasta",
+        "semolina",
+        "semolina flour",
         "stuffed olive",
         "virgin olive oil"
     ],
@@ -4085,6 +4089,7 @@
         "pepper flake",
         "red pepper flake",
         "rye flour",
+        "semolina flour",
         "unbleached all purpose flour",
         "wheat flour",
         "white flour",
@@ -4101,6 +4106,7 @@
         "flour",
         "pastry flour",
         "rye flour",
+        "semolina flour",
         "sunflower oil",
         "unbleached all purpose flour",
         "wheat & rye (flour)",
@@ -4159,6 +4165,8 @@
         "linguine pasta",
         "pickling juice",
         "pickling liquid",
+        "semolina",
+        "semolina flour",
         "sparkling water"
     ],
     "ini": [
@@ -5486,6 +5494,7 @@
         "gourd",
         "pastry flour",
         "rye flour",
+        "semolina flour",
         "sour cherry",
         "sour cream",
         "sourdough",
@@ -6260,6 +6269,8 @@
         "fontina",
         "fontina cheese",
         "inari-no-moto",
+        "semolina",
+        "semolina flour",
         "spinach",
         "spinach leaf",
         "turbinado sugar"
@@ -6900,7 +6911,8 @@
     "na ": [
         "fontina cheese",
         "lasagna noodle",
-        "lasagna pasta"
+        "lasagna pasta",
+        "semolina flour"
     ],
     "goa": [
         "goat cheese"
@@ -7044,6 +7056,7 @@
         "halloumi cheese",
         "pastry flour",
         "rye flour",
+        "semolina flour",
         "unbleached all purpose flour",
         "wheat & rye (flour)",
         "wheat flour",
@@ -8172,7 +8185,9 @@
         "lemon rind",
         "lemon slice",
         "lemon wedge",
-        "lemon zest"
+        "lemon zest",
+        "semolina",
+        "semolina flour"
     ],
     "n p": [
         "frozen pea",
@@ -9240,7 +9255,9 @@
         "rosemary",
         "rosemary leaf",
         "semi sweet chocolate",
-        "semisweet chocolate"
+        "semisweet chocolate",
+        "semolina",
+        "semolina flour"
     ],
     "emi": [
         "cremini",
@@ -9626,6 +9643,9 @@
         "rye flour",
         "wheat & rye (bread)",
         "wheat & rye (flour)"
+    ],
+    "a f": [
+        "semolina flour"
     ],
     "unb": [
         "unbleached all purpose flour"

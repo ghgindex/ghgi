@@ -1010,6 +1010,9 @@
                     "white",
                     "whole wheat",
                     "whole wheat pastry"
+                ],
+                "independent": [
+                    "semolina"
                 ]
             }
         },
