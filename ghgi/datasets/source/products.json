@@ -68,6 +68,20 @@
         "sg": 0.85,
         "super": {}
     },
+    "artichoke": {
+        "g": 350,
+        "names": {
+            "artichoke": {
+                "dependent": [
+                    "_heart"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {
+            "asteraceae": 100
+        }
+    },
     "asparagus": {
         "g": 100,
         "super": {
@@ -76,8 +90,15 @@
     },
     "asteraceae": {
         "g": 5,
-        "sg": 0.25,
         "names": {
+            "chicory": {},
+            "endive": {
+                "dependent": [
+                    "belgian"
+                ]
+            },
+            "escarole": {},
+            "frisee": {},
             "lettuce": {
                 "dependent": [
                     "_leaf",
@@ -95,6 +116,7 @@
                 ]
             }
         },
+        "sg": 0.25,
         "super": {
             "other vegetables": 100
         }
@@ -260,7 +282,12 @@
                     ".straw"
                 ]
             },
-            "grape": {}
+            "grape": {
+                "dependent": [
+                    "._leaf",
+                    "_leaf"
+                ]
+            }
         },
         "sg": 1.01,
         "super": {}
@@ -293,7 +320,11 @@
     "brassicas": {
         "g": 100,
         "names": {
-            "arugula": {},
+            "arugula": {
+                "dependent": [
+                    "_leaf"
+                ]
+            },
             "bok choy": {},
             "broccoli": {
                 "dependent": [
@@ -313,13 +344,20 @@
                     "napa",
                     "red",
                     "savoy"
+                ],
+                "independent": [
+                    "sauerkraut"
                 ]
             },
             "cauliflower": {},
             "collard green": {},
             "dry mustard": {},
             "gai lan": {},
-            "kale": {},
+            "kale": {
+                "dependent": [
+                    "_leaf"
+                ]
+            },
             "kohlrabi": {},
             "mustard seed": {},
             "pak choi": {},
@@ -332,6 +370,7 @@
     "bread": {
         "g": 100.0,
         "names": {
+            "bagel": {},
             "bread": {
                 "dependent": [
                     "_.crumb",
@@ -366,7 +405,21 @@
                     "graham"
                 ]
             },
-            "lavash": {}
+            "lavash": {},
+            "matzo": {
+                "dependent": [
+                    "_ball",
+                    "_bread",
+                    "_meal"
+                ]
+            },
+            "matzoh": {
+                "dependent": [
+                    "_ball",
+                    "_bread",
+                    "_meal"
+                ]
+            }
         },
         "sg": 0.7,
         "super": {
@@ -537,6 +590,7 @@
                     "muenster",
                     "paneer",
                     "parmesan",
+                    "parmigiano- reggiano",
                     "parmigiano-reggiano",
                     "pecorino",
                     "pecorino romano",
@@ -598,6 +652,7 @@
         "g": 10,
         "names": {
             "sambal": {},
+            "sriracha": {},
             "~paste": {
                 "dependent": [
                     "chile",
@@ -689,6 +744,9 @@
     },
     "cocoa powder": {
         "g": 10,
+        "names": {
+            "cocoa": {}
+        },
         "sg": 1.0,
         "super": {
             "dark chocolate": 100
@@ -772,6 +830,13 @@
         "sg": 1.0,
         "super": {
             "milk": 155.8
+        }
+    },
+    "couscous": {
+        "g": 100,
+        "sg": 0.5,
+        "super": {
+            "wheat & rye (flour)": 100
         }
     },
     "crab": {
@@ -875,6 +940,11 @@
                 ]
             }
         },
+        "sg": 1.0,
+        "super": {}
+    },
+    "curry paste": {
+        "g": 10,
         "sg": 1.0,
         "super": {}
     },
@@ -1098,11 +1168,13 @@
                 "dependent": [
                     "salad"
                 ]
-            }
+            },
+            "mesclun": {}
         },
         "sg": 0.3,
         "super": {
-            "other vegetables": 100
+            "asteraceae": 50,
+            "brassicas": 50
         }
     },
     "half and half": {
@@ -1214,43 +1286,32 @@
     "lamiaceae": {
         "g": 7,
         "names": {
-            "basil": {
-                "dependent": [
-                    "_leaf"
-                ]
-            },
-            "lavender": {},
-            "marjoram": {
-                "dependent": [
-                    "_leaf"
-                ]
-            },
-            "mint": {
-                "dependent": [
-                    "_leaf"
-                ]
-            },
-            "oregano": {},
-            "rosemary": {
-                "dependent": [
-                    "_leaf"
-                ]
-            },
-            "sage": {
-                "dependent": [
-                    "_leaf"
-                ]
-            },
-            "savory": {},
-            "thyme": {
-                "dependent": [
-                    "_leaf"
+            "~leaf": {
+                "independent": [
+                    "basil",
+                    "lavender",
+                    "marjoram",
+                    "mint",
+                    "oregano",
+                    "rosemary",
+                    "sage",
+                    "savory",
+                    "summer savory",
+                    "thyme",
+                    "winter savory"
                 ]
             }
         },
         "sg": 0.15,
         "super": {
             "other vegetables": 100
+        }
+    },
+    "lard": {
+        "g": 10.0,
+        "sg": 0.92,
+        "super": {
+            "pork": 100
         }
     },
     "leek": {
@@ -1284,6 +1345,43 @@
             "cream": 50,
             "milk": 50
         }
+    },
+    "liquor": {
+        "g": 50,
+        "names": {
+            "bitters": {
+                "independent": [
+                    "angostura"
+                ]
+            },
+            "brandy": {},
+            "gin": {},
+            "liqueur": {
+                "independent": [
+                    "cointreau",
+                    "grand marnier"
+                ]
+            },
+            "rum": {},
+            "sake": {},
+            "whiskey": {
+                "dependent": [
+                    "rye"
+                ]
+            },
+            "whisky": {
+                "dependent": [
+                    "rye"
+                ],
+                "independent": [
+                    "bourbon",
+                    "jack daniels",
+                    "scotch"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {}
     },
     "lobster": {
         "super": {
@@ -1403,6 +1501,23 @@
             "brassicas": 40.0,
             "vinegar": 10.0,
             "water": 50.0
+        }
+    },
+    "noodle": {
+        "g": 100,
+        "names": {
+            "noodle": {
+                "dependent": [
+                    "wheat"
+                ],
+                "independent": [
+                    "ramen"
+                ]
+            }
+        },
+        "sg": 0.5,
+        "super": {
+            "wheat & rye (flour)": 100
         }
     },
     "nutmeg": {
@@ -1547,6 +1662,7 @@
             },
             "date": {},
             "fig": {},
+            "fruit": {},
             "mango": {},
             "nectarine": {},
             "olive": {
@@ -1724,29 +1840,29 @@
     "pasta": {
         "g": 0,
         "names": {
-            "noodle": {
-                "dependent": [
-                    "lasagna",
-                    "lasagne",
-                    "pasta",
-                    "wheat"
-                ]
-            },
             "pasta": {
                 "independent": [
                     "farfalle",
+                    "fettuccine",
                     "fettucine",
                     "lasagna",
                     "lasagne",
                     "linguine",
                     "macaroni",
-                    "noodle",
                     "orecchiette",
                     "orzo",
                     "penne",
                     "ravioli",
                     "spaghetti",
+                    "spaghettini",
                     "tagliatelle"
+                ]
+            },
+            "~noodle": {
+                "dependent": [
+                    "lasagna",
+                    "lasagne",
+                    "pasta"
                 ]
             }
         },
@@ -1980,6 +2096,7 @@
             },
             "duck": {
                 "dependent": [
+                    "._ling",
                     "_breast",
                     "_giblet",
                     "_leg",
@@ -2332,6 +2449,19 @@
             "demersal fish": 100
         }
     },
+    "seaweed": {
+        "g": 10,
+        "names": {
+            "seaweed": {
+                "independent": [
+                    "kelp",
+                    "nori"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {}
+    },
     "sesame": {
         "g": 5,
         "names": {
@@ -2456,9 +2586,19 @@
         "g": 5,
         "names": {
             "allspice": {},
+            "caraway": {},
+            "cardamom": {},
             "clove": {},
+            "curry powder": {},
             "garam masala": {},
+            "mace": {},
+            "saffron": {},
             "spice blend": {},
+            "star anise": {
+                "dependent": [
+                    "_pod"
+                ]
+            },
             "turmeric": {}
         },
         "sg": 0.5,
@@ -2566,6 +2706,7 @@
     "tomatoes": {
         "g": 100,
         "names": {
+            "tomatilla": {},
             "tomatillo": {},
             "tomato": {
                 "dependent": [
@@ -2757,7 +2898,13 @@
         "names": {
             "grain": {},
             "rye": {},
-            "wheat": {}
+            "wheat": {
+                "independent": [
+                    "bulgur",
+                    "durum",
+                    "farro"
+                ]
+            }
         },
         "sg": 0.8,
         "super": {}
@@ -2765,6 +2912,15 @@
     "wine": {
         "g": 225,
         "names": {
+            "marsala": {},
+            "vermouth": {
+                "dependent": [
+                    "dry",
+                    "red",
+                    "sweet",
+                    "white"
+                ]
+            },
             "wine": {
                 "dependent": [
                     "dry red",
@@ -2797,6 +2953,24 @@
         "super": {
             "wine": 100
         }
+    },
+    "worcestershire sauce": {
+        "g": 10,
+        "names": {
+            "lea & perrins": {},
+            "lea perrins": {},
+            "worcestershire": {}
+        },
+        "super": {
+            "cane sugar": 8,
+            "salt": 7,
+            "vinegar": 85
+        }
+    },
+    "yeast": {
+        "g": 5.0,
+        "sg": 0.3,
+        "super": {}
     },
     "yogurt": {
         "g": 100,

@@ -60,6 +60,17 @@
         "sg": 0.85,
         "super": {}
     },
+    "artichoke": {
+        "g": 350,
+        "names": [
+            "artichoke",
+            "artichoke heart"
+        ],
+        "sg": 1.0,
+        "super": {
+            "asteraceae": 100
+        }
+    },
     "asparagus": {
         "g": 100,
         "super": {
@@ -73,8 +84,13 @@
         "g": 5,
         "names": [
             "asteraceae",
+            "belgian endive",
             "bibb lettuce",
             "boston lettuce",
+            "chicory",
+            "endive",
+            "escarole",
+            "frisee",
             "iceberg",
             "iceberg lettuce",
             "lettuce",
@@ -84,6 +100,7 @@
             "tarragon",
             "tarragon leaf"
         ],
+        "sg": 0.25,
         "super": {
             "other vegetables": 100
         }
@@ -252,6 +269,8 @@
             "blueberry",
             "cranberry",
             "grape",
+            "grape leaf",
+            "grapeleaf",
             "raspberry",
             "strawberry"
         ],
@@ -284,6 +303,7 @@
         "g": 100,
         "names": [
             "arugula",
+            "arugula leaf",
             "bok choy",
             "brassicas",
             "broccoli",
@@ -299,12 +319,15 @@
             "dry mustard",
             "gai lan",
             "kale",
+            "kale leaf",
             "kohlrabi",
             "mustard seed",
             "napa cabbage",
             "pak choi",
             "pok choi",
             "red cabbage",
+            "sauerkraut",
+            "sauerkraut cabbage",
             "savoy cabbage",
             "watercress"
         ],
@@ -315,6 +338,7 @@
         "g": 100.0,
         "names": [
             "artisanal bread",
+            "bagel",
             "baguette",
             "baguette bread",
             "bread",
@@ -336,6 +360,14 @@
             "lavash",
             "loaf bread",
             "loaves bread",
+            "matzo",
+            "matzo ball",
+            "matzo bread",
+            "matzo meal",
+            "matzoh",
+            "matzoh ball",
+            "matzoh bread",
+            "matzoh meal",
             "pita",
             "pita bread",
             "sourdough",
@@ -518,6 +550,8 @@
             "paneer cheese",
             "parmesan",
             "parmesan cheese",
+            "parmigiano- reggiano",
+            "parmigiano- reggiano cheese",
             "parmigiano-reggiano",
             "parmigiano-reggiano cheese",
             "pecorino",
@@ -586,7 +620,8 @@
             "chile sauce",
             "chili paste",
             "chili sauce",
-            "sambal"
+            "sambal",
+            "sriracha"
         ],
         "sg": 1.0,
         "super": {
@@ -657,13 +692,14 @@
     },
     "cocoa powder": {
         "g": 10,
+        "names": [
+            "cocoa",
+            "cocoa powder"
+        ],
         "sg": 1.0,
         "super": {
             "dark chocolate": 100
-        },
-        "names": [
-            "cocoa powder"
-        ]
+        }
     },
     "coconut": {
         "g": 50,
@@ -734,6 +770,16 @@
         },
         "names": [
             "cottage cheese"
+        ]
+    },
+    "couscous": {
+        "g": 100,
+        "sg": 0.5,
+        "super": {
+            "wheat & rye (flour)": 100
+        },
+        "names": [
+            "couscous"
         ]
     },
     "crab": {
@@ -834,6 +880,14 @@
         ],
         "sg": 1.0,
         "super": {}
+    },
+    "curry paste": {
+        "g": 10,
+        "sg": 1.0,
+        "super": {},
+        "names": [
+            "curry paste"
+        ]
     },
     "dark chocolate": {
         "g": 25,
@@ -1047,11 +1101,13 @@
         "g": 100,
         "names": [
             "greens",
+            "mesclun",
             "salad greens"
         ],
         "sg": 0.3,
         "super": {
-            "other vegetables": 100
+            "asteraceae": 50,
+            "brassicas": 50
         }
     },
     "half and half": {
@@ -1164,23 +1220,40 @@
             "basil leaf",
             "lamiaceae",
             "lavender",
+            "lavender leaf",
             "marjoram",
             "marjoram leaf",
             "mint",
             "mint leaf",
             "oregano",
+            "oregano leaf",
             "rosemary",
             "rosemary leaf",
             "sage",
             "sage leaf",
             "savory",
+            "savory leaf",
+            "summer savory",
+            "summer savory leaf",
             "thyme",
-            "thyme leaf"
+            "thyme leaf",
+            "winter savory",
+            "winter savory leaf"
         ],
         "sg": 0.15,
         "super": {
             "other vegetables": 100
         }
+    },
+    "lard": {
+        "g": 10.0,
+        "sg": 0.92,
+        "super": {
+            "pork": 100
+        },
+        "names": [
+            "lard"
+        ]
     },
     "leek": {
         "g": 250,
@@ -1218,6 +1291,36 @@
             "cream": 50,
             "milk": 50
         }
+    },
+    "liquor": {
+        "g": 50,
+        "names": [
+            "angostura",
+            "angostura bitters",
+            "bitters",
+            "bourbon",
+            "bourbon whisky",
+            "brandy",
+            "cointreau",
+            "cointreau liqueur",
+            "gin",
+            "grand marnier",
+            "grand marnier liqueur",
+            "jack daniels",
+            "jack daniels whisky",
+            "liqueur",
+            "liquor",
+            "rum",
+            "rye whiskey",
+            "rye whisky",
+            "sake",
+            "scotch",
+            "scotch whisky",
+            "whiskey",
+            "whisky"
+        ],
+        "sg": 1.0,
+        "super": {}
     },
     "lobster": {
         "super": {
@@ -1337,6 +1440,19 @@
             "brassicas": 40.0,
             "vinegar": 10.0,
             "water": 50.0
+        }
+    },
+    "noodle": {
+        "g": 100,
+        "names": [
+            "noodle",
+            "ramen",
+            "ramen noodle",
+            "wheat noodle"
+        ],
+        "sg": 0.5,
+        "super": {
+            "wheat & rye (flour)": 100
         }
     },
     "nutmeg": {
@@ -1475,6 +1591,7 @@
             "cherry",
             "date",
             "fig",
+            "fruit",
             "green olive",
             "mango",
             "nectarine",
@@ -1626,6 +1743,8 @@
         "names": [
             "farfalle",
             "farfalle pasta",
+            "fettuccine",
+            "fettuccine pasta",
             "fettucine",
             "fettucine pasta",
             "lasagna",
@@ -1638,8 +1757,6 @@
             "linguine pasta",
             "macaroni",
             "macaroni pasta",
-            "noodle",
-            "noodle pasta",
             "orecchiette",
             "orecchiette pasta",
             "orzo",
@@ -1652,9 +1769,10 @@
             "ravioli pasta",
             "spaghetti",
             "spaghetti pasta",
+            "spaghettini",
+            "spaghettini pasta",
             "tagliatelle",
-            "tagliatelle pasta",
-            "wheat noodle"
+            "tagliatelle pasta"
         ],
         "sg": 0.5,
         "super": {
@@ -1850,6 +1968,7 @@
             "duck liver",
             "duck thigh",
             "duck wing",
+            "duckling",
             "game hen",
             "game hen breast",
             "game hen giblet",
@@ -2163,6 +2282,18 @@
             "sea bass"
         ]
     },
+    "seaweed": {
+        "g": 10,
+        "names": [
+            "kelp",
+            "kelp seaweed",
+            "nori",
+            "nori seaweed",
+            "seaweed"
+        ],
+        "sg": 1.0,
+        "super": {}
+    },
     "sesame": {
         "g": 5,
         "names": [
@@ -2292,10 +2423,17 @@
         "g": 5,
         "names": [
             "allspice",
+            "caraway",
+            "cardamom",
             "clove",
+            "curry powder",
             "garam masala",
+            "mace",
+            "saffron",
             "spice",
             "spice blend",
+            "star anise",
+            "star anise pod",
             "turmeric"
         ],
         "sg": 0.5,
@@ -2415,6 +2553,7 @@
             "plum tomato",
             "roma tomato",
             "san marzano tomato",
+            "tomatilla",
             "tomatillo",
             "tomato",
             "tomatoes"
@@ -2563,6 +2702,12 @@
     "wheat & rye (flour)": {
         "g": 100,
         "names": [
+            "bulgur",
+            "bulgur wheat",
+            "durum",
+            "durum wheat",
+            "farro",
+            "farro wheat",
             "grain",
             "rye",
             "wheat",
@@ -2575,9 +2720,15 @@
         "g": 225,
         "names": [
             "dry red wine",
+            "dry vermouth",
             "dry white wine",
+            "marsala",
+            "red vermouth",
             "red wine",
             "rose wine",
+            "sweet vermouth",
+            "vermouth",
+            "white vermouth",
             "white wine",
             "wine"
         ],
@@ -2597,6 +2748,28 @@
         "super": {
             "wine": 100
         }
+    },
+    "worcestershire sauce": {
+        "g": 10,
+        "names": [
+            "lea & perrins",
+            "lea perrins",
+            "worcestershire",
+            "worcestershire sauce"
+        ],
+        "super": {
+            "cane sugar": 8,
+            "salt": 7,
+            "vinegar": 85
+        }
+    },
+    "yeast": {
+        "g": 5.0,
+        "sg": 0.3,
+        "super": {},
+        "names": [
+            "yeast"
+        ]
     },
     "yogurt": {
         "g": 100,

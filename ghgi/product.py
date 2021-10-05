@@ -98,6 +98,8 @@ class Product:
                         bold(product[cls.NAME]), flavor))
                     return False
                 elif not all([cls.valid(cls.get(par_name), flavor) for par_name in product[cls.PARENTS]]):
+                    print('Product {} invalid: invalid parents `{}` data'.format(
+                        bold(product[cls.NAME]), flavor))
                     return False
             return True
 
@@ -105,8 +107,12 @@ class Product:
         elif flavor == cls.CATS:
             if not cls.food_values(product):
                 if not product.get(cls.PARENTS):
+                    print('Product {} invalid: no food values'.format(
+                        bold(product[cls.NAME])))
                     return False
                 elif not all([cls.valid(cls.get(par_name), flavor) for par_name in product[cls.PARENTS]]):
+                    print('Product {} invalid: bad or incomplete parent food values'.format(
+                        bold(product[cls.NAME])))
                     return False
             elif len(cls.food_values(product)) > 1:
                 cat_count = len(cls.food_values(product))

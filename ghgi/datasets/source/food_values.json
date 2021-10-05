@@ -134,6 +134,9 @@
         "pd": 0.15,
         "src": 1
     },
+    "curry paste": {
+        "uncategorized": true
+    },
     "dark chocolate": {
         "coc": 1.0,
         "src": 1
@@ -183,11 +186,17 @@
         "pd": 0.2,
         "src": 1
     },
+    "lard": {
+        "of": 1.0
+    },
     "light cream": {
         "m": 1.0,
         "ref": [
             "dairy.md"
         ]
+    },
+    "liquor": {
+        "uncategorized": true
     },
     "maize (meal)": {
         "ed": 17426,
@@ -317,6 +326,9 @@
         ],
         "src": 5
     },
+    "seaweed": {
+        "fv": 1.0
+    },
     "sesame": {
         "pd": 0.177,
         "ref": [
@@ -399,6 +411,9 @@
         "src": 5
     },
     "wine": {
+        "uncategorized": true
+    },
+    "yeast": {
         "uncategorized": true
     },
     "yogurt": {

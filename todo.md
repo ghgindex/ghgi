@@ -66,20 +66,15 @@ Coconut, coconut milk, coconut oil
 
 grapeseed oil
 sesame seeds, sesame oil
-allspice
+shortening, margarine
 co-products analysis of sugar types, if available
 Cranberry sauce
 Diamond Crystal
 Pepitas (pumpkin seeds)
 makrut lime wtf is that?
-vanilla ice cream
-sweet freestone peach
-maple syrup
 dried za’atar
 cornstarch
 lye water
-garam masala
-turmeric
 pastry dough
 
 ## Testing

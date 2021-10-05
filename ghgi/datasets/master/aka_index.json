@@ -107,6 +107,14 @@
         "apples",
         8
     ],
+    "artichoke": [
+        "artichoke",
+        7
+    ],
+    "artichoke heart": [
+        "artichoke",
+        13
+    ],
     "asparagus": [
         "asparagus",
         7
@@ -115,6 +123,10 @@
         "asteraceae",
         8
     ],
+    "belgian endive": [
+        "asteraceae",
+        12
+    ],
     "bibb lettuce": [
         "asteraceae",
         10
@@ -122,6 +134,22 @@
     "boston lettuce": [
         "asteraceae",
         12
+    ],
+    "chicory": [
+        "asteraceae",
+        5
+    ],
+    "endive": [
+        "asteraceae",
+        4
+    ],
+    "escarole": [
+        "asteraceae",
+        6
+    ],
+    "frisee": [
+        "asteraceae",
+        4
     ],
     "iceberg": [
         "asteraceae",
@@ -375,6 +403,14 @@
         "berries & grapes",
         3
     ],
+    "grape leaf": [
+        "berries & grapes",
+        8
+    ],
+    "grapeleaf": [
+        "berries & grapes",
+        7
+    ],
     "raspberry": [
         "berries & grapes",
         7
@@ -418,6 +454,10 @@
     "arugula": [
         "brassicas",
         5
+    ],
+    "arugula leaf": [
+        "brassicas",
+        10
     ],
     "bok choy": [
         "brassicas",
@@ -475,6 +515,10 @@
         "brassicas",
         2
     ],
+    "kale leaf": [
+        "brassicas",
+        7
+    ],
     "kohlrabi": [
         "brassicas",
         6
@@ -499,6 +543,14 @@
         "brassicas",
         9
     ],
+    "sauerkraut": [
+        "brassicas",
+        8
+    ],
+    "sauerkraut cabbage": [
+        "brassicas",
+        16
+    ],
     "savoy cabbage": [
         "brassicas",
         11
@@ -514,6 +566,10 @@
     "artisanal bread": [
         "bread",
         13
+    ],
+    "bagel": [
+        "bread",
+        3
     ],
     "baguette": [
         "bread",
@@ -594,6 +650,38 @@
     "loaves bread": [
         "bread",
         10
+    ],
+    "matzo": [
+        "bread",
+        3
+    ],
+    "matzo ball": [
+        "bread",
+        8
+    ],
+    "matzo bread": [
+        "bread",
+        9
+    ],
+    "matzo meal": [
+        "bread",
+        8
+    ],
+    "matzoh": [
+        "bread",
+        4
+    ],
+    "matzoh ball": [
+        "bread",
+        9
+    ],
+    "matzoh bread": [
+        "bread",
+        10
+    ],
+    "matzoh meal": [
+        "bread",
+        9
     ],
     "pita": [
         "bread",
@@ -923,6 +1011,14 @@
         "cheese",
         13
     ],
+    "parmigiano- reggiano": [
+        "cheese",
+        18
+    ],
+    "parmigiano- reggiano cheese": [
+        "cheese",
+        25
+    ],
     "parmigiano-reggiano": [
         "cheese",
         17
@@ -1050,6 +1146,10 @@
     "sambal": [
         "chili sauce",
         4
+    ],
+    "sriracha": [
+        "chili sauce",
+        6
     ],
     "chive": [
         "chive",
@@ -1179,6 +1279,10 @@
         "cocoa powder",
         10
     ],
+    "cocoa": [
+        "cocoa powder",
+        3
+    ],
     "coconut": [
         "coconut",
         5
@@ -1270,6 +1374,10 @@
     "cottage cheese": [
         "cottage cheese",
         12
+    ],
+    "couscous": [
+        "couscous",
+        6
     ],
     "crab": [
         "crab",
@@ -1366,6 +1474,10 @@
     "shrimp (farmed)": [
         "crustaceans (farmed)",
         13
+    ],
+    "curry paste": [
+        "curry paste",
+        9
     ],
     "dark chocolate": [
         "dark chocolate",
@@ -1643,6 +1755,10 @@
         "greens",
         4
     ],
+    "mesclun": [
+        "greens",
+        5
+    ],
     "salad greens": [
         "greens",
         10
@@ -1775,6 +1891,10 @@
         "lamiaceae",
         6
     ],
+    "lavender leaf": [
+        "lamiaceae",
+        11
+    ],
     "marjoram": [
         "lamiaceae",
         6
@@ -1794,6 +1914,10 @@
     "oregano": [
         "lamiaceae",
         5
+    ],
+    "oregano leaf": [
+        "lamiaceae",
+        10
     ],
     "rosemary": [
         "lamiaceae",
@@ -1815,6 +1939,18 @@
         "lamiaceae",
         4
     ],
+    "savory leaf": [
+        "lamiaceae",
+        9
+    ],
+    "summer savory": [
+        "lamiaceae",
+        11
+    ],
+    "summer savory leaf": [
+        "lamiaceae",
+        16
+    ],
     "thyme": [
         "lamiaceae",
         3
@@ -1822,6 +1958,18 @@
     "thyme leaf": [
         "lamiaceae",
         8
+    ],
+    "winter savory": [
+        "lamiaceae",
+        11
+    ],
+    "winter savory leaf": [
+        "lamiaceae",
+        16
+    ],
+    "lard": [
+        "lard",
+        2
     ],
     "leek": [
         "leek",
@@ -1854,6 +2002,98 @@
     "half half": [
         "light cream",
         7
+    ],
+    "liquor": [
+        "liquor",
+        4
+    ],
+    "angostura": [
+        "liquor",
+        7
+    ],
+    "angostura bitters": [
+        "liquor",
+        15
+    ],
+    "bitters": [
+        "liquor",
+        5
+    ],
+    "bourbon": [
+        "liquor",
+        5
+    ],
+    "bourbon whisky": [
+        "liquor",
+        12
+    ],
+    "brandy": [
+        "liquor",
+        4
+    ],
+    "cointreau": [
+        "liquor",
+        7
+    ],
+    "cointreau liqueur": [
+        "liquor",
+        15
+    ],
+    "gin": [
+        "liquor",
+        1
+    ],
+    "grand marnier": [
+        "liquor",
+        11
+    ],
+    "grand marnier liqueur": [
+        "liquor",
+        19
+    ],
+    "jack daniels": [
+        "liquor",
+        10
+    ],
+    "jack daniels whisky": [
+        "liquor",
+        17
+    ],
+    "liqueur": [
+        "liquor",
+        5
+    ],
+    "rum": [
+        "liquor",
+        1
+    ],
+    "rye whiskey": [
+        "liquor",
+        9
+    ],
+    "rye whisky": [
+        "liquor",
+        8
+    ],
+    "sake": [
+        "liquor",
+        2
+    ],
+    "scotch": [
+        "liquor",
+        4
+    ],
+    "scotch whisky": [
+        "liquor",
+        11
+    ],
+    "whiskey": [
+        "liquor",
+        5
+    ],
+    "whisky": [
+        "liquor",
+        4
     ],
     "lobster": [
         "lobster",
@@ -2038,6 +2278,22 @@
     "yellow mustard": [
         "mustard",
         12
+    ],
+    "noodle": [
+        "noodle",
+        4
+    ],
+    "ramen": [
+        "noodle",
+        3
+    ],
+    "ramen noodle": [
+        "noodle",
+        10
+    ],
+    "wheat noodle": [
+        "noodle",
+        10
     ],
     "nutmeg": [
         "nutmeg",
@@ -2266,6 +2522,10 @@
     "fig": [
         "other fruit",
         1
+    ],
+    "fruit": [
+        "other fruit",
+        3
     ],
     "green olive": [
         "other fruit",
@@ -2679,6 +2939,14 @@
         "pasta",
         12
     ],
+    "fettuccine": [
+        "pasta",
+        8
+    ],
+    "fettuccine pasta": [
+        "pasta",
+        14
+    ],
     "fettucine": [
         "pasta",
         7
@@ -2727,14 +2995,6 @@
         "pasta",
         12
     ],
-    "noodle": [
-        "pasta",
-        4
-    ],
-    "noodle pasta": [
-        "pasta",
-        10
-    ],
     "orecchiette": [
         "pasta",
         9
@@ -2779,6 +3039,14 @@
         "pasta",
         13
     ],
+    "spaghettini": [
+        "pasta",
+        9
+    ],
+    "spaghettini pasta": [
+        "pasta",
+        15
+    ],
     "tagliatelle": [
         "pasta",
         9
@@ -2786,10 +3054,6 @@
     "tagliatelle pasta": [
         "pasta",
         15
-    ],
-    "wheat noodle": [
-        "pasta",
-        10
     ],
     "peanuts": [
         "peanuts",
@@ -3298,6 +3562,10 @@
     "duck wing": [
         "poultry",
         7
+    ],
+    "duckling": [
+        "poultry",
+        6
     ],
     "game hen": [
         "poultry",
@@ -4011,6 +4279,26 @@
         "sea bass",
         6
     ],
+    "seaweed": [
+        "seaweed",
+        5
+    ],
+    "kelp": [
+        "seaweed",
+        2
+    ],
+    "kelp seaweed": [
+        "seaweed",
+        10
+    ],
+    "nori": [
+        "seaweed",
+        2
+    ],
+    "nori seaweed": [
+        "seaweed",
+        10
+    ],
     "sesame": [
         "sesame",
         4
@@ -4123,17 +4411,45 @@
         "spice",
         6
     ],
+    "caraway": [
+        "spice",
+        5
+    ],
+    "cardamom": [
+        "spice",
+        6
+    ],
     "clove": [
         "spice",
         3
+    ],
+    "curry powder": [
+        "spice",
+        10
     ],
     "garam masala": [
         "spice",
         10
     ],
+    "mace": [
+        "spice",
+        2
+    ],
+    "saffron": [
+        "spice",
+        5
+    ],
     "spice blend": [
         "spice",
         9
+    ],
+    "star anise": [
+        "spice",
+        8
+    ],
+    "star anise pod": [
+        "spice",
+        12
     ],
     "turmeric": [
         "spice",
@@ -4274,6 +4590,10 @@
     "san marzano tomato": [
         "tomatoes",
         16
+    ],
+    "tomatilla": [
+        "tomatoes",
+        7
     ],
     "tomatillo": [
         "tomatoes",
@@ -4511,6 +4831,30 @@
         "wheat & rye (flour)",
         17
     ],
+    "bulgur": [
+        "wheat & rye (flour)",
+        4
+    ],
+    "bulgur wheat": [
+        "wheat & rye (flour)",
+        10
+    ],
+    "durum": [
+        "wheat & rye (flour)",
+        3
+    ],
+    "durum wheat": [
+        "wheat & rye (flour)",
+        9
+    ],
+    "farro": [
+        "wheat & rye (flour)",
+        3
+    ],
+    "farro wheat": [
+        "wheat & rye (flour)",
+        9
+    ],
     "grain": [
         "wheat & rye (flour)",
         3
@@ -4531,9 +4875,21 @@
         "wine",
         10
     ],
+    "dry vermouth": [
+        "wine",
+        10
+    ],
     "dry white wine": [
         "wine",
         12
+    ],
+    "marsala": [
+        "wine",
+        5
+    ],
+    "red vermouth": [
+        "wine",
+        10
     ],
     "red wine": [
         "wine",
@@ -4542,6 +4898,18 @@
     "rose wine": [
         "wine",
         7
+    ],
+    "sweet vermouth": [
+        "wine",
+        12
+    ],
+    "vermouth": [
+        "wine",
+        6
+    ],
+    "white vermouth": [
+        "wine",
+        12
     ],
     "white wine": [
         "wine",
@@ -4570,6 +4938,26 @@
     "white wine vinegar": [
         "wine vinegar",
         16
+    ],
+    "worcestershire sauce": [
+        "worcestershire sauce",
+        18
+    ],
+    "lea & perrins": [
+        "worcestershire sauce",
+        11
+    ],
+    "lea perrins": [
+        "worcestershire sauce",
+        9
+    ],
+    "worcestershire": [
+        "worcestershire sauce",
+        12
+    ],
+    "yeast": [
+        "yeast",
+        3
     ],
     "yogurt": [
         "yogurt",
