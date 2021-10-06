@@ -732,6 +732,15 @@
                     "_wedge",
                     "_zest"
                 ]
+            },
+            "tangerine": {
+                "dependent": [
+                    "_peel",
+                    "_rind",
+                    "_slice",
+                    "_wedge",
+                    "_zest"
+                ]
             }
         },
         "sg": 1.0,
@@ -1352,7 +1361,8 @@
         "names": {
             "grapfruit juice": {},
             "lime juice": {},
-            "orange juice": {}
+            "orange juice": {},
+            "tangerine juice": {}
         },
         "sg": 1.0,
         "super": {
@@ -1772,7 +1782,11 @@
             },
             "cucumber": {
                 "dependent": [
-                    "kirby"
+                    "kirby",
+                    "pickled"
+                ],
+                "independent": [
+                    "cornichon"
                 ]
             },
             "melon": {

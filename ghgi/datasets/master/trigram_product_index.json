@@ -174,6 +174,8 @@
         "chocolate ice cream",
         "chorizo",
         "chorizo sausage",
+        "cornichon",
+        "cornichon cucumber",
         "dark chocolate",
         "lamb chop",
         "milk chocolate",
@@ -436,7 +438,8 @@
         "apple juice",
         "lime juice",
         "orange juice",
-        "pickle juice"
+        "pickle juice",
+        "tangerine juice"
     ],
     " ju": [
         "apple juice",
@@ -445,7 +448,8 @@
         "lime juice",
         "orange juice",
         "pickle juice",
-        "pickling juice"
+        "pickling juice",
+        "tangerine juice"
     ],
     "jui": [
         "apple juice",
@@ -454,7 +458,8 @@
         "lime juice",
         "orange juice",
         "pickle juice",
-        "pickling juice"
+        "pickling juice",
+        "tangerine juice"
     ],
     "uic": [
         "apple juice",
@@ -463,7 +468,8 @@
         "lime juice",
         "orange juice",
         "pickle juice",
-        "pickling juice"
+        "pickling juice",
+        "tangerine juice"
     ],
     "ice": [
         "allspice",
@@ -503,6 +509,8 @@
         "spice blend",
         "strawberry ice cream",
         "sushi rice",
+        "tangerine juice",
+        "tangerine slice",
         "vanilla ice cream",
         "white rice",
         "wild rice"
@@ -673,6 +681,13 @@
         "sherry vinegar",
         "sherry wine",
         "superfine sugar",
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest",
         "vinegar",
         "white vinegar",
         "white wine",
@@ -766,6 +781,7 @@
         "simple syrup",
         "superfine sugar",
         "table salt",
+        "tangerine slice",
         "vegetable stock",
         "white sesame seed",
         "white sugar",
@@ -1087,7 +1103,8 @@
         "lime slice",
         "orange slice",
         "red delicious",
-        "red delicious apple"
+        "red delicious apple",
+        "tangerine slice"
     ],
     "ici": [
         "golden delicious",
@@ -1446,6 +1463,7 @@
         "heavy whipped cream",
         "iced coffee",
         "iced tea",
+        "pickled cucumber",
         "powdered sugar",
         "prepared mustard",
         "rapeseed oil",
@@ -1549,6 +1567,8 @@
     "ich": [
         "artichoke",
         "artichoke heart",
+        "cornichon",
+        "cornichon cucumber",
         "creme fraiche",
         "sichuan peppercorn"
     ],
@@ -2110,6 +2130,7 @@
         "boston lettuce",
         "bourbon whisky",
         "button mushroom",
+        "cornichon cucumber",
         "crouton bread",
         "daikon radish",
         "dijon mustard",
@@ -2246,6 +2267,8 @@
         "corn meal",
         "corn starch",
         "corn tortilla",
+        "cornichon",
+        "cornichon cucumber",
         "cornish game hen",
         "cornish game hen breast",
         "cornish game hen giblet",
@@ -2398,11 +2421,13 @@
         "blueberry",
         "camembert",
         "camembert cheese",
+        "cornichon cucumber",
         "cranberry",
         "cucumber",
         "iceberg",
         "iceberg lettuce",
         "kirby cucumber",
+        "pickled cucumber",
         "raspberry",
         "sherbert",
         "strawberry",
@@ -2569,6 +2594,12 @@
         "red wine vinegar",
         "romaine lettuce",
         "superfine sugar",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest",
         "white wine vinegar",
         "wine vinegar"
     ],
@@ -4052,7 +4083,14 @@
         "ginger root",
         "hamburger",
         "hamburger bun",
-        "hanger steak"
+        "hanger steak",
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest"
     ],
     "ang": [
         "angostura",
@@ -4069,7 +4107,14 @@
         "orange roughy",
         "orange slice",
         "orange wedge",
-        "orange zest"
+        "orange zest",
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest"
     ],
     "nge": [
         "candied ginger",
@@ -4087,7 +4132,14 @@
         "orange roughy",
         "orange slice",
         "orange wedge",
-        "orange zest"
+        "orange zest",
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest"
     ],
     "r s": [
         "black pepper kosher salt",
@@ -4186,6 +4238,7 @@
         "orange rind",
         "short rib",
         "sushi rice",
+        "tangerine rind",
         "white rice",
         "wild rice"
     ],
@@ -4573,9 +4626,11 @@
     ],
     " cu": [
         "black currant",
+        "cornichon cucumber",
         "dried currant",
         "ice cube",
         "kirby cucumber",
+        "pickled cucumber",
         "red currant"
     ],
     "cur": [
@@ -4662,6 +4717,7 @@
         "farmed crab",
         "heavy whipped cream",
         "iced coffee",
+        "pickled cucumber",
         "red cabbage",
         "red chile",
         "red chili",
@@ -4905,6 +4961,8 @@
         "bouquet garni",
         "breast cornish game hen",
         "breast cornish hen",
+        "cornichon",
+        "cornichon cucumber",
         "cornish game hen",
         "cornish game hen breast",
         "cornish game hen giblet",
@@ -6289,8 +6347,10 @@
     ],
     "umb": [
         "breadcrumb",
+        "cornichon cucumber",
         "cucumber",
         "kirby cucumber",
+        "pickled cucumber",
         "umbellifers"
     ],
     "ads": [
@@ -6327,6 +6387,7 @@
         "nonstick cooking spray",
         "pickle juice",
         "pickle liquid",
+        "pickled cucumber",
         "pickling juice",
         "pickling liquid",
         "thigh chicken",
@@ -6930,6 +6991,7 @@
         "rose wine",
         "rye whiskey",
         "rye whisky",
+        "tangerine wedge",
         "white wine",
         "white wine vinegar",
         "whole wheat bread",
@@ -7023,12 +7085,20 @@
         "pecorino romano",
         "pecorino romano cheese",
         "spring onion",
-        "string bean"
+        "string bean",
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest"
     ],
     "pic": [
         "allspice",
         "pickle juice",
         "pickle liquid",
+        "pickled cucumber",
         "pickling juice",
         "pickling liquid",
         "spice",
@@ -7038,12 +7108,14 @@
         "duckling",
         "pickle juice",
         "pickle liquid",
+        "pickled cucumber",
         "pickling juice",
         "pickling liquid"
     ],
     "kle": [
         "pickle juice",
-        "pickle liquid"
+        "pickle liquid",
+        "pickled cucumber"
     ],
     " li": [
         "chicken liver",
@@ -8013,6 +8085,13 @@
     ],
     "eri": [
         "american cheese",
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest",
         "turmeric"
     ],
     "ric": [
@@ -8037,6 +8116,7 @@
     "n c": [
         "american cheese",
         "corn cob",
+        "cornichon cucumber",
         "green chile",
         "green chili",
         "parmesan cheese",
@@ -8063,8 +8143,10 @@
     "mbe": [
         "camembert",
         "camembert cheese",
+        "cornichon cucumber",
         "cucumber",
         "kirby cucumber",
+        "pickled cucumber",
         "umbellifers"
     ],
     "ert": [
@@ -9000,6 +9082,7 @@
         "snow pea",
         "split pea",
         "sweet red pepper",
+        "tangerine peel",
         "two percent milk",
         "white pepper",
         "yellow bell pepper",
@@ -9188,6 +9271,7 @@
         "potato cheese pierogy",
         "star anise pod",
         "tagliatelle pasta",
+        "tangerine peel",
         "white pepper",
         "white potato"
     ],
@@ -9351,7 +9435,8 @@
         "grapefruit peel",
         "lemon peel",
         "lime peel",
-        "orange peel"
+        "orange peel",
+        "tangerine peel"
     ],
     "eel": [
         "citrus peel",
@@ -9359,7 +9444,8 @@
         "lemon peel",
         "lime peel",
         "orange peel",
-        "steelhead"
+        "steelhead",
+        "tangerine peel"
     ],
     "s r": [
         "citrus rind"
@@ -9369,21 +9455,24 @@
         "grapefruit rind",
         "lemon rind",
         "lime rind",
-        "orange rind"
+        "orange rind",
+        "tangerine rind"
     ],
     " sl": [
         "citrus slice",
         "grapefruit slice",
         "lemon slice",
         "lime slice",
-        "orange slice"
+        "orange slice",
+        "tangerine slice"
     ],
     "sli": [
         "citrus slice",
         "grapefruit slice",
         "lemon slice",
         "lime slice",
-        "orange slice"
+        "orange slice",
+        "tangerine slice"
     ],
     "s w": [
         "citrus wedge",
@@ -9394,7 +9483,8 @@
         "grapefruit wedge",
         "lemon wedge",
         "lime wedge",
-        "orange wedge"
+        "orange wedge",
+        "tangerine wedge"
     ],
     "wed": [
         "brewed coffee",
@@ -9403,21 +9493,24 @@
         "grapefruit wedge",
         "lemon wedge",
         "lime wedge",
-        "orange wedge"
+        "orange wedge",
+        "tangerine wedge"
     ],
     "edg": [
         "citrus wedge",
         "grapefruit wedge",
         "lemon wedge",
         "lime wedge",
-        "orange wedge"
+        "orange wedge",
+        "tangerine wedge"
     ],
     "dge": [
         "citrus wedge",
         "grapefruit wedge",
         "lemon wedge",
         "lime wedge",
-        "orange wedge"
+        "orange wedge",
+        "tangerine wedge"
     ],
     "s z": [
         "citrus zest"
@@ -9427,14 +9520,16 @@
         "grapefruit zest",
         "lemon zest",
         "lime zest",
-        "orange zest"
+        "orange zest",
+        "tangerine zest"
     ],
     "zes": [
         "citrus zest",
         "grapefruit zest",
         "lemon zest",
         "lime zest",
-        "orange zest"
+        "orange zest",
+        "tangerine zest"
     ],
     "est": [
         "chestnut",
@@ -9443,6 +9538,7 @@
         "lemon zest",
         "lime zest",
         "orange zest",
+        "tangerine zest",
         "water chestnut",
         "worcestershire",
         "worcestershire sauce"
@@ -9599,11 +9695,22 @@
         "lime rind",
         "orange rind",
         "orange roughy",
+        "tangerine rind",
         "white rice"
     ],
     "e z": [
         "lime zest",
-        "orange zest"
+        "orange zest",
+        "tangerine zest"
+    ],
+    "tan": [
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest"
     ],
     "cla": [
         "clam",
@@ -10104,6 +10211,8 @@
         "corn meal",
         "corn starch",
         "corn tortilla",
+        "cornichon",
+        "cornichon cucumber",
         "cornish game hen",
         "cornish game hen breast",
         "cornish game hen giblet",
@@ -11262,6 +11371,8 @@
         "pancetta"
     ],
     "hon": [
+        "cornichon",
+        "cornichon cucumber",
         "honey"
     ],
     "ney": [
@@ -12458,6 +12569,7 @@
         "oatmilk"
     ],
     "led": [
+        "pickled cucumber",
         "rolled oat"
     ],
     "d o": [
@@ -13002,19 +13114,31 @@
     "\u00e1rb": [
         "chile de \u00e1rbol"
     ],
+    "nic": [
+        "cornichon",
+        "cornichon cucumber",
+        "tonic",
+        "tonic water"
+    ],
     "cuc": [
+        "cornichon cucumber",
         "cucumber",
-        "kirby cucumber"
+        "kirby cucumber",
+        "pickled cucumber"
     ],
     "ucu": [
+        "cornichon cucumber",
         "cucumber",
-        "kirby cucumber"
+        "kirby cucumber",
+        "pickled cucumber"
     ],
     "cum": [
+        "cornichon cucumber",
         "cucumber",
         "cumin",
         "cumin seed",
-        "kirby cucumber"
+        "kirby cucumber",
+        "pickled cucumber"
     ],
     "esh": [
         "fresh bean",
@@ -15342,10 +15466,6 @@
         "red wine",
         "red wine vinegar",
         "tepid water"
-    ],
-    "nic": [
-        "tonic",
-        "tonic water"
     ],
     "c w": [
         "tonic water"

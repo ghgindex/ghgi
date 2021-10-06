@@ -285,7 +285,7 @@ class Product:
         Return the inferred mass, the quantity type, and whether it's a plus.
 
         TODO: This gets a bit tricky for things like cans, bunches, and sprigs, which
-        are essentially different sizes of `ea`. In addition to the default 
+        are essentially different sizes of `ea`. In addition to the default
         "g" value, I think we need to add something optional like `single_g`,
         `agg_g` and introduce new units `single`, `agg` which would be used
         to mask thinks like `sprig`, `bunch`, and so forth.
@@ -338,9 +338,19 @@ class Product:
 
         This function assesses all of the available quantity information and
         tries to synthesize it in the most accurate way possible.
+
+        If no product is assigned to the ingredient, we use dummy values of 1.0 for sg
+        and 100.0 for mass to estimate the ingredient's mass.
         """
 
-        product = ingredient[Ingredient.PRODUCT]
+        product = ingredient.get(Ingredient.PRODUCT)
+
+        if not product:
+            product = {  # dummy product
+                Product.MASS: 100.0,
+                Product.SG: 1.0
+            }
+
         sg = Product.sg(product)
         mods = ingredient.get(Ingredient.MODS)
         grated = mods and 'grated' in mods
@@ -389,7 +399,7 @@ class Product:
             return vol_qty
         return mass_qty
 
-    @staticmethod
+    @ staticmethod
     def ghg_value(product, origin, flavor: GHGFlavor):
         if product is None:
             return None
@@ -404,7 +414,7 @@ class Product:
                     value += par_value * pct/100.0
         return value
 
-    @staticmethod
+    @ staticmethod
     def food_values(product):
         """ return a dict of {category: value} where category is the
         product category, and value is the food value of this product for that
@@ -415,7 +425,7 @@ class Product:
         values = Product.fv_db().get(product[Product.NAME], {})
         return {k: v for k, v in values.items() if k in CATEGORY_VALUES}
 
-    @staticmethod
+    @ staticmethod
     def ghg_efficiency_ratio(product, origin=Origin.DEFAULT):
         # return the ratio between this product's efficiency and its
         # baseline(s). If it has no food values, aggregate its parents'
@@ -458,10 +468,14 @@ class Product:
 
     @staticmethod
     def impact(ingredient, origin=Origin.DEFAULT):
-        if ingredient.get('error') or (ingredient.get(Ingredient.PRODUCT) is None):
+        if ingredient.get('error'):
             return 0.0
+
         mass = Product.mass(ingredient)
         ingredient[Product.MASS] = mass
+        if not ingredient.get(Ingredient.PRODUCT):
+            return 0.0
+
         ghg_impact = Product.ghg_value(
             ingredient[Ingredient.PRODUCT],
             origin, DEFAULT_FLAVOR

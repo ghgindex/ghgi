@@ -682,7 +682,13 @@
             "lime rind",
             "lime slice",
             "lime wedge",
-            "lime zest"
+            "lime zest",
+            "tangerine",
+            "tangerine peel",
+            "tangerine rind",
+            "tangerine slice",
+            "tangerine wedge",
+            "tangerine zest"
         ],
         "sg": 1.0,
         "super": {}
@@ -1292,7 +1298,8 @@
             "grapfruit juice",
             "lemon juice",
             "lime juice",
-            "orange juice"
+            "orange juice",
+            "tangerine juice"
         ],
         "sg": 1.0,
         "super": {
@@ -1660,6 +1667,8 @@
             "chile de \u00e1rbol",
             "chili",
             "chili pepper",
+            "cornichon",
+            "cornichon cucumber",
             "cucumber",
             "fresh bean",
             "ghost",
@@ -1691,6 +1700,7 @@
             "orange pepper",
             "other vegetables",
             "pepitas",
+            "pickled cucumber",
             "piquillo pepper",
             "poblano",
             "poblano chile",

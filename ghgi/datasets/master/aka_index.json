@@ -1291,6 +1291,30 @@
         "citrus fruit",
         7
     ],
+    "tangerine": [
+        "citrus fruit",
+        7
+    ],
+    "tangerine peel": [
+        "citrus fruit",
+        12
+    ],
+    "tangerine rind": [
+        "citrus fruit",
+        12
+    ],
+    "tangerine slice": [
+        "citrus fruit",
+        13
+    ],
+    "tangerine wedge": [
+        "citrus fruit",
+        13
+    ],
+    "tangerine zest": [
+        "citrus fruit",
+        12
+    ],
     "clam": [
         "clam",
         2
@@ -2035,6 +2059,10 @@
         "lemon juice",
         10
     ],
+    "tangerine juice": [
+        "lemon juice",
+        13
+    ],
     "lemongrass": [
         "lemongrass",
         8
@@ -2711,6 +2739,14 @@
         "other vegetables",
         10
     ],
+    "cornichon": [
+        "other vegetables",
+        7
+    ],
+    "cornichon cucumber": [
+        "other vegetables",
+        16
+    ],
     "cucumber": [
         "other vegetables",
         6
@@ -2830,6 +2866,10 @@
     "pepitas": [
         "other vegetables",
         5
+    ],
+    "pickled cucumber": [
+        "other vegetables",
+        14
     ],
     "piquillo pepper": [
         "other vegetables",

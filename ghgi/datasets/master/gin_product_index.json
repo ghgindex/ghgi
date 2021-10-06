@@ -66,7 +66,8 @@
         "lime juice",
         "orange juice",
         "pickle juice",
-        "pickling juice"
+        "pickling juice",
+        "tangerine juice"
     ],
     "cider": [
         "apple cider",
@@ -904,6 +905,7 @@
     "pickl": [
         "pickle juice",
         "pickle liquid",
+        "pickled cucumber",
         "pickling juice",
         "pickling liquid"
     ],
@@ -1326,35 +1328,40 @@
         "grapefruit peel",
         "lemon peel",
         "lime peel",
-        "orange peel"
+        "orange peel",
+        "tangerine peel"
     ],
     "rind": [
         "citrus rind",
         "grapefruit rind",
         "lemon rind",
         "lime rind",
-        "orange rind"
+        "orange rind",
+        "tangerine rind"
     ],
     "slice": [
         "citrus slice",
         "grapefruit slice",
         "lemon slice",
         "lime slice",
-        "orange slice"
+        "orange slice",
+        "tangerine slice"
     ],
     "wedg": [
         "citrus wedge",
         "grapefruit wedge",
         "lemon wedge",
         "lime wedge",
-        "orange wedge"
+        "orange wedge",
+        "tangerine wedge"
     ],
     "zest": [
         "citrus zest",
         "grapefruit zest",
         "lemon zest",
         "lime zest",
-        "orange zest"
+        "orange zest",
+        "tangerine zest"
     ],
     "grapefruit": [
         "grapefruit",
@@ -1381,6 +1388,15 @@
         "lime slice",
         "lime wedge",
         "lime zest"
+    ],
+    "tangerin": [
+        "tangerine",
+        "tangerine juice",
+        "tangerine peel",
+        "tangerine rind",
+        "tangerine slice",
+        "tangerine wedge",
+        "tangerine zest"
     ],
     "clam": [
         "clam",
@@ -2487,9 +2503,15 @@
     "\u00e1rbol": [
         "chile de \u00e1rbol"
     ],
+    "cornichon": [
+        "cornichon",
+        "cornichon cucumber"
+    ],
     "cucumb": [
+        "cornichon cucumber",
         "cucumber",
-        "kirby cucumber"
+        "kirby cucumber",
+        "pickled cucumber"
     ],
     "fresh": [
         "fresh bean",

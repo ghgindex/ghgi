@@ -49,8 +49,13 @@ class TestProduct(TestCase):
                 Ingredient.QUALIFIERS: [],
                 Ingredient.PLUS: False
             }],
-            Ingredient.PRODUCT: product
         }
+        # test dummy
+        self.assertEqual(Product.mass(ingredient), 200)
+        ingredient[Ingredient.PRODUCT] = {}
+        self.assertEqual(Product.mass(ingredient), 200)
+
+        ingredient[Ingredient.PRODUCT] = product
         self.assertEqual(Product.mass(ingredient), 200)
 
         ingredient[Ingredient.QTYS] = [{
