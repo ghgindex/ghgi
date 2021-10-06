@@ -1236,7 +1236,14 @@
     "herbs": {
         "g": 3.8,
         "names": {
-            "herbes de provence": {}
+            "herbes de provence": {},
+            "~italian": {
+                "dependent": [
+                    "_seasoning",
+                    "_spice mix",
+                    "_spices"
+                ]
+            }
         },
         "super": {
             "lamiaceae": 50,
@@ -2790,7 +2797,11 @@
     "tortilla": {
         "g": 45,
         "names": {
-            "tortilla": {}
+            "tortilla": {
+                "dependent": [
+                    "flour"
+                ]
+            }
         },
         "super": {
             "flour": 100

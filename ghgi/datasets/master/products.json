@@ -1161,7 +1161,10 @@
         "g": 3.8,
         "names": [
             "herbes de provence",
-            "herbs"
+            "herbs",
+            "italian seasoning",
+            "italian spice mix",
+            "italian spices"
         ],
         "super": {
             "lamiaceae": 50,
@@ -2620,6 +2623,7 @@
     "tortilla": {
         "g": 45,
         "names": [
+            "flour tortilla",
             "tortilla"
         ],
         "super": {

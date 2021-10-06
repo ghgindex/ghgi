@@ -1549,6 +1549,7 @@
     ],
     "tortilla": [
         "corn tortilla",
+        "flour tortilla",
         "tortilla",
         "tortilla chip"
     ],
@@ -1809,6 +1810,7 @@
         "bread flour",
         "cake flour",
         "flour",
+        "flour tortilla",
         "pastry flour",
         "rye flour",
         "semolina flour",
@@ -1908,6 +1910,27 @@
     ],
     "provenc": [
         "herbes de provence"
+    ],
+    "italian": [
+        "italian parsley",
+        "italian sausage",
+        "italian seasoning",
+        "italian spice mix",
+        "italian spices"
+    ],
+    "season": [
+        "italian seasoning",
+        "seasoning",
+        "seasoning salt"
+    ],
+    "spice": [
+        "italian spice mix",
+        "italian spices",
+        "spice",
+        "spice blend"
+    ],
+    "mix": [
+        "italian spice mix"
     ],
     "honey": [
         "honey"
@@ -2880,10 +2903,6 @@
     "ham": [
         "ham"
     ],
-    "italian": [
-        "italian parsley",
-        "italian sausage"
-    ],
     "kielbasa": [
         "kielbasa",
         "kielbasa sausage"
@@ -3414,10 +3433,6 @@
     "tabl": [
         "table salt"
     ],
-    "season": [
-        "seasoning",
-        "seasoning salt"
-    ],
     "sardin": [
         "sardine"
     ],
@@ -3482,10 +3497,6 @@
     ],
     "soymilk": [
         "soymilk"
-    ],
-    "spice": [
-        "spice",
-        "spice blend"
     ],
     "allspic": [
         "allspice"

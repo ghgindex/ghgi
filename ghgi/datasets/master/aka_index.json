@@ -1855,6 +1855,18 @@
         "herbs",
         16
     ],
+    "italian seasoning": [
+        "herbs",
+        15
+    ],
+    "italian spice mix": [
+        "herbs",
+        15
+    ],
+    "italian spices": [
+        "herbs",
+        12
+    ],
     "honey": [
         "honey",
         3
@@ -4770,6 +4782,10 @@
     "tortilla": [
         "tortilla",
         6
+    ],
+    "flour tortilla": [
+        "tortilla",
+        12
     ],
     "trout": [
         "trout",

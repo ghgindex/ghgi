@@ -260,7 +260,7 @@ class Product:
         if unit == Ingredient.BUNCH:
             if product.get(Product.BUNCH):
                 return qty * product.get(Product.BUNCH), Ingredient.EA
-            parents = product.get(Product.PARENTS)
+            parents = product.get(Product.PARENTS, [])
             if len(parents) == 1:
                 parent = Product.get(list(parents.keys())[0])
                 return Product.unbundle(parent, qty, unit)
@@ -270,7 +270,7 @@ class Product:
         elif unit == Ingredient.PKG:
             if product.get(Product.PKG):
                 return qty * product.get(Product.PKG), 'ml'
-            parents = product.get(Product.PARENTS)
+            parents = product.get(Product.PARENTS, [])
             if len(parents) == 1:
                 parent = Product.get(list(parents.keys())[0])
                 return Product.unbundle(parent, qty, unit)
