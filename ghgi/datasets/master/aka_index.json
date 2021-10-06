@@ -387,9 +387,17 @@
         "berries & grapes",
         3
     ],
+    "black currant": [
+        "berries & grapes",
+        11
+    ],
     "blackberry": [
         "berries & grapes",
         8
+    ],
+    "blackcurrant": [
+        "berries & grapes",
+        10
     ],
     "blueberry": [
         "berries & grapes",
@@ -398,6 +406,14 @@
     "cranberry": [
         "berries & grapes",
         7
+    ],
+    "currant": [
+        "berries & grapes",
+        5
+    ],
+    "dried currant": [
+        "berries & grapes",
+        11
     ],
     "grape": [
         "berries & grapes",
@@ -414,6 +430,10 @@
     "raspberry": [
         "berries & grapes",
         7
+    ],
+    "red currant": [
+        "berries & grapes",
+        9
     ],
     "strawberry": [
         "berries & grapes",
@@ -1010,6 +1030,14 @@
     "parmesan cheese": [
         "cheese",
         13
+    ],
+    "parmigiano reggiano": [
+        "cheese",
+        17
+    ],
+    "parmigiano reggiano cheese": [
+        "cheese",
+        24
     ],
     "parmigiano- reggiano": [
         "cheese",
@@ -2007,6 +2035,10 @@
         "lemon juice",
         10
     ],
+    "lemongrass": [
+        "lemongrass",
+        8
+    ],
     "light cream": [
         "light cream",
         9
@@ -2047,6 +2079,14 @@
         "liquor",
         4
     ],
+    "campari": [
+        "liquor",
+        5
+    ],
+    "cognac": [
+        "liquor",
+        4
+    ],
     "cointreau": [
         "liquor",
         7
@@ -2075,9 +2115,17 @@
         "liquor",
         17
     ],
+    "kirsch": [
+        "liquor",
+        4
+    ],
     "liqueur": [
         "liquor",
         5
+    ],
+    "pernod": [
+        "liquor",
+        4
     ],
     "rum": [
         "liquor",
@@ -2102,6 +2150,10 @@
     "scotch whisky": [
         "liquor",
         11
+    ],
+    "vodka": [
+        "liquor",
+        3
     ],
     "whiskey": [
         "liquor",
@@ -4955,9 +5007,21 @@
         "wine",
         2
     ],
+    "champagne": [
+        "wine",
+        7
+    ],
     "dry red wine": [
         "wine",
         10
+    ],
+    "dry sherry": [
+        "wine",
+        8
+    ],
+    "dry sherry wine": [
+        "wine",
+        13
     ],
     "dry vermouth": [
         "wine",
@@ -4967,9 +5031,29 @@
         "wine",
         12
     ],
+    "madeira": [
+        "wine",
+        5
+    ],
+    "madeira wine": [
+        "wine",
+        10
+    ],
     "marsala": [
         "wine",
         5
+    ],
+    "marsala wine": [
+        "wine",
+        10
+    ],
+    "port": [
+        "wine",
+        2
+    ],
+    "port wine": [
+        "wine",
+        7
     ],
     "red vermouth": [
         "wine",
@@ -4982,6 +5066,14 @@
     "rose wine": [
         "wine",
         7
+    ],
+    "sherry": [
+        "wine",
+        4
+    ],
+    "sherry wine": [
+        "wine",
+        9
     ],
     "sweet vermouth": [
         "wine",

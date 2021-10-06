@@ -34,6 +34,7 @@
         "lemon slice",
         "lemon wedge",
         "lemon zest",
+        "lemongrass",
         "monkfish",
         "monterey jack",
         "monterey jack cheese",
@@ -647,6 +648,7 @@
         "chinese cabbage",
         "cider vinegar",
         "dry red wine",
+        "dry sherry wine",
         "dry white wine",
         "fettuccine",
         "fettuccine pasta",
@@ -655,9 +657,12 @@
         "jasmine rice",
         "linguine",
         "linguine pasta",
+        "madeira wine",
+        "marsala wine",
         "nectarine",
         "pine nut",
         "pineapple",
+        "port wine",
         "red wine",
         "red wine vinegar",
         "rice vinegar",
@@ -666,6 +671,7 @@
         "rose wine",
         "sardine",
         "sherry vinegar",
+        "sherry wine",
         "superfine sugar",
         "vinegar",
         "white vinegar",
@@ -933,6 +939,7 @@
         "jalape\u00f1o chili",
         "jalape\u00f1o pepper",
         "marsala",
+        "marsala wine",
         "salad greens",
         "salami",
         "salami sausage"
@@ -942,6 +949,7 @@
         "canola oil",
         "gala apple",
         "gorgonzola cheese",
+        "marsala wine",
         "mortadella sausage",
         "mozzarella cheese",
         "tortilla chip",
@@ -1158,12 +1166,17 @@
         "grapefruit zest",
         "grapeleaf",
         "grapfruit juice",
+        "lemongrass",
         "pomegranate",
         "pomegranate seed"
     ],
     "ran": [
+        "black currant",
+        "blackcurrant",
         "brandy",
         "cranberry",
+        "currant",
+        "dried currant",
         "grand marnier",
         "grand marnier liqueur",
         "granny smith",
@@ -1182,6 +1195,7 @@
         "orange zest",
         "pomegranate",
         "pomegranate seed",
+        "red currant",
         "serrano",
         "serrano chile",
         "serrano chili",
@@ -1204,6 +1218,8 @@
     ],
     "y s": [
         "bay scallop",
+        "dry sherry",
+        "dry sherry wine",
         "granny smith",
         "granny smith apple",
         "soy sauce",
@@ -1387,6 +1403,7 @@
         "red cabbage",
         "red chile",
         "red chili",
+        "red currant",
         "red delicious",
         "red delicious apple",
         "red lentil",
@@ -1407,6 +1424,7 @@
         "brewed tea",
         "candied ginger",
         "dried bean",
+        "dried currant",
         "dried pea",
         "dry red wine",
         "farmed barramundi",
@@ -1436,6 +1454,7 @@
         "red cabbage",
         "red chile",
         "red chili",
+        "red currant",
         "red delicious",
         "red delicious apple",
         "red lentil",
@@ -1504,6 +1523,7 @@
     "rt ": [
         "camembert cheese",
         "heart palm",
+        "port wine",
         "roquefort cheese",
         "short rib",
         "tart apple"
@@ -1681,6 +1701,7 @@
     ],
     "par": [
         "asparagus",
+        "campari",
         "flat leaf parsley",
         "flat leaf parsley leaf",
         "flat-leaf parsley",
@@ -1688,6 +1709,8 @@
         "italian parsley",
         "parmesan",
         "parmesan cheese",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
@@ -1816,6 +1839,8 @@
     ],
     "gia": [
         "belgian endive",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
@@ -1829,6 +1854,8 @@
         "coriander seed",
         "italian parsley",
         "italian sausage",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
@@ -2558,7 +2585,12 @@
     "rra": [
         "barramundi",
         "barramundi (farmed)",
+        "black currant",
+        "blackcurrant",
+        "currant",
+        "dried currant",
         "farmed barramundi",
+        "red currant",
         "serrano",
         "serrano chile",
         "serrano chili",
@@ -2609,6 +2641,7 @@
     "ack": [
         "back bacon",
         "black bean",
+        "black currant",
         "black eyed pea",
         "black olive",
         "black pepper",
@@ -2617,6 +2650,7 @@
         "black peppercorn",
         "black sesame seed",
         "blackberry",
+        "blackcurrant",
         "blackstrap molasses",
         "cracker",
         "graham cracker",
@@ -2634,6 +2668,7 @@
     "ck ": [
         "back bacon",
         "black bean",
+        "black currant",
         "black eyed pea",
         "black olive",
         "black pepper",
@@ -2968,12 +3003,16 @@
         "poblano pepper"
     ],
     "ant": [
+        "black currant",
+        "blackcurrant",
         "breast pheasant",
         "cantaloupe",
         "chanterelle",
         "chanterelle mushroom",
         "cilantro",
         "cilantro leaf",
+        "currant",
+        "dried currant",
         "eggplant",
         "giblet pheasant",
         "leg pheasant",
@@ -2987,6 +3026,7 @@
         "pheasant thigh",
         "pheasant wing",
         "plantain",
+        "red currant",
         "thigh pheasant",
         "wing pheasant"
     ],
@@ -3311,6 +3351,8 @@
         "mollusks (farmed)",
         "parmesan",
         "parmesan cheese",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
@@ -3483,6 +3525,8 @@
         "cherry tomato",
         "chervil",
         "chervil leaf",
+        "dry sherry",
+        "dry sherry wine",
         "great northern bean",
         "herbes de provence",
         "herbs",
@@ -3494,7 +3538,9 @@
         "pepper kosher salt",
         "sherbert",
         "sherbet",
+        "sherry",
         "sherry vinegar",
+        "sherry wine",
         "sour cherry"
     ],
     "erd": [
@@ -3625,6 +3671,7 @@
         "pak choi",
         "paneer cheese",
         "parmesan cheese",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -3697,6 +3744,8 @@
     ],
     " sh": [
         "beef shank",
+        "dry sherry",
+        "dry sherry wine",
         "farmed shrimp",
         "lamb shank",
         "lamb shoulder",
@@ -3962,6 +4011,7 @@
         "sirloin steak"
     ],
     "ham": [
+        "champagne",
         "graham cracker",
         "ham",
         "hamburger",
@@ -4107,6 +4157,8 @@
         "great northern bean",
         "mortadella",
         "mortadella sausage",
+        "port",
+        "port wine",
         "portobello",
         "portobello mushroom",
         "roquefort",
@@ -4351,6 +4403,8 @@
         "cherry",
         "cherry tomato",
         "cranberry",
+        "dry sherry",
+        "dry sherry wine",
         "herring",
         "lea & perrins",
         "lea perrins",
@@ -4359,7 +4413,9 @@
         "serrano chile",
         "serrano chili",
         "serrano pepper",
+        "sherry",
         "sherry vinegar",
+        "sherry wine",
         "sour cherry",
         "strawberry",
         "strawberry ice cream"
@@ -4373,6 +4429,7 @@
     "rie": [
         "berries & grapes",
         "dried bean",
+        "dried currant",
         "dried pea",
         "sun dried tomato",
         "sun-dried tomato"
@@ -4455,14 +4512,19 @@
         "cranberry",
         "curry paste",
         "curry powder",
+        "dry sherry",
+        "dry sherry wine",
         "raspberry",
+        "sherry",
         "sherry vinegar",
+        "sherry wine",
         "sour cherry",
         "strawberry",
         "strawberry ice cream"
     ],
     "bla": [
         "black bean",
+        "black currant",
         "black eyed pea",
         "black olive",
         "black pepper",
@@ -4471,6 +4533,7 @@
         "black peppercorn",
         "black sesame seed",
         "blackberry",
+        "blackcurrant",
         "blackstrap molasses",
         "kosher salt black pepper",
         "poblano",
@@ -4481,6 +4544,7 @@
     ],
     "lac": [
         "black bean",
+        "black currant",
         "black eyed pea",
         "black olive",
         "black pepper",
@@ -4489,15 +4553,60 @@
         "black peppercorn",
         "black sesame seed",
         "blackberry",
+        "blackcurrant",
         "blackstrap molasses",
         "kosher salt black pepper",
         "salt black pepper"
+    ],
+    "k c": [
+        "black currant",
+        "bok choy",
+        "dark chocolate",
+        "littleneck clam",
+        "milk chocolate",
+        "monterey jack cheese",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
+        "pak choi",
+        "pok choi",
+        "pork chop"
+    ],
+    " cu": [
+        "black currant",
+        "dried currant",
+        "ice cube",
+        "kirby cucumber",
+        "red currant"
+    ],
+    "cur": [
+        "black currant",
+        "blackcurrant",
+        "currant",
+        "curry paste",
+        "curry powder",
+        "dried currant",
+        "red currant"
+    ],
+    "urr": [
+        "black currant",
+        "blackcurrant",
+        "currant",
+        "curry paste",
+        "curry powder",
+        "dried currant",
+        "red currant"
     ],
     "ckb": [
         "blackberry"
     ],
     "kbe": [
         "blackberry"
+    ],
+    "ckc": [
+        "blackcurrant"
+    ],
+    "kcu": [
+        "blackcurrant"
     ],
     "blu": [
         "blue cheese",
@@ -4530,6 +4639,36 @@
     "nbe": [
         "cranberry"
     ],
+    "dri": [
+        "dried bean",
+        "dried currant",
+        "dried pea",
+        "sun dried tomato",
+        "sun-dried tomato"
+    ],
+    "ied": [
+        "candied ginger",
+        "dried bean",
+        "dried currant",
+        "dried pea",
+        "sun dried tomato",
+        "sun-dried tomato"
+    ],
+    "d c": [
+        "brewed coffee",
+        "dried currant",
+        "farmed carp",
+        "farmed catfish",
+        "farmed crab",
+        "heavy whipped cream",
+        "iced coffee",
+        "red cabbage",
+        "red chile",
+        "red chili",
+        "red currant",
+        "whipped cream",
+        "wild crab"
+    ],
     "pe ": [
         "grape leaf",
         "grape tomato"
@@ -4549,6 +4688,7 @@
     ],
     "ras": [
         "brassicas",
+        "lemongrass",
         "raspberry"
     ],
     "spb": [
@@ -4809,6 +4949,7 @@
         "dark molasses",
         "farmed bass",
         "farmed striped bass",
+        "lemongrass",
         "light molasses",
         "molasses",
         "sea bass",
@@ -4862,18 +5003,6 @@
     "ok ": [
         "bok choy",
         "pok choi"
-    ],
-    "k c": [
-        "bok choy",
-        "dark chocolate",
-        "littleneck clam",
-        "milk chocolate",
-        "monterey jack cheese",
-        "non-stick cooking spray",
-        "nonstick cooking spray",
-        "pak choi",
-        "pok choi",
-        "pork chop"
     ],
     "hoy": [
         "bok choy"
@@ -5314,6 +5443,7 @@
         "muenster cheese",
         "paneer cheese",
         "parmesan cheese",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -5411,6 +5541,8 @@
     "dry": [
         "dry mustard",
         "dry red wine",
+        "dry sherry",
+        "dry sherry wine",
         "dry vermouth",
         "dry white wine"
     ],
@@ -5427,12 +5559,15 @@
         "curry powder",
         "dry mustard",
         "dry red wine",
+        "dry sherry",
+        "dry sherry wine",
         "dry vermouth",
         "dry white wine",
         "pastry flour",
         "rosemary leaf",
         "savory leaf",
         "sherry vinegar",
+        "sherry wine",
         "strawberry ice cream",
         "summer savory leaf",
         "whole wheat pastry flour",
@@ -5666,19 +5801,6 @@
     ],
     "pok": [
         "pok choi"
-    ],
-    "d c": [
-        "brewed coffee",
-        "farmed carp",
-        "farmed catfish",
-        "farmed crab",
-        "heavy whipped cream",
-        "iced coffee",
-        "red cabbage",
-        "red chile",
-        "red chili",
-        "whipped cream",
-        "wild crab"
     ],
     "aue": [
         "sauerkraut",
@@ -7042,6 +7164,7 @@
         "kosher salt",
         "kosher salt black pepper",
         "marsala",
+        "marsala wine",
         "pepper kosher salt",
         "pepper salt",
         "salad greens",
@@ -7094,6 +7217,8 @@
     ],
     "rmi": [
         "buttermilk",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
@@ -7249,7 +7374,8 @@
     "ra ": [
         "angostura bitters",
         "demerara sugar",
-        "extra virgin olive oil"
+        "extra virgin olive oil",
+        "madeira wine"
     ],
     "a s": [
         "demerara sugar",
@@ -7360,6 +7486,7 @@
         "peppercorn",
         "pepperoni",
         "pepperoni sausage",
+        "pernod",
         "pink peppercorn",
         "piquillo pepper",
         "poblano pepper",
@@ -7743,6 +7870,7 @@
         "muenster cheese",
         "paneer cheese",
         "parmesan cheese",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -7786,6 +7914,7 @@
         "muenster cheese",
         "paneer cheese",
         "parmesan cheese",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -7825,6 +7954,7 @@
         "muenster cheese",
         "paneer cheese",
         "parmesan cheese",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -7919,7 +8049,8 @@
     ],
     "cam": [
         "camembert",
-        "camembert cheese"
+        "camembert cheese",
+        "campari"
     ],
     "mem": [
         "camembert",
@@ -8358,12 +8489,16 @@
         "parmesan cheese"
     ],
     "mig": [
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
         "parmigiano-reggiano cheese"
     ],
     "igi": [
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
@@ -8373,6 +8508,8 @@
         "canola oil",
         "oregano",
         "oregano leaf",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano",
@@ -8393,61 +8530,13 @@
         "toscano",
         "toscano cheese"
     ],
-    "no-": [
-        "inari-no-moto",
-        "parmigiano- reggiano",
-        "parmigiano- reggiano cheese",
-        "parmigiano-reggiano",
-        "parmigiano-reggiano cheese"
-    ],
-    "o- ": [
-        "parmigiano- reggiano",
-        "parmigiano- reggiano cheese"
-    ],
-    "- r": [
-        "parmigiano- reggiano",
-        "parmigiano- reggiano cheese"
-    ],
-    " re": [
-        "dry red wine",
-        "parmigiano- reggiano",
-        "parmigiano- reggiano cheese",
-        "sweet red pepper"
-    ],
-    "reg": [
-        "oregano",
-        "oregano leaf",
-        "parmigiano- reggiano",
-        "parmigiano- reggiano cheese",
-        "parmigiano-reggiano",
-        "parmigiano-reggiano cheese"
-    ],
-    "egg": [
-        "egg",
-        "egg white",
-        "egg yolk",
-        "eggplant",
-        "eggs",
-        "parmigiano- reggiano",
-        "parmigiano- reggiano cheese",
-        "parmigiano-reggiano",
-        "parmigiano-reggiano cheese",
-        "taleggio",
-        "taleggio cheese"
-    ],
-    "ggi": [
-        "parmigiano- reggiano",
-        "parmigiano- reggiano cheese",
-        "parmigiano-reggiano",
-        "parmigiano-reggiano cheese",
-        "taleggio",
-        "taleggio cheese"
-    ],
     "no ": [
         "jalapeno chile",
         "jalapeno chili",
         "jalapeno pepper",
         "oregano leaf",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -8463,6 +8552,56 @@
         "serrano pepper",
         "toscano cheese"
     ],
+    "o r": [
+        "arborio rice",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
+        "pecorino romano",
+        "pecorino romano cheese"
+    ],
+    " re": [
+        "dry red wine",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
+        "parmigiano- reggiano",
+        "parmigiano- reggiano cheese",
+        "sweet red pepper"
+    ],
+    "reg": [
+        "oregano",
+        "oregano leaf",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
+        "parmigiano- reggiano",
+        "parmigiano- reggiano cheese",
+        "parmigiano-reggiano",
+        "parmigiano-reggiano cheese"
+    ],
+    "egg": [
+        "egg",
+        "egg white",
+        "egg yolk",
+        "eggplant",
+        "eggs",
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
+        "parmigiano- reggiano",
+        "parmigiano- reggiano cheese",
+        "parmigiano-reggiano",
+        "parmigiano-reggiano cheese",
+        "taleggio",
+        "taleggio cheese"
+    ],
+    "ggi": [
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
+        "parmigiano- reggiano",
+        "parmigiano- reggiano cheese",
+        "parmigiano-reggiano",
+        "parmigiano-reggiano cheese",
+        "taleggio",
+        "taleggio cheese"
+    ],
     "o c": [
         "guajillo chile",
         "guajillo chili",
@@ -8472,6 +8611,7 @@
         "jalapeno chili",
         "jalape\u00f1o chile",
         "jalape\u00f1o chili",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -8484,6 +8624,21 @@
         "serrano chili",
         "taleggio cheese",
         "toscano cheese"
+    ],
+    "no-": [
+        "inari-no-moto",
+        "parmigiano- reggiano",
+        "parmigiano- reggiano cheese",
+        "parmigiano-reggiano",
+        "parmigiano-reggiano cheese"
+    ],
+    "o- ": [
+        "parmigiano- reggiano",
+        "parmigiano- reggiano cheese"
+    ],
+    "- r": [
+        "parmigiano- reggiano",
+        "parmigiano- reggiano cheese"
     ],
     "o-r": [
         "parmigiano-reggiano",
@@ -8524,11 +8679,6 @@
     "ino": [
         "pecorino",
         "pecorino cheese",
-        "pecorino romano",
-        "pecorino romano cheese"
-    ],
-    "o r": [
-        "arborio rice",
         "pecorino romano",
         "pecorino romano cheese"
     ],
@@ -9058,6 +9208,7 @@
     ],
     "ari": [
         "calamari",
+        "campari",
         "harissa",
         "inari-no-moto",
         "nectarine"
@@ -9082,6 +9233,8 @@
         "sriracha"
     ],
     "ira": [
+        "madeira",
+        "madeira wine",
         "sriracha"
     ],
     "ach": [
@@ -9094,6 +9247,7 @@
         "unbleached all purpose flour"
     ],
     "cha": [
+        "champagne",
         "chanterelle",
         "chanterelle mushroom",
         "chard",
@@ -9322,7 +9476,8 @@
         "coconut water",
         "grapefruit wedge",
         "hot water",
-        "pheasant wing"
+        "pheasant wing",
+        "port wine"
     ],
     "t z": [
         "grapefruit zest"
@@ -9334,7 +9489,8 @@
         "lemon rind",
         "lemon slice",
         "lemon wedge",
-        "lemon zest"
+        "lemon zest",
+        "lemongrass"
     ],
     "emo": [
         "lemon",
@@ -9344,6 +9500,7 @@
         "lemon slice",
         "lemon wedge",
         "lemon zest",
+        "lemongrass",
         "semolina",
         "semolina flour"
     ],
@@ -10013,7 +10170,8 @@
     "ern": [
         "butternut squash",
         "corn kernel",
-        "great northern bean"
+        "great northern bean",
+        "pernod"
     ],
     "rne": [
         "corn kernel"
@@ -10275,6 +10433,8 @@
         "salad greens"
     ],
     "ade": [
+        "madeira",
+        "madeira wine",
         "mortadella",
         "mortadella sausage",
         "philadelphia cream cheese"
@@ -10432,14 +10592,6 @@
         "shrimp (farmed)",
         "shrimp (wild)"
     ],
-    "cur": [
-        "curry paste",
-        "curry powder"
-    ],
-    "urr": [
-        "curry paste",
-        "curry powder"
-    ],
     "hoc": [
         "bittersweet chocolate",
         "chocolate",
@@ -10510,7 +10662,8 @@
     "rsa": [
         "demersal fish",
         "demersal mollusks",
-        "marsala"
+        "marsala",
+        "marsala wine"
     ],
     " fi": [
         "demersal fish",
@@ -10675,6 +10828,8 @@
         "pork loin",
         "pork sausage",
         "pork shoulder",
+        "port",
+        "port wine",
         "portobello",
         "portobello mushroom",
         "salt pork"
@@ -10979,13 +11134,6 @@
     "die": [
         "candied ginger"
     ],
-    "ied": [
-        "candied ginger",
-        "dried bean",
-        "dried pea",
-        "sun dried tomato",
-        "sun-dried tomato"
-    ],
     " gi": [
         "candied ginger",
         "chicken giblet",
@@ -11065,9 +11213,11 @@
     ],
     "y w": [
         "berry wheat",
+        "dry sherry wine",
         "dry white wine",
         "heavy whipped cream",
         "heavy whipping cream",
+        "sherry wine",
         "turkey wing"
     ],
     "erb": [
@@ -11360,6 +11510,7 @@
         "marjoram",
         "marjoram leaf",
         "marsala",
+        "marsala wine",
         "rosemary",
         "rosemary leaf",
         "san marzano tomato"
@@ -11501,16 +11652,21 @@
         "cornish game hen wing",
         "cornish hen wing",
         "dry red wine",
+        "dry sherry wine",
         "dry white wine",
         "duck wing",
         "game hen wing",
         "goose wing",
         "grouse wing",
+        "madeira wine",
+        "marsala wine",
         "pheasant wing",
+        "port wine",
         "quail wing",
         "red wine",
         "red wine vinegar",
         "rose wine",
+        "sherry wine",
         "turkey wing",
         "white wine",
         "white wine vinegar",
@@ -11551,6 +11707,12 @@
     ],
     "t j": [
         "grapfruit juice"
+    ],
+    "ong": [
+        "lemongrass"
+    ],
+    "ngr": [
+        "lemongrass"
     ],
     "quo": [
         "liquor"
@@ -11598,6 +11760,31 @@
     ],
     "ndy": [
         "brandy"
+    ],
+    "amp": [
+        "campari",
+        "champagne"
+    ],
+    "mpa": [
+        "campari",
+        "champagne"
+    ],
+    "cog": [
+        "cognac"
+    ],
+    "ogn": [
+        "cognac"
+    ],
+    "gna": [
+        "cognac",
+        "lasagna",
+        "lasagna noodle",
+        "lasagna pasta"
+    ],
+    "nac": [
+        "cognac",
+        "spinach",
+        "spinach leaf"
     ],
     "coi": [
         "cointreau",
@@ -11670,6 +11857,25 @@
         "kielbasa",
         "kielbasa sausage"
     ],
+    "kir": [
+        "kirby cucumber",
+        "kirsch"
+    ],
+    "irs": [
+        "kirsch"
+    ],
+    "rsc": [
+        "kirsch"
+    ],
+    "sch": [
+        "kirsch"
+    ],
+    "rno": [
+        "pernod"
+    ],
+    "nod": [
+        "pernod"
+    ],
     "key": [
         "breast turkey",
         "giblet turkey",
@@ -11699,6 +11905,15 @@
     ],
     "h w": [
         "scotch whisky"
+    ],
+    "vod": [
+        "vodka"
+    ],
+    "odk": [
+        "vodka"
+    ],
+    "dka": [
+        "vodka"
     ],
     "lob": [
         "lobster"
@@ -12164,12 +12379,16 @@
     "she": [
         "black pepper kosher salt",
         "cashew",
+        "dry sherry",
+        "dry sherry wine",
         "kosher salt",
         "kosher salt black pepper",
         "pepper kosher salt",
         "sherbert",
         "sherbet",
-        "sherry vinegar"
+        "sherry",
+        "sherry vinegar",
+        "sherry wine"
     ],
     "hew": [
         "cashew"
@@ -12936,9 +13155,6 @@
         "jalape\u00f1o chili",
         "jalape\u00f1o pepper"
     ],
-    "kir": [
-        "kirby cucumber"
-    ],
     "irb": [
         "kirby cucumber"
     ],
@@ -12946,10 +13162,6 @@
         "kirby cucumber"
     ],
     "by ": [
-        "kirby cucumber"
-    ],
-    " cu": [
-        "ice cube",
         "kirby cucumber"
     ],
     "okr": [
@@ -13061,6 +13273,7 @@
         "tomato paste"
     ],
     "pag": [
+        "champagne",
         "spaghetti",
         "spaghetti pasta",
         "spaghetti squash",
@@ -13104,10 +13317,6 @@
         "allspice",
         "spice",
         "spice blend",
-        "spinach",
-        "spinach leaf"
-    ],
-    "nac": [
         "spinach",
         "spinach leaf"
     ],
@@ -13238,6 +13447,7 @@
         "wing pheasant"
     ],
     "agn": [
+        "champagne",
         "lasagna",
         "lasagna noodle",
         "lasagna pasta",
@@ -13245,16 +13455,12 @@
         "lasagne noodle",
         "lasagne pasta"
     ],
-    "gna": [
-        "lasagna",
-        "lasagna noodle",
-        "lasagna pasta"
-    ],
     "a n": [
         "lasagna noodle",
         "pasta noodle"
     ],
     "gne": [
+        "champagne",
         "lasagne",
         "lasagne noodle",
         "lasagne pasta"
@@ -14278,16 +14484,21 @@
         "cornish game hen wing",
         "cornish hen wing",
         "dry red wine",
+        "dry sherry wine",
         "dry white wine",
         "duck wing",
         "game hen wing",
         "goose wing",
         "grouse wing",
+        "madeira wine",
+        "marsala wine",
         "pheasant wing",
+        "port wine",
         "quail wing",
         "red wine",
         "red wine vinegar",
         "rose wine",
+        "sherry wine",
         "turkey wing",
         "white wine",
         "white wine vinegar"
@@ -14398,12 +14609,6 @@
     ],
     "kpe": [
         "chickpea"
-    ],
-    "dri": [
-        "dried bean",
-        "dried pea",
-        "sun dried tomato",
-        "sun-dried tomato"
     ],
     "eda": [
         "edamame",
@@ -14560,6 +14765,7 @@
         "fresh parsley",
         "italian parsley",
         "marsala",
+        "marsala wine",
         "parsley",
         "parsley leaf",
         "parsnip"
@@ -14896,7 +15102,9 @@
         "heirloom tomato"
     ],
     "eir": [
-        "heirloom tomato"
+        "heirloom tomato",
+        "madeira",
+        "madeira wine"
     ],
     "loo": [
         "heirloom tomato"
@@ -15110,6 +15318,8 @@
         "soda water"
     ],
     "a w": [
+        "madeira wine",
+        "marsala wine",
         "soda water"
     ],
     "rkl": [
@@ -15214,6 +15424,14 @@
         "sweet vermouth",
         "vermouth",
         "white vermouth"
+    ],
+    "mad": [
+        "madeira",
+        "madeira wine"
+    ],
+    "dei": [
+        "madeira",
+        "madeira wine"
     ],
     "d v": [
         "red vermouth"

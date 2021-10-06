@@ -157,6 +157,7 @@
         "red cabbage",
         "red chile",
         "red chili",
+        "red currant",
         "red delicious",
         "red delicious apple",
         "red lentil",
@@ -565,14 +566,48 @@
         "grape leaf",
         "grape tomato"
     ],
+    "black": [
+        "black bean",
+        "black currant",
+        "black eyed pea",
+        "black olive",
+        "black pepper",
+        "black pepper kosher salt",
+        "black pepper salt",
+        "black peppercorn",
+        "black sesame seed",
+        "kosher salt black pepper",
+        "salt black pepper"
+    ],
+    "currant": [
+        "black currant",
+        "currant",
+        "dried currant",
+        "red currant"
+    ],
     "blackberri": [
         "blackberry"
+    ],
+    "blackcurr": [
+        "blackcurrant"
     ],
     "blueberri": [
         "blueberry"
     ],
     "cranberri": [
         "cranberry"
+    ],
+    "dri": [
+        "dried bean",
+        "dried currant",
+        "dried pea",
+        "dry mustard",
+        "dry red wine",
+        "dry sherry",
+        "dry sherry wine",
+        "dry vermouth",
+        "dry white wine",
+        "sun dried tomato"
     ],
     "grapeleaf": [
         "grapeleaf"
@@ -651,15 +686,6 @@
     ],
     "collard": [
         "collard green"
-    ],
-    "dri": [
-        "dried bean",
-        "dried pea",
-        "dry mustard",
-        "dry red wine",
-        "dry vermouth",
-        "dry white wine",
-        "sun dried tomato"
     ],
     "mustard": [
         "dijon mustard",
@@ -1018,6 +1044,7 @@
         "muenster cheese",
         "paneer cheese",
         "parmesan cheese",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
         "pecorino cheese",
@@ -1114,11 +1141,17 @@
         "parmesan",
         "parmesan cheese"
     ],
-    "parmigiano-": [
+    "parmigiano": [
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese"
+    ],
+    "reggiano": [
+        "parmigiano reggiano",
+        "parmigiano reggiano cheese",
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese"
     ],
-    "reggiano": [
+    "parmigiano-": [
         "parmigiano- reggiano",
         "parmigiano- reggiano cheese"
     ],
@@ -1999,6 +2032,9 @@
     "grapfruit": [
         "grapfruit juice"
     ],
+    "lemongrass": [
+        "lemongrass"
+    ],
     "liquor": [
         "liquor"
     ],
@@ -2025,6 +2061,12 @@
     "brandi": [
         "brandy"
     ],
+    "campari": [
+        "campari"
+    ],
+    "cognac": [
+        "cognac"
+    ],
     "cointreau": [
         "cointreau",
         "cointreau liqueur"
@@ -2049,6 +2091,12 @@
         "jack daniels",
         "jack daniels whisky"
     ],
+    "kirsch": [
+        "kirsch"
+    ],
+    "pernod": [
+        "pernod"
+    ],
     "rum": [
         "rum"
     ],
@@ -2064,6 +2112,9 @@
         "scotch bonnet",
         "scotch bonnet pepper",
         "scotch whisky"
+    ],
+    "vodka": [
+        "vodka"
     ],
     "lobster": [
         "lobster"
@@ -2330,18 +2381,6 @@
         "cherry",
         "cherry tomato",
         "sour cherry"
-    ],
-    "black": [
-        "black bean",
-        "black eyed pea",
-        "black olive",
-        "black pepper",
-        "black pepper kosher salt",
-        "black pepper salt",
-        "black peppercorn",
-        "black sesame seed",
-        "kosher salt black pepper",
-        "salt black pepper"
     ],
     "bosc": [
         "bosc",
@@ -3661,14 +3700,29 @@
     ],
     "wine": [
         "dry red wine",
+        "dry sherry wine",
         "dry white wine",
+        "madeira wine",
+        "marsala wine",
+        "port wine",
         "red wine",
         "red wine vinegar",
         "rose wine",
+        "sherry wine",
         "white wine",
         "white wine vinegar",
         "wine",
         "wine vinegar"
+    ],
+    "champagn": [
+        "champagne"
+    ],
+    "sherri": [
+        "dry sherry",
+        "dry sherry wine",
+        "sherry",
+        "sherry vinegar",
+        "sherry wine"
     ],
     "vermouth": [
         "dry vermouth",
@@ -3677,8 +3731,17 @@
         "vermouth",
         "white vermouth"
     ],
+    "madeira": [
+        "madeira",
+        "madeira wine"
+    ],
     "marsala": [
-        "marsala"
+        "marsala",
+        "marsala wine"
+    ],
+    "port": [
+        "port",
+        "port wine"
     ],
     "rose": [
         "rose wine"
@@ -3686,9 +3749,6 @@
     "balsam": [
         "balsamic",
         "balsamic vinegar"
-    ],
-    "sherri": [
-        "sherry vinegar"
     ],
     "worcestershir": [
         "worcestershire",

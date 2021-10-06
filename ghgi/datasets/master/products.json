@@ -265,13 +265,18 @@
         "names": [
             "berries & grapes",
             "berry",
+            "black currant",
             "blackberry",
+            "blackcurrant",
             "blueberry",
             "cranberry",
+            "currant",
+            "dried currant",
             "grape",
             "grape leaf",
             "grapeleaf",
             "raspberry",
+            "red currant",
             "strawberry"
         ],
         "sg": 1.01,
@@ -550,6 +555,8 @@
             "paneer cheese",
             "parmesan",
             "parmesan cheese",
+            "parmigiano reggiano",
+            "parmigiano reggiano cheese",
             "parmigiano- reggiano",
             "parmigiano- reggiano cheese",
             "parmigiano-reggiano",
@@ -1292,6 +1299,14 @@
             "citrus fruit": 200
         }
     },
+    "lemongrass": {
+        "g": 10,
+        "sg": 1.0,
+        "super": {},
+        "names": [
+            "lemongrass"
+        ]
+    },
     "light cream": {
         "g": 30,
         "names": [
@@ -1313,6 +1328,8 @@
             "bourbon",
             "bourbon whisky",
             "brandy",
+            "campari",
+            "cognac",
             "cointreau",
             "cointreau liqueur",
             "gin",
@@ -1320,14 +1337,17 @@
             "grand marnier liqueur",
             "jack daniels",
             "jack daniels whisky",
+            "kirsch",
             "liqueur",
             "liquor",
+            "pernod",
             "rum",
             "rye whiskey",
             "rye whisky",
             "sake",
             "scotch",
             "scotch whisky",
+            "vodka",
             "whiskey",
             "whisky"
         ],
@@ -2748,13 +2768,23 @@
     "wine": {
         "g": 225,
         "names": [
+            "champagne",
             "dry red wine",
+            "dry sherry",
+            "dry sherry wine",
             "dry vermouth",
             "dry white wine",
+            "madeira",
+            "madeira wine",
             "marsala",
+            "marsala wine",
+            "port",
+            "port wine",
             "red vermouth",
             "red wine",
             "rose wine",
+            "sherry",
+            "sherry wine",
             "sweet vermouth",
             "vermouth",
             "white vermouth",

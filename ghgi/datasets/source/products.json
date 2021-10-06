@@ -282,6 +282,14 @@
                     ".straw"
                 ]
             },
+            "currant": {
+                "dependent": [
+                    ".black",
+                    "black",
+                    "dried",
+                    "red"
+                ]
+            },
             "grape": {
                 "dependent": [
                     "._leaf",
@@ -590,6 +598,7 @@
                     "muenster",
                     "paneer",
                     "parmesan",
+                    "parmigiano reggiano",
                     "parmigiano- reggiano",
                     "parmigiano-reggiano",
                     "pecorino",
@@ -1350,6 +1359,11 @@
             "citrus fruit": 200
         }
     },
+    "lemongrass": {
+        "g": 10,
+        "sg": 1.0,
+        "super": {}
+    },
     "light cream": {
         "g": 30,
         "names": {
@@ -1370,15 +1384,20 @@
                 ]
             },
             "brandy": {},
+            "campari": {},
+            "cognac": {},
             "gin": {},
+            "kirsch": {},
             "liqueur": {
                 "independent": [
                     "cointreau",
                     "grand marnier"
                 ]
             },
+            "pernod": {},
             "rum": {},
             "sake": {},
+            "vodka": {},
             "whiskey": {
                 "dependent": [
                     "rye"
@@ -2954,7 +2973,7 @@
     "wine": {
         "g": 225,
         "names": {
-            "marsala": {},
+            "champagne": {},
             "vermouth": {
                 "dependent": [
                     "dry",
@@ -2970,6 +2989,13 @@
                     "red",
                     "rose",
                     "white"
+                ],
+                "independent": [
+                    "dry sherry",
+                    "madeira",
+                    "marsala",
+                    "port",
+                    "sherry"
                 ]
             }
         },
