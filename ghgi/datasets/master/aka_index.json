@@ -1143,6 +1143,10 @@
         "chili sauce",
         9
     ],
+    "harissa": [
+        "chili sauce",
+        5
+    ],
     "sambal": [
         "chili sauce",
         4
@@ -1334,6 +1338,18 @@
     "coffee beans": [
         "coffee beans",
         10
+    ],
+    "cooking spray": [
+        "cooking spray",
+        11
+    ],
+    "non-stick cooking spray": [
+        "cooking spray",
+        21
+    ],
+    "nonstick cooking spray": [
+        "cooking spray",
+        20
     ],
     "corn": [
         "corn",
@@ -2563,6 +2579,14 @@
         "other fruit",
         2
     ],
+    "pomegranate": [
+        "other fruit",
+        9
+    ],
+    "pomegranate seed": [
+        "other fruit",
+        14
+    ],
     "prune": [
         "other fruit",
         3
@@ -3471,6 +3495,10 @@
         "poultry",
         11
     ],
+    "chicken sausage": [
+        "poultry",
+        13
+    ],
     "chicken thigh": [
         "poultry",
         11
@@ -3527,6 +3555,10 @@
         "poultry",
         15
     ],
+    "cornish hen sausage": [
+        "poultry",
+        17
+    ],
     "cornish hen thigh": [
         "poultry",
         15
@@ -3554,6 +3586,10 @@
     "duck liver": [
         "poultry",
         8
+    ],
+    "duck sausage": [
+        "poultry",
+        10
     ],
     "duck thigh": [
         "poultry",
@@ -3586,6 +3622,10 @@
     "game hen liver": [
         "poultry",
         12
+    ],
+    "game hen sausage": [
+        "poultry",
+        14
     ],
     "game hen thigh": [
         "poultry",
@@ -3655,6 +3695,10 @@
         "poultry",
         9
     ],
+    "goose sausage": [
+        "poultry",
+        11
+    ],
     "goose thigh": [
         "poultry",
         9
@@ -3682,6 +3726,10 @@
     "grouse liver": [
         "poultry",
         10
+    ],
+    "grouse sausage": [
+        "poultry",
+        12
     ],
     "grouse thigh": [
         "poultry",
@@ -3791,6 +3839,10 @@
         "poultry",
         12
     ],
+    "pheasant sausage": [
+        "poultry",
+        14
+    ],
     "pheasant thigh": [
         "poultry",
         12
@@ -3818,6 +3870,10 @@
     "quail liver": [
         "poultry",
         9
+    ],
+    "quail sausage": [
+        "poultry",
+        11
     ],
     "quail thigh": [
         "poultry",
@@ -3886,6 +3942,10 @@
     "turkey liver": [
         "poultry",
         10
+    ],
+    "turkey sausage": [
+        "poultry",
+        12
     ],
     "turkey thigh": [
         "poultry",
@@ -3970,6 +4030,14 @@
     "dried pea": [
         "pulses",
         7
+    ],
+    "edamame": [
+        "pulses",
+        5
+    ],
+    "edamame bean": [
+        "pulses",
+        10
     ],
     "french lentil": [
         "pulses",
@@ -4411,6 +4479,10 @@
         "spice",
         6
     ],
+    "baharat blend": [
+        "spice",
+        11
+    ],
     "caraway": [
         "spice",
         5
@@ -4830,6 +4902,18 @@
     "wheat & rye (flour)": [
         "wheat & rye (flour)",
         17
+    ],
+    "berry grain": [
+        "wheat & rye (flour)",
+        9
+    ],
+    "berry rye": [
+        "wheat & rye (flour)",
+        7
+    ],
+    "berry wheat": [
+        "wheat & rye (flour)",
+        9
     ],
     "bulgur": [
         "wheat & rye (flour)",

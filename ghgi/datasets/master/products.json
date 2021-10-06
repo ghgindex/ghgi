@@ -620,6 +620,7 @@
             "chile sauce",
             "chili paste",
             "chili sauce",
+            "harissa",
             "sambal",
             "sriracha"
         ],
@@ -737,6 +738,17 @@
         "names": [
             "coffee beans"
         ]
+    },
+    "cooking spray": {
+        "g": 5,
+        "names": [
+            "cooking spray",
+            "non-stick cooking spray",
+            "nonstick cooking spray"
+        ],
+        "super": {
+            "rapeseed oil": 100
+        }
     },
     "corn": {
         "g": 100,
@@ -1602,6 +1614,8 @@
             "pear",
             "pineapple",
             "plum",
+            "pomegranate",
+            "pomegranate seed",
             "prune",
             "sour cherry",
             "stuffed olive"
@@ -1945,6 +1959,7 @@
             "chicken giblet",
             "chicken leg",
             "chicken liver",
+            "chicken sausage",
             "chicken thigh",
             "chicken wing",
             "cornish game hen",
@@ -1959,6 +1974,7 @@
             "cornish hen giblet",
             "cornish hen leg",
             "cornish hen liver",
+            "cornish hen sausage",
             "cornish hen thigh",
             "cornish hen wing",
             "duck",
@@ -1966,6 +1982,7 @@
             "duck giblet",
             "duck leg",
             "duck liver",
+            "duck sausage",
             "duck thigh",
             "duck wing",
             "duckling",
@@ -1974,6 +1991,7 @@
             "game hen giblet",
             "game hen leg",
             "game hen liver",
+            "game hen sausage",
             "game hen thigh",
             "game hen wing",
             "giblet chicken",
@@ -1991,6 +2009,7 @@
             "goose giblet",
             "goose leg",
             "goose liver",
+            "goose sausage",
             "goose thigh",
             "goose wing",
             "grouse",
@@ -1998,6 +2017,7 @@
             "grouse giblet",
             "grouse leg",
             "grouse liver",
+            "grouse sausage",
             "grouse thigh",
             "grouse wing",
             "leg chicken",
@@ -2025,6 +2045,7 @@
             "pheasant giblet",
             "pheasant leg",
             "pheasant liver",
+            "pheasant sausage",
             "pheasant thigh",
             "pheasant wing",
             "poultry",
@@ -2033,6 +2054,7 @@
             "quail giblet",
             "quail leg",
             "quail liver",
+            "quail sausage",
             "quail thigh",
             "quail wing",
             "thigh chicken",
@@ -2050,6 +2072,7 @@
             "turkey giblet",
             "turkey leg",
             "turkey liver",
+            "turkey sausage",
             "turkey thigh",
             "turkey wing",
             "wing chicken",
@@ -2077,6 +2100,8 @@
             "chickpea",
             "dried bean",
             "dried pea",
+            "edamame",
+            "edamame bean",
             "french lentil",
             "great northern bean",
             "green lentil",
@@ -2423,6 +2448,7 @@
         "g": 5,
         "names": [
             "allspice",
+            "baharat blend",
             "caraway",
             "cardamom",
             "clove",
@@ -2702,6 +2728,9 @@
     "wheat & rye (flour)": {
         "g": 100,
         "names": [
+            "berry grain",
+            "berry rye",
+            "berry wheat",
             "bulgur",
             "bulgur wheat",
             "durum",

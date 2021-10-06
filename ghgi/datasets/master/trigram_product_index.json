@@ -749,9 +749,12 @@
         "cane sugar",
         "chile sauce",
         "fleur de sel",
+        "goose sausage",
+        "grouse sausage",
         "lime slice",
         "maple syrup",
         "orange slice",
+        "pomegranate seed",
         "ribeye steak",
         "sesame seed",
         "simple syrup",
@@ -770,11 +773,17 @@
         "bbq sauce",
         "black pepper kosher salt",
         "black pepper salt",
+        "chicken sausage",
         "chile sauce",
         "chili sauce",
         "chorizo sausage",
+        "cornish hen sausage",
+        "duck sausage",
         "farmed salmon",
         "fish sauce",
+        "game hen sausage",
+        "goose sausage",
+        "grouse sausage",
         "hot sauce",
         "italian sausage",
         "kielbasa sausage",
@@ -785,7 +794,9 @@
         "pepper kosher salt",
         "pepper salt",
         "pepperoni sausage",
+        "pheasant sausage",
         "pork sausage",
+        "quail sausage",
         "salami sausage",
         "sea salt",
         "seasoning salt",
@@ -794,6 +805,7 @@
         "summer savory leaf",
         "tabasco sauce",
         "table salt",
+        "turkey sausage",
         "wild salmon",
         "winter savory",
         "winter savory leaf",
@@ -806,23 +818,32 @@
         "barbecue sauce",
         "barbeque sauce",
         "bbq sauce",
+        "chicken sausage",
         "chile sauce",
         "chili sauce",
         "chorizo sausage",
+        "cornish hen sausage",
+        "duck sausage",
         "fish sauce",
+        "game hen sausage",
+        "goose sausage",
+        "grouse sausage",
         "hot sauce",
         "italian sausage",
         "kielbasa sausage",
         "mortadella sausage",
         "oyster sauce",
         "pepperoni sausage",
+        "pheasant sausage",
         "pork sausage",
+        "quail sausage",
         "salami sausage",
         "sauerkraut",
         "sauerkraut cabbage",
         "sausage",
         "soy sauce",
         "tabasco sauce",
+        "turkey sausage",
         "worcestershire sauce"
     ],
     "auc": [
@@ -972,6 +993,7 @@
         "chicken giblet",
         "chicken leg",
         "chicken liver",
+        "chicken sausage",
         "chicken stock",
         "chicken thigh",
         "chicken wing",
@@ -985,6 +1007,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "frozen pea",
@@ -992,6 +1015,7 @@
         "game hen giblet",
         "game hen leg",
         "game hen liver",
+        "game hen sausage",
         "game hen thigh",
         "game hen wing",
         "golden brown sugar",
@@ -1087,6 +1111,7 @@
         "grouse giblet",
         "grouse leg",
         "grouse liver",
+        "grouse sausage",
         "grouse thigh",
         "grouse wing",
         "leg grouse",
@@ -1112,6 +1137,7 @@
     ],
     "gra": [
         "berries & grapes",
+        "berry grain",
         "graham cracker",
         "grain",
         "grain alcohol",
@@ -1131,7 +1157,9 @@
         "grapefruit wedge",
         "grapefruit zest",
         "grapeleaf",
-        "grapfruit juice"
+        "grapfruit juice",
+        "pomegranate",
+        "pomegranate seed"
     ],
     "ran": [
         "brandy",
@@ -1152,6 +1180,8 @@
         "orange slice",
         "orange wedge",
         "orange zest",
+        "pomegranate",
+        "pomegranate seed",
         "serrano",
         "serrano chile",
         "serrano chili",
@@ -1176,7 +1206,8 @@
         "bay scallop",
         "granny smith",
         "granny smith apple",
-        "soy sauce"
+        "soy sauce",
+        "turkey sausage"
     ],
     " sm": [
         "granny smith",
@@ -1322,6 +1353,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "fish (farmed)",
@@ -1490,7 +1522,9 @@
     "tic": [
         "artichoke",
         "artichoke heart",
-        "breadstick"
+        "breadstick",
+        "non-stick cooking spray",
+        "nonstick cooking spray"
     ],
     "ich": [
         "artichoke",
@@ -1528,6 +1562,7 @@
         "game hen giblet",
         "game hen leg",
         "game hen liver",
+        "game hen sausage",
         "game hen thigh",
         "game hen wing",
         "giblet cornish game hen",
@@ -1559,6 +1594,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "game hen",
@@ -1566,6 +1602,7 @@
         "game hen giblet",
         "game hen leg",
         "game hen liver",
+        "game hen sausage",
         "game hen thigh",
         "game hen wing",
         "giblet cornish game hen",
@@ -1586,6 +1623,7 @@
     ],
     "hea": [
         "artichoke heart",
+        "berry wheat",
         "breast pheasant",
         "bulgur wheat",
         "durum wheat",
@@ -1602,6 +1640,7 @@
         "pheasant giblet",
         "pheasant leg",
         "pheasant liver",
+        "pheasant sausage",
         "pheasant thigh",
         "pheasant wing",
         "steelhead",
@@ -1661,6 +1700,7 @@
     ],
     "ara": [
         "asparagus",
+        "baharat blend",
         "caraway",
         "demerara sugar",
         "garam masala"
@@ -1818,6 +1858,7 @@
         "belgian endive"
     ],
     "end": [
+        "baharat blend",
         "beef tenderloin",
         "belgian endive",
         "endive",
@@ -2085,6 +2126,7 @@
         "chicken giblet",
         "chicken leg",
         "chicken liver",
+        "chicken sausage",
         "chicken stock",
         "chicken thigh",
         "chicken wing",
@@ -2142,6 +2184,7 @@
         "chicken giblet",
         "chicken leg",
         "chicken liver",
+        "chicken sausage",
         "chicken stock",
         "chicken thigh",
         "chicken wing",
@@ -2188,6 +2231,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "cornmeal",
@@ -2287,7 +2331,8 @@
         "beef brisket",
         "brisket",
         "brisket beef",
-        "frisee"
+        "frisee",
+        "harissa"
     ],
     "ise": [
         "frisee",
@@ -2302,6 +2347,7 @@
         "fennel seed",
         "frisee",
         "mustard seed",
+        "pomegranate seed",
         "rapeseed oil",
         "sesame seed",
         "white sesame seed"
@@ -2318,6 +2364,9 @@
     "ber": [
         "berries & grapes",
         "berry",
+        "berry grain",
+        "berry rye",
+        "berry wheat",
         "blackberry",
         "blueberry",
         "camembert",
@@ -2469,6 +2518,7 @@
         "romaine lettuce"
     ],
     "ain": [
+        "berry grain",
         "grain",
         "grain alcohol",
         "grainy mustard",
@@ -2597,6 +2647,7 @@
         "duck giblet",
         "duck leg",
         "duck liver",
+        "duck sausage",
         "duck thigh",
         "duck wing",
         "jack daniels",
@@ -2604,6 +2655,8 @@
         "kosher salt black pepper",
         "littleneck clam",
         "monterey jack cheese",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "rack lamb",
         "salt black pepper",
         "skipjack tuna"
@@ -2649,7 +2702,9 @@
         "artisanal bread",
         "banana",
         "bananas",
-        "canadian bacon"
+        "canadian bacon",
+        "pomegranate",
+        "pomegranate seed"
     ],
     "nad": [
         "canadian bacon",
@@ -2710,6 +2765,9 @@
         "baking powder",
         "baking soda",
         "cooking oil",
+        "cooking spray",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "pumpkin",
         "pumpkin pepitas",
         "pumpkin squash"
@@ -2723,6 +2781,7 @@
         "candied ginger",
         "chicken wing",
         "cooking oil",
+        "cooking spray",
         "cornish game hen wing",
         "cornish hen wing",
         "duck wing",
@@ -2738,6 +2797,8 @@
         "icing sugar",
         "linguine",
         "linguine pasta",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "pheasant wing",
         "pickling juice",
         "pickling liquid",
@@ -2770,9 +2831,12 @@
         "bing cherry",
         "boiling water",
         "cooking oil",
+        "cooking spray",
         "fingerling potato",
         "heavy whipping cream",
         "icing sugar",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "pickling juice",
         "pickling liquid",
         "seasoning salt",
@@ -2849,7 +2913,10 @@
     ],
     "g s": [
         "baking soda",
+        "cooking spray",
         "icing sugar",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "seasoning salt"
     ],
     " so": [
@@ -2916,6 +2983,7 @@
         "pheasant giblet",
         "pheasant leg",
         "pheasant liver",
+        "pheasant sausage",
         "pheasant thigh",
         "pheasant wing",
         "plantain",
@@ -2984,16 +3052,19 @@
         "turkey giblet",
         "turkey leg",
         "turkey liver",
+        "turkey sausage",
         "turkey thigh",
         "turkey wing"
     ],
     "y g": [
         "barley groat",
+        "berry grain",
         "turkey giblet"
     ],
     " gr": [
         "barley groat",
         "berries & grapes",
+        "berry grain",
         "breast grouse",
         "collard green",
         "giblet grouse",
@@ -3014,6 +3085,7 @@
         "grouse giblet",
         "grouse leg",
         "grouse liver",
+        "grouse sausage",
         "grouse thigh",
         "grouse wing",
         "leg grouse",
@@ -3609,6 +3681,7 @@
         "duck giblet",
         "duck leg",
         "duck liver",
+        "duck sausage",
         "duck thigh",
         "duck wing",
         "duckling",
@@ -3726,6 +3799,7 @@
         "sweet vermouth"
     ],
     "t b": [
+        "baharat blend",
         "brisket beef",
         "kosher salt black pepper",
         "light brown sugar",
@@ -3742,6 +3816,7 @@
         "chuck beef",
         "coffee beans",
         "dried bean",
+        "edamame bean",
         "fresh bean",
         "great northern bean",
         "green bean",
@@ -3763,6 +3838,7 @@
     "k s": [
         "black sesame seed",
         "chuck steak",
+        "duck sausage",
         "flank steak",
         "pork sausage",
         "pork shoulder"
@@ -3866,14 +3942,17 @@
     "n s": [
         "acorn squash",
         "brown sugar",
+        "chicken sausage",
         "chicken stock",
         "chilean sea bass",
         "corn starch",
+        "cornish hen sausage",
         "crustacean stock",
         "cumin seed",
         "dark brown sugar",
         "dijon style mustard",
         "flatiron steak",
+        "game hen sausage",
         "golden brown sugar",
         "golden syrup",
         "italian sausage",
@@ -4184,6 +4263,7 @@
     ],
     "l s": [
         "fennel seed",
+        "quail sausage",
         "veal stock"
     ],
     "eet": [
@@ -4204,7 +4284,8 @@
         "beet sugar",
         "butternut squash",
         "grapefruit slice",
-        "hot sauce"
+        "hot sauce",
+        "pheasant sausage"
     ],
     " su": [
         "beet sugar",
@@ -4261,6 +4342,9 @@
     "err": [
         "berries & grapes",
         "berry",
+        "berry grain",
+        "berry rye",
+        "berry wheat",
         "bing cherry",
         "blackberry",
         "blueberry",
@@ -4360,6 +4444,9 @@
     ],
     "rry": [
         "berry",
+        "berry grain",
+        "berry rye",
+        "berry wheat",
         "bing cherry",
         "blackberry",
         "blueberry",
@@ -4690,6 +4777,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "giblet cornish game hen",
@@ -4781,6 +4869,8 @@
         "littleneck clam",
         "milk chocolate",
         "monterey jack cheese",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "pak choi",
         "pok choi",
         "pork chop"
@@ -5028,11 +5118,17 @@
         "confectioners sugar"
     ],
     " sp": [
-        "brussels sprout"
+        "brussels sprout",
+        "cooking spray",
+        "non-stick cooking spray",
+        "nonstick cooking spray"
     ],
     "spr": [
         "brussels sprout",
+        "cooking spray",
         "espresso",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "spring onion"
     ],
     "pro": [
@@ -5053,6 +5149,7 @@
         "grouse giblet",
         "grouse leg",
         "grouse liver",
+        "grouse sausage",
         "grouse thigh",
         "grouse wing",
         "leg grouse",
@@ -5117,23 +5214,32 @@
         "andouille sausage",
         "bagel",
         "cabbage",
+        "chicken sausage",
         "chinese cabbage",
         "chorizo sausage",
+        "cornish hen sausage",
         "cottage cheese",
+        "duck sausage",
+        "game hen sausage",
+        "goose sausage",
+        "grouse sausage",
         "italian sausage",
         "kielbasa sausage",
         "lovage",
         "mortadella sausage",
         "napa cabbage",
         "pepperoni sausage",
+        "pheasant sausage",
         "pork sausage",
+        "quail sausage",
         "red cabbage",
         "sage",
         "sage leaf",
         "salami sausage",
         "sauerkraut cabbage",
         "sausage",
-        "savoy cabbage"
+        "savoy cabbage",
+        "turkey sausage"
     ],
     "cau": [
         "cauliflower"
@@ -5233,12 +5339,14 @@
         "goose giblet",
         "goose leg",
         "goose liver",
+        "goose sausage",
         "goose thigh",
         "goose wing",
         "grouse breast",
         "grouse giblet",
         "grouse leg",
         "grouse liver",
+        "grouse sausage",
         "grouse thigh",
         "grouse wing",
         "potato cheese pierogy",
@@ -5307,6 +5415,9 @@
         "dry white wine"
     ],
     "ry ": [
+        "berry grain",
+        "berry rye",
+        "berry wheat",
         "celery leaf",
         "celery rib",
         "celery root",
@@ -5500,6 +5611,7 @@
         "kelp seaweed",
         "mustard seed",
         "nori seaweed",
+        "pomegranate seed",
         "sesame seed",
         "white sesame seed"
     ],
@@ -5511,6 +5623,7 @@
         "kelp seaweed",
         "mustard seed",
         "nori seaweed",
+        "pomegranate seed",
         "rapeseed oil",
         "seaweed",
         "sesame seed",
@@ -5696,6 +5809,8 @@
         "ice water",
         "lukewarm water",
         "milk chocolate",
+        "pomegranate",
+        "pomegranate seed",
         "seltzer water",
         "semi sweet chocolate",
         "semisweet chocolate",
@@ -5923,6 +6038,7 @@
         "pheasant giblet",
         "pheasant leg",
         "pheasant liver",
+        "pheasant sausage",
         "pheasant thigh",
         "pheasant wing",
         "san marzano tomato",
@@ -5962,6 +6078,7 @@
         "chocolate ice cream",
         "dry white wine",
         "orecchiette pasta",
+        "pomegranate seed",
         "white bean",
         "white bread",
         "white flour",
@@ -5980,6 +6097,7 @@
     "e b": [
         "baguette bread",
         "coffee beans",
+        "edamame bean",
         "goose breast",
         "grouse breast",
         "orange bell pepper",
@@ -6061,6 +6179,8 @@
     ],
     "sti": [
         "breadstick",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "stilton",
         "stilton cheese"
     ],
@@ -6073,6 +6193,7 @@
         "chicken giblet",
         "chicken leg",
         "chicken liver",
+        "chicken sausage",
         "chicken stock",
         "chicken thigh",
         "chicken wing",
@@ -6080,6 +6201,8 @@
         "giblet chicken",
         "leg chicken",
         "liver chicken",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "pickle juice",
         "pickle liquid",
         "pickling juice",
@@ -6130,6 +6253,7 @@
         "chicken giblet",
         "chicken leg",
         "chicken liver",
+        "chicken sausage",
         "chicken stock",
         "chicken thigh",
         "chicken wing",
@@ -6243,6 +6367,7 @@
         "graham cracker"
     ],
     "aha": [
+        "baharat blend",
         "graham cracker"
     ],
     "am ": [
@@ -6690,6 +6815,7 @@
         "whole wheat pastry flour"
     ],
     " wh": [
+        "berry wheat",
         "bourbon whisky",
         "bulgur wheat",
         "cheez whiz",
@@ -6709,6 +6835,7 @@
         "whole wheat pastry flour"
     ],
     "whe": [
+        "berry wheat",
         "bulgur wheat",
         "durum wheat",
         "farro wheat",
@@ -6722,6 +6849,7 @@
         "whole wheat pastry flour"
     ],
     "eat": [
+        "berry wheat",
         "bulgur wheat",
         "durum wheat",
         "farro wheat",
@@ -6736,6 +6864,7 @@
         "whole wheat pastry flour"
     ],
     "at ": [
+        "baharat blend",
         "flat leaf parsley",
         "flat leaf parsley leaf",
         "full fat coconut milk",
@@ -7273,6 +7402,7 @@
         "turkey giblet",
         "turkey leg",
         "turkey liver",
+        "turkey sausage",
         "turkey thigh",
         "turkey wing",
         "turmeric",
@@ -7342,7 +7472,8 @@
         "farro wheat"
     ],
     "ssa": [
-        "cassava"
+        "cassava",
+        "harissa"
     ],
     "man": [
         "mango",
@@ -7440,6 +7571,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "daikon radish",
@@ -7497,6 +7629,7 @@
         "celery root"
     ],
     "y r": [
+        "berry rye",
         "celery rib",
         "celery root",
         "dry red wine"
@@ -7721,11 +7854,14 @@
         "cornish game hen liver",
         "cornish game hen thigh",
         "cornish game hen wing",
+        "edamame",
+        "edamame bean",
         "game hen",
         "game hen breast",
         "game hen giblet",
         "game hen leg",
         "game hen liver",
+        "game hen sausage",
         "game hen thigh",
         "game hen wing",
         "giblet cornish game hen",
@@ -8203,7 +8339,8 @@
     "nst": [
         "cornstarch",
         "muenster",
-        "muenster cheese"
+        "muenster cheese",
+        "nonstick cooking spray"
     ],
     "pan": [
         "pancetta",
@@ -8456,6 +8593,7 @@
         "swiss cheese"
     ],
     "iss": [
+        "harissa",
         "swiss",
         "swiss chard",
         "swiss cheese"
@@ -8526,6 +8664,7 @@
         "chicken giblet",
         "chicken leg",
         "chicken liver",
+        "chicken sausage",
         "chicken stock",
         "chicken thigh",
         "chicken wing",
@@ -8911,6 +9050,18 @@
         "spaghetti pasta",
         "spaghettini pasta"
     ],
+    "har": [
+        "baharat blend",
+        "chard",
+        "harissa",
+        "swiss chard"
+    ],
+    "ari": [
+        "calamari",
+        "harissa",
+        "inari-no-moto",
+        "nectarine"
+    ],
     "sam": [
         "balsamic",
         "balsamic vinegar",
@@ -9256,11 +9407,13 @@
         "cornish game hen wing",
         "creme fraiche",
         "cr\u00e8me fra\u00eeche",
+        "edamame bean",
         "game hen",
         "game hen breast",
         "game hen giblet",
         "game hen leg",
         "game hen liver",
+        "game hen sausage",
         "game hen thigh",
         "game hen wing",
         "giblet cornish game hen",
@@ -9339,6 +9492,7 @@
         "littleneck clam"
     ],
     "len": [
+        "baharat blend",
         "french lentil",
         "green lentil",
         "lentil",
@@ -9585,6 +9739,8 @@
         "liver cornish hen",
         "low fat coconut milk",
         "low-fat coconut milk",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
         "sweet corn",
         "thigh cornish game hen",
         "thigh cornish hen",
@@ -9678,6 +9834,7 @@
         "cannellini bean",
         "coffee beans",
         "dried bean",
+        "edamame bean",
         "fresh bean",
         "great northern bean",
         "green bean",
@@ -9701,6 +9858,7 @@
         "crustaceans",
         "crustaceans (farmed)",
         "dried bean",
+        "edamame bean",
         "fresh bean",
         "great northern bean",
         "green bean",
@@ -9720,6 +9878,61 @@
         "coffee beans",
         "crustaceans",
         "crustaceans (farmed)"
+    ],
+    "coo": [
+        "cooking oil",
+        "cooking spray",
+        "non-stick cooking spray",
+        "nonstick cooking spray"
+    ],
+    "ook": [
+        "cooking oil",
+        "cooking spray",
+        "non-stick cooking spray",
+        "nonstick cooking spray"
+    ],
+    "oki": [
+        "cooking oil",
+        "cooking spray",
+        "enoki",
+        "enoki mushroom",
+        "non-stick cooking spray",
+        "nonstick cooking spray"
+    ],
+    "pra": [
+        "cooking spray",
+        "farmed prawn",
+        "non-stick cooking spray",
+        "nonstick cooking spray",
+        "prawn",
+        "prawn (farmed)",
+        "prawns (wild) (wild)",
+        "wild prawns (wild)"
+    ],
+    "ray": [
+        "cooking spray",
+        "non-stick cooking spray",
+        "nonstick cooking spray"
+    ],
+    "non": [
+        "non-fat milk",
+        "non-stick cooking spray",
+        "nonfat milk",
+        "nonstick cooking spray"
+    ],
+    "on-": [
+        "non-fat milk",
+        "non-stick cooking spray"
+    ],
+    "n-s": [
+        "non-stick cooking spray"
+    ],
+    "-st": [
+        "non-stick cooking spray"
+    ],
+    "ons": [
+        "nonstick cooking spray",
+        "onions & leeks (alliums)"
     ],
     "orn": [
         "acorn squash",
@@ -9746,6 +9959,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "cornmeal",
@@ -10106,6 +10320,7 @@
         "cr\u00e8me fra\u00eeche"
     ],
     "rai": [
+        "berry grain",
         "creme fraiche",
         "golden raisin",
         "grain",
@@ -10154,13 +10369,6 @@
     " pr": [
         "farmed prawn",
         "herbes de provence",
-        "wild prawns (wild)"
-    ],
-    "pra": [
-        "farmed prawn",
-        "prawn",
-        "prawn (farmed)",
-        "prawns (wild) (wild)",
         "wild prawns (wild)"
     ],
     "awn": [
@@ -10618,6 +10826,7 @@
         "goose giblet",
         "goose leg",
         "goose liver",
+        "goose sausage",
         "goose thigh",
         "goose wing",
         "leg goose",
@@ -10637,6 +10846,7 @@
         "whole wheat pastry flour"
     ],
     "rye": [
+        "berry rye",
         "rye",
         "rye flour",
         "rye whiskey",
@@ -10654,6 +10864,7 @@
         "unbleached all purpose flour"
     ],
     "ble": [
+        "baharat blend",
         "chicken giblet",
         "cornish game hen giblet",
         "cornish hen giblet",
@@ -10853,6 +11064,7 @@
         "navy bean"
     ],
     "y w": [
+        "berry wheat",
         "dry white wine",
         "heavy whipped cream",
         "heavy whipping cream",
@@ -11126,6 +11338,7 @@
         "quail giblet",
         "quail leg",
         "quail liver",
+        "quail sausage",
         "quail thigh",
         "quail wing"
     ],
@@ -11186,6 +11399,7 @@
         "pheasant giblet",
         "pheasant leg",
         "pheasant liver",
+        "pheasant sausage",
         "pheasant thigh",
         "pheasant wing",
         "two percent milk"
@@ -11221,7 +11435,13 @@
     ],
     "sag": [
         "andouille sausage",
+        "chicken sausage",
         "chorizo sausage",
+        "cornish hen sausage",
+        "duck sausage",
+        "game hen sausage",
+        "goose sausage",
+        "grouse sausage",
         "italian sausage",
         "kielbasa sausage",
         "lasagna",
@@ -11232,11 +11452,14 @@
         "lasagne pasta",
         "mortadella sausage",
         "pepperoni sausage",
+        "pheasant sausage",
         "pork sausage",
+        "quail sausage",
         "sage",
         "sage leaf",
         "salami sausage",
-        "sausage"
+        "sausage",
+        "turkey sausage"
     ],
     "vor": [
         "savory",
@@ -11459,6 +11682,7 @@
         "turkey giblet",
         "turkey leg",
         "turkey liver",
+        "turkey sausage",
         "turkey thigh",
         "turkey wing",
         "whiskey",
@@ -11742,11 +11966,6 @@
         "enoki",
         "enoki mushroom"
     ],
-    "oki": [
-        "cooking oil",
-        "enoki",
-        "enoki mushroom"
-    ],
     "ki ": [
         "enoki mushroom"
     ],
@@ -11920,7 +12139,9 @@
         "oatmeal"
     ],
     "meg": [
-        "nutmeg"
+        "nutmeg",
+        "pomegranate",
+        "pomegranate seed"
     ],
     "uts": [
         "nuts",
@@ -12147,9 +12368,6 @@
         "1% milk",
         "2% milk"
     ],
-    "ons": [
-        "onions & leeks (alliums)"
-    ],
     "& l": [
         "onions & leeks (alliums)"
     ],
@@ -12213,6 +12431,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "giblet cornish game hen",
@@ -12297,7 +12516,9 @@
     ],
     "ama": [
         "calamari",
-        "calamata olive"
+        "calamata olive",
+        "edamame",
+        "edamame bean"
     ],
     "a o": [
         "calamata olive",
@@ -12310,11 +12531,6 @@
         "fig"
     ],
     "cta": [
-        "nectarine"
-    ],
-    "ari": [
-        "calamari",
-        "inari-no-moto",
         "nectarine"
     ],
     "pap": [
@@ -12342,6 +12558,22 @@
     "lum": [
         "plum",
         "plum tomato"
+    ],
+    "pom": [
+        "pomegranate",
+        "pomegranate seed"
+    ],
+    "ome": [
+        "pomegranate",
+        "pomegranate seed"
+    ],
+    "egr": [
+        "pomegranate",
+        "pomegranate seed"
+    ],
+    "nat": [
+        "pomegranate",
+        "pomegranate seed"
     ],
     "pru": [
         "prune"
@@ -12432,6 +12664,7 @@
         "quail giblet",
         "quail leg",
         "quail liver",
+        "quail sausage",
         "quail thigh",
         "quail wing",
         "spaghetti squash",
@@ -12526,10 +12759,6 @@
         "penne pasta",
         "scotch bonnet",
         "scotch bonnet pepper"
-    ],
-    "har": [
-        "chard",
-        "swiss chard"
     ],
     "e d": [
         "chile de arbol",
@@ -13002,6 +13231,7 @@
         "pheasant giblet",
         "pheasant leg",
         "pheasant liver",
+        "pheasant sausage",
         "pheasant thigh",
         "pheasant wing",
         "thigh pheasant",
@@ -13140,6 +13370,7 @@
         "pheasant giblet",
         "pheasant leg",
         "pheasant liver",
+        "pheasant sausage",
         "pheasant thigh",
         "pheasant wing",
         "quail breast",
@@ -13494,25 +13725,43 @@
     ],
     "aus": [
         "andouille sausage",
+        "chicken sausage",
         "chorizo sausage",
+        "cornish hen sausage",
+        "duck sausage",
+        "game hen sausage",
+        "goose sausage",
+        "grouse sausage",
         "italian sausage",
         "kielbasa sausage",
         "mortadella sausage",
         "pepperoni sausage",
+        "pheasant sausage",
         "pork sausage",
+        "quail sausage",
         "salami sausage",
-        "sausage"
+        "sausage",
+        "turkey sausage"
     ],
     "usa": [
         "andouille sausage",
+        "chicken sausage",
         "chorizo sausage",
+        "cornish hen sausage",
+        "duck sausage",
+        "game hen sausage",
+        "goose sausage",
+        "grouse sausage",
         "italian sausage",
         "kielbasa sausage",
         "mortadella sausage",
         "pepperoni sausage",
+        "pheasant sausage",
         "pork sausage",
+        "quail sausage",
         "salami sausage",
-        "sausage"
+        "sausage",
+        "turkey sausage"
     ],
     "riz": [
         "chorizo",
@@ -13642,6 +13891,7 @@
         "game hen giblet",
         "game hen leg",
         "game hen liver",
+        "game hen sausage",
         "game hen thigh",
         "game hen wing",
         "giblet cornish game hen",
@@ -13671,6 +13921,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "game hen",
@@ -13678,6 +13929,7 @@
         "game hen giblet",
         "game hen leg",
         "game hen liver",
+        "game hen sausage",
         "game hen thigh",
         "game hen wing",
         "giblet cornish game hen",
@@ -13703,6 +13955,7 @@
         "cornish hen giblet",
         "cornish hen leg",
         "cornish hen liver",
+        "cornish hen sausage",
         "cornish hen thigh",
         "cornish hen wing",
         "giblet cornish hen",
@@ -13730,6 +13983,7 @@
         "duck giblet",
         "duck leg",
         "duck liver",
+        "duck sausage",
         "duck thigh",
         "duck wing",
         "duckling",
@@ -13747,6 +14001,7 @@
         "goose giblet",
         "goose leg",
         "goose liver",
+        "goose sausage",
         "goose thigh",
         "goose wing",
         "leg goose",
@@ -13762,6 +14017,7 @@
         "goose giblet",
         "goose leg",
         "goose liver",
+        "goose sausage",
         "goose thigh",
         "goose wing",
         "leg goose",
@@ -13777,6 +14033,7 @@
         "grouse giblet",
         "grouse leg",
         "grouse liver",
+        "grouse sausage",
         "grouse thigh",
         "grouse wing",
         "leg grouse",
@@ -13802,6 +14059,7 @@
         "pheasant giblet",
         "pheasant leg",
         "pheasant liver",
+        "pheasant sausage",
         "pheasant thigh",
         "pheasant wing",
         "thigh pheasant",
@@ -13829,6 +14087,7 @@
         "quail giblet",
         "quail leg",
         "quail liver",
+        "quail sausage",
         "quail thigh",
         "quail wing",
         "thigh quail",
@@ -13844,6 +14103,7 @@
         "quail giblet",
         "quail leg",
         "quail liver",
+        "quail sausage",
         "quail thigh",
         "quail wing",
         "thigh quail",
@@ -13865,6 +14125,7 @@
         "turkey giblet",
         "turkey leg",
         "turkey liver",
+        "turkey sausage",
         "turkey thigh",
         "turkey wing",
         "wing turkey"
@@ -13880,6 +14141,7 @@
         "turkey giblet",
         "turkey leg",
         "turkey liver",
+        "turkey sausage",
         "turkey thigh",
         "turkey wing",
         "wing turkey"
@@ -14143,6 +14405,19 @@
         "sun dried tomato",
         "sun-dried tomato"
     ],
+    "eda": [
+        "edamame",
+        "edamame bean"
+    ],
+    "dam": [
+        "cardamom",
+        "edamame",
+        "edamame bean"
+    ],
+    "mam": [
+        "edamame",
+        "edamame bean"
+    ],
     "nor": [
         "great northern bean",
         "nori",
@@ -14208,12 +14483,6 @@
     ],
     "nol": [
         "canola oil"
-    ],
-    "coo": [
-        "cooking oil"
-    ],
-    "ook": [
-        "cooking oil"
     ],
     "neu": [
         "neutral oil"
@@ -14338,6 +14607,7 @@
         "pepper kosher salt"
     ],
     " bl": [
+        "baharat blend",
         "kosher salt black pepper",
         "salt black pepper",
         "spice blend"
@@ -14437,13 +14707,6 @@
         "garam masala",
         "skim milk"
     ],
-    "non": [
-        "non-fat milk",
-        "nonfat milk"
-    ],
-    "on-": [
-        "non-fat milk"
-    ],
     "n-f": [
         "non-fat milk"
     ],
@@ -14480,6 +14743,12 @@
     "lsp": [
         "allspice"
     ],
+    "bah": [
+        "baharat blend"
+    ],
+    "rat": [
+        "baharat blend"
+    ],
     "awa": [
         "caraway"
     ],
@@ -14487,9 +14756,6 @@
         "caraway"
     ],
     "rda": [
-        "cardamom"
-    ],
-    "dam": [
         "cardamom"
     ],
     "mom": [
@@ -14883,6 +15149,7 @@
         "wheat & rye (flour)"
     ],
     " ry": [
+        "berry rye",
         "wheat & rye (bread)",
         "wheat & rye (flour)"
     ],

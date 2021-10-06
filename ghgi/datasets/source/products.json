@@ -651,6 +651,7 @@
     "chili sauce": {
         "g": 10,
         "names": {
+            "harissa": {},
             "sambal": {},
             "sriracha": {},
             "~paste": {
@@ -794,6 +795,20 @@
         "g": 7.0,
         "sg": 0.35,
         "super": {}
+    },
+    "cooking spray": {
+        "g": 5,
+        "names": {
+            "cooking spray": {
+                "dependent": [
+                    "non-stick",
+                    "nonstick"
+                ]
+            }
+        },
+        "super": {
+            "rapeseed oil": 100
+        }
     },
     "corn": {
         "g": 100,
@@ -1682,6 +1697,11 @@
             },
             "pineapple": {},
             "plum": {},
+            "pomegranate": {
+                "dependent": [
+                    "_seed"
+                ]
+            },
             "prune": {}
         },
         "sg": 1.0,
@@ -2052,6 +2072,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2084,6 +2105,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2101,6 +2123,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2117,6 +2140,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2133,6 +2157,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2149,6 +2174,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2165,6 +2191,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2181,6 +2208,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2197,6 +2225,7 @@
                     "_giblet",
                     "_leg",
                     "_liver",
+                    "_sausage",
                     "_thigh",
                     "_wing",
                     "breast",
@@ -2226,7 +2255,8 @@
                     "white"
                 ],
                 "independent": [
-                    "cannellini"
+                    "cannellini",
+                    "edamame"
                 ]
             },
             "lentil": {
@@ -2586,6 +2616,7 @@
         "g": 5,
         "names": {
             "allspice": {},
+            "baharat blend": {},
             "caraway": {},
             "cardamom": {},
             "clove": {},
@@ -2896,9 +2927,20 @@
     "wheat & rye (flour)": {
         "g": 100,
         "names": {
-            "grain": {},
-            "rye": {},
+            "grain": {
+                "dependent": [
+                    "berry"
+                ]
+            },
+            "rye": {
+                "dependent": [
+                    "berry"
+                ]
+            },
             "wheat": {
+                "dependent": [
+                    "berry"
+                ],
                 "independent": [
                     "bulgur",
                     "durum",
