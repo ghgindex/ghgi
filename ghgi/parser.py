@@ -111,6 +111,7 @@ STOPWORDS |= {
     'drizzling',
     'equal',
     'fillet',
+    'fillets',
     'fine',
     'firm',
     'finely',
@@ -422,7 +423,9 @@ def names_mods(text):
             cleaned_text += [word]
     text = ' '.join(cleaned_text)
     # split on comma, or, and, semicolon; don't return empty strings
-    text = re.split(r',$|,\s|;$|;\s|\sor\s|\sor$|\sand\s|\sand$', text)
+    # text = re.split(r',$|,\s|;$|;\s|\sor\s|\sor$|\sand\s|\sand$', text)
+    text = re.split(r'[,;]+$|[,;]+\s|\sor\s|\sor$|\sand\s|\sand$', text)
+
     return [r.strip() for r in text if r and r.strip()], mods
 
 
@@ -540,7 +543,9 @@ def clean(text):
             raise err
 
         if word.lower().strip(',') in STOPWORDS:
-            stripped_words += [word.lower()]
+            if word.lower():
+                # don't include empty string in stripped_words
+                stripped_words += [word.lower()]
             continue
         if no_singular(word.lower()):
             cleaned_words += [word + ',' if has_comma else word]

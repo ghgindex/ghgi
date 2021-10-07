@@ -487,7 +487,9 @@
                 "dependent": [
                     "brown",
                     "cane",
+                    "confectioner's'",
                     "confectioners",
+                    "confectioners'",
                     "dark brown",
                     "demerara",
                     "golden brown",
@@ -1134,11 +1136,14 @@
             "flour": {
                 "dependent": [
                     "all purpose",
+                    "all-purpose",
                     "bread",
                     "cake",
                     "pastry",
                     "rye",
+                    "self-rising",
                     "unbleached all purpose",
+                    "unbleached all-purpose",
                     "wheat",
                     "white",
                     "whole wheat",
@@ -1476,6 +1481,7 @@
         "names": {
             "milk": {
                 "dependent": [
+                    ".whole-",
                     "full fat",
                     "whole"
                 ]
@@ -1504,6 +1510,25 @@
         "g": 20,
         "names": {
             "mushroom": {
+                "dependent": [
+                    "brown",
+                    "button",
+                    "oyster",
+                    "white",
+                    "wild"
+                ],
+                "independent": [
+                    "chanterelle",
+                    "cremini",
+                    "crimini",
+                    "enoki",
+                    "morel",
+                    "porcini",
+                    "portobello",
+                    "shiitake"
+                ]
+            },
+            "mushroom cap": {
                 "dependent": [
                     "brown",
                     "button",
@@ -1829,7 +1854,11 @@
                 ]
             },
             "watermelon": {},
-            "zucchini": {},
+            "zucchini": {
+                "dependent": [
+                    "romanesco"
+                ]
+            },
             "~bean": {
                 "dependent": [
                     "fresh",
@@ -3070,7 +3099,9 @@
         "names": {
             "yoghurt": {
                 "dependent": [
-                    "greek"
+                    "greek",
+                    "whole milk",
+                    "whole-milk"
                 ]
             },
             "yogurt": {

@@ -779,9 +779,17 @@
         "cane sugar",
         9
     ],
+    "confectioner's' sugar": [
+        "cane sugar",
+        19
+    ],
     "confectioners sugar": [
         "cane sugar",
         17
+    ],
+    "confectioners' sugar": [
+        "cane sugar",
+        18
     ],
     "dark brown sugar": [
         "cane sugar",
@@ -1739,6 +1747,10 @@
         "flour",
         15
     ],
+    "all-purpose flour": [
+        "flour",
+        15
+    ],
     "bread flour": [
         "flour",
         9
@@ -1755,6 +1767,10 @@
         "flour",
         7
     ],
+    "self-rising flour": [
+        "flour",
+        15
+    ],
     "semolina": [
         "flour",
         6
@@ -1764,6 +1780,10 @@
         12
     ],
     "unbleached all purpose flour": [
+        "flour",
+        26
+    ],
+    "unbleached all-purpose flour": [
         "flour",
         26
     ],
@@ -2247,6 +2267,10 @@
         "milk",
         8
     ],
+    "whole-milk": [
+        "milk",
+        8
+    ],
     "molasses": [
         "molasses",
         6
@@ -2271,9 +2295,17 @@
         "mushroom",
         12
     ],
+    "brown mushroom cap": [
+        "mushroom",
+        16
+    ],
     "button mushroom": [
         "mushroom",
         13
+    ],
+    "button mushroom cap": [
+        "mushroom",
+        17
     ],
     "chanterelle": [
         "mushroom",
@@ -2283,6 +2315,10 @@
         "mushroom",
         18
     ],
+    "chanterelle mushroom cap": [
+        "mushroom",
+        22
+    ],
     "cremini": [
         "mushroom",
         5
@@ -2290,6 +2326,10 @@
     "cremini mushroom": [
         "mushroom",
         14
+    ],
+    "cremini mushroom cap": [
+        "mushroom",
+        18
     ],
     "crimini": [
         "mushroom",
@@ -2299,6 +2339,10 @@
         "mushroom",
         14
     ],
+    "crimini mushroom cap": [
+        "mushroom",
+        18
+    ],
     "enoki": [
         "mushroom",
         3
@@ -2306,6 +2350,10 @@
     "enoki mushroom": [
         "mushroom",
         12
+    ],
+    "enoki mushroom cap": [
+        "mushroom",
+        16
     ],
     "morel": [
         "mushroom",
@@ -2315,9 +2363,21 @@
         "mushroom",
         12
     ],
+    "morel mushroom cap": [
+        "mushroom",
+        16
+    ],
+    "mushroom cap": [
+        "mushroom",
+        10
+    ],
     "oyster mushroom": [
         "mushroom",
         13
+    ],
+    "oyster mushroom cap": [
+        "mushroom",
+        17
     ],
     "porcini": [
         "mushroom",
@@ -2327,6 +2387,10 @@
         "mushroom",
         14
     ],
+    "porcini mushroom cap": [
+        "mushroom",
+        18
+    ],
     "portobello": [
         "mushroom",
         8
@@ -2334,6 +2398,10 @@
     "portobello mushroom": [
         "mushroom",
         17
+    ],
+    "portobello mushroom cap": [
+        "mushroom",
+        21
     ],
     "shiitake": [
         "mushroom",
@@ -2343,13 +2411,25 @@
         "mushroom",
         15
     ],
+    "shiitake mushroom cap": [
+        "mushroom",
+        19
+    ],
     "white mushroom": [
         "mushroom",
         12
     ],
+    "white mushroom cap": [
+        "mushroom",
+        16
+    ],
     "wild mushroom": [
         "mushroom",
         11
+    ],
+    "wild mushroom cap": [
+        "mushroom",
+        15
     ],
     "mussel": [
         "mussel",
@@ -2938,6 +3018,10 @@
     "rhubarb": [
         "other vegetables",
         5
+    ],
+    "romanesco zucchini": [
+        "other vegetables",
+        16
     ],
     "scotch bonnet": [
         "other vegetables",
@@ -5202,6 +5286,14 @@
     "greek yogurt": [
         "yogurt",
         10
+    ],
+    "whole milk yoghurt": [
+        "yogurt",
+        16
+    ],
+    "whole-milk yoghurt": [
+        "yogurt",
+        16
     ],
     "yoghurt": [
         "yogurt",

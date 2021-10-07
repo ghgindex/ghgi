@@ -25,7 +25,8 @@
         "skim milk",
         "soy milk",
         "two percent milk",
-        "whole milk"
+        "whole milk",
+        "whole milk yoghurt"
     ],
     "almondmilk": [
         "almondmilk"
@@ -532,7 +533,9 @@
         "beet sugar",
         "brown sugar",
         "cane sugar",
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "dark brown sugar",
         "demerara sugar",
         "golden brown sugar",
@@ -868,6 +871,7 @@
         "white bread",
         "white flour",
         "white mushroom",
+        "white mushroom cap",
         "white onion",
         "white pepper",
         "white potato",
@@ -881,6 +885,7 @@
     ],
     "whole": [
         "whole milk",
+        "whole milk yoghurt",
         "whole wheat bread",
         "whole wheat flour",
         "whole wheat pastry flour"
@@ -940,6 +945,7 @@
     ],
     "brown": [
         "brown mushroom",
+        "brown mushroom cap",
         "brown rice",
         "brown sugar",
         "dark brown sugar",
@@ -947,7 +953,16 @@
         "light brown sugar"
     ],
     "confection": [
-        "confectioners sugar"
+        "confectioner's' sugar",
+        "confectioners sugar",
+        "confectioners' sugar"
+    ],
+    "'s": [
+        "confectioner's' sugar"
+    ],
+    "'": [
+        "confectioner's' sugar",
+        "confectioners' sugar"
     ],
     "dark": [
         "dark brown sugar",
@@ -1579,6 +1594,7 @@
         "tilapia (wild)",
         "wild crab",
         "wild mushroom",
+        "wild mushroom cap",
         "wild prawns (wild)",
         "wild rice",
         "wild salmon",
@@ -1807,14 +1823,17 @@
     ],
     "flour": [
         "all purpose flour",
+        "all-purpose flour",
         "bread flour",
         "cake flour",
         "flour",
         "flour tortilla",
         "pastry flour",
         "rye flour",
+        "self-rising flour",
         "semolina flour",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "wheat & rye (flour)",
         "wheat flour",
         "white flour",
@@ -1828,6 +1847,10 @@
     "purpos": [
         "all purpose flour",
         "unbleached all purpose flour"
+    ],
+    "all-purpos": [
+        "all-purpose flour",
+        "unbleached all-purpose flour"
     ],
     "cake": [
         "cake flour"
@@ -1845,12 +1868,16 @@
         "wheat & rye (bread)",
         "wheat & rye (flour)"
     ],
+    "self-ris": [
+        "self-rising flour"
+    ],
     "semolina": [
         "semolina",
         "semolina flour"
     ],
     "unbleach": [
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "garlic": [
         "clove garlic",
@@ -2183,6 +2210,10 @@
     "mayo": [
         "mayo"
     ],
+    "whole-milk": [
+        "whole-milk",
+        "whole-milk yoghurt"
+    ],
     "molass": [
         "blackstrap molasses",
         "dark molasses",
@@ -2194,59 +2225,99 @@
     ],
     "mushroom": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "enoki mushroom",
+        "enoki mushroom cap",
         "morel mushroom",
+        "morel mushroom cap",
         "mushroom",
+        "mushroom cap",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "white mushroom",
-        "wild mushroom"
+        "white mushroom cap",
+        "wild mushroom",
+        "wild mushroom cap"
+    ],
+    "cap": [
+        "brown mushroom cap",
+        "button mushroom cap",
+        "chanterelle mushroom cap",
+        "cremini mushroom cap",
+        "crimini mushroom cap",
+        "enoki mushroom cap",
+        "morel mushroom cap",
+        "mushroom cap",
+        "oyster mushroom cap",
+        "porcini mushroom cap",
+        "portobello mushroom cap",
+        "shiitake mushroom cap",
+        "white mushroom cap",
+        "wild mushroom cap"
     ],
     "button": [
-        "button mushroom"
+        "button mushroom",
+        "button mushroom cap"
     ],
     "chanterell": [
         "chanterelle",
-        "chanterelle mushroom"
+        "chanterelle mushroom",
+        "chanterelle mushroom cap"
     ],
     "cremini": [
         "cremini",
-        "cremini mushroom"
+        "cremini mushroom",
+        "cremini mushroom cap"
     ],
     "crimini": [
         "crimini",
-        "crimini mushroom"
+        "crimini mushroom",
+        "crimini mushroom cap"
     ],
     "enoki": [
         "enoki",
-        "enoki mushroom"
+        "enoki mushroom",
+        "enoki mushroom cap"
     ],
     "morel": [
         "morel",
-        "morel mushroom"
+        "morel mushroom",
+        "morel mushroom cap"
     ],
     "oyster": [
         "oyster",
         "oyster mushroom",
+        "oyster mushroom cap",
         "oyster sauce"
     ],
     "porcini": [
         "porcini",
-        "porcini mushroom"
+        "porcini mushroom",
+        "porcini mushroom cap"
     ],
     "portobello": [
         "portobello",
-        "portobello mushroom"
+        "portobello mushroom",
+        "portobello mushroom cap"
     ],
     "shiitak": [
         "shiitake",
-        "shiitake mushroom"
+        "shiitake mushroom",
+        "shiitake mushroom cap"
     ],
     "mussel": [
         "mussel"
@@ -2600,6 +2671,13 @@
     "rhubarb": [
         "rhubarb"
     ],
+    "romanesco": [
+        "romanesco zucchini"
+    ],
+    "zucchini": [
+        "romanesco zucchini",
+        "zucchini"
+    ],
     "bonnet": [
         "scotch bonnet",
         "scotch bonnet pepper"
@@ -2628,9 +2706,6 @@
     ],
     "watermelon": [
         "watermelon"
-    ],
-    "zucchini": [
-        "zucchini"
     ],
     "paprika": [
         "paprika",
@@ -3808,6 +3883,8 @@
     ],
     "yoghurt": [
         "greek yoghurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt",
         "yoghurt"
     ]
 }

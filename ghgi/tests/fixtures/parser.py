@@ -161,9 +161,9 @@ AMOUNTS_DATA = [
                     'qualifiers': [], 'plus': False}
             ]}
         ],
-        'names': ['white fish fillets'],
+        'names': ['white fish'],
         'mods': [],
-        'stripped_words':['mild', 'for']
+        'stripped_words':['mild', 'fillets', 'for']
     }),
     ('1 (10- to 14-pound) turkey', {
         'qtys': [
@@ -345,7 +345,7 @@ AMOUNTS_DATA = [
             'like',
         ]
     }),
-    ('4 whole fish, like sea bass or black bass, 1 to 1.5 pounds each', {
+    ('4 whole fish,, like sea bass or black bass, 1 to 1.5 pounds each', {
         'qtys': [
             {
                 'unit': 'ea',

@@ -60,7 +60,8 @@
         "grand marnier",
         "grand marnier liqueur",
         "prepared mustard",
-        "wild mushroom"
+        "wild mushroom",
+        "wild mushroom cap"
     ],
     " mi": [
         "1 percent milk",
@@ -83,7 +84,8 @@
         "skim milk",
         "soy milk",
         "two percent milk",
-        "whole milk"
+        "whole milk",
+        "whole milk yoghurt"
     ],
     "mil": [
         "1 percent milk",
@@ -112,7 +114,10 @@
         "soy milk",
         "soymilk",
         "two percent milk",
-        "whole milk"
+        "whole milk",
+        "whole milk yoghurt",
+        "whole-milk",
+        "whole-milk yoghurt"
     ],
     "ilk": [
         "1 percent milk",
@@ -141,7 +146,10 @@
         "soy milk",
         "soymilk",
         "two percent milk",
-        "whole milk"
+        "whole milk",
+        "whole milk yoghurt",
+        "whole-milk",
+        "whole-milk yoghurt"
     ],
     "ndm": [
         "almondmilk"
@@ -336,6 +344,7 @@
         "muenster cheese",
         "oyster",
         "oyster mushroom",
+        "oyster mushroom cap",
         "oyster sauce",
         "ribeye steak",
         "sirloin steak",
@@ -413,6 +422,7 @@
         "apple juice",
         "apple sauce",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "chile de arbol",
         "chile de \u00e1rbol",
         "chile flake",
@@ -431,6 +441,7 @@
         "vegetable oil",
         "vegetable stock",
         "whole milk",
+        "whole milk yoghurt",
         "whole wheat bread",
         "whole wheat flour",
         "whole wheat pastry flour"
@@ -606,6 +617,7 @@
         "other fruit",
         "other vegetables",
         "oyster mushroom",
+        "oyster mushroom cap",
         "oyster sauce",
         "paneer cheese",
         "pepper flake",
@@ -733,7 +745,9 @@
         "cane sugar",
         "cider vinegar",
         "clove garlic",
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "dark brown sugar",
         "demerara sugar",
         "garam masala",
@@ -1340,7 +1354,8 @@
         "mcintosh",
         "mcintosh apple",
         "porcini",
-        "porcini mushroom"
+        "porcini mushroom",
+        "porcini mushroom cap"
     ],
     "int": [
         "cointreau",
@@ -1498,12 +1513,14 @@
         "sun-dried tomato",
         "sweet red pepper",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "unsalted butter",
         "whipped cream"
     ],
     "d a": [
         "red apple",
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "d d": [
         "bread dough",
@@ -1588,7 +1605,8 @@
     "ke ": [
         "artichoke heart",
         "cake flour",
-        "shiitake mushroom"
+        "shiitake mushroom",
+        "shiitake mushroom cap"
     ],
     "e h": [
         "artichoke heart",
@@ -1777,6 +1795,7 @@
         "butternut squash",
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "coconut water",
         "hot water",
         "ice water",
@@ -1788,6 +1807,7 @@
         "muenster cheese",
         "oyster",
         "oyster mushroom",
+        "oyster mushroom cap",
         "oyster sauce",
         "peanut butter",
         "seltzer water",
@@ -1851,6 +1871,7 @@
         "pork belly",
         "portobello",
         "portobello mushroom",
+        "portobello mushroom cap",
         "red bell pepper",
         "umbellifers",
         "yellow bell pepper"
@@ -2128,6 +2149,7 @@
     "ton": [
         "boston lettuce",
         "button mushroom",
+        "button mushroom cap",
         "crouton",
         "crouton bread",
         "lamb & mutton",
@@ -2140,6 +2162,7 @@
         "boston lettuce",
         "bourbon whisky",
         "button mushroom",
+        "button mushroom cap",
         "cornichon cucumber",
         "crouton bread",
         "daikon radish",
@@ -2227,6 +2250,7 @@
         "radicchio",
         "red chile",
         "red chili",
+        "romanesco zucchini",
         "serrano chile",
         "serrano chili",
         "thigh chicken",
@@ -2327,7 +2351,8 @@
     ],
     "esc": [
         "escarole",
-        "mesclun"
+        "mesclun",
+        "romanesco zucchini"
     ],
     "sca": [
         "bay scallop",
@@ -2380,9 +2405,12 @@
         "polenta",
         "sole",
         "whole milk",
+        "whole milk yoghurt",
         "whole wheat bread",
         "whole wheat flour",
-        "whole wheat pastry flour"
+        "whole wheat pastry flour",
+        "whole-milk",
+        "whole-milk yoghurt"
     ],
     "fri": [
         "frisee"
@@ -2392,7 +2420,8 @@
         "brisket",
         "brisket beef",
         "frisee",
-        "harissa"
+        "harissa",
+        "self-rising flour"
     ],
     "ise": [
         "frisee",
@@ -2513,6 +2542,7 @@
         "tea leaves",
         "thyme leaf",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "winter savory leaf"
     ],
     "eaf": [
@@ -2550,6 +2580,7 @@
         "roma tomato",
         "romaine",
         "romaine lettuce",
+        "romanesco zucchini",
         "romano",
         "romano cheese"
     ],
@@ -2564,6 +2595,7 @@
         "roma tomato",
         "romaine",
         "romaine lettuce",
+        "romanesco zucchini",
         "romano",
         "romano cheese",
         "san marzano tomato",
@@ -2673,7 +2705,9 @@
         "coconut milk",
         "coconut oil",
         "coconut water",
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "full fat coconut milk",
         "full-fat coconut milk",
         "low fat coconut milk",
@@ -2883,6 +2917,7 @@
         "quail wing",
         "seasoning",
         "seasoning salt",
+        "self-rising flour",
         "sparkling water",
         "spring onion",
         "string bean",
@@ -2918,6 +2953,7 @@
         "pickling juice",
         "pickling liquid",
         "seasoning salt",
+        "self-rising flour",
         "sparkling water",
         "spring onion",
         "string bean",
@@ -3052,6 +3088,7 @@
         "cantaloupe",
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cilantro",
         "cilantro leaf",
         "currant",
@@ -3805,6 +3842,7 @@
         "beef shank",
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "hanger steak",
         "lamb shank"
     ],
@@ -4229,6 +4267,7 @@
         "port wine",
         "portobello",
         "portobello mushroom",
+        "portobello mushroom cap",
         "roquefort",
         "roquefort cheese",
         "short rib",
@@ -4322,6 +4361,7 @@
         "broccolini",
         "broth",
         "brown mushroom",
+        "brown mushroom cap",
         "brown rice",
         "brown sugar",
         "chicken broth",
@@ -4412,7 +4452,9 @@
         "beet sugar",
         "brown sugar",
         "cane sugar",
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "dark brown sugar",
         "demerara sugar",
         "golden brown sugar",
@@ -4428,7 +4470,9 @@
         "beet sugar",
         "brown sugar",
         "cane sugar",
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "dark brown sugar",
         "demerara sugar",
         "golden brown sugar",
@@ -4446,7 +4490,9 @@
         "beet sugar",
         "brown sugar",
         "cane sugar",
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "dark brown sugar",
         "demerara sugar",
         "golden brown sugar",
@@ -5150,6 +5196,7 @@
     ],
     " fl": [
         "all purpose flour",
+        "all-purpose flour",
         "bread flour",
         "broccoli floret",
         "cake flour",
@@ -5160,8 +5207,10 @@
         "pepper flake",
         "red pepper flake",
         "rye flour",
+        "self-rising flour",
         "semolina flour",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "wheat flour",
         "white flour",
         "whole wheat flour",
@@ -5169,6 +5218,7 @@
     ],
     "flo": [
         "all purpose flour",
+        "all-purpose flour",
         "bread flour",
         "broccoli floret",
         "cake flour",
@@ -5178,9 +5228,11 @@
         "flour tortilla",
         "pastry flour",
         "rye flour",
+        "self-rising flour",
         "semolina flour",
         "sunflower oil",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "wheat & rye (flour)",
         "wheat flour",
         "white flour",
@@ -5194,6 +5246,7 @@
         "broccoli floret",
         "morel",
         "morel mushroom",
+        "morel mushroom cap",
         "orecchiette",
         "orecchiette pasta",
         "oregano",
@@ -5249,10 +5302,14 @@
         "cannellini bean",
         "cremini",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini",
         "crimini mushroom",
+        "crimini mushroom cap",
         "porcini",
         "porcini mushroom",
+        "porcini mushroom cap",
+        "romanesco zucchini",
         "spaghettini",
         "spaghettini pasta",
         "tahini",
@@ -5303,6 +5360,7 @@
         "brussels sprout",
         "fleur de sel",
         "mussel",
+        "self-rising flour",
         "seltzer",
         "seltzer water"
     ],
@@ -5489,11 +5547,13 @@
     ],
     "hin": [
         "chinese cabbage",
+        "romanesco zucchini",
         "tahini",
         "zucchini"
     ],
     "nes": [
-        "chinese cabbage"
+        "chinese cabbage",
+        "romanesco zucchini"
     ],
     "ese": [
         "american cheese",
@@ -5539,6 +5599,7 @@
     ],
     "se ": [
         "all purpose flour",
+        "all-purpose flour",
         "cheese pierogy",
         "cheese potato pierogy",
         "chinese cabbage",
@@ -5559,16 +5620,31 @@
         "potato cheese pierogy",
         "rose wine",
         "star anise pod",
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     " ca": [
+        "brown mushroom cap",
+        "button mushroom cap",
+        "chanterelle mushroom cap",
         "chinese cabbage",
+        "cremini mushroom cap",
+        "crimini mushroom cap",
+        "enoki mushroom cap",
         "farmed carp",
         "farmed catfish",
+        "morel mushroom cap",
+        "mushroom cap",
         "napa cabbage",
+        "oyster mushroom cap",
+        "porcini mushroom cap",
+        "portobello mushroom cap",
         "red cabbage",
         "sauerkraut cabbage",
-        "savoy cabbage"
+        "savoy cabbage",
+        "shiitake mushroom cap",
+        "white mushroom cap",
+        "wild mushroom cap"
     ],
     "lla": [
         "collard green",
@@ -5658,51 +5734,78 @@
     ],
     " mu": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "dijon mustard",
         "dijon style mustard",
         "dry mustard",
         "enoki mushroom",
+        "enoki mushroom cap",
         "grainy mustard",
         "hot mustard",
         "lamb & mutton",
         "morel mushroom",
+        "morel mushroom cap",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "prepared mustard",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "white mushroom",
+        "white mushroom cap",
         "wild mushroom",
+        "wild mushroom cap",
         "yellow mustard"
     ],
     "mus": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "dijon mustard",
         "dijon style mustard",
         "dry mustard",
         "enoki mushroom",
+        "enoki mushroom cap",
         "grainy mustard",
         "hot mustard",
         "morel mushroom",
+        "morel mushroom cap",
         "mushroom",
+        "mushroom cap",
         "mussel",
         "mustard",
         "mustard seed",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "prepared mustard",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "white mushroom",
+        "white mushroom cap",
         "wild mushroom",
+        "wild mushroom cap",
         "yellow mustard"
     ],
     "ust": [
@@ -6051,6 +6154,7 @@
         "creme fraiche",
         "cremini",
         "cremini mushroom",
+        "cremini mushroom cap",
         "heavy cream",
         "heavy whipped cream",
         "heavy whipping cream",
@@ -6284,6 +6388,7 @@
         "white bread",
         "white flour",
         "white mushroom",
+        "white mushroom cap",
         "white onion",
         "white pepper",
         "white potato",
@@ -6584,10 +6689,24 @@
         "philly cream cheese"
     ],
     "m c": [
+        "brown mushroom cap",
+        "button mushroom cap",
+        "chanterelle mushroom cap",
         "cream cheese",
+        "cremini mushroom cap",
+        "crimini mushroom cap",
+        "enoki mushroom cap",
         "graham cracker",
+        "morel mushroom cap",
+        "mushroom cap",
+        "oyster mushroom cap",
         "philadelphia cream cheese",
-        "philly cream cheese"
+        "philly cream cheese",
+        "porcini mushroom cap",
+        "portobello mushroom cap",
+        "shiitake mushroom cap",
+        "white mushroom cap",
+        "wild mushroom cap"
     ],
     " cr": [
         "chocolate ice cream",
@@ -6721,6 +6840,7 @@
     ],
     "all": [
         "all purpose flour",
+        "all-purpose flour",
         "allspice",
         "bay scallop",
         "farfalle",
@@ -6741,11 +6861,13 @@
         "sea scallop",
         "shallot",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "wild scallop"
     ],
     "o m": [
         "matzo meal",
-        "portobello mushroom"
+        "portobello mushroom",
+        "portobello mushroom cap"
     ],
     " me": [
         "bitter melon",
@@ -6792,7 +6914,8 @@
         "pita bread",
         "pumpkin pepitas",
         "shiitake",
-        "shiitake mushroom"
+        "shiitake mushroom",
+        "shiitake mushroom cap"
     ],
     "ta ": [
         "calamata olive",
@@ -6809,6 +6932,7 @@
     ],
     "our": [
         "all purpose flour",
+        "all-purpose flour",
         "bourbon",
         "bourbon whisky",
         "bread flour",
@@ -6818,6 +6942,7 @@
         "gourd",
         "pastry flour",
         "rye flour",
+        "self-rising flour",
         "semolina flour",
         "sour cherry",
         "sour cream",
@@ -6825,6 +6950,7 @@
         "sourdough bread",
         "squash gourd",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "wheat & rye (flour)",
         "wheat flour",
         "white flour",
@@ -6936,6 +7062,7 @@
         "white bread",
         "white flour",
         "white mushroom",
+        "white mushroom cap",
         "white onion",
         "white pepper",
         "white potato",
@@ -6959,6 +7086,7 @@
         "white bread",
         "white flour",
         "white mushroom",
+        "white mushroom cap",
         "white onion",
         "white pepper",
         "white potato",
@@ -6980,6 +7108,7 @@
         "white bread",
         "white flour",
         "white mushroom",
+        "white mushroom cap",
         "white onion",
         "white pepper",
         "white potato",
@@ -6994,17 +7123,23 @@
     ],
     "who": [
         "whole milk",
+        "whole milk yoghurt",
         "whole wheat bread",
         "whole wheat flour",
-        "whole wheat pastry flour"
+        "whole wheat pastry flour",
+        "whole-milk",
+        "whole-milk yoghurt"
     ],
     "hol": [
         "alcohol",
         "grain alcohol",
         "whole milk",
+        "whole milk yoghurt",
         "whole wheat bread",
         "whole wheat flour",
-        "whole wheat pastry flour"
+        "whole wheat pastry flour",
+        "whole-milk",
+        "whole-milk yoghurt"
     ],
     "e w": [
         "dry white wine",
@@ -7202,6 +7337,7 @@
         "buttermilk",
         "butternut squash",
         "button mushroom",
+        "button mushroom cap",
         "halibut",
         "peanut butter",
         "pork butt",
@@ -7213,6 +7349,7 @@
         "buttermilk",
         "butternut squash",
         "button mushroom",
+        "button mushroom cap",
         "lamb & mutton",
         "peanut butter",
         "pork butt",
@@ -7330,10 +7467,12 @@
         "habanero chili",
         "habanero pepper",
         "paneer",
-        "paneer cheese"
+        "paneer cheese",
+        "romanesco zucchini"
     ],
     "row": [
         "brown mushroom",
+        "brown mushroom cap",
         "brown rice",
         "brown sugar",
         "dark brown sugar",
@@ -7342,6 +7481,7 @@
     ],
     "own": [
         "brown mushroom",
+        "brown mushroom cap",
         "brown rice",
         "brown sugar",
         "dark brown sugar",
@@ -7350,6 +7490,7 @@
     ],
     "wn ": [
         "brown mushroom",
+        "brown mushroom cap",
         "brown rice",
         "brown sugar",
         "dark brown sugar",
@@ -7358,27 +7499,41 @@
         "prawn (farmed)"
     ],
     "onf": [
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "nonfat milk"
     ],
     "nfe": [
-        "confectioners sugar"
+        "confectioner's' sugar",
+        "confectioners sugar",
+        "confectioners' sugar"
     ],
     "fec": [
-        "confectioners sugar"
+        "confectioner's' sugar",
+        "confectioners sugar",
+        "confectioners' sugar"
     ],
     "ect": [
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "nectarine"
     ],
     "cti": [
-        "confectioners sugar"
+        "confectioner's' sugar",
+        "confectioners sugar",
+        "confectioners' sugar"
     ],
     "tio": [
-        "confectioners sugar"
+        "confectioner's' sugar",
+        "confectioners sugar",
+        "confectioners' sugar"
     ],
     "ion": [
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "green onion",
         "onion",
         "onion powder",
@@ -7395,24 +7550,46 @@
         "yellow onion"
     ],
     "one": [
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "honey",
         "mascarpone",
         "mascarpone cheese",
         "one percent milk"
     ],
     "ner": [
+        "confectioner's' sugar",
         "confectioners sugar",
+        "confectioners' sugar",
         "habanero",
         "habanero chile",
         "habanero chili",
         "habanero pepper"
+    ],
+    "er'": [
+        "confectioner's' sugar"
+    ],
+    "r's": [
+        "confectioner's' sugar"
+    ],
+    "'s'": [
+        "confectioner's' sugar"
+    ],
+    "s' ": [
+        "confectioner's' sugar",
+        "confectioners' sugar"
+    ],
+    "' s": [
+        "confectioner's' sugar",
+        "confectioners' sugar"
     ],
     "ers": [
         "angostura bitters",
         "bitters",
         "bittersweet chocolate",
         "confectioners sugar",
+        "confectioners' sugar",
         "demersal fish",
         "demersal mollusks",
         "umbellifers",
@@ -7421,6 +7598,9 @@
     ],
     "rs ": [
         "confectioners sugar"
+    ],
+    "rs'": [
+        "confectioners' sugar"
     ],
     "dar": [
         "cheddar",
@@ -7536,6 +7716,7 @@
     "ere": [
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "gruyere",
         "gruyere cheese",
         "mackerel",
@@ -7672,8 +7853,22 @@
         "turbinado sugar"
     ],
     "cap": [
+        "brown mushroom cap",
+        "button mushroom cap",
         "capelin",
-        "caper"
+        "caper",
+        "chanterelle mushroom cap",
+        "cremini mushroom cap",
+        "crimini mushroom cap",
+        "enoki mushroom cap",
+        "morel mushroom cap",
+        "mushroom cap",
+        "oyster mushroom cap",
+        "porcini mushroom cap",
+        "portobello mushroom cap",
+        "shiitake mushroom cap",
+        "white mushroom cap",
+        "wild mushroom cap"
     ],
     "arp": [
         "carp",
@@ -7706,6 +7901,7 @@
         "manioc",
         "pecorino romano",
         "pecorino romano cheese",
+        "romanesco zucchini",
         "romano",
         "romano cheese"
     ],
@@ -7869,22 +8065,36 @@
     ],
     "roo": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "celery root",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "enoki mushroom",
+        "enoki mushroom cap",
         "ginger root",
         "morel mushroom",
+        "morel mushroom cap",
         "mushroom",
+        "mushroom cap",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "root vegetables",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "white mushroom",
-        "wild mushroom"
+        "white mushroom cap",
+        "wild mushroom",
+        "wild mushroom cap"
     ],
     "oot": [
         "celery root",
@@ -7986,6 +8196,7 @@
         "taleggio cheese",
         "toscano cheese",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "water chestnut"
     ],
     "hee": [
@@ -8184,7 +8395,8 @@
     "hed": [
         "cheddar",
         "cheddar cheese",
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "edd": [
         "cheddar",
@@ -8395,6 +8607,7 @@
         "piquillo pepper",
         "portobello",
         "portobello mushroom",
+        "portobello mushroom cap",
         "scallop",
         "scallop (farmed)",
         "scallop (wild)",
@@ -8416,6 +8629,7 @@
     ],
     "lou": [
         "all purpose flour",
+        "all-purpose flour",
         "bread flour",
         "cake flour",
         "cantaloupe",
@@ -8426,8 +8640,10 @@
         "halloumi cheese",
         "pastry flour",
         "rye flour",
+        "self-rising flour",
         "semolina flour",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "wheat & rye (flour)",
         "wheat flour",
         "white flour",
@@ -8465,9 +8681,11 @@
     ],
     "rpo": [
         "all purpose flour",
+        "all-purpose flour",
         "mascarpone",
         "mascarpone cheese",
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "pon": [
         "mascarpone",
@@ -8476,6 +8694,7 @@
     "nte": [
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "monterey jack",
         "monterey jack cheese",
         "winter savory",
@@ -8527,9 +8746,11 @@
     "rel": [
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "mackerel",
         "morel",
         "morel mushroom",
+        "morel mushroom cap",
         "mozzarella",
         "mozzarella cheese"
     ],
@@ -8539,6 +8760,7 @@
         "cannellini bean",
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "green bell pepper",
         "mortadella",
         "mortadella sausage",
@@ -8548,6 +8770,7 @@
         "pork belly",
         "portobello",
         "portobello mushroom",
+        "portobello mushroom cap",
         "red bell pepper",
         "tagliatelle",
         "tagliatelle pasta",
@@ -8991,12 +9214,14 @@
     ],
     "e f": [
         "all purpose flour",
+        "all-purpose flour",
         "cake flour",
         "chile flake",
         "creme fraiche",
         "cr\u00e8me fra\u00eeche",
         "rye flour",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "white flour"
     ],
     "lak": [
@@ -9016,7 +9241,8 @@
         "red pepper flake",
         "sake",
         "shiitake",
-        "shiitake mushroom"
+        "shiitake mushroom",
+        "shiitake mushroom cap"
     ],
     "ili": [
         "boiling water",
@@ -9360,12 +9586,14 @@
         "spinach",
         "spinach leaf",
         "sriracha",
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "cha": [
         "champagne",
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "chard",
         "sriracha",
         "swiss chard"
@@ -10044,7 +10272,9 @@
         "wing cornish hen"
     ],
     "ll-": [
-        "full-fat coconut milk"
+        "all-purpose flour",
+        "full-fat coconut milk",
+        "unbleached all-purpose flour"
     ],
     "l-f": [
         "full-fat coconut milk"
@@ -10192,6 +10422,7 @@
         "cooking spray",
         "enoki",
         "enoki mushroom",
+        "enoki mushroom cap",
         "non-stick cooking spray",
         "nonstick cooking spray"
     ],
@@ -10417,6 +10648,7 @@
     ],
     "sco": [
         "couscous",
+        "romanesco zucchini",
         "scotch",
         "scotch bonnet",
         "scotch bonnet pepper",
@@ -10455,6 +10687,7 @@
         "tilapia (wild)",
         "wild crab",
         "wild mushroom",
+        "wild mushroom cap",
         "wild prawns (wild)",
         "wild rice",
         "wild salmon",
@@ -10471,6 +10704,7 @@
         "tilapia (wild)",
         "wild crab",
         "wild mushroom",
+        "wild mushroom cap",
         "wild prawns (wild)",
         "wild rice",
         "wild salmon",
@@ -10490,6 +10724,7 @@
     "ld ": [
         "wild crab",
         "wild mushroom",
+        "wild mushroom cap",
         "wild prawns (wild)",
         "wild rice",
         "wild salmon",
@@ -10617,7 +10852,8 @@
     "rem": [
         "creme fraiche",
         "cremini",
-        "cremini mushroom"
+        "cremini mushroom",
+        "cremini mushroom cap"
     ],
     "fra": [
         "creme fraiche",
@@ -10684,23 +10920,37 @@
     ],
     "shr": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "enoki mushroom",
+        "enoki mushroom cap",
         "farmed shrimp",
         "morel mushroom",
+        "morel mushroom cap",
         "mushroom",
+        "mushroom cap",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "shrimp",
         "shrimp (farmed)",
         "shrimp (wild)",
         "white mushroom",
+        "white mushroom cap",
         "wild mushroom",
+        "wild mushroom cap",
         "wild shrimp"
     ],
     "hri": [
@@ -10713,6 +10963,7 @@
     "rim": [
         "crimini",
         "crimini mushroom",
+        "crimini mushroom cap",
         "farmed shrimp",
         "shrimp",
         "shrimp (farmed)",
@@ -10756,7 +11007,9 @@
         "bittersweet chocolate"
     ],
     "lk ": [
-        "milk chocolate"
+        "milk chocolate",
+        "whole milk yoghurt",
+        "whole-milk yoghurt"
     ],
     "sem": [
         "rosemary",
@@ -10769,6 +11022,7 @@
     "emi": [
         "cremini",
         "cremini mushroom",
+        "cremini mushroom cap",
         "ricemilk",
         "semi sweet chocolate",
         "semisweet chocolate"
@@ -10791,6 +11045,7 @@
         "dashi powder",
         "shiitake",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "shishito",
         "shishito pepper",
         "sushi rice",
@@ -10969,6 +11224,7 @@
     "por": [
         "porcini",
         "porcini mushroom",
+        "porcini mushroom cap",
         "porgy",
         "pork",
         "pork belly",
@@ -10981,6 +11237,7 @@
         "port wine",
         "portobello",
         "portobello mushroom",
+        "portobello mushroom cap",
         "salt pork"
     ],
     "rgy": [
@@ -11019,7 +11276,8 @@
     ],
     "l m": [
         "demersal mollusks",
-        "morel mushroom"
+        "morel mushroom",
+        "morel mushroom cap"
     ],
     " do": [
         "bread dough",
@@ -11061,7 +11319,9 @@
     " yo": [
         "egg yolk",
         "greek yoghurt",
-        "greek yogurt"
+        "greek yogurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt"
     ],
     "yol": [
         "egg yolk"
@@ -11111,18 +11371,25 @@
     ],
     "pur": [
         "all purpose flour",
-        "unbleached all purpose flour"
+        "all-purpose flour",
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "urp": [
         "all purpose flour",
-        "unbleached all purpose flour"
+        "all-purpose flour",
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "pos": [
         "all purpose flour",
-        "unbleached all purpose flour"
+        "all-purpose flour",
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "ose": [
         "all purpose flour",
+        "all-purpose flour",
         "breast goose",
         "giblet goose",
         "goose",
@@ -11140,7 +11407,16 @@
         "rosemary leaf",
         "thigh goose",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "wing goose"
+    ],
+    "l-p": [
+        "all-purpose flour",
+        "unbleached all-purpose flour"
+    ],
+    "-pu": [
+        "all-purpose flour",
+        "unbleached all-purpose flour"
     ],
     "cak": [
         "cake flour"
@@ -11158,14 +11434,45 @@
         "wheat & rye (bread)",
         "wheat & rye (flour)"
     ],
+    "elf": [
+        "self-rising flour"
+    ],
+    "lf-": [
+        "self-rising flour"
+    ],
+    "f-r": [
+        "self-rising flour"
+    ],
+    "-ri": [
+        "self-rising flour"
+    ],
+    "isi": [
+        "golden raisin",
+        "raisin",
+        "red raisin",
+        "self-rising flour",
+        "yellow raisin"
+    ],
+    "sin": [
+        "golden raisin",
+        "raisin",
+        "red raisin",
+        "self-rising flour",
+        "yellow raisin"
+    ],
+    "g f": [
+        "self-rising flour"
+    ],
     "a f": [
         "semolina flour"
     ],
     "unb": [
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "nbl": [
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "ble": [
         "baharat blend",
@@ -11194,17 +11501,20 @@
         "table salt",
         "turkey giblet",
         "unbleached all purpose flour",
+        "unbleached all-purpose flour",
         "vegetable broth",
         "vegetable oil",
         "vegetable stock"
     ],
     "eac": [
         "peach",
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     " al": [
         "grain alcohol",
-        "unbleached all purpose flour"
+        "unbleached all purpose flour",
+        "unbleached all-purpose flour"
     ],
     "t f": [
         "wheat flour",
@@ -11484,12 +11794,16 @@
     ],
     "e m": [
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "dijon style mustard",
         "italian spice mix",
         "rice milk",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "white mushroom",
-        "whole milk"
+        "white mushroom cap",
+        "whole milk",
+        "whole milk yoghurt"
     ],
     "mix": [
         "italian spice mix"
@@ -11530,6 +11844,7 @@
         "tabasco sauce"
     ],
     "co ": [
+        "romanesco zucchini",
         "tabasco sauce"
     ],
     "e i": [
@@ -11668,6 +11983,7 @@
     ],
     "tto": [
         "button mushroom",
+        "button mushroom cap",
         "lamb & mutton",
         "prosciutto"
     ],
@@ -11773,8 +12089,10 @@
     "min": [
         "cremini",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini",
         "crimini mushroom",
+        "crimini mushroom cap",
         "cumin",
         "cumin seed",
         "jasmine rice",
@@ -12189,7 +12507,9 @@
     ],
     "n m": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "corn meal",
         "dijon mustard",
         "san marzano tomato"
@@ -12275,6 +12595,18 @@
         "red raisin",
         "yellow raisin"
     ],
+    "le-": [
+        "whole-milk",
+        "whole-milk yoghurt"
+    ],
+    "e-m": [
+        "whole-milk",
+        "whole-milk yoghurt"
+    ],
+    "-mi": [
+        "whole-milk",
+        "whole-milk yoghurt"
+    ],
     "las": [
         "blackstrap molasses",
         "dark molasses",
@@ -12318,59 +12650,119 @@
     ],
     "ush": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "enoki mushroom",
+        "enoki mushroom cap",
         "morel mushroom",
+        "morel mushroom cap",
         "mushroom",
+        "mushroom cap",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "sushi rice",
         "white mushroom",
-        "wild mushroom"
+        "white mushroom cap",
+        "wild mushroom",
+        "wild mushroom cap"
     ],
     "hro": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "enoki mushroom",
+        "enoki mushroom cap",
         "morel mushroom",
+        "morel mushroom cap",
         "mushroom",
+        "mushroom cap",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "white mushroom",
-        "wild mushroom"
+        "white mushroom cap",
+        "wild mushroom",
+        "wild mushroom cap"
     ],
     "oom": [
         "brown mushroom",
+        "brown mushroom cap",
         "button mushroom",
+        "button mushroom cap",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "enoki mushroom",
+        "enoki mushroom cap",
         "heirloom tomato",
         "morel mushroom",
+        "morel mushroom cap",
         "mushroom",
+        "mushroom cap",
         "oyster mushroom",
+        "oyster mushroom cap",
         "porcini mushroom",
+        "porcini mushroom cap",
         "portobello mushroom",
+        "portobello mushroom cap",
         "shiitake mushroom",
+        "shiitake mushroom cap",
         "white mushroom",
-        "wild mushroom"
+        "white mushroom cap",
+        "wild mushroom",
+        "wild mushroom cap"
+    ],
+    "om ": [
+        "brown mushroom cap",
+        "button mushroom cap",
+        "chanterelle mushroom cap",
+        "cremini mushroom cap",
+        "crimini mushroom cap",
+        "enoki mushroom cap",
+        "heirloom tomato",
+        "morel mushroom cap",
+        "mushroom cap",
+        "oyster mushroom cap",
+        "porcini mushroom cap",
+        "portobello mushroom cap",
+        "shiitake mushroom cap",
+        "white mushroom cap",
+        "wild mushroom cap"
     ],
     "lle": [
         "andouille",
         "andouille sausage",
         "chanterelle",
         "chanterelle mushroom",
+        "chanterelle mushroom cap",
         "farfalle",
         "farfalle pasta",
         "rolled oat",
@@ -12380,30 +12772,40 @@
     "ni ": [
         "cannellini bean",
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "macaroni pasta",
         "pepperoni sausage",
         "porcini mushroom",
+        "porcini mushroom cap",
         "spaghettini pasta"
     ],
     "i m": [
         "cremini mushroom",
+        "cremini mushroom cap",
         "crimini mushroom",
+        "crimini mushroom cap",
         "enoki mushroom",
+        "enoki mushroom cap",
         "mahi mahi",
-        "porcini mushroom"
+        "porcini mushroom",
+        "porcini mushroom cap"
     ],
     "cri": [
         "crimini",
-        "crimini mushroom"
+        "crimini mushroom",
+        "crimini mushroom cap"
     ],
     "imi": [
         "crimini",
-        "crimini mushroom"
+        "crimini mushroom",
+        "crimini mushroom cap"
     ],
     "eno": [
         "enoki",
         "enoki mushroom",
+        "enoki mushroom cap",
         "jalapeno",
         "jalapeno chile",
         "jalapeno chili",
@@ -12411,14 +12813,17 @@
     ],
     "nok": [
         "enoki",
-        "enoki mushroom"
+        "enoki mushroom",
+        "enoki mushroom cap"
     ],
     "ki ": [
-        "enoki mushroom"
+        "enoki mushroom",
+        "enoki mushroom cap"
     ],
     "mor": [
         "morel",
         "morel mushroom",
+        "morel mushroom cap",
         "mortadella",
         "mortadella sausage"
     ],
@@ -12426,61 +12831,74 @@
         "fennel bulb",
         "fennel seed",
         "morel mushroom",
+        "morel mushroom cap",
         "navel orange"
     ],
     "oys": [
         "oyster",
         "oyster mushroom",
+        "oyster mushroom cap",
         "oyster sauce"
     ],
     "yst": [
         "oyster",
         "oyster mushroom",
+        "oyster mushroom cap",
         "oyster sauce"
     ],
     "r m": [
         "bitter melon",
-        "oyster mushroom"
+        "oyster mushroom",
+        "oyster mushroom cap"
     ],
     "orc": [
         "porcini",
         "porcini mushroom",
+        "porcini mushroom cap",
         "worcestershire",
         "worcestershire sauce"
     ],
     "rci": [
         "porcini",
-        "porcini mushroom"
+        "porcini mushroom",
+        "porcini mushroom cap"
     ],
     "rto": [
         "portobello",
-        "portobello mushroom"
+        "portobello mushroom",
+        "portobello mushroom cap"
     ],
     "tob": [
         "portobello",
-        "portobello mushroom"
+        "portobello mushroom",
+        "portobello mushroom cap"
     ],
     "obe": [
         "portobello",
-        "portobello mushroom"
+        "portobello mushroom",
+        "portobello mushroom cap"
     ],
     "lo ": [
         "guajillo chile",
         "guajillo chili",
         "piquillo pepper",
-        "portobello mushroom"
+        "portobello mushroom",
+        "portobello mushroom cap"
     ],
     "hii": [
         "shiitake",
-        "shiitake mushroom"
+        "shiitake mushroom",
+        "shiitake mushroom cap"
     ],
     "iit": [
         "shiitake",
-        "shiitake mushroom"
+        "shiitake mushroom",
+        "shiitake mushroom cap"
     ],
     "tak": [
         "shiitake",
-        "shiitake mushroom"
+        "shiitake mushroom",
+        "shiitake mushroom cap"
     ],
     "dij": [
         "dijon",
@@ -13478,6 +13896,7 @@
         "orecchiette",
         "orecchiette pasta",
         "radicchio",
+        "romanesco zucchini",
         "zucchini"
     ],
     "rhu": [
@@ -13488,6 +13907,22 @@
     ],
     "uba": [
         "rhubarb"
+    ],
+    "o z": [
+        "romanesco zucchini"
+    ],
+    " zu": [
+        "romanesco zucchini"
+    ],
+    "zuc": [
+        "romanesco zucchini",
+        "zucchini"
+    ],
+    "ucc": [
+        "fettuccine",
+        "fettuccine pasta",
+        "romanesco zucchini",
+        "zucchini"
     ],
     " bo": [
         "scotch bonnet",
@@ -13610,14 +14045,6 @@
     ],
     "w s": [
         "yellow squash"
-    ],
-    "zuc": [
-        "zucchini"
-    ],
-    "ucc": [
-        "fettuccine",
-        "fettuccine pasta",
-        "zucchini"
     ],
     "lm ": [
         "palm oil"
@@ -14863,18 +15290,6 @@
         "horseradish",
         "radish"
     ],
-    "isi": [
-        "golden raisin",
-        "raisin",
-        "red raisin",
-        "yellow raisin"
-    ],
-    "sin": [
-        "golden raisin",
-        "raisin",
-        "red raisin",
-        "yellow raisin"
-    ],
     "d r": [
         "red raisin",
         "wild rice"
@@ -15293,9 +15708,6 @@
     "loo": [
         "heirloom tomato"
     ],
-    "om ": [
-        "heirloom tomato"
-    ],
     "um ": [
         "durum wheat",
         "plum tomato"
@@ -15659,6 +16071,8 @@
     "yog": [
         "greek yoghurt",
         "greek yogurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt",
         "yoghurt",
         "yogurt"
     ],
@@ -15669,6 +16083,8 @@
     "urt": [
         "greek yoghurt",
         "greek yogurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt",
         "yoghurt",
         "yogurt"
     ],
@@ -15678,18 +16094,26 @@
     ],
     "k y": [
         "greek yoghurt",
-        "greek yogurt"
+        "greek yogurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt"
     ],
     "ogh": [
         "greek yoghurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt",
         "yoghurt"
     ],
     "ghu": [
         "greek yoghurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt",
         "yoghurt"
     ],
     "hur": [
         "greek yoghurt",
+        "whole milk yoghurt",
+        "whole-milk yoghurt",
         "yoghurt"
     ]
 }
