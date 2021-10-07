@@ -99,7 +99,7 @@
         "src": 5
     },
     "cottage cheese": {
-        "pd": 11.1,
+        "pd": 0.111,
         "ref": [
             "dairy.md",
             "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172179/nutrients"
