@@ -355,15 +355,15 @@
         "beef (beef herd)",
         2
     ],
+    "beef stock": [
+        "beef stock",
+        8
+    ],
     "beef broth": [
-        "beef broth",
+        "beef stock",
         8
     ],
     "veal broth": [
-        "beef broth",
-        8
-    ],
-    "beef stock": [
         "beef stock",
         8
     ],
@@ -479,6 +479,10 @@
         "brassicas",
         10
     ],
+    "black kale": [
+        "brassicas",
+        8
+    ],
     "bok choy": [
         "brassicas",
         6
@@ -530,6 +534,10 @@
     "gai lan": [
         "brassicas",
         5
+    ],
+    "green kale": [
+        "brassicas",
+        8
     ],
     "kale": [
         "brassicas",
@@ -1127,15 +1135,15 @@
         "cheese",
         12
     ],
-    "chicken broth": [
-        "chicken broth",
+    "chicken stock": [
+        "chicken stock",
         11
     ],
     "broth": [
-        "chicken broth",
+        "chicken stock",
         3
     ],
-    "chicken stock": [
+    "chicken broth": [
         "chicken stock",
         11
     ],
@@ -1503,11 +1511,11 @@
         "creme fraiche",
         11
     ],
-    "crustacean broth": [
-        "crustacean broth",
+    "crustacean stock": [
+        "crustacean stock",
         14
     ],
-    "crustacean stock": [
+    "crustacean broth": [
         "crustacean stock",
         14
     ],
@@ -1727,15 +1735,15 @@
         "fish (farmed)",
         7
     ],
-    "fish broth": [
-        "fish broth",
-        8
-    ],
     "fish sauce": [
         "fish sauce",
         8
     ],
     "fish stock": [
+        "fish stock",
+        8
+    ],
+    "fish broth": [
         "fish stock",
         8
     ],
@@ -4995,11 +5003,11 @@
         "vanilla",
         13
     ],
-    "vegetable broth": [
-        "vegetable broth",
+    "vegetable stock": [
+        "vegetable stock",
         13
     ],
-    "vegetable stock": [
+    "vegetable broth": [
         "vegetable stock",
         13
     ],

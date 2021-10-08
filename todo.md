@@ -3,6 +3,7 @@
 Update the repo readme
 Create package documentation
 Flag products with no origin or food value information in validate
+Validate that food_values are ok, e.g. "pd" has to be less than 1.0, "ed" > 1, etc.
 
 - Make sure pydoc runs adequately
 

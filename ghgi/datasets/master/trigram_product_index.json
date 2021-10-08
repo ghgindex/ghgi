@@ -1069,6 +1069,7 @@
         "green bell pepper",
         "green chile",
         "green chili",
+        "green kale",
         "green lentil",
         "green olive",
         "green onion",
@@ -1293,6 +1294,7 @@
         "green bell pepper",
         "green chile",
         "green chili",
+        "green kale",
         "green lentil",
         "green olive",
         "green onion",
@@ -1311,6 +1313,7 @@
         "green bell pepper",
         "green chile",
         "green chili",
+        "green kale",
         "green lentil",
         "green olive",
         "green onion",
@@ -1327,6 +1330,7 @@
         "green bell pepper",
         "green chile",
         "green chili",
+        "green kale",
         "green lentil",
         "green olive",
         "green onion",
@@ -2719,6 +2723,7 @@
         "black bean",
         "black currant",
         "black eyed pea",
+        "black kale",
         "black olive",
         "black pepper",
         "black pepper kosher salt",
@@ -2746,6 +2751,7 @@
         "black bean",
         "black currant",
         "black eyed pea",
+        "black kale",
         "black olive",
         "black pepper",
         "black pepper kosher salt",
@@ -4353,6 +4359,25 @@
         "veal broth",
         "veal stock"
     ],
+    "toc": [
+        "beef stock",
+        "chicken stock",
+        "crustacean stock",
+        "fish stock",
+        "stock",
+        "veal stock",
+        "vegetable stock"
+    ],
+    "ock": [
+        "beef stock",
+        "chicken stock",
+        "crustacean stock",
+        "fish stock",
+        "haddock",
+        "stock",
+        "veal stock",
+        "vegetable stock"
+    ],
     "bro": [
         "beef broth",
         "broccoli",
@@ -4402,25 +4427,6 @@
         "neutral oil",
         "veal broth",
         "veal stock"
-    ],
-    "toc": [
-        "beef stock",
-        "chicken stock",
-        "crustacean stock",
-        "fish stock",
-        "stock",
-        "veal stock",
-        "vegetable stock"
-    ],
-    "ock": [
-        "beef stock",
-        "chicken stock",
-        "crustacean stock",
-        "fish stock",
-        "haddock",
-        "stock",
-        "veal stock",
-        "vegetable stock"
     ],
     "l s": [
         "fennel seed",
@@ -4641,6 +4647,7 @@
         "black bean",
         "black currant",
         "black eyed pea",
+        "black kale",
         "black olive",
         "black pepper",
         "black pepper kosher salt",
@@ -4661,6 +4668,7 @@
         "black bean",
         "black currant",
         "black eyed pea",
+        "black kale",
         "black olive",
         "black pepper",
         "black pepper kosher salt",
@@ -5116,6 +5124,28 @@
     "a l": [
         "arugula leaf",
         "tea leaves"
+    ],
+    "k k": [
+        "black kale"
+    ],
+    " ka": [
+        "black kale",
+        "green kale"
+    ],
+    "kal": [
+        "black kale",
+        "green kale",
+        "kale",
+        "kale leaf"
+    ],
+    "ale": [
+        "aleppo pepper",
+        "black kale",
+        "green kale",
+        "kale",
+        "kale leaf",
+        "taleggio",
+        "taleggio cheese"
     ],
     "bok": [
         "bok choy"
@@ -5878,16 +5908,9 @@
         "leg lamb",
         "rack lamb"
     ],
-    "kal": [
-        "kale",
-        "kale leaf"
-    ],
-    "ale": [
-        "aleppo pepper",
-        "kale",
-        "kale leaf",
-        "taleggio",
-        "taleggio cheese"
+    "n k": [
+        "corn kernel",
+        "green kale"
     ],
     "koh": [
         "kohlrabi"
@@ -10532,9 +10555,6 @@
     ],
     " ea": [
         "corn ear"
-    ],
-    "n k": [
-        "corn kernel"
     ],
     " ke": [
         "corn kernel"

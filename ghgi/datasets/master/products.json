@@ -218,29 +218,19 @@
         "sg": 1.01,
         "super": {}
     },
-    "beef broth": {
-        "g": 250,
-        "names": [
-            "beef broth",
-            "veal broth"
-        ],
-        "sg": 1.0,
-        "super": {
-            "beef stock": 20,
-            "water": 80
-        }
-    },
     "beef stock": {
         "g": 250,
         "names": [
+            "beef broth",
             "beef stock",
+            "veal broth",
             "veal stock"
         ],
         "sg": 1.0,
         "super": {
-            "beef (beef herd)": 50,
-            "other vegetables": 0,
-            "water": 50
+            "beef (beef herd)": 20,
+            "other vegetables": 20,
+            "water": 60
         }
     },
     "beet": {
@@ -309,6 +299,7 @@
         "names": [
             "arugula",
             "arugula leaf",
+            "black kale",
             "bok choy",
             "brassicas",
             "broccoli",
@@ -323,6 +314,7 @@
             "collard green",
             "dry mustard",
             "gai lan",
+            "green kale",
             "kale",
             "kale leaf",
             "kohlrabi",
@@ -583,29 +575,19 @@
         "sg": 0.95,
         "super": {}
     },
-    "chicken broth": {
-        "g": 250,
-        "names": [
-            "broth",
-            "chicken broth"
-        ],
-        "sg": 1.0,
-        "super": {
-            "chicken stock": 20,
-            "water": 80
-        }
-    },
     "chicken stock": {
         "g": 250,
         "names": [
+            "broth",
+            "chicken broth",
             "chicken stock",
             "stock"
         ],
         "sg": 1.0,
         "super": {
-            "other vegetables": 50,
-            "poultry": 50,
-            "water": 50
+            "other vegetables": 20,
+            "poultry": 20,
+            "water": 60
         }
     },
     "chile flake": {
@@ -861,28 +843,18 @@
             "milk": 343.5
         }
     },
-    "crustacean broth": {
-        "g": 250,
-        "sg": 1.0,
-        "super": {
-            "crustacean stock": 20,
-            "water": 80
-        },
-        "names": [
-            "crustacean broth"
-        ]
-    },
     "crustacean stock": {
         "g": 250,
+        "names": [
+            "crustacean broth",
+            "crustacean stock"
+        ],
         "sg": 1.0,
         "super": {
-            "crustaceans (farmed)": 50,
-            "other vegetables": 50,
-            "water": 50
-        },
-        "names": [
-            "crustacean stock"
-        ]
+            "crustaceans (farmed)": 20,
+            "other vegetables": 20,
+            "water": 60
+        }
     },
     "crustaceans": {
         "g": 150,
@@ -1032,17 +1004,6 @@
         "sg": 1.0,
         "super": {}
     },
-    "fish broth": {
-        "g": 250,
-        "sg": 1.0,
-        "super": {
-            "fish stock": 20,
-            "water": 80
-        },
-        "names": [
-            "fish broth"
-        ]
-    },
     "fish sauce": {
         "g": 15,
         "sg": 1.0,
@@ -1057,15 +1018,16 @@
     },
     "fish stock": {
         "g": 250,
+        "names": [
+            "fish broth",
+            "fish stock"
+        ],
         "sg": 1.0,
         "super": {
-            "fish (farmed)": 50,
-            "other vegetables": 50,
-            "water": 50
-        },
-        "names": [
-            "fish stock"
-        ]
+            "fish (farmed)": 20,
+            "other vegetables": 20,
+            "water": 60
+        }
     },
     "flour": {
         "g": 100,
@@ -2713,27 +2675,17 @@
         "sg": 1.0,
         "super": {}
     },
-    "vegetable broth": {
-        "g": 250,
-        "sg": 1.0,
-        "super": {
-            "vegetable stock": 20,
-            "water": 80
-        },
-        "names": [
-            "vegetable broth"
-        ]
-    },
     "vegetable stock": {
         "g": 250,
+        "names": [
+            "vegetable broth",
+            "vegetable stock"
+        ],
         "sg": 1.0,
         "super": {
-            "other vegetables": 50,
-            "water": 50
-        },
-        "names": [
-            "vegetable stock"
-        ]
+            "other vegetables": 30,
+            "water": 70
+        }
     },
     "vinegar": {
         "g": 50,

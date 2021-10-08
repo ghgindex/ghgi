@@ -236,27 +236,18 @@
         "sg": 1.01,
         "super": {}
     },
-    "beef broth": {
-        "g": 250,
-        "names": {
-            "veal broth": {}
-        },
-        "sg": 1.0,
-        "super": {
-            "beef stock": 20,
-            "water": 80
-        }
-    },
     "beef stock": {
         "g": 250,
         "names": {
+            "beef broth": {},
+            "veal broth": {},
             "veal stock": {}
         },
         "sg": 1.0,
         "super": {
-            "beef (beef herd)": 50,
-            "other vegetables": 0,
-            "water": 50
+            "beef (beef herd)": 20,
+            "other vegetables": 20,
+            "water": 60
         }
     },
     "beet": {
@@ -363,7 +354,9 @@
             "gai lan": {},
             "kale": {
                 "dependent": [
-                    "_leaf"
+                    "_leaf",
+                    "black",
+                    "green"
                 ]
             },
             "kohlrabi": {},
@@ -618,27 +611,18 @@
         "sg": 0.95,
         "super": {}
     },
-    "chicken broth": {
-        "g": 250,
-        "names": {
-            "broth": {}
-        },
-        "sg": 1.0,
-        "super": {
-            "chicken stock": 20,
-            "water": 80
-        }
-    },
     "chicken stock": {
         "g": 250,
         "names": {
+            "broth": {},
+            "chicken broth": {},
             "stock": {}
         },
         "sg": 1.0,
         "super": {
-            "other vegetables": 50,
-            "poultry": 50,
-            "water": 50
+            "other vegetables": 20,
+            "poultry": 20,
+            "water": 60
         }
     },
     "chile flake": {
@@ -931,21 +915,16 @@
             "milk": 343.5
         }
     },
-    "crustacean broth": {
-        "g": 250,
-        "sg": 1.0,
-        "super": {
-            "crustacean stock": 20,
-            "water": 80
-        }
-    },
     "crustacean stock": {
         "g": 250,
+        "names": {
+            "crustacean broth": {}
+        },
         "sg": 1.0,
         "super": {
-            "crustaceans (farmed)": 50,
-            "other vegetables": 50,
-            "water": 50
+            "crustaceans (farmed)": 20,
+            "other vegetables": 20,
+            "water": 60
         }
     },
     "crustaceans": {
@@ -1104,14 +1083,6 @@
         "sg": 1.0,
         "super": {}
     },
-    "fish broth": {
-        "g": 250,
-        "sg": 1.0,
-        "super": {
-            "fish stock": 20,
-            "water": 80
-        }
-    },
     "fish sauce": {
         "g": 15,
         "sg": 1.0,
@@ -1123,11 +1094,14 @@
     },
     "fish stock": {
         "g": 250,
+        "names": {
+            "fish broth": {}
+        },
         "sg": 1.0,
         "super": {
-            "fish (farmed)": 50,
-            "other vegetables": 50,
-            "water": 50
+            "fish (farmed)": 20,
+            "other vegetables": 20,
+            "water": 60
         }
     },
     "flour": {
@@ -2927,20 +2901,15 @@
         "sg": 1.0,
         "super": {}
     },
-    "vegetable broth": {
-        "g": 250,
-        "sg": 1.0,
-        "super": {
-            "vegetable stock": 20,
-            "water": 80
-        }
-    },
     "vegetable stock": {
         "g": 250,
+        "names": {
+            "vegetable broth": {}
+        },
         "sg": 1.0,
         "super": {
-            "other vegetables": 50,
-            "water": 50
+            "other vegetables": 30,
+            "water": 70
         }
     },
     "vinegar": {

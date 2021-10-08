@@ -139,6 +139,7 @@
         "green bell pepper",
         "green chile",
         "green chili",
+        "green kale",
         "green lentil",
         "green olive",
         "green onion",
@@ -507,15 +508,6 @@
         "veal broth",
         "veal stock"
     ],
-    "broth": [
-        "beef broth",
-        "broth",
-        "chicken broth",
-        "crustacean broth",
-        "fish broth",
-        "veal broth",
-        "vegetable broth"
-    ],
     "stock": [
         "beef stock",
         "chicken stock",
@@ -524,6 +516,15 @@
         "stock",
         "veal stock",
         "vegetable stock"
+    ],
+    "broth": [
+        "beef broth",
+        "broth",
+        "chicken broth",
+        "crustacean broth",
+        "fish broth",
+        "veal broth",
+        "vegetable broth"
     ],
     "beet": [
         "beet",
@@ -574,6 +575,7 @@
         "black bean",
         "black currant",
         "black eyed pea",
+        "black kale",
         "black olive",
         "black pepper",
         "black pepper kosher salt",
@@ -647,6 +649,12 @@
         "arugula",
         "arugula leaf"
     ],
+    "kale": [
+        "black kale",
+        "green kale",
+        "kale",
+        "kale leaf"
+    ],
     "bok": [
         "bok choy"
     ],
@@ -707,10 +715,6 @@
     ],
     "lan": [
         "gai lan"
-    ],
-    "kale": [
-        "kale",
-        "kale leaf"
     ],
     "kohlrabi": [
         "kohlrabi"
