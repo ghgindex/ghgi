@@ -1053,6 +1053,21 @@
             "wheat & rye (flour)": 100
         }
     },
+    "fresh peas": {
+        "g": 100,
+        "names": [
+            "fresh peas",
+            "frozen pea",
+            "green pea",
+            "snap pea",
+            "snow pea",
+            "yellow pea"
+        ],
+        "sg": 1.0,
+        "super": {
+            "other vegetables": 100
+        }
+    },
     "garlic": {
         "g": 7,
         "names": [
@@ -1822,12 +1837,12 @@
     "peas": {
         "g": 100,
         "names": [
-            "frozen pea",
-            "green pea",
+            "black eyed pea",
+            "chickpea",
+            "dried pea",
+            "pea",
             "peas",
-            "snap pea",
-            "snow pea",
-            "yellow pea"
+            "split pea"
         ],
         "sg": 1.0,
         "super": {}
@@ -2110,12 +2125,9 @@
         "names": [
             "bean",
             "black bean",
-            "black eyed pea",
             "cannellini",
             "cannellini bean",
-            "chickpea",
             "dried bean",
-            "dried pea",
             "edamame",
             "edamame bean",
             "french lentil",
@@ -2125,12 +2137,10 @@
             "lentil",
             "lima bean",
             "navy bean",
-            "pea",
             "pinto bean",
             "pulses",
             "puy lentil",
             "red lentil",
-            "split pea",
             "white bean",
             "yellow lentil"
         ],

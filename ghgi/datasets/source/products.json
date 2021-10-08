@@ -1132,6 +1132,24 @@
             "wheat & rye (flour)": 100
         }
     },
+    "fresh peas": {
+        "g": 100,
+        "names": {
+            "~pea": {
+                "dependent": [
+                    "frozen",
+                    "green",
+                    "snap",
+                    "snow",
+                    "yellow"
+                ]
+            }
+        },
+        "sg": 1.0,
+        "super": {
+            "other vegetables": 100
+        }
+    },
     "garlic": {
         "g": 7,
         "names": {
@@ -1949,13 +1967,12 @@
     "peas": {
         "g": 100,
         "names": {
-            "~pea": {
+            "pea": {
                 "dependent": [
-                    "frozen",
-                    "green",
-                    "snap",
-                    "snow",
-                    "yellow"
+                    ".chick",
+                    "black eyed",
+                    "dried",
+                    "split"
                 ]
             }
         },
@@ -2309,14 +2326,6 @@
                     "puy",
                     "red",
                     "yellow"
-                ]
-            },
-            "pea": {
-                "dependent": [
-                    ".chick",
-                    "black eyed",
-                    "dried",
-                    "split"
                 ]
             }
         },

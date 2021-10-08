@@ -1811,6 +1811,30 @@
         "flour",
         22
     ],
+    "fresh peas": [
+        "fresh peas",
+        8
+    ],
+    "frozen pea": [
+        "fresh peas",
+        8
+    ],
+    "green pea": [
+        "fresh peas",
+        7
+    ],
+    "snap pea": [
+        "fresh peas",
+        6
+    ],
+    "snow pea": [
+        "fresh peas",
+        6
+    ],
+    "yellow pea": [
+        "fresh peas",
+        8
+    ],
     "garlic": [
         "garlic",
         4
@@ -3291,25 +3315,25 @@
         "peas",
         2
     ],
-    "frozen pea": [
+    "black eyed pea": [
         "peas",
-        8
+        12
     ],
-    "green pea": [
+    "chickpea": [
+        "peas",
+        6
+    ],
+    "dried pea": [
         "peas",
         7
     ],
-    "snap pea": [
+    "pea": [
         "peas",
-        6
+        1
     ],
-    "snow pea": [
+    "split pea": [
         "peas",
-        6
-    ],
-    "yellow pea": [
-        "peas",
-        8
+        7
     ],
     "pelagic fish <30 cm": [
         "pelagic fish <30 cm",
@@ -4203,10 +4227,6 @@
         "pulses",
         8
     ],
-    "black eyed pea": [
-        "pulses",
-        12
-    ],
     "cannellini": [
         "pulses",
         8
@@ -4215,17 +4235,9 @@
         "pulses",
         13
     ],
-    "chickpea": [
-        "pulses",
-        6
-    ],
     "dried bean": [
         "pulses",
         8
-    ],
-    "dried pea": [
-        "pulses",
-        7
     ],
     "edamame": [
         "pulses",
@@ -4263,10 +4275,6 @@
         "pulses",
         7
     ],
-    "pea": [
-        "pulses",
-        1
-    ],
     "pinto bean": [
         "pulses",
         8
@@ -4278,10 +4286,6 @@
     "red lentil": [
         "pulses",
         8
-    ],
-    "split pea": [
-        "pulses",
-        7
     ],
     "white bean": [
         "pulses",

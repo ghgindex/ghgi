@@ -163,6 +163,10 @@
         "pd": 0.23,
         "src": 1
     },
+    "fresh peas": {
+        "pd": 0.072,
+        "src": 1
+    },
     "half and half": {
         "m": 1.0,
         "ref": [

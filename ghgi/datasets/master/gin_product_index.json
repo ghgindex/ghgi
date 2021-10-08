@@ -1883,6 +1883,43 @@
         "unbleached all purpose flour",
         "unbleached all-purpose flour"
     ],
+    "fresh": [
+        "fresh bean",
+        "fresh parsley",
+        "fresh peas"
+    ],
+    "pea": [
+        "black eyed pea",
+        "dried pea",
+        "fresh peas",
+        "frozen pea",
+        "green pea",
+        "pea",
+        "peas",
+        "snap pea",
+        "snow pea",
+        "split pea",
+        "yellow pea"
+    ],
+    "frozen": [
+        "frozen pea"
+    ],
+    "snap": [
+        "snap pea"
+    ],
+    "snow": [
+        "snow pea"
+    ],
+    "yellow": [
+        "yellow bell pepper",
+        "yellow lentil",
+        "yellow mustard",
+        "yellow onion",
+        "yellow pea",
+        "yellow pepper",
+        "yellow raisin",
+        "yellow squash"
+    ],
     "garlic": [
         "clove garlic",
         "garlic",
@@ -2340,16 +2377,6 @@
     "prepar": [
         "prepared mustard"
     ],
-    "yellow": [
-        "yellow bell pepper",
-        "yellow lentil",
-        "yellow mustard",
-        "yellow onion",
-        "yellow pea",
-        "yellow pepper",
-        "yellow raisin",
-        "yellow squash"
-    ],
     "noodl": [
         "lasagna noodle",
         "lasagne noodle",
@@ -2611,10 +2638,6 @@
         "kirby cucumber",
         "pickled cucumber"
     ],
-    "fresh": [
-        "fresh bean",
-        "fresh parsley"
-    ],
     "ghost": [
         "ghost",
         "ghost pepper"
@@ -2796,26 +2819,14 @@
         "peanut butter",
         "peanuts"
     ],
-    "pea": [
-        "black eyed pea",
-        "dried pea",
-        "frozen pea",
-        "green pea",
-        "pea",
-        "peas",
-        "snap pea",
-        "snow pea",
-        "split pea",
-        "yellow pea"
+    "eye": [
+        "black eyed pea"
     ],
-    "frozen": [
-        "frozen pea"
+    "chickpea": [
+        "chickpea"
     ],
-    "snap": [
-        "snap pea"
-    ],
-    "snow": [
-        "snow pea"
+    "split": [
+        "split pea"
     ],
     "pelag": [
         "pelagic fish <30 cm",
@@ -3378,15 +3389,9 @@
     "puls": [
         "pulses"
     ],
-    "eye": [
-        "black eyed pea"
-    ],
     "cannellini": [
         "cannellini",
         "cannellini bean"
-    ],
-    "chickpea": [
-        "chickpea"
     ],
     "edamam": [
         "edamame",
@@ -3420,9 +3425,6 @@
     ],
     "puy": [
         "puy lentil"
-    ],
-    "split": [
-        "split pea"
     ],
     "radish": [
         "daikon radish",
