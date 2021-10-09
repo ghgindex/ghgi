@@ -543,6 +543,8 @@
         "granulated sugar",
         "icing sugar",
         "light brown sugar",
+        "panela sugar",
+        "piloncillo sugar",
         "powdered sugar",
         "sugar",
         "sugar syrup",
@@ -995,6 +997,14 @@
         "light brown sugar",
         "light cream",
         "light molasses"
+    ],
+    "panela": [
+        "panela",
+        "panela sugar"
+    ],
+    "piloncillo": [
+        "piloncillo",
+        "piloncillo sugar"
     ],
     "superfin": [
         "superfine sugar"
@@ -2232,6 +2242,13 @@
     "cornmeal": [
         "cornmeal"
     ],
+    "masa": [
+        "masa",
+        "masa harina"
+    ],
+    "harina": [
+        "masa harina"
+    ],
     "polenta": [
         "polenta"
     ],
@@ -2636,6 +2653,7 @@
         "cornichon cucumber",
         "cucumber",
         "kirby cucumber",
+        "persian cucumber",
         "pickled cucumber"
     ],
     "ghost": [
@@ -2677,6 +2695,9 @@
     "pepita": [
         "pepitas",
         "pumpkin pepitas"
+    ],
+    "persian": [
+        "persian cucumber"
     ],
     "piquillo": [
         "piquillo pepper"

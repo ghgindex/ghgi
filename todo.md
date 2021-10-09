@@ -4,7 +4,7 @@ Update the repo readme
 Create package documentation
 Flag products with no origin or food value information in validate
 Validate that food_values are ok, e.g. "pd" has to be less than 1.0, "ed" > 1, etc.
-
+Fix/improve how we're handling qualifiers that are in ounces, which a) probably means fluid ounces (?) and b) mean that the sg needs to be adjusted. See [https://www.seriouseats.com/is-there-a-ratio-for-converting-between-dried] for some data points.
 - Make sure pydoc runs adequately
 
 ## Catalog

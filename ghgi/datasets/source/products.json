@@ -493,6 +493,10 @@
                     "superfine",
                     "turbinado",
                     "white"
+                ],
+                "independent": [
+                    "panela",
+                    "piloncillo"
                 ]
             }
         },
@@ -1439,6 +1443,8 @@
     "maize (meal)": {
         "g": 100,
         "names": {
+            "masa": {},
+            "masa harina": {},
             "polenta": {},
             "~corn": {
                 "dependent": [
@@ -1807,6 +1813,7 @@
             "cucumber": {
                 "dependent": [
                     "kirby",
+                    "persian",
                     "pickled"
                 ],
                 "independent": [

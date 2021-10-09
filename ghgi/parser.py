@@ -162,6 +162,7 @@ STOPWORDS |= {
     'toasted',
     'trimmed',
     'unsalted',
+    'unseasoned',
     'unsweetened',
     'washed',
 }
@@ -322,7 +323,7 @@ units_regex = re.compile(
     multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?:\s|,|$)'.format(units_group))
 
 units_regex = re.compile(
-    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<mods>({})\s)?(?P<unit>{})?(?P<plural>[sei]+)?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(mods_group, units_group))
+    multi_qty_regex + r'(?P<qual>\s*[\[\(].+?[\]\)]\s*)?(?P<mods>({})\s)?(?P<unit>{})?(?P<plural>[sei]+)?\.?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(mods_group, units_group))
 
 
 # html tags
@@ -395,7 +396,7 @@ def quantify(match):
     return result
 
 
-empty_parentheses = re.compile(r'\(\s*\)')
+empty_parentheses = re.compile(r'[\[\(]\s*[\]\)]')
 naked_to = re.compile(r'\sto\s')
 
 
@@ -431,7 +432,9 @@ def names_mods(text):
 
 def pad_parentheses(text):
     """ Pad parentheses with spaces """
-    return text.replace('(', '( ').replace(')', ' )')
+    for paren, repl in [('(', '( '), (')', ' )'), ('[', '( '), (']', ' )')]:
+        text = text.replace(paren, repl)
+    return text
 
 
 qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+(\s*([tor]*)\s*)[\d\.-]*\s*[-\w]+)'
@@ -614,6 +617,8 @@ def amounts(text_entry):
     # pad non-fraction slashes & commas with spaces
     text_entry = pad_punctuation(text_entry)
 
+    print(text_entry)
+
     # singularize nouns; remove stopwords; preserve casing for units parsing
     cleaned_text, stripped_words = clean(text_entry)
 
@@ -633,6 +638,7 @@ def amounts(text_entry):
     remainder = re.sub(start_unit_regex, '', cleaned_text)
     remainder = re.sub(units_regex, ', ', remainder)
     remainder = re.sub(r'\([^\)]*\)', '', remainder)
+    remainder = re.sub(r'\[[^\]]*\]', '', remainder)
     remainder = re.sub(r'\sor\s', ', ', remainder)
     remainder = re.sub(r'\sto\s', ' ', remainder)
     remainder = re.sub(r'\splus\s', ', ', remainder)

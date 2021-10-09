@@ -823,6 +823,22 @@
         "cane sugar",
         15
     ],
+    "panela": [
+        "cane sugar",
+        4
+    ],
+    "panela sugar": [
+        "cane sugar",
+        10
+    ],
+    "piloncillo": [
+        "cane sugar",
+        8
+    ],
+    "piloncillo sugar": [
+        "cane sugar",
+        14
+    ],
     "powdered sugar": [
         "cane sugar",
         12
@@ -2271,6 +2287,14 @@
         "maize (meal)",
         6
     ],
+    "masa": [
+        "maize (meal)",
+        2
+    ],
+    "masa harina": [
+        "maize (meal)",
+        9
+    ],
     "polenta": [
         "maize (meal)",
         5
@@ -2990,6 +3014,10 @@
     "pepitas": [
         "other vegetables",
         5
+    ],
+    "persian cucumber": [
+        "other vegetables",
+        14
     ],
     "pickled cucumber": [
         "other vegetables",
