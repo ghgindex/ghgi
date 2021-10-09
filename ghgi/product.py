@@ -399,7 +399,7 @@ class Product:
             return vol_qty
         return mass_qty
 
-    @ staticmethod
+    @staticmethod
     def ghg_value(product, origin, flavor: GHGFlavor):
         if product is None:
             return None
@@ -414,7 +414,7 @@ class Product:
                     value += par_value * pct/100.0
         return value
 
-    @ staticmethod
+    @staticmethod
     def food_values(product):
         """ return a dict of {category: value} where category is the
         product category, and value is the food value of this product for that
@@ -425,7 +425,7 @@ class Product:
         values = Product.fv_db().get(product[Product.NAME], {})
         return {k: v for k, v in values.items() if k in CATEGORY_VALUES}
 
-    @ staticmethod
+    @staticmethod
     def ghg_efficiency_ratio(product, origin=Origin.DEFAULT):
         # return the ratio between this product's efficiency and its
         # baseline(s). If it has no food values, aggregate its parents'
@@ -438,8 +438,10 @@ class Product:
         # if prod_efficiencies isn't empty, it can only have one entry; return it
         for cat, eff in prod_efficiencies.items():
             baseline = Product.efficiency_baseline(origin)[cat]
+
             if baseline is None:
                 return
+
             return eff / baseline
 
         # otherwise, use its parents
@@ -451,10 +453,10 @@ class Product:
             if parent_eff_ratio is None:
                 continue
             shares += share
-            share_weighted_efficiency_ratios += parent_eff_ratio * share
+            share_weighted_efficiency_ratios += share / parent_eff_ratio
 
         if shares > 0:
-            return share_weighted_efficiency_ratios / shares
+            return 1/(share_weighted_efficiency_ratios / shares)
 
         return None
 

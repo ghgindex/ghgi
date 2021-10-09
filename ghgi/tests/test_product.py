@@ -233,6 +233,10 @@ class TestProduct(TestCase):
         self.assertEqual(Product.lookup({'names': ['grape', 'cherry tomato']})[
                          0]['alias'], 'cherry tomato')
 
+    def test_ghg_efficiency_parents(self):
+        result = Product.lookup({'names': ['chicken stock']})
+        eff = Product.ghg_efficiency_ratio(result[0])
+
     def test_ghg_efficiency_ratio(self):
         with patch.object(Product, 'efficiency_baseline', return_value={'of': 2.0, 'fv': 3.0}):
             with patch.object(Product, 'fv_db', return_value={
@@ -271,8 +275,10 @@ class TestProduct(TestCase):
                             'test_super_2': 50
                         }}
 
+                        result = 1 / (((50 / (0.3 / 7.5 / 3.0)) +
+                                      (50 / (1.0 / 7.5 / 2.0))) / 100)
                         self.assertEqual(
-                            Product.ghg_efficiency_ratio(product), 0.3/7.5)
+                            Product.ghg_efficiency_ratio(product), result)
 
                         product = {'name': 'test_product', 'super': {
                             'test_super': 50,
