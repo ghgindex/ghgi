@@ -617,8 +617,6 @@ def amounts(text_entry):
     # pad non-fraction slashes & commas with spaces
     text_entry = pad_punctuation(text_entry)
 
-    print(text_entry)
-
     # singularize nouns; remove stopwords; preserve casing for units parsing
     cleaned_text, stripped_words = clean(text_entry)
 
