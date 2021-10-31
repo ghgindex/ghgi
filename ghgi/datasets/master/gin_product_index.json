@@ -1958,6 +1958,22 @@
         "alcohol",
         "grain alcohol"
     ],
+    "onion": [
+        "green onion",
+        "onion",
+        "onion powder",
+        "onions & leeks (alliums)",
+        "pearl onion",
+        "red onion",
+        "spanish onion",
+        "spring onion",
+        "sweet onion",
+        "white onion",
+        "yellow onion"
+    ],
+    "spring": [
+        "spring onion"
+    ],
     "mesclun": [
         "mesclun"
     ],
@@ -2496,27 +2512,11 @@
         "1% milk",
         "2% milk"
     ],
-    "onion": [
-        "green onion",
-        "onion",
-        "onion powder",
-        "onions & leeks (alliums)",
-        "pearl onion",
-        "red onion",
-        "spanish onion",
-        "spring onion",
-        "sweet onion",
-        "white onion",
-        "yellow onion"
-    ],
     "allium": [
         "onions & leeks (alliums)"
     ],
     "spanish": [
         "spanish onion"
-    ],
-    "spring": [
-        "spring onion"
     ],
     "navel": [
         "navel orange"

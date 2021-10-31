@@ -5,4 +5,4 @@ import pathlib
 os.environ['NLTK_DATA'] = os.path.join(
     pathlib.Path(__file__).parent, 'nltk_data')
 
-VERSION = '2021-10-30-1'
+VERSION = '2021-10-30-2'

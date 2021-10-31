@@ -133,6 +133,10 @@ REGEX_UNITS_DATA = [
 
 AMOUNTS_DATA = [
     # 8 ounces to 1 pound smoked kielbasa, diagonally sliced 1/4-inch-thick -> we don't handle the units change
+    # 1 (5- to 6-ounce) can or jar tuna, drained and flaked, or 1 (13-ounce) can chickpeas or white beans, drained
+    # ^ needs to clean up the output text, and we should prefer the first perfect match (maybe we already do)
+    # TODO: would be ideal to note which units pertain to which names (based on positions in the text)
+    # 4-5 ears of corn, husked [this is getting parsed as 9]
     # Oil (olive, coconut or grapeseed)
     # 2 to 3 pounds root or dense vegetable, peeled if you like and cut into 1-inch chunks or wedges (carrots, beets, potatoes, sweet potatoes, turnips, radishes, rutabaga, winter squashes)
     # Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving

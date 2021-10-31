@@ -1,5 +1,7 @@
 # Ye Olde ToDo list
 
+There is an issue if a recipe entry is blank, see e.g. this one [https://ghgi.org/admin/recipe/details/?id=31743]; we should just omit those.
+
 Update the repo readme
 Create package documentation
 Flag products with no origin or food value information in validate

@@ -1108,6 +1108,17 @@
             "wheat & rye (bread)": 200
         }
     },
+    "green onion": {
+        "g": 15,
+        "names": [
+            "green onion",
+            "spring onion"
+        ],
+        "sg": 0.5,
+        "super": {
+            "onions & leeks (alliums)": 100
+        }
+    },
     "greens": {
         "g": 100,
         "names": [
@@ -1594,13 +1605,10 @@
     "onions & leeks (alliums)": {
         "g": 150,
         "names": [
-            "green onion",
             "onion",
             "onions & leeks (alliums)",
-            "pearl onion",
             "red onion",
             "spanish onion",
-            "spring onion",
             "sweet onion",
             "white onion",
             "yellow onion"
@@ -1840,6 +1848,16 @@
         ],
         "sg": 1.05,
         "super": {}
+    },
+    "pearl onion": {
+        "g": 5,
+        "sg": 0.5,
+        "super": {
+            "onions & leeks (alliums)": 100
+        },
+        "names": [
+            "pearl onion"
+        ]
     },
     "peas": {
         "g": 100,

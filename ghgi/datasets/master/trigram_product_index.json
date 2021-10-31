@@ -11825,6 +11825,34 @@
         "alcohol",
         "grain alcohol"
     ],
+    "n o": [
+        "extra virgin olive oil",
+        "green olive",
+        "green onion",
+        "soybean oil",
+        "virgin olive oil"
+    ],
+    " on": [
+        "green onion",
+        "pearl onion",
+        "red onion",
+        "spanish onion",
+        "spring onion",
+        "sweet onion",
+        "white onion",
+        "yellow onion"
+    ],
+    "pri": [
+        "apricot",
+        "paprika",
+        "smoked paprika",
+        "spring onion",
+        "sweet paprika"
+    ],
+    "g o": [
+        "cooking oil",
+        "spring onion"
+    ],
     "scl": [
         "mesclun"
     ],
@@ -13366,13 +13394,6 @@
         "extra virgin olive oil",
         "virgin olive oil"
     ],
-    "n o": [
-        "extra virgin olive oil",
-        "green olive",
-        "green onion",
-        "soybean oil",
-        "virgin olive oil"
-    ],
     " ol": [
         "black olive",
         "calamata olive",
@@ -13438,21 +13459,6 @@
     "ms)": [
         "onions & leeks (alliums)"
     ],
-    " on": [
-        "green onion",
-        "pearl onion",
-        "red onion",
-        "spanish onion",
-        "spring onion",
-        "sweet onion",
-        "white onion",
-        "yellow onion"
-    ],
-    "l o": [
-        "navel orange",
-        "neutral oil",
-        "pearl onion"
-    ],
     "nis": [
         "breast cornish game hen",
         "breast cornish hen",
@@ -13488,17 +13494,6 @@
     "h o": [
         "spanish onion"
     ],
-    "pri": [
-        "apricot",
-        "paprika",
-        "smoked paprika",
-        "spring onion",
-        "sweet paprika"
-    ],
-    "g o": [
-        "cooking oil",
-        "spring onion"
-    ],
     "w o": [
         "yellow onion"
     ],
@@ -13508,6 +13503,11 @@
     ],
     "vel": [
         "navel orange"
+    ],
+    "l o": [
+        "navel orange",
+        "neutral oil",
+        "pearl onion"
     ],
     " or": [
         "navel orange"

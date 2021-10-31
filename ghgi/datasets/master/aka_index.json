@@ -1887,6 +1887,14 @@
         "grain alcohol",
         5
     ],
+    "green onion": [
+        "green onion",
+        9
+    ],
+    "spring onion": [
+        "green onion",
+        10
+    ],
     "greens": [
         "greens",
         4
@@ -2655,17 +2663,9 @@
         "onions & leeks (alliums)",
         22
     ],
-    "green onion": [
-        "onions & leeks (alliums)",
-        9
-    ],
     "onion": [
         "onions & leeks (alliums)",
         3
-    ],
-    "pearl onion": [
-        "onions & leeks (alliums)",
-        9
     ],
     "red onion": [
         "onions & leeks (alliums)",
@@ -2674,10 +2674,6 @@
     "spanish onion": [
         "onions & leeks (alliums)",
         11
-    ],
-    "spring onion": [
-        "onions & leeks (alliums)",
-        10
     ],
     "sweet onion": [
         "onions & leeks (alliums)",
@@ -3338,6 +3334,10 @@
     "peanut butter": [
         "peanuts",
         11
+    ],
+    "pearl onion": [
+        "pearl onion",
+        9
     ],
     "peas": [
         "peas",
