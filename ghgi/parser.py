@@ -70,9 +70,9 @@ for unit in UNITS:
     else:
         PLURAL_UNITS += [unit + 's']
 
-# nltk base set (english) with 't', 'with', 'or', 'to' removed
+# nltk base set (english) with 't', 'with', 'or', 'to', 'in', 'at', 'on' removed
 STOPWORDS = {
-    'had', 'few', 'under', 'on', 'an', 'its', 'why', 'were', 'all', 'doing',
+    'had', 'few', 'under', 'an', 'its', 'why', 'were', 'all', 'doing',
     'while', 'how', 'don', 'same', 'is', 'because', 'him', 'ourselves', 'off',
     'herself', 'has', 'into', 'd', 'out', 'he', 'against', 'themselves',
     'wouldn', 'theirs', 'be', 'above', 'up', 'own', 'are', 'when',
@@ -80,7 +80,7 @@ STOPWORDS = {
     'than', 'aren', 'them', 'not', 'wasn', 'your', 'these', 'himself', 'of',
     'down', 'won', 'for', 'only', 'as', 'myself', 'both', 'yours', 'during',
     'you', 'too', 'where', 's', 'hadn', 'about', 'and', 'been', 'very', 'do',
-    'in', 'at', 'over', 'most', 'o', 'that', 'was', 'again', 'further',
+    'over', 'most', 'o', 'that', 'was', 'again', 'further',
     'couldn', 'having', 'hasn', 'mightn', 'me', 'no', 'her', 'hers', 'ours',
     'haven', 'my', 'it', 'nor', 'those', 'she', 'what', 'a', 're',
     'but', 'just', 'once', 'whom', 'from', 'am', 'below', 'mustn', 'ma', 've',
@@ -122,6 +122,7 @@ STOPWORDS |= {
     'garnish',
     'garnishes',
     'gently',
+    'grilled',
     'halved',
     'halves',
     'high-quality',
@@ -309,7 +310,7 @@ with_term = re.compile(r'[Ww]ith.*')
 # These look for numbers/fractions optionally separated by a space,
 # e.g. "2.0", "1 1/2". The only requirement is the initial number (or decimal
 # point)
-qty_regex_1 = r'[\d\.]+[-\.\/\s]?\d*[\.\/\s]?\d*\s?'
+qty_regex_1 = r'[\d\.]+[-\.\/\s]?\d*[\.\/\s]?\d*-?\s?'
 # qty_regex_2 is identical except it's entirely optional
 qty_regex_2 = r'[\d\.]*[-\.\/\s]?\d*[\.\/\s]?\d*\s?'
 
@@ -318,13 +319,8 @@ qty_regex_2 = r'[\d\.]*[-\.\/\s]?\d*[\.\/\s]?\d*\s?'
 multi_qty_regex = r'(?P<plus>[pP][lL][uU][sS]\s+)?(?P<qty>{}(([Tt][Oo]|[Oo][Rr])\s)*{})'.format(
     qty_regex_1, qty_regex_2)
 
-# OG: works pretty good
-units_regex = re.compile(
-    multi_qty_regex + r'(?P<qual>\s*\(.+?\)\s*)?(?P<unit>{})?(?:\s|,|$)'.format(units_group))
-
 units_regex = re.compile(
     multi_qty_regex + r'(?P<qual>\s*[\[\(].+?[\]\)]\s*)?(?P<mods>({})\s)?(?P<unit>{})?(?P<plural>[sei]+)?\.?(?P<per>\s[Ee][Aa][Cc][Hh])?(?:\s|,|;|$)'.format(mods_group, units_group))
-
 
 # html tags
 tag_start = r'<((a)|(strong)|(span)).*?>'
@@ -437,14 +433,22 @@ def pad_parentheses(text):
     return text
 
 
-qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+(\s*([tor]*)\s*)[\d\.-]*\s*[-\w]+)'
+# qualifiers = r'([\d\.]+\s+\d+\/\d+-\w*)|([\d\.\/]+-+(\s*([tor]*)\s*)[\d\.-]*\s*[-\w]+)'
+qualifiers = r'(^\d+\s)?(\d[\d\.\/\s]*-+(\s*([tor]+)\s*)[\d\.-]*\s*[-\w]+)|([\d\.]+(\s+\d+\/\d+)?-\w*)'
+sequential_qualifiers = r'\)\s*\('
 
 
 def parenthesize_qualifiers(text):
     # parenthesize things like 4-pound, five-to-size-pounds, 10- to 12- pounds,
-    # etc so they get treated as qualifiers unless they're already parenthesized!
-    text = re.sub(qualifiers, r'(\g<1>\g<2>)', text)
-    text = re.sub(r'\(\(', '(', text)
+    # etc, so they get treated as qualifiers
+    text = re.sub(qualifiers, r'\g<1>(\g<2>\g<5>)', text)  # parenthesize
+    # text = re.sub(qualifiers, r'(\g<1>\g<2>)', text)  # parenthesize
+
+    # combine sequential qualifiers
+    text = re.sub(sequential_qualifiers, ' / ', text)
+
+    # it would be nice to get the regex to cover this
+    text = re.sub(r'\(\(', '(', text)  # un-parenthesize if duplicated
     text = re.sub(r'\)\)', ')', text)
     return text
 
@@ -633,13 +637,28 @@ def amounts(text_entry):
 
     qtys = [quantify(m[2]) for m in matches]
 
+    # remove quantity data
     remainder = re.sub(start_unit_regex, '', cleaned_text)
     remainder = re.sub(units_regex, ', ', remainder)
+
+    # remove certain prepositional phrases
+    remainder = re.sub(r'[\s|\(]((on|at|in)\s[^\)\(\[\]]*)', ' ', remainder)
+
+    # remove remaining parentheticals
     remainder = re.sub(r'\([^\)]*\)', '', remainder)
     remainder = re.sub(r'\[[^\]]*\]', '', remainder)
+
+    # replace (some) conjunctions
     remainder = re.sub(r'\sor\s', ', ', remainder)
     remainder = re.sub(r'\sto\s', ' ', remainder)
     remainder = re.sub(r'\splus\s', ', ', remainder)
+
+    # remove any dangling units. This can happen when we have an alternative
+    # ingredient that whose amount isn't specified, e.g. "can tuna".
+    # TODO: improve the logic to backfill the missing unit just like we do
+    # when this happens at the start of the string
+    remainder = re.sub(r'^({})\s'.format(units_group), '', remainder)
+    remainder = re.sub(r'\s({})\s'.format(units_group), '', remainder)
 
     remainder, mods = names_mods(remainder)
     return {

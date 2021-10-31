@@ -136,21 +136,109 @@ AMOUNTS_DATA = [
     # Oil (olive, coconut or grapeseed)
     # 2 to 3 pounds root or dense vegetable, peeled if you like and cut into 1-inch chunks or wedges (carrots, beets, potatoes, sweet potatoes, turnips, radishes, rutabaga, winter squashes)
     # Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving
+    ('1/2 pound fresh tuna, grilled or 6 1/2- to 7-ounce can albacore tuna, packed in water', {
+        # TODO: this should capture the can as a `pkg`
+        'qtys': [
+            {'per': None, 'qty': 0.5, 'qualifiers': [],
+                'plus': False, 'unit': 'pound'},
+            {'per': None, 'qty': 6.75, 'qualifiers': [],
+             'plus': False, 'unit': 'ounce'}
+        ],
+        'names': ['tuna', 'albacore tuna'],
+        'mods': ['packed'],
+        'stripped_words': ['fresh', 'grilled'],
+    }),
+    ('Two 5-ounce (140g) cans tuna in olive oil, drained (or 10 ounces/280g shredded roast chicken meat)', {
+        'qtys': [
+            {'per': None, 'qty': 2.0, 'qualifiers': [
+                {'unit': 'ounce', 'qty': 5.0, 'per': 'each',
+                 'qualifiers': [], 'plus': False},
+                {'per': 'each', 'qty': 140.0, 'qualifiers': [],
+                 'plus': False, 'unit': 'g'},
+            ], 'plus': False, 'unit': 'pkg'},
+            {'unit': 'ounce', 'qty': 10.0, 'qualifiers': [],
+                'per': None, 'plus': False},
+            {'unit': 'g', 'qty': 280.0, 'qualifiers': [], 'per': None, 'plus': False}
+        ],
+        'names':['tuna'],
+        'mods':[],
+        'stripped_words': [],
+    }),
+    ('2 (6-ounce) cans Italian tuna in water or oil, drained', {
+        'qtys': [{'per': None, 'qty': 2.0, 'qualifiers': [
+            {'unit': 'ounce', 'qty': 6.0, 'per': 'each',
+             'qualifiers': [], 'plus': False}
+        ], 'plus': False, 'unit': 'pkg'}],
+        'names': ['italian tuna'],
+        'mods': [],
+        'stripped_words': [],
+    }),
+    ('1 (5-ounce) can tuna packed in olive oil, preferably Italian (see note)', {
+        'qtys': [{'per': None, 'qty': 1.0, 'qualifiers': [
+            {'unit': 'ounce', 'qty': 5.0, 'per': 'each',
+             'qualifiers': [], 'plus': False}
+        ], 'plus': False, 'unit': 'pkg'}],
+        'names': ['tuna'],
+        'mods': ['packed'],
+        'stripped_words': ['preferably'],
+    }),
+    ('2 4-pound Atlantic salmon (2 1/4 inches at thickest point), scaled and cleaned, gills removed, head and tail on, interior cavity well washed', {
+        'qtys': [
+            {
+                'unit': 'ea',
+                'qty': 2.0,
+                'per': None,
+                'plus': False,
+                'qualifiers': [
+                    {
+                        'unit': 'pound',
+                        'qty': 4.0,
+                        'per': 'each',
+                        'plus': False,
+                        'qualifiers': []
+                    }
+                ]
+            },
+            {
+                'unit': 'ea',
+                'qty': 2.25,
+                'per': None,
+                'plus': False,
+                'qualifiers': []
+            }
+        ],
+        'names': [
+            'atlantic salmon',
+            'gill removed',
+            'head tail on',
+            'interior cavity'
+        ],
+        'mods': [
+            'scaled',
+            'cleaned',
+            'well'
+        ],
+        'stripped_words': [
+            'and',
+            'and',
+            'washed'
+        ]
+    }),
     ('For the filling:', {
         'qtys': [{'per': None, 'qty': 1.0, 'qualifiers': [], 'plus': False, 'unit': 'ea'}],
-        'names':[],
-        'mods':[],
+        'names': [],
+        'mods': [],
         'stripped_words': [],
     }),
     ('6 cups <a href="https://cooking.nytimes.com/recipes/1021916-vegan-bolognese">vegan Bolognese</a>', {
         'qtys': [{'unit': 'cup', 'qty': 6.0, 'per': None, 'plus': False, 'qualifiers': []}],
-        'names':['vegan bolognese'],
+        'names': ['vegan bolognese'],
         'mods': [],
         'stripped_words': []
     }),
     ('1 packed cup cilantro, coarsely chopped', {
         'qtys': [{'unit': 'cup', 'qty': 1.0, 'per': None, 'plus': False, 'qualifiers': []}],
-        'names':['cilantro'],
+        'names': ['cilantro'],
         'mods': ['chopped'],
         'stripped_words': ['coarsely']
     }),
@@ -163,7 +251,7 @@ AMOUNTS_DATA = [
         ],
         'names': ['white fish'],
         'mods': [],
-        'stripped_words':['mild', 'fillets', 'for']
+        'stripped_words': ['mild', 'fillets', 'for']
     }),
     ('1 (10- to 14-pound) turkey', {
         'qtys': [
@@ -230,7 +318,6 @@ AMOUNTS_DATA = [
         ],
         'stripped_words': [
             'preferably',
-            'on'
         ]
     }),
     ('1 (4-ounce) can smoked mussels', {
@@ -315,7 +402,6 @@ AMOUNTS_DATA = [
         'stripped_words': [
             'about',
             'and',
-            'on'
         ]
     }),
     ('4 whole fish, like sea bass or black bass, 1 to 1 1/2 pounds each', {
@@ -404,52 +490,9 @@ AMOUNTS_DATA = [
             'about',
             'and',
             'the',
-            'on'
         ]
     }),
-    ('2 4-pound Atlantic salmon (2 1/4 inches at thickest point), scaled and cleaned, gills removed, head and tail on, interior cavity well washed', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 2.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': [
-                    {
-                        'unit': 'pound',
-                        'qty': 4.0,
-                        'per': 'each',
-                        'plus': False,
-                        'qualifiers': []
-                    }
-                ]
-            },
-            {
-                'unit': 'ea',
-                'qty': 2.25,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            }
-        ],
-        'names': [
-            'atlantic salmon',
-            'gill removed',
-            'head tail interior cavity'
-        ],
-        'mods': [
-            'scaled',
-            'cleaned',
-            'well'
-        ],
-        'stripped_words': [
-            'at',
-            'and',
-            'and',
-            'on',
-            'washed'
-        ]
-    }),
+
     ('1 scallion, chopped, for serving', {
         'qtys': [
             {'unit': 'ea', 'qty': 1, 'per': None, 'plus': False,
