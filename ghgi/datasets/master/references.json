@@ -10,7 +10,7 @@
     "2": {
         "authors": "Nassos Stylianou, Clara Guibourg and Helen Briggs",
         "date": "2019-08-19",
-        "notes": "This references Poore and Nemecek, but has values for foods P&M don't. Using it temporarily until we can verify.",
+        "notes": "This references Poore and Nemecek, but has values for foods P&M don't. Using it pending verification.",
         "publication": "BBC.com",
         "publication_info": "",
         "title": "Climate change food calculator: What's your diet's carbon footprint?",
@@ -19,7 +19,7 @@
     "3": {
         "authors": "Robert W. R. Parker, Julia L. Blanchard, Caleb Gardner, Bridget S. Green, Klaas Hartmann, Peter H. Tyedmers and Reg A. Watson",
         "date": "2018-04-01",
-        "notes": "See https://docs.google.com/spreadsheets/d/1FidkI2eNctNuvQpwy9IG5WtyKSpWPRA09srNpO-GHXo/edit?usp=sharing for recalculation",
+        "notes": "See https://docs.google.com/spreadsheets/d/1FidkI2eNctNuvQpwy9IG5WtyKSpWPRA09srNpO-GHXo/ for recalculation",
         "publication": "Nature Climate Change",
         "publication_info": "Vol 8, April 2018, pp. 333-337",
         "title": "Fuel use and greenhouse gas emissions of world fisheries",

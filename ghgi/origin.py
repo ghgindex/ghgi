@@ -101,7 +101,7 @@ class Origin:
             raise UnknownOriginException(
                 'Origin {} not found in database'.format(origin))
         if not flavor:
-            flavor = GHGFlavor.MEAN
+            flavor = GHGFlavor.MEDIAN
 
         values = cls.values(origin, product)
         if values is not None:

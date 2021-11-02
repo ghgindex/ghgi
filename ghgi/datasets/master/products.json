@@ -903,6 +903,7 @@
             "semi sweet chocolate",
             "semisweet chocolate"
         ],
+        "note": "This should be split out as a sugar+cocoa for the non-dark varieties",
         "sg": 1.0,
         "super": {}
     },
@@ -1105,7 +1106,7 @@
         ],
         "sg": 1.0,
         "super": {
-            "wheat & rye (bread)": 200
+            "wheat & rye (flour)": 200
         }
     },
     "green onion": {

@@ -20,7 +20,7 @@ For certain foods not covered by Poore & Nemecek, we have sourced this informati
 
 The highest-level origin is the **global** origin, which is also the most commonly cited. Sub-origins (any origin other than Global) must cite a single `super` property, which is their parent origin. The parent origin is used as a fallback for data missing from a given non-global region.
 
-For example, a tomato producer "ACME Tomatoes" located in Walla Walla, Washington would have its own origin file containing a single entry for its tomatoes, and a `super` value of Washington State. Washington in turn might have a `super` of `usa`, which in turn has a `super` of `north_america`, which in turns points to `global`. 
+For example, a tomato producer "ACME Tomatoes" located in Walla Walla, Washington would have its own origin file containing a single entry for its tomatoes, and a `super` value of Washington State. Washington in turn might have a `super` of `usa`, which in turn has a `super` of `north_america`, which in turns points to `global`.
 
 The use of a dictionary allows us to easily add protected keys to include metadata like geocodes, addresses, display names, and the like.
 

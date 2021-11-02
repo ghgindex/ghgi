@@ -23,8 +23,11 @@ class Category(Enum):
     FRUIT_VEG = 'fv'
     SUGAR = 's'
     CAFFEINE = 'caf'
-    COCOA = 'coc'
+    COCOA = 'coc'  # not in use
+    # special case for products we don't have meaningful comparisons for, in
+    # which case we use a benchmark from the entire dataset
     NA = 'uncategorized'
+    WATER = 'water'
 
 
 CATEGORY_VALUES = {cat.value for cat in Category}
@@ -142,51 +145,56 @@ class Product:
     @classmethod
     def efficiency_baselines(cls):
         """ Return a dictionary of the baseline ghg_energy_efficiency for each
-        food category
+        food category. We base this on Origin values entries, not Product
+        aliases. (If we used Product aliases, a single Origin data point would be
+        represented multiple times simply because it maps to more products, which
+        isn't sensible.)
+
+        Certain products don't have meaningful baselines for comparison, and they
+        are grouped into Category.NA. We use a simple mass-based measurement for these,
+        and the baseline is chosen as for other groups: the second-lowest product median
+        ghg value (exclusive of water) is used as as reference.
         """
         if not cls._baselines:
-            baselines = {o: {} for o in Origin.ORIGINS}
-            for product in cls.db():
-                for origin in Origin.ORIGINS:
-                    ghg_values = Product.ghg_efficiencies(
-                        cls.db()[product], origin)
-                    for cat, value in ghg_values.items():
-                        if not value:
-                            continue
-                        if cat in baselines[origin]:
-                            baselines[origin][cat] += [value]
-                        else:
-                            baselines[origin][cat] = [value]
-
+            baselines = cls.expanded_baselines()
             for origin in baselines:
-                for k in baselines[origin]:
-                    baselines[origin][k].sort(reverse=True)
-                    if len(baselines[origin][k]) <= 1:
+                for cat in baselines[origin]:
+                    baselines[origin][cat].sort(reverse=True)
+                    if len(baselines[origin][cat]) <= 1:
                         # no meaningful comparison possible
-                        baselines[origin][k] = None
-                    elif len(baselines[origin][k]) <= 6:
-                        baselines[origin][k] = baselines[origin][k][0]
+                        baselines[origin][cat] = None
+                    elif len(baselines[origin][cat]) <= 6:
+                        baselines[origin][cat] = baselines[origin][cat][0]
                     else:
-                        baselines[origin][k] = baselines[origin][k][1]
+                        baselines[origin][cat] = baselines[origin][cat][1]
             cls._baselines = baselines
         return cls._baselines
 
     @classmethod
     def expanded_baselines(cls):
-        baselines = {o: {} for o in Origin.ORIGINS}
+        baselines = {o: {Category.NA.value: []} for o in Origin.ORIGINS}
         for product in cls.db():
+            if cls.db()[product].get(Product.PARENTS):
+                continue  # filter out aliases and composites
             for origin in Origin.ORIGINS:
                 ghg_values = Product.ghg_efficiencies(
                     cls.db()[product], origin)
                 for cat, value in ghg_values.items():
                     if not value:
                         continue
+                    if cat == Category.NA.value:
+                        continue
                     if cat in baselines[origin]:
                         baselines[origin][cat] += [value]
                     else:
                         baselines[origin][cat] = [value]
-                for k in baselines[origin]:
-                    baselines[origin][k].sort(reverse=True)
+
+                    if cat != Category.WATER.value:
+                        baselines[origin][Category.NA.value] += [
+                            1/Origin.ghg_value(product, origin, DEFAULT_FLAVOR)]
+                for cat in baselines[origin]:
+                    baselines[origin][cat].sort(reverse=True)
+
         return baselines
 
     @classmethod
@@ -462,7 +470,7 @@ class Product:
 
     @staticmethod
     def ghg_efficiencies(product, origin):
-        """ return product's ghg_mean emission per food Category """
+        """ return product's ghg DEFAULT_FLAVOR (median) emission per food Category """
         ghg_impact = Product.ghg_value(product, origin, DEFAULT_FLAVOR)
         if not ghg_impact:
             return {}
