@@ -740,6 +740,15 @@
             "coffee beans"
         ]
     },
+    "condensed milk": {
+        "sg": 0.96,
+        "super": {
+            "milk": 208.9
+        },
+        "names": [
+            "condensed milk"
+        ]
+    },
     "cooking spray": {
         "g": 5,
         "names": [
@@ -893,17 +902,20 @@
         ]
     },
     "dark chocolate": {
-        "g": 25,
+        "g": 50,
         "names": [
-            "bittersweet chocolate",
-            "chocolate",
+            "baking chocolate",
+            "baking chocolate chip",
+            "baking chocolate disc",
+            "baking chocolate f\u00e8ve",
             "chocolate chip",
+            "chocolate disc",
+            "chocolate f\u00e8ve",
             "dark chocolate",
-            "milk chocolate",
-            "semi sweet chocolate",
-            "semisweet chocolate"
+            "dark chocolate chip",
+            "dark chocolate disc",
+            "dark chocolate f\u00e8ve"
         ],
-        "note": "This should be split out as a sugar+cocoa for the non-dark varieties",
         "sg": 1.0,
         "super": {}
     },
@@ -1416,6 +1428,20 @@
         "note": "dairy.md",
         "sg": 0.99,
         "super": {}
+    },
+    "milk chocolate": {
+        "g": 50,
+        "names": [
+            "milk chocolate",
+            "milk chocolate chip",
+            "milk chocolate disc",
+            "milk chocolate f\u00e8ve"
+        ],
+        "super": {
+            "cane sugar": 25,
+            "condensed milk": 20,
+            "dark chocolate": 55
+        }
     },
     "molasses": {
         "g": 10,
@@ -2370,6 +2396,21 @@
         ],
         "sg": 1.0,
         "super": {}
+    },
+    "semisweet chocolate": {
+        "g": 50,
+        "names": [
+            "dependent semi sweet chocolate",
+            "semi sweet chocolate",
+            "semi sweet chocolate chip",
+            "semi sweet chocolate disc",
+            "semi sweet chocolate f\u00e8ve",
+            "semisweet chocolate"
+        ],
+        "super": {
+            "cane sugar": 30,
+            "dark chocolate": 70
+        }
     },
     "sesame": {
         "g": 5,

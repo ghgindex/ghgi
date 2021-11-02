@@ -46,7 +46,8 @@
     "ond": [
         "almond",
         "almond milk",
-        "almondmilk"
+        "almondmilk",
+        "condensed milk"
     ],
     "nd ": [
         "almond milk",
@@ -56,6 +57,7 @@
     ],
     "d m": [
         "almond milk",
+        "condensed milk",
         "farmed mollusks",
         "grand marnier",
         "grand marnier liqueur",
@@ -70,6 +72,7 @@
         "2% milk",
         "almond milk",
         "coconut milk",
+        "condensed milk",
         "full fat coconut milk",
         "full fat milk",
         "full-fat coconut milk",
@@ -96,6 +99,7 @@
         "almondmilk",
         "buttermilk",
         "coconut milk",
+        "condensed milk",
         "full fat coconut milk",
         "full fat milk",
         "full-fat coconut milk",
@@ -103,6 +107,9 @@
         "low-fat coconut milk",
         "milk",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "non-fat milk",
         "nonfat milk",
         "oat milk",
@@ -128,6 +135,7 @@
         "almondmilk",
         "buttermilk",
         "coconut milk",
+        "condensed milk",
         "full fat coconut milk",
         "full fat milk",
         "full-fat coconut milk",
@@ -135,6 +143,9 @@
         "low-fat coconut milk",
         "milk",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "non-fat milk",
         "nonfat milk",
         "oat milk",
@@ -176,22 +187,36 @@
         "anchovy paste",
         "artichoke",
         "artichoke heart",
-        "bittersweet chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "bok choy",
-        "chocolate",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "chorizo",
         "chorizo sausage",
         "cornichon",
         "cornichon cucumber",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
+        "dependent semi sweet chocolate",
         "lamb chop",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "pak choi",
         "pok choi",
         "pork chop",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate"
     ],
     "hov": [
@@ -532,6 +557,7 @@
     "e c": [
         "apple cider",
         "apple cider vinegar",
+        "baking chocolate chip",
         "bird's-eye chile",
         "blue cheese",
         "chinese cabbage",
@@ -539,11 +565,14 @@
         "chocolate ice cream",
         "coffee cream",
         "cottage cheese",
+        "dark chocolate chip",
         "gruyere cheese",
         "gruy\u00e8re cheese",
         "ice cream",
         "ice cube",
         "mascarpone cheese",
+        "milk chocolate chip",
+        "semi sweet chocolate chip",
         "strawberry ice cream",
         "vanilla ice cream"
     ],
@@ -1025,6 +1054,8 @@
         "shoulder beef"
     ],
     "den": [
+        "condensed milk",
+        "dependent semi sweet chocolate",
         "golden brown sugar",
         "golden delicious",
         "golden delicious apple",
@@ -1466,6 +1497,7 @@
         "brewed coffee",
         "brewed tea",
         "candied ginger",
+        "condensed milk",
         "dried bean",
         "dried currant",
         "dried pea",
@@ -1796,7 +1828,6 @@
         "asteraceae",
         "bitter melon",
         "bitters",
-        "bittersweet chocolate",
         "boiling water",
         "butter",
         "buttermilk",
@@ -1949,6 +1980,7 @@
         "baharat blend",
         "beef tenderloin",
         "belgian endive",
+        "dependent semi sweet chocolate",
         "endive",
         "lavender",
         "lavender leaf",
@@ -2209,6 +2241,7 @@
         "tarragon leaf"
     ],
     "chi": [
+        "baking chocolate chip",
         "bird's-eye chile",
         "breast chicken",
         "chicken",
@@ -2238,6 +2271,7 @@
         "chinese cabbage",
         "chive",
         "chocolate chip",
+        "dark chocolate chip",
         "giblet chicken",
         "green chile",
         "green chili",
@@ -2251,6 +2285,7 @@
         "jalape\u00f1o chili",
         "leg chicken",
         "liver chicken",
+        "milk chocolate chip",
         "orecchiette",
         "orecchiette pasta",
         "pistachio",
@@ -2261,6 +2296,7 @@
         "red chile",
         "red chili",
         "romanesco zucchini",
+        "semi sweet chocolate chip",
         "serrano chile",
         "serrano chili",
         "thigh chicken",
@@ -2716,6 +2752,7 @@
         "coconut milk",
         "coconut oil",
         "coconut water",
+        "condensed milk",
         "confectioner's' sugar",
         "confectioners sugar",
         "confectioners' sugar",
@@ -2875,16 +2912,28 @@
         "slab bacon"
     ],
     "bak": [
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "baking potato",
         "baking powder",
         "baking soda"
     ],
     "aki": [
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "baking potato",
         "baking powder",
         "baking soda"
     ],
     "kin": [
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "baking potato",
         "baking powder",
         "baking soda",
@@ -2897,6 +2946,10 @@
         "pumpkin squash"
     ],
     "ing": [
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "baking potato",
         "baking powder",
         "baking soda",
@@ -2951,6 +3004,10 @@
         "wing turkey"
     ],
     "ng ": [
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "baking potato",
         "baking powder",
         "baking soda",
@@ -3722,10 +3779,13 @@
     ],
     " ch": [
         "american cheese",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "beef chuck",
         "bing cherry",
         "bird's-eye chile",
-        "bittersweet chocolate",
         "blue cheese",
         "bok choy",
         "breast chicken",
@@ -3736,6 +3796,10 @@
         "cottage cheese",
         "cream cheese",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
+        "dependent semi sweet chocolate",
         "feta cheese",
         "fontina cheese",
         "giblet chicken",
@@ -3759,6 +3823,9 @@
         "liver chicken",
         "mascarpone cheese",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "monterey jack cheese",
         "mozzarella cheese",
         "muenster cheese",
@@ -3783,6 +3850,9 @@
         "romano cheese",
         "roquefort cheese",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate",
         "serrano chile",
         "serrano chili",
@@ -3879,9 +3949,11 @@
     ],
     "nde": [
         "beef tenderloin",
+        "condensed milk",
         "coriander",
         "coriander leaf",
         "coriander seed",
+        "dependent semi sweet chocolate",
         "flounder",
         "lavender",
         "lavender leaf",
@@ -3917,9 +3989,9 @@
     ],
     "et ": [
         "beet sugar",
-        "bittersweet chocolate",
         "bouquet garni",
         "brisket beef",
+        "dependent semi sweet chocolate",
         "giblet chicken",
         "giblet cornish game hen",
         "giblet cornish hen",
@@ -3933,6 +4005,9 @@
         "russet potato",
         "scotch bonnet pepper",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate",
         "sweet butter",
         "sweet corn",
@@ -4047,11 +4122,19 @@
         "pink peppercorn"
     ],
     "lat": [
-        "bittersweet chocolate",
-        "chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
+        "dependent semi sweet chocolate",
         "flat leaf parsley",
         "flat leaf parsley leaf",
         "flat-leaf parsley",
@@ -4059,7 +4142,13 @@
         "gelato",
         "granulated sugar",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate"
     ],
     "ati": [
@@ -4444,8 +4533,11 @@
     "eet": [
         "beet",
         "beet sugar",
-        "bittersweet chocolate",
+        "dependent semi sweet chocolate",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate",
         "sweet butter",
         "sweet corn",
@@ -4458,6 +4550,7 @@
     "t s": [
         "beet sugar",
         "butternut squash",
+        "dependent semi sweet chocolate",
         "grapefruit slice",
         "hot sauce",
         "pheasant sausage"
@@ -4699,8 +4792,14 @@
         "black currant",
         "bok choy",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "littleneck clam",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "monterey jack cheese",
         "non-stick cooking spray",
         "nonstick cooking spray",
@@ -5191,18 +5290,32 @@
         "broccolini"
     ],
     "col": [
-        "bittersweet chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "broccoli",
         "broccoli floret",
         "broccoli rabe",
         "broccolini",
-        "chocolate",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "collard green",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
+        "dependent semi sweet chocolate",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate"
     ],
     "oli": [
@@ -5960,6 +6073,7 @@
         "chilean sea bass",
         "coriander seed",
         "cumin seed",
+        "dependent semi sweet chocolate",
         "fennel seed",
         "fleur de sel",
         "italian seasoning",
@@ -6065,11 +6179,11 @@
         "trout (farmed)"
     ],
     "t c": [
-        "bittersweet chocolate",
         "breast chicken",
         "breast cornish game hen",
         "breast cornish hen",
         "camembert cheese",
+        "dependent semi sweet chocolate",
         "full fat coconut milk",
         "full-fat coconut milk",
         "giblet chicken",
@@ -6082,6 +6196,9 @@
         "roquefort cheese",
         "sauerkraut cabbage",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate",
         "sweet corn"
     ],
@@ -6138,23 +6255,37 @@
         "watermelon"
     ],
     "ate": [
-        "bittersweet chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "boiling water",
-        "chocolate",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "coconut water",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "date",
+        "dependent semi sweet chocolate",
         "granulated sugar",
         "hot water",
         "ice water",
         "lukewarm water",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "pomegranate",
         "pomegranate seed",
         "seltzer water",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate",
         "soda water",
         "sparkling water",
@@ -6406,7 +6537,6 @@
         "baguette bread",
         "bitter melon",
         "bitters",
-        "bittersweet chocolate",
         "butter",
         "buttermilk",
         "butternut squash",
@@ -6418,11 +6548,25 @@
     ],
     "te ": [
         "baguette bread",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "dry white wine",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "orecchiette pasta",
         "pomegranate seed",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "white bean",
         "white bread",
         "white flour",
@@ -7400,8 +7544,11 @@
         "unsalted butter"
     ],
     "swe": [
-        "bittersweet chocolate",
+        "dependent semi sweet chocolate",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate",
         "sweet butter",
         "sweet corn",
@@ -7412,11 +7559,14 @@
         "sweet vermouth"
     ],
     "wee": [
-        "bittersweet chocolate",
+        "dependent semi sweet chocolate",
         "kelp seaweed",
         "nori seaweed",
         "seaweed",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate",
         "sweet butter",
         "sweet corn",
@@ -7631,7 +7781,6 @@
     "ers": [
         "angostura bitters",
         "bitters",
-        "bittersweet chocolate",
         "confectioners sugar",
         "confectioners' sugar",
         "demersal fish",
@@ -7652,17 +7801,26 @@
         "cheddar cheese",
         "dark brown sugar",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "dark molasses"
     ],
     "ark": [
         "dark brown sugar",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "dark molasses",
         "sparkling water"
     ],
     "rk ": [
         "dark brown sugar",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "dark molasses",
         "pork belly",
         "pork butt",
@@ -8710,20 +8868,34 @@
         "gorgonzola cheese"
     ],
     "ola": [
-        "bittersweet chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "blackstrap molasses",
         "canola oil",
-        "chocolate",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "dark molasses",
+        "dependent semi sweet chocolate",
         "gorgonzola",
         "gorgonzola cheese",
         "light molasses",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "molasses",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate"
     ],
     "gru": [
@@ -8797,9 +8969,13 @@
         "halloumi cheese"
     ],
     "mi ": [
+        "dependent semi sweet chocolate",
         "halloumi cheese",
         "salami sausage",
-        "semi sweet chocolate"
+        "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve"
     ],
     "i c": [
         "halloumi cheese"
@@ -8933,6 +9109,7 @@
         "muenster cheese"
     ],
     "ens": [
+        "condensed milk",
         "greens",
         "muenster",
         "muenster cheese",
@@ -9347,11 +9524,16 @@
     "e f": [
         "all purpose flour",
         "all-purpose flour",
+        "baking chocolate f\u00e8ve",
         "cake flour",
         "chile flake",
+        "chocolate f\u00e8ve",
         "creme fraiche",
         "cr\u00e8me fra\u00eeche",
+        "dark chocolate f\u00e8ve",
+        "milk chocolate f\u00e8ve",
         "rye flour",
+        "semi sweet chocolate f\u00e8ve",
         "unbleached all purpose flour",
         "unbleached all-purpose flour",
         "white flour"
@@ -9636,10 +9818,14 @@
     ],
     "i s": [
         "chili sauce",
+        "dependent semi sweet chocolate",
         "nori seaweed",
         "pepperoni sausage",
         "salami sausage",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "spaghetti squash"
     ],
     "e p": [
@@ -10138,7 +10324,6 @@
         "angostura bitters",
         "bitter melon",
         "bitters",
-        "bittersweet chocolate",
         "littleneck",
         "littleneck clam"
     ],
@@ -10207,9 +10392,13 @@
         "low-fat coconut milk"
     ],
     "oco": [
-        "bittersweet chocolate",
-        "chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "cocoa",
         "cocoa powder",
@@ -10218,13 +10407,23 @@
         "coconut oil",
         "coconut water",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
+        "dependent semi sweet chocolate",
         "full fat coconut milk",
         "full-fat coconut milk",
         "low fat coconut milk",
         "low-fat coconut milk",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "ocoptus",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate"
     ],
     "coa": [
@@ -10540,6 +10739,12 @@
         "crustaceans",
         "crustaceans (farmed)"
     ],
+    "nse": [
+        "condensed milk"
+    ],
+    "sed": [
+        "condensed milk"
+    ],
     "coo": [
         "cooking oil",
         "cooking spray",
@@ -10711,9 +10916,13 @@
         "tortilla chip"
     ],
     "hip": [
+        "baking chocolate chip",
         "chocolate chip",
+        "dark chocolate chip",
         "heavy whipped cream",
         "heavy whipping cream",
+        "milk chocolate chip",
+        "semi sweet chocolate chip",
         "tortilla chip",
         "whipped cream",
         "whipping cream"
@@ -10888,6 +11097,10 @@
         "whipping cream"
     ],
     "g c": [
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "bing cherry",
         "heavy whipping cream",
         "leg chicken",
@@ -11093,53 +11306,82 @@
         "shrimp (wild)"
     ],
     "hoc": [
-        "bittersweet chocolate",
-        "chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
+        "dependent semi sweet chocolate",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate"
     ],
-    "bit": [
-        "angostura bitters",
-        "bitter melon",
-        "bitters",
-        "bittersweet chocolate"
+    "e d": [
+        "baking chocolate disc",
+        "chile de arbol",
+        "chile de \u00e1rbol",
+        "chocolate disc",
+        "dark chocolate disc",
+        "milk chocolate disc",
+        "semi sweet chocolate disc"
     ],
-    "rsw": [
-        "bittersweet chocolate"
+    " di": [
+        "baking chocolate disc",
+        "chocolate disc",
+        "dark chocolate disc",
+        "milk chocolate disc",
+        "semi sweet chocolate disc"
     ],
-    "lk ": [
-        "milk chocolate",
-        "whole milk yoghurt",
-        "whole-milk yoghurt"
+    "dis": [
+        "baking chocolate disc",
+        "chocolate disc",
+        "daikon radish",
+        "dark chocolate disc",
+        "horseradish",
+        "milk chocolate disc",
+        "radish",
+        "semi sweet chocolate disc"
     ],
-    "sem": [
-        "rosemary",
-        "rosemary leaf",
-        "semi sweet chocolate",
-        "semisweet chocolate",
-        "semolina",
-        "semolina flour"
+    "isc": [
+        "baking chocolate disc",
+        "chocolate disc",
+        "dark chocolate disc",
+        "milk chocolate disc",
+        "semi sweet chocolate disc"
     ],
-    "emi": [
-        "cremini",
-        "cremini mushroom",
-        "cremini mushroom cap",
-        "ricemilk",
-        "semi sweet chocolate",
-        "semisweet chocolate"
+    " f\u00e8": [
+        "baking chocolate f\u00e8ve",
+        "chocolate f\u00e8ve",
+        "dark chocolate f\u00e8ve",
+        "milk chocolate f\u00e8ve",
+        "semi sweet chocolate f\u00e8ve"
     ],
-    " sw": [
-        "semi sweet chocolate"
+    "f\u00e8v": [
+        "baking chocolate f\u00e8ve",
+        "chocolate f\u00e8ve",
+        "dark chocolate f\u00e8ve",
+        "milk chocolate f\u00e8ve",
+        "semi sweet chocolate f\u00e8ve"
     ],
-    "mis": [
-        "semisweet chocolate"
-    ],
-    "isw": [
-        "semisweet chocolate"
+    "\u00e8ve": [
+        "baking chocolate f\u00e8ve",
+        "chocolate f\u00e8ve",
+        "dark chocolate f\u00e8ve",
+        "milk chocolate f\u00e8ve",
+        "semi sweet chocolate f\u00e8ve"
     ],
     "das": [
         "dashi",
@@ -11567,6 +11809,18 @@
     ],
     "g f": [
         "self-rising flour"
+    ],
+    "sem": [
+        "dependent semi sweet chocolate",
+        "rosemary",
+        "rosemary leaf",
+        "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
+        "semisweet chocolate",
+        "semolina",
+        "semolina flour"
     ],
     "a f": [
         "semolina flour"
@@ -12287,6 +12541,7 @@
     "nt ": [
         "1 percent milk",
         "2 percent milk",
+        "dependent semi sweet chocolate",
         "mint leaf",
         "one percent milk",
         "pheasant breast",
@@ -12475,6 +12730,11 @@
     "ura": [
         "angostura",
         "angostura bitters"
+    ],
+    "bit": [
+        "angostura bitters",
+        "bitter melon",
+        "bitters"
     ],
     "bon": [
         "bonito",
@@ -12745,6 +13005,7 @@
     "ent": [
         "1 percent milk",
         "2 percent milk",
+        "dependent semi sweet chocolate",
         "french lentil",
         "green lentil",
         "lentil",
@@ -12824,6 +13085,14 @@
     ],
     "-mi": [
         "whole-milk",
+        "whole-milk yoghurt"
+    ],
+    "lk ": [
+        "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
+        "whole milk yoghurt",
         "whole-milk yoghurt"
     ],
     "las": [
@@ -12982,6 +13251,18 @@
         "rolled oat",
         "tagliatelle",
         "tagliatelle pasta"
+    ],
+    "emi": [
+        "cremini",
+        "cremini mushroom",
+        "cremini mushroom cap",
+        "dependent semi sweet chocolate",
+        "ricemilk",
+        "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
+        "semisweet chocolate"
     ],
     "ni ": [
         "cannellini bean",
@@ -13793,10 +14074,6 @@
         "scotch bonnet",
         "scotch bonnet pepper"
     ],
-    "e d": [
-        "chile de arbol",
-        "chile de \u00e1rbol"
-    ],
     "e a": [
         "chile de arbol"
     ],
@@ -13956,6 +14233,7 @@
         "wild tilapia"
     ],
     "pen": [
+        "dependent semi sweet chocolate",
         "jalapeno",
         "jalapeno chile",
         "jalapeno chili",
@@ -15392,11 +15670,6 @@
     "w l": [
         "yellow lentil"
     ],
-    "dis": [
-        "daikon radish",
-        "horseradish",
-        "radish"
-    ],
     "d r": [
         "red raisin",
         "wild rice"
@@ -15582,6 +15855,25 @@
     ],
     "ri ": [
         "nori seaweed"
+    ],
+    "mis": [
+        "semisweet chocolate"
+    ],
+    "isw": [
+        "semisweet chocolate"
+    ],
+    "dep": [
+        "dependent semi sweet chocolate"
+    ],
+    "epe": [
+        "dependent semi sweet chocolate"
+    ],
+    " sw": [
+        "dependent semi sweet chocolate",
+        "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve"
     ],
     "tah": [
         "tahini"

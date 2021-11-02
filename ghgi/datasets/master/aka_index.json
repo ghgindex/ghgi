@@ -1423,6 +1423,10 @@
         "coffee beans",
         10
     ],
+    "condensed milk": [
+        "condensed milk",
+        12
+    ],
     "cooking spray": [
         "cooking spray",
         11
@@ -1583,27 +1587,43 @@
         "dark chocolate",
         12
     ],
-    "bittersweet chocolate": [
+    "baking chocolate": [
+        "dark chocolate",
+        14
+    ],
+    "baking chocolate chip": [
         "dark chocolate",
         19
     ],
-    "chocolate": [
+    "baking chocolate disc": [
         "dark chocolate",
-        7
+        19
+    ],
+    "baking chocolate f\u00e8ve": [
+        "dark chocolate",
+        19
     ],
     "chocolate chip": [
         "dark chocolate",
         12
     ],
-    "milk chocolate": [
+    "chocolate disc": [
         "dark chocolate",
         12
     ],
-    "semi sweet chocolate": [
+    "chocolate f\u00e8ve": [
         "dark chocolate",
-        18
+        12
     ],
-    "semisweet chocolate": [
+    "dark chocolate chip": [
+        "dark chocolate",
+        17
+    ],
+    "dark chocolate disc": [
+        "dark chocolate",
+        17
+    ],
+    "dark chocolate f\u00e8ve": [
         "dark chocolate",
         17
     ],
@@ -2334,6 +2354,22 @@
     "whole-milk": [
         "milk",
         8
+    ],
+    "milk chocolate": [
+        "milk chocolate",
+        12
+    ],
+    "milk chocolate chip": [
+        "milk chocolate",
+        17
+    ],
+    "milk chocolate disc": [
+        "milk chocolate",
+        17
+    ],
+    "milk chocolate f\u00e8ve": [
+        "milk chocolate",
+        17
     ],
     "molasses": [
         "molasses",
@@ -4594,6 +4630,30 @@
     "nori seaweed": [
         "seaweed",
         10
+    ],
+    "semisweet chocolate": [
+        "semisweet chocolate",
+        17
+    ],
+    "dependent semi sweet chocolate": [
+        "semisweet chocolate",
+        28
+    ],
+    "semi sweet chocolate": [
+        "semisweet chocolate",
+        18
+    ],
+    "semi sweet chocolate chip": [
+        "semisweet chocolate",
+        23
+    ],
+    "semi sweet chocolate disc": [
+        "semisweet chocolate",
+        23
+    ],
+    "semi sweet chocolate f\u00e8ve": [
+        "semisweet chocolate",
+        23
     ],
     "sesame": [
         "sesame",

@@ -804,6 +804,12 @@
         "sg": 0.35,
         "super": {}
     },
+    "condensed milk": {
+        "sg": 0.96,
+        "super": {
+            "milk": 208.9
+        }
+    },
     "cooking spray": {
         "g": 5,
         "names": {
@@ -967,20 +973,28 @@
         "super": {}
     },
     "dark chocolate": {
-        "g": 25,
+        "g": 50,
         "names": {
-            "chocolate": {
+            "baking chocolate": {},
+            "chocolate chip": {
                 "dependent": [
-                    "_chip",
-                    "bittersweet",
-                    "dark",
-                    "milk",
-                    "semi sweet",
-                    "semisweet"
+                    "baking",
+                    "dark"
+                ]
+            },
+            "chocolate disc": {
+                "dependent": [
+                    "baking",
+                    "dark"
+                ]
+            },
+            "chocolate f\u00e8ve": {
+                "dependent": [
+                    "baking",
+                    "dark"
                 ]
             }
         },
-        "note": "This should be split out as a sugar+cocoa for the non-dark varieties",
         "sg": 1.0,
         "super": {}
     },
@@ -1499,6 +1513,23 @@
         "note": "dairy.md",
         "sg": 0.99,
         "super": {}
+    },
+    "milk chocolate": {
+        "g": 50,
+        "names": {
+            "milk chocolate": {
+                "dependent": [
+                    "_chip",
+                    "_disc",
+                    "_f\u00e8ve"
+                ]
+            }
+        },
+        "super": {
+            "cane sugar": 25,
+            "condensed milk": 20,
+            "dark chocolate": 55
+        }
     },
     "molasses": {
         "g": 10,
@@ -2565,6 +2596,36 @@
         },
         "sg": 1.0,
         "super": {}
+    },
+    "semisweet chocolate": {
+        "g": 50,
+        "names": {
+            "semi sweet chocolate": {
+                "bittersweet chocolate": {
+                    "dependent": [
+                        "_chip",
+                        "_disc",
+                        "_f\u00e8ve"
+                    ]
+                },
+                "dependent": [
+                    "_chip",
+                    "_disc",
+                    "_f\u00e8ve"
+                ],
+                "semisweet chocolate": {
+                    "dependent": [
+                        "_chip",
+                        "_disc",
+                        "_f\u00e8ve"
+                    ]
+                }
+            }
+        },
+        "super": {
+            "cane sugar": 30,
+            "dark chocolate": 70
+        }
     },
     "sesame": {
         "g": 5,

@@ -13,6 +13,7 @@ This data is extended to derivative dairy products using a co-products allocatio
 | Light whipping cream |        40.0% |                            305.3% |
 | Ricotta cheese       |        30.0% |                            229.0% |
 | Sour Cream           |        29.0% |                            221.4% |
+| Condensed milk       |        21.0% |                            160.3% |
 | Half and half        |        21.0% |                            160.3% |
 | Cottage cheese       |        20.0% |                            152.7% |
 | Whole milk           |        13.1% |                            100.0% |

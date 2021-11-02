@@ -10,6 +10,7 @@
         "2% milk",
         "almond milk",
         "coconut milk",
+        "condensed milk",
         "full fat coconut milk",
         "full fat milk",
         "full-fat coconut milk",
@@ -17,6 +18,9 @@
         "low-fat coconut milk",
         "milk",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "non-fat milk",
         "nonfat milk",
         "oat milk",
@@ -277,6 +281,10 @@
         "slab bacon"
     ],
     "bake": [
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "baking potato",
         "baking powder",
         "baking soda"
@@ -931,7 +939,11 @@
         "unsalted butter"
     ],
     "sweet": [
+        "dependent semi sweet chocolate",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "sweet butter",
         "sweet corn",
         "sweet onion",
@@ -973,6 +985,9 @@
     "dark": [
         "dark brown sugar",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
         "dark molasses"
     ],
     "demerara": [
@@ -1536,6 +1551,9 @@
         "vanilla bean",
         "white bean"
     ],
+    "condens": [
+        "condensed milk"
+    ],
     "cook": [
         "cooking oil",
         "cooking spray",
@@ -1583,7 +1601,11 @@
         "tortilla chip"
     ],
     "chip": [
+        "baking chocolate chip",
         "chocolate chip",
+        "dark chocolate chip",
+        "milk chocolate chip",
+        "semi sweet chocolate chip",
         "tortilla chip"
     ],
     "cottag": [
@@ -1687,23 +1709,42 @@
         "curry powder"
     ],
     "chocol": [
-        "bittersweet chocolate",
-        "chocolate",
+        "baking chocolate",
+        "baking chocolate chip",
+        "baking chocolate disc",
+        "baking chocolate f\u00e8ve",
         "chocolate chip",
+        "chocolate disc",
+        "chocolate f\u00e8ve",
         "chocolate ice cream",
         "dark chocolate",
+        "dark chocolate chip",
+        "dark chocolate disc",
+        "dark chocolate f\u00e8ve",
+        "dependent semi sweet chocolate",
         "milk chocolate",
+        "milk chocolate chip",
+        "milk chocolate disc",
+        "milk chocolate f\u00e8ve",
         "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve",
         "semisweet chocolate"
     ],
-    "bittersweet": [
-        "bittersweet chocolate"
+    "disc": [
+        "baking chocolate disc",
+        "chocolate disc",
+        "dark chocolate disc",
+        "milk chocolate disc",
+        "semi sweet chocolate disc"
     ],
-    "semi": [
-        "semi sweet chocolate"
-    ],
-    "semisweet": [
-        "semisweet chocolate"
+    "f\u00e8ve": [
+        "baking chocolate f\u00e8ve",
+        "chocolate f\u00e8ve",
+        "dark chocolate f\u00e8ve",
+        "milk chocolate f\u00e8ve",
+        "semi sweet chocolate f\u00e8ve"
     ],
     "dashi": [
         "dashi",
@@ -3555,6 +3596,19 @@
     "nori": [
         "nori",
         "nori seaweed"
+    ],
+    "semisweet": [
+        "semisweet chocolate"
+    ],
+    "depend": [
+        "dependent semi sweet chocolate"
+    ],
+    "semi": [
+        "dependent semi sweet chocolate",
+        "semi sweet chocolate",
+        "semi sweet chocolate chip",
+        "semi sweet chocolate disc",
+        "semi sweet chocolate f\u00e8ve"
     ],
     "sesam": [
         "black sesame seed",
