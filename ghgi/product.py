@@ -225,6 +225,7 @@ class Product:
                 product = Product.get(match[1][0], match[0])
                 confidence = match[2]
                 results += [(product, confidence, size)]
+
         results.sort(key=lambda k: k[2], reverse=True)  # prefer longer matches
         results.sort(key=lambda k: k[1], reverse=True)
         return results[0][:2] if results else (None, None)

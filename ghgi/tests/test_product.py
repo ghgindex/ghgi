@@ -222,6 +222,10 @@ class TestProduct(TestCase):
                 self.assertEqual(Product.food_values(product), {})
 
     def test_lookup(self):
+        # self.assertEqual(Product.lookup({'names': ['tuna', 'chickpea', 'white bean']})[
+        #                  0]['alias'], 'tuna')
+        self.assertEqual(Product.lookup({'names': ['grape', 'cherry tomato']})[
+                         0]['alias'], 'cherry tomato')
         self.assertEqual(Product.lookup({'names': ['potato']})[
                          0]['name'], 'potatoes')
         self.assertEqual(Product.lookup({'names': ['potats']})[
@@ -230,8 +234,6 @@ class TestProduct(TestCase):
                          0]['name'], 'potatoes')
         self.assertEqual(Product.lookup({'names': ['sweet potato']})[
                          0]['alias'], 'sweet potato')
-        self.assertEqual(Product.lookup({'names': ['grape', 'cherry tomato']})[
-                         0]['alias'], 'cherry tomato')
 
     def test_ghg_efficiency_parents(self):
         result = Product.lookup({'names': ['chicken stock']})

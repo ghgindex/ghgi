@@ -197,6 +197,7 @@ PREP_MODS = {  # try to suss out preps that (might) affect density
     'diced',
     'dissolved',
     'drained',
+    'flaked',
     'freeze-dried',
     'generous',
     'grated',
@@ -419,9 +420,10 @@ def names_mods(text):
         elif word:
             cleaned_text += [word]
     text = ' '.join(cleaned_text)
+
     # split on comma, or, and, semicolon; don't return empty strings
     # text = re.split(r',$|,\s|;$|;\s|\sor\s|\sor$|\sand\s|\sand$', text)
-    text = re.split(r'[,;]+$|[,;]+\s|\sor\s|\sor$|\sand\s|\sand$', text)
+    text = re.split(r'[,;]+|\sor\s|\sor$|\sand\s|\sand$', text)
 
     return [r.strip() for r in text if r and r.strip()], mods
 

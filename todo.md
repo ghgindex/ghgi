@@ -31,6 +31,8 @@ Why isn't the parenthetical getting stripped out of this? `Kosher salt (Diamond 
 Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving -> `torn` isn't getting removed
 I'd also like to handle `whole` as a modifier, similarly to `can`, `bunch` and related things that aren't inherently quantified.
 
+Certain products have names that are parts of different food's names: for instance "grape" is also in "grape tomato" and those are most definitely not the same thing. Conversely, "tuna" is only used for, well, tuna. The matcher right now prefers *longer* matches, which is to work around this problem, so if "grape or cherry tomato" gets split to "grape", "cherry tomato" we'll take the longer one. I think what we actually want to do is have a flag on these ingredients that says, essentially, this could be a partial match and only then prefer the longer matches. kinda gross but... There's a test in test_product.test_lookup that is commented out that would cover this, to which I'd add that when we have a list of names as ["tuna", "chickpea", "white bean"] we should prefer tuna, which we currently do not! In an ideal world we'd be smarter about the phrase/clause structure, but barf.
+
 ### Each types
 
 - rib(s) - this is a hard one as it conflicts with animal ribs
