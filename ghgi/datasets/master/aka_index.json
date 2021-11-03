@@ -2847,6 +2847,22 @@
         "other fruit",
         3
     ],
+    "maraschino": [
+        "other fruit",
+        8
+    ],
+    "maraschino cherry": [
+        "other fruit",
+        15
+    ],
+    "montmorency": [
+        "other fruit",
+        9
+    ],
+    "montmorency cherry": [
+        "other fruit",
+        16
+    ],
     "nectarine": [
         "other fruit",
         7

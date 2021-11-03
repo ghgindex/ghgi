@@ -2624,6 +2624,8 @@
         "bing cherry",
         "cherry",
         "cherry tomato",
+        "maraschino cherry",
+        "montmorency cherry",
         "sour cherry"
     ],
     "bosc": [
@@ -2648,6 +2650,14 @@
     ],
     "mango": [
         "mango"
+    ],
+    "maraschino": [
+        "maraschino",
+        "maraschino cherry"
+    ],
+    "montmor": [
+        "montmorency",
+        "montmorency cherry"
     ],
     "nectarin": [
         "nectarine"

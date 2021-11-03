@@ -38,6 +38,8 @@
         "monkfish",
         "monterey jack",
         "monterey jack cheese",
+        "montmorency",
+        "montmorency cherry",
         "salmon",
         "salmon (farmed)",
         "salmon (wild)",
@@ -1834,7 +1836,9 @@
         "baharat blend",
         "caraway",
         "demerara sugar",
-        "garam masala"
+        "garam masala",
+        "maraschino",
+        "maraschino cherry"
     ],
     "rag": [
         "asparagus",
@@ -2316,6 +2320,8 @@
         "jalape\u00f1o chili",
         "leg chicken",
         "liver chicken",
+        "maraschino",
+        "maraschino cherry",
         "milk chocolate chip",
         "orecchiette",
         "orecchiette pasta",
@@ -3738,6 +3744,8 @@
         "herring",
         "kosher salt",
         "kosher salt black pepper",
+        "maraschino cherry",
+        "montmorency cherry",
         "other fruit",
         "other vegetables",
         "pepper kosher salt",
@@ -3881,6 +3889,7 @@
         "lamb chop",
         "leg chicken",
         "liver chicken",
+        "maraschino cherry",
         "mascarpone cheese",
         "milk chocolate",
         "milk chocolate bar",
@@ -3888,6 +3897,7 @@
         "milk chocolate disc",
         "milk chocolate f\u00e8ve",
         "monterey jack cheese",
+        "montmorency cherry",
         "mozzarella cheese",
         "muenster cheese",
         "pak choi",
@@ -4741,6 +4751,8 @@
         "herring",
         "lea & perrins",
         "lea perrins",
+        "maraschino cherry",
+        "montmorency cherry",
         "raspberry",
         "serrano",
         "serrano chile",
@@ -4847,6 +4859,8 @@
         "curry powder",
         "dry sherry",
         "dry sherry wine",
+        "maraschino cherry",
+        "montmorency cherry",
         "raspberry",
         "sherry",
         "sherry vinegar",
@@ -5036,6 +5050,8 @@
     "ras": [
         "brassicas",
         "lemongrass",
+        "maraschino",
+        "maraschino cherry",
         "raspberry"
     ],
     "spb": [
@@ -5527,6 +5543,8 @@
     ],
     "ore": [
         "broccoli floret",
+        "montmorency",
+        "montmorency cherry",
         "morel",
         "morel mushroom",
         "morel mushroom cap",
@@ -5830,6 +5848,8 @@
     ],
     "hin": [
         "chinese cabbage",
+        "maraschino",
+        "maraschino cherry",
         "romanesco zucchini",
         "tahini",
         "zucchini"
@@ -6366,6 +6386,7 @@
     "y c": [
         "heavy cream",
         "kirby cucumber",
+        "montmorency cherry",
         "philly cream cheese",
         "savoy cabbage"
     ],
@@ -7014,12 +7035,16 @@
     ],
     "ren": [
         "french bread",
-        "french lentil"
+        "french lentil",
+        "montmorency",
+        "montmorency cherry"
     ],
     "enc": [
         "french bread",
         "french lentil",
-        "herbes de provence"
+        "herbes de provence",
+        "montmorency",
+        "montmorency cherry"
     ],
     "ch ": [
         "french bread",
@@ -8718,8 +8743,10 @@
         "gruyere cheese",
         "gruy\u00e8re cheese",
         "halloumi cheese",
+        "maraschino cherry",
         "mascarpone cheese",
         "monterey jack cheese",
+        "montmorency cherry",
         "mozzarella cheese",
         "muenster cheese",
         "paneer cheese",
@@ -9037,7 +9064,9 @@
         "fontina",
         "fontina cheese",
         "monterey jack",
-        "monterey jack cheese"
+        "monterey jack cheese",
+        "montmorency",
+        "montmorency cherry"
     ],
     "nti": [
         "fontina",
@@ -9229,6 +9258,8 @@
         "mascarpone cheese"
     ],
     "asc": [
+        "maraschino",
+        "maraschino cherry",
         "mascarpone",
         "mascarpone cheese",
         "tabasco",
@@ -9417,6 +9448,7 @@
         "jalapeno chile",
         "jalapeno chili",
         "jalapeno pepper",
+        "maraschino cherry",
         "oregano leaf",
         "parmigiano reggiano",
         "parmigiano reggiano cheese",
@@ -9494,6 +9526,7 @@
         "jalapeno chili",
         "jalape\u00f1o chile",
         "jalape\u00f1o chili",
+        "maraschino cherry",
         "parmigiano reggiano cheese",
         "parmigiano- reggiano cheese",
         "parmigiano-reggiano cheese",
@@ -9560,6 +9593,8 @@
         "pecorino romano cheese"
     ],
     "ino": [
+        "maraschino",
+        "maraschino cherry",
         "pecorino",
         "pecorino cheese",
         "pecorino romano",
@@ -12816,6 +12851,8 @@
         "calamari",
         "grand marnier",
         "grand marnier liqueur",
+        "maraschino",
+        "maraschino cherry",
         "marjoram",
         "marjoram leaf",
         "marsala",
@@ -13189,7 +13226,9 @@
         "kirsch"
     ],
     "sch": [
-        "kirsch"
+        "kirsch",
+        "maraschino",
+        "maraschino cherry"
     ],
     "rno": [
         "pernod"
@@ -13638,6 +13677,8 @@
         "enoki mushroom cap"
     ],
     "mor": [
+        "montmorency",
+        "montmorency cherry",
         "morel",
         "morel mushroom",
         "morel mushroom cap",
@@ -14169,6 +14210,21 @@
     ],
     "fig": [
         "fig"
+    ],
+    "ntm": [
+        "montmorency",
+        "montmorency cherry"
+    ],
+    "tmo": [
+        "montmorency",
+        "montmorency cherry"
+    ],
+    "ncy": [
+        "montmorency",
+        "montmorency cherry"
+    ],
+    "cy ": [
+        "montmorency cherry"
     ],
     "cta": [
         "nectarine"
