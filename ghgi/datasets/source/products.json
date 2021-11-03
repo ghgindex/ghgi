@@ -976,6 +976,12 @@
         "g": 50,
         "names": {
             "baking chocolate": {},
+            "chocolate bar": {
+                "dependent": [
+                    "baking",
+                    "dark"
+                ]
+            },
             "chocolate chip": {
                 "dependent": [
                     "baking",
@@ -1519,12 +1525,22 @@
         "names": {
             "milk chocolate": {
                 "dependent": [
+                    "_bar",
+                    "_chip",
+                    "_disc",
+                    "_f\u00e8ve"
+                ]
+            },
+            "white chocolate": {
+                "dependent": [
+                    "_bar",
                     "_chip",
                     "_disc",
                     "_f\u00e8ve"
                 ]
             }
         },
+        "note": "white chocolate only uses cocoa butter but we are proxying with whole (dark) chocolate",
         "super": {
             "cane sugar": 25,
             "condensed milk": 20,
@@ -2600,26 +2616,29 @@
     "semisweet chocolate": {
         "g": 50,
         "names": {
-            "semi sweet chocolate": {
-                "bittersweet chocolate": {
-                    "dependent": [
-                        "_chip",
-                        "_disc",
-                        "_f\u00e8ve"
-                    ]
-                },
+            "bittersweet chocolate": {
                 "dependent": [
+                    "_bar",
                     "_chip",
                     "_disc",
                     "_f\u00e8ve"
-                ],
-                "semisweet chocolate": {
-                    "dependent": [
-                        "_chip",
-                        "_disc",
-                        "_f\u00e8ve"
-                    ]
-                }
+                ]
+            },
+            "semi sweet chocolate": {
+                "dependent": [
+                    "_bar",
+                    "_chip",
+                    "_disc",
+                    "_f\u00e8ve"
+                ]
+            },
+            "semisweet chocolate": {
+                "dependent": [
+                    "_bar",
+                    "_chip",
+                    "_disc",
+                    "_f\u00e8ve"
+                ]
             }
         },
         "super": {

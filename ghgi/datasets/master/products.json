@@ -905,13 +905,16 @@
         "g": 50,
         "names": [
             "baking chocolate",
+            "baking chocolate bar",
             "baking chocolate chip",
             "baking chocolate disc",
             "baking chocolate f\u00e8ve",
+            "chocolate bar",
             "chocolate chip",
             "chocolate disc",
             "chocolate f\u00e8ve",
             "dark chocolate",
+            "dark chocolate bar",
             "dark chocolate chip",
             "dark chocolate disc",
             "dark chocolate f\u00e8ve"
@@ -1433,10 +1436,17 @@
         "g": 50,
         "names": [
             "milk chocolate",
+            "milk chocolate bar",
             "milk chocolate chip",
             "milk chocolate disc",
-            "milk chocolate f\u00e8ve"
+            "milk chocolate f\u00e8ve",
+            "white chocolate",
+            "white chocolate bar",
+            "white chocolate chip",
+            "white chocolate disc",
+            "white chocolate f\u00e8ve"
         ],
+        "note": "white chocolate only uses cocoa butter but we are proxying with whole (dark) chocolate",
         "super": {
             "cane sugar": 25,
             "condensed milk": 20,
@@ -2400,12 +2410,21 @@
     "semisweet chocolate": {
         "g": 50,
         "names": [
-            "dependent semi sweet chocolate",
+            "bittersweet chocolate",
+            "bittersweet chocolate bar",
+            "bittersweet chocolate chip",
+            "bittersweet chocolate disc",
+            "bittersweet chocolate f\u00e8ve",
             "semi sweet chocolate",
+            "semi sweet chocolate bar",
             "semi sweet chocolate chip",
             "semi sweet chocolate disc",
             "semi sweet chocolate f\u00e8ve",
-            "semisweet chocolate"
+            "semisweet chocolate",
+            "semisweet chocolate bar",
+            "semisweet chocolate chip",
+            "semisweet chocolate disc",
+            "semisweet chocolate f\u00e8ve"
         ],
         "super": {
             "cane sugar": 30,
