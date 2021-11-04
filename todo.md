@@ -1,5 +1,11 @@
 # Ye Olde ToDo list
 
+## Grammar
+
+What we have been building, albeit piecemeal, is a [grammar](grammar.md). I think we might get better results (and cleaner code) if we tried to formalize it.
+
+## Todo
+
 There is an issue if a recipe entry is blank, see e.g. this one [https://ghgi.org/admin/recipe/details/?id=31743]; we should just omit those.
 
 Update the repo readme
