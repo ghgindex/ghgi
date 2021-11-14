@@ -510,9 +510,7 @@ def no_directives(text):
 
 
 def strip_html_tags(text):
-    text = re.sub(tag_start, '', text)
-    text = re.sub(tag_end, '', text)
-    return text
+    return re.sub(tag_end, '', re.sub(tag_start, '', text))
 
 
 def numerify(text):
@@ -624,8 +622,10 @@ def amounts(text_entry):
     text_entry = pad_punctuation(text_entry)
 
     # singularize nouns; remove stopwords; preserve casing for units parsing
+    print(text_entry)
     cleaned_text, stripped_words = clean(text_entry)
 
+    print(cleaned_text)
     matches = match_units(cleaned_text)
     if len(matches) == 0:
         # infer a single `ea` unit
@@ -638,6 +638,7 @@ def amounts(text_entry):
         }
 
     qtys = [quantify(m[2]) for m in matches]
+    print(qtys)
 
     # remove quantity data
     remainder = re.sub(start_unit_regex, '', cleaned_text)

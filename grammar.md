@@ -30,9 +30,37 @@ Currently, the parser goes through the following steps:
 
 Some of these are sensible as pre-processing steps, whereas other seem like artifacts resulting from how our regexes behave. In aggregate, however, we lose *a lot* of semantic value from this approach.
 
+## NLP approach
+
+The new flow, which will be able to use many (I hope) of the existing regexes, should go as follows:
+
+1. Pre-process
+   * Strip leading/trailing whitespace
+   * Strip out any html tags
+     * At some point, we need to decide the "correct" way to handle inlined recipe links and whether we want to do anything about that
+   * Expand vulgar fractions, prepending a space, e.g. "1¼" -> "1 1/4" (nltk will take 1/4 as a number, huzzah!)
+   * Convert fractional numbers to decimals (?)
+   * What about concatenated units, e.g. "6c" -> convert those to "6 cup" here, or should that come later?
+2. Disregard ingredients that:
+   * end in a colon ":" as this almost always means it's a directive
+     * There are a few cases where a quantity is provided as part of this, but this is very rare, and more often than not the quantity is redundant with subsequent entries. We'll live with the misses here.
+   * begin with certain other directives, which typically include a colon, e.g. "Equipment:...", "Accompaniment:...", "Ingredient info:..."
+   * are entirely parenthetical, e.g. "(Essential oil complement: orange)"
+   * Things that are marked optional TBD
+     * I lean towards ignoring these, too
+
+* [Chunk](#chunking) the input line, in particular decomposing dual entries (qty1 of this, or qty2 of that)
+  * The relationship between subsequent chunks should be specified as an AND or an OR (default OR)
+* each chunk should be converted to an object with a quantity, any qualifiers, and its names and any stripped mods
+  * chunk having multiple quantities should be *extremely* rare
+  * in theory, we shouldn't care about the position of the quantities once we're done extracting them
+    * we might care about the position of quantity sub-chunks, e.g. for qualifiers, until we have completed the parse
+
 ## Chunking
 
-To follow
+The highest level chunk is an ingredient, which is an item and a quantity (which in some cases is implicit); some ingredient lines have multiple ingredient chunks which we will separate out. We should also look to remove gerunds and prepositional phrases (e.g. across the grain, on the bias) and other indicators of preparation instructions vs ingredient info.
+
+As we build up meta-chunks, one question is how we want to represent this. Maybe just a list of tuples that are [start_index, stop_index, POI, raw_text, value, sub_chunks]?
 
 ## Parts of Ingredients (POI, à la POS)
 
@@ -44,14 +72,14 @@ Our grammar needs parts of speech to describe different elements of an ingredien
 * QUAL: amount qualifier (e.g. 4-pound)
 * NAME: name
 * DIR: directive (e.g. chopped)
-* CTX: context ("for the garnish", "packed in olive oil")
+* CTX: context ("for the garnish", "packed in olive oil", "sliced across the grain")
 * OTH: other
 
 Can DIR and CTX be the same thing? The only case I can see for separating them is that certain directives might affect how we interpret the density, e.g. chopped onion vs pureed.
 
 An amount can include a qualifier, e.g. "1 (5- to 6-ounce) can" means the QTY is 1, the unit is "can", and the qualifier is 5.5 ounces.
 
-At minimum, an Ingredient must include an amount and a name.
+At minimum, an Ingredient must include an amount and a name. In some cases, the amount will be implicit, e.g. "salt and pepper", or "apple".
 
 ## Ingredient Structures
 
@@ -63,6 +91,10 @@ At minimum, an Ingredient must include an amount and a name.
 * `<A><AQ><D><N>`
 
 In some cases, multiple ingredients will occur in the same entry, particularly when an alternative is being provided, e.g. "1 (5- to 6-ounce) can or jar tuna, drained and flaked, or 1 (13-ounce) can chickpeas or white beans, drained". I think this is indicated by an "or" following a full ingredient entry and directly preceding another full ingredient entry
+
+## Quantities
+
+I think we might replace our regexes with a more bottom-up appoach. We could label numbers as a start, and from there label quantities, and from there identify which quantities are actually qualifiers.
 
 ## Lists
 
@@ -104,4 +136,3 @@ VBG: gerund
 VBN: verb past participle
 VBP: verb present tense
 VBZ: verb present tense 3rd person singular
-
