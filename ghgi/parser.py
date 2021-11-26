@@ -48,6 +48,7 @@ UNITS = {
     'smidgen': 'smidgen',
     'bunch': 'bunch',
     'drop': 'drop',
+    'ea': 'ea',
     'ear': 'ea',
     'slice': 'ea',
     'stalk': 'ea',
