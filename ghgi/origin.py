@@ -1,8 +1,12 @@
 import os
 import json
 from enum import Enum
-from .datasets import ORIGINS
-from .reference import Reference
+try:
+    from .datasets import ORIGINS
+    from .reference import Reference
+except:
+    from datasets import ORIGINS
+    from reference import Reference
 
 
 class UnknownOriginException(Exception):

@@ -2,7 +2,10 @@ import json
 import collections
 import nltk
 
-from .datasets import MASTER_PRODUCTS, MASTER_GIN_INDEX, MASTER_AKA_INDEX
+try:
+    from .datasets import MASTER_PRODUCTS, MASTER_GIN_INDEX, MASTER_AKA_INDEX
+except:
+    from datasets import MASTER_PRODUCTS, MASTER_GIN_INDEX, MASTER_AKA_INDEX
 
 # words to exclude from stemming
 NO_STEM = {
@@ -108,6 +111,12 @@ class GIN:
 
     @classmethod
     def query(cls, term: str, use_keyword=True):
+        # TODO: this could be improved by making better use of the pos_tags
+        # and semantics. We can get smarter about identifying different patterns,
+        # e.g. [NN1, OR, NN2] -> pick one of the NNx, vs [NN1, OR, NN2, NN3] in which case
+        # it could mean [NN1 NN3, OR, NN2, NN3] OR [NN1 OR NN2 NN3] and so on.
+        # It also needs to deal with commas!
+
         # To match, a term must include *all* the tokens of a database item.
         # It can have extraneous tokens, but must not be missing any
         tokens = cls.tokenize(term)
@@ -117,6 +126,10 @@ class GIN:
             return None, None, 0.0
 
         pos_tags = cls.pos_tag(tokens)
+
+        # identify the locations of ORs
+        or_indexes = [i for i in range(
+            len(tokens)) if tokens[0].lower() == 'or']
 
         # the keyword is the last noun: must match if use_keyword is set
         key_word_index = None

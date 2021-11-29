@@ -1,5 +1,8 @@
 import json
-from .datasets import REFERENCES
+try:
+    from .datasets import REFERENCES
+except:
+    from datasets import REFERENCES
 
 
 class Reference:

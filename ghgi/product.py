@@ -1,15 +1,20 @@
 #!/usr/bin/env python
-from collections import defaultdict
 from enum import Enum
-from ghgi.parser import pad_punctuation
 import json
 import copy
-from .datasets import MASTER_PRODUCTS, SOURCE_FOOD_VALUES
-from .trigram import Trigram
-from .gin import GIN
-from .convert import Convert
-from .origin import Origin, GHGFlavor
-from .formatter import bold
+import logging
+try:
+    from .datasets import MASTER_PRODUCTS, SOURCE_FOOD_VALUES
+    from .gin import GIN
+    from .convert import Convert
+    from .origin import Origin, GHGFlavor
+    from .formatter import bold
+except:
+    from datasets import MASTER_PRODUCTS, SOURCE_FOOD_VALUES
+    from gin import GIN
+    from convert import Convert
+    from origin import Origin, GHGFlavor
+    from formatter import bold
 
 DEFAULT_FLAVOR = GHGFlavor.MEDIAN
 
@@ -214,6 +219,9 @@ class Product:
     def lookup(ingredient):
         # given a list of names for a product, return the match with the
         # highest confidence
+        if ingredient is None:
+            return (None, None)
+
         if not Product.NAMES in ingredient:
             return (None, None)
         results = []
@@ -234,6 +242,8 @@ class Product:
     def itemize(ingredients):
         """match user ingredient terms to our database in-place"""
         for ingredient in ingredients:
+            if ingredient is None:
+                continue
             (ingredient[Ingredient.PRODUCT],
              ingredient['match_conf']) = Product.lookup(ingredient)
 
@@ -291,7 +301,7 @@ class Product:
     @staticmethod
     def mass_for_entry(sg, entry):
         """
-        Return the inferred mass, the quantity type, and whether it's a plus.
+        Return the inferred mass and the quantity type.
 
         TODO: This gets a bit tricky for things like cans, bunches, and sprigs, which
         are essentially different sizes of `ea`. In addition to the default
@@ -311,9 +321,9 @@ class Product:
         flavor = None
 
         qty = entry[Ingredient.QTY]
-        plus = entry[Ingredient.PLUS]
+        # plus = entry[Ingredient.PLUS]
         unit = entry[Ingredient.UNIT]
-        per = entry[Ingredient.PER]
+        # per = entry[Ingredient.PER]
 
         if unit in Convert.VOLUME:
             flavor = Convert.VOLUME
@@ -321,23 +331,23 @@ class Product:
             flavor = Convert.MASS
 
         if unit not in [Ingredient.EA, Ingredient.PKG, Ingredient.BUNCH]:
-            return Convert.to_metric(qty, unit, sg), flavor, plus, per
+            return Convert.to_metric(qty, unit, sg), flavor
 
-        # see if there is clarification available for the value
-        for qual in entry.get(Ingredient.QUALIFIERS, []):
-            if qual[Ingredient.UNIT] != Ingredient.EA:
-                unit = qual[Ingredient.UNIT]
-                if unit in Convert.VOLUME:
-                    flavor = Convert.VOLUME
-                elif unit in Convert.MASS:
-                    flavor = Convert.MASS
-                if qual.get(Ingredient.PER) == 'each':
-                    qty = qty * qual[Ingredient.QTY]
-                else:
-                    qty = qual[Ingredient.QTY]
-                return Convert.to_metric(qty, unit, sg), flavor, plus, per
+        # # see if there is clarification available for the value
+        # for qual in entry.get(Ingredient.QUALIFIERS, []):
+        #     if qual[Ingredient.UNIT] != Ingredient.EA:
+        #         unit = qual[Ingredient.UNIT]
+        #         if unit in Convert.VOLUME:
+        #             flavor = Convert.VOLUME
+        #         elif unit in Convert.MASS:
+        #             flavor = Convert.MASS
+        #         if qual.get(Ingredient.PER) == 'each':
+        #             qty = qty * qual[Ingredient.QTY]
+        #         else:
+        #             qty = qual[Ingredient.QTY]
+        #         return Convert.to_metric(qty, unit, sg), flavor,  per
 
-        return qty, unit, plus, per
+        return qty, unit
 
     @staticmethod
     def mass(ingredient):
@@ -351,6 +361,11 @@ class Product:
         If no product is assigned to the ingredient, we use dummy values of 1.0 for sg
         and 100.0 for mass to estimate the ingredient's mass.
         """
+
+        if not ingredient.get(Ingredient.QTYS):
+            logging.warn(
+                'ingredient has no quantity information: {}'.format(str(ingredient)))
+            return 0
 
         product = ingredient.get(Ingredient.PRODUCT)
 
@@ -374,11 +389,8 @@ class Product:
             unit = converted_qtys[0][1]
             for sub in converted_qtys[1:]:
                 if sub[1] != Ingredient.EA:
-                    unit = sub[1]
-                    if sub[3] == 'each':
-                        qty = qty * sub[0]
-                    else:
-                        qty = sub[0]
+                    # unit = sub[1]
+                    qty = sub[0]
                     return qty
 
             # if nothing was found, multiple the EA value by Product.g
@@ -390,15 +402,11 @@ class Product:
         # otherwise, we aggregate mass and volume entries
         mass_qty = 0
         vol_qty = 0
-        plus = False
         for converted_qty in converted_qtys:
-            plus |= converted_qty[2]
             if converted_qty[1] == Convert.MASS:
-                if plus or (mass_qty == 0):
-                    mass_qty += converted_qty[0]
+                mass_qty += converted_qty[0]
             elif converted_qty[1] == Convert.VOLUME:
-                if plus or (vol_qty == 0):
-                    vol_qty += converted_qty[0]
+                vol_qty += converted_qty[0]
 
         if vol_qty and grated:
             # UGLY: accounting for cheeses
@@ -479,7 +487,7 @@ class Product:
 
     @staticmethod
     def impact(ingredient, origin=Origin.DEFAULT):
-        if ingredient.get('error'):
+        if ingredient is None or ingredient.get('error'):
             return 0.0
 
         mass = Product.mass(ingredient)

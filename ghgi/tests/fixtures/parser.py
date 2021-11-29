@@ -4,131 +4,52 @@ Parser text fixtures
 Fixtures are lists of tuples of (in, out) for different tests
 """
 
+{'qtys': [{'qty': 236.588, 'unit': 'ml'}],
+    'names': ['cocoa powder'], 'mods': ['packed']}
+{'qtys': [{'qty': 236.588, 'unit': 'ml'}],
+    'names': ['cocoa powder'], 'mods': ['large']}
+{'qtys': [{'qty': 14.7868, 'unit': 'ml'}], 'names': [
+    'dark cocoa powder / 8.0 g'], 'mods': []}
+{'qtys': [{'qty': 185.0, 'unit': 'g'}], 'names': [
+    'all-purpose flour 354.882 ml'], 'mods': []}
+{'qtys': [{'qty': 354.882, 'unit': 'ml'}], 'names': [], 'mods': []}
+{'qtys': [{'qty': 354.882, 'unit': 'ml'}], 'names': [], 'mods': []}
+{'qtys': [{'qty': 226.796, 'unit': 'g'}], 'names': [], 'mods': []}
+{'qtys': [{'qty': 226.796, 'unit': 'g'}], 'names': [], 'mods': []}
+{'qtys': [{'qty': 226.796, 'unit': 'g'}], 'names': [], 'mods': []}
+{'qtys': [{'qty': 236.588, 'unit': 'ml'}], 'names': ['flour'], 'mods': []}
+{'qtys': [{'qty': 1.0, 'unit': 'ea'}],
+    'names': ['cupperino flour'], 'mods': []}
+{'qtys': [{'qty': 118.294, 'unit': 'ml'}], 'names': ['flour'], 'mods': []}
+{'qtys': [{'qty': 118.294, 'unit': 'ml'}], 'names': ['flour'], 'mods': []}
+{'qtys': [{'qty': 118.294, 'unit': 'ml'}], 'names': ['flour'], 'mods': []}
+{'qtys': [{'qty': 354.882, 'unit': 'ml'}], 'names': ['flour'], 'mods': []}
+{'qtys': [{'qty': 236.588, 'unit': 'ml'}],
+    'names': ['flour 473.176 ml flour'], 'mods': []}
+{'qtys': [{'qty': 2000.0, 'unit': 'g'}], 'names': ['flour'], 'mods': []}
+{'qtys': [{'qty': 236.588, 'unit': 'ml'}],
+    'names': ['flour 354.882 ml flour'], 'mods': []}
+
 REGEX_UNITS_DATA = [
 
-    ('1 tablespoon plus 2 teaspoon kosher salt', [
-        {'qty': '1', 'qual': None, 'unit': 'tablespoon',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '2', 'qual': None, 'unit': 'teaspoon',
-            'per': None, 'plus': 'plus', 'plural': None, 'mods': None}
-    ]),
-    ('1 ( 8-ounce / 230g ) can ( about 230g )', [
-        {'qty': '1', 'qual': '( 8-ounce / 230g )',
-         'unit': 'can', 'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '230', 'qual': None, 'unit': 'g',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('handful ( 1 cup ) stuff', [
-        {'unit': 'handful', 'mods': None},
-        {'qty': '1', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None}
-    ]),
-    ('1 ( 8-ounce ) stalk ( about 230g )', [
-        {'qty': '1', 'qual': '( 8-ounce )', 'unit': 'stalk',
-         'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '230', 'qual': None, 'unit': 'g',
-            'per': None, 'plus': None, 'plural': None, 'mods': None}
-    ]),
-    ('1 ( 8-ounce ) stalk ( about 230g )', [
-        {'qty': '1', 'qual': '( 8-ounce )', 'unit': 'stalk',
-         'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '230', 'qual': None, 'unit': 'g',
-            'per': None, 'plus': None, 'plural': None, 'mods': None}
-    ]),
-    ('1 ( 8-ounce ) stalk ( about 230g ) or 1 handful', [
-        {'qty': '1', 'qual': '( 8-ounce )', 'unit': 'stalk',
-         'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '230', 'qual': None, 'unit': 'g',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '1', 'qual': None, 'unit': 'handful',
-            'per': None, 'plus': None, 'plural': None, 'mods': None}
-    ]),
-    ('1 packed cup cocoa powder', [
-        {'qty': '1', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': 'packed'},
-    ]),
-    ('1 large cup cocoa powder', [
-        {'qty': '1', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': 'large'},
-    ]),
-    ('1 tablespoon dark cocoa powder / 8 gram', [
-        {'qty': '1', 'qual': None, 'unit': 'tablespoon',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '8', 'qual': None, 'unit': 'gram',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('185 gram all-purpose flour ( 1 1/2 cup )', [
-        {'qty': '185', 'qual': None, 'unit': 'gram',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '1 1/2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1 or 2 cup', [
-        {'qty': '1 or 2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1 to 2 cup', [
-        {'qty': '1 to 2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('8-ounce', [
-        {'qty': '8-', 'qual': None, 'unit': 'ounce',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('8-ounce ', [
-        {'qty': '8-', 'qual': None, 'unit': 'ounce',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('8-ounces', [
-        {'qty': '8-', 'qual': None, 'unit': 'ounce',
-            'per': None, 'plus': None, 'plural': 's', 'mods': None},
-    ]),
-    ('1 cup flour', [
-        {'qty': '1', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1 cupperino flour', [
-        {'qty': '1', 'qual': None, 'unit': None,
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1/2 cup flour', [
-        {'qty': '1/2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('0.5c flour', [
-        {'qty': '0.5', 'qual': None, 'unit': 'c',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('.5c flour', [
-        {'qty': '.5', 'qual': None, 'unit': 'c',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1-1/2 cup flour', [
-        {'qty': '1-1/2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1 cup flour 2 cup flour', [
-        {'qty': '1', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1 1/2 cup ( 2 kg ) flour', [
-        {'qty': '1 1/2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '2', 'qual': None, 'unit': 'kg',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('1 cup flour 1 1/2 cup flour', [
-        {'qty': '1', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-        {'qty': '1 1/2', 'qual': None, 'unit': 'cup',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
-    ('( 8-ounce )', [
-        {'qty': '8-', 'qual': None, 'unit': 'ounce',
-            'per': None, 'plus': None, 'plural': None, 'mods': None},
-    ]),
+    ('1 tablespoon plus 2 teaspoon kosher salt',
+     {'qtys': [{'qty': 24.64464, 'unit': 'ml'}],
+      'names': ['kosher salt'], 'mods': []}
+     ),
+    ('1 ( 8-ounce / 230g ) can ( about 230g )',
+     {'qtys': [{'qty': 226.796, 'unit': 'g'}], 'names': [], 'mods': []}
+     ),
+    (
+        'handful ( 1 cup ) stuff',
+        {'qtys': [
+            {'qty': 118.0, 'unit': 'ml'},
+            {'qty': 236.588, 'unit': 'ml'}
+        ], 'names': ['stuff'], 'mods': []}
+    ),
+    (
+        '1 ( 8-ounce ) stalk ( about 230g )',
+        {'qtys': [{'qty': 226.796, 'unit': 'g'}], 'names': [], 'mods': []}
+    ),
 ]
 
 AMOUNTS_DATA = [
@@ -136,500 +57,167 @@ AMOUNTS_DATA = [
     # TODO: would be ideal to note which units pertain to which names (based on positions in the text)
     # 4-5 ears of corn, husked [this is getting parsed as 9]
     # Oil (olive, coconut or grapeseed)
+    # 2-inch slice :-| probably this just wants to become an `ea` if it doesn't already
+    # '1 1/2-ounce package dried morels, or 6 ounces fresh morels plus 1/2 cup beef broth'
     # 2 to 3 pounds root or dense vegetable, peeled if you like and cut into 1-inch chunks or wedges (carrots, beets, potatoes, sweet potatoes, turnips, radishes, rutabaga, winter squashes)
     # Torn fresh herbs, such as mint, dill, cilantro or parsley, for serving
-
-    ('1 (5- to 6-ounce) can or jar tuna, drained and flaked, or 1 (13-ounce) can chickpeas or white beans, drained', {
-        # ^ needs to clean up the output text, and we should prefer the first perfect match (maybe we already do)
-        'qtys': [
-            {'per': None, 'qty': 1.0, 'qualifiers': [
-                {'per': 'each', 'qty': 5.5, 'qualifiers': [],
-                 'plus': False, 'unit': 'ounce'}
-            ], 'plus': False, 'unit': 'pkg'},
-            {'per': None, 'qty': 1.0, 'qualifiers': [
-                {'per': 'each', 'qty': 13.0, 'qualifiers': [],
-                 'plus': False, 'unit': 'ounce'}
-            ], 'plus': False, 'unit': 'pkg'},
-        ],
-        'names': ['tuna', 'chickpea', 'white bean'],
-        'mods': ['drained', 'flaked', 'drained'],
-        'stripped_words': ['and'],
-    }),
-    ('1/2 pound fresh tuna, grilled or 6 1/2- to 7-ounce can albacore tuna, packed in water', {
-        # TODO: this should capture the can as a `pkg`
-        'qtys': [
-            {'per': None, 'qty': 0.5, 'qualifiers': [],
-                'plus': False, 'unit': 'pound'},
-            {'per': None, 'qty': 6.75, 'qualifiers': [],
-             'plus': False, 'unit': 'ounce'}
-        ],
-        'names': ['tuna', 'albacore tuna'],
-        'mods': ['packed'],
-        'stripped_words': ['fresh', 'grilled'],
-    }),
-    ('Two 5-ounce (140g) cans tuna in olive oil, drained (or 10 ounces/280g shredded roast chicken meat)', {
-        'qtys': [
-            {'per': None, 'qty': 2.0, 'qualifiers': [
-                {'unit': 'ounce', 'qty': 5.0, 'per': 'each',
-                 'qualifiers': [], 'plus': False},
-                {'per': 'each', 'qty': 140.0, 'qualifiers': [],
-                 'plus': False, 'unit': 'g'},
-            ], 'plus': False, 'unit': 'pkg'},
-            {'unit': 'ounce', 'qty': 10.0, 'qualifiers': [],
-                'per': None, 'plus': False},
-            {'unit': 'g', 'qty': 280.0, 'qualifiers': [], 'per': None, 'plus': False}
-        ],
-        'names':['tuna'],
-        'mods':[],
-        'stripped_words': [],
-    }),
-    ('2 (6-ounce) cans Italian tuna in water or oil, drained', {
-        'qtys': [{'per': None, 'qty': 2.0, 'qualifiers': [
-            {'unit': 'ounce', 'qty': 6.0, 'per': 'each',
-             'qualifiers': [], 'plus': False}
-        ], 'plus': False, 'unit': 'pkg'}],
-        'names': ['italian tuna'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('1 (5-ounce) can tuna packed in olive oil, preferably Italian (see note)', {
-        'qtys': [{'per': None, 'qty': 1.0, 'qualifiers': [
-            {'unit': 'ounce', 'qty': 5.0, 'per': 'each',
-             'qualifiers': [], 'plus': False}
-        ], 'plus': False, 'unit': 'pkg'}],
-        'names': ['tuna'],
-        'mods': ['packed'],
-        'stripped_words': ['preferably'],
-    }),
-    ('2 4-pound Atlantic salmon (2 1/4 inches at thickest point), scaled and cleaned, gills removed, head and tail on, interior cavity well washed', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 2.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': [
-                    {
-                        'unit': 'pound',
-                        'qty': 4.0,
-                        'per': 'each',
-                        'plus': False,
-                        'qualifiers': []
-                    }
-                ]
-            },
-            {
-                'unit': 'ea',
-                'qty': 2.25,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            }
-        ],
-        'names': [
-            'atlantic salmon',
-            'gill removed',
-            'head tail on',
-            'interior cavity'
-        ],
-        'mods': [
-            'scaled',
-            'cleaned',
-            'well'
-        ],
-        'stripped_words': [
-            'and',
-            'and',
-            'washed'
-        ]
-    }),
-    ('For the filling:', {
-        'qtys': [{'per': None, 'qty': 1.0, 'qualifiers': [], 'plus': False, 'unit': 'ea'}],
-        'names': [],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('6 cups <a href="https://cooking.nytimes.com/recipes/1021916-vegan-bolognese">vegan Bolognese</a>', {
-        'qtys': [{'unit': 'cup', 'qty': 6.0, 'per': None, 'plus': False, 'qualifiers': []}],
-        'names': ['vegan bolognese'],
-        'mods': [],
-        'stripped_words': []
-    }),
-    ('1 packed cup cilantro, coarsely chopped', {
-        'qtys': [{'unit': 'cup', 'qty': 1.0, 'per': None, 'plus': False, 'qualifiers': []}],
-        'names': ['cilantro'],
-        'mods': ['chopped'],
-        'stripped_words': ['coarsely']
-    }),
-    ('4 (6-ounce) mild white fish fillets (for example, cod, hake or blackfish)', {
-        'qtys': [
-            {'unit': 'ea', 'qty': 4.0, 'per': None, 'plus': False, 'qualifiers': [
-                {'unit': 'ounce', 'qty': 6.0, 'per': 'each',
-                    'qualifiers': [], 'plus': False}
-            ]}
-        ],
-        'names': ['white fish'],
-        'mods': [],
-        'stripped_words': ['mild', 'fillets', 'for']
-    }),
-    ('1 (10- to 14-pound) turkey', {
-        'qtys': [
-            {'unit': 'ea', 'qty': 1.0, 'per': None,
-             'plus': False, 'qualifiers': [
-                     {'unit': 'pound', 'qty': 12, 'per': 'each',
-                         'qualifiers': [], 'plus': False}
-             ]}
-        ],
-        'names': ['turkey'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('1 (10- to 14- pound) turkey', {
-        'qtys': [
-            {'unit': 'ea', 'qty': 1.0, 'per': None,
-             'plus': False, 'qualifiers': [
-                     {'unit': 'pound', 'qty': 12, 'per': 'each',
-                         'qualifiers': [], 'plus': False}
-             ]}
-        ],
-        'names': ['turkey'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('1¼ cup/80 grams plus 2 teaspoons/5 grams mild honey', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 1.25, 'per': None,
-                'plus': False, 'qualifiers': []},
-            {'unit': 'g', 'qty': 80.0, 'per': None,
-                'plus': False, 'qualifiers': []},
-            {'unit': 'teaspoon', 'qty': 2.0, 'per': None,
-                'plus': True, 'qualifiers': []},
-            {'unit': 'g', 'qty': 5.0, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['honey'],
-        'mods': [],
-        'stripped_words': ['mild'],
-    }),
-    ('1 six-to-eight-pound, cleaned, whole salmon, preferably with head left on (see note)', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 1.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': [
-                    {
-                        'unit': 'pound',
-                        'qty': 7.0,
-                        'per': 'each',
-                        'qualifiers': [],
-                        'plus': False,
-                    }
-                ]
-            }
-        ],
-        'names': [
-            'whole salmon'
-        ],
-        'mods': [
-            'cleaned'
-        ],
-        'stripped_words': [
-            'preferably',
-        ]
-    }),
-    ('1 (4-ounce) can smoked mussels', {
-        'qtys': [
-            {
-                'unit': 'pkg',
-                'qty': 1.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': [
-                    {
-                        'unit': 'ounce',
-                        'qty': 4.0,
-                        'per': 'each',
-                        'plus': False,
-                        'qualifiers': []
-                    }
-                ]
-            }
-        ],
-        'names': [
-            'mussel'
-        ],
-        'mods': [
-            'smoked'
-        ],
-        'stripped_words': [
-        ]
-    }),
-    ('1 (1 1/2-pound) salmon fillet, skin-on or skinless', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 1.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': [
-                    {
-                        'unit': 'pound',
-                        'qty': 1.5,
-                        'per': 'each',
-                        'plus': False,
-                        'qualifiers': []
-                    }
-                ]
-            }
-        ],
-        'names': [
-            'salmon'
-        ],
-        'mods': [
-            'skin-on',
-            'skinless'
-        ],
-        'stripped_words': [
-            'fillet'
-        ]
-    }),
-    ('1 salmon about 4 1/2 pounds, boned with head and tail left on', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 1.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            },
-            {
-                'unit': 'pound',
-                'qty': 4.5,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            }
-        ],
-        'names': [
-            'salmon'
-        ],
-        'mods': [
-            'boned'
-        ],
-        'stripped_words': [
-            'about',
-            'and',
-        ]
-    }),
-    ('4 whole fish, like sea bass or black bass, 1 to 1 1/2 pounds each', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 4.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            },
-            {
-                'unit': 'pound',
-                'qty': 1.25,
-                'per': 'each',
-                'plus': False,
-                'qualifiers': []
-            }
-        ],
-        'names': [
-            'whole fish',
-            'sea bass',
-            'black bass'
-        ],
-        'mods': [],
-        'stripped_words': [
-            'like',
-        ]
-    }),
-    ('4 whole fish,, like sea bass or black bass, 1 to 1.5 pounds each', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 4.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            },
-            {
-                'unit': 'pound',
-                'qty': 1.25,
-                'per': 'each',
-                'plus': False,
-                'qualifiers': []
-            }
-        ],
-        'names': [
-            'whole fish',
-            'sea bass',
-            'black bass'
-        ],
-        'mods': [],
-        'stripped_words': [
-            'like',
-        ]
-    }
+    (
+        '1 (5- to 6-ounce) can or jar tuna, drained and flaked, or 1 (13-ounce) can chickpeas or white beans, drained',
+        {'qtys': [{'qty': 155.92225, 'unit': 'g'}],
+            'names': ['tuna'], 'mods': ['drained', 'flaked']}
     ),
-    ('1 salmon or other firm fish, about 2 pounds, gutted and scaled, with the head left on', {
-        'qtys': [
-            {
-                'unit': 'ea',
-                'qty': 1.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            },
-            {
-                'unit': 'pound',
-                'qty': 2.0,
-                'per': None,
-                'plus': False,
-                'qualifiers': []
-            }
-        ],
-        'names': [
-            'salmon',
-            'fish'
-        ],
-        'mods': [
-            'gutted',
-            'scaled'
-        ],
-        'stripped_words': [
-            'other',
-            'firm',
-            'about',
-            'and',
-            'the',
-        ]
-    }),
-
-    ('1 scallion, chopped, for serving', {
-        'qtys': [
-            {'unit': 'ea', 'qty': 1, 'per': None, 'plus': False,
-             'qualifiers': []}
-        ],
-
-        'names': ['scallion'],
-        'mods': ['chopped'],
-        'stripped_words': ['for', 'serving'],
-    }),
-    ('1 or 2 cup', {
-        'qtys': [{'unit': 'cup', 'qty': 1.5, 'per': None, 'plus': False, 'qualifiers': []}],
-        'names': [],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('5 to 7 handful', {
-        'qtys': [{'unit': 'handful', 'qty': 6, 'per': None, 'plus': False, 'qualifiers': []}],
-        'names': [],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('yada yada', {
-        'qtys': [
-            {'unit': 'ea', 'qty': 1, 'per': None, 'plus': False, 'qualifiers': []}
-        ],
-        'names': ['yada yada'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('chopped yada yada', {
-        'qtys': [
-            {'unit': 'ea', 'qty': 1, 'per': None, 'plus': False, 'qualifiers': []}
-        ],
-        'names': ['yada yada'],
-        'mods': ['chopped'],
-        'stripped_words': [],
-    }),
-    ('1 cup flour', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 1.0, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['flour'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('1 c flour', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 1.0, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['flour'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('1.5c flour', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 1.5, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['flour'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('1 1/2c flour', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 1.5, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['flour'],
-        'mods': [],
-        'stripped_words': [],
-    }),
-    ('1/4 cup/80 grams mild honey', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 0.25, 'per': None,
-                'plus': False, 'qualifiers': []},
-            {'unit': 'g', 'qty': 80.0, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['honey'],
-        'mods': [],
-        'stripped_words': ['mild'],
-    }),
-    ('1¼ cup/80 grams mild honey', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 1.25, 'per': None,
-                'plus': False, 'qualifiers': []},
-            {'unit': 'g', 'qty': 80.0, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['honey'],
-        'mods': [],
-        'stripped_words': ['mild'],
-    }),
-    ('1¼ cup (approx. 80 grams) mild honey', {
-        'qtys': [
-            {'unit': 'cup', 'qty': 1.25, 'per': None,
-                'plus': False, 'qualifiers': []},
-            {'unit': 'g', 'qty': 80.0, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['honey'],
-        'mods': [],
-        'stripped_words': ['approx.', 'mild'],
-    }),
-    ('350g (approx. 1 1/2 cups) mild honey', {
-        'qtys': [
-            {'unit': 'g', 'qty': 350, 'per': None,
-                'plus': False, 'qualifiers': []},
-            {'unit': 'cup', 'qty': 1.5, 'per': None,
-                'plus': False, 'qualifiers': []}
-        ],
-        'names': ['honey'],
-        'mods': [],
-        'stripped_words': ['approx.', 'mild'],
-    }),
+    (
+        '1/2 pound fresh tuna, grilled or 6 1/2- to 7-ounce can albacore tuna, packed in water',
+        {'qtys': [{'qty': 226.796, 'unit': 'g'}],
+            'names': ['tuna'], 'mods': []}
+    ),
+    (
+        'Two 5-ounce (140g) cans tuna in olive oil, drained (or 10 ounces/280g shredded roast chicken meat)',
+        {'qtys': [{'qty': 283.495, 'unit': 'g'}],
+            'names': ['tuna'], 'mods': ['drained']}
+    ),
+    (
+        '2 (6-ounce) cans Italian tuna in water or oil, drained',
+        {'qtys': [{'qty': 340.19399999999996, 'unit': 'g'}],
+         'names': ['Italian tuna'], 'mods': ['drained']}
+    ),
+    (
+        '1 (5-ounce) can tuna packed in olive oil, preferably Italian (see note)',
+        {'qtys': [{'qty': 141.7475, 'unit': 'g'}],
+            'names': ['tuna'], 'mods': ['packed']}
+    ),
+    (
+        '2 4-pound Atlantic salmon (2 1/4 inches at thickest point), scaled and cleaned, gills removed, head and tail on, interior cavity well washed',
+        {'qtys': [{'qty': 3628.736, 'unit': 'g'}],
+         'names': ['Atlantic salmon'], 'mods': ['well', 'scaled', 'cleaned']}
+    ),
+    (
+        'For the filling:',
+        {}
+    ),
+    (
+        '6 cups <a href="https://cooking.nytimes.com/recipes/1021916-vegan-bolognese">vegan Bolognese</a>',
+        {'qtys': [{'qty': 1419.528, 'unit': 'ml'}],
+         'names': ['vegan Bolognese'], 'mods': []}
+    ),
+    (
+        '1 packed cup cilantro, coarsely chopped',
+        {'qtys': [{'qty': 236.588, 'unit': 'ml'}],
+         'names': ['cilantro'], 'mods': ['chopped', 'packed']}
+    ),
+    (
+        '4 (6-ounce) mild white fish fillets (for example, cod, hake or blackfish)',
+        {'qtys': [{'qty': 680.3879999999999, 'unit': 'g'}],
+         'names': ['white fish'], 'mods': []}
+    ),
+    (
+        '1 (10- to 14-pound) turkey',
+        {'qtys': [{'qty': 5443.103999999999, 'unit': 'g'}],
+         'names': ['turkey'], 'mods': []}
+    ),
+    (
+        '1 (10- to 14- pound) turkey',
+        {'qtys': [{'qty': 5443.103999999999, 'unit': 'g'}],
+         'names': ['turkey'], 'mods': []}
+    ),
+    (
+        '1¼ cup/80 grams plus 2 teaspoons/5 grams mild honey',
+        {'qtys': [{'qty': 85.0, 'unit': 'g'}], 'names': ['honey'], 'mods': []}
+    ),
+    (
+        '1 six-to-eight-pound, cleaned, whole salmon, preferably with head left on (see note)',
+        {'qtys': [{'qty': 3175.144, 'unit': 'g'}],
+         'names': ['whole salmon'], 'mods': ['cleaned']}
+    ),
+    (
+        '1 (4-ounce) can smoked mussels',
+        {'qtys': [{'qty': 113.398, 'unit': 'g'}],
+         'names': ['mussels'], 'mods': ['smoked']}
+    ),
+    (
+        '1 (1 1/2-pound) salmon fillet, skin-on or skinless',
+        {'qtys': [{'qty': 680.3879999999999, 'unit': 'g'}],
+         'names': ['salmon'], 'mods': ['skin-on', 'skinless']}
+    ),
+    (
+        '1 salmon about 4 1/2 pounds, boned with head and tail left on',
+        {'qtys': [{'qty': 2041.164, 'unit': 'g'}],
+            'names': ['salmon'], 'mods': ['boned']}
+    ),
+    (
+        '4 whole fish, like sea bass or black bass, 1 to 1 1/2 pounds each',
+        {'qtys': [{'qty': 2267.96, 'unit': 'g'}],
+         'names': ['whole fish'], 'mods': []}
+    ),
+    (
+        '4 whole fish,, like sea bass or black bass, 1 to 1.5 pounds each',
+        {'qtys': [{'qty': 2267.96, 'unit': 'g'}],
+         'names': ['whole fish'], 'mods': []}
+    ),
+    (
+        '1 salmon or other firm fish, about 2 pounds, gutted and scaled, with the head left on',
+        {'qtys': [{'qty': 907.184, 'unit': 'g'}],
+         'names': ['salmon or fish'], 'mods': ['gutted', 'scaled']}
+    ),
+    (
+        '1 scallion, chopped, for serving',
+        {'qtys': [{'qty': 1.0, 'unit': 'ea'}],
+            'names': ['scallion'], 'mods': ['chopped']}
+    ),
+    (
+        '1 or 2 cup',
+        {'qtys': [{'qty': 354.882, 'unit': 'ml'}], 'names': [], 'mods': []}
+    ),
+    (
+        '5 to 7 handful',
+        {'qtys': [{'qty': 708.0, 'unit': 'ml'}], 'names': [], 'mods': []}
+    ),
+    (
+        'yada yada',
+        {'qtys': [{'qty': 1.0, 'unit': 'ea'}],
+            'names': ['yada yada'], 'mods': []}
+    ),
+    (
+        'chopped yada yada',
+        {'qtys': [{'qty': 1.0, 'unit': 'ea'}],
+         'names': ['yada yada'], 'mods': ['chopped']}
+    ),
+    (
+        '1 cup flour',
+        {'qtys': [{'qty': 236.588, 'unit': 'ml'}],
+            'names': ['flour'], 'mods': []}
+    ),
+    (
+        '1 c flour',
+        {'qtys': [{'qty': 236.588, 'unit': 'ml'}],
+            'names': ['flour'], 'mods': []}
+    ),
+    (
+        '1.5c flour',
+        {'qtys': [{'qty': 354.882, 'unit': 'ml'}],
+            'names': ['flour'], 'mods': []}
+    ),
+    (
+        '1 1/2c flour',
+        {'qtys': [{'qty': 354.882, 'unit': 'ml'}],
+            'names': ['flour'], 'mods': []}
+    ),
+    (
+        '1/4 cup/80 grams mild honey',
+        {'qtys': [{'qty': 80.0, 'unit': 'g'}], 'names': ['honey'], 'mods': []}
+    ),
+    (
+        '1¼ cup/80 grams mild honey',
+        {'qtys': [{'qty': 80.0, 'unit': 'g'}], 'names': ['honey'], 'mods': []}
+    ),
+    (
+        '1¼ cup (approx. 80 grams) mild honey',
+        {'qtys': [{'qty': 80.0, 'unit': 'g'}], 'names': ['honey'], 'mods': []}
+    ),
+    (
+        '350g (approx. 1 1/2 cups) mild honey',
+        {'qtys': [{'qty': 350.0, 'unit': 'g'}], 'names': ['honey'], 'mods': []}
+    ),
 ]
 
 PARENS_DATA = [
