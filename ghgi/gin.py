@@ -1,5 +1,6 @@
 import json
 import collections
+from ghgi.datasets import master
 import nltk
 
 try:
@@ -110,7 +111,7 @@ class GIN:
             return gin_index
 
     @classmethod
-    def query(cls, term: str, use_keyword=True):
+    def query(cls, term: str):
         # TODO: this could be improved by making better use of the pos_tags
         # and semantics. We can get smarter about identifying different patterns,
         # e.g. [NN1, OR, NN2] -> pick one of the NNx, vs [NN1, OR, NN2, NN3] in which case
@@ -123,15 +124,51 @@ class GIN:
 
         # don't match on uninformative singletons
         if len(tokens) == 1 and cls.lower(tokens)[0] in NO_SOLO:
-            return None, None, 0.0
-
-        pos_tags = cls.pos_tag(tokens)
+            return None, None, 0.0, 0, 0
 
         # identify the locations of ORs
         or_indexes = [i for i in range(
-            len(tokens)) if tokens[0].lower() == 'or']
+            len(tokens)) if tokens[i].lower() == 'or']
 
-        # the keyword is the last noun: must match if use_keyword is set
+        if not or_indexes:
+            return cls.best_match(tokens)
+
+        # otherwise, generate whatever variants make most sense based on the OR
+        # structure, match each variant's tokens, and select the best one.
+        return cls.or_match(tokens)
+
+    @classmethod
+    def or_match(cls, tokens):
+        # this is pretty complicated. For now, we're implementing a few simple
+        # patterns, but we can add to this over time.
+        pos_tags = cls.pos_tag(tokens)
+        or_chunks = []
+        cur_chunk = []
+        for tag in pos_tags:
+            if tag[0] in ['or', ',']:
+                if cur_chunk:
+                    or_chunks += [cur_chunk]
+                cur_chunk = []
+            else:
+                cur_chunk += [tag]
+        if cur_chunk:
+            or_chunks += [cur_chunk]
+
+        if len(or_chunks) < 2:
+            raise Exception('or_match expects at least one OR')
+
+        # First thing, match each chunk
+        match_results = [cls.best_match([c[0] for c in chunk])
+                         for chunk in or_chunks]
+        max_match_pct = max([mr[2] for mr in match_results])
+        candidates = [mr for mr in match_results if mr[2] == max_match_pct]
+        candidates.sort(key=lambda el: el[3], reverse=True)
+        return candidates[0]
+
+    @classmethod
+    def best_match(cls, tokens: list, use_keyword: bool = True):
+        pos_tags = cls.pos_tag(tokens)
+        # the keyword is the last noun: must match if use_keyword is True
         key_word_index = None
         if use_keyword:
             for i, el in enumerate(reversed(pos_tags)):
@@ -175,9 +212,9 @@ class GIN:
         if len(results) == 0:
             if use_keyword:
                 # fall back to not matching on keyword
-                return cls.query(term, use_keyword=False)
+                return cls.best_match(tokens, use_keyword=False)
             else:
-                return None, None, 0.0
+                return None, None, 0.0, 0, 0
 
         max_match_count = max([v for v in results.values()])
         max_matches = [k for k, v in results.items() if v == max_match_count]
@@ -186,7 +223,7 @@ class GIN:
             selected = max_matches[0]
             match_size = len(cls.tokenize(selected))
             match_pct = max_match_count*2 / (match_size + term_size)
-            return selected, cls.aka_index()[selected], match_pct
+            return selected, cls.aka_index()[selected], match_pct, match_size, term_size
 
         # select from multiple candidate matches
         best_score = 0.0
@@ -198,5 +235,6 @@ class GIN:
                 # find the one that matched most closely as a share of its size
                 best_score = match_pct
                 selected = match
+                selected_size = match_size
 
-        return selected, cls.aka_index()[selected], best_score
+        return selected, cls.aka_index()[selected], best_score, selected_size, term_size

@@ -134,6 +134,7 @@ class Parser:
         'stalk': 'ea',
         'stick': 'ea',
         'sprig': 'ea',
+        'box': 'pkg',
         'can': 'pkg',
         'container': 'pkg',
         'package': 'pkg',
