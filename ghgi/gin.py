@@ -154,8 +154,8 @@ class GIN:
         if cur_chunk:
             or_chunks += [cur_chunk]
 
-        if len(or_chunks) < 2:
-            raise Exception('or_match expects at least one OR')
+        if not or_chunks:
+            return None, None, 0.0, 0, 0
 
         # First thing, match each chunk
         match_results = [cls.best_match([c[0] for c in chunk])
