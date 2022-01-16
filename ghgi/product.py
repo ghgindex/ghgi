@@ -242,7 +242,7 @@ class Product:
     def itemize(ingredients):
         """match user ingredient terms to our database in-place"""
         for ingredient in ingredients:
-            if ingredient is None:
+            if not ingredient:
                 continue
             (ingredient[Ingredient.PRODUCT],
              ingredient['match_conf']) = Product.lookup(ingredient)
@@ -487,7 +487,7 @@ class Product:
 
     @staticmethod
     def impact(ingredient, origin=Origin.DEFAULT):
-        if ingredient is None or ingredient.get('error'):
+        if not ingredient or ingredient.get('error'):
             return 0.0
 
         mass = Product.mass(ingredient)
