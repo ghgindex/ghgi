@@ -6764,6 +6764,7 @@
         "white chocolate chip",
         "white chocolate disc",
         "white chocolate f\u00e8ve",
+        "white fish",
         "white flour",
         "white mushroom",
         "white mushroom cap",
@@ -7457,6 +7458,7 @@
         "white chocolate chip",
         "white chocolate disc",
         "white chocolate f\u00e8ve",
+        "white fish",
         "white flour",
         "white mushroom",
         "white mushroom cap",
@@ -7486,6 +7488,7 @@
         "white chocolate chip",
         "white chocolate disc",
         "white chocolate f\u00e8ve",
+        "white fish",
         "white flour",
         "white mushroom",
         "white mushroom cap",
@@ -7513,6 +7516,7 @@
         "white chocolate chip",
         "white chocolate disc",
         "white chocolate f\u00e8ve",
+        "white fish",
         "white flour",
         "white mushroom",
         "white mushroom cap",
@@ -8544,6 +8548,7 @@
         "pelagic fish >30 cm",
         "swordfish",
         "tunafish",
+        "white fish",
         "whitefish"
     ],
     "ish": [
@@ -8594,6 +8599,7 @@
         "thigh cornish game hen",
         "thigh cornish hen",
         "tunafish",
+        "white fish",
         "whitefish",
         "wing cornish game hen",
         "wing cornish hen"
@@ -9815,6 +9821,7 @@
         "unbleached all purpose flour",
         "unbleached all-purpose flour",
         "white chocolate f\u00e8ve",
+        "white fish",
         "white flour"
     ],
     "lak": [
@@ -11760,7 +11767,8 @@
         "demersal fish",
         "farmed fish",
         "pelagic fish <30 cm",
-        "pelagic fish >30 cm"
+        "pelagic fish >30 cm",
+        "white fish"
     ],
     "sea": [
         "chilean sea bass",

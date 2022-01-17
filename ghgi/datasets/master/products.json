@@ -852,6 +852,7 @@
             "creme fraiche",
             "cr\u00e8me fra\u00eeche"
         ],
+        "sg": 0.95,
         "super": {
             "milk": 343.5
         }
@@ -956,6 +957,7 @@
             "snapper",
             "sole",
             "turbot",
+            "white fish",
             "whitefish"
         ],
         "sg": 1.04,
@@ -1412,6 +1414,7 @@
             "mayo",
             "mayonnaise"
         ],
+        "sg": 0.95,
         "super": {
             "eggs": 18,
             "mustard": 8,
@@ -1632,6 +1635,7 @@
         "loss": {
             "onions & leeks (alliums)": 0.5
         },
+        "sg": 1.0,
         "super": {
             "onions & leeks (alliums)": 200
         },
@@ -2449,6 +2453,7 @@
     },
     "sesame oil": {
         "g": 15,
+        "sg": 0.9,
         "super": {
             "sesame": 200
         },
@@ -2525,6 +2530,7 @@
     },
     "sour cream": {
         "g": 50,
+        "sg": 1.0,
         "super": {
             "milk": 221.4
         },
@@ -2620,6 +2626,7 @@
             "sun dried tomato",
             "sun-dried tomato"
         ],
+        "sg": 1.0,
         "super": {
             "tomatoes": 200
         }

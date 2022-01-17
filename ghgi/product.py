@@ -109,6 +109,10 @@ class Product:
                     print('Product {} invalid: invalid parents `{}` data'.format(
                         bold(product[cls.NAME]), flavor))
                     return False
+                elif flavor == cls.SG and sum(product[cls.PARENTS].values()) != 100:
+                    print('Product {} invalid: parents\' weights do not sum to 100; please provide an explicit SG value'.format(
+                        bold(product[cls.NAME])))
+
             return True
 
         # validate food category
